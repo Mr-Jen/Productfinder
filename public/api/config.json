@@ -1,0 +1,64 @@
+{
+    "id": 0,
+    "label": "Bereich",
+    "question": "Ist Ihr Holz für den Außen- oder den Innenbereich?",
+    "children": [
+        {
+            "id": 0,
+            "label": "Außenbereich",
+            "question": "Ist das Holz behandelt?",
+            "children": [
+                {
+                    "id": 0,
+                    "label": "Behandeltes Holz",
+                    "question": "Mit was ist das Holz behandelt?",
+                    "children": [
+                        {
+                            "id": 0,
+                            "label": "Farbe",
+                            "question": "Welche Farbe?",
+                            "children": [
+                                {   
+                                    "id": 0,
+                                    "label": "Grüne Farbe",
+                                    "question": "Folge Produkte passen",
+                                    "children": [{}]                   
+                                }
+                            ] 
+                        },
+                        {
+                            "id": 1,
+                            "label": "Lasur",
+                            "question": "Welche Lasur?",
+                            "children": [
+                                {                            
+                                }
+                            ] 
+                            
+                        }
+                    ] 
+        
+                },
+                {
+                    "id": 1,
+                    "label": "Unbehandeltes Holz",
+                    "question:": "Ist das Holz geschliffen?",
+                    "children": [
+                        {
+                            "id": 0
+                            
+                        }
+                    ]   
+                }
+            ] 
+        },
+        {
+            "id": 1,
+            "label": "Innenbereich",
+            "question": "Ist das Holz behandelt?",
+            "children": [
+                {}
+            ]
+        }
+    ]
+}
