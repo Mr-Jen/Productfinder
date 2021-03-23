@@ -13,62 +13,46 @@ const App = () => {
   }, [])
 
   const handleClick = (item) => {
-    setData(item.children)
-    setParentData(item)
     setHistoryStack(historyStack.concat(item))
   }
 
   const handleBack = () => {
-    const updatedHistory = historyStack
+    const updatedHistory = [...historyStack]
     updatedHistory.pop()
-    console.log('State before: ', updatedHistory)
+    //console.log('State before: ', updatedHistory)
     setHistoryStack(updatedHistory)
-    console.log('State after: ', updatedHistory)
+    //console.log('State after: ', updatedHistory)
   }
 
   const [historyStack, setHistoryStack] = useState([])
   const [initData, setInitData] = useState({})
-  const [data, setData] = useState([])
-  const [parentData, setParentData] = useState({})
 
   const loadData = () => {
-    setParentData(initData)
-    setData(initData.children)
+    setHistoryStack(historyStack.concat(initData))
   }
 
-
-  console.log('CURRENT DATA: ', data)
-  console.log('STACK: ', historyStack, historyStack.length, typeof(historyStack))
+  const latestItem = historyStack[historyStack.length -1]
 
   return (
     <div>
       <h1>Produktfinder</h1>
-      <h2>{data.question}</h2>
       {
-        data.length === 0  && <button onClick={() => loadData()}>Start</button>
+        !latestItem  && <button onClick={() => loadData()}>Start</button>
       }
       {
-        Object.keys(parentData).length !== 0  && 
+        latestItem && 
         <div>
-          <h2>{parentData.label}</h2>
-          <p>{parentData.question}</p>
+          <h2>{latestItem.label}</h2>
+          <p>{latestItem.question}</p>
           <button onClick={() => handleBack()}>Zurück</button>
         </div>
       }
       {
-        data && data.map((item, key) => 
+        latestItem && latestItem.children.map((item, key) => 
           <div key={key}>
             <button onClick={() => handleClick(item)}>{item.label}</button>
           </div>
         )
-      }
-      {
-        historyStack && historyStack.map((item, key) => {
-          <div key={key}>
-            <h5>History</h5>
-            <p>{item.label}</p>
-          </div>
-        })
       }
     </div> 
   )
