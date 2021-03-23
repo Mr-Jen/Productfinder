@@ -1,63 +1,173 @@
 {
     "id": 0,
-    "label": "Bereich",
-    "question": "Ist Ihr Holz für den Außen- oder den Innenbereich?",
+    "label": "Holzfassade für Gartenhaus, Wohnhaus oder Carport",
+    "question": "Ist es unbehandeltes Holz oder wurde schon ein Anstrich / eine Behandlung vorgenommen?",
     "children": [
         {
             "id": 0,
-            "label": "Außenbereich",
-            "question": "Ist das Holz behandelt?",
+            "label": "Unbehandelt / Komplett abgeschliffen",
+            "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
             "children": [
                 {
                     "id": 0,
-                    "label": "Behandeltes Holz",
-                    "question": "Mit was ist das Holz behandelt?",
-                    "children": [
-                        {
-                            "id": 0,
-                            "label": "Farbe",
-                            "question": "Welche Farbe?",
-                            "children": [
-                                {   
-                                    "id": 0,
-                                    "label": "Grüne Farbe",
-                                    "question": "Folge Produkte passen",
-                                    "children": [{}]                   
-                                }
-                            ] 
-                        },
-                        {
-                            "id": 1,
-                            "label": "Lasur",
-                            "question": "Welche Lasur?",
-                            "children": [
-                                {                            
-                                }
-                            ] 
-                            
-                        }
-                    ] 
-        
+                    "label": "Lasur",
+                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                    "children": []
                 },
                 {
                     "id": 1,
-                    "label": "Unbehandeltes Holz",
-                    "question:": "Ist das Holz geschliffen?",
-                    "children": [
-                        {
-                            "id": 0
-                            
-                        }
-                    ]   
+                    "label": "Farbe",
+                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                    "children": []
                 }
             ] 
         },
         {
             "id": 1,
-            "label": "Innenbereich",
-            "question": "Ist das Holz behandelt?",
+            "label": "Behandelt",
+            "question": "Mit was ist das Holz behandelt?",
             "children": [
-                {}
+                {
+                    "id": 0,
+                    "label": "Öl",
+                    "question": "",
+                    "children": [
+                        {            
+                            "id": 0,
+                            "label": "",
+                            "question": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "label": "Lasur",
+                    "question": "In welchem Zustand ist der Anstrich?",
+                    "children": [
+                        {
+                            "id": 0,
+                            "label": "Intakter Anstrich",
+                            "question": "",
+                            "children": [
+                                {            
+                                    "id": 0,
+                                    "label": "",
+                                    "question": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "label": "Verwitterte Lasur",
+                            "question": "",
+                            "children": [
+                                {
+                                    "id": 0,
+                                    "label": "Info",
+                                    "question": "Verwitterte Lasur bitte erst abschleifen",
+                                    "children": [
+                                        {
+                                            "id": 0,
+                                            "label": "Bindemitteltest",
+                                            "question": "Welche Bindemittel waren in der Lasur?",
+                                            "children": [
+                                                {
+                                                    "id": 0,
+                                                    "label": "Test mit Brennspiritus",
+                                                    "question": "",
+                                                    "children": [
+                                                        {            
+                                                            "id": 0,
+                                                            "label": "",
+                                                            "question": ""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "label": "Farbe",
+                    "question": "",
+                    "children": [
+                        {
+                            "id": 0,
+                            "label": "Intakter Altanstrich",
+                            "question": "",
+                            "children": [
+                                {            
+                                    "id": 0,
+                                    "label": "",
+                                    "question": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "label": "Verwitterte Farbe",
+                            "question": "",
+                            "children": [
+                                {
+                                    "id": 0,
+                                    "label": "Info",
+                                    "question": "Bitte zunächst Anstrich mit Fassadenreiniger waschen",
+                                    "children": [
+                                        {
+                                            "id": 0,
+                                            "label": "Bindemitteltest der Farbe",
+                                            "question": "Welche Bindemittel waren in der Farbe?",
+                                            "children": [
+                                                {
+                                                    "id": 0,
+                                                    "label": "Test mit Schleifpapier",
+                                                    "question": "",
+                                                    "children": [
+                                                        {
+                                                            "id": 0,
+                                                            "label": "Produktempfehlungen",
+                                                            "question": "Basierend auf dem Testergebnis empfehlen wir folgende Produkte:",
+                                                            "children": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "label": "Werkseitige Imprägnierung/Grundierung",
+                    "question": "",
+                    "children": [
+                        {            
+                            "id": 0,
+                            "label": "",
+                            "question": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "label": "Ich weiß nicht",
+            "question": "Auf der Infoseite finden Sie Informationen über diese Anstriche",
+            "children": [
+                {            
+                    "id": 0,
+                    "label": "Infoseite",
+                    "question": "Infoseite über diese Anstriche mit Fotos, etc."
+                }
             ]
         }
     ]
