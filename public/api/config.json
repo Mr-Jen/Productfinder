@@ -1,63 +1,92 @@
 {
     "id": 0,
-    "label": "Bereich",
-    "question": "Ist Ihr Holz für den Außen- oder den Innenbereich?",
+    "label": "Holzfassade für Gartenhaus, Wohnhaus oder Carport",
+    "question": "Ist es unbehandeltes Holz oder wurde schon ein Anstrich / eine Behandlung vorgenommen?",
     "children": [
         {
             "id": 0,
-            "label": "Außenbereich",
-            "question": "Ist das Holz behandelt?",
+            "label": "Unbehandelt",
+            "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
             "children": [
                 {
                     "id": 0,
-                    "label": "Behandeltes Holz",
-                    "question": "Mit was ist das Holz behandelt?",
+                    "label": "Lasur",
+                    "question": "Welche Lasur?",
                     "children": [
-                        {
+                        {            
                             "id": 0,
-                            "label": "Farbe",
-                            "question": "Welche Farbe?",
-                            "children": [
-                                {   
-                                    "id": 0,
-                                    "label": "Grüne Farbe",
-                                    "question": "Folge Produkte passen",
-                                    "children": [{}]                   
-                                }
-                            ] 
-                        },
-                        {
-                            "id": 1,
-                            "label": "Lasur",
-                            "question": "Welche Lasur?",
-                            "children": [
-                                {                            
-                                }
-                            ] 
-                            
+                            "label": "",
+                            "question": ""
                         }
-                    ] 
-        
+                    ]
                 },
                 {
                     "id": 1,
-                    "label": "Unbehandeltes Holz",
-                    "question:": "Ist das Holz geschliffen?",
+                    "label": "Farbe",
+                    "question": "Welche Farbe?",
                     "children": [
-                        {
-                            "id": 0
-                            
+                        {            
+                            "id": 0,
+                            "label": "",
+                            "question": ""
                         }
-                    ]   
+                    ]
                 }
             ] 
         },
         {
             "id": 1,
-            "label": "Innenbereich",
-            "question": "Ist das Holz behandelt?",
+            "label": "Behandelt",
+            "question": "Mit was ist das Holz behandelt?",
             "children": [
-                {}
+                {
+                    "id": 0,
+                    "label": "Öl",
+                    "question": "",
+                    "children": [
+                        {            
+                            "id": 0,
+                            "label": "",
+                            "question": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "label": "Farbe",
+                    "question": "",
+                    "children": [
+                        {            
+                            "id": 0,
+                            "label": "",
+                            "question": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "label": "Werkseitige Imprägnierung/Grundierung",
+                    "question": "",
+                    "children": [
+                        {            
+                            "id": 0,
+                            "label": "",
+                            "question": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "label": "Unwissend",
+            "question": "Weiß ich nicht, kenne mich nicht aus",
+            "children": [
+                {            
+                    "id": 0,
+                    "label": "Infoseite",
+                    "question": "Infoseite über diese Anstriche mit Fotos, etc."
+                }
             ]
         }
     ]

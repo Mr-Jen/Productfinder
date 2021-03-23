@@ -1,5 +1,23 @@
 import React, {useState, useEffect} from 'react'
+import styled from 'styled-components'
 //import { getData } from '../shared/api'
+
+const Wrapper = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+`
+
+const ChoiceWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
+const Button = styled.button`
+  width: 10%;
+  margin: 2%;
+`
 
 const App = () => {
   useEffect(() => {
@@ -12,49 +30,69 @@ const App = () => {
     return () => { isMounted = false }
   }, [])
 
+  const [historyStack, setHistoryStack] = useState([])
+  const [initData, setInitData] = useState({})
+  const [breadCrumb, setBreadCrumb] = useState([])
+
+  // Adds item to the history stack
   const handleClick = (item) => {
     setHistoryStack(historyStack.concat(item))
+    setBreadCrumb(breadCrumb.concat(item.label))
   }
 
+  // Handles back action and removes the last item from the history stack
   const handleBack = () => {
     const updatedHistory = [...historyStack]
     updatedHistory.pop()
-    //console.log('State before: ', updatedHistory)
     setHistoryStack(updatedHistory)
-    //console.log('State after: ', updatedHistory)
+
+    const updatedBreadCrumb = [...breadCrumb]
+    updatedBreadCrumb.pop()
+    setBreadCrumb(updatedBreadCrumb)
   }
 
-  const [historyStack, setHistoryStack] = useState([])
-  const [initData, setInitData] = useState({})
-
+  // Load the inital data received from the API call
   const loadData = () => {
     setHistoryStack(historyStack.concat(initData))
   }
 
   const latestItem = historyStack[historyStack.length -1]
+  console.log(latestItem)
+
+  console.log('KRÜMEL: ', breadCrumb)
 
   return (
-    <div>
+    <Wrapper>
       <h1>Produktfinder</h1>
       {
-        !latestItem  && <button onClick={() => loadData()}>Start</button>
+        !latestItem  && <Button onClick={() => loadData()}>Start</Button>
+      }
+      {/*<p>{breadCrumb}</p>*/}
+      {        
+        breadCrumb.map((crumb, key) => {
+          return <a href="/" key={key}>{`${crumb}   -->`}</a>
+        })
       }
       {
         latestItem && 
         <div>
           <h2>{latestItem.label}</h2>
           <p>{latestItem.question}</p>
-          <button onClick={() => handleBack()}>Zurück</button>
         </div>
       }
-      {
-        latestItem && latestItem.children.map((item, key) => 
-          <div key={key}>
-            <button onClick={() => handleClick(item)}>{item.label}</button>
-          </div>
-        )
+      <ChoiceWrapper>
+        {
+          latestItem && latestItem.children.map((item, key) => 
+            <div key={key}>
+              <button onClick={() => handleClick(item)}>{item.label}</button>
+            </div>
+          )
+        }
+      </ChoiceWrapper>
+      {   
+       latestItem && <Button onClick={() => handleBack()}>Zurück</Button>
       }
-    </div> 
+    </Wrapper> 
   )
 }
 
