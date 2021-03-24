@@ -44,7 +44,7 @@
                     "label": "Lasur",
                     "question": "In welchem Zustand ist der Anstrich?",
                     "children": [
-                        {
+                        {            
                             "id": 0,
                             "label": "Intakter Anstrich",
                             "question": "",
