@@ -13,6 +13,9 @@
     "styled-components": "^5.2.1",
     "web-vitals": "^1.0.1"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -36,8 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "engines": {
-    "node": "14.x"
   }
 }
