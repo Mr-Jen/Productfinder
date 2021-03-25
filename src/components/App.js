@@ -19,6 +19,7 @@ const BreadCrumb = styled.button`
   background: none;
   color: blue;
   cursor: pointer;
+  margin: 3px;
 `
 
 const ChoiceWrapper = styled.div`
@@ -50,12 +51,12 @@ const App = () => {
 
   const [historyStack, setHistoryStack] = useState([])
   const [initData, setInitData] = useState({})
-  const [breadCrumb, setBreadCrumb] = useState([])
+  const [breadCrumbs, setBreadCrumbs] = useState([])
 
   // Adds item to the history stack
   const handleClick = (item) => {
     setHistoryStack(historyStack.concat(item))
-    setBreadCrumb(breadCrumb.concat(item.label))
+    setBreadCrumbs(breadCrumbs.concat(item.label))
   }
 
   // Handles back action and removes the last item from the history stack
@@ -64,24 +65,39 @@ const App = () => {
     updatedHistory.pop()
     setHistoryStack(updatedHistory)
 
-    const updatedBreadCrumb = [...breadCrumb]
-    updatedBreadCrumb.pop()
-    setBreadCrumb(updatedBreadCrumb)
+    const updatedBreadCrumbs = [...breadCrumbs]
+    updatedBreadCrumbs.pop()
+    setBreadCrumbs(updatedBreadCrumbs)
   }
 
   const handleNavigationChange = (crumb) => {
-    console.log("Navigation changed", crumb)
+    const crumbIndex = breadCrumbs.indexOf(crumb)
+    const updatedCrumbs = [...breadCrumbs]
+    updatedCrumbs.length = crumbIndex + 1
+    setBreadCrumbs(updatedCrumbs)
+
+    let stackIndex = null
+    historyStack.forEach((item, index) => {
+      if (item.label === crumb){
+        stackIndex = index + 1
+      }
+    })
+    const updatedHistoryStack = [...historyStack]
+    updatedHistoryStack.length = stackIndex
+    console.log('NEW STACK: ', updatedHistoryStack)
+    setHistoryStack(updatedHistoryStack)
   }
 
   // Load the inital data received from the API call
   const loadData = () => {
     setHistoryStack(historyStack.concat(initData))
+    setBreadCrumbs(breadCrumbs.concat(initData.label))
   }
 
   const latestItem = historyStack[historyStack.length -1]
   console.log(latestItem)
 
-  console.log('KRÜMEL: ', breadCrumb)
+  console.log('KRÜMEL: ', breadCrumbs)
 
   return (
     <Wrapper>
@@ -92,7 +108,7 @@ const App = () => {
       {/*<p>{breadCrumb}</p>*/}
       <BreadCrumbWrapper>
         {        
-          breadCrumb.map((crumb, key) => {
+          breadCrumbs.map((crumb, key) => {
             return <BreadCrumb onClick={() => handleNavigationChange(crumb)} key={key}>{`${crumb}   -->`}</BreadCrumb>
           })
         }
