@@ -48,13 +48,7 @@
                             "id": 0,
                             "label": "Intakter Anstrich",
                             "question": "",
-                            "children": [
-                                {            
-                                    "id": 0,
-                                    "label": "",
-                                    "question": ""
-                                }
-                            ]
+                            "children": null
                         },
                         {
                             "id": 1,
@@ -99,14 +93,8 @@
                         {
                             "id": 0,
                             "label": "Intakter Altanstrich",
-                            "question": "",
-                            "children": [
-                                {            
-                                    "id": 0,
-                                    "label": "",
-                                    "question": ""
-                                }
-                            ]
+                            "question": null,
+                            "children": null
                         },
                         {
                             "id": 1,

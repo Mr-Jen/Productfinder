@@ -97,8 +97,6 @@ const App = () => {
   const latestItem = historyStack[historyStack.length -1]
   console.log(latestItem)
 
-  console.log('KRÜMEL: ', breadCrumbs)
-
   return (
     <Wrapper>
       <h1>Produktfinder</h1>
@@ -120,16 +118,20 @@ const App = () => {
           <p>{latestItem.question}</p>
         </div>
       }
-      <ChoiceWrapper>
-        {
-          //latestItem && latestItem.children.map((item, key) => 
-          latestItem?.children.map((item, key) =>
-            <div key={key}>
-              <ChoiceButton onClick={() => handleClick(item)}>{item.label}</ChoiceButton>
-            </div>
-          )
-        }
-      </ChoiceWrapper>
+      {
+        (latestItem  && latestItem.children) &&
+          <ChoiceWrapper>
+            {
+              //latestItem && latestItem.children.map((item, key) => 
+              latestItem?.children.map((item, key) =>
+                <div key={key}>
+                  <ChoiceButton onClick={() => handleClick(item)}>{item.label}</ChoiceButton>
+                </div>
+              )
+            }
+          </ChoiceWrapper>
+      }
+      { (latestItem && !latestItem.children) && <p>Wir empfehlen folgende Produkte:</p>} 
       {   
        latestItem && <Button onClick={() => handleBack()}>Zurück</Button>
       }
