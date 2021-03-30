@@ -10,7 +10,6 @@ const Button = styled.button`
 `
 
 const BackButton = ({ButtonRemoveFromHistory, historyLength}) => {
-    console.log("LENGTH: ", historyLength)
     return (
         <div>
             <Button onClick={() => ButtonRemoveFromHistory(historyLength - 1)}>Zurück</Button>

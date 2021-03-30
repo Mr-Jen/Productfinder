@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
 import { handleLoadConfig } from '../actions/shared'
@@ -7,6 +7,7 @@ import Home from '../components/Home'
 import Items from './Items'
 import Infos from './Infos'
 import BackButton from './BackButton'
+import BreadCrumbs from './BreadCrumbs'
 
 const Wrapper = styled.div`
   display: flex;
@@ -51,6 +52,7 @@ const App = ({loadConfig, isHome}) => {
       { isHome ? <Home/>
         : 
         <Wrapper>
+          <BreadCrumbs/>
           <Infos/>
           <Items/>
           <BackButton/>

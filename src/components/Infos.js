@@ -18,13 +18,10 @@ const mapStateToProps = ({decisions, history}) => {
         childrenItems = latestItem.children
     })
   
-    console.log("LATEST ITEM: ", latestItem)
-    console.log("CHILDREN: ", childrenItems)
-  
     return {
       latestItem
     }
-  }
+}
 
 const mapDispatchToProps = {
     

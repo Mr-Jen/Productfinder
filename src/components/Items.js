@@ -35,8 +35,6 @@ const mapStateToProps = ({decisions, history}) => {
     latestItem = latestItem[itemId].children
   })
 
-  console.log("CHILDREN: ", latestItem)
-
   return {
     childrenItems: latestItem 
   }
