@@ -9,8 +9,7 @@ import App from './components/App';
 import rootReducer from './reducers';
 import middleware from './middleware'
 
-//const store = createStore(rootReducer, composeWithDevTools(middleware));
-const store = createStore(composeWithDevTools(middleware));
+const store = createStore(rootReducer, composeWithDevTools(middleware));
 
 ReactDOM.render(
   <React.StrictMode>

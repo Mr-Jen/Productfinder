@@ -1,7 +1,11 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
+import { connect } from 'react-redux'
 import styled from 'styled-components'
+import { handleLoadConfig } from '../actions/shared'
 //import { getData } from '../shared/api'
 
+import Home from '../components/Home'
+import Items from './Items'
 const Wrapper = styled.div`
   display: flex;
   flex: 1;
@@ -38,8 +42,8 @@ const Button = styled.button`
   margin: 2%;
 `
 
-const App = () => {
-  useEffect(() => {
+const App = ({loadConfig, isHome}) => {
+  /*useEffect(() => {
     let isMounted = true
     fetch('api/config.json')
         .then((response) => response.json())
@@ -47,7 +51,8 @@ const App = () => {
           isMounted && setInitData(config)
         })
     return () => { isMounted = false }
-  }, [])
+  }, [])*/
+  React.useEffect(() => {loadConfig()}, [loadConfig])
 
   const [historyStack, setHistoryStack] = useState([])
   const [initData, setInitData] = useState({})
@@ -95,15 +100,16 @@ const App = () => {
   }
 
   const latestItem = historyStack[historyStack.length -1]
-  console.log(latestItem)
+  //console.log(latestItem)
+
+  console.log("IS HOME: ", isHome)
 
   return (
     <Wrapper>
       <h1>Produktfinder</h1>
-      {
-        !latestItem  && <Button onClick={() => loadData()}>Start</Button>
+      { isHome ? <Home/>
+        : <Items/>
       }
-      {/*<p>{breadCrumb}</p>*/}
       <BreadCrumbWrapper>
         {        
           breadCrumbs.map((crumb, key) => {
@@ -139,4 +145,14 @@ const App = () => {
   )
 }
 
-export default App
+const mapDispatchToProps = dispatch => ({
+  loadConfig: () => dispatch(handleLoadConfig())
+})
+
+const mapStateToProps = ({history}) => {
+  return {
+      isHome: history.length === 0
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
