@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
-import { addToHistory } from '../actions/shared'
+import { addToHistory } from '../actions/history'
 
 const Button = styled.button`
   width: 80px;

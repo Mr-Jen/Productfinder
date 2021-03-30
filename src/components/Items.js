@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
-import { addToHistory } from '../actions/shared'
+import { addToHistory } from '../actions/history'
 
 const ChoiceWrapper = styled.div`
   display: flex;
@@ -43,7 +43,7 @@ const mapStateToProps = ({decisions, history}) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-    ButtonAddToHistory : item => dispatch(addToHistory(item))
+    ButtonAddToHistory : itemId => dispatch(addToHistory(itemId))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Items)

@@ -1,5 +1,4 @@
 export const LOAD_CONFIG = 'LOAD_CONFIG'
-export const ADD_TO_HISTORY= 'ADD_TO_HISTORY'
 
 export const loadConfig = (config) => {
     return {
@@ -21,10 +20,3 @@ export const handleLoadConfig = () => {
             })
     }
 }
-
-export const addToHistory = (itemId) => ({
-    type: ADD_TO_HISTORY,
-    payload: {
-        itemId
-    }
-})

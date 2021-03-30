@@ -6,6 +6,7 @@ import { handleLoadConfig } from '../actions/shared'
 import Home from '../components/Home'
 import Items from './Items'
 import Infos from './Infos'
+import BackButton from './BackButton'
 
 const Wrapper = styled.div`
   display: flex;
@@ -38,10 +39,6 @@ const ChoiceButton = styled.button`
   margin: 5px;
 `
 
-const Button = styled.button`
-  width: 10%;
-  margin: 2%;
-`
 
 const App = ({loadConfig, isHome}) => {
   React.useEffect(() => {loadConfig()}, [loadConfig])
@@ -53,10 +50,11 @@ const App = ({loadConfig, isHome}) => {
       <h1>Produktfinder</h1>
       { isHome ? <Home/>
         : 
-        <div>
+        <Wrapper>
           <Infos/>
           <Items/>
-        </div>
+          <BackButton/>
+        </Wrapper>
       }
     </Wrapper> 
   )
