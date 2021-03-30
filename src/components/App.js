@@ -6,6 +6,8 @@ import { handleLoadConfig } from '../actions/shared'
 
 import Home from '../components/Home'
 import Items from './Items'
+import Infos from './Infos'
+
 const Wrapper = styled.div`
   display: flex;
   flex: 1;
@@ -108,7 +110,11 @@ const App = ({loadConfig, isHome}) => {
     <Wrapper>
       <h1>Produktfinder</h1>
       { isHome ? <Home/>
-        : <Items/>
+        : 
+        <div>
+          <Infos/>
+          <Items/>
+        </div>
       }
       <BreadCrumbWrapper>
         {        
