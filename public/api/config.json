@@ -27,42 +27,135 @@
                 },
                 "1": {
                     "id": 1,
-                    "label": "Behandelt",
-                    "question": "Mit was ist das Holz behandelt?",
+                    "label": "Mit Öl, Lasur oder Farbe behandelt",
+                    "question": "In welchem Zustand ist der Anstrich? ",
                     "children": {
-                        "0": {
+                        "0": {            
                             "id": 0,
-                            "label": "Öl",
+                            "label": "Intakter Altanstrich",
                             "question": "",
                             "children": {
                                 "0": {            
                                     "id": 0,
-                                    "label": "",
-                                    "question": "",
-                                    "children": null
+                                    "label": "Info",
+                                    "question": "Bitte zunächst die Oberfläche säubern",
+                                    "children": {            
+                                        "0": {
+                                            "id": 0,
+                                            "label": "Oberfläche gesäubert",
+                                            "question": "Woraus besteht der Altanstrich?",
+                                            "children": {
+                                                "0": {            
+                                                    "id": 0,
+                                                    "label": "Öl",
+                                                    "question": "Um welche Art von Öl handelt es sich?",
+                                                    "children": {
+                                                        "0": {            
+                                                            "id": 0,
+                                                            "label": "Trocknendes / Aushärtendes Öl?",
+                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "children": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "label": "Lasur",
+                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                    "children": null
+                                                                },
+                                                                "1": {
+                                                                    "id": 1,
+                                                                    "label": "Farbe",
+                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "children": null
+                                                                }
+                                                            } 
+                                                        },
+                                                        "1": {            
+                                                            "id": 1,
+                                                            "label": "Rohes / nicht-trocknendes Öl",
+                                                            "question": "Hier eignen sich nur folgende Produkte: ",
+                                                            "children": {
+                                                                "0": {            
+                                                                    "id": 0,
+                                                                    "label": "Reine Leinölfarbe von Allbäck",
+                                                                    "question": null,
+                                                                    "children": null
+                                                                },
+                                                                "1": {            
+                                                                    "id": 1,
+                                                                    "label": "Nadelholzteer",
+                                                                    "question": null,
+                                                                    "children": null
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "1": {            
+                                                    "id": 1,
+                                                    "label": "Lasur",
+                                                    "question": "Welche Bindemittel waren in der Lasur?",
+                                                    "children": {
+                                                        "0": {
+                                                            "id": 0,
+                                                            "label": "Test mit Brennspiritus",
+                                                            "question": "Führen Sie den Test wie folgt aus:",
+                                                            "children": {
+                                                                "0": {            
+                                                                    "id": 0,
+                                                                    "label": "Ergebnis des Tests",
+                                                                    "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
+                                                                    "children": {
+                                                                        "0": {
+                                                                            "id": 0,
+                                                                            "label": "Lasur",
+                                                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                            "children": null
+                                                                        },
+                                                                        "1": {
+                                                                            "id": 1,
+                                                                            "label": "Farbe",
+                                                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                            "children": null
+                                                                        }
+                                                                    } 
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "2": {           
+                                                    "id": 2,
+                                                    "label": "Farbe",
+                                                    "question": "Welche Bindemittel waren in der Farbe?",
+                                                    "children": {
+                                                        "0": {            
+                                                            "id": 0,
+                                                            "label": "Test mit Schleifpapier",
+                                                            "question": "Wir empfehlen folgende Produkte: ",
+                                                            "children": null
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         },
                         "1": {
                             "id": 1,
-                            "label": "Lasur",
-                            "question": "In welchem Zustand ist der Anstrich?",
+                            "label": "Verwitterte Lasur",
+                            "question": "Verwitterte Lasur bitte erst abschleifen",
                             "children": {
-                                "0": {            
+                                "0": {
                                     "id": 0,
-                                    "label": "Intakter Anstrich",
-                                    "question": "",
-                                    "children": null
-                                },
-                                "1": {
-                                    "id": 1,
-                                    "label": "Verwitterte Lasur",
-                                    "question": "",
+                                    "label": "Abgeschliffen",
+                                    "question": "Intakte Lasur bitte erst waschen",
                                     "children": {
-                                        "0": {
+                                        "0": {            
                                             "id": 0,
-                                            "label": "Info",
-                                            "question": "Verwitterte Lasur bitte erst abschleifen",
+                                            "label": "Lasur gewaschen",
+                                            "question": "Weiter zum Bindemitteltest",
                                             "children": {
                                                 "0": {
                                                     "id": 0,
@@ -72,13 +165,26 @@
                                                         "0": {
                                                             "id": 0,
                                                             "label": "Test mit Brennspiritus",
-                                                            "question": "",
+                                                            "question": "Führen Sie den Test wie folgt aus:",
                                                             "children": {
                                                                 "0": {            
                                                                     "id": 0,
-                                                                    "label": "",
-                                                                    "question": "",
-                                                                    "children": null
+                                                                    "label": "Ergebnis des Tests",
+                                                                    "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
+                                                                    "children": {
+                                                                        "0": {
+                                                                            "id": 0,
+                                                                            "label": "Lasur",
+                                                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                            "children": null
+                                                                        },
+                                                                        "1": {
+                                                                            "id": 1,
+                                                                            "label": "Farbe",
+                                                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                            "children": null
+                                                                        }
+                                                                    } 
                                                                 }
                                                             }
                                                         }
@@ -92,42 +198,29 @@
                         },
                         "2": {
                             "id": 2,
-                            "label": "Farbe",
-                            "question": "",
+                            "label": "Verwitterte Farbe",
+                            "question": null,
                             "children": {
                                 "0": {
                                     "id": 0,
-                                    "label": "Intakter Altanstrich",
-                                    "question": null,
-                                    "children": null
-                                },
-                                "1": {
-                                    "id": 1,
-                                    "label": "Verwitterte Farbe",
-                                    "question": "",
+                                    "label": "Info",
+                                    "question": "Bitte zunächst Anstrich mit Fassadenreiniger waschen",
                                     "children": {
                                         "0": {
                                             "id": 0,
-                                            "label": "Info",
-                                            "question": "Bitte zunächst Anstrich mit Fassadenreiniger waschen",
+                                            "label": "Bindemitteltest der Farbe",
+                                            "question": "Welche Bindemittel waren in der Farbe?",
                                             "children": {
                                                 "0": {
                                                     "id": 0,
-                                                    "label": "Bindemitteltest der Farbe",
-                                                    "question": "Welche Bindemittel waren in der Farbe?",
+                                                    "label": "Test mit Schleifpapier",
+                                                    "question": "",
                                                     "children": {
                                                         "0": {
                                                             "id": 0,
-                                                            "label": "Test mit Schleifpapier",
-                                                            "question": "",
-                                                            "children": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "label": "Produktempfehlungen",
-                                                                    "question": "Basierend auf dem Testergebnis empfehlen wir folgende Produkte:",
-                                                                    "children": null
-                                                                }
-                                                            }
+                                                            "label": "Produktempfehlungen",
+                                                            "question": "Basierend auf dem Testergebnis empfehlen wir folgende Produkte:",
+                                                            "children": null
                                                         }
                                                     }
                                                 }
@@ -139,21 +232,67 @@
                         },
                         "3": {
                             "id": 3,
-                            "label": "Werkseitige Imprägnierung/Grundierung",
-                            "question": "",
+                            "label": "Rissiger / abblätternder Anstrich",
+                            "question": "Bitte zunächst abschleifen",
                             "children": {
                                 "0": {            
                                     "id": 0,
-                                    "label": "",
-                                    "question": "",
-                                    "children": null
+                                    "label": "Abgeschliffen",
+                                    "question": "Was verbleibt?",
+                                    "children": {
+                                        "0": {           
+                                            "id": 0,
+                                            "label": "Alles abgeschliffen",
+                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "children": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "label": "Lasur",
+                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                    "children": null
+                                                },
+                                                "1": {
+                                                    "id": 1,
+                                                    "label": "Farbe",
+                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                    "children": null
+                                                }
+                                            } 
+                                        },
+                                        "1": {            
+                                            "id": 1,
+                                            "label": "Intakte Farbe",
+                                            "question": "Welche Bindemittel waren in der Farbe?",
+                                            "children": {
+                                                "0": {            
+                                                    "id": 0,
+                                                    "label": "Test mit Schleifpapier",
+                                                    "question": "Hier eignen sich nur folgende Produkte: ",
+                                                    "children": null
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
                     }
                 },
-                "2": {
+                "2": {            
                     "id": 2,
+                    "label": "Mit werkseitiger Imprägnierung / Grundierung behandelt",
+                    "question": "Was für eine Art von Imprägnierung oder Grundierung liegt vor?",
+                    "children": {
+                        "0": {            
+                            "id": 0,
+                            "label": "Info",
+                            "question": "",
+                            "children": null
+                        }
+                    }
+                },
+                "3": {
+                    "id": 3,
                     "label": "Ich weiß nicht",
                     "question": "Auf der Infoseite finden Sie Informationen über diese Anstriche",
                     "children": {

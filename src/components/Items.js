@@ -17,13 +17,12 @@ const ChoiceButton = styled.button`
 const Items = ({childrenItems, ButtonAddToHistory}) => {
     return (
         <ChoiceWrapper>
-          { childrenItems ?
+          { childrenItems &&
             Object.keys(childrenItems).map(key => (
               <div key={key}>
                 <ChoiceButton onClick={() => ButtonAddToHistory(key)}>{childrenItems[key].label}</ChoiceButton>
               </div>
-            ))  
-            : <p>Wir empfehlen Ihnen folgende Produkte:</p>  
+            ))
           }
       </ChoiceWrapper>
     )

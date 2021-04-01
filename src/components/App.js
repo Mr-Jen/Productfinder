@@ -16,31 +16,6 @@ const Wrapper = styled.div`
   align-items: center;
 `
 
-const BreadCrumbWrapper = styled.div`
-  display: flex:
-`
-
-const BreadCrumb = styled.button`
-  padding: 0;
-  border: none;
-  background: none;
-  color: blue;
-  cursor: pointer;
-  margin: 3px;
-`
-
-const ChoiceWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-`
-
-const ChoiceButton = styled.button`
-  padding: 5px;
-  margin: 5px;
-`
-
-
 const App = ({loadConfig, isHome}) => {
   React.useEffect(() => {loadConfig()}, [loadConfig])
 

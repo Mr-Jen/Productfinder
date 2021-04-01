@@ -1,12 +1,56 @@
 {
+    "0": {            
+        "id": 0,
+        "label": "",
+        "question": "",
+        "children": null
+    }
+}
+
+"1": {            
+    "id": 1,
+    "label": "Intakte Farbe",
+    "question": "Welche Bindemittel waren in der Farbe?",
+    "children": {
+        "0": {            
+            "id": 0,
+            "label": "Test mit Schleifpapier",
+            "question": "",
+            "children": null
+        }
+    }
+}
+
+"0": {           
     "id": 0,
     "label": "",
-    "question": "",
-    "children": [
-        {            
+    "question": "Welche Bindemittel waren in der Farbe?",
+    "children": {
+        "0": {            
             "id": 0,
-            "label": "",
-            "question": ""
+            "label": "Test mit Brennspiritus",
+            "question": "",
+            "children": null
         }
-    ]
+    }
+},
+
+"0": {           
+    "id": 0,
+    "label": "Lasur / Farbe",
+    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+    "children": {
+        "0": {
+            "id": 0,
+            "label": "Lasur",
+            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+            "children": null
+        },
+        "1": {
+            "id": 1,
+            "label": "Farbe",
+            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+            "children": null
+        }
+    } 
 }
