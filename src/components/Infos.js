@@ -1,12 +1,19 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
 
 const Infos = ({latestItem}) => {
     return (
-        <div>
-            <h3>{latestItem.label}</h3>
-            <h5>{latestItem.question}</h5>
-        </div>
+        <Wrapper>
+            <h3>{latestItem?.label}</h3>
+            <h5>{latestItem?.question}</h5>
+        </Wrapper>
     )
 }
 

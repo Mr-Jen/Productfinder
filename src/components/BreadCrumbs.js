@@ -28,7 +28,7 @@ const BreadCrumbs = ({handleNavigationChange, breadCrumbs}) => {
                         onClick={() => handleNavigationChange(index+1)} key={index}
                         lastCrumb={index + 1 === breadCrumbs.length}
                     >
-                        {`${crumb} /`}
+                        {`${crumb} --> `}
                     </BreadCrumb>
                 ))
             }

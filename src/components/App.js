@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
+import { Switch, Route } from 'react-router-dom'
+
 import { handleLoadConfig } from '../actions/shared'
 import { removeFromHistory } from '../actions/history'
 
@@ -9,12 +11,14 @@ import Items from './Items'
 import Infos from './Infos'
 import BackButton from './BackButton'
 import BreadCrumbs from './BreadCrumbs'
+import NavigateButton from './NavigateButton'
 
 const Wrapper = styled.div`
   display: flex;
-  flex: 1;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+  margin: auto;
 `
 
 const Title = styled.button`
@@ -27,6 +31,18 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90vw;
+`
+
+const HeaderWrapper = styled.div`
+  display: flex;
+  width: 100%;
+`
+
+const BreadCrumbsWrapper = styled.div`
+  display: flex;
+  align-self: center;
+  margin: auto
 `
 
 const App = ({loadConfig, handleNavigationChange, isHome}) => {
@@ -39,7 +55,25 @@ const App = ({loadConfig, handleNavigationChange, isHome}) => {
       <Title onClick={() => handleNavigationChange(0)}>
         <h1>Produktfinder</h1>
       </Title>
-      { isHome ? <Home/>
+      <Switch>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route exact path="/fragen-und-antworten">
+          <ContentWrapper>
+            <HeaderWrapper>
+              <NavigateButton location={"/"}/>
+              <BreadCrumbsWrapper>
+                <BreadCrumbs/>
+              </BreadCrumbsWrapper>
+            </HeaderWrapper>
+            <Infos/>
+            <Items/>
+            {!isHome && < BackButton/>}
+          </ContentWrapper>
+        </Route>
+      </Switch>
+      {/* isHome ? <Home/>
         : 
         <ContentWrapper>
           <BreadCrumbs/>
@@ -47,7 +81,7 @@ const App = ({loadConfig, handleNavigationChange, isHome}) => {
           <Items/>
           <BackButton/>
         </ContentWrapper>
-      }
+      */}
     </Wrapper> 
   )
 }
