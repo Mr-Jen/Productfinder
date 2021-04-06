@@ -5,32 +5,35 @@ import { addToHistory } from '../actions/history'
 
 const ChoiceWrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
 `
 
 const ChoiceButton = styled.button`
   padding: 5px;
   margin: 5px;
+  border-radius: 5px;
+  background-color: yellow;
 `
 
 const Items = ({childrenItems, ButtonAddToHistory}) => {
-    return (
-        <ChoiceWrapper>
-          { childrenItems &&
-            Object.keys(childrenItems).forEach(key => (
-              <div key={key}>
-                <ChoiceButton onClick={() => ButtonAddToHistory(key)}>{childrenItems[key].label}</ChoiceButton>
-              </div>
-            ))
-          }
-      </ChoiceWrapper>
-    )
+  return (
+      <ChoiceWrapper>
+        { childrenItems &&
+          Object.keys(childrenItems).map(key => (
+            <div key={key}>
+              <ChoiceButton onClick={() => ButtonAddToHistory(key)}>{childrenItems[key].label}</ChoiceButton>
+            </div>
+          ))
+        }
+    </ChoiceWrapper>
+  )
 }
 
 const mapStateToProps = ({decisions, history}) => {
   let latestItem = decisions
-  history.forEach (itemId => {
+  history.forEach(itemId => {
     latestItem = latestItem[itemId].children
   })
 

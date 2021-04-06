@@ -21,7 +21,12 @@ const Title = styled.button`
   padding: 0;
   border: none;
   background: none;
+`
 
+const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const App = ({loadConfig, handleNavigationChange, isHome}) => {
@@ -36,12 +41,12 @@ const App = ({loadConfig, handleNavigationChange, isHome}) => {
       </Title>
       { isHome ? <Home/>
         : 
-        <Wrapper>
+        <ContentWrapper>
           <BreadCrumbs/>
           <Infos/>
           <Items/>
           <BackButton/>
-        </Wrapper>
+        </ContentWrapper>
       }
     </Wrapper> 
   )

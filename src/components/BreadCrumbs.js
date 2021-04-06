@@ -11,18 +11,26 @@ const BreadCrumb = styled.button`
   padding: 0;
   border: none;
   background: none;
-  color: blue;
+  color: ${props => props.lastCrumb ? 'blue' : 'black'};
+  font-size: ${props => props.lastCrumb ? '15px' : '14px'};
+  font-weight: ${props => props.lastCrumb && 'bold'};
   cursor: pointer;
   margin: 3px;
+
 `
 
 const BreadCrumbs = ({handleNavigationChange, breadCrumbs}) => {
     return (
         <BreadCrumbWrapper>
             {       
-                breadCrumbs.forEach((crumb, index) => {
-                    return <BreadCrumb onClick={() => handleNavigationChange(index+1)} key={index}>{`${crumb}   -->`}</BreadCrumb>
-                })
+                breadCrumbs.map((crumb, index) => (
+                    <BreadCrumb 
+                        onClick={() => handleNavigationChange(index+1)} key={index}
+                        lastCrumb={index + 1 === breadCrumbs.length}
+                    >
+                        {`${crumb} /`}
+                    </BreadCrumb>
+                ))
             }
         </BreadCrumbWrapper>
     )
