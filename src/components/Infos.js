@@ -13,7 +13,7 @@ const Infos = ({latestItem}) => {
 const mapStateToProps = ({decisions, history}) => {
     let latestItem = decisions
     let childrenItems = null
-    history.map (itemId => {
+    history.forEach (itemId => {
         latestItem = childrenItems ? childrenItems[itemId] : latestItem[itemId]
         childrenItems = latestItem.children
     })
@@ -23,8 +23,4 @@ const mapStateToProps = ({decisions, history}) => {
     }
 }
 
-const mapDispatchToProps = {
-    
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Infos)
+export default connect(mapStateToProps, null)(Infos)

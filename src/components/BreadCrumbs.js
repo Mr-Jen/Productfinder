@@ -20,7 +20,7 @@ const BreadCrumbs = ({handleNavigationChange, breadCrumbs}) => {
     return (
         <BreadCrumbWrapper>
             {       
-                breadCrumbs.map((crumb, index) => {
+                breadCrumbs.forEach((crumb, index) => {
                     return <BreadCrumb onClick={() => handleNavigationChange(index+1)} key={index}>{`${crumb}   -->`}</BreadCrumb>
                 })
             }
@@ -32,7 +32,7 @@ const mapStateToProps = ({decisions, history}) => {
     let latestItem = decisions
     let childrenItems = null
     let breadCrumbs = []
-    history.map (itemId => {
+    history.forEach (itemId => {
         latestItem = childrenItems ? childrenItems[itemId] : latestItem[itemId]
         breadCrumbs.push(latestItem.label)
         childrenItems = latestItem.children

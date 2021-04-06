@@ -18,7 +18,7 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
     return (
         <ChoiceWrapper>
           { childrenItems &&
-            Object.keys(childrenItems).map(key => (
+            Object.keys(childrenItems).forEach(key => (
               <div key={key}>
                 <ChoiceButton onClick={() => ButtonAddToHistory(key)}>{childrenItems[key].label}</ChoiceButton>
               </div>
@@ -30,7 +30,7 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
 
 const mapStateToProps = ({decisions, history}) => {
   let latestItem = decisions
-  history.map (itemId => {
+  history.forEach (itemId => {
     latestItem = latestItem[itemId].children
   })
 

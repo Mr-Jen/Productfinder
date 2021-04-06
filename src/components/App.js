@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
 import { handleLoadConfig } from '../actions/shared'
+import { removeFromHistory } from '../actions/history'
 
 import Home from '../components/Home'
 import Items from './Items'
@@ -16,14 +17,23 @@ const Wrapper = styled.div`
   align-items: center;
 `
 
-const App = ({loadConfig, isHome}) => {
+const Title = styled.button`
+  padding: 0;
+  border: none;
+  background: none;
+
+`
+
+const App = ({loadConfig, handleNavigationChange, isHome}) => {
   React.useEffect(() => {loadConfig()}, [loadConfig])
 
   console.log("IS HOME: ", isHome)
 
   return (
     <Wrapper>
-      <h1>Produktfinder</h1>
+      <Title onClick={() => handleNavigationChange(0)}>
+        <h1>Produktfinder</h1>
+      </Title>
       { isHome ? <Home/>
         : 
         <Wrapper>
@@ -38,8 +48,10 @@ const App = ({loadConfig, isHome}) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  loadConfig: () => dispatch(handleLoadConfig())
+  loadConfig: () => dispatch(handleLoadConfig()),
+  handleNavigationChange : index => dispatch(removeFromHistory(index))
 })
+
 
 const mapStateToProps = ({history}) => {
   return {
