@@ -2,6 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
 
+import NavigateButton from './NavigateButton'
+
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -13,6 +15,13 @@ const Infos = ({latestItem}) => {
         <Wrapper>
             <h3>{latestItem?.label}</h3>
             <h5>{latestItem?.question}</h5>
+            {(latestItem && latestItem.children === null) && 
+                <NavigateButton 
+                    location={"/products"} 
+                    text={"Weiter zur Produktempfehlung"}
+                    direction={"right"}
+                />
+            }
         </Wrapper>
     )
 }

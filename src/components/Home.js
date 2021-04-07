@@ -27,7 +27,7 @@ const linkStyling = {
     borderRadius: '10px'
 }
 
-const Home = ({addToHistory}) => {
+const Home = () => {
     return (
         <HomeWrapper>
             <h2>Der Produktfinder hilft Ihnen bei der Entscheidung für das Produkt, dass zu

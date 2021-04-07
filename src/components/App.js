@@ -12,6 +12,7 @@ import Infos from './Infos'
 import BackButton from './BackButton'
 import BreadCrumbs from './BreadCrumbs'
 import NavigateButton from './NavigateButton'
+import Products from './Products'
 
 const Wrapper = styled.div`
   display: flex;
@@ -62,7 +63,7 @@ const App = ({loadConfig, handleNavigationChange, isHome}) => {
         <Route exact path="/fragen-und-antworten">
           <ContentWrapper>
             <HeaderWrapper>
-              <NavigateButton location={"/"}/>
+              <NavigateButton location={"/"} text={"Zurück"} direction={"left"}/>
               <BreadCrumbsWrapper>
                 <BreadCrumbs/>
               </BreadCrumbsWrapper>
@@ -71,6 +72,12 @@ const App = ({loadConfig, handleNavigationChange, isHome}) => {
             <Items/>
             {!isHome && < BackButton/>}
           </ContentWrapper>
+        </Route>
+        <Route exact path="/products">
+          <HeaderWrapper>
+              <NavigateButton location={"/fragen-und-antworten"} text={"Zurück"} direction={"left"}/>
+          </HeaderWrapper>
+          <Products/>
         </Route>
       </Switch>
       {/* isHome ? <Home/>
