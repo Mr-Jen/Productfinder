@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-import { addToHistory } from '../actions/history'
+import { addToHistory } from '../../../actions/history'
 
 const HomeWrapper = styled.div`
     display: flex;
@@ -27,7 +27,7 @@ const linkStyling = {
     borderRadius: '10px'
 }
 
-const Home = () => {
+const Home = ({addToHistory}) => {
     return (
         <HomeWrapper>
             <h2>Der Produktfinder hilft Ihnen bei der Entscheidung für das Produkt, dass zu
@@ -39,6 +39,7 @@ const Home = () => {
             <Link 
                 to="/fragen-und-antworten"
                 style={linkStyling}
+                onClick={() => addToHistory("0")}
             >
                 <p style={{"marginRight": "20px", "color": "black", "fontWeight": "bold"}}>Loslegen</p>
                 <img 
@@ -47,7 +48,6 @@ const Home = () => {
                     alt="BackButton"
                 />
             </Link>
-            {/*<Button onClick={() => addToHistory("0")}>Loslegen --> </Button>*/}
         </HomeWrapper>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
-import { addToHistory } from '../actions/history'
+import { addToHistory } from '../../../actions/history'
 
 const ChoiceWrapper = styled.div`
   display: flex;

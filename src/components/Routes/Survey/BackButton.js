@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
 
-import { removeFromHistory } from '../actions/history'
+import { removeFromHistory } from '../../../actions/history'
 
 const Button = styled.button`
   width: 80px;

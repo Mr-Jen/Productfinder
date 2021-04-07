@@ -22,6 +22,7 @@ const NavigateButton = (props) => {
         <Link 
             to={props.location}
             style={linkStyle}
+            onClick={props.onClick && props.onClick}
         >
             <Icon 
                 src={props.direction === "left" ? "assets/left.png" : "assets/right.png"}

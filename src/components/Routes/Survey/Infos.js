@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
 
-import NavigateButton from './NavigateButton'
+import NavigateButton from '../../Shared/NavigateButton'
 
 const Wrapper = styled.div`
     display: flex;
@@ -30,8 +30,8 @@ const mapStateToProps = ({decisions, history}) => {
     let latestItem = decisions
     let childrenItems = null
     history.forEach (itemId => {
-        latestItem = childrenItems ? childrenItems[itemId] : latestItem[itemId]
-        childrenItems = latestItem.children
+        latestItem = childrenItems ? childrenItems[itemId] : latestItem && latestItem[itemId]
+        childrenItems = latestItem?.children
     })
   
     return {
