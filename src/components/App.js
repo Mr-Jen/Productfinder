@@ -20,6 +20,11 @@ const Wrapper = styled.div`
   margin: auto;
 `
 
+const HeaderWrap = styled.div`
+  display: flex;
+  align-self: flex-start;
+`
+
 const HeaderWrapper = styled.div`
   display: flex;
   width: 100%;
@@ -33,7 +38,9 @@ const App = ({loadConfig, isHome, handleNavigationChange}) => {
 
   return (
     <Wrapper>
-      <Header/>
+      <HeaderWrap>
+        <Header/>
+      </HeaderWrap>
       <Switch>
         <Route exact path="/">
           <Home/>
