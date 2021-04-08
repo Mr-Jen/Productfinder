@@ -8,6 +8,10 @@ import { addToHistory } from '../../../actions/history'
 const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
+    @media (max-width: 625px) {
+        flex-direction: column;
+        align-items: center;
+    }
     justify-content: center;
     margin-top: 10vh;
 `
@@ -17,14 +21,20 @@ const HomeWrapper = styled.div`
     flex-direction: column;
     align-items: flex-start;
     width: 40%;
+    @media (max-width: 625px) {
+        width: 60%;
+    }
 `
 
 const HomeIcon = styled.img`
     display: flex;
     align-self: center;
-    height: 200px;
-    width: 200px;
+    width: 30%;
+    max-width: 200px;
     margin-right: 20%;
+    @media (max-width: 625px) {
+        margin-right: 0;
+    }
 `
 const TitleText = styled.h2`
     line-height: 1.4;
@@ -42,7 +52,6 @@ const linkStyling = {
     textDecoration: 'none',
     height: '40px',
     width: '200px',
-    display: 'flex',
     alignItems: 'center',
     backgroundColor: '#ffe60a',
     paddingLeft: '20px',
