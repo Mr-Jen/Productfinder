@@ -67,7 +67,7 @@ const Home = ({addToHistory}) => {
                 alt="HomeIcon"
             />
             <HomeWrapper>
-                <TitleText>Der Produktfinder hilft Ihnen bei der Entscheidung für das Produkt, dass zu
+                <TitleText>Der <span style={{"fontWeight": "bold", "fontSize": "26px", "letterSpacing": "1px"}}>Produktfinder</span> hilft Ihnen bei der Entscheidung für das Produkt, dass zu
                     Ihrem Projekt am besten passt.
                 </TitleText>
                 <InfoText>Durch das ausgeklügelte Fragen-Auswahl System können Sie die Anzahl an passenden Produkten 

@@ -31,7 +31,7 @@ const HeaderWrapper = styled.div`
 `
 
 
-const App = ({loadConfig, isHome, handleNavigationChange}) => {
+const App = ({loadConfig, isHome}) => {
   React.useEffect(() => {loadConfig()}, [loadConfig])
 
   console.log("IS HOME: ", isHome)
@@ -64,8 +64,7 @@ const App = ({loadConfig, isHome, handleNavigationChange}) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  loadConfig: () => dispatch(handleLoadConfig()),
-  handleNavigationChange : index => dispatch(removeFromHistory(index))
+  loadConfig: () => dispatch(handleLoadConfig())
 })
 
 

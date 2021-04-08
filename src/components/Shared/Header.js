@@ -16,7 +16,7 @@ function Header({handleNavigationChange}) {
     return (
         <div>
             <Title onClick={() => handleNavigationChange(0)}>
-                <h1>Produktfinder</h1>
+                <h1 style={{"letterSpacing": "3px"}}>Produktfinder</h1>
             </Title>
         </div>
     )
