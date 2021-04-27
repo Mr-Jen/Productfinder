@@ -36,7 +36,7 @@ const Product = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 500px;
+  height: 550px;
   width: 240px;
   border: 1px solid black;
   padding: 10px;
@@ -50,20 +50,31 @@ const ProductTitle = styled.h4`
 const InputWrapper = styled.div`
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 100%;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
   justify-content: space-around;
 `
 
-const CheckBoxesWrapper = styled.div`
+const CheckBoxesSurfaceWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  width: 15vw;
+  margin: 10px;
+`
+
+const CheckBoxesApplicationWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
   margin: 10px;
 `
 
 const CheckBoxesContentWrapper = styled.div`
   display: flex;
   justify-content: space-around;
+  outline: 1px solid grey;
+  padding: 5;
 `
 
 const CheckBoxWrapper = styled.div`
@@ -91,6 +102,7 @@ const Products = () => {
   const [initData, setInitData] = useState(null);
   const [inputArea, setInputArea] = useState("");
   const [inputSurface, setInputSurface] = useState([false, false, false, false])
+  const [inputApplication, setInputApplication] = useState([false, false, false, false, false, false])
   const [inputGlossLevel, setInputGlossLevel] = useState([0, 100])
   const [inputLifetime, setInputLifetime] = useState([0, 25])
 
@@ -107,10 +119,16 @@ const Products = () => {
     setInputArea(e.target.value)
   }
 
-  const onChangeCheckBox = (index) => {
+  const onChangeSurfaceCheckBox = (index) => {
     const recentSurface = [...inputSurface]
     recentSurface[index] = recentSurface[index] ? false : true
     setInputSurface(recentSurface)
+  }
+
+  const onChangeApplicationCheckBox = (index) => {
+      const recentApplication = [...inputApplication]
+      recentApplication[index] = recentApplication[index] ? false : true
+      setInputApplication(recentApplication);
   }
 
   const calculateVolume = (efficiency) => {
@@ -132,12 +150,17 @@ const Products = () => {
 
   const { products, categories, surfaces, applications, binders, solubilities } = {...data}
 
-  let res = inputSurface
+  let input_res = inputSurface
+    .map((elem, key) => elem === true ? key : null)
+    .filter(elem => elem !== null)
+
+  let application_res = inputApplication
     .map((elem, key) => elem === true ? key : null)
     .filter(elem => elem !== null)
 
   let filteredObjectKeys = initData && Object.keys(products)
-      .filter(objectKey => res.every(elem => products[objectKey]["surface"].includes(elem)))
+      .filter(objectKey => input_res.every(elem => products[objectKey]["surface"].includes(elem)))
+      .filter(objectKey => application_res.every(elem => products[objectKey]["application"].includes(elem)))
       .filter(key => products[key]["gloss_level"][0] >= inputGlossLevel[0] && products[key]["gloss_level"][1] <= inputGlossLevel[1])
       .filter(key => products[key]["lifetime"][0] >= inputLifetime[0] && products[key]["lifetime"][1] <= inputLifetime[1])
 
@@ -152,14 +175,14 @@ const Products = () => {
           type="number"
           min="0"
         />
-        <CheckBoxesWrapper>
+        <CheckBoxesSurfaceWrapper>
           <h3 style={{textAlign: 'center'}}>Untergrund</h3>
           <CheckBoxesContentWrapper>
             <CheckBoxWrapper>
               <p>Holz</p>
               <Input
                 type="checkbox"
-                onChange={() => onChangeCheckBox(0)}
+                onChange={() => onChangeSurfaceCheckBox(0)}
                 checked={inputSurface[0]}
               />
             </CheckBoxWrapper>
@@ -167,7 +190,7 @@ const Products = () => {
               <p>Metall</p>
               <Input
                 type="checkbox"
-                onChange={() => onChangeCheckBox(1)}
+                onChange={() => onChangeSurfaceCheckBox(1)}
                 checked={inputSurface[1]}
               />
             </CheckBoxWrapper>
@@ -175,7 +198,7 @@ const Products = () => {
               <p>Putz</p>
               <Input
                 type="checkbox"
-                onChange={() => onChangeCheckBox(2)}
+                onChange={() => onChangeSurfaceCheckBox(2)}
                 checked={inputSurface[2]}
               />
             </CheckBoxWrapper>
@@ -183,65 +206,65 @@ const Products = () => {
               <p>Estrich</p>
               <Input
                 type="checkbox"
-                onChange={() => onChangeCheckBox(3)}
+                onChange={() => onChangeSurfaceCheckBox(3)}
                 checked={inputSurface[3]}
               />
             </CheckBoxWrapper>
           </CheckBoxesContentWrapper>
-        </CheckBoxesWrapper>
-        <CheckBoxesWrapper>
+        </CheckBoxesSurfaceWrapper>
+        <CheckBoxesApplicationWrapper>
           <h3 style={{textAlign: 'center'}}>Verwendung</h3>
           <CheckBoxesContentWrapper>
             <CheckBoxWrapper>
               <p>Fassade</p>
               <Input
                 type="checkbox"
-                onChange={() => onChangeCheckBox(0)}
-                checked={inputSurface[0]}
+                onChange={() => onChangeApplicationCheckBox(0)}
+                checked={inputApplication[0]}
               />
             </CheckBoxWrapper>
             <CheckBoxWrapper>
               <p>Boden / Treppe</p>
               <Input
                 type="checkbox"
-                onChange={() => onChangeCheckBox(1)}
-                checked={inputSurface[1]}
+                onChange={() => onChangeApplicationCheckBox(1)}
+                checked={inputApplication[1]}
               />
             </CheckBoxWrapper>
             <CheckBoxWrapper>
               <p>Fenster / Tür</p>
               <Input
                 type="checkbox"
-                onChange={() => onChangeCheckBox(2)}
-                checked={inputSurface[2]}
+                onChange={() => onChangeApplicationCheckBox(2)}
+                checked={inputApplication[2]}
               />
             </CheckBoxWrapper>
             <CheckBoxWrapper>
               <p>Zaun</p>
               <Input
                 type="checkbox"
-                onChange={() => onChangeCheckBox(3)}
-                checked={inputSurface[3]}
+                onChange={() => onChangeApplicationCheckBox(3)}
+                checked={inputApplication[3]}
               />
             </CheckBoxWrapper>
             <CheckBoxWrapper>
               <p>Handlauf</p>
               <Input
                 type="checkbox"
-                onChange={() => onChangeCheckBox(3)}
-                checked={inputSurface[3]}
+                onChange={() => onChangeApplicationCheckBox(4)}
+                checked={inputApplication[4]}
               />
             </CheckBoxWrapper>
             <CheckBoxWrapper>
               <p>Dach</p>
               <Input
                 type="checkbox"
-                onChange={() => onChangeCheckBox(3)}
-                checked={inputSurface[3]}
+                onChange={() => onChangeApplicationCheckBox(5)}
+                checked={inputApplication[5]}
               />
             </CheckBoxWrapper>
           </CheckBoxesContentWrapper>
-        </CheckBoxesWrapper>
+        </CheckBoxesApplicationWrapper>
         <SliderWrapper>
           <SliderContent>
             <h4>Glanzgrad</h4>
