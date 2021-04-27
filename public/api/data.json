@@ -1,0 +1,434 @@
+{
+    "products": {
+        "0": {
+            "id": 0,
+            "name": "Silikonalkydfarbe ODEN",
+            "category": 0,
+            "surface": [0,1],
+            "application": [0,2,3,4,5],
+            "efficiency": {
+                "smooth_surface": [10,15],
+                "rough_surface": [5,8]
+            },
+            "lifetime": [15,20],
+            "gloss_level": [30,40],
+            "binder": 0,
+            "solubility": 0
+        },
+        "1": {
+            "id": 1,
+            "name": "Emulsionsfarbe SOLID V",
+            "category": 0,
+            "surface": [0],
+            "application": [0],
+            "efficiency": {
+                "smooth_surface": [9,11],
+                "rough_surface": [6,9]
+            },
+            "lifetime": [10,12],
+            "gloss_level": [30,40],
+            "binder": 1,
+            "solubility": 1
+        },
+        "2": {
+            "id": 2,
+            "name": "Holzfassadenfarbe HEIMDALL",
+            "category": 0,
+            "surface": [0],
+            "application": [0],
+            "efficiency": {
+                "smooth_surface": [7,9],
+                "rough_surface": [5,7]
+            },
+            "lifetime": [6,8],
+            "gloss_level": [0,10],
+            "binder": 0,
+            "solubility": 1
+        },
+        "3": {
+            "id": 3,
+            "name": "Emulsionsfarbe TITAN V",
+            "category": 0,
+            "surface": [0],
+            "application": [0,2,3],
+            "efficiency": {
+                "smooth_surface": [8,10],
+                "rough_surface": [5,7]
+            },
+            "lifetime": [15,20],
+            "gloss_level": [45,45],
+            "binder": 1,
+            "solubility": 1
+        },
+        "4": {
+            "id": 4,
+            "name": "Industrielle Leinölfarbe OLJEFÄRG",
+            "category": 0,
+            "surface": [0,1],
+            "application": [0,2,3,4],
+            "efficiency": {
+                "smooth_surface": [7,9],
+                "rough_surface": [5,7]
+            },
+            "lifetime": [6,10],
+            "gloss_level": [30,40],
+            "binder": 2,
+            "solubility": 0
+        },
+        "5": {
+            "id": 5,
+            "name": "Acrylat VILLAFÄRG",
+            "category": 0,
+            "surface": [0,1,2],
+            "application": [0,5],
+            "efficiency": {
+                "smooth_surface": [6,8],
+                "rough_surface": [4,6]
+            },
+            "lifetime": [12,15],
+            "gloss_level": [30,40],
+            "binder": 3,
+            "solubility": 1
+        },
+        "6": {
+            "id": 6,
+            "name": "LASOL 9000",
+            "category": 0,
+            "surface": [0],
+            "application": [0],
+            "efficiency": {
+                "smooth_surface": [7,9],
+                "rough_surface": [5,7]
+            },
+            "lifetime": [10,12],
+            "gloss_level": [0,10],
+            "binder": 3,
+            "solubility": 1
+        },
+        "7": {
+            "id": 7,
+            "name": "Nadelholzteer",
+            "category": 0,
+            "surface": [0],
+            "application": [0,3],
+            "efficiency": {
+                "smooth_surface": [3,5],
+                "rough_surface": [2,4]
+            },
+            "lifetime": [4,10],
+            "gloss_level": [0,20],
+            "binder": 5,
+            "solubility": 2
+        },
+        "8": {
+            "id": 0,
+            "name": "Schlammfarbe",
+            "category": 0,
+            "surface": [0],
+            "application": [0],
+            "efficiency": {
+                "smooth_surface": [null],
+                "rough_surface": [3,4]
+            },
+            "lifetime": [4,10],
+            "gloss_level": [0,10],
+            "binder": 6,
+            "solubility": 1
+        },
+        "9": {
+            "id": 9,
+            "name": "Dickschichtlasur OLJETÄCKLASYR",
+            "category": 0,
+            "surface": [0,1],
+            "application": [0,2,3,4],
+            "efficiency": {
+                "smooth_surface": [6,8],
+                "rough_surface": [4,6]
+            },
+            "lifetime": [6,8],
+            "gloss_level": [20,30],
+            "binder": 2,
+            "solubility": 0 
+        },
+        "10": {
+            "id": 10,
+            "name": "Reine Leinölfarbe ALLBÄCK",
+            "category": 0,
+            "surface": [0,1],
+            "application": [0,2,3,4],
+            "efficiency": {
+                "smooth_surface": [15,20],
+                "rough_surface": [10,15]
+            },
+            "lifetime": [15,20],
+            "gloss_level": [20,30],
+            "binder": 3,
+            "solubility": 4
+        },
+        "11": {
+            "id": 11,
+            "name": "Putzfarbe BETOPAINT",
+            "category": 0,
+            "surface": [2],
+            "application": [0],
+            "efficiency": {
+                "smooth_surface": [5,6],
+                "rough_surface": [3,4]
+            },
+            "lifetime": [8,12],
+            "gloss_level": [0,10],
+            "binder": 7,
+            "solubility": 1
+        },
+        "12": {
+            "id": 12,
+            "name": "Fensterfarbe V / Fönsterfärg V",
+            "category": 0,
+            "surface": [0],
+            "application": [2],
+            "efficiency": {
+                "smooth_surface": [6,8],
+                "rough_surface": [4,6]
+            },
+            "lifetime": [6,10],
+            "gloss_level": [30,30],
+            "binder": 1,
+            "solubility": 1
+        },
+        "13": {
+            "id": 13,
+            "name": "Bodenfarbe GOLVFÄRG",
+            "category": 0,
+            "surface": [0,3],
+            "application": [1],
+            "efficiency": {
+                "smooth_surface": [8,12],
+                "rough_surface": [4,8]
+            },
+            "lifetime": [6,10],
+            "gloss_level": [70,80],
+            "binder": 8,
+            "solubility": 0
+        },
+        "14": {
+            "id": 14,
+            "name": "Bootslack/Klarlack",
+            "category": 1,
+            "surface": [0,3],
+            "application": [1,4],
+            "efficiency": {
+                "smooth_surface": [7,10],
+                "rough_surface": [3,6]
+            },
+            "lifetime": [2,4],
+            "gloss_level": [30,30],
+            "binder": 8,
+            "solubility": 0
+        },
+        "15": {
+            "id": 15,
+            "name": "Terrassenlasur / Silikonalkydlasur",
+            "category": 1,
+            "surface": [0],
+            "application": [0,1,2,3,4],
+            "efficiency": {
+                "smooth_surface": [7,12],
+                "rough_surface": [4,7]
+            },
+            "lifetime": [3,6],
+            "gloss_level": [30,30],
+            "binder": 0,
+            "solubility": 0
+        },
+        "16": {
+            "id": 16,
+            "name": "Trälasyr V",
+            "category": 1,
+            "surface": [0],
+            "application": [0,2],
+            "efficiency": {
+                "smooth_surface": [8,12],
+                "rough_surface": [5,8]
+            },
+            "lifetime": [3,5],
+            "gloss_level": [30,30],
+            "binder": 1,
+            "solubility": 1
+        },
+        "17": {
+            "id": 17,
+            "name": "SIOO Holzimprägnierer",
+            "category": 2,
+            "surface": [0],
+            "application": [0,1,2,3,4,5],
+            "efficiency": {
+                "smooth_surface": [8,10],
+                "rough_surface": [5,8]
+            },
+            "lifetime": [8,12],
+            "gloss_level": [0,0],
+            "binder": null,
+            "solubility": 1
+        },
+        "18": {
+            "id": 18,
+            "name": "Farbloses Leinöl",
+            "category": 2,
+            "surface": [0,1],
+            "application": [0,2,3,4],
+            "efficiency": {
+                "smooth_surface": [6,10],
+                "rough_surface": [4,6]
+            },
+            "lifetime": [1,2],
+            "gloss_level": [0,30],
+            "binder": 4,
+            "solubility": 4
+        },
+        "19": {
+            "id": 19,
+            "name": "Chinesisches Holzöl (Tungöl)",
+            "category": 2,
+            "surface": [0],
+            "application": [2,4],
+            "efficiency": {
+                "smooth_surface": [6,10],
+                "rough_surface": [4,6]
+            },
+            "lifetime": [1,2],
+            "gloss_level": [0,20],
+            "binder": 9,
+            "solubility": 4
+        },
+        "20": {
+            "id": 20,
+            "name": "Holzöl 30",
+            "category": 2,
+            "surface": [0],
+            "application": [3,4],
+            "efficiency": {
+                "smooth_surface": [8,12],
+                "rough_surface": [4,8]
+            },
+            "lifetime": [1,2],
+            "gloss_level": [0,10],
+            "binder": 4,
+            "solubility": 1
+        },
+        "21": {
+            "id": 21,
+            "name": "Helles Teeröl LJUS TJÄROLJA",
+            "category": 2,
+            "surface": [0],
+            "application": [0,3],
+            "efficiency": {
+                "smooth_surface": [7,10],
+                "rough_surface": [3,6]
+            },
+            "lifetime": [3,4],
+            "gloss_level": [0,10],
+            "binder": 4,
+            "solubility": 0
+        },
+        "22": {
+            "id": 22,
+            "name": "Schwellenöl SLEPERSOLJA",
+            "category": 2,
+            "surface": [0],
+            "application": [0,3],
+            "efficiency": {
+                "smooth_surface": [6,8],
+                "rough_surface": [4,6]
+            },
+            "lifetime": [4,8],
+            "gloss_level": [0,10],
+            "binder": 10,
+            "solubility": 2
+        },
+        "23": {
+            "id": 23,
+            "name": "Grundieröl GRUNDOLJA",
+            "category": 2,
+            "surface": [0],
+            "application": [0,1,2,3,4,5],
+            "efficiency": {
+                "smooth_surface": [6,8],
+                "rough_surface": [4,6]
+            },
+            "lifetime": ["nur zur Grundierung"],
+            "gloss_level": [0,0],
+            "binder": 9,
+            "solubility": 0
+        },
+        "24": {
+            "id": 24,
+            "name": "Sperr_ und Haftgrund (Trägrund/Utegrund)",
+            "category": 2,
+            "surface": [0],
+            "application": [0,2,3,4,5],
+            "efficiency": {
+                "smooth_surface": [6,8],
+                "rough_surface": [4,6]
+            },
+            "lifetime": [1,2],
+            "gloss_level": [0,10],
+            "binder": 0,
+            "solubility": 5
+        },
+        "25": {
+            "id": 25,
+            "name": "Bootslack/Klarlack",
+            "category": 1,
+            "surface": [0,3],
+            "application": [1,4],
+            "efficiency": {
+                "smooth_surface": [7,10],
+                "rough_surface": [3,6]
+            },
+            "lifetime": [2,4],
+            "gloss_level": [90,90],
+            "binder": 8,
+            "solubility": 0
+        }
+    },
+    "categories": {
+        "0": "Deckende Farben & Nadelholzteer",
+        "1": "Lasuren",
+        "2": "Öle & Grundierer"
+    },
+    "surfaces": {
+        "0": "Holz",
+        "1": "Metall",
+        "2": "Putz",
+        "3": "Estrich"
+    },
+    "applications": {
+        "0": "Fassade",
+        "1": "Boden/Treppe",
+        "2": "Fenster/Tür",
+        "3": "Zaun",
+        "4": "Handlauf",
+        "5": "Dach"
+    },
+    "binders": {
+        "0": "Alkydharz",
+        "1": "Alkyd-Acrylatdispersion",
+        "2": "Alkydharz, Leinöl", 
+        "3": "Acrylat",
+        "4": "Leinöl",
+        "5": "Nadelholzteer",
+        "6": "Leinöl, Mehl",
+        "7": "Styorlacryl",
+        "8": "Uretanalkydharz",
+        "9": "Tungöl, Leinöl",
+        "10": "Nadelholzteer, Bitumen"
+    },
+    "solubilities": {
+        "0": "Terpentinersatz",
+        "1": "Wasser",
+        "2": "Balsamterpentin",
+        "3": "Leinöl",
+        "4": "Terpentin allgemein",
+        "5": "Terpentin/Wasser"
+    }
+}

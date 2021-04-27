@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { Switch, Route } from 'react-router-dom'
 
 import { handleLoadConfig } from '../actions/shared'
-import { removeFromHistory } from '../actions/history'
 
 import Home from './Routes/Home/Home'
 import NavigateButton from './Shared/NavigateButton'

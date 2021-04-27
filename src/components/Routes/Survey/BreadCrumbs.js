@@ -52,7 +52,7 @@ const mapStateToProps = ({decisions, history}) => {
     let breadCrumbs = []
     history.forEach (itemId => {
         latestItem = childrenItems ? childrenItems[itemId] : latestItem[itemId]
-        breadCrumbs.push(latestItem?.label)
+        breadCrumbs.push(latestItem?.breadcrumb ? latestItem.breadcrumb : latestItem?.label)
         childrenItems = latestItem?.children
     })
   

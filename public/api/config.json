@@ -5,11 +5,13 @@
             "id": 0,
             "label": "Holzfassade für Gartenhaus, Wohnhaus oder Carport",
             "question": "Ist es unbehandeltes Holz oder wurde schon ein Anstrich / eine Behandlung vorgenommen?",
+            "breadcrumb": "Holzfassade",
             "children": {
                 "0": {
                     "id": 0,
                     "label": "Unbehandelt / Komplett abgeschliffen",
                     "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
+                    "breadcrumb": "Unbehandelt",
                     "children": {
                         "0": {
                             "id": 0,

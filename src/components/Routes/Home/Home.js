@@ -14,6 +14,7 @@ const Wrapper = styled.div`
     }
     justify-content: center;
     margin-top: 10vh;
+    align-items: center;
 `
 
 const HomeWrapper = styled.div`
@@ -63,7 +64,7 @@ const Home = ({addToHistory}) => {
     return (
         <Wrapper>
             <HomeIcon 
-                src={"assets/Spilled-Bucket-Search.svg"}
+                src={"assets/Brush-Search.svg"}
                 alt="HomeIcon"
             />
             <HomeWrapper>
