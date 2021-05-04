@@ -276,7 +276,7 @@ const Products = () => {
           </SliderContent>
         </SliderWrapper>
       </InputWrapper>
-      { !products ? <p>Loading</p> :
+      { !products ? <p>Loading ...</p> :
         <ProductsWrapper>
           {
             products && filteredObjectKeys
