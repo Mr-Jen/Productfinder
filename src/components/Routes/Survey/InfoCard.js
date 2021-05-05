@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, {keyframes } from 'styled-components'
 
 const Wrapper = styled.div`
     position: fixed;
@@ -17,6 +17,11 @@ const Wrapper = styled.div`
     justify-content: center;
 `
 
+const CardAnimationKeyFrame = keyframes`
+    0% {transform:translate(-100px)}
+    100% {}
+`
+
 const CardWrapper = styled.div`
     display: flex;
     flex-direction: row;
@@ -24,9 +29,11 @@ const CardWrapper = styled.div`
     width: 80%;
     margin: 2% 4% 2% 4%;
 
-    /*border: 5px solid red;*/
-    /*background-color: pink;*/
+
+    /*animation: ${CardAnimationKeyFrame} 3s 2;*/
+    animation-direction: left;
 `
+
 
 const ContentWrapper = styled.div`
     display: flex;
@@ -61,6 +68,10 @@ const ImageWrapper = styled.div`
 const Arrow = styled.img`
     align-self: center;
     cursor: pointer;
+    :hover {
+        transform: translateX(${props => props.side === 0 ? "-10px" : "10px"}) ${props => props.rotate_angle && `rotate(180deg)`};
+    }
+    transform: ${props => props.rotate_angle && `rotate(180deg)`};
 `
 
 const InfoCard = ({ data }) => {
@@ -94,7 +105,13 @@ const InfoCard = ({ data }) => {
 
     return (
         <Wrapper>
-            <Arrow onClick={() => onClickNextCard(0)} hidden={data ? Object.keys(data).length === 1 : true} style={{transform: "rotate(180deg)"}} height="70" src="assets/arrow.svg"/>
+            <Arrow 
+                onClick={() => onClickNextCard(0)} 
+                hidden={data ? Object.keys(data).length === 1 : true} 
+                height="70" src="assets/arrow.svg"
+                side={0}
+                rotate_angle={true}
+            />
             <CardWrapper>
                 <ContentWrapper>
                     <TitleWrapper>
@@ -104,7 +121,12 @@ const InfoCard = ({ data }) => {
                 </ContentWrapper>
                 <ImageWrapper imgSrc={data ? data[infoState]["image"] : default_content["image"]}/>
             </CardWrapper>
-            <Arrow onClick={() => onClickNextCard(1)} hidden={data ? Object.keys(data).length === 1 : true} height="70" src="assets/arrow.svg"/>
+            <Arrow 
+                onClick={() => onClickNextCard(1)} 
+                hidden={data ? Object.keys(data).length === 1 : true} 
+                height="70" src="assets/arrow.svg"
+                side={1}
+            />
         </Wrapper>
     )
 }
