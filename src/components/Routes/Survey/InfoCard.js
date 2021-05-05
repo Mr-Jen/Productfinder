@@ -6,7 +6,7 @@ const Wrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: yellow;
+    background-color: #FFE60A;
     border: 1px solid grey;
     border-radius: 10px;
     min-height: 40vh;
@@ -32,22 +32,17 @@ const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
     /*background-color: green;*/
-    width: 60%;
+    width: 50%;
     margin-right: 5%;
 `
 
-const TitleWrapper = styled.div`ky
-    background-color: lightblue;
+const TitleWrapper = styled.div`
 `
 
 const Title = styled.h3`
-    padding-bottom: 3px;
-`
-
-const Underline = styled.div`
+    padding-bottom: 10px;
+    display: inline-block;
     border-bottom: 2px solid black;
-    margin-right: 80%;
-    margin-top: -3%;
 `
 
 const Text = styled.p`
@@ -56,11 +51,11 @@ const Text = styled.p`
 
 const ImageWrapper = styled.div`
     background-image: url(${props => props.imgSrc});
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 40%;
+    background-size: cover;
+    width: 50%;
+    height: 80%;
+    align-self: center;
     border-radius: 10px;
-    border: 2px solid blue;
 `
 
 const Arrow = styled.img`
@@ -104,7 +99,6 @@ const InfoCard = ({ data }) => {
                 <ContentWrapper>
                     <TitleWrapper>
                         <Title>{data ? data[infoState]["title"] : default_content["title"]}</Title>
-                        <Underline></Underline>
                     </TitleWrapper>
                     <Text>{data ? data[infoState]["content"] : default_content["content"]}</Text>
                 </ContentWrapper>

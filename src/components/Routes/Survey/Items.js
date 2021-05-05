@@ -17,8 +17,7 @@ const ButtonContentWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid black;
-  background: yellow;
+  background: #FFE60A;
   border-radius: 5px;
   cursor: pointer;
   :active {
@@ -36,7 +35,7 @@ const ChoiceButton = styled.div`
 
 const InfoButton = styled.button`
   border: none;
-  background: yellow;
+  background: #FFE60A;
   cursor: pointer;
 `
 
@@ -66,7 +65,7 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
             <div key={key}>
               <ButtonContentWrapper>
                 <ChoiceButton onClick={() => ButtonAddToHistory(key)}>
-                    {childrenItems[key].label} 
+                  <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
                 </ChoiceButton>
                 <InfoButton>
                   <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"])} height="20px" src="assets/info.svg"></img>
