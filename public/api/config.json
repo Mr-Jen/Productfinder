@@ -12,6 +12,14 @@
                     "label": "Unbehandelt / Komplett abgeschliffen",
                     "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
                     "breadcrumb": "Unbehandelt",
+                    "info": {
+                        "0": {
+                            "id": 0,
+                            "title": "Unbehandelt",
+                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                            "image": "assets/images/lasur.png"
+                        }
+                    },
                     "children": {
                         "0": {
                             "id": 0,
@@ -31,6 +39,20 @@
                     "id": 1,
                     "label": "Mit Öl, Lasur oder Farbe behandelt",
                     "question": "In welchem Zustand ist der Anstrich? ",
+                    "info": {
+                        "0": {
+                            "id": 0,
+                            "title": "Lasur",
+                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                            "image": "assets/images/lasur.png"
+                        },
+                        "1": {
+                            "id": 1,
+                            "title": "Öl",
+                            "content": "Unbehandeltes Holz trocknet mit der Zeit aus und neigt zum Vergrauen. Regelmäßige Pflege mit Holzöl verlängert die Haltbarkeit sichtbar: Das Öl dringt tief in das Holz ein, betont die natürliche Maserung und intensiviert den Farbton. Das Einsatzgebiet von Holzölen konzentriert sich auf Terrassenböden sowie Holzmöbel im Innen- und Außenbereich, zum Beispiel Balkonmöbel.",
+                            "image": "assets/images/öl.jpg"
+                        }
+                    },
                     "children": {
                         "0": {            
                             "id": 0,

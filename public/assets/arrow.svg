@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124" height="299" viewBox="0 0 124 299">
+  <defs>
+    <clipPath id="clip-arrow">
+      <rect width="124" height="299"/>
+    </clipPath>
+  </defs>
+  <g id="arrow" clip-path="url(#clip-arrow)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="178" height="24" rx="12" transform="translate(20.785) rotate(60)"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="178" height="24" rx="12" transform="translate(0 287.152) rotate(-60)"/>
+  </g>
+</svg>

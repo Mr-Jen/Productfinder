@@ -46,7 +46,8 @@ const CardWrapper = styled.div`
   background: grey;
   position: absolute;
   top: 0;
-  opacity: 0.7;
+  left: 0;
+  opacity: 0.9;
 `
 
 const Items = ({childrenItems, ButtonAddToHistory}) => {
@@ -68,16 +69,17 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
                     {childrenItems[key].label} 
                 </ChoiceButton>
                 <InfoButton>
-                  <img alt="info" onClick={() => onClickInfo(childrenItems[key])} height="20px" src="assets/info.svg"></img>
+                  <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"])} height="20px" src="assets/info.svg"></img>
                 </InfoButton>
               </ButtonContentWrapper>
             </div>
           ))
         }
         {showInfoCard && 
-          <CardWrapper onClick={() => setShowInfoCard(false)}>
-            <InfoCard data={cardContent}/>
-          </CardWrapper>
+        <div>
+          <InfoCard data={cardContent}/>
+          <CardWrapper onClick={() => setShowInfoCard(false)}/>
+        </div>
         }
     </ChoiceWrapper>
   )
