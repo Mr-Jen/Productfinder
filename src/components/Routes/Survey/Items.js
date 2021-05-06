@@ -68,7 +68,7 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
                   <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
                 </ChoiceButton>
                 <InfoButton>
-                  <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"])} height="20px" src="assets/info.svg"></img>
+                  <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"])} height="20px" src="assets/icons/misc/info.svg"></img>
                 </InfoButton>
               </ButtonContentWrapper>
             </div>

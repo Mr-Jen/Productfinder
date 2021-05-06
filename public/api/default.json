@@ -54,3 +54,12 @@
         }
     } 
 }
+
+"info": {
+    "0": {
+        "id": 0,
+        "title": "Lasur",
+        "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+        "image": "assets/images/lasur.png"
+    },
+},

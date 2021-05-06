@@ -11,7 +11,7 @@
                     "id": 0,
                     "label": "Unbehandelt / Komplett abgeschliffen",
                     "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
-                    "breadcrumb": "Unbehandelt",
+                    "breadcrumb": "Blankes Holz",
                     "info": {
                         "0": {
                             "id": 0,
@@ -37,7 +37,7 @@
                 },
                 "1": {
                     "id": 1,
-                    "label": "Mit Öl, Lasur oder Farbe behandelt",
+                    "label": "Bereits mit Öl, Lasur, Grundierung oder Farbe vorbehandelt",
                     "question": "In welchem Zustand ist der Anstrich? ",
                     "info": {
                         "0": {
@@ -56,8 +56,9 @@
                     "children": {
                         "0": {            
                             "id": 0,
-                            "label": "Intakter Altanstrich",
+                            "label": "Intakte Farbe oder Lasur",
                             "question": "",
+                            "breadcrumb": "Anstrich Intakt",
                             "children": {
                                 "0": {            
                                     "id": 0,
@@ -170,6 +171,14 @@
                             "id": 1,
                             "label": "Verwitterte Lasur",
                             "question": "Verwitterte Lasur bitte erst abschleifen",
+                            "info": {
+                                "0": {
+                                    "id": 0,
+                                    "title": "Verwitterte Lasur",
+                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "image": "assets/images/lasur-verwittert_maserung_sichtbar.jpg"
+                                }
+                            },
                             "children": {
                                 "0": {
                                     "id": 0,
@@ -299,6 +308,12 @@
                                     }
                                 }
                             }
+                        },
+                        "4": {           
+                            "id": 4,
+                            "label": "Mit Öl behandelt",
+                            "question": "",
+                            "children": null
                         }
                     }
                 },

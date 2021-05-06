@@ -1,6 +1,8 @@
 import React from 'react'
 import styled, {keyframes } from 'styled-components'
 
+import DetailImage from './DetailImage'
+
 const Wrapper = styled.div`
     position: fixed;
     top: 50%;
@@ -63,6 +65,7 @@ const ImageWrapper = styled.div`
     height: 80%;
     align-self: center;
     border-radius: 10px;
+    cursor: zoom-in;
 `
 
 const Arrow = styled.img`
@@ -74,11 +77,12 @@ const Arrow = styled.img`
     transform: ${props => props.rotate_angle && `rotate(180deg)`};
 `
 
+
 const InfoCard = ({ data }) => {
     const [infoState, setInfoState] = React.useState(0);
+    const [showEnlarged, setShowEnlarged] = React.useState(false);
     
     const onClickNextCard = (e) => {
-        console.log("NEXT CARD")
         if (e === 0){
             if (infoState === 0){
                 setInfoState(Object.keys(data).length - 1);
@@ -108,7 +112,7 @@ const InfoCard = ({ data }) => {
             <Arrow 
                 onClick={() => onClickNextCard(0)} 
                 hidden={data ? Object.keys(data).length === 1 : true} 
-                height="70" src="assets/arrow.svg"
+                height="70" src="assets/icons/misc/arrow.svg"
                 side={0}
                 rotate_angle={true}
             />
@@ -119,14 +123,19 @@ const InfoCard = ({ data }) => {
                     </TitleWrapper>
                     <Text>{data ? data[infoState]["content"] : default_content["content"]}</Text>
                 </ContentWrapper>
-                <ImageWrapper imgSrc={data ? data[infoState]["image"] : default_content["image"]}/>
+                <ImageWrapper onClick={() => setShowEnlarged(true)} imgSrc={data ? data[infoState]["image"] : default_content["image"]}/>
             </CardWrapper>
             <Arrow 
                 onClick={() => onClickNextCard(1)} 
                 hidden={data ? Object.keys(data).length === 1 : true} 
-                height="70" src="assets/arrow.svg"
+                height="70" src="assets/icons/misc/arrow.svg"
                 side={1}
             />
+            {showEnlarged &&
+                <div>
+                    <DetailImage onClickClose={() => setShowEnlarged(false)} imageSrc={data ? data[infoState]["image"] : default_content["image"]}/>
+                </div>
+            }
         </Wrapper>
     )
 }

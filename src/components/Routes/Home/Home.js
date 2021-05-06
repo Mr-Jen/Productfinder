@@ -64,7 +64,7 @@ const Home = ({addToHistory}) => {
     return (
         <Wrapper>
             <HomeIcon 
-                src={"assets/Brush-Search.svg"}
+                src={"assets/icons/home/Brush-Search.svg"}
                 alt="HomeIcon"
             />
             <HomeWrapper>
@@ -81,7 +81,7 @@ const Home = ({addToHistory}) => {
                 >
                     <p style={{"marginRight": "20px", "color": "black", "fontWeight": "bold"}}>Loslegen</p>
                     <img 
-                        src="assets/right.png"
+                        src="assets/icons/misc/right.png"
                         style={{"height": "25px", "width": "25px", "margin": "5px"}}
                         alt="BackButton"
                     />

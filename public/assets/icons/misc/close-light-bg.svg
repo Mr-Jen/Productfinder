@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="102" viewBox="0 0 102 102">
+  <defs>
+    <clipPath id="clip-close-light-bg">
+      <rect width="102" height="102"/>
+    </clipPath>
+  </defs>
+  <g id="close-light-bg" clip-path="url(#clip-close-light-bg)">
+    <g id="Group_1" data-name="Group 1" transform="translate(-124 -118)">
+      <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(124 118)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="102" height="102" stroke="none"/>
+        <rect x="0.5" y="0.5" width="101" height="101" fill="none"/>
+      </g>
+      <line id="Line_1" data-name="Line 1" x2="58" y2="58" transform="translate(146 140)" fill="none" stroke="#000" stroke-width="3"/>
+      <path id="Path_1" data-name="Path 1" d="M0,0,58.121,58.121" transform="translate(204.299 140.178) rotate(90)" fill="none" stroke="#000" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
