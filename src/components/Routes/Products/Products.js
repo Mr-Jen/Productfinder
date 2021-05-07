@@ -14,17 +14,6 @@ const Input = styled.input`
   margin: 10px;
 `
 
-const SliderWrapper = styled.div`
-  display: flex;
-  flex: 1;
-  justify-content: space-around;
-`
-
-const SliderContent = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-
 const ProductsWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -56,30 +45,15 @@ const InputWrapper = styled.div`
   justify-content: space-around;
 `
 
-const CheckBoxesSurfaceWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 15vw;
-  margin: 10px;
-`
-
-const CheckBoxesApplicationWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 30vw;
-  margin: 10px;
-`
-
 const CheckBoxesContentWrapper = styled.div`
   display: flex;
-  justify-content: space-around;
-  outline: 1px solid grey;
-  padding: 5;
+  justify-content: space-between;
 `
 
 const CheckBoxWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 `
 
 const VolumeWrapper = styled.div`
@@ -98,6 +72,89 @@ const VolumeValue = styled.p`
   margin-top: -10px;
 `
 
+const DropDownWrapper = styled.div`
+  display: flex;
+  align-items: flex-start;
+  width: 70%;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+`
+
+const FilterDropDownWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const FilterDropDown = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  width: 140px;
+  height: 40px;
+  background-color: #FFE60A;
+`
+
+const PlaceHolderRect = styled.div`
+  width: 136px;
+  height: 20px;
+  background-color: #FFE60A;
+  margin-top: -10px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+`
+
+const SurfaceBgRect = styled.div`
+  width: 200px;
+  height: 120px;
+  background-color: #FFE60A;
+  border: 1px solid black;
+  border-radius: 0 5px 5px 5px;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: grow;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+`
+
+const ApplicationBgRect = styled.div`
+  min-width: 500px;
+  height: 130px;
+  background-color: #FFE60A;
+  border: 1px solid black;
+  border-radius: 0 5px 5px 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px 0 20px
+`
+
+const SliderBgRect = styled.div`
+  min-width: 300;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 0 5px 5px 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 20px 0 20px
+`
+
+const StarWrapper = styled.div`
+  display: flex;
+`
+
+const ResetDropDownButton = styled.button`
+  width: 90%;
+  align-self: center;
+  margin: 10px 0 10px 0;
+`
+
+
 const Products = () => {
   const [initData, setInitData] = useState(null);
   const [inputArea, setInputArea] = useState("");
@@ -105,6 +162,8 @@ const Products = () => {
   const [inputApplication, setInputApplication] = useState([false, false, false, false, false, false])
   const [inputGlossLevel, setInputGlossLevel] = useState([0, 100])
   const [inputLifetime, setInputLifetime] = useState([0, 25])
+  const [dropdownElement, setDropDownElement] = useState();
+  const [ecoRating, setEcoRating] = useState(0);
 
   React.useEffect(() => {
     !initData &&
@@ -175,107 +234,180 @@ const Products = () => {
           type="number"
           min="0"
         />
-        <CheckBoxesSurfaceWrapper>
-          <h3 style={{textAlign: 'center'}}>Untergrund</h3>
-          <CheckBoxesContentWrapper>
-            <CheckBoxWrapper>
-              <p>Holz</p>
-              <Input
-                type="checkbox"
-                onChange={() => onChangeSurfaceCheckBox(0)}
-                checked={inputSurface[0]}
-              />
-            </CheckBoxWrapper>
-            <CheckBoxWrapper>
-              <p>Metall</p>
-              <Input
-                type="checkbox"
-                onChange={() => onChangeSurfaceCheckBox(1)}
-                checked={inputSurface[1]}
-              />
-            </CheckBoxWrapper>
-            <CheckBoxWrapper>
-              <p>Putz</p>
-              <Input
-                type="checkbox"
-                onChange={() => onChangeSurfaceCheckBox(2)}
-                checked={inputSurface[2]}
-              />
-            </CheckBoxWrapper>
-            <CheckBoxWrapper>
-              <p>Estrich</p>
-              <Input
-                type="checkbox"
-                onChange={() => onChangeSurfaceCheckBox(3)}
-                checked={inputSurface[3]}
-              />
-            </CheckBoxWrapper>
-          </CheckBoxesContentWrapper>
-        </CheckBoxesSurfaceWrapper>
-        <CheckBoxesApplicationWrapper>
-          <h3 style={{textAlign: 'center'}}>Verwendung</h3>
-          <CheckBoxesContentWrapper>
-            <CheckBoxWrapper>
-              <p>Fassade</p>
-              <Input
-                type="checkbox"
-                onChange={() => onChangeApplicationCheckBox(0)}
-                checked={inputApplication[0]}
-              />
-            </CheckBoxWrapper>
-            <CheckBoxWrapper>
-              <p>Boden / Treppe</p>
-              <Input
-                type="checkbox"
-                onChange={() => onChangeApplicationCheckBox(1)}
-                checked={inputApplication[1]}
-              />
-            </CheckBoxWrapper>
-            <CheckBoxWrapper>
-              <p>Fenster / Tür</p>
-              <Input
-                type="checkbox"
-                onChange={() => onChangeApplicationCheckBox(2)}
-                checked={inputApplication[2]}
-              />
-            </CheckBoxWrapper>
-            <CheckBoxWrapper>
-              <p>Zaun</p>
-              <Input
-                type="checkbox"
-                onChange={() => onChangeApplicationCheckBox(3)}
-                checked={inputApplication[3]}
-              />
-            </CheckBoxWrapper>
-            <CheckBoxWrapper>
-              <p>Handlauf</p>
-              <Input
-                type="checkbox"
-                onChange={() => onChangeApplicationCheckBox(4)}
-                checked={inputApplication[4]}
-              />
-            </CheckBoxWrapper>
-            <CheckBoxWrapper>
-              <p>Dach</p>
-              <Input
-                type="checkbox"
-                onChange={() => onChangeApplicationCheckBox(5)}
-                checked={inputApplication[5]}
-              />
-            </CheckBoxWrapper>
-          </CheckBoxesContentWrapper>
-        </CheckBoxesApplicationWrapper>
-        <SliderWrapper>
-          <SliderContent>
-            <h4>Glanzgrad</h4>
-            <MultiRangeSlider min={0} max={100} stepRange={5} minDiff={10} onChange={(e) => setInputGlossLevel(e)}/>
-          </SliderContent>
-          <SliderContent>
-            <h4>Lebensdauer</h4>
-            <MultiRangeSlider min={0} max={25} stepRange={1} minDiff={1} onChange={(e) => setInputLifetime(e)}/>
-          </SliderContent>
-        </SliderWrapper>
       </InputWrapper>
+
+      <DropDownWrapper>
+        <FilterDropDownWrapper>
+          <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 0 ? null : 0)}>
+            <strong>Untergrund</strong>
+            <img style={{transform: dropdownElement === 0 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+          </FilterDropDown>
+          {dropdownElement === 0 && <PlaceHolderRect/>}
+          {dropdownElement === 0 &&
+            <SurfaceBgRect>
+              <CheckBoxesContentWrapper>
+                <CheckBoxWrapper>
+                  <p>Holz</p>
+                  <Input
+                    type="checkbox"
+                    onChange={() => onChangeSurfaceCheckBox(0)}
+                    checked={inputSurface[0]}
+                  />
+                </CheckBoxWrapper>
+                <CheckBoxWrapper>
+                  <p>Metall</p>
+                  <Input
+                    type="checkbox"
+                    onChange={() => onChangeSurfaceCheckBox(1)}
+                    checked={inputSurface[1]}
+                  />
+                </CheckBoxWrapper>
+                <CheckBoxWrapper>
+                  <p>Putz</p>
+                  <Input
+                    type="checkbox"
+                    onChange={() => onChangeSurfaceCheckBox(2)}
+                    checked={inputSurface[2]}
+                  />
+                </CheckBoxWrapper>
+                <CheckBoxWrapper>
+                  <p>Estrich</p>
+                  <Input
+                    type="checkbox"
+                    onChange={() => onChangeSurfaceCheckBox(3)}
+                    checked={inputSurface[3]}
+                  />
+                </CheckBoxWrapper>
+              </CheckBoxesContentWrapper>
+              <ResetDropDownButton onClick={() => setInputSurface([false, false, false, false])}>Zurücksetzen</ResetDropDownButton>
+            </SurfaceBgRect>
+          }
+        </FilterDropDownWrapper>
+
+        <FilterDropDownWrapper>
+          <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 1 ? null : 1)}>
+            <strong>Verwendung</strong>
+            <img style={{transform: dropdownElement === 0 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+          </FilterDropDown>
+          {dropdownElement === 1 && <PlaceHolderRect/>}
+          {dropdownElement === 1 &&
+            <ApplicationBgRect>
+              <CheckBoxesContentWrapper>
+                <CheckBoxWrapper>
+                  <p>Fassade</p>
+                  <Input
+                    type="checkbox"
+                    onChange={() => onChangeApplicationCheckBox(0)}
+                    checked={inputApplication[0]}
+                  />
+                </CheckBoxWrapper>
+                <CheckBoxWrapper>
+                  <p>Boden / Treppe</p>
+                  <Input
+                    type="checkbox"
+                    onChange={() => onChangeApplicationCheckBox(1)}
+                    checked={inputApplication[1]}
+                  />
+                </CheckBoxWrapper>
+                <CheckBoxWrapper>
+                  <p>Fenster / Tür</p>
+                  <Input
+                    type="checkbox"
+                    onChange={() => onChangeApplicationCheckBox(2)}
+                    checked={inputApplication[2]}
+                  />
+                </CheckBoxWrapper>
+                <CheckBoxWrapper>
+                  <p>Zaun</p>
+                  <Input
+                    type="checkbox"
+                    onChange={() => onChangeApplicationCheckBox(3)}
+                    checked={inputApplication[3]}
+                  />
+                </CheckBoxWrapper>
+                <CheckBoxWrapper>
+                  <p>Handlauf</p>
+                  <Input
+                    type="checkbox"
+                    onChange={() => onChangeApplicationCheckBox(4)}
+                    checked={inputApplication[4]}
+                  />
+                </CheckBoxWrapper>
+                <CheckBoxWrapper>
+                  <p>Dach</p>
+                  <Input
+                    type="checkbox"
+                    onChange={() => onChangeApplicationCheckBox(5)}
+                    checked={inputApplication[5]}
+                  />
+                </CheckBoxWrapper>
+              </CheckBoxesContentWrapper>
+              <ResetDropDownButton onClick={() => setInputApplication([false, false, false, false, false, false])}>Zurücksetzen</ResetDropDownButton>
+            </ApplicationBgRect>
+          }
+        </FilterDropDownWrapper>
+
+        <FilterDropDownWrapper>
+          <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 2 ? null : 2)}>
+            <strong>Glanzgrad</strong>
+            <img style={{transform: dropdownElement === 2 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+          </FilterDropDown>
+          {dropdownElement === 2 && <PlaceHolderRect/>}
+          {dropdownElement === 2 &&
+            <SliderBgRect>
+              <MultiRangeSlider min={0} max={100} stepRange={5} minDiff={10} onChange={(e) => setInputGlossLevel(e)}/>
+              <ResetDropDownButton onClick={() => console.log("RESETTING SLIDER")}>Zurücksetzen</ResetDropDownButton>
+            </SliderBgRect>
+          }
+        </FilterDropDownWrapper>
+
+        <FilterDropDownWrapper>
+          <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 3 ? null : 3)}>
+            <strong>Lebensdauer</strong>
+            <img style={{transform: dropdownElement === 3 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+          </FilterDropDown>
+          {dropdownElement === 3 && <PlaceHolderRect/>}
+          {dropdownElement === 3 &&
+            <SliderBgRect>
+              <MultiRangeSlider min={0} max={25} stepRange={1} minDiff={1} onChange={(e) => setInputLifetime(e)}/>
+              <ResetDropDownButton onClick={() => console.log("RESETTING SLIDER")}>Zurücksetzen</ResetDropDownButton>
+            </SliderBgRect>
+          }
+        </FilterDropDownWrapper>
+
+        <FilterDropDownWrapper>
+          <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 4 ? null : 4)}>
+            <strong>Ökobilanz</strong>
+            <img style={{transform: dropdownElement === 3 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+          </FilterDropDown>
+          {dropdownElement === 4 && <PlaceHolderRect/>}
+          {dropdownElement === 4 &&
+            <SliderBgRect>
+              <StarWrapper>
+
+                <input onChange={(e) => setEcoRating(parseInt(e.target.id) + 1)} className="trigger" id="0" type="checkbox"/>
+                <label style={{backgroundImage: `url(${ecoRating > 0 ? 'assets/icons/misc/star-filled.svg' : 'assets/icons/misc/star-outline.svg'})`}} htmlFor="0" className="checker"></label>    
+                
+                <input onChange={(e) => setEcoRating(parseInt(e.target.id) + 1)} className="trigger" id="1" type="checkbox"/>
+                <label style={{backgroundImage: `url(${ecoRating > 1 ? 'assets/icons/misc/star-filled.svg' : 'assets/icons/misc/star-outline.svg'})`}} htmlFor="1" className="checker"></label>    
+                
+                <input onChange={(e) => setEcoRating(parseInt(e.target.id) + 1)} className="trigger" id="2" type="checkbox"/>
+                <label style={{backgroundImage: `url(${ecoRating > 2 ? 'assets/icons/misc/star-filled.svg' : 'assets/icons/misc/star-outline.svg'})`}} htmlFor="2" className="checker"></label>    
+                
+                <input onChange={(e) => setEcoRating(parseInt(e.target.id) + 1)} className="trigger" id="3" type="checkbox"/>
+                <label style={{backgroundImage: `url(${ecoRating > 3 ? 'assets/icons/misc/star-filled.svg' : 'assets/icons/misc/star-outline.svg'})`}} htmlFor="3" className="checker"></label>    
+                
+                <input onChange={(e) => setEcoRating(parseInt(e.target.id) + 1)} className="trigger" id="4" type="checkbox"/>
+                <label style={{backgroundImage: `url(${ecoRating > 4 ? 'assets/icons/misc/star-filled.svg' : 'assets/icons/misc/star-outline.svg'})`}} htmlFor="4" className="checker"></label>    
+
+              </StarWrapper>
+              <ResetDropDownButton onClick={() => setEcoRating(0)}>Zurücksetzen</ResetDropDownButton>
+            </SliderBgRect>
+          }
+        </FilterDropDownWrapper>
+
+      </DropDownWrapper>
+
       { !products ? <p>Loading ...</p> :
         <ProductsWrapper>
           {

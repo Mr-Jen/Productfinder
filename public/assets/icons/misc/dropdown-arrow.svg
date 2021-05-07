@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240.82" height="132.6" viewBox="0 0 240.82 132.6">
+  <defs>
+    <clipPath id="clip-dropdown-arrow">
+      <rect width="240.82" height="132.6"/>
+    </clipPath>
+  </defs>
+  <g id="dropdown-arrow" clip-path="url(#clip-dropdown-arrow)">
+    <g id="next" transform="translate(240.822 -54.113) rotate(90)">
+      <path id="Chevron_Right_1_" d="M183.189,111.816,74.892,3.555A12.16,12.16,0,0,0,57.677,20.734L157.384,120.4,57.689,220.076A12.164,12.164,0,1,0,74.9,237.267L183.2,129.006A12.267,12.267,0,0,0,183.189,111.816Z"/>
+    </g>
+  </g>
+</svg>

@@ -6,7 +6,7 @@
   </defs>
   <g id="close-light-bg" clip-path="url(#clip-close-light-bg)">
     <g id="Group_1" data-name="Group 1" transform="translate(-124 -118)">
-      <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(124 118)" fill="#fff" stroke="#707070" stroke-width="1">
+      <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(124 118)" fill="#ffe60a" stroke="#707070" stroke-width="1">
         <rect width="102" height="102" stroke="none"/>
         <rect x="0.5" y="0.5" width="101" height="101" fill="none"/>
       </g>

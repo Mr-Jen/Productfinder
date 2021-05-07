@@ -45,3 +45,16 @@
   background: #4CAF50;
   cursor: pointer;
 }
+
+
+.trigger {
+  display: none;
+}
+.checker {
+  background-position: left center;
+  background-size: auto 100%;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  margin: 3px;
+}
