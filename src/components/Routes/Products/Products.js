@@ -90,6 +90,8 @@ const FilterDropDown = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  border: 1px solid black;
   border-radius: 5px;
   width: 140px;
   height: 40px;
@@ -97,12 +99,12 @@ const FilterDropDown = styled.button`
 `
 
 const PlaceHolderRect = styled.div`
-  width: 136px;
+  width: 138px;
   height: 20px;
   background-color: #FFE60A;
   margin-top: -10px;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 `
 
 const SurfaceBgRect = styled.div`
@@ -225,7 +227,7 @@ const Products = () => {
 
   return (
     <Wrapper>
-      <h1>Flächenberechner</h1>
+      <h1>Ihre Produkte</h1>
       <InputWrapper>
         <Input 
           placeholder="Flächengröße (in qm) hier"
@@ -370,7 +372,7 @@ const Products = () => {
           {dropdownElement === 3 &&
             <SliderBgRect>
               <MultiRangeSlider min={0} max={25} stepRange={1} minDiff={1} onChange={(e) => setInputLifetime(e)}/>
-              <ResetDropDownButton onClick={() => console.log("RESETTING SLIDER")}>Zurücksetzen</ResetDropDownButton>
+              <ResetDropDownButton onClick={() => setInputLifetime([0, 25])}>Zurücksetzen</ResetDropDownButton>
             </SliderBgRect>
           }
         </FilterDropDownWrapper>

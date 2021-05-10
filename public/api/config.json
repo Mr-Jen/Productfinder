@@ -31,6 +31,14 @@
                             "id": 1,
                             "label": "Farbe",
                             "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                            "info": {
+                                "0": {
+                                    "id": 0,
+                                    "title": "Deckende Farbe",
+                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "image": "assets/images/deckende-farbe-intakt_keine_maserung.jpg"
+                                }
+                            },
                             "children": null
                         }
                     } 
@@ -59,6 +67,26 @@
                             "label": "Intakte Farbe oder Lasur",
                             "question": "",
                             "breadcrumb": "Anstrich Intakt",
+                            "info": {
+                                "0": {
+                                    "id": 0,
+                                    "title": "Intakte Farbe",
+                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "image": "assets/images/deckende-farbe-intakt_keine_maserung.jpg"
+                                },
+                                "1": {
+                                    "id": 1,
+                                    "title": "Intakte Lasur",
+                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "image": "assets/images/lasur-intakt_glanz.jpg"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "title": "Intakte Lasur",
+                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "image": "assets/images/lasur-intakt_maserung-sichtbar.jpg"
+                                }
+                            },
                             "children": {
                                 "0": {            
                                     "id": 0,
@@ -140,6 +168,14 @@
                                                                             "id": 1,
                                                                             "label": "Farbe",
                                                                             "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                            "info": {
+                                                                                "0": {
+                                                                                    "id": 0,
+                                                                                    "title": "Deckende Farbe",
+                                                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                                                                    "image": "assets/images/deckende-farbe-intakt_keine_maserung.jpg"
+                                                                                }
+                                                                            },
                                                                             "children": null
                                                                         }
                                                                     } 
@@ -180,53 +216,97 @@
                                 }
                             },
                             "children": {
-                                "0": {
+                                "0": {            
                                     "id": 0,
                                     "label": "Abgeschliffen",
-                                    "question": "Intakte Lasur bitte erst waschen",
-                                    "children": {
-                                        "0": {            
+                                    "question": "Ist noch intakte Lasur vorhanden?",
+                                    "info": {
+                                        "0": {
                                             "id": 0,
-                                            "label": "Lasur gewaschen",
-                                            "question": "Weiter zum Bindemitteltest",
-                                            "children": {
+                                            "title": "Abschleifen",
+                                            "content": "Beim Abschleifen ist darauf zu achten, dass xyz",
+                                            "image": "assets/images/paint-on-wood.gif"
+                                        }
+                                    },
+                                    "children": {
+                                        "0": {
+                                            "id": 0,
+                                            "label": "Lasur vorhanden",
+                                            "question": "Intakte Lasur bitte erst waschen",
+                                            "info": {
                                                 "0": {
                                                     "id": 0,
-                                                    "label": "Bindemitteltest",
-                                                    "question": "Welche Bindemittel waren in der Lasur?",
+                                                    "title": "Intakte Lasur",
+                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                                    "image": "assets/images/lasur-intakt_glanz.jpg"
+                                                },
+                                                "1": {
+                                                    "id": 1,
+                                                    "title": "Intakte Lasur",
+                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                                    "image": "assets/images/lasur-intakt_maserung-sichtbar.jpg"
+                                                }
+                                            },
+                                            "children": {
+                                                "0": {            
+                                                    "id": 0,
+                                                    "label": "Lasur gewaschen",
+                                                    "question": "Weiter zum Bindemitteltest",
                                                     "children": {
                                                         "0": {
                                                             "id": 0,
-                                                            "label": "Test mit Brennspiritus",
-                                                            "question": "Führen Sie den Test wie folgt aus:",
+                                                            "label": "Bindemitteltest",
+                                                            "question": "Welche Bindemittel waren in der Lasur?",
                                                             "children": {
-                                                                "0": {            
+                                                                "0": {
                                                                     "id": 0,
-                                                                    "label": "Ergebnis des Tests",
-                                                                    "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
+                                                                    "label": "Test mit Brennspiritus",
+                                                                    "question": "Führen Sie den Test wie folgt aus:",
                                                                     "children": {
-                                                                        "0": {
+                                                                        "0": {            
                                                                             "id": 0,
-                                                                            "label": "Lasur",
-                                                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
-                                                                            "children": null
-                                                                        },
-                                                                        "1": {
-                                                                            "id": 1,
-                                                                            "label": "Farbe",
-                                                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
-                                                                            "children": null
+                                                                            "label": "Ergebnis des Tests",
+                                                                            "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
+                                                                            "children": {
+                                                                                "0": {
+                                                                                    "id": 0,
+                                                                                    "label": "Lasur",
+                                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                                    "children": null
+                                                                                },
+                                                                                "1": {
+                                                                                    "id": 1,
+                                                                                    "label": "Farbe",
+                                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                                    "info": {
+                                                                                        "0": {
+                                                                                            "id": 0,
+                                                                                            "title": "Deckende Farbe",
+                                                                                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                                                                            "image": "assets/images/deckende-farbe-intakt_keine_maserung.jpg"
+                                                                                        }
+                                                                                    },
+                                                                                    "children": null
+                                                                                }
+                                                                            } 
                                                                         }
-                                                                    } 
+                                                                    }
                                                                 }
                                                             }
                                                         }
                                                     }
                                                 }
                                             }
+                                        },
+                                        "1": {            
+                                            "id": 1,
+                                            "label": "Alles abgeschliffen",
+                                            "question": "",
+                                            "children": null
                                         }
                                     }
                                 }
+
                             }
                         },
                         "2": {
@@ -267,6 +347,14 @@
                             "id": 3,
                             "label": "Rissiger / abblätternder Anstrich",
                             "question": "Bitte zunächst abschleifen",
+                            "info": {
+                                "0": {
+                                    "id": 0,
+                                    "title": "Abblätternde Fare",
+                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "image": "assets/images/abblätternde-farbe.jpg"
+                                }
+                            },
                             "children": {
                                 "0": {            
                                     "id": 0,
@@ -288,6 +376,14 @@
                                                     "id": 1,
                                                     "label": "Farbe",
                                                     "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                    "info": {
+                                                        "0": {
+                                                            "id": 0,
+                                                            "title": "Deckende Farbe",
+                                                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                                            "image": "assets/images/deckende-farbe-intakt_keine_maserung.jpg"
+                                                        }
+                                                    },
                                                     "children": null
                                                 }
                                             } 
@@ -321,10 +417,17 @@
                     "id": 2,
                     "label": "Mit werkseitiger Imprägnierung / Grundierung behandelt",
                     "question": "Was für eine Art von Imprägnierung oder Grundierung liegt vor?",
+                    "breadcrumb": "Werkseitiger Anstrich",
                     "children": {
                         "0": {            
                             "id": 0,
-                            "label": "Info",
+                            "label": "Grundierung",
+                            "question": "",
+                            "children": null
+                        },
+                        "1": {            
+                            "id": 1,
+                            "label": "Imprägnierung",
                             "question": "",
                             "children": null
                         }
@@ -339,7 +442,7 @@
                             "id": 0,
                             "label": "Infoseite",
                             "question": "Infoseite über diese Anstriche mit Fotos, etc.",
-                            "children": null
+                            "children": "no-products"
                         }
                     }
                 }

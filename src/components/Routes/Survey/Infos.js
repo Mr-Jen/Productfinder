@@ -11,17 +11,23 @@ const Wrapper = styled.div`
 `
 
 const Infos = ({latestItem}) => {
+    let returnValue;
+
+    if (latestItem && latestItem.children === null) {
+        returnValue = <NavigateButton 
+            location={"/products"} 
+            text={"Weiter zur Produktempfehlung"}
+            direction={"right"}
+        />
+    } else if (latestItem && latestItem.children === "no-products"){
+        returnValue = <a href="https://schwedischer-farbenhandel.de">Homepage</a>
+    }
+
     return (
         <Wrapper>
             <h3>{latestItem?.label}</h3>
             <h5>{latestItem?.question}</h5>
-            {(latestItem && latestItem.children === null) && 
-                <NavigateButton 
-                    location={"/products"} 
-                    text={"Weiter zur Produktempfehlung"}
-                    direction={"right"}
-                />
-            }
+            {returnValue}
         </Wrapper>
     )
 }

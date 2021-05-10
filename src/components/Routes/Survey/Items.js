@@ -60,7 +60,7 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
 
   return (
       <ChoiceWrapper>
-        { childrenItems &&
+        { (childrenItems && childrenItems !== "no-products") &&
           Object.keys(childrenItems).map(key => (
             <div key={key}>
               <ButtonContentWrapper>
@@ -75,10 +75,10 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
           ))
         }
         {showInfoCard && 
-        <div>
-          <InfoCard data={cardContent}/>
-          <CardWrapper onClick={() => setShowInfoCard(false)}/>
-        </div>
+          <div>
+            <InfoCard data={cardContent}/>
+            <CardWrapper onClick={() => setShowInfoCard(false)}/>
+          </div>
         }
     </ChoiceWrapper>
   )
