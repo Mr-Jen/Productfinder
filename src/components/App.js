@@ -3,13 +3,14 @@ import { connect } from 'react-redux'
 import styled from 'styled-components'
 import { Switch, Route } from 'react-router-dom'
 
-import { handleLoadConfig } from '../actions/shared'
+import { handleLoadConfig, handleLoadProducts, loadProducts } from '../actions/shared'
 
 import Home from './Routes/Home/Home'
 import NavigateButton from './Shared/NavigateButton'
 import Products from './Routes/Products/Products'
 import Header from './Shared/Header'
 import Survey from './Routes/Survey/Survey'
+import ProductView from './Routes/ProductView/ProductView'
 
 const Wrapper = styled.div`
   display: flex;
@@ -30,8 +31,9 @@ const HeaderWrapper = styled.div`
 `
 
 
-const App = ({loadConfig, isHome}) => {
+const App = ({loadConfig, loadProducts, isHome}) => {
   React.useEffect(() => {loadConfig()}, [loadConfig])
+  React.useEffect(() => {loadProducts()}, [loadProducts])
 
   console.log("IS HOME: ", isHome)
 
@@ -57,13 +59,15 @@ const App = ({loadConfig, isHome}) => {
           </HeaderWrapper>
           <Products/>
         </Route>
+        <Route exact path="/product/:productId" component={ProductView} />
       </Switch>
     </Wrapper> 
   )
 }
 
 const mapDispatchToProps = dispatch => ({
-  loadConfig: () => dispatch(handleLoadConfig())
+  loadConfig: () => dispatch(handleLoadConfig()),
+  loadProducts: () => dispatch(handleLoadProducts())
 })
 
 

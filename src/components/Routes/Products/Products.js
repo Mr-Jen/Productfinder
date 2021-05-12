@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 import './Products.css'
 import MultiRangeSlider from './Slider/MultiRangeSlider'
@@ -30,6 +31,7 @@ const Product = styled.div`
   border: 1px solid black;
   padding: 10px;
   margin: 10px;
+  margin-top: 20px;
 `
 
 const ProductTitle = styled.h4`
@@ -155,6 +157,19 @@ const ResetDropDownButton = styled.button`
   align-self: center;
   margin: 10px 0 10px 0;
 `
+
+const linkStyling = {
+  display: 'flex',
+  justifyContent: 'center',
+  textDecoration: 'none',
+  height: '40px',
+  width: '200px',
+  alignItems: 'center',
+  backgroundColor: '#ffe60a',
+  paddingLeft: '20px',
+  paddingRight: '20px',
+  borderRadius: '10px'
+}
 
 
 const Products = () => {
@@ -289,7 +304,7 @@ const Products = () => {
         <FilterDropDownWrapper>
           <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 1 ? null : 1)}>
             <strong>Verwendung</strong>
-            <img style={{transform: dropdownElement === 0 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+            <img style={{transform: dropdownElement === 1 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
           </FilterDropDown>
           {dropdownElement === 1 && <PlaceHolderRect/>}
           {dropdownElement === 1 &&
@@ -380,7 +395,7 @@ const Products = () => {
         <FilterDropDownWrapper>
           <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 4 ? null : 4)}>
             <strong>Ökobilanz</strong>
-            <img style={{transform: dropdownElement === 3 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+            <img style={{transform: dropdownElement === 4 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
           </FilterDropDown>
           {dropdownElement === 4 && <PlaceHolderRect/>}
           {dropdownElement === 4 &&
@@ -417,7 +432,7 @@ const Products = () => {
               .map((objectKey, key) => {
 
               let product = products[objectKey]
-              let { category, surface, application, lifetime, gloss_level, binder, solubility } = product
+              let { id, category, surface, application, lifetime, gloss_level, binder, solubility } = product
               let category_value = categories[category]
               let surface_value = surface.map((key) => surfaces[key])
               let application_value = application.map((key) => applications[key])
@@ -452,6 +467,17 @@ const Products = () => {
                     <VolumeValue>Max: {volume[3]} Liter</VolumeValue>
                   </Volume>
                 </VolumeWrapper>
+                <Link 
+                    to={`/product/${id + 1}`}
+                    style={linkStyling}
+                >
+                    <p style={{"marginRight": "20px", "color": "black", "fontWeight": "bold"}}>Loslegen</p>
+                    <img 
+                        src="assets/icons/misc/right.png"
+                        style={{"height": "25px", "width": "25px", "margin": "5px"}}
+                        alt="BackButton"
+                    />
+                </Link>
               </Product>
             })
           }
