@@ -6,7 +6,7 @@ const products = (state = null, action) => {
         case LOAD_PRODUCTS:
             return {
                 ...state,
-                ...payload.products
+                ...payload
             }
         default:
             return state;

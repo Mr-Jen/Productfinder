@@ -471,7 +471,7 @@ const Products = () => {
                     to={`/product/${id + 1}`}
                     style={linkStyling}
                 >
-                    <p style={{"marginRight": "20px", "color": "black", "fontWeight": "bold"}}>Loslegen</p>
+                    <p style={{"marginRight": "20px", "color": "black", "fontWeight": "bold"}}>Ansehen</p>
                     <img 
                         src="assets/icons/misc/right.png"
                         style={{"height": "25px", "width": "25px", "margin": "5px"}}

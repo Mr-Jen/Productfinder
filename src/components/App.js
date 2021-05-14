@@ -59,7 +59,8 @@ const App = ({loadConfig, loadProducts, isHome}) => {
           </HeaderWrapper>
           <Products/>
         </Route>
-        <Route exact path="/product/:productId" component={ProductView} />
+        
+        <Route exact path="/product/:productId" component={ProductView} ></Route>
       </Switch>
     </Wrapper> 
   )
