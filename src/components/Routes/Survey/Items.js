@@ -52,11 +52,31 @@ const CardWrapper = styled.div`
 const Items = ({childrenItems, ButtonAddToHistory}) => {
   const [showInfoCard, setShowInfoCard] = React.useState(false);
   const [cardContent, setCardContent] = React.useState();
+  const [enabledCard, setEnabledCard] = React.useState(false);
+  const [warnings, setWarnings] = React.useState([]);
 
   const onClickInfo = (item) => {
     setShowInfoCard(!showInfoCard)
     setCardContent(item)
   }
+
+  const onClickAgree = () => {
+    console.log("ENABLING CARD")
+    setEnabledCard(true)
+  }
+
+  const filterWarnings = (index) => {
+    childrenItems[index]?.info && Object.keys(childrenItems[index]?.info).forEach(kei => {
+      console.log("WARNING FOR: ", childrenItems[index], childrenItems[index].info[kei]?.warning)
+      childrenItems[index].info[kei]?.warning && setWarnings([...warnings], index)
+    })
+  }
+
+  childrenItems && Object.keys(childrenItems).map(index => {
+    childrenItems[index]?.info && Object.keys(childrenItems[index].info).forEach(key => {
+      //console.log("WARNING AT INDEX: ", index, key)
+    })
+  })
 
   return (
       <ChoiceWrapper>
@@ -76,7 +96,7 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
         }
         {showInfoCard && 
           <div>
-            <InfoCard data={cardContent}/>
+            <InfoCard onAgree={() => onClickAgree()} data={cardContent}/>
             <CardWrapper onClick={() => setShowInfoCard(false)}/>
           </div>
         }

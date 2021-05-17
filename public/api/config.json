@@ -25,6 +25,21 @@
                             "id": 0,
                             "label": "Lasur",
                             "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                            "info": {
+                                "0": {
+                                    "id": 0,
+                                    "title": "Info Lasur",
+                                    "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben.",
+                                    "image": "assets/images/lasur.png",
+                                    "warning": true
+                                },
+                                "1": {
+                                    "id": 1,
+                                    "title": "Lasur",
+                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "image": "assets/images/lasur.png"
+                                }
+                            },
                             "children": null
                         },
                         "1": {
@@ -35,7 +50,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Deckende Farbe",
-                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "content": "Farben sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
                                     "image": "assets/images/deckende-farbe-intakt_keine_maserung.jpg"
                                 }
                             },

@@ -9,8 +9,8 @@ const Wrapper = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FFE60A;
-    border: 1px solid grey;
     border-radius: 10px;
+    border: ${props => props.warn ? "4px solid red" : "1px solid grey"};
     min-height: 40vh;
     width: 60vw;
     z-index: 2;
@@ -77,10 +77,16 @@ const Arrow = styled.img`
     transform: ${props => props.rotate_angle && `rotate(180deg)`};
 `
 
+const CheckerWrapper = styled.div`
+    display: flex;
+    align-items: center;
+`
 
-const InfoCard = ({ data }) => {
+
+const InfoCard = ({ data, onAgree }) => {
     const [infoState, setInfoState] = React.useState(0);
     const [showEnlarged, setShowEnlarged] = React.useState(false);
+    const [checked, setChecked] = React.useState(false);
     
     const onClickNextCard = (e) => {
         if (e === 0){
@@ -101,14 +107,21 @@ const InfoCard = ({ data }) => {
         }
     }
 
+    const onClickAgreed = () => {
+        setChecked(!checked);
+        onAgree();
+    }
+
     let default_content = {
         "title": "PLACEHOLDER",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "image": "assets/images/öl.jpg"
     }
 
+    console.log(data && data[infoState]?.warning)
+
     return (
-        <Wrapper>
+        <Wrapper warn={(data && data[infoState]?.warning) && (data[infoState]["warning"] && !checked)}>
             <Arrow 
                 onClick={() => onClickNextCard(0)} 
                 hidden={data ? Object.keys(data).length === 1 : true} 
@@ -122,6 +135,11 @@ const InfoCard = ({ data }) => {
                         <Title>{data ? data[infoState]["title"] : default_content["title"]}</Title>
                     </TitleWrapper>
                     <Text>{data ? data[infoState]["content"] : default_content["content"]}</Text>
+                    {data[infoState]?.warning && <CheckerWrapper>
+                        <input checked={checked} onChange={() => onClickAgreed()} type="checkbox"></input>
+                        <p>Ich habe den Warnhinweis gelesen</p>
+                    </CheckerWrapper>
+                    }
                 </ContentWrapper>
                 <ImageWrapper onClick={() => setShowEnlarged(true)} imgSrc={data ? data[infoState]["image"] : default_content["image"]}/>
             </CardWrapper>
