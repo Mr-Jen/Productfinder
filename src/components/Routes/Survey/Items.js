@@ -20,6 +20,7 @@ const ButtonContentWrapper = styled.div`
   background: #FFE60A;
   border-radius: 5px;
   cursor: pointer;
+  cursor: ${props => props.disabled && 'not-allowed'};
   :active {
     color: darkblue;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -31,6 +32,10 @@ const ChoiceButton = styled.div`
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
+  cursor: ${props => props.disabled && 'not-allowed'};
+  /*pointer-events: ${props => props.disabled && 'none'};*/
+  /*opacity: ${props => props.disabled && 0.5};
+  background: ${props => props.disabled && '#CCC'};*/
 `
 
 const InfoButton = styled.button`
@@ -53,7 +58,6 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
   const [showInfoCard, setShowInfoCard] = React.useState(false);
   const [cardContent, setCardContent] = React.useState();
   const [enabledCard, setEnabledCard] = React.useState(false);
-  const [warnings, setWarnings] = React.useState([]);
 
   const onClickInfo = (item) => {
     setShowInfoCard(!showInfoCard)
@@ -61,45 +65,42 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
   }
 
   const onClickAgree = () => {
-    console.log("ENABLING CARD")
     setEnabledCard(true)
   }
 
-  const filterWarnings = (index) => {
-    childrenItems[index]?.info && Object.keys(childrenItems[index]?.info).forEach(kei => {
-      console.log("WARNING FOR: ", childrenItems[index], childrenItems[index].info[kei]?.warning)
-      childrenItems[index].info[kei]?.warning && setWarnings([...warnings], index)
+
+  const checkWarning = (index) => {
+    let res;
+    childrenItems[index]?.info && Object.keys(childrenItems[index].info).forEach(key => {
+      if (childrenItems[index].info[key]?.warning){
+        res = true;
+      }
     })
+    return res
   }
 
-  childrenItems && Object.keys(childrenItems).map(index => {
-    childrenItems[index]?.info && Object.keys(childrenItems[index].info).forEach(key => {
-      //console.log("WARNING AT INDEX: ", index, key)
-    })
-  })
-
   return (
-      <ChoiceWrapper>
-        { (childrenItems && childrenItems !== "no-products") &&
-          Object.keys(childrenItems).map(key => (
-            <div key={key}>
-              <ButtonContentWrapper>
-                <ChoiceButton onClick={() => ButtonAddToHistory(key)}>
-                  <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
-                </ChoiceButton>
-                <InfoButton>
-                  <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"])} height="20px" src="assets/icons/misc/info.svg"></img>
-                </InfoButton>
-              </ButtonContentWrapper>
-            </div>
-          ))
-        }
-        {showInfoCard && 
+    <ChoiceWrapper>
+      { (childrenItems && childrenItems !== "no-products") &&
+        Object.keys(childrenItems).map(key => (
+          <div key={key}>
+            <ButtonContentWrapper disabled={checkWarning(key) && !enabledCard}>
+              <ChoiceButton disabled={checkWarning(key) && !enabledCard} onClick={() => ButtonAddToHistory(key)}>
+                <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
+              </ChoiceButton>
+              <InfoButton>
+                <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"])} height="20px" src="assets/icons/misc/info.svg"></img>
+              </InfoButton>
+            </ButtonContentWrapper>
+          </div>
+        ))
+      }
+      {showInfoCard && 
           <div>
             <InfoCard onAgree={() => onClickAgree()} data={cardContent}/>
             <CardWrapper onClick={() => setShowInfoCard(false)}/>
           </div>
-        }
+      }
     </ChoiceWrapper>
   )
 }
