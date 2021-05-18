@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 import './Products.css'
 import MultiRangeSlider from './Slider/MultiRangeSlider'
+import Product from './Product'
 
 const Wrapper = styled.div`
   display: flex;
@@ -22,7 +23,7 @@ const ProductsWrapper = styled.div`
   flex-wrap: wrap;
 `
 
-const Product = styled.div`
+/*const Product = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +33,7 @@ const Product = styled.div`
   padding: 10px;
   margin: 10px;
   margin-top: 20px;
-`
+`*/
 
 const ProductTitle = styled.h4`
   text-align: center;
@@ -441,8 +442,18 @@ const Products = () => {
 
               let volume = calculateVolume(product["efficiency"])
 
-
-              return <Product key={key}>
+              return <Product key={key}
+                title={product["name"]}
+                category={category_value}
+                surface={surface_value.join(', ')}
+                application={application_value.join(', ')}
+                lifetime={lifetime}
+                gloss_level={gloss_level}
+                binder={binder_value}
+                solubility={solubility_value}
+                id={id}
+              />
+              {/*return <Product key={key}>
                 <ProductTitle>{product["name"]}</ProductTitle>
                 <p>{category_value}</p>
                 <p>{surface_value}</p>
@@ -478,7 +489,7 @@ const Products = () => {
                         alt="BackButton"
                     />
                 </Link>
-              </Product>
+              </Product>*/}
             })
           }
         </ProductsWrapper>
