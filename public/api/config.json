@@ -11,6 +11,7 @@
                     "id": 0,
                     "label": "Unbehandelt / Komplett abgeschliffen",
                     "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
+                    "action": "set_target",
                     "breadcrumb": "Blankes Holz",
                     "info": {
                         "0": {

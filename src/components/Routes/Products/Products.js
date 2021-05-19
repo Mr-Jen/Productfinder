@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
 import './Products.css'
 import MultiRangeSlider from './Slider/MultiRangeSlider'
@@ -23,22 +23,6 @@ const ProductsWrapper = styled.div`
   flex-wrap: wrap;
 `
 
-/*const Product = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 550px;
-  width: 240px;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 10px;
-  margin-top: 20px;
-`*/
-
-const ProductTitle = styled.h4`
-  text-align: center;
-`
-
 const InputWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -59,22 +43,6 @@ const CheckBoxWrapper = styled.div`
   align-items: center;
 `
 
-const VolumeWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  justify-content: space-around;
-`
-
-const Volume = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-
-const VolumeValue = styled.p`
-  margin-top: -10px;
-`
-
 const DropDownWrapper = styled.div`
   display: flex;
   align-items: flex-start;
@@ -87,6 +55,8 @@ const DropDownWrapper = styled.div`
 const FilterDropDownWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 100;
 `
 
 const FilterDropDown = styled.button`
@@ -94,27 +64,30 @@ const FilterDropDown = styled.button`
   align-items: center;
   justify-content: space-around;
 
-  border: 1px solid black;
+  border: 3px solid #FFE60A;
   border-radius: 5px;
   width: 140px;
   height: 40px;
-  background-color: #FFE60A;
+  background-color: white;
 `
 
 const PlaceHolderRect = styled.div`
-  width: 138px;
+  width: 134px;
   height: 20px;
-  background-color: #FFE60A;
-  margin-top: -10px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  background-color: white;
+  margin-top: 33px;
+  border-left: 3px solid #FFE60A;
+  border-right: 3px solid #FFE60A;
+  border-bottom: none;
+  position: absolute;
+  z-index: 50;
 `
 
 const SurfaceBgRect = styled.div`
   width: 200px;
   height: 120px;
-  background-color: #FFE60A;
-  border: 1px solid black;
+  background-color: white;
+  border: 3px solid #FFE60A;
   border-radius: 0 5px 5px 5px;
 
   display: flex;
@@ -122,6 +95,8 @@ const SurfaceBgRect = styled.div`
   flex-grow: grow;
   justify-content: space-between;
   padding: 0 20px 0 20px;
+  position: absolute;
+  margin-top: 50px;
 `
 
 const ApplicationBgRect = styled.div`
@@ -159,21 +134,8 @@ const ResetDropDownButton = styled.button`
   margin: 10px 0 10px 0;
 `
 
-const linkStyling = {
-  display: 'flex',
-  justifyContent: 'center',
-  textDecoration: 'none',
-  height: '40px',
-  width: '200px',
-  alignItems: 'center',
-  backgroundColor: '#ffe60a',
-  paddingLeft: '20px',
-  paddingRight: '20px',
-  borderRadius: '10px'
-}
 
-
-const Products = () => {
+const Products = ({ target }) => {
   const [initData, setInitData] = useState(null);
   const [inputArea, setInputArea] = useState("");
   const [inputSurface, setInputSurface] = useState([false, false, false, false])
@@ -183,14 +145,16 @@ const Products = () => {
   const [dropdownElement, setDropDownElement] = useState();
   const [ecoRating, setEcoRating] = useState(0);
 
+  console.log("TARGET: ", target)
+
   React.useEffect(() => {
     !initData &&
     fetch('api/data.json')
       .then(res => res.json())
       .then(config => {
-          setInitData(config)
+        setInitData(config)
       })  
-  })
+  }, [])
 
   const onChangeInput = (e) => {
     setInputArea(e.target.value)
@@ -225,7 +189,16 @@ const Products = () => {
 
   const data = initData ? initData : undefined
 
-  const { products, categories, surfaces, applications, binders, solubilities } = {...data}
+  let { products, categories, surfaces, applications, binders, solubilities } = {...data}
+
+  if (products){
+    const productList = Object.entries(products);
+    const filteredProducts = productList.filter((value, key) => value[1].category === target)
+    const new_products = Object.fromEntries(filteredProducts)
+    console.log(new_products)
+    products = new_products
+  }
+
 
   let input_res = inputSurface
     .map((elem, key) => elem === true ? key : null)
@@ -498,5 +471,18 @@ const Products = () => {
   )
 }
 
-export default Products
+const mapStateToProps = ({ user }) => {
+  let target;
+  if (user["target"] === 'Lasur'){
+    target = 1;
+  }
+  else if (user["target"] === 'Farbe'){
+    target = 0;
+  }
+  return {
+    target
+  }
+}
+
+export default connect(mapStateToProps, null)(Products)
 

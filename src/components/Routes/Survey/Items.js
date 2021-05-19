@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import styled from 'styled-components'
 
 import { addToHistory } from '../../../actions/history'
+import { addTarget } from '../../../actions/user'
 import InfoCard from './InfoCard'
 
 const ChoiceWrapper = styled.div`
@@ -54,7 +55,7 @@ const CardWrapper = styled.div`
   opacity: 0.9;
 `
 
-const Items = ({childrenItems, ButtonAddToHistory}) => {
+const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget }) => {
   const [showInfoCard, setShowInfoCard] = React.useState(false);
   const [cardContent, setCardContent] = React.useState();
   const [enabledCard, setEnabledCard] = React.useState(false);
@@ -79,13 +80,20 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
     return res
   }
 
+  const onClickButton = (key, target) => {
+    ButtonAddToHistory(key)
+    if (action === 'set_target'){
+      ButtonAddTarget(target)
+    }
+  }
+
   return (
     <ChoiceWrapper>
       { (childrenItems && childrenItems !== "no-products") &&
         Object.keys(childrenItems).map(key => (
           <div key={key}>
             <ButtonContentWrapper disabled={checkWarning(key) && !enabledCard}>
-              <ChoiceButton disabled={checkWarning(key) && !enabledCard} onClick={() => ButtonAddToHistory(key)}>
+              <ChoiceButton disabled={checkWarning(key) && !enabledCard} onClick={() => onClickButton(key, childrenItems[key].label)}>
                 <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
               </ChoiceButton>
               <InfoButton>
@@ -107,17 +115,23 @@ const Items = ({childrenItems, ButtonAddToHistory}) => {
 
 const mapStateToProps = ({decisions, history}) => {
   let latestItem = decisions
+  let parentItem;
   history.forEach(itemId => {
+    parentItem = latestItem[itemId]
     latestItem = latestItem[itemId].children
   })
 
+  let action = parentItem?.action
+
   return {
-    childrenItems: latestItem 
+    childrenItems: latestItem,
+    action: action
   }
 }
 
 const mapDispatchToProps = dispatch => ({
-    ButtonAddToHistory : itemId => dispatch(addToHistory(itemId))
+  ButtonAddToHistory : itemId => dispatch(addToHistory(itemId)),
+  ButtonAddTarget : target => dispatch(addTarget(target))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Items)

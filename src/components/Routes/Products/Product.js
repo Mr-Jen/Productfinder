@@ -34,6 +34,7 @@ const Img = styled.div`
 
     background-image: url("assets/images/farbeimer.jpg"); 
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
     width: 80%;
     height: 100px;
@@ -42,18 +43,21 @@ const Img = styled.div`
 const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: flex-start;
+    margin: 30px 0 30px 0;
+    margin-left: 5%;
 `
 
 const CategoryWrapper = styled.div`
     display: flex;
-    justify-content: flex-start;
     margin-bottom: -10px;
+    align-self: flex-start;
 `
 
 const CategoryText = styled.p`
     font-weight: bold;
     font-size: 13px;
+    margin-right: 10px;
 `
 
 const ValueText = styled.p`

@@ -4,6 +4,7 @@
             "id": 0,
             "name": "Silikonalkydfarbe ODEN",
             "category": 0,
+            "allowed_coatings": [1,2,4,5], 
             "surface": [0,1],
             "application": [0,2,3,4,5],
             "efficiency": {
@@ -430,5 +431,14 @@
         "3": "Leinöl",
         "4": "Terpentin allgemein",
         "5": "Terpentin/Wasser"
+    },
+    "coatings":
+    {
+        "0": "Acryl",
+        "1": "Alkydharz",
+        "2": "Holzöl aushärtend",
+        "3": "Holzöl weich",
+        "4": "Farbe",
+        "5": "Grundiert"
     }
 }
