@@ -1,9 +1,16 @@
-export const ADD_TARGET = 'ADD_TARGET'
-export const ADD_PRE = 'ADD_PRE'
+export const SET_TARGET = 'SET_TARGET'
+export const SET_COATING = 'SET_COATING'
 
-export const addTarget= (target) => ({
-    type: ADD_TARGET,
+export const setTarget = (target) => ({
+    type: SET_TARGET,
     payload: {
         target
+    }
+})
+
+export const setCoating = (coating) => ({
+    type: SET_COATING,
+    payload: {
+        coating
     }
 })

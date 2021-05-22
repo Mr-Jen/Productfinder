@@ -1,10 +1,12 @@
-import { ADD_TARGET } from '../actions/user'
+import { SET_TARGET, SET_COATING } from '../actions/user'
 
-const user = (state = {"pre": [], "target": null}, action) => {
+const user = (state = {"coating": [], "target": null}, action) => {
     const { type, payload } = action;
     switch (type){
-        case ADD_TARGET:
+        case SET_TARGET:
             return {...state, "target": payload.target}
+        case SET_COATING:
+            
         default:
             return state;
     }

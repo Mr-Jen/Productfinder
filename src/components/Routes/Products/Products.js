@@ -21,6 +21,7 @@ const ProductsWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  width: 80vw;
 `
 
 const InputWrapper = styled.div`
@@ -145,8 +146,6 @@ const Products = ({ target }) => {
   const [dropdownElement, setDropDownElement] = useState();
   const [ecoRating, setEcoRating] = useState(0);
 
-  console.log("TARGET: ", target)
-
   React.useEffect(() => {
     !initData &&
     fetch('api/data.json')
@@ -154,7 +153,7 @@ const Products = ({ target }) => {
       .then(config => {
         setInitData(config)
       })  
-  }, [])
+  })
 
   const onChangeInput = (e) => {
     setInputArea(e.target.value)
@@ -191,7 +190,7 @@ const Products = ({ target }) => {
 
   let { products, categories, surfaces, applications, binders, solubilities } = {...data}
 
-  if (products){
+  if (products && target !== undefined){
     const productList = Object.entries(products);
     const filteredProducts = productList.filter((value, key) => value[1].category === target)
     const new_products = Object.fromEntries(filteredProducts)
@@ -369,7 +368,7 @@ const Products = ({ target }) => {
         <FilterDropDownWrapper>
           <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 4 ? null : 4)}>
             <strong>Ökobilanz</strong>
-            <img style={{transform: dropdownElement === 4 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+            <img style={{transform: dropdownElement === 4 && `rotate(180deg)`}} alt="dropdown-icon" height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
           </FilterDropDown>
           {dropdownElement === 4 && <PlaceHolderRect/>}
           {dropdownElement === 4 &&

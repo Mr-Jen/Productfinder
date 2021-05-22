@@ -124,6 +124,7 @@
                                                             "id": 0,
                                                             "label": "Trocknendes / Aushärtendes Öl?",
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "action": "set_target",
                                                             "children": {
                                                                 "0": {
                                                                     "id": 0,
@@ -174,6 +175,7 @@
                                                                     "id": 0,
                                                                     "label": "Ergebnis des Tests",
                                                                     "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
+                                                                    "action": "set_target",
                                                                     "children": {
                                                                         "0": {
                                                                             "id": 0,
@@ -284,6 +286,7 @@
                                                                             "id": 0,
                                                                             "label": "Ergebnis des Tests",
                                                                             "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
+                                                                            "action": "set_target",
                                                                             "children": {
                                                                                 "0": {
                                                                                     "id": 0,
@@ -316,14 +319,35 @@
                                             }
                                         },
                                         "1": {            
-                                            "id": 1,
+                                            "id": 0,
                                             "label": "Alles abgeschliffen",
-                                            "question": "",
-                                            "children": null
+                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "action": "set_target",
+                                            "children": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "label": "Lasur",
+                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                    "children": null
+                                                },
+                                                "1": {
+                                                    "id": 1,
+                                                    "label": "Farbe",
+                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                    "info": {
+                                                        "0": {
+                                                            "id": 0,
+                                                            "title": "Deckende Farbe",
+                                                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                                            "image": "assets/images/deckende-farbe-intakt_keine_maserung.jpg"
+                                                        }
+                                                    },
+                                                    "children": null
+                                                }
+                                            } 
                                         }
                                     }
                                 }
-
                             }
                         },
                         "2": {
@@ -348,8 +372,14 @@
                                                     "children": {
                                                         "0": {
                                                             "id": 0,
-                                                            "label": "Produktempfehlungen",
-                                                            "question": "Basierend auf dem Testergebnis empfehlen wir folgende Produkte:",
+                                                            "label": "Acryl / Acrylat-Basis",
+                                                            "question": null,
+                                                            "children": null
+                                                        },
+                                                        "1": {
+                                                            "id": 0,
+                                                            "label": "Öl / Alkyd-Basis",
+                                                            "question": null,
                                                             "children": null
                                                         }
                                                     }
@@ -382,6 +412,7 @@
                                             "id": 0,
                                             "label": "Alles abgeschliffen",
                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "action": "set_target",
                                             "children": {
                                                 "0": {
                                                     "id": 0,

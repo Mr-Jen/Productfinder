@@ -88,7 +88,9 @@ const CheckerWrapper = styled.div`
 const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId }) => {
     const [infoState, setInfoState] = React.useState(0);
     const [showEnlarged, setShowEnlarged] = React.useState(false);
-    let checked = warningIds.includes(data[infoState].unique);
+    let checked = data?.infoState && warningIds.includes(data[infoState].unique);
+
+    console.log("IS DATA AND INFO?: ", data)
     
     const onClickNextCard = (e) => {
         if (e === 0){
@@ -134,7 +136,7 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId }) => {
                     <TitleWrapper>
                         <Title>{data ? data[infoState]["title"] : default_content["title"]}</Title>
                     </TitleWrapper>
-                    <Text>{data ? data[infoState]["content"] : default_content["content"]}</Text>
+                    <Text>{data?.infoState ? data[infoState]["content"] : default_content["content"]}</Text>
                     {data[infoState]?.warning && <CheckerWrapper>
                         <input checked={warningIds.length > 0 ? checked : false} onChange={() => onClickAgreed(data[infoState].unique)} type="checkbox"></input>
                         <p>Ich habe den Warnhinweis gelesen</p>

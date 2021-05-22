@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import styled from 'styled-components'
 
 import { addToHistory } from '../../../actions/history'
-import { addTarget } from '../../../actions/user'
+import { setTarget } from '../../../actions/user'
 import InfoCard from './InfoCard'
 
 const ChoiceWrapper = styled.div`
@@ -60,6 +60,10 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget }) =>
   const [cardContent, setCardContent] = React.useState();
   const [enabledCard, setEnabledCard] = React.useState(false);
 
+  React.useEffect(() => {
+    console.log("CONTENT CHANGE: ", cardContent)
+  }, [cardContent])
+
   const onClickInfo = (item) => {
     setShowInfoCard(!showInfoCard)
     setCardContent(item)
@@ -87,6 +91,15 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget }) =>
     }
   }
 
+  const default_info = {
+      "0": {
+          "id": 0,
+          "title": "Abschleifen",
+          "content": "Beim Abschleifen ist darauf zu achten, dass xyz",
+          "image": "assets/images/paint-on-wood.gif"
+      }
+  }
+
   return (
     <ChoiceWrapper>
       { (childrenItems && childrenItems !== "no-products") &&
@@ -97,7 +110,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget }) =>
                 <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
               </ChoiceButton>
               <InfoButton>
-                <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"])} height="20px" src="assets/icons/misc/info.svg"></img>
+                <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info)} height="20px" src="assets/icons/misc/info.svg"></img>
               </InfoButton>
             </ButtonContentWrapper>
           </div>
@@ -131,7 +144,7 @@ const mapStateToProps = ({decisions, history}) => {
 
 const mapDispatchToProps = dispatch => ({
   ButtonAddToHistory : itemId => dispatch(addToHistory(itemId)),
-  ButtonAddTarget : target => dispatch(addTarget(target))
+  ButtonAddTarget : target => dispatch(setTarget(target))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Items)
