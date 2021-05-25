@@ -5,12 +5,14 @@
             "id": 0,
             "label": "Holzfassade für Gartenhaus, Wohnhaus oder Carport",
             "question": "Ist es unbehandeltes Holz oder wurde schon ein Anstrich / eine Behandlung vorgenommen?",
+            "action": "set_coating",
             "breadcrumb": "Holzfassade",
             "children": {
                 "0": {
                     "id": 0,
                     "label": "Unbehandelt / Komplett abgeschliffen",
                     "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
+                    "action_value": null,
                     "action": "set_target",
                     "breadcrumb": "Blankes Holz",
                     "info": {
@@ -368,19 +370,50 @@
                                                 "0": {
                                                     "id": 0,
                                                     "label": "Test mit Schleifpapier",
+                                                    "action": "set_coating",
                                                     "question": "",
                                                     "children": {
                                                         "0": {
                                                             "id": 0,
-                                                            "label": "Acryl / Acrylat-Basis",
-                                                            "question": null,
-                                                            "children": null
+                                                            "label": "Acryl / Acrylat-Basis",                                                            
+                                                            "action_value": 0,
+                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "action": "set_target",
+                                                            "children": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "label": "Lasur",
+                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                    "children": null
+                                                                },
+                                                                "1": {
+                                                                    "id": 1,
+                                                                    "label": "Farbe",
+                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "children": null
+                                                                }
+                                                            } 
                                                         },
                                                         "1": {
                                                             "id": 0,
                                                             "label": "Öl / Alkyd-Basis",
-                                                            "question": null,
-                                                            "children": null
+                                                            "action_value": 1,
+                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "action": "set_target",
+                                                            "children": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "label": "Lasur",
+                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                    "children": null
+                                                                },
+                                                                "1": {
+                                                                    "id": 1,
+                                                                    "label": "Farbe",
+                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "children": null
+                                                                }
+                                                            } 
                                                         }
                                                     }
                                                 }

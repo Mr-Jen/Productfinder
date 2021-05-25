@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import styled from 'styled-components'
 
 import { addToHistory } from '../../../actions/history'
-import { setTarget } from '../../../actions/user'
+import { setCoating, setTarget } from '../../../actions/user'
 import InfoCard from './InfoCard'
 
 const ChoiceWrapper = styled.div`
@@ -55,7 +55,7 @@ const CardWrapper = styled.div`
   opacity: 0.9;
 `
 
-const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget }) => {
+const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, ButtonSetCoating }) => {
   const [showInfoCard, setShowInfoCard] = React.useState(false);
   const [cardContent, setCardContent] = React.useState();
   const [enabledCard, setEnabledCard] = React.useState(false);
@@ -84,10 +84,19 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget }) =>
     return res
   }
 
+  console.log("THE ACTION: ", action)
+
   const onClickButton = (key, target) => {
+    console.log("ACTION INSIDE BUTTON HANDLER: ", action)
     ButtonAddToHistory(key)
+    //console.log("GOAL: ", target, action)
     if (action === 'set_target'){
-      ButtonAddTarget(target)
+      console.log("SETTING TARGET: ", target.label)
+      ButtonAddTarget(target.label)
+    }
+    else if (action === 'set_coating'){
+      console.log("SETTING COATING: ", target?.action_value)
+      ButtonSetCoating(target.action_value)
     }
   }
 
@@ -106,7 +115,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget }) =>
         Object.keys(childrenItems).map(key => (
           <div key={key}>
             <ButtonContentWrapper disabled={checkWarning(key) && !enabledCard}>
-              <ChoiceButton disabled={checkWarning(key) && !enabledCard} onClick={() => onClickButton(key, childrenItems[key].label)}>
+              <ChoiceButton disabled={checkWarning(key) && !enabledCard} onClick={() => onClickButton(key, childrenItems[key])}>
                 <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
               </ChoiceButton>
               <InfoButton>
@@ -135,6 +144,7 @@ const mapStateToProps = ({decisions, history}) => {
   })
 
   let action = parentItem?.action
+  console.log("ACTION: ", action)
 
   return {
     childrenItems: latestItem,
@@ -144,7 +154,8 @@ const mapStateToProps = ({decisions, history}) => {
 
 const mapDispatchToProps = dispatch => ({
   ButtonAddToHistory : itemId => dispatch(addToHistory(itemId)),
-  ButtonAddTarget : target => dispatch(setTarget(target))
+  ButtonAddTarget : target => dispatch(setTarget(target)),
+  ButtonSetCoating : coating => dispatch(setCoating(coating))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Items)

@@ -136,7 +136,7 @@ const ResetDropDownButton = styled.button`
 `
 
 
-const Products = ({ target }) => {
+const Products = ({ target, coating }) => {
   const [initData, setInitData] = useState(null);
   const [inputArea, setInputArea] = useState("");
   const [inputSurface, setInputSurface] = useState([false, false, false, false])
@@ -190,10 +190,28 @@ const Products = ({ target }) => {
 
   let { products, categories, surfaces, applications, binders, solubilities } = {...data}
 
+  const checkCoatingCompability = (allowed_coatings, user_coating) => {
+    let compatible = true;
+    user_coating.map((coating) => {
+      if (!(allowed_coatings.includes(coating))){
+        compatible = false;
+      }
+    })
+
+    return compatible;
+  }
+
   if (products && target !== undefined){
     const productList = Object.entries(products);
-    const filteredProducts = productList.filter((value, key) => value[1].category === target)
-    const new_products = Object.fromEntries(filteredProducts)
+    console.log("COATING BEFORE FILTERING: ", coating)
+    const filteredProducts = productList
+      .filter((value, key) => value[1].category === target)
+
+    const filteredProducts_2 = filteredProducts.filter((value, key) => coating ? (checkCoatingCompability(value[1].allowed_coatings, coating) && value) : value)
+
+    /*console.log("BEFORE FILTERING: ", filteredProducts)
+    console.log("AFTER FILTERING: ", test)*/
+    const new_products = Object.fromEntries(coating.length === 1 && coating[0] === null ? filteredProducts : filteredProducts_2)
     console.log(new_products)
     products = new_products
   }
@@ -472,6 +490,7 @@ const Products = ({ target }) => {
 
 const mapStateToProps = ({ user }) => {
   let target;
+  let coating = user["coating"]
   if (user["target"] === 'Lasur'){
     target = 1;
   }
@@ -479,7 +498,8 @@ const mapStateToProps = ({ user }) => {
     target = 0;
   }
   return {
-    target
+    target,
+    coating
   }
 }
 

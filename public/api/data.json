@@ -20,6 +20,7 @@
             "id": 1,
             "name": "Emulsionsfarbe SOLID V",
             "category": 0,
+            "allowed_coatings": [0,1,2,4,5], 
             "surface": [0],
             "application": [0],
             "efficiency": {
@@ -35,6 +36,7 @@
             "id": 2,
             "name": "Holzfassadenfarbe HEIMDALL",
             "category": 0,
+            "allowed_coatings": [1,2,4,5], 
             "surface": [0],
             "application": [0],
             "efficiency": {
@@ -50,6 +52,7 @@
             "id": 3,
             "name": "Emulsionsfarbe TITAN V",
             "category": 0,
+            "allowed_coatings": [0,1,2,4,5], 
             "surface": [0],
             "application": [0,2,3],
             "efficiency": {
@@ -65,6 +68,7 @@
             "id": 4,
             "name": "Industrielle Leinölfarbe OLJEFÄRG",
             "category": 0,
+            "allowed_coatings": [], 
             "surface": [0,1],
             "application": [0,2,3,4],
             "efficiency": {
@@ -80,6 +84,7 @@
             "id": 5,
             "name": "Acrylat VILLAFÄRG",
             "category": 0,
+            "allowed_coatings": [], 
             "surface": [0,1,2],
             "application": [0,5],
             "efficiency": {
@@ -95,6 +100,7 @@
             "id": 6,
             "name": "LASOL 9000",
             "category": 0,
+            "allowed_coatings": [1,2,4,5], 
             "surface": [0],
             "application": [0],
             "efficiency": {
@@ -110,6 +116,7 @@
             "id": 7,
             "name": "Nadelholzteer",
             "category": 0,
+            "allowed_coatings": [3], 
             "surface": [0],
             "application": [0,3],
             "efficiency": {
@@ -125,6 +132,7 @@
             "id": 0,
             "name": "Schlammfarbe",
             "category": 0,
+            "allowed_coatings": [4], 
             "surface": [0],
             "application": [0],
             "efficiency": {
@@ -140,6 +148,7 @@
             "id": 9,
             "name": "Dickschichtlasur OLJETÄCKLASYR",
             "category": 0,
+            "allowed_coatings": [], 
             "surface": [0,1],
             "application": [0,2,3,4],
             "efficiency": {
@@ -155,6 +164,7 @@
             "id": 10,
             "name": "Reine Leinölfarbe ALLBÄCK",
             "category": 0,
+            "allowed_coatings": [0,1,2,3,4,5], 
             "surface": [0,1],
             "application": [0,2,3,4],
             "efficiency": {
@@ -170,6 +180,7 @@
             "id": 11,
             "name": "Putzfarbe BETOPAINT",
             "category": 0,
+            "allowed_coatings": [], 
             "surface": [2],
             "application": [0],
             "efficiency": {
@@ -185,6 +196,7 @@
             "id": 12,
             "name": "Fensterfarbe V / Fönsterfärg V",
             "category": 0,
+            "allowed_coatings": [], 
             "surface": [0],
             "application": [2],
             "efficiency": {
@@ -200,6 +212,7 @@
             "id": 13,
             "name": "Bodenfarbe GOLVFÄRG",
             "category": 0,
+            "allowed_coatings": [], 
             "surface": [0,3],
             "application": [1],
             "efficiency": {
@@ -215,6 +228,7 @@
             "id": 14,
             "name": "Bootslack/Klarlack",
             "category": 1,
+            "allowed_coatings": [], 
             "surface": [0,3],
             "application": [1,4],
             "efficiency": {
@@ -230,6 +244,7 @@
             "id": 15,
             "name": "Terrassenlasur / Silikonalkydlasur",
             "category": 1,
+            "allowed_coatings": [1,2], 
             "surface": [0],
             "application": [0,1,2,3,4],
             "efficiency": {
@@ -245,6 +260,7 @@
             "id": 16,
             "name": "Trälasyr V",
             "category": 1,
+            "allowed_coatings": [0,1,2], 
             "surface": [0],
             "application": [0,2],
             "efficiency": {
@@ -260,6 +276,7 @@
             "id": 17,
             "name": "SIOO Holzimprägnierer",
             "category": 2,
+            "allowed_coatings": [], 
             "surface": [0],
             "application": [0,1,2,3,4,5],
             "efficiency": {
@@ -275,6 +292,7 @@
             "id": 18,
             "name": "Farbloses Leinöl",
             "category": 2,
+            "allowed_coatings": [], 
             "surface": [0,1],
             "application": [0,2,3,4],
             "efficiency": {
@@ -290,6 +308,7 @@
             "id": 19,
             "name": "Chinesisches Holzöl (Tungöl)",
             "category": 2,
+            "allowed_coatings": [2], 
             "surface": [0],
             "application": [2,4],
             "efficiency": {
@@ -305,6 +324,7 @@
             "id": 20,
             "name": "Holzöl 30",
             "category": 2,
+            "allowed_coatings": [], 
             "surface": [0],
             "application": [3,4],
             "efficiency": {
@@ -320,6 +340,7 @@
             "id": 21,
             "name": "Helles Teeröl LJUS TJÄROLJA",
             "category": 2,
+            "allowed_coatings": [], 
             "surface": [0],
             "application": [0,3],
             "efficiency": {
@@ -335,6 +356,7 @@
             "id": 22,
             "name": "Schwellenöl SLEPERSOLJA",
             "category": 2,
+            "allowed_coatings": [], 
             "surface": [0],
             "application": [0,3],
             "efficiency": {
@@ -350,6 +372,7 @@
             "id": 23,
             "name": "Grundieröl GRUNDOLJA",
             "category": 2,
+            "allowed_coatings": [], 
             "surface": [0],
             "application": [0,1,2,3,4,5],
             "efficiency": {
@@ -365,6 +388,7 @@
             "id": 24,
             "name": "Sperr- und Haftgrund (Trägrund/Utegrund)",
             "category": 2,
+            "allowed_coatings": [], 
             "surface": [0],
             "application": [0,2,3,4,5],
             "efficiency": {
@@ -380,6 +404,7 @@
             "id": 25,
             "name": "Bootslack/Klarlack",
             "category": 1,
+            "allowed_coatings": [], 
             "surface": [0,3],
             "application": [1,4],
             "efficiency": {
