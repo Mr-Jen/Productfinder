@@ -5,15 +5,14 @@
             "id": 0,
             "label": "Holzfassade für Gartenhaus, Wohnhaus oder Carport",
             "question": "Ist es unbehandeltes Holz oder wurde schon ein Anstrich / eine Behandlung vorgenommen?",
-            "action": "set_coating",
             "breadcrumb": "Holzfassade",
             "children": {
                 "0": {
                     "id": 0,
                     "label": "Unbehandelt / Komplett abgeschliffen",
                     "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
-                    "action_value": null,
-                    "action": "set_target",
+                    "target_action": "set_target",
+                    "action": "set_coating",
                     "breadcrumb": "Blankes Holz",
                     "info": {
                         "0": {
@@ -28,6 +27,7 @@
                             "id": 0,
                             "label": "Lasur",
                             "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                            "action_value": null,
                             "info": {
                                 "0": {
                                     "id": 0,
@@ -50,6 +50,7 @@
                             "id": 1,
                             "label": "Farbe",
                             "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                            "action_value": null,
                             "info": {
                                 "0": {
                                     "id": 0,
@@ -126,7 +127,7 @@
                                                             "id": 0,
                                                             "label": "Trocknendes / Aushärtendes Öl?",
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                            "action": "set_target",
+                                                            "target_action": "set_target",
                                                             "children": {
                                                                 "0": {
                                                                     "id": 0,
@@ -177,7 +178,7 @@
                                                                     "id": 0,
                                                                     "label": "Ergebnis des Tests",
                                                                     "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
-                                                                    "action": "set_target",
+                                                                    "target_action": "set_target",
                                                                     "children": {
                                                                         "0": {
                                                                             "id": 0,
@@ -288,7 +289,7 @@
                                                                             "id": 0,
                                                                             "label": "Ergebnis des Tests",
                                                                             "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
-                                                                            "action": "set_target",
+                                                                            "target_action": "set_target",
                                                                             "children": {
                                                                                 "0": {
                                                                                     "id": 0,
@@ -324,7 +325,7 @@
                                             "id": 0,
                                             "label": "Alles abgeschliffen",
                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                            "action": "set_target",
+                                            "target_action": "set_target",
                                             "children": {
                                                 "0": {
                                                     "id": 0,
@@ -355,11 +356,13 @@
                         "2": {
                             "id": 2,
                             "label": "Verwitterte Farbe",
+                            "action": "set_coating",
                             "question": null,
                             "children": {
                                 "0": {
                                     "id": 0,
                                     "label": "Info",
+                                    "action_value": 4,
                                     "question": "Bitte zunächst Anstrich mit Fassadenreiniger waschen",
                                     "children": {
                                         "0": {
@@ -378,14 +381,8 @@
                                                             "label": "Acryl / Acrylat-Basis",                                                            
                                                             "action_value": 0,
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                            "action": "set_target",
+                                                            "target_action": "set_target",
                                                             "children": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "label": "Lasur",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
-                                                                    "children": null
-                                                                },
                                                                 "1": {
                                                                     "id": 1,
                                                                     "label": "Farbe",
@@ -399,14 +396,8 @@
                                                             "label": "Öl / Alkyd-Basis",
                                                             "action_value": 1,
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                            "action": "set_target",
+                                                            "target_action": "set_target",
                                                             "children": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "label": "Lasur",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
-                                                                    "children": null
-                                                                },
                                                                 "1": {
                                                                     "id": 1,
                                                                     "label": "Farbe",
@@ -445,7 +436,7 @@
                                             "id": 0,
                                             "label": "Alles abgeschliffen",
                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                            "action": "set_target",
+                                            "target_action": "set_target",
                                             "children": {
                                                 "0": {
                                                     "id": 0,
@@ -489,8 +480,24 @@
                         "4": {           
                             "id": 4,
                             "label": "Mit Öl behandelt",
-                            "question": "",
-                            "children": null
+                            "question": "Um welches Öl handelt es sich?",
+                            "action": "set_coating",
+                            "children": {
+                                "0": {           
+                                    "id": 0,
+                                    "label": "Härtendes Öl",
+                                    "action_value": 2,
+                                    "question": "",
+                                    "children": null
+                                },
+                                "1": {           
+                                    "id": 1,
+                                    "label": "Nicht-härtendes Öl",
+                                    "action_value": 3, 
+                                    "question": "",
+                                    "children": null
+                                }
+                            }
                         }
                     }
                 },

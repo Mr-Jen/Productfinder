@@ -1,4 +1,4 @@
-import { SET_TARGET, SET_COATING } from '../actions/user'
+import { SET_TARGET, SET_COATING, SET_COATING_LENGTH } from '../actions/user'
 
 const user = (state = {"coating": [], "target": null}, action) => {
     const { type, payload } = action;
@@ -6,8 +6,11 @@ const user = (state = {"coating": [], "target": null}, action) => {
         case SET_TARGET:
             return {...state, "target": payload.target}
         case SET_COATING:
-            console.log("INSIDE COATING SETTING VALUE: ", payload.coating)
-            return {...state, "coating": [payload.coating]}
+            return {...state, "coating": [...state["coating"] , payload.coating]}
+        case SET_COATING_LENGTH:
+            let new_coatings = state["coating"]
+            new_coatings.length = payload.length
+            return {...state, "coating": new_coatings}
         default:
             return state;
     }

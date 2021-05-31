@@ -1,9 +1,11 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import { connect, ReactReduxContext } from 'react-redux'
+import watch from 'redux-watch'
+import { useContext } from 'react';
 import styled from 'styled-components'
 
 import { addToHistory } from '../../../actions/history'
-import { setCoating, setTarget } from '../../../actions/user'
+import { setCoating, setCoatingLength, setTarget } from '../../../actions/user'
 import InfoCard from './InfoCard'
 
 const ChoiceWrapper = styled.div`
@@ -55,10 +57,32 @@ const CardWrapper = styled.div`
   opacity: 0.9;
 `
 
-const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, ButtonSetCoating }) => {
+const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, ButtonSetCoating, ButtonSetCoatingLength, coatingLength, target_action }) => {
   const [showInfoCard, setShowInfoCard] = React.useState(false);
   const [cardContent, setCardContent] = React.useState();
   const [enabledCard, setEnabledCard] = React.useState(false);
+  const [allowDispatch, setAllowDispatch] = React.useState(true);
+
+  const { store } = useContext(ReactReduxContext)
+
+  let w = watch(store.getState, "history")
+  store.subscribe(w((newVal, oldVal) => {
+    if (oldVal.length > newVal.length){
+      setAllowDispatch(true)
+    }
+  }))
+
+  const unsubscribe = store.subscribe(() =>
+    console.log('State after dispatch: ', store.getState())
+  )
+
+  React.useEffect(() => {
+    if(allowDispatch){
+      ButtonSetCoatingLength(coatingLength)
+      setAllowDispatch(false)
+    }
+    unsubscribe()
+  })
 
   React.useEffect(() => {
     console.log("CONTENT CHANGE: ", cardContent)
@@ -87,10 +111,10 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
   console.log("THE ACTION: ", action)
 
   const onClickButton = (key, target) => {
-    console.log("ACTION INSIDE BUTTON HANDLER: ", action)
+    //console.log("ACTION INSIDE BUTTON HANDLER: ", action)
     ButtonAddToHistory(key)
     //console.log("GOAL: ", target, action)
-    if (action === 'set_target'){
+    if (target_action === 'set_target'){
       console.log("SETTING TARGET: ", target.label)
       ButtonAddTarget(target.label)
     }
@@ -135,27 +159,42 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
   )
 }
 
-const mapStateToProps = ({decisions, history}) => {
+const mapStateToProps = ({ decisions, history, user}) => {
+  const coatings = user["coating"]
   let latestItem = decisions
+  let amountOfAction = 0;
   let parentItem;
   history.forEach(itemId => {
     parentItem = latestItem[itemId]
+    if(parentItem?.action && parentItem?.action === "set_coating"){
+      amountOfAction += 1;
+    }
     latestItem = latestItem[itemId].children
   })
 
   let action = parentItem?.action
-  console.log("ACTION: ", action)
+  let target_action = parentItem?.target_action
+  let coatingLength = action === "set_coating" ? amountOfAction - 1 : amountOfAction
+
+  /*console.log("ACTION: ", action)*/
+
+  console.log("AMOUNT OF ACTIONS: ", amountOfAction)
+  console.log("LENGTH OF COATING SHOULD BE: ", coatingLength)
 
   return {
     childrenItems: latestItem,
-    action: action
+    action: action,
+    target_action,
+    amountOfAction,
+    coatingLength
   }
 }
 
 const mapDispatchToProps = dispatch => ({
   ButtonAddToHistory : itemId => dispatch(addToHistory(itemId)),
   ButtonAddTarget : target => dispatch(setTarget(target)),
-  ButtonSetCoating : coating => dispatch(setCoating(coating))
+  ButtonSetCoating : coating => dispatch(setCoating(coating)),
+  ButtonSetCoatingLength : length => dispatch(setCoatingLength(length))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Items)
