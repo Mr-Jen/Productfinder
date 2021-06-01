@@ -163,7 +163,7 @@
         "17": {
             "id": 17,
             "name": "SIOO Holzimprägnierer",
-            "category": 2,
+            "category": 0,
             "allowed_coatings": [], 
             "surface": [0],
             "application": [0,1,2,3,4,5],
@@ -277,6 +277,38 @@
             "name": "Sperr- und Haftgrund (Trägrund/Utegrund)",
             "category": 2,
             "allowed_coatings": [], 
+            "surface": [0],
+            "application": [0,2,3,4,5],
+            "efficiency": {
+                "smooth_surface": [6,8],
+                "rough_surface": [4,6]
+            },
+            "lifetime": [1,2],
+            "gloss_level": [0,10],
+            "binder": 0,
+            "solubility": 5
+        },
+        "25": {
+            "id": 25,
+            "name": "Graue Teerlasur Tjärvitriol",
+            "category": 1,
+            "allowed_coatings": [3], 
+            "surface": [0],
+            "application": [0,2,3,4,5],
+            "efficiency": {
+                "smooth_surface": [6,8],
+                "rough_surface": [4,6]
+            },
+            "lifetime": [1,2],
+            "gloss_level": [0,10],
+            "binder": 0,
+            "solubility": 5
+        },
+        "26": {
+            "id": 26,
+            "name": "Teerlasur Tarinoil",
+            "category": 1,
+            "allowed_coatings": [3], 
             "surface": [0],
             "application": [0,2,3,4,5],
             "efficiency": {

@@ -72,16 +72,17 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     }
   }))
 
-  const unsubscribe = store.subscribe(() =>
+  //Unsubscribing from the store subscription
+  /*const unsubscribe = store.subscribe(() =>
     console.log('State after dispatch: ', store.getState())
-  )
+  )*/
 
   React.useEffect(() => {
     if(allowDispatch){
       ButtonSetCoatingLength(coatingLength)
       setAllowDispatch(false)
     }
-    unsubscribe()
+    //unsubscribe()
   })
 
   React.useEffect(() => {
