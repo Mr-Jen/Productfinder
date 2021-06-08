@@ -443,43 +443,6 @@ const Products = ({ target, coating }) => {
                 solubility={solubility_value}
                 id={id}
               />
-              {/*return <Product key={key}>
-                <ProductTitle>{product["name"]}</ProductTitle>
-                <p>{category_value}</p>
-                <p>{surface_value}</p>
-                <p style={{wordWrap: "break-word"}}>{application_value}</p>
-                <p>{lifetime[0]} - {lifetime[1]} Jahre</p>
-                {
-                  gloss_level.length > 1 ?
-                    <p>{gloss_level[0]} - {gloss_level[1]}</p>
-                  : <p>{gloss_level}</p>
-                }
-                <p>{binder_value}</p>
-                <p>{solubility_value}</p>
-                <VolumeWrapper>
-                  <Volume>
-                    <h5>Glatte Fläche: </h5>
-                    <VolumeValue>Min: {volume[0]} Liter</VolumeValue>
-                    <VolumeValue>Max: {volume[2]} Liter</VolumeValue>
-                  </Volume>
-                  <Volume>
-                    <h5>Raue Fläche: </h5>
-                    <VolumeValue>Min: {volume[1]} Liter</VolumeValue>
-                    <VolumeValue>Max: {volume[3]} Liter</VolumeValue>
-                  </Volume>
-                </VolumeWrapper>
-                <Link 
-                    to={`/product/${id + 1}`}
-                    style={linkStyling}
-                >
-                    <p style={{"marginRight": "20px", "color": "black", "fontWeight": "bold"}}>Ansehen</p>
-                    <img 
-                        src="assets/icons/misc/right.png"
-                        style={{"height": "25px", "width": "25px", "margin": "5px"}}
-                        alt="BackButton"
-                    />
-                </Link>
-              </Product>*/}
             })
           }
         </ProductsWrapper>
@@ -496,6 +459,9 @@ const mapStateToProps = ({ user }) => {
   }
   else if (user["target"] === 'Farbe'){
     target = 0;
+  }
+  else if (user["target"] === 'Öl'){
+    target = 2;
   }
   return {
     target,

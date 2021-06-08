@@ -59,7 +59,16 @@
     "0": {
         "id": 0,
         "title": "Lasur",
-        "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+        "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
         "image": "assets/images/lasur.png"
     },
 },
+
+"0": {
+    "id": 0,
+    "unique": "2cabdbc8-1000-4452-9818-47e4ed8cb655",
+    "title": "Warnung zur Imprägnierung",
+    "content": "Wichtig! Imprägniertes Holz kann frühestens nach 3-6 Monaten gestrichen werden. Streichen Sie unter keinen Umständen kesseldruckimprägniertes Holz direkt nach dem Aufbau. Die Imprägnierung muss sich erst raus gewaschen haben.",
+    "image": "assets/images/lasur.png",
+    "warning": true
+}
