@@ -542,7 +542,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Abblätternde Farbe",
-                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. In Deutschland gänzlich unbekannt aber gehobelte Hölzer können nicht direkt gestrichen werden. Streicht man zu früh blättert der Anstrich ab. Ebenso braucht Farbe immer eine Grundierung. Ohne Grundierung wird sie rissig oder blättert ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt‘ bei typisch deutschen Produkten etwa nach 8-10 Jahren der Fall, bei schwedischen Farben nach 20-30 Jahren. Ist die Farbe irgendwann zu weit runter gebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
                                     "image": "assets/images/Farbe/abblätternde-farbe.jpg"
                                 }
                             },
@@ -1070,7 +1070,7 @@
                                 "2": {
                                     "id": 2,
                                     "title": "Rissig / Abblätternd / Abgewittert",
-                                    "content": "Jede Farbe verwittert mit der Zeit, im besten Fall kann man Farbe jedoch immer überstreichen. Wenn Farbe nur leichte Verwitterungserscheinungen wie Auskreidungen (mehlige Kreideschicht auf dem Anstrich), Moos-, oder Schimmelbefall aufweist, muss sie gesäubert werden. Ist Farbe mit einem Fassadenreiniger gesäubert, kann sie überstrichen werden. Ist das Holz darunter jedoch angegriffen und es besteht keine wetterschützende intakte Farbschicht mehr, dann ist Ihre Farbe komplett abgewittert. Solche Bereiche müssen leider abgeschliffen werden.",
+                                    "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. In Deutschland gänzlich unbekannt aber gehobelte Hölzer können nicht direkt gestrichen werden. Streicht man zu früh blättert der Anstrich ab. Ebenso braucht Farbe immer eine Grundierung. Ohne Grundierung wird sie rissig oder blättert ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt‘ bei typisch deutschen Produkten etwa nach 8-10 Jahren der Fall, bei schwedischen Farben nach 20-30 Jahren. Ist die Farbe irgendwann zu weit runter gebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
                                     "image": "assets/images/Farbe/abblätternde-farbe.jpg"
                                 }
                             },
