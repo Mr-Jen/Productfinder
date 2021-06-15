@@ -73,7 +73,7 @@
                 },
                 "1": {
                     "id": 1,
-                    "label": "Bereits mit Öl, Lasur, Grundierung oder Farbe vorbehandelt",
+                    "label": "Bereits mit Öl, Lasur oder Farbe vorbehandelt",
                     "question": "In welchem Zustand ist der Anstrich? ",
                     "info": {
                         "0": {
@@ -99,7 +99,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Intakte Farbe",
-                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                 },
                                 "1": {
@@ -118,115 +118,19 @@
                             "children": {           
                                 "0": {
                                     "id": 0,
-                                    "label": "Oberfläche gesäubert",
+                                    "label": "Oberfläche gesäubert?",
                                     "question": "Woraus besteht der Altanstrich?",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "title": "Oberfläche säubern",
+                                            "content": "Vor dem Renovierungsanstrich muss der Untergrund sauber und trocken sein. Reinigen Sie alte Farbe gründlich mit Wasser und ggf. Seife oder unserem Fassadenreiniger. Mit Fassadenreiniger entfernt man Schmutz, Staub, Moose, Pilze und Mikroorganismen. Spülen Sie etwaige Rückstände von Reinigungsmitteln gründlich mit Wasser ab und lassen Sie die Oberfläche trocknen, ehe Sie mit dem neuen Anstrich beginnen.",
+                                            "image": "assets/images/lasur.png"
+                                        }
+                                    },
                                     "children": {
                                         "0": {            
                                             "id": 0,
-                                            "label": "Öl",
-                                            "question": "Um welche Art von Öl handelt es sich?",                                                    
-                                            "action": "set_coating",
-                                            "info": {
-                                                "0": {
-                                                    "id": 0,
-                                                    "unique": "4052956e-3822-4fed-8edd-f38ae1117792",
-                                                    "title": "Warnung Öl",
-                                                    "content": "Achtung! Holzöle halten maximal ein Jahr. Nach einem Jahr muss eine Tiefenreinigung mit einem Fassadenreiniger vorgenommen werden, danach gilt das Holz als neu/unbehandelt.",
-                                                    "image": "assets/images/Öl/holzöl.jpg",
-                                                    "warning": true
-                                                }
-                                            },
-                                            "children": {
-                                                "0": {            
-                                                    "id": 0,
-                                                    "label": "Trocknendes / Aushärtendes Öl?",
-                                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                    "action_value": 2,
-                                                    "target_action": "set_target",
-                                                    "info": {
-                                                        "0": {
-                                                            "id": 0,
-                                                            "title": "Aushärtendes Öl",
-                                                            "content": "Auf aushärtenden Ölen muss teilweise grundiert werden. Ein aushärtendes Öl ersetzt bspw. Grundieröl oder gekochtes Leinöl, jedoch keinen Haftgrund. Sind Öle älter als 4 Wochen empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer.",
-                                                            "image": "assets/images/Öl/holzöl.jpg"
-                                                        }
-                                                    },
-                                                    "children": {
-                                                        "0": {
-                                                            "id": 0,
-                                                            "label": "Lasur",
-                                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
-                                                            "info": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "title": "Lasur",
-                                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                                    "image": "assets/images/lasur.png"
-                                                                }
-                                                            },
-                                                            "children": null
-                                                        },
-                                                        "1": {
-                                                            "id": 1,
-                                                            "label": "Farbe",
-                                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
-                                                            "children": null
-                                                        },
-                                                        "2": {
-                                                            "id": 2,
-                                                            "label": "Öl",
-                                                            "question": "Wir empfehlen Ihnen eines dieser Öle:",
-                                                            "children": null
-                                                        }
-                                                    } 
-                                                },
-                                                "1": {            
-                                                    "id": 1,
-                                                    "label": "Rohes / nicht-trocknendes Öl",
-                                                    "question": "Hier eignen sich nur folgende Produkte: ",
-                                                    "action_value": 3,
-                                                    "target_action": "set_target",
-                                                    "info": {
-                                                        "0": {
-                                                            "id": 0,
-                                                            "title": "Rohes Öl",
-                                                            "content": "Sind Öle bereits länger als 3 Monate auf dem Holz empfiehlt sich eine Reinigung vorab. Danach kann mit verschiedenen Produkten direkt überstrichen werden.",
-                                                            "image": "assets/images/Öl/öl.jpg "
-                                                        }
-                                                    },
-                                                    "children": {
-                                                        "0": {
-                                                            "id": 0,
-                                                            "label": "Lasur",
-                                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
-                                                            "info": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "title": "Lasur",
-                                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                                    "image": "assets/images/lasur.png"
-                                                                }
-                                                            },
-                                                            "children": null
-                                                        },
-                                                        "1": {
-                                                            "id": 1,
-                                                            "label": "Farbe",
-                                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
-                                                            "children": null
-                                                        },
-                                                        "2": {
-                                                            "id": 2,
-                                                            "label": "Öl",
-                                                            "question": "Wir empfehlen Ihnen eines dieser Öle:",
-                                                            "children": null
-                                                        }
-                                                    } 
-                                                }
-                                            }
-                                        },
-                                        "1": {            
-                                            "id": 1,
                                             "label": "Lasur",
                                             "question": "Welche Bindemittel waren in der Lasur?",
                                             "info": {
@@ -324,8 +228,8 @@
                                                 }
                                             }
                                         },
-                                        "2": {           
-                                            "id": 2,
+                                        "1": {           
+                                            "id": 1,
                                             "label": "Farbe",
                                             "question": "Welche Bindemittel waren in der Farbe?",
                                             "info": {
@@ -696,6 +600,14 @@
                                             "id": 1,
                                             "label": "Intakte Farbe",
                                             "question": "Welche Bindemittel waren in der Farbe?",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Intakte Farbe",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                                }
+                                            },
                                             "children": {
                                                 "0": {            
                                                     "id": 0,
@@ -760,22 +672,100 @@
                                     "title": "Öl",
                                     "content": "Öle sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
                                     "image": "assets/images/Öl/holzöl.jpg"
+                                },
+                                "1": {
+                                    "id": 1,
+                                    "title": "Härtend vs Nicht-härtend",
+                                    "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Supermarkt findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen",
+                                    "image": "assets/images/Öl/holzöl.jpg"
                                 }
                             },
                             "children": {
-                                "0": {           
+                                "0": {            
                                     "id": 0,
-                                    "label": "Härtendes Öl",
+                                    "label": "Trocknendes / Aushärtendes Öl?",
+                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
                                     "action_value": 2,
-                                    "question": "",
-                                    "children": null
+                                    "target_action": "set_target",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "title": "Aushärtendes Öl",
+                                            "content": "Auf aushärtenden Ölen muss teilweise grundiert werden. Ein aushärtendes Öl ersetzt bspw. Grundieröl oder gekochtes Leinöl, jedoch keinen Haftgrund. Sind Öle älter als 4 Wochen empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer.",
+                                            "image": "assets/images/Öl/holzöl.jpg"
+                                        }
+                                    },
+                                    "children": {
+                                        "0": {
+                                            "id": 0,
+                                            "label": "Lasur",
+                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Lasur",
+                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                    "image": "assets/images/lasur.png"
+                                                }
+                                            },
+                                            "children": null
+                                        },
+                                        "1": {
+                                            "id": 1,
+                                            "label": "Farbe",
+                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                            "children": null
+                                        },
+                                        "2": {
+                                            "id": 2,
+                                            "label": "Öl",
+                                            "question": "Wir empfehlen Ihnen eines dieser Öle:",
+                                            "children": null
+                                        }
+                                    } 
                                 },
-                                "1": {           
+                                "1": {            
                                     "id": 1,
-                                    "label": "Nicht-härtendes Öl",
-                                    "action_value": 3, 
-                                    "question": "",
-                                    "children": null
+                                    "label": "Rohes / nicht-trocknendes Öl",
+                                    "question": "Hier eignen sich nur folgende Produkte: ",
+                                    "action_value": 3,
+                                    "target_action": "set_target",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "title": "Rohes Öl",
+                                            "content": "Sind Öle bereits länger als 3 Monate auf dem Holz empfiehlt sich eine Reinigung vorab. Danach kann mit verschiedenen Produkten direkt überstrichen werden.",
+                                            "image": "assets/images/Öl/öl.jpg "
+                                        }
+                                    },
+                                    "children": {
+                                        "0": {
+                                            "id": 0,
+                                            "label": "Lasur",
+                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Lasur",
+                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                    "image": "assets/images/lasur.png"
+                                                }
+                                            },
+                                            "children": null
+                                        },
+                                        "1": {
+                                            "id": 1,
+                                            "label": "Farbe",
+                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                            "children": null
+                                        },
+                                        "2": {
+                                            "id": 2,
+                                            "label": "Öl",
+                                            "question": "Wir empfehlen Ihnen eines dieser Öle:",
+                                            "children": null
+                                        }
+                                    } 
                                 }
                             }
                         }
@@ -866,7 +856,8 @@
                         "1": {            
                             "id": 1,
                             "label": "Imprägnierung",
-                            "question": "",
+                            "question": "",                            
+                            "target_action": "set_target",
                             "info": {
                                 "0": {
                                     "id": 0,
@@ -887,7 +878,156 @@
                                     "image": "assets/images/Imprägnierung/intakt-3.png"
                                 }
                             },
-                            "children": null
+                            "children": {
+                                "0": {
+                                    "id": 0,
+                                    "label": "Lasur",
+                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
+                                            "title": "Warnung bei Lasuren",
+                                            "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben.",
+                                            "image": "assets/images/Lasur/lasur.png",
+                                            "warning": true
+                                        },
+                                        "1": {
+                                            "id": 1,
+                                            "title": "Lasur",
+                                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                            "image": "assets/images/Lasur/lasur.png"
+                                        }
+                                    },
+                                    "children": null
+                                },
+                                "1": {
+                                    "id": 1,
+                                    "label": "Farbe",
+                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
+                                            "title": "Warnung bei Farben",
+                                            "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben.",
+                                            "image": "assets/images/Lasur/lasur.png",
+                                            "warning": true
+                                        },
+                                        "1": {
+                                            "id": 1,
+                                            "title": "Deckende Farbe",
+                                            "content": "Farben sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                        }
+                                    },
+                                    "children": null
+                                }
+                            } 
+                        },                        
+                        "2": {            
+                            "id": 2,
+                            "label": "Öl",
+                            "question": "Um welche Art von Öl handelt es sich?",                                                    
+                            "action": "set_coating",
+                            "info": {
+                                "0": {
+                                    "id": 0,
+                                    "unique": "4052956e-3822-4fed-8edd-f38ae1117792",
+                                    "title": "Warnung Öl",
+                                    "content": "Achtung! Holzöle halten maximal ein Jahr. Nach einem Jahr muss eine Tiefenreinigung mit einem Fassadenreiniger vorgenommen werden, danach gilt das Holz als neu/unbehandelt.",
+                                    "image": "assets/images/Öl/holzöl.jpg",
+                                    "warning": true
+                                }
+                            },
+                            "children": {
+                                "0": {            
+                                    "id": 0,
+                                    "label": "Trocknendes / Aushärtendes Öl?",
+                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                    "action_value": 2,
+                                    "target_action": "set_target",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "title": "Aushärtendes Öl",
+                                            "content": "Auf aushärtenden Ölen muss teilweise grundiert werden. Ein aushärtendes Öl ersetzt bspw. Grundieröl oder gekochtes Leinöl, jedoch keinen Haftgrund. Sind Öle älter als 4 Wochen empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer.",
+                                            "image": "assets/images/Öl/holzöl.jpg"
+                                        }
+                                    },
+                                    "children": {
+                                        "0": {
+                                            "id": 0,
+                                            "label": "Lasur",
+                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Lasur",
+                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                    "image": "assets/images/lasur.png"
+                                                }
+                                            },
+                                            "children": null
+                                        },
+                                        "1": {
+                                            "id": 1,
+                                            "label": "Farbe",
+                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                            "children": null
+                                        },
+                                        "2": {
+                                            "id": 2,
+                                            "label": "Öl",
+                                            "question": "Wir empfehlen Ihnen eines dieser Öle:",
+                                            "children": null
+                                        }
+                                    } 
+                                },
+                                "1": {            
+                                    "id": 1,
+                                    "label": "Rohes / nicht-trocknendes Öl",
+                                    "question": "Hier eignen sich nur folgende Produkte: ",
+                                    "action_value": 3,
+                                    "target_action": "set_target",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "title": "Rohes Öl",
+                                            "content": "Sind Öle bereits länger als 3 Monate auf dem Holz empfiehlt sich eine Reinigung vorab. Danach kann mit verschiedenen Produkten direkt überstrichen werden.",
+                                            "image": "assets/images/Öl/öl.jpg "
+                                        }
+                                    },
+                                    "children": {
+                                        "0": {
+                                            "id": 0,
+                                            "label": "Lasur",
+                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Lasur",
+                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                    "image": "assets/images/lasur.png"
+                                                }
+                                            },
+                                            "children": null
+                                        },
+                                        "1": {
+                                            "id": 1,
+                                            "label": "Farbe",
+                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                            "children": null
+                                        },
+                                        "2": {
+                                            "id": 2,
+                                            "label": "Öl",
+                                            "question": "Wir empfehlen Ihnen eines dieser Öle:",
+                                            "children": null
+                                        }
+                                    } 
+                                }
+                            }
                         }
                     }
                 },
@@ -940,6 +1080,78 @@
                             "id": 2,
                             "label": "Lasur",
                             "question": "Infoseite über diese Anstriche mit Fotos, etc.",
+                            "info": {
+                                "0": {
+                                    "id": 0,
+                                    "title": "Lasur Allgemein",
+                                    "content": "Eine Lasur ist ein extrem dünnschichtiger, transparenter und/oder leicht pigmentierter Anstrich. Lasuren sind vergleichbar mit stark verdünnten Farben. Üblicherweise halten Lasuren etwa 6-24 Monate, je nach Bindemittel. Lasuren können meistens direkt auf Holz gestrichen werden. Eine Lasur bietet immer nur einen begrenzten, bzw. geringen Schutz vor Verwitterung. Vergrauung lässt sich bspw. durch eine Lasur nicht aufhalten.",
+                                    "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
+                                },
+                                "1": {
+                                    "id": 1,
+                                    "title": "Intakte Lasur",
+                                    "content": "Intakte Lasur bildet einen wasserabweisenden und glänzenden Film auf dem Holz. Schüttet man Wasser auf Lasur, sollte sich eine Art Lotuseffekt nachvollziehen lassen. Ist Lasur matt geworden oder wasserdurchlässig, ist sie nicht mehr intakt. Intakte Lasur kann gesäubert werden und mit einem geeigneten Produkt, welches sich mit den jeweiligen Bindemitteln der Lasur ‚verträgt‘ überstrichen werden.",
+                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "title": "Verwitterte Lasur",
+                                    "content": "Verwitterte Lasur ist rissig, matt oder blättert. Verwitterung lässt sich auch erkennen, wenn man einen nassen Lappen auf dem Anstrich fixiert und Feuchtigkeit innerhalb von 20-30 Minuten sichtbar in die Holzstruktur wandert, bzw. ein Wasserfleck entsteht. Matte oder wasserdurchlässige Lasur muss immer abgeschliffen werden. ",
+                                    "image": "assets/images/Lasur/verwittert-1.jpg"
+                                },
+                                "3": {
+                                    "id": 3,
+                                    "title": "Verwitterte Lasur",
+                                    "content": "Verwitterte Lasur ist rissig, matt oder blättert. Verwitterung lässt sich auch erkennen, wenn man einen nassen Lappen auf dem Anstrich fixiert und Feuchtigkeit innerhalb von 20-30 Minuten sichtbar in die Holzstruktur wandert, bzw. ein Wasserfleck entsteht. Matte oder wasserdurchlässige Lasur muss immer abgeschliffen werden. ",
+                                    "image": "assets/images/Lasur/verwittert-2.jpg"
+                                }
+                            },
+                            "children": "no-products"
+                        },
+                        "3": {            
+                            "id": 3,
+                            "label": "Öl",
+                            "question": "Infoseite über diese Anstriche mit Fotos, etc.",
+                            "info": {
+                                "0": {
+                                    "id": 0,
+                                    "title": "Öle",
+                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                    "image": "assets/images/Öl/öl.jpg"
+                                }
+                            },
+                            "children": "no-products"
+                        },
+                        "4": {            
+                            "id": 4,
+                            "label": "Imprägnierung & Grundierung",
+                            "question": "Infoseite über diese Anstriche mit Fotos, etc.",
+                            "info": {
+                                "0": {
+                                    "id": 0,
+                                    "title": "Imprägnierung",
+                                    "content": "Verschiedene Mittel werden in Deutschland als Imprägnierung verkauft. Es kann sich um eine Lasur, ein Öl oder eine Grundierung handeln. Eine Lasur ist transparent und bildet einen glänzenden Oberflächenfilm. Grundierer sind meistens leicht gräulich oder weisslich. Produkte, die den Namen Isoliergrund oder Bläueschutzgrund tragen sind keine Grundierer und erfüllen auch keine Funktion. Bei solchen Produkten empfiehlt es sich erstmal 6-8 Wochen Witterung abzuwarten. Im Idealfall hat sich der Biozid Cocktail bis dahin vom Holzu abgewaschen und das Holz wurde aufnahmefähig für einen Anstrich. Ebenfalls gibt es Kesseldruck-, oder Tauchimprägnierung (oftmals auch KDI). Hier handelt es sich um Druckimprägnierung auf Basis von mineralischen Salzen. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. Diese Art Imprägnierung ist nicht überstreichbar. Ein Druckimprägniertes Holz ist keine Grundierung, es ist frühestens nach 3-6 Monaten Bewitterung streichbar. Nach 3-6 Monaten haben sich die mineralischen Salze weitestgehend raus gewaschen, nun kann systematisch mit dem Grundieren begonnen werden. Streichen Sie auf keinen Fall Druckimprägniertes Holz direkt nach dem Aufbau. Wenn Sie sich nicht ganz sicher sind, wenden Sie sich an uns.",
+                                    "image": "assets/images/Imprägnierung/intakt-1.png"
+                                },
+                                "1": {
+                                    "id": 1,
+                                    "title": "Imprägnierung",
+                                    "content": "Verschiedene Mittel werden in Deutschland als Imprägnierung verkauft. Es kann sich um eine Lasur, ein Öl oder eine Grundierung handeln. Eine Lasur ist transparent und bildet einen glänzenden Oberflächenfilm. Grundierer sind meistens leicht gräulich oder weisslich. Produkte, die den Namen Isoliergrund oder Bläueschutzgrund tragen sind keine Grundierer und erfüllen auch keine Funktion. Bei solchen Produkten empfiehlt es sich erstmal 6-8 Wochen Witterung abzuwarten. Im Idealfall hat sich der Biozid Cocktail bis dahin vom Holzu abgewaschen und das Holz wurde aufnahmefähig für einen Anstrich. Ebenfalls gibt es Kesseldruck-, oder Tauchimprägnierung (oftmals auch KDI). Hier handelt es sich um Druckimprägnierung auf Basis von mineralischen Salzen. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. Diese Art Imprägnierung ist nicht überstreichbar. Ein Druckimprägniertes Holz ist keine Grundierung, es ist frühestens nach 3-6 Monaten Bewitterung streichbar. Nach 3-6 Monaten haben sich die mineralischen Salze weitestgehend raus gewaschen, nun kann systematisch mit dem Grundieren begonnen werden. Streichen Sie auf keinen Fall Druckimprägniertes Holz direkt nach dem Aufbau. Wenn Sie sich nicht ganz sicher sind, wenden Sie sich an uns.",
+                                    "image": "assets/images/Imprägnierung/intakt-2.png"
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "title": "Grundierung",
+                                    "content": "Eine Grundierung ist ein meist leicht pigmentierter Anstrich auf Acryl-, oder Alkydharzbasis. Grundierer sind i.d.R. leicht weiss oder grau pigmentiert, jedoch nicht deckend. Je nach Bindemittelart, folgt ein deckender Anstrich auf eine Grundierung. Nach dem entsprechenden Bindemittel in der Grundierung entscheidet sich welcher Folgeanstrich geeignet ist. Die Art des Bindemittels lässt sich über Herstellerangaben oder einen Bindemitteltest ermitteln.",
+                                    "image": "assets/images/Grundierung/grundierung.jpg"
+                                },
+                                "3": {
+                                    "id": 3,
+                                    "title": "Grundierung",
+                                    "content": "Eine Grundierung ist ein meist leicht pigmentierter Anstrich auf Acryl-, oder Alkydharzbasis. Grundierer sind i.d.R. leicht weiss oder grau pigmentiert, jedoch nicht deckend. Je nach Bindemittelart, folgt ein deckender Anstrich auf eine Grundierung. Nach dem entsprechenden Bindemittel in der Grundierung entscheidet sich welcher Folgeanstrich geeignet ist. Die Art des Bindemittels lässt sich über Herstellerangaben oder einen Bindemitteltest ermitteln.",
+                                    "image": "assets/images/Grundierung/grundierung-2.jpg"
+                                }
+                            },
                             "children": "no-products"
                         }
                     }

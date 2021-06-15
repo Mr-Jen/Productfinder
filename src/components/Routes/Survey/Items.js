@@ -119,9 +119,9 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
       console.log("SETTING TARGET: ", target.label)
       ButtonAddTarget(target.label)
     }
-    else if (action === 'set_coating'){
+    else if (action === 'set_coating' && target){
       console.log("SETTING COATING: ", target?.action_value)
-      ButtonSetCoating(target.action_value)
+      target.action_value !== undefined && ButtonSetCoating(target.action_value)
     }
   }
 

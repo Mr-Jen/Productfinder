@@ -248,7 +248,7 @@ const Products = ({ target, coating }) => {
         <FilterDropDownWrapper>
           <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 0 ? null : 0)}>
             <strong>Untergrund</strong>
-            <img style={{transform: dropdownElement === 0 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+            <img alt="dropdown-arrow" style={{transform: dropdownElement === 0 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
           </FilterDropDown>
           {dropdownElement === 0 && <PlaceHolderRect/>}
           {dropdownElement === 0 &&
@@ -295,7 +295,7 @@ const Products = ({ target, coating }) => {
         <FilterDropDownWrapper>
           <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 1 ? null : 1)}>
             <strong>Verwendung</strong>
-            <img style={{transform: dropdownElement === 1 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+            <img alt="dropdown-arrow" style={{transform: dropdownElement === 1 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
           </FilterDropDown>
           {dropdownElement === 1 && <PlaceHolderRect/>}
           {dropdownElement === 1 &&
@@ -358,7 +358,7 @@ const Products = ({ target, coating }) => {
         <FilterDropDownWrapper>
           <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 2 ? null : 2)}>
             <strong>Glanzgrad</strong>
-            <img style={{transform: dropdownElement === 2 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+            <img alt="dropdown-arrow" style={{transform: dropdownElement === 2 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
           </FilterDropDown>
           {dropdownElement === 2 && <PlaceHolderRect/>}
           {dropdownElement === 2 &&
@@ -372,7 +372,7 @@ const Products = ({ target, coating }) => {
         <FilterDropDownWrapper>
           <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 3 ? null : 3)}>
             <strong>Lebensdauer</strong>
-            <img style={{transform: dropdownElement === 3 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+            <img alt="dropdown-arrow" style={{transform: dropdownElement === 3 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
           </FilterDropDown>
           {dropdownElement === 3 && <PlaceHolderRect/>}
           {dropdownElement === 3 &&
@@ -386,7 +386,7 @@ const Products = ({ target, coating }) => {
         <FilterDropDownWrapper>
           <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 4 ? null : 4)}>
             <strong>Ökobilanz</strong>
-            <img style={{transform: dropdownElement === 4 && `rotate(180deg)`}} alt="dropdown-icon" height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
+            <img alt="dropdown-arrow" style={{transform: dropdownElement === 4 && `rotate(180deg)`}} alt="dropdown-icon" height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
           </FilterDropDown>
           {dropdownElement === 4 && <PlaceHolderRect/>}
           {dropdownElement === 4 &&

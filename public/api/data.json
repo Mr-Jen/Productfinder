@@ -307,8 +307,40 @@
         "26": {
             "id": 26,
             "name": "Teerlasur Tarinoil",
-            "category": 1,
+            "category": 2,
             "allowed_coatings": [3], 
+            "surface": [0],
+            "application": [0,2,3,4,5],
+            "efficiency": {
+                "smooth_surface": [6,8],
+                "rough_surface": [4,6]
+            },
+            "lifetime": [1,2],
+            "gloss_level": [0,10],
+            "binder": 0,
+            "solubility": 5
+        },
+        "27": {
+            "id": 27,
+            "name": "Reines Leinöl, roh",
+            "category": 2,
+            "allowed_coatings": [3], 
+            "surface": [0],
+            "application": [0,2,3,4,5],
+            "efficiency": {
+                "smooth_surface": [6,8],
+                "rough_surface": [4,6]
+            },
+            "lifetime": [1,2],
+            "gloss_level": [0,10],
+            "binder": 0,
+            "solubility": 5
+        },
+        "28": {
+            "id": 28,
+            "name": "Reines Leinöl, gekocht",
+            "category": 2,
+            "allowed_coatings": [2], 
             "surface": [0],
             "application": [0,2,3,4,5],
             "efficiency": {
