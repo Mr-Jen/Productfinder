@@ -251,7 +251,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Test mit Schleifpapier",
-                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Reiben Sie mit einem Schleifpapier auf dem intakten Altanstrich. Schmiert die Farbe, dann handelt es sich um eine Farbe auf Acryl-Basis. Sollte die Farbe hingegen abblättern, dann liegt eine Farbe auf Alkyd-Basis vor.",
+                                                            "content": "Nicht jede Farbart verträgt sich miteinander. Wenn man weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich bestimmen welcher Anstrich für den Untergrund geeignet ist. Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann direkt überstrichen werden. Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Wenn man mit einem feinen Schleifpapier auf dem intakten Anstrich reibt, entsteht ein grober Abrieb. Das Schleifpapier schmiert zu, der Anstrich wird weich oder krümelt. Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten. Dann handelt es sich um eine Acryl-, Acrylatbasis. Schleift man den Anstrich mit einem feinen Schleifpapier entsteht ein pulvriger Schleifstaub, der sich leicht aud dem Schleifpapier pusten lässt. Der Abrieb erinnert entfernt an feines Mehl oder Hausstaub. Es liegt eine Öl-, Alkydbasis vor.",
                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                         }
                                                     },
@@ -311,154 +311,231 @@
                                 }
                             }
                         },
-                        "1": {
+                        "1": {            
                             "id": 1,
-                            "label": "Verwitterte Lasur",
-                            "question": "Verwitterte Lasur bitte erst abschleifen",
-                            "info": {
+                            "label": "Verwitterte Farbe oder Lasur",
+                            "question": "Handelt es sich um eine Farbe oder Lasur?",
+                            "children": {
                                 "0": {
                                     "id": 0,
-                                    "title": "Verwitterte Lasur",
-                                    "content": "Sobald die Lasur matt geworden ist und keinen sichtbaren glänzenden Oberflächenfilm mehr bildet, muss sie bis aufs Holz abgeschliffen werden.",
-                                    "image": "assets/images/Lasur/lasur-verwittert_maserung_sichtbar.jpg"
-                                }
-                            },
-                            "children": {
-                                "0": {            
-                                    "id": 0,
-                                    "label": "Abgeschliffen",
-                                    "question": "Ist noch intakte Lasur vorhanden?",
+                                    "label": "Verwitterte Lasur",
+                                    "question": "Verwitterte Lasur bitte erst abschleifen",
                                     "info": {
                                         "0": {
                                             "id": 0,
-                                            "title": "Abschleifen",
-                                            "content": "Beim Abschleifen ist darauf zu achten, dass xyz",
-                                            "image": "assets/images/paint-on-wood.gif"
+                                            "title": "Verwitterte Lasur",
+                                            "content": "Sobald die Lasur matt geworden ist und keinen sichtbaren glänzenden Oberflächenfilm mehr bildet, muss sie bis aufs Holz abgeschliffen werden.",
+                                            "image": "assets/images/Lasur/lasur-verwittert_maserung_sichtbar.jpg"
                                         }
                                     },
                                     "children": {
-                                        "0": {
+                                        "0": {            
                                             "id": 0,
-                                            "label": "Lasur vorhanden",
-                                            "question": "Intakte Lasur bitte erst waschen",
-                                            "info": {
-                                                "0": {
-                                                    "id": 0,
-                                                    "title": "Intakte Lasur",
-                                                    "content": "Auf intakter Lasur kann mit einem geeigneten Folgeanstrich direkt überstrichen werden",
-                                                    "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
-                                                },
-                                                "1": {
-                                                    "id": 1,
-                                                    "title": "Intakte Lasur",
-                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
-                                                    "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg"
-                                                }
-                                            },
-                                            "children": {
-                                                "0": {
-                                                    "id": 0,
-                                                    "label": "Weiter zum Bindemitteltest",
-                                                    "question": "Welche Bindemittel waren in der Lasur?",
-                                                    "breadcrumb": "Bindemitteltest",
-                                                    "children": {
-                                                        "0": {
-                                                            "id": 0,
-                                                            "label": "Test mit Brennspiritus",
-                                                            "question": "Welche Bindemittel sind in Ihrem Werkstoff vorhanden?",
-                                                            "info": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "title": "Brennspiritus Test",
-                                                                    "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farb- oder Lasurschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Streichen Sie niemals Alkydfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat.",
-                                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
-                                                                }
-                                                            },
-                                                            "action": "set_coating",
-                                                            "children": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "label": "Acryl / Acrylat-Basis",                                                            
-                                                                    "action_value": 0,
-                                                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                                    "target_action": "set_target",
-                                                                    "children": {
-                                                                        "0": {
-                                                                            "id": 0,
-                                                                            "label": "Lasur",
-                                                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
-                                                                            "children": null
-                                                                        },
-                                                                        "1": {
-                                                                            "id": 1,
-                                                                            "label": "Farbe",
-                                                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
-                                                                            "children": null
-                                                                        }
-                                                                    } 
-                                                                },
-                                                                "1": {
-                                                                    "id": 1,
-                                                                    "label": "Öl / Alkyd-Basis",
-                                                                    "action_value": 1,
-                                                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                                    "target_action": "set_target",
-                                                                    "children": {
-                                                                        "0": {
-                                                                            "id": 0,
-                                                                            "label": "Lasur",
-                                                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
-                                                                            "children": null
-                                                                        },
-                                                                        "1": {
-                                                                            "id": 1,
-                                                                            "label": "Farbe",
-                                                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
-                                                                            "children": null
-                                                                        }
-                                                                    } 
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        "1": {            
-                                            "id": 0,
-                                            "label": "Alles abgeschliffen",
-                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                            "target_action": "set_target",
+                                            "label": "Abgeschliffen",
+                                            "question": "Ist noch intakte Lasur vorhanden?",
                                             "info": {
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Abschleifen",
-                                                    "content": "Auf abgeschliffenen Flächen, bzw. auf Holz muss ggf. neu grundiert werden. Bitte beachten Sie die Herstellerangaben zu Grundierern. ",
+                                                    "content": "Beim Abschleifen ist darauf zu achten, dass xyz",
                                                     "image": "assets/images/paint-on-wood.gif"
                                                 }
                                             },
                                             "children": {
                                                 "0": {
                                                     "id": 0,
-                                                    "label": "Lasur",
-                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
-                                                    "children": null
-                                                },
-                                                "1": {
-                                                    "id": 1,
-                                                    "label": "Farbe",
-                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                    "label": "Lasur vorhanden",
+                                                    "question": "Intakte Lasur bitte erst waschen",
                                                     "info": {
                                                         "0": {
                                                             "id": 0,
-                                                            "title": "Deckende Farbe",
+                                                            "title": "Intakte Lasur",
+                                                            "content": "Auf intakter Lasur kann mit einem geeigneten Folgeanstrich direkt überstrichen werden",
+                                                            "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
+                                                        },
+                                                        "1": {
+                                                            "id": 1,
+                                                            "title": "Intakte Lasur",
                                                             "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
-                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                                            "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg"
                                                         }
                                                     },
-                                                    "children": null
+                                                    "children": {
+                                                        "0": {
+                                                            "id": 0,
+                                                            "label": "Weiter zum Bindemitteltest",
+                                                            "question": "Welche Bindemittel waren in der Lasur?",
+                                                            "breadcrumb": "Bindemitteltest",
+                                                            "children": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "label": "Test mit Brennspiritus",
+                                                                    "question": "Welche Bindemittel sind in Ihrem Werkstoff vorhanden?",
+                                                                    "info": {
+                                                                        "0": {
+                                                                            "id": 0,
+                                                                            "title": "Brennspiritus Test",
+                                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farb- oder Lasurschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Streichen Sie niemals Alkydfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat.",
+                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                                                        }
+                                                                    },
+                                                                    "action": "set_coating",
+                                                                    "children": {
+                                                                        "0": {
+                                                                            "id": 0,
+                                                                            "label": "Acryl / Acrylat-Basis",                                                            
+                                                                            "action_value": 0,
+                                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                                            "target_action": "set_target",
+                                                                            "children": {
+                                                                                "0": {
+                                                                                    "id": 0,
+                                                                                    "label": "Lasur",
+                                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                                    "children": null
+                                                                                },
+                                                                                "1": {
+                                                                                    "id": 1,
+                                                                                    "label": "Farbe",
+                                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                                    "children": null
+                                                                                }
+                                                                            } 
+                                                                        },
+                                                                        "1": {
+                                                                            "id": 1,
+                                                                            "label": "Öl / Alkyd-Basis",
+                                                                            "action_value": 1,
+                                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                                            "target_action": "set_target",
+                                                                            "children": {
+                                                                                "0": {
+                                                                                    "id": 0,
+                                                                                    "label": "Lasur",
+                                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                                    "children": null
+                                                                                },
+                                                                                "1": {
+                                                                                    "id": 1,
+                                                                                    "label": "Farbe",
+                                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                                    "children": null
+                                                                                }
+                                                                            } 
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "1": {            
+                                                    "id": 0,
+                                                    "label": "Alles abgeschliffen",
+                                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                    "target_action": "set_target",
+                                                    "info": {
+                                                        "0": {
+                                                            "id": 0,
+                                                            "title": "Abschleifen",
+                                                            "content": "Auf abgeschliffenen Flächen, bzw. auf Holz muss ggf. neu grundiert werden. Bitte beachten Sie die Herstellerangaben zu Grundierern. ",
+                                                            "image": "assets/images/paint-on-wood.gif"
+                                                        }
+                                                    },
+                                                    "children": {
+                                                        "0": {
+                                                            "id": 0,
+                                                            "label": "Lasur",
+                                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                            "children": null
+                                                        },
+                                                        "1": {
+                                                            "id": 1,
+                                                            "label": "Farbe",
+                                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Deckende Farbe",
+                                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                                                }
+                                                            },
+                                                            "children": null
+                                                        }
+                                                    } 
                                                 }
-                                            } 
+                                            }
+                                        }
+                                    }
+                                },
+                                "1": {
+                                    "id": 1,
+                                    "label": "Verwitterte Farbe",
+                                    "action": "set_coating",
+                                    "question": null,
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "title": "Verwitterte Farben",
+                                            "content": "Angewitterte oder leicht verwitterte Farbe sollte nicht blättern oder rissig sein. Farbe kann Auskreiden (es bildet sich ein mehliger/kreidiger Staub) oder sie kann Grünspan, Moos, o.ä. bilden. In diesen Fällen wird die Fassade mit einem Fassadenreiniger gereinigt. Sollte das Holz schon durchschauen, die Farbe abblättern oder stark rissig sein, kann man nicht mehr direkt überstreichen. Beachten Sie in dem Fall unsere Anleitung zu abblätternder/rissiger Farbe.",
+                                            "image": "assets/images/Lasur/lasur.png"
+                                        }
+                                    },
+                                    "children": {
+                                        "0": {
+                                            "id": 0,
+                                            "label": "Bindemitteltest der Farbe",
+                                            "action_value": 4,
+                                            "question": "Welche Bindemittel waren in der Farbe?",
+                                            "children": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "label": "Test mit Schleifpapier",
+                                                    "action": "set_coating",
+                                                    "question": "",
+                                                    "info": {
+                                                        "0": {
+                                                            "id": 0,
+                                                            "title": "Test mit Schleifpapier",
+                                                            "content": "Nicht jede Farbart verträgt sich miteinander. Wenn man weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich bestimmen welcher Anstrich für den Untergrund geeignet ist. Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann direkt überstrichen werden. Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Wenn man mit einem feinen Schleifpapier auf dem intakten Anstrich reibt, entsteht ein grober Abrieb. Das Schleifpapier schmiert zu, der Anstrich wird weich oder krümelt. Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten. Dann handelt es sich um eine Acryl-, Acrylatbasis. Schleift man den Anstrich mit einem feinen Schleifpapier entsteht ein pulvriger Schleifstaub, der sich leicht aud dem Schleifpapier pusten lässt. Der Abrieb erinnert entfernt an feines Mehl oder Hausstaub. Es liegt eine Öl-, Alkydbasis vor.",
+                                                            "image": "assets/images/paint-on-wood.gif"
+                                                        }
+                                                    },
+                                                    "children": {
+                                                        "0": {
+                                                            "id": 0,
+                                                            "label": "Acryl / Acrylat-Basis",                                                            
+                                                            "action_value": 0,
+                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "target_action": "set_target",
+                                                            "children": {
+                                                                "1": {
+                                                                    "id": 1,
+                                                                    "label": "Farbe",
+                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "children": null
+                                                                }
+                                                            } 
+                                                        },
+                                                        "1": {
+                                                            "id": 1,
+                                                            "label": "Öl / Alkyd-Basis",
+                                                            "action_value": 1,
+                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "target_action": "set_target",
+                                                            "children": {
+                                                                "1": {
+                                                                    "id": 1,
+                                                                    "label": "Farbe",
+                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "children": null
+                                                                }
+                                                            } 
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -466,76 +543,6 @@
                         },
                         "2": {
                             "id": 2,
-                            "label": "Verwitterte Farbe",
-                            "action": "set_coating",
-                            "question": null,
-                            "info": {
-                                "0": {
-                                    "id": 0,
-                                    "title": "Verwitterte Farben",
-                                    "content": "Angewitterte oder leicht verwitterte Farbe sollte nicht blättern oder rissig sein. Farbe kann Auskreiden (es bildet sich ein mehliger/kreidiger Staub) oder sie kann Grünspan, Moos, o.ä. bilden. In diesen Fällen wird die Fassade mit einem Fassadenreiniger gereinigt. Sollte das Holz schon durchschauen, die Farbe abblättern oder stark rissig sein, kann man nicht mehr direkt überstreichen. Beachten Sie in dem Fall unsere Anleitung zu abblätternder/rissiger Farbe.",
-                                    "image": "assets/images/Lasur/lasur.png"
-                                }
-                            },
-                            "children": {
-                                "0": {
-                                    "id": 0,
-                                    "label": "Bindemitteltest der Farbe",
-                                    "action_value": 4,
-                                    "question": "Welche Bindemittel waren in der Farbe?",
-                                    "children": {
-                                        "0": {
-                                            "id": 0,
-                                            "label": "Test mit Schleifpapier",
-                                            "action": "set_coating",
-                                            "question": "",
-                                            "info": {
-                                                "0": {
-                                                    "id": 0,
-                                                    "title": "Test mit Schleifpapier",
-                                                    "content": "Nicht jede Farbart verträgt sich miteinander. Wenn man weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich bestimmen welcher Anstrich für den Untergrund geeignet ist. Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann direkt überstrichen werden. Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Reiben Sie mit einem Schleifpapier auf dem intakten Altanstrich. Schmiert die Farbe, dann handelt es sich um eine Farbe auf Acryl-Basis. Sollte die Farbe hingegen abblättern, dann liegt eine Farbe auf Alkyd-Basis vor.",
-                                                    "image": "assets/images/paint-on-wood.gif"
-                                                }
-                                            },
-                                            "children": {
-                                                "0": {
-                                                    "id": 0,
-                                                    "label": "Acryl / Acrylat-Basis",                                                            
-                                                    "action_value": 0,
-                                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                    "target_action": "set_target",
-                                                    "children": {
-                                                        "1": {
-                                                            "id": 1,
-                                                            "label": "Farbe",
-                                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
-                                                            "children": null
-                                                        }
-                                                    } 
-                                                },
-                                                "1": {
-                                                    "id": 1,
-                                                    "label": "Öl / Alkyd-Basis",
-                                                    "action_value": 1,
-                                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                    "target_action": "set_target",
-                                                    "children": {
-                                                        "1": {
-                                                            "id": 1,
-                                                            "label": "Farbe",
-                                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
-                                                            "children": null
-                                                        }
-                                                    } 
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        "3": {
-                            "id": 3,
                             "label": "Rissiger / abblätternder Anstrich",
                             "question": "Bitte zunächst abschleifen",
                             "info": {
@@ -618,7 +625,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Test mit Schleifpapier",
-                                                            "content": "Nicht jede Farbart verträgt sich miteinander. Wenn man weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich bestimmen welcher Anstrich für den Untergrund geeignet ist. Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann direkt überstrichen werden. Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Reiben Sie mit einem Schleifpapier auf dem intakten Altanstrich. Schmiert die Farbe, dann handelt es sich um eine Farbe auf Acryl-Basis. Sollte die Farbe hingegen abblättern, dann liegt eine Farbe auf Alkyd-Basis vor.",
+                                                            "content": "Nicht jede Farbart verträgt sich miteinander. Wenn man weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich bestimmen welcher Anstrich für den Untergrund geeignet ist. Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann direkt überstrichen werden. Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Wenn man mit einem feinen Schleifpapier auf dem intakten Anstrich reibt, entsteht ein grober Abrieb. Das Schleifpapier schmiert zu, der Anstrich wird weich oder krümelt. Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten. Dann handelt es sich um eine Acryl-, Acrylatbasis. Schleift man den Anstrich mit einem feinen Schleifpapier entsteht ein pulvriger Schleifstaub, der sich leicht aud dem Schleifpapier pusten lässt. Der Abrieb erinnert entfernt an feines Mehl oder Hausstaub. Es liegt eine Öl-, Alkydbasis vor.",
                                                             "image": "assets/images/paint-on-wood.gif"
                                                         }
                                                     },
@@ -661,8 +668,8 @@
                                 }
                             }
                         },
-                        "4": {           
-                            "id": 4,
+                        "3": {           
+                            "id": 3,
                             "label": "Mit Öl behandelt",
                             "question": "Um welches Öl handelt es sich?",
                             "action": "set_coating",

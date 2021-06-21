@@ -106,7 +106,7 @@ const ProductView = ({ match, productsData }) => {
             <Link to="/products">{`<-- Zurück`}</Link>
             <Title>{product["name"]}</Title>
             <Wrapper>
-                <ImageWrapper src="/assets/images/lasur.png"/>
+                <ImageWrapper src="/assets/images/Lasur/lasur.png"/>
                 <ContentWrapper>
                     <ItemWrapper>
                         <ContentTitle>Produktdetails</ContentTitle>

@@ -93,7 +93,7 @@
             },
             "lifetime": [4,10],
             "gloss_level": [0,20],
-            "binder": 5,
+            "binder": 11,
             "solubility": 2
         },
         "8": {
@@ -125,8 +125,8 @@
             },
             "lifetime": [15,20],
             "gloss_level": [20,30],
-            "binder": 3,
-            "solubility": 4
+            "binder": 4,
+            "solubility": 3
         },
         "15": {
             "id": 15,
@@ -139,7 +139,7 @@
                 "smooth_surface": [7,12],
                 "rough_surface": [4,7]
             },
-            "lifetime": [3,6],
+            "lifetime": [2,6],
             "gloss_level": [30,30],
             "binder": 0,
             "solubility": 0
@@ -155,7 +155,7 @@
                 "smooth_surface": [8,12],
                 "rough_surface": [5,8]
             },
-            "lifetime": [3,5],
+            "lifetime": [1,3],
             "gloss_level": [30,30],
             "binder": 1,
             "solubility": 1
@@ -299,9 +299,9 @@
                 "smooth_surface": [6,8],
                 "rough_surface": [4,6]
             },
-            "lifetime": [1,2],
+            "lifetime": [2,3],
             "gloss_level": [0,10],
-            "binder": 0,
+            "binder": 11,
             "solubility": 5
         },
         "26": {
@@ -317,7 +317,7 @@
             },
             "lifetime": [1,2],
             "gloss_level": [0,10],
-            "binder": 0,
+            "binder": 11,
             "solubility": 5
         },
         "27": {
@@ -333,8 +333,8 @@
             },
             "lifetime": [1,2],
             "gloss_level": [0,10],
-            "binder": 0,
-            "solubility": 5
+            "binder": 4,
+            "solubility": 4
         },
         "28": {
             "id": 28,
@@ -349,8 +349,8 @@
             },
             "lifetime": [1,2],
             "gloss_level": [0,10],
-            "binder": 0,
-            "solubility": 5
+            "binder": 4,
+            "solubility": 4
         }
     },
     "categories": {
@@ -383,7 +383,8 @@
         "7": "Styorlacryl",
         "8": "Uretanalkydharz",
         "9": "Tungöl, Leinöl",
-        "10": "Nadelholzteer, Bitumen"
+        "10": "Nadelholzteer, Bitumen",
+        "11": "Kiefernharzteer"
     },
     "solubilities": {
         "0": "Terpentinersatz",
