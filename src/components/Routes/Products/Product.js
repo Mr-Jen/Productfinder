@@ -87,7 +87,22 @@ const ButtonText = styled.p`
     font-size 14px;
 `
 
-const Product = ({ title, category, surface, application, lifetime, gloss_level, binder, solublity, id}) => {
+const Compare = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax *
+`
+
+const Product = ({ title, category, surface, application, lifetime, gloss_level, binder, solublity, id, index, onChange, isChecked}) => {
+
+    const onClickCompare = () => {
+        onChange(index)
+    }
+
     return (
         <Wrapper>
             <Title>{title}</Title>
@@ -121,6 +136,9 @@ const Product = ({ title, category, surface, application, lifetime, gloss_level,
                         alt="BackButton"
                     />
             </Link>
+            <Compare>
+                <label><input type="checkbox" onChange={(e) => onClickCompare(e)} checked={isChecked} name="checkbox" value="value"/>Vergleichen</label>
+            </Compare>
         </Wrapper>
     )
 }

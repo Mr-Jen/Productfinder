@@ -11,6 +11,7 @@ import Products from './Routes/Products/Products'
 import Header from './Shared/Header'
 import Survey from './Routes/Survey/Survey'
 import ProductView from './Routes/ProductView/ProductView'
+import Compare from './Routes/Compare/Compare'
 
 const Wrapper = styled.div`
   display: flex;
@@ -61,6 +62,7 @@ const App = ({loadConfig, loadProducts, isHome}) => {
         </Route>
         
         <Route exact path="/product/:productId" component={ProductView} ></Route>
+        <Route exact path="/compare/:productsParam" component={Compare} />
       </Switch>
     </Wrapper> 
   )

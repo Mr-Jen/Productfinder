@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import './Products.css'
 import MultiRangeSlider from './Slider/MultiRangeSlider'
 import Product from './Product'
+import CompareStatusBar from '../../Shared/CompareStatusBar'
 
 const Wrapper = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ const ProductsWrapper = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   width: 80vw;
+  margin-bottom: 10vh;
 `
 
 const InputWrapper = styled.div`
@@ -145,6 +147,8 @@ const Products = ({ target, coating }) => {
   const [inputLifetime, setInputLifetime] = useState([0, 25])
   const [dropdownElement, setDropDownElement] = useState();
   const [ecoRating, setEcoRating] = useState(0);
+  const [compareProducts, setCompareProducts] = useState([]);
+  const compareLength = 2;
 
   React.useEffect(() => {
     !initData &&
@@ -154,6 +158,30 @@ const Products = ({ target, coating }) => {
         setInitData(config)
       })  
   })
+
+  const onChangeCompare = (pos) => {
+    let newCompare = [...compareProducts]
+    if(compareProducts.includes(pos)){
+      if (compareProducts.indexOf(pos) > -1){
+        newCompare.splice(compareProducts.indexOf(pos), 1)
+        setCompareProducts(newCompare)
+      }
+    }
+    else {
+      if(compareProducts.length < compareLength){
+        setCompareProducts([...compareProducts, pos])
+      }
+      else {
+        newCompare.shift()
+        newCompare.push(pos)
+        setCompareProducts(newCompare)
+      }
+    }
+  }
+
+  const onResetCompare = () => {
+    setCompareProducts([])
+  }
 
   const onChangeInput = (e) => {
     setInputArea(e.target.value)
@@ -419,8 +447,7 @@ const Products = ({ target, coating }) => {
       { !products ? <p>Loading ...</p> :
         <ProductsWrapper>
           {
-            products && filteredObjectKeys
-              .map((objectKey, key) => {
+            products && filteredObjectKeys.map((objectKey, key) => {
 
               let product = products[objectKey]
               let { id, category, surface, application, lifetime, gloss_level, binder, solubility } = product
@@ -442,11 +469,15 @@ const Products = ({ target, coating }) => {
                 binder={binder_value}
                 solubility={solubility_value}
                 id={id}
+                index={key}
+                isChecked={compareProducts.includes(key)}
+                onChange={(pos) => onChangeCompare(pos)}
               />
             })
           }
         </ProductsWrapper>
       }
+      {compareProducts.length > 0 && <CompareStatusBar compareLength={compareLength} compareList={compareProducts} resetCompare={() => onResetCompare()} />}
     </Wrapper>
   )
 }
