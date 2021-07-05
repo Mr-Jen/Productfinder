@@ -143,10 +143,8 @@ const Products = ({ target, coating }) => {
   const [inputArea, setInputArea] = useState("");
   const [inputSurface, setInputSurface] = useState([false, false, false, false])
   const [inputApplication, setInputApplication] = useState([false, false, false, false, false, false])
-  const [inputGlossLevel, setInputGlossLevel] = useState([0, 100])
-  const [inputLifetime, setInputLifetime] = useState([0, 25])
+  const [sortBy, setSortBy] = useState();
   const [dropdownElement, setDropDownElement] = useState();
-  const [ecoRating, setEcoRating] = useState(0);
   const [compareProducts, setCompareProducts] = useState([]);
   const compareLength = 2;
 
@@ -253,11 +251,69 @@ const Products = ({ target, coating }) => {
     .map((elem, key) => elem === true ? key : null)
     .filter(elem => elem !== null)
 
-  let filteredObjectKeys = initData && Object.keys(products)
-      .filter(objectKey => input_res.every(elem => products[objectKey]["surface"].includes(elem)))
-      .filter(objectKey => application_res.every(elem => products[objectKey]["application"].includes(elem)))
-      .filter(key => products[key]["gloss_level"][0] >= inputGlossLevel[0] && products[key]["gloss_level"][1] <= inputGlossLevel[1])
-      .filter(key => products[key]["lifetime"][0] >= inputLifetime[0] && products[key]["lifetime"][1] <= inputLifetime[1])
+  var filteredObjectKeys = initData && Object.keys(products)
+    .filter(objectKey => input_res.every(elem => products[objectKey]["surface"].includes(elem)))
+    .filter(objectKey => application_res.every(elem => products[objectKey]["application"].includes(elem)))
+      
+  switch(sortBy){
+    case "gloss_low":
+      console.log("BEFORE DESCENDING: ", filteredObjectKeys)
+      filteredObjectKeys.sort((a, b) => parseFloat((products[a].gloss_level[0] + products[a].gloss_level[1]) / 2) - parseFloat((products[b].gloss_level[0] + products[b].gloss_level[1]) / 2));
+      console.log("AFTER DESCENDING: ", filteredObjectKeys)
+      break;
+    case "gloss_high":
+      console.log("BEFORE ASCENDING: ", filteredObjectKeys)
+      filteredObjectKeys.sort((a, b) => {
+        return parseFloat((products[b].gloss_level[0] + products[b].gloss_level[1]) / 2) - parseFloat((products[a].gloss_level[0] + products[a].gloss_level[1]) / 2)
+      })
+      console.log("AFTER ASCENDING: ", filteredObjectKeys)
+      break;
+    case "lifetime_low":
+      console.log("BEFORE DESCENDING LIFETIME: ", filteredObjectKeys)
+      filteredObjectKeys.sort((a, b) => {
+        return parseFloat((products[b].lifetime[0] + products[b].lifetime[1]) / 2) - parseFloat((products[a].lifetime[0] + products[a].lifetime[1]) / 2)
+      })
+      console.log("AFTER DESCENDING LIFETIME: ", filteredObjectKeys)
+      break;
+    case "lifetime_high":
+      console.log("BEFORE ASCENDING LIFETIME: ", filteredObjectKeys)
+      filteredObjectKeys.sort((a, b) => {
+        return parseFloat((products[a].lifetime[0] + products[a].lifetime[1]) / 2) - parseFloat((products[b].lifetime[0] + products[b].lifetime[1]) / 2)
+      })
+      console.log("AFTER ASCENDING LIFETIME: ", filteredObjectKeys)
+      break;
+    default:
+      console.log("DEFAULT")
+    }
+
+  /*React.useEffect(() => {
+    console.log("NEW SORT: ", sortBy)
+
+    switch(sortBy) {
+      case "gloss_low":
+        console.log("LOW GLOSS_LEVEL")
+        console.log("BEFORE SORT: ", filteredObjectKeys)
+        filteredObjectKeys.sort((a, b) => parseFloat((products[a].gloss_level[0] + products[a].gloss_level[1]) / 2) - parseFloat((products[b].gloss_level[0] + products[b].gloss_level[1]) / 2));
+        console.log("AFTER SORT: ", filteredObjectKeys)
+        break;
+      case "gloss_high":
+        console.log("HIGH GLOSS_LEVEL")
+        break;
+      case "lifetime_high":
+        console.log("HIGH LIFETIME")
+        break;
+      case "lifetime_low":
+        console.log("LOW LIFETIME")
+        break;
+      default:
+        console.log("DEFAULT")
+    }
+  }, [sortBy])*/
+
+  const onChangeSort = () => {
+    let d = document.getElementById("sortBy").value;
+    setSortBy(d) 
+  }
 
   return (
     <Wrapper>
@@ -383,64 +439,16 @@ const Products = ({ target, coating }) => {
           }
         </FilterDropDownWrapper>
 
-        <FilterDropDownWrapper>
-          <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 2 ? null : 2)}>
-            <strong>Glanzgrad</strong>
-            <img alt="dropdown-arrow" style={{transform: dropdownElement === 2 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
-          </FilterDropDown>
-          {dropdownElement === 2 && <PlaceHolderRect/>}
-          {dropdownElement === 2 &&
-            <SliderBgRect>
-              <MultiRangeSlider min={0} max={100} stepRange={5} minDiff={10} onChange={(e) => setInputGlossLevel(e)}/>
-              <ResetDropDownButton onClick={() => console.log("RESETTING SLIDER")}>Zurücksetzen</ResetDropDownButton>
-            </SliderBgRect>
-          }
-        </FilterDropDownWrapper>
-
-        <FilterDropDownWrapper>
-          <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 3 ? null : 3)}>
-            <strong>Lebensdauer</strong>
-            <img alt="dropdown-arrow" style={{transform: dropdownElement === 3 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
-          </FilterDropDown>
-          {dropdownElement === 3 && <PlaceHolderRect/>}
-          {dropdownElement === 3 &&
-            <SliderBgRect>
-              <MultiRangeSlider min={0} max={25} stepRange={1} minDiff={1} onChange={(e) => setInputLifetime(e)}/>
-              <ResetDropDownButton onClick={() => setInputLifetime([0, 25])}>Zurücksetzen</ResetDropDownButton>
-            </SliderBgRect>
-          }
-        </FilterDropDownWrapper>
-
-        <FilterDropDownWrapper>
-          <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 4 ? null : 4)}>
-            <strong>Ökobilanz</strong>
-            <img alt="dropdown-arrow" style={{transform: dropdownElement === 4 && `rotate(180deg)`}} alt="dropdown-icon" height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
-          </FilterDropDown>
-          {dropdownElement === 4 && <PlaceHolderRect/>}
-          {dropdownElement === 4 &&
-            <SliderBgRect>
-              <StarWrapper>
-
-                <input onChange={(e) => setEcoRating(parseInt(e.target.id) + 1)} className="trigger" id="0" type="checkbox"/>
-                <label style={{backgroundImage: `url(${ecoRating > 0 ? 'assets/icons/misc/star-filled.svg' : 'assets/icons/misc/star-outline.svg'})`}} htmlFor="0" className="checker"></label>    
-                
-                <input onChange={(e) => setEcoRating(parseInt(e.target.id) + 1)} className="trigger" id="1" type="checkbox"/>
-                <label style={{backgroundImage: `url(${ecoRating > 1 ? 'assets/icons/misc/star-filled.svg' : 'assets/icons/misc/star-outline.svg'})`}} htmlFor="1" className="checker"></label>    
-                
-                <input onChange={(e) => setEcoRating(parseInt(e.target.id) + 1)} className="trigger" id="2" type="checkbox"/>
-                <label style={{backgroundImage: `url(${ecoRating > 2 ? 'assets/icons/misc/star-filled.svg' : 'assets/icons/misc/star-outline.svg'})`}} htmlFor="2" className="checker"></label>    
-                
-                <input onChange={(e) => setEcoRating(parseInt(e.target.id) + 1)} className="trigger" id="3" type="checkbox"/>
-                <label style={{backgroundImage: `url(${ecoRating > 3 ? 'assets/icons/misc/star-filled.svg' : 'assets/icons/misc/star-outline.svg'})`}} htmlFor="3" className="checker"></label>    
-                
-                <input onChange={(e) => setEcoRating(parseInt(e.target.id) + 1)} className="trigger" id="4" type="checkbox"/>
-                <label style={{backgroundImage: `url(${ecoRating > 4 ? 'assets/icons/misc/star-filled.svg' : 'assets/icons/misc/star-outline.svg'})`}} htmlFor="4" className="checker"></label>    
-
-              </StarWrapper>
-              <ResetDropDownButton onClick={() => setEcoRating(0)}>Zurücksetzen</ResetDropDownButton>
-            </SliderBgRect>
-          }
-        </FilterDropDownWrapper>
+        <div>
+          <label htmlFor="sortBy">Sortieren nach</label>
+          <select name="sort" id="sortBy" onChange={() => onChangeSort()}>
+            <option value="">Auswählen...</option>
+            <option value="gloss_low">Glanzgrad Niedrig</option>
+            <option value="gloss_high">Glanzgrad hoch</option>
+            <option value="lifetime_low">Standzeit Niedrig</option>
+            <option value="lifetime_high">Standzeit Hoch</option>
+          </select>
+        </div>
 
       </DropDownWrapper>
 
