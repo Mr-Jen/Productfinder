@@ -97,10 +97,10 @@ const Compare = styled.div`
     user-select: none; /* Standard syntax *
 `
 
-const Product = ({ title, category, surface, application, lifetime, gloss_level, binder, solublity, id, index, onChange, isChecked}) => {
+const Product = ({ title, category, surface, application, lifetime, gloss_level, binder, solublity, id, onChange, isChecked}) => {
 
     const onClickCompare = () => {
-        onChange(index)
+        onChange(id)
     }
 
     return (

@@ -469,9 +469,8 @@ const Products = ({ target, coating }) => {
                 binder={binder_value}
                 solubility={solubility_value}
                 id={id}
-                index={key}
-                isChecked={compareProducts.includes(key)}
-                onChange={(pos) => onChangeCompare(pos)}
+                isChecked={compareProducts.includes(id)}
+                onChange={(id) => onChangeCompare(id)}
               />
             })
           }

@@ -13,23 +13,6 @@ const Wrapper = styled.div`
     align-items: center;
 `
 
-const linkStyling = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    textDecoration: 'none',
-    height: '25px',
-    width: '60%',
-    alignItems: 'center',
-    backgroundColor: `${props => props.disabled ? '#ffe60a' : 'black'}`,
-    border: '1px solid black',
-    paddingLeft: '20px',
-    paddingRight: '20px',
-    borderRadius: '7px',
-    marginBottom: '10px',
-    marginTop: '10px'
-}  
-
 const ButtonText = styled.p`
     margin-right: 10px;
     color: black;
@@ -38,17 +21,36 @@ const ButtonText = styled.p`
 `
 
 const CompareStatusBar = ({ compareLength, compareList, resetCompare }) => {
-    let productParams = compareList.join('+')
-    console.log("IS DISABLED?: ", compareList.length < 2)
+    let productParams = compareList.join('&')
+    const disabled = compareList.length < 2;
+
+    const linkStyling = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        textDecoration: 'none',
+        height: '25px',
+        width: '60%',
+        alignItems: 'center',
+        backgroundColor: `${props => props.disabled ? '#ffe60a' : 'black'}`,
+        border: '1px solid black',
+        paddingLeft: '20px',
+        paddingRight: '20px',
+        borderRadius: '7px',
+        marginBottom: '10px',
+        marginTop: '10px',
+        backgroundColor: disabled ? 'lightgrey' : '#ffe60a',
+        pointerEvents: disabled ? 'none' : 'auto'
+    }  
+    
     return (
         <Wrapper>
-            <button  onClick={() => resetCompare()}>Alle löschen</button>
+            <button onClick={() => resetCompare()}>Alle löschen</button>
             <Link 
                     to={`/compare/${productParams}`}
                     style={linkStyling}
-                    disabled={compareList.length < 2}
             >
-                <ButtonText>{`Produkte vergleichen (${compareList.length} / ${compareLength})`}</ButtonText>
+                <ButtonText disabled>{`Produkte vergleichen (${compareList.length} / ${compareLength})`}</ButtonText>
                 <img 
                     src="assets/icons/misc/right.png"
                     style={{"height": "20px", "width": "20px", "margin": "5px"}}
