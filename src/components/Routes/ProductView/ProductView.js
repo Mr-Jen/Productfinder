@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
+import Title from '../../Shared/Title'
+
 const TopWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -10,23 +12,17 @@ const TopWrapper = styled.div`
     width: 100%;
 `
 
-const Title = styled.h2`
-    position: relative;
-    z-index: 1;
-    &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-        height: 1px;
-        width: 80%;
-        border-bottom: 4px solid #FFE60A;
-    }
-`
-
 const Wrapper = styled.div`
     display: flex;
+    justify-content: space-around;
     margin-top: 20px;
+    padding-top: 1em;
+    margin-top: 1em;
+
+    @media (max-width: 805px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 const ImageWrapper = styled.img`
@@ -36,13 +32,15 @@ const ImageWrapper = styled.img`
     width: 40%;
     height: 20%;
     border-radius: 10px;
+    @media (max-width: 805px) {
+        position: relative;
+    }
 `
 
 const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 600px;
-    margin-left: 100px;
 `
 
 const ItemWrapper = styled.div`
@@ -104,7 +102,7 @@ const ProductView = ({ match, productsData }) => {
     return (
         <TopWrapper>
             <Link to="/products">{`<-- Zurück`}</Link>
-            <Title>{product["name"]}</Title>
+            <Title contentText={product["name"]} />
             <Wrapper>
                 <ImageWrapper src="/assets/images/Lasur/lasur.png"/>
                 <ContentWrapper>
@@ -152,7 +150,7 @@ const ProductView = ({ match, productsData }) => {
                     </ItemWrapper>
                     <ItemWrapper>
                         <ContentTitle>Produktdetails</ContentTitle>
-                        <ContentText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget. Eget egestas purus viverra accumsan. Erat pellentesque adipiscing commodo elit at imperdiet. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Integer vitae justo eget magna. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Ut morbi tincidunt augue interdum. Elit sed vulputate mi sit amet. Scelerisque in dictum non consectetur a. Feugiat in fermentum posuere urna nec tincidunt.</ContentText>
+                        <ContentText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget. Eget egestas purus viverra accumsan. Erat pellentesque adipiscing commodo elit at imperdiet. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Integer vitae justo eget magna. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Ut morbi tincidunt augue interdum. Elit sed vulputate mi sit amet. Scelerisque in dictum non consectetur a. Feugiat in fermentum posuere urna nec tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget. </ContentText>
                     </ItemWrapper>
                 </ContentWrapper>
             </Wrapper>

@@ -3,11 +3,17 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 
+import Title from '../../Shared/Title'
+
 const Wrapper = styled.div`
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+        -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
 `
 
 const ContentWrapper = styled.div`
@@ -44,7 +50,7 @@ const Img = styled.div`
     background-position: center;
     background-size: contain;
     width: 60%;
-    height: 200px;
+    height: 150px;
     margin: 2em;
 `
 
@@ -55,11 +61,11 @@ const Button = styled.a`
     /*padding: .1em 4em .1em 4em;*/
     border-radius: 10px;
     width: 10em;
-    height: 3em;
+    height: 2.5em;
 `
 const Icon = styled.img`
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 25px;
+    max-height: 25px;
     padding: .6em;
 `
 
@@ -70,6 +76,7 @@ const ButtonContent = styled.div`
     justify-content: space-between;
     width: 100%;
     border-radius: 10px;
+    height: 2.5em;
 `
 
 const ButtonText = styled.p`
@@ -79,6 +86,7 @@ const ButtonText = styled.p`
 
 const PropsWrapper = styled.div`
     width: 100vw;
+    max-width: 100vw;
     background-color: #F4F4F4;
     padding: 5em 0 5em 0;
     height: 80em;
@@ -131,10 +139,11 @@ const ProductTitle = styled.h3`
 const Compare = ({ compareProducts, categories, surfaces, applications, binders, solubilities }) => {
     const [product_1, product_2] = compareProducts
     console.log(product_1)
+    
     return (
         <Wrapper>
             <Link to="/products">{`<-- Zurück`}</Link>
-            <h1>Produktvergleich</h1>
+            <Title contentText={"Produktvergleich"} />
             <ContentWrapper>
                 <Product>
                     <ProductTitle>{product_1.name}</ProductTitle>
@@ -231,7 +240,10 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
 }
 
 const mapStateToProps = ({ products }, ownProps) => {
-    const productData = products["products"]
+    let data;
+
+    console.log("DATA", data)
+    const productData = products?.products ? products["products"] : data["products"]
     const { categories, surfaces, applications, binders, solubilities } = products
     const compareProducts = [];
     const params = ownProps.match.params.productsParam.split("&")

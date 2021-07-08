@@ -19,6 +19,15 @@ const Wrapper = styled.div`
 
     display: flex;
     justify-content: center;
+
+    @media (max-width: 600px) {
+        position: absolute;        
+        bottom: 0;
+        height: 50vh;
+        overflow-y: scroll;
+        top: auto;
+        margin-top: 20vh;
+    }
 `
 
 const CardAnimationKeyFrame = keyframes`

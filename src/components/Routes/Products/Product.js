@@ -16,14 +16,14 @@ const Title = styled.h5`
     align-self: center;
 
     position: relative;
-    z-index: 1;
+    /*z-index: 1;*/
     &:before {
         content: "";
         position: absolute;
         left: 0;
         bottom: -10px;
         height: 1px;
-        width: 80%;
+        width: 70%;
         border-bottom: 3px solid #FFE60A;
     }
 `
@@ -119,6 +119,14 @@ const Product = ({ title, category, surface, application, lifetime, gloss_level,
                 <CategoryWrapper>
                     <CategoryText>Lebensdauer: </CategoryText>
                     <ValueText>{lifetime[0]} - {lifetime[1]} Jahre</ValueText>
+                </CategoryWrapper>
+                <CategoryWrapper>
+                    <CategoryText>Glanzgrad </CategoryText>                                
+                    {
+                        gloss_level.length > 1 && gloss_level[0] !== gloss_level[1] ?
+                            <ValueText>{gloss_level[0]} - {gloss_level[1]}</ValueText>
+                        : <ValueText>{gloss_level[0]}</ValueText>
+                    }
                 </CategoryWrapper>
                 <CategoryWrapper>
                     <CategoryText>Oberflächen: </CategoryText>

@@ -6,6 +6,7 @@ import './Products.css'
 import MultiRangeSlider from './Slider/MultiRangeSlider'
 import Product from './Product'
 import CompareStatusBar from '../../Shared/CompareStatusBar'
+import Title from '../../Shared/Title'
 
 const Wrapper = styled.div`
   display: flex;
@@ -26,15 +27,6 @@ const ProductsWrapper = styled.div`
   margin-bottom: 10vh;
 `
 
-const InputWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-`
-
 const CheckBoxesContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -48,11 +40,19 @@ const CheckBoxWrapper = styled.div`
 
 const DropDownWrapper = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   width: 70%;
   margin-bottom: 40px;
+  margin-top: 2em;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  @media (max-width: 805px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+  }
 `
 
 const FilterDropDownWrapper = styled.div`
@@ -229,16 +229,12 @@ const Products = ({ target, coating }) => {
 
   if (products && target !== undefined){
     const productList = Object.entries(products);
-    console.log("COATING BEFORE FILTERING: ", coating)
     const filteredProducts = productList
       .filter((value, key) => value[1].category === target)
 
     const filteredProducts_2 = filteredProducts.filter((value, key) => coating ? (checkCoatingCompability(value[1].allowed_coatings, coating) && value) : value)
 
-    /*console.log("BEFORE FILTERING: ", filteredProducts)
-    console.log("AFTER FILTERING: ", test)*/
     const new_products = Object.fromEntries(coating.length === 1 && coating[0] === null ? filteredProducts : filteredProducts_2)
-    console.log(new_products)
     products = new_products
   }
 
@@ -268,14 +264,14 @@ const Products = ({ target, coating }) => {
       })
       console.log("AFTER ASCENDING: ", filteredObjectKeys)
       break;
-    case "lifetime_low":
+    case "lifetime_high":
       console.log("BEFORE DESCENDING LIFETIME: ", filteredObjectKeys)
       filteredObjectKeys.sort((a, b) => {
         return parseFloat((products[b].lifetime[0] + products[b].lifetime[1]) / 2) - parseFloat((products[a].lifetime[0] + products[a].lifetime[1]) / 2)
       })
       console.log("AFTER DESCENDING LIFETIME: ", filteredObjectKeys)
       break;
-    case "lifetime_high":
+    case "lifetime_low":
       console.log("BEFORE ASCENDING LIFETIME: ", filteredObjectKeys)
       filteredObjectKeys.sort((a, b) => {
         return parseFloat((products[a].lifetime[0] + products[a].lifetime[1]) / 2) - parseFloat((products[b].lifetime[0] + products[b].lifetime[1]) / 2)
@@ -286,30 +282,6 @@ const Products = ({ target, coating }) => {
       console.log("DEFAULT")
     }
 
-  /*React.useEffect(() => {
-    console.log("NEW SORT: ", sortBy)
-
-    switch(sortBy) {
-      case "gloss_low":
-        console.log("LOW GLOSS_LEVEL")
-        console.log("BEFORE SORT: ", filteredObjectKeys)
-        filteredObjectKeys.sort((a, b) => parseFloat((products[a].gloss_level[0] + products[a].gloss_level[1]) / 2) - parseFloat((products[b].gloss_level[0] + products[b].gloss_level[1]) / 2));
-        console.log("AFTER SORT: ", filteredObjectKeys)
-        break;
-      case "gloss_high":
-        console.log("HIGH GLOSS_LEVEL")
-        break;
-      case "lifetime_high":
-        console.log("HIGH LIFETIME")
-        break;
-      case "lifetime_low":
-        console.log("LOW LIFETIME")
-        break;
-      default:
-        console.log("DEFAULT")
-    }
-  }, [sortBy])*/
-
   const onChangeSort = () => {
     let d = document.getElementById("sortBy").value;
     setSortBy(d) 
@@ -317,17 +289,7 @@ const Products = ({ target, coating }) => {
 
   return (
     <Wrapper>
-      <h1>Ihre Produkte</h1>
-      <InputWrapper>
-        <Input 
-          placeholder="Flächengröße (in qm) hier"
-          value={inputArea}
-          onChange={(e) => onChangeInput(e)}
-          type="number"
-          min="0"
-        />
-      </InputWrapper>
-
+      <Title contentText={"Ihre Produkte"}/>
       <DropDownWrapper>
         <FilterDropDownWrapper>
           <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 0 ? null : 0)}>
@@ -442,7 +404,7 @@ const Products = ({ target, coating }) => {
         <div>
           <label htmlFor="sortBy">Sortieren nach</label>
           <select name="sort" id="sortBy" onChange={() => onChangeSort()}>
-            <option value="">Auswählen...</option>
+            <option value="">Kategorie...</option>
             <option value="gloss_low">Glanzgrad Niedrig</option>
             <option value="gloss_high">Glanzgrad hoch</option>
             <option value="lifetime_low">Standzeit Niedrig</option>

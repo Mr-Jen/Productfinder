@@ -7,6 +7,7 @@ import styled from 'styled-components'
 import { addToHistory } from '../../../actions/history'
 import { setCoating, setCoatingLength, setTarget } from '../../../actions/user'
 import InfoCard from './InfoCard'
+import MobileInfoCard from './MobileInfoCard';
 
 const ChoiceWrapper = styled.div`
   display: flex;
@@ -62,6 +63,21 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
   const [cardContent, setCardContent] = React.useState();
   const [enabledCard, setEnabledCard] = React.useState(false);
   const [allowDispatch, setAllowDispatch] = React.useState(true);
+  const [isDesktop, setIsDesktop] = React.useState(false)
+
+  React.useEffect(() => {
+    updatePredicate();
+    window.addEventListener('resize', () => updatePredicate());
+  
+    // returned function will be called on component unmount 
+    return () => {
+      window.removeEventListener('resize', () => updatePredicate())
+    }
+  }, [])
+
+  const updatePredicate = () => {
+    setIsDesktop(window.innerWidth > 600)
+  }
 
   const { store } = useContext(ReactReduxContext)
 
@@ -109,7 +125,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     return res
   }
 
-  console.log("THE ACTION: ", action)
+  //console.log("THE ACTION: ", action)
 
   const onClickButton = (key, target) => {
     //console.log("ACTION INSIDE BUTTON HANDLER: ", action)
@@ -150,11 +166,15 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
           </div>
         ))
       }
-      {showInfoCard && 
+      {(showInfoCard && isDesktop) &&
           <div>
             <InfoCard onAgree={() => onClickAgree()} data={cardContent}/>
             <CardWrapper onClick={() => setShowInfoCard(false)}/>
           </div>
+      }
+      {
+        (showInfoCard && !isDesktop) &&
+          <MobileInfoCard />
       }
     </ChoiceWrapper>
   )

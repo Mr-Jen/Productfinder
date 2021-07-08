@@ -13,11 +13,29 @@ const Wrapper = styled.div`
     align-items: center;
 `
 
+const DeleteButton = styled.button`
+    height: 3em;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: underline;
+    cursor: pointer;
+
+    @media (max-width: 400px) {
+        font-size: .9em;
+    }
+`
+
 const ButtonText = styled.p`
     margin-right: 10px;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size 14px;
+`
+
+const Icon = styled.img`
+    -webkit-filter: invert(100%);
 `
 
 const CompareStatusBar = ({ compareLength, compareList, resetCompare }) => {
@@ -29,29 +47,27 @@ const CompareStatusBar = ({ compareLength, compareList, resetCompare }) => {
         justifyContent: 'center',
         alignSelf: 'center',
         textDecoration: 'none',
-        height: '25px',
-        width: '60%',
+        height: '2.5em',
+        maxWidth: '60%',
         alignItems: 'center',
-        backgroundColor: `${props => props.disabled ? '#ffe60a' : 'black'}`,
-        border: '1px solid black',
         paddingLeft: '20px',
-        paddingRight: '20px',
+        paddingRight: '10px',
         borderRadius: '7px',
         marginBottom: '10px',
         marginTop: '10px',
-        backgroundColor: disabled ? 'lightgrey' : '#ffe60a',
+        backgroundColor: disabled ? 'rgb(223, 223, 223)' : 'black',
         pointerEvents: disabled ? 'none' : 'auto'
     }  
     
     return (
         <Wrapper>
-            <button onClick={() => resetCompare()}>Alle löschen</button>
+            <DeleteButton onClick={() => resetCompare()}>Alle löschen</DeleteButton>
             <Link 
                     to={`/compare/${productParams}`}
                     style={linkStyling}
             >
                 <ButtonText disabled>{`Produkte vergleichen (${compareList.length} / ${compareLength})`}</ButtonText>
-                <img 
+                <Icon 
                     src="assets/icons/misc/right.png"
                     style={{"height": "20px", "width": "20px", "margin": "5px"}}
                     alt="BackButton"

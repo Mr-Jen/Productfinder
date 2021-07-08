@@ -97,7 +97,7 @@
             "solubility": 2
         },
         "8": {
-            "id": 0,
+            "id": 8,
             "name": "Schlammfarbe",
             "category": 0,
             "allowed_coatings": [4], 
