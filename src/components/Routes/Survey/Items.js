@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import { addToHistory } from '../../../actions/history'
 import { setCoating, setCoatingLength, setTarget } from '../../../actions/user'
 import InfoCard from './InfoCard'
-import MobileInfoCard from './MobileInfoCard';
+import MobileInfoCard from './MobileInfoCard/MobileInfoCard';
 
 const ChoiceWrapper = styled.div`
   display: flex;
@@ -168,13 +168,16 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
       }
       {(showInfoCard && isDesktop) &&
           <div>
-            <InfoCard onAgree={() => onClickAgree()} data={cardContent}/>
+            <InfoCard onAgree={() => onClickAgree()} data={cardContent} />
             <CardWrapper onClick={() => setShowInfoCard(false)}/>
           </div>
       }
       {
         (showInfoCard && !isDesktop) &&
-          <MobileInfoCard />
+          <div>
+            <CardWrapper onClick={() => setShowInfoCard(false)}/>  
+            <MobileInfoCard closeCard={() => setShowInfoCard(false)} data={cardContent} />          
+          </div>          
       }
     </ChoiceWrapper>
   )

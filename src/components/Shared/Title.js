@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const CompTitle = styled.h2`
+const CompTitleH2 = styled.h2`
     position: relative;
+    background-color: aqua;
     z-index: 1;
     &:before {
         content: "";
@@ -15,10 +16,28 @@ const CompTitle = styled.h2`
     }
 `
 
-const Title = ({ contentText }) => {
+const CompTitleH4 = styled.h4`
+    position: relative;
+    background-color: aqua;
+    z-index: 1;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        height: 1px;
+        width: 80%;
+        border-bottom: 4px solid #FFE60A;
+    }
+`
+
+const Title = ({ contentText, size }) => {
     return (
         <div>
-            <CompTitle>{contentText}</CompTitle>
+            {
+                size === "h4" ?
+                    <CompTitleH4>{contentText}</CompTitleH4>
+                : <CompTitleH2>{contentText}</CompTitleH2>
+            }
         </div>
     )
 }
