@@ -75,6 +75,7 @@
                     "id": 1,
                     "label": "Bereits mit Öl, Lasur oder Farbe vorbehandelt",
                     "question": "In welchem Zustand ist der Anstrich? ",
+                    "breadcrumb": "Bereits vorbehandelt",
                     "info": {
                         "0": {
                             "id": 0,

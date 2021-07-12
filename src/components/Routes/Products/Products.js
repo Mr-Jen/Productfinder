@@ -7,11 +7,19 @@ import MultiRangeSlider from './Slider/MultiRangeSlider'
 import Product from './Product'
 import CompareStatusBar from '../../Shared/CompareStatusBar'
 import Title from '../../Shared/Title'
+import NavigateButton from '../../Shared/NavigateButton'
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+`
+
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 `
 
 const Input = styled.input`
@@ -41,7 +49,7 @@ const CheckBoxWrapper = styled.div`
 const DropDownWrapper = styled.div`
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 50%;
   margin-bottom: 40px;
   margin-top: 2em;
   flex-wrap: wrap;
@@ -113,22 +121,6 @@ const ApplicationBgRect = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 0 20px 0 20px
-`
-
-const SliderBgRect = styled.div`
-  min-width: 300;
-  height: 100px;
-  border: 1px solid black;
-  border-radius: 0 5px 5px 5px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 10px 20px 0 20px
-`
-
-const StarWrapper = styled.div`
-  display: flex;
 `
 
 const ResetDropDownButton = styled.button`
@@ -289,7 +281,21 @@ const Products = ({ target, coating }) => {
 
   return (
     <Wrapper>
-      <Title contentText={"Ihre Produkte"}/>
+      <Header>
+          <NavigateButton
+            location={"/fragen-und-antworten"} 
+            text={"Zurück"} 
+            direction={"left"} 
+          />
+        <Title contentText={"Ihre Produkte"}/>
+        <div style={{visibility: 'hidden'}}>
+          <NavigateButton
+              location={"/fragen-und-antworten"} 
+              text={"Zurück"} 
+              direction={"left"}
+          />
+        </div>
+      </Header>
       <DropDownWrapper>
         <FilterDropDownWrapper>
           <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 0 ? null : 0)}>

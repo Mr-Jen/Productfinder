@@ -23,7 +23,8 @@ const HomeWrapper = styled.div`
     align-items: flex-start;
     width: 40%;
     @media (max-width: 625px) {
-        width: 60%;
+        width: 90%;
+        margin-top: 1em;
     }
 `
 

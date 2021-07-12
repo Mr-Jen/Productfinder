@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Title from '../../../Shared/Title'
-
 const Wrapper = styled.div`
     background-color: rgb(230, 230, 230);
+    /*#F1F2F6*/
     height: 100%;
     width: 100%;
-    border-radius: 2em 2em 0 0;
+    border-radius: 1.5em 1.5em 0 0;
     margin: 1em;
 
     display: flex;

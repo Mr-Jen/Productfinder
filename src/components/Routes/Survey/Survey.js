@@ -10,11 +10,11 @@ import BackButton from './BackButton'
 import BreadCrumbs from './BreadCrumbs'
 import NavigateButton from '../../Shared/NavigateButton'
 
-const ContentWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90vw;
+  width: 100%;
 `
 
 const HeaderWrapper = styled.div`
@@ -22,32 +22,33 @@ const HeaderWrapper = styled.div`
   width: 100%;
 `
 
-const BreadCrumbsWrapper = styled.div`
+const ContentWrapper = styled.div`
+  width: 100%;
   display: flex;
-  align-self: center;
-  margin: auto
+  flex-direction: column;
+  align-items: center;
 `
 
 export const Survey = ({isHome, handleNavigationChange}) => {
     return (
-        <div>
+        <Wrapper>
+            <HeaderWrapper>
+                { isHome &&
+                  <NavigateButton 
+                  location={"/"} 
+                  text={"Zurück"} 
+                  direction={"left"}
+                  onClick={() => handleNavigationChange(0)}
+                  />
+                }
+                <BreadCrumbs/>
+            </HeaderWrapper>
             <ContentWrapper>
-                <HeaderWrapper>
-                    <NavigateButton 
-                    location={"/"} 
-                    text={"Zurück"} 
-                    direction={"left"}
-                    onClick={() => handleNavigationChange(0)}
-                    />
-                    <BreadCrumbsWrapper>
-                        <BreadCrumbs/>
-                    </BreadCrumbsWrapper>
-                </HeaderWrapper>
-                <Infos/>
-                <Items/>
-                {!isHome && < BackButton/>}
+              <Infos/>
+              <Items/>
+              {!isHome && < BackButton/>}
             </ContentWrapper>
-        </div>
+        </Wrapper>
     )
 }
 

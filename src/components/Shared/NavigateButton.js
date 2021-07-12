@@ -14,6 +14,9 @@ const Icon = styled.img`
 
 const Text = styled.p`
     marginRight: ${props => props.direction === "left" && "20px"};
+    @media (max-width: 450px) {
+        visibility: hidden;
+    }
 `
 
 

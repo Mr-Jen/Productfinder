@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: auto;
 `
 
@@ -52,11 +52,11 @@ const App = ({loadConfig, loadProducts, isHome}) => {
         </Route>
         <Route exact path="/products">
           <HeaderWrapper>
-              <NavigateButton
+              {/*<NavigateButton
                 location={"/fragen-und-antworten"} 
                 text={"Zurück"} 
                 direction={"left"}
-              />
+              />*/}
           </HeaderWrapper>
           <Products/>
         </Route>

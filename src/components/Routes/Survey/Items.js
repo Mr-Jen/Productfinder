@@ -101,10 +101,6 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     //unsubscribe()
   })
 
-  React.useEffect(() => {
-    console.log("CONTENT CHANGE: ", cardContent)
-  }, [cardContent])
-
   const onClickInfo = (item) => {
     setShowInfoCard(!showInfoCard)
     setCardContent(item)
@@ -132,11 +128,11 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     ButtonAddToHistory(key)
     //console.log("GOAL: ", target, action)
     if (target_action === 'set_target'){
-      console.log("SETTING TARGET: ", target.label)
+      //console.log("SETTING TARGET: ", target.label)
       ButtonAddTarget(target.label)
     }
     else if (action === 'set_coating' && target){
-      console.log("SETTING COATING: ", target?.action_value)
+      //console.log("SETTING COATING: ", target?.action_value)
       target.action_value !== undefined && ButtonSetCoating(target.action_value)
     }
   }
@@ -202,8 +198,8 @@ const mapStateToProps = ({ decisions, history, user}) => {
 
   /*console.log("ACTION: ", action)*/
 
-  console.log("AMOUNT OF ACTIONS: ", amountOfAction)
-  console.log("LENGTH OF COATING SHOULD BE: ", coatingLength)
+  //console.log("AMOUNT OF ACTIONS: ", amountOfAction)
+  //console.log("LENGTH OF COATING SHOULD BE: ", coatingLength)
 
   return {
     childrenItems: latestItem,

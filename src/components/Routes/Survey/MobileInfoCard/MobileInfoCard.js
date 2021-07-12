@@ -50,12 +50,6 @@ const CloseIcon = styled.img`
     padding: 1.2em;
 `
 
-const SlideContent = styled.div`
-    /*background-color: aqua;*/
-    height: 100%;
-    width: 100%;
-`
-
 const MobileInfoCard = ({ closeCard, data }) => {
     const [slide, setSlide] = React.useState(0);
     const slideLength = Object.keys(data).length;
