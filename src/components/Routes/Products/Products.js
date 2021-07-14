@@ -3,11 +3,11 @@ import styled from 'styled-components'
 import { connect } from 'react-redux'
 
 import './Products.css'
-import MultiRangeSlider from './Slider/MultiRangeSlider'
 import Product from './Product'
 import CompareStatusBar from '../../Shared/CompareStatusBar'
 import Title from '../../Shared/Title'
 import NavigateButton from '../../Shared/NavigateButton'
+import Select from './Select'
 
 const Wrapper = styled.div`
   display: flex;
@@ -20,6 +20,9 @@ const Header = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  /*@media (max-width: 340px) {
+    width: 100vw;
+  }*/
 `
 
 const Input = styled.input`
@@ -245,39 +248,31 @@ const Products = ({ target, coating }) => {
       
   switch(sortBy){
     case "gloss_low":
-      console.log("BEFORE DESCENDING: ", filteredObjectKeys)
       filteredObjectKeys.sort((a, b) => parseFloat((products[a].gloss_level[0] + products[a].gloss_level[1]) / 2) - parseFloat((products[b].gloss_level[0] + products[b].gloss_level[1]) / 2));
-      console.log("AFTER DESCENDING: ", filteredObjectKeys)
       break;
     case "gloss_high":
-      console.log("BEFORE ASCENDING: ", filteredObjectKeys)
       filteredObjectKeys.sort((a, b) => {
         return parseFloat((products[b].gloss_level[0] + products[b].gloss_level[1]) / 2) - parseFloat((products[a].gloss_level[0] + products[a].gloss_level[1]) / 2)
-      })
-      console.log("AFTER ASCENDING: ", filteredObjectKeys)
+      })      
       break;
-    case "lifetime_high":
-      console.log("BEFORE DESCENDING LIFETIME: ", filteredObjectKeys)
+    case "lifetime_high":      
       filteredObjectKeys.sort((a, b) => {
         return parseFloat((products[b].lifetime[0] + products[b].lifetime[1]) / 2) - parseFloat((products[a].lifetime[0] + products[a].lifetime[1]) / 2)
-      })
-      console.log("AFTER DESCENDING LIFETIME: ", filteredObjectKeys)
+      })      
       break;
-    case "lifetime_low":
-      console.log("BEFORE ASCENDING LIFETIME: ", filteredObjectKeys)
+    case "lifetime_low":      
       filteredObjectKeys.sort((a, b) => {
         return parseFloat((products[a].lifetime[0] + products[a].lifetime[1]) / 2) - parseFloat((products[b].lifetime[0] + products[b].lifetime[1]) / 2)
-      })
-      console.log("AFTER ASCENDING LIFETIME: ", filteredObjectKeys)
+      })      
       break;
     default:
       console.log("DEFAULT")
     }
 
-  const onChangeSort = () => {
-    let d = document.getElementById("sortBy").value;
-    setSortBy(d) 
+  const handleChangeSort = (e) => {
+    setSortBy(e) 
   }
+
 
   return (
     <Wrapper>
@@ -407,17 +402,7 @@ const Products = ({ target, coating }) => {
           }
         </FilterDropDownWrapper>
 
-        <div>
-          <label htmlFor="sortBy">Sortieren nach</label>
-          <select name="sort" id="sortBy" onChange={() => onChangeSort()}>
-            <option value="">Kategorie...</option>
-            <option value="gloss_low">Glanzgrad Niedrig</option>
-            <option value="gloss_high">Glanzgrad hoch</option>
-            <option value="lifetime_low">Standzeit Niedrig</option>
-            <option value="lifetime_high">Standzeit Hoch</option>
-          </select>
-        </div>
-
+        <Select handleChangeSort={(e) => handleChangeSort(e)}/>
       </DropDownWrapper>
 
       { !products ? <p>Loading ...</p> :

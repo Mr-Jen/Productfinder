@@ -19,19 +19,25 @@ const BreadCrumbInnerWrapper = styled.div`
     align-items: center;
 `
 
+const Arrow = styled.img`
+    height: 1em;
+    margin-right: -.8em;
+`
+
 const BreadCrumb = styled.button`
   padding: 0 1em 0 1em;
   padding-left: ${props => props.isOffset && "-1em"};
   border: none;
   background: none;
-  color: ${props => props.lastCrumb ? 'blue' : 'black'};
+  /*color: ${props => props.lastCrumb ? 'blue' : 'black'};*/
+  color: black;
   font-size: ${props => props.lastCrumb ? '15px' : '14px'};
   font-weight: ${props => props.lastCrumb && 'bold'};
-  cursor: pointer;
+  cursor: ${props => props.lastCrumb ? 'auto' : 'pointer'};
   margin: 3px;
   &:hover {
     color: #01447e;
-    text-decoration: underline;
+    text-decoration: ${props => !props.lastCrumb && 'underline'};;
   }
 `
 
@@ -44,19 +50,15 @@ const BreadCrumbs = ({handleNavigationChange, breadCrumbs}) => {
         let secondElem = document.getElementById(`crumb${breadCrumbs.length-1}`);
         if(firstElem && secondElem){
             if (firstElem.getBoundingClientRect().y !== secondElem.getBoundingClientRect().y) {
-                console.log("IS OFFSET")
+                //console.log("IS OFFSET")
                 setIsOffset(true);
             }
             else {
-                console.log("NO OFFSET")
+                //console.log("NO OFFSET")
                 isOffset === true && setIsOffset(false);
             }
         }
     }, [breadCrumbs])
-
-    useEffect(() => {
-        console.log("OFFSET STATE: ", isOffset)
-    }, [isOffset])
 
     return (
         <Wrapper isOffset={isOffset}>
@@ -66,19 +68,21 @@ const BreadCrumbs = ({handleNavigationChange, breadCrumbs}) => {
                     breadCrumbs.map((crumb, index) => (
                         <BreadCrumbInnerWrapper key={index} id={`crumb${index}`}>
                             <BreadCrumb 
-                                onClick={() => handleNavigationChange(index+1)}
+                                onClick={() => index !== breadCrumbs.length -1 && handleNavigationChange(index+1)}
                                 lastCrumb={index + 1 === breadCrumbs.length}
                             >
                                 {`${crumb}`}
                             </BreadCrumb>
-                            {index + 1 !== breadCrumbs.length && <strong>{"ᐳ"}</strong>}
+                            {/*index + 1 !== breadCrumbs.length && <strong>{"ᐳ"}</strong>*/}
+                            {index + 1 !== breadCrumbs.length && <strong>{"/"}</strong>}
                         </BreadCrumbInnerWrapper>
                     ))
                 }
                 </BreadCrumbWrapper>
             :
                 <BreadCrumbInnerWrapper>
-                    {breadCrumbs.length > 0 && <strong>ᐸ</strong>}
+                    {/*breadCrumbs.length > 0 && <strong>ᐸ</strong>*/}
+                    {breadCrumbs.length > 0 && <Arrow src="assets/icons/misc/left-arrow.png"></Arrow>}
                     <BreadCrumb 
                         onClick={() => handleNavigationChange(breadCrumbs.length-1)}
                         lastCrumb={true}

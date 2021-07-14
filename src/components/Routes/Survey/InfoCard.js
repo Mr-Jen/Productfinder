@@ -86,6 +86,10 @@ const Arrow = styled.img`
         transform: translateX(${props => props.side === 0 ? "-10px" : "10px"}) ${props => props.rotate_angle && `rotate(180deg)`};
     }
     transform: ${props => props.rotate_angle && `rotate(180deg)`};
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 `
 
 const CheckerWrapper = styled.div`

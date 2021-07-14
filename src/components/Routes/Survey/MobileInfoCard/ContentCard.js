@@ -12,8 +12,6 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: auto;
-    overscroll-behavior: auto
 `
 
 const Header = styled.div`
@@ -23,6 +21,15 @@ const Header = styled.div`
     border-radius: 2em 2em 0 0;
 `
 
+const ContentWrapper = styled.div`
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+    height: 100%;
+`
+
 const ContentTitle = styled.h4`
 
 `
@@ -30,10 +37,10 @@ const ContentTitle = styled.h4`
 const ImageWrapper = styled.div`
     background-image: url(${props => props.imgSrc});
     background-size: cover;
+    background-position: center;
     width: 90%;
-    min-height: 50%;
+    min-height: 60%;
     border-radius: 10px;
-    margin-top: 75px;
 `
 
 const ContentText = styled.p`
@@ -47,12 +54,13 @@ const ContentText = styled.p`
 function ContentCard({ content }) {
     return (
         <Wrapper>
-            {/*<Title contentText={content.title} size={"h4"}/>*/}
             <Header>
                 <ContentTitle>{content.title}</ContentTitle>
             </Header>
-            <ImageWrapper imgSrc={content.image}/>
-            <ContentText>{content.content}</ContentText>
+            <ContentWrapper>
+                <ImageWrapper imgSrc={content.image}/>
+                <ContentText>{content.content}</ContentText>
+            </ContentWrapper>
         </Wrapper>
     )
 }

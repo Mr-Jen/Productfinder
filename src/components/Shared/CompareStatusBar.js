@@ -31,7 +31,10 @@ const ButtonText = styled.p`
     margin-right: 10px;
     color: white;
     font-weight: bold;
-    font-size 14px;
+    font-size 3.5vw;
+    @media screen and (min-width: 440px) {
+        font-size: 14px;
+    }
 `
 
 const Icon = styled.img`

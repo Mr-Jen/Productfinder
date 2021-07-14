@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 import Title from '../../Shared/Title'
+import NavigateButton from '../../Shared/NavigateButton'
 
 const TopWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+`
+
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 `
 
 const Wrapper = styled.div`
@@ -82,6 +88,10 @@ const ContentText = styled.p`
 
 
 const ProductView = ({ match, productsData }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const category_names_de = [
         "Kategorie",
         "Oberflächenart",
@@ -101,8 +111,21 @@ const ProductView = ({ match, productsData }) => {
 
     return (
         <TopWrapper>
-            <Link to="/products">{`<-- Zurück`}</Link>
-            <Title contentText={product["name"]} />
+            <Header>
+                <NavigateButton
+                    location={"/products"} 
+                    text={"Zurück"} 
+                    direction={"left"} 
+                />
+                <Title contentText={product["name"]} />
+                <div style={{visibility: 'hidden'}}>
+                <NavigateButton
+                    location={"/products"} 
+                    text={"Zurück"} 
+                    direction={"left"}
+                />
+                </div>
+            </Header>
             <Wrapper>
                 <ImageWrapper src="/assets/images/Lasur/lasur.png"/>
                 <ContentWrapper>

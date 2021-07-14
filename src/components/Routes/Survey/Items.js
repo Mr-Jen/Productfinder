@@ -20,7 +20,7 @@ const ButtonContentWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background: #FFE60A;
   border-radius: 5px;
   cursor: pointer;
@@ -29,7 +29,7 @@ const ButtonContentWrapper = styled.div`
     color: darkblue;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  margin: 10px;
+  margin: 3em 0 3em 0;
 `
 
 const ChoiceButton = styled.div`
@@ -40,6 +40,9 @@ const ChoiceButton = styled.div`
   /*pointer-events: ${props => props.disabled && 'none'};*/
   /*opacity: ${props => props.disabled && 0.5};
   background: ${props => props.disabled && '#CCC'};*/
+`
+
+const ButtonWrapper = styled.div`
 `
 
 const InfoButton = styled.button`
@@ -148,20 +151,25 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
 
   return (
     <ChoiceWrapper>
-      { (childrenItems && childrenItems !== "no-products") &&
-        Object.keys(childrenItems).map(key => (
-          <div key={key}>
-            <ButtonContentWrapper disabled={checkWarning(key) && !enabledCard}>
-              <ChoiceButton disabled={checkWarning(key) && !enabledCard} onClick={() => onClickButton(key, childrenItems[key])}>
-                <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
-              </ChoiceButton>
-              <InfoButton>
-                <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info)} height="20px" src="assets/icons/misc/info.svg"></img>
-              </InfoButton>
-            </ButtonContentWrapper>
-          </div>
-        ))
-      }
+      <ButtonWrapper>
+        { (childrenItems && childrenItems !== "no-products") &&
+          Object.keys(childrenItems).map(key => (
+            <div key={key}>
+              <ButtonContentWrapper disabled={checkWarning(key) && !enabledCard}>
+                <InfoButton style={{visibility: "hidden"}}>
+                  <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info)} height="20px" src="assets/icons/misc/info.svg"></img>
+                </InfoButton>
+                <ChoiceButton disabled={checkWarning(key) && !enabledCard} onClick={() => onClickButton(key, childrenItems[key])}>
+                  <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
+                </ChoiceButton>
+                <InfoButton>
+                  <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info)} height="20px" src="assets/icons/misc/info.svg"></img>
+                </InfoButton>
+              </ButtonContentWrapper>
+            </div>
+          ))
+        }
+      </ButtonWrapper>
       {(showInfoCard && isDesktop) &&
           <div>
             <InfoCard onAgree={() => onClickAgree()} data={cardContent} />

@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 
+import NavigateButton from '../../Shared/NavigateButton'
 import Title from '../../Shared/Title'
 
 const Wrapper = styled.div`
@@ -14,6 +14,12 @@ const Wrapper = styled.div`
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 
+`
+
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 `
 
 const ContentWrapper = styled.div`
@@ -123,9 +129,8 @@ const Hr = styled.hr`
 
 const ProductTitle = styled.h3`
     text-align: center;
-    position: relative;
-    z-index: 1;
-    &:before {
+    width: 100%;
+    /*&:before {
         content: "";
         position: absolute;
         left: 0;
@@ -133,17 +138,40 @@ const ProductTitle = styled.h3`
         height: 1px;
         width: 80%;
         border-bottom: 3px solid #FFE60A;
-    }
+    }*/
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10000;
 `
 
 const Compare = ({ compareProducts, categories, surfaces, applications, binders, solubilities }) => {
     const [product_1, product_2] = compareProducts
-    console.log(product_1)
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     
     return (
         <Wrapper>
-            <Link to="/products">{`<-- Zurück`}</Link>
-            <Title contentText={"Produktvergleich"} />
+            <Header>
+                <NavigateButton
+                    location={"/products"} 
+                    text={"Zurück"} 
+                    direction={"left"} 
+                />
+                <Title contentText={"Produktvergleich"}/>
+                <div style={{visibility: 'hidden'}}>
+                <NavigateButton
+                    location={"/products"} 
+                    text={"Zurück"} 
+                    direction={"left"}
+                />
+                </div>
+            </Header>
+
             <ContentWrapper>
                 <Product>
                     <ProductTitle>{product_1.name}</ProductTitle>

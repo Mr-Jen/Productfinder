@@ -40,6 +40,12 @@ const Img = styled.div`
     height: 100px;
 `
 
+const ProductImg = styled.img`
+    width: 50%;
+    margin: auto;
+    margin-top: 1em;
+`
+
 const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -106,7 +112,8 @@ const Product = ({ title, category, surface, application, lifetime, gloss_level,
     return (
         <Wrapper>
             <Title>{title}</Title>
-            <Img />
+            {/*<Img onLoad={() => console.log("IMAGE LOADED")}/>*/}
+            <ProductImg src="assets/images/farbeimer.jpg" />
             <ContentWrapper>
         	    <CategoryWrapper>
                     <CategoryText>Kategorie: </CategoryText>

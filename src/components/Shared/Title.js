@@ -32,13 +32,13 @@ const CompTitleH4 = styled.h4`
 
 const Title = ({ contentText, size }) => {
     return (
-        <div>
+        <>
             {
                 size === "h4" ?
                     <CompTitleH4>{contentText}</CompTitleH4>
                 : <CompTitleH2>{contentText}</CompTitleH2>
             }
-        </div>
+        </>
     )
 }
 
