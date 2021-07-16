@@ -14,9 +14,8 @@ const Wrapper = styled.div`
 
 const Title = styled.h5`
     align-self: center;
-
+    z-index: -100;
     position: relative;
-    /*z-index: 1;*/
     &:before {
         content: "";
         position: absolute;

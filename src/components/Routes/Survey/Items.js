@@ -16,6 +16,10 @@ const ChoiceWrapper = styled.div`
   padding: 10px;
 `
 
+const ButtonInsideWrapper = styled.div`
+  border: 2px solid transparent;
+`
+
 const ButtonContentWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -29,7 +33,16 @@ const ButtonContentWrapper = styled.div`
     color: darkblue;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  margin: 3em 0 3em 0;
+  margin: 2em 0 2em 0;
+  border: 2px solid transparent;
+  &:hover {
+    color: #01447e;
+    border: 2px solid black;
+  }
+  @media (max-width: 500px) {
+    margin: 1.5em 0 1.5em 0;
+    border: 1px solid rgb(232, 232, 232);
+  }
 `
 
 const ChoiceButton = styled.div`
@@ -40,6 +53,12 @@ const ChoiceButton = styled.div`
   /*pointer-events: ${props => props.disabled && 'none'};*/
   /*opacity: ${props => props.disabled && 0.5};
   background: ${props => props.disabled && '#CCC'};*/
+  width: 100%;
+  text-align: center;
+
+  @media (max-width: 500px) {
+    font-size: .9em;
+  }
 `
 
 const ButtonWrapper = styled.div`
@@ -59,6 +78,7 @@ const CardWrapper = styled.div`
   top: 0;
   left: 0;
   opacity: 0.9;
+  z-index: 1000000;
 `
 
 const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, ButtonSetCoating, ButtonSetCoatingLength, coatingLength, target_action }) => {
@@ -154,7 +174,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
       <ButtonWrapper>
         { (childrenItems && childrenItems !== "no-products") &&
           Object.keys(childrenItems).map(key => (
-            <div key={key}>
+            <ButtonInsideWrapper key={key}>
               <ButtonContentWrapper disabled={checkWarning(key) && !enabledCard}>
                 <InfoButton style={{visibility: "hidden"}}>
                   <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info)} height="20px" src="assets/icons/misc/info.svg"></img>
@@ -162,11 +182,11 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
                 <ChoiceButton disabled={checkWarning(key) && !enabledCard} onClick={() => onClickButton(key, childrenItems[key])}>
                   <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
                 </ChoiceButton>
-                <InfoButton>
+                <InfoButton style={{visibility: `${childrenItems[key]["info"] ? "visible" : "hidden"}`}}>
                   <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info)} height="20px" src="assets/icons/misc/info.svg"></img>
                 </InfoButton>
               </ButtonContentWrapper>
-            </div>
+            </ButtonInsideWrapper>
           ))
         }
       </ButtonWrapper>

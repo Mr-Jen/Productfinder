@@ -24,19 +24,19 @@ const Wrapper = styled.div`
 const HeaderWrap = styled.div`
   display: flex;
   align-self: flex-start;
-`
+  z-index: 1000000;
 
-const HeaderWrapper = styled.div`
-  display: flex;
-  width: 100%;
+  position: sticky;
+  top: 0;
 `
-
 
 const App = ({loadConfig, loadProducts, isHome}) => {
   React.useEffect(() => {loadConfig()}, [loadConfig])
   React.useEffect(() => {loadProducts()}, [loadProducts])
 
   console.log("IS HOME: ", isHome)
+
+  //window.screen.orientation.lock('any')
 
   return (
     <Wrapper>
@@ -51,13 +51,6 @@ const App = ({loadConfig, loadProducts, isHome}) => {
           <Survey/>
         </Route>
         <Route exact path="/products">
-          <HeaderWrapper>
-              {/*<NavigateButton
-                location={"/fragen-und-antworten"} 
-                text={"Zurück"} 
-                direction={"left"}
-              />*/}
-          </HeaderWrapper>
           <Products/>
         </Route>
         

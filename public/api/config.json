@@ -26,7 +26,7 @@
                         "0": {
                             "id": 0,
                             "label": "Lasur",
-                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                            "question": "",
                             "action_value": null,
                             "info": {
                                 "0": {
@@ -49,7 +49,7 @@
                         "1": {
                             "id": 1,
                             "label": "Farbe",
-                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                            "question": "",
                             "action_value": null,
                             "info": {
                                 "0": {
@@ -63,7 +63,7 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Deckende Farbe",
-                                    "content": "Farben sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                 }
                             },
@@ -169,7 +169,7 @@
                                                                 "0": {
                                                                     "id": 0,
                                                                     "label": "Lasur",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                    "question": "",
                                                                     "info": {
                                                                         "0": {
                                                                             "id": 0,
@@ -183,12 +183,12 @@
                                                                 "1": {
                                                                     "id": 1,
                                                                     "label": "Farbe",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "question": "",
                                                                     "info": {
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -206,7 +206,7 @@
                                                                 "0": {
                                                                     "id": 0,
                                                                     "label": "Lasur",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                    "question": "",
                                                                     "info": {
                                                                         "0": {
                                                                             "id": 0,
@@ -220,7 +220,7 @@
                                                                 "1": {
                                                                     "id": 1,
                                                                     "label": "Farbe",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "question": "",
                                                                     "children": null
                                                                 }
                                                             } 
@@ -268,13 +268,13 @@
                                                                 "0": {
                                                                     "id": 0,
                                                                     "label": "Farbe",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "question": "",
                                                                     "info": {
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                                            "image": "assets/images/Farbe/intakt-2.jpg"
                                                                         }
                                                                     },
                                                                     "children": null
@@ -291,13 +291,13 @@
                                                                 "0": {
                                                                     "id": 0,
                                                                     "label": "Farbe",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "question": "",
                                                                     "info": {
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                                            "image": "assets/images/Farbe/intakt-2.jpg"
                                                                         }
                                                                     },
                                                                     "children": null
@@ -392,13 +392,13 @@
                                                                                 "0": {
                                                                                     "id": 0,
                                                                                     "label": "Lasur",
-                                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                                    "question": "",
                                                                                     "children": null
                                                                                 },
                                                                                 "1": {
                                                                                     "id": 1,
                                                                                     "label": "Farbe",
-                                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                                    "question": "",
                                                                                     "children": null
                                                                                 }
                                                                             } 
@@ -413,13 +413,13 @@
                                                                                 "0": {
                                                                                     "id": 0,
                                                                                     "label": "Lasur",
-                                                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                                                    "question": "",
                                                                                     "children": null
                                                                                 },
                                                                                 "1": {
                                                                                     "id": 1,
                                                                                     "label": "Farbe",
-                                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                                    "question": "",
                                                                                     "children": null
                                                                                 }
                                                                             } 
@@ -447,18 +447,18 @@
                                                         "0": {
                                                             "id": 0,
                                                             "label": "Lasur",
-                                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                            "question": "",
                                                             "children": null
                                                         },
                                                         "1": {
                                                             "id": 1,
                                                             "label": "Farbe",
-                                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                            "question": "",
                                                             "info": {
                                                                 "0": {
                                                                     "id": 0,
                                                                     "title": "Deckende Farbe",
-                                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
                                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                 }
                                                             },
@@ -514,7 +514,7 @@
                                                                 "1": {
                                                                     "id": 1,
                                                                     "label": "Farbe",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "question": "",
                                                                     "children": null
                                                                 }
                                                             } 
@@ -529,7 +529,7 @@
                                                                 "1": {
                                                                     "id": 1,
                                                                     "label": "Farbe",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "question": "",
                                                                     "children": null
                                                                 }
                                                             } 
@@ -577,7 +577,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "label": "Lasur",
-                                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                                    "question": "",
                                                     "info": {
                                                         "0": {
                                                             "id": 0,
@@ -591,12 +591,12 @@
                                                 "1": {
                                                     "id": 1,
                                                     "label": "Farbe",
-                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                    "question": "",
                                                     "info": {
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Deckende Farbe",
-                                                            "content": "Deckende Farben sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                         }
                                                     },
@@ -641,7 +641,7 @@
                                                                 "1": {
                                                                     "id": 1,
                                                                     "label": "Farbe",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "question": "",
                                                                     "children": null
                                                                 }
                                                             } 
@@ -656,7 +656,7 @@
                                                                 "1": {
                                                                     "id": 1,
                                                                     "label": "Farbe",
-                                                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                                                    "question": "",
                                                                     "children": null
                                                                 }
                                                             } 
@@ -707,7 +707,7 @@
                                         "0": {
                                             "id": 0,
                                             "label": "Lasur",
-                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                            "question": "",
                                             "info": {
                                                 "0": {
                                                     "id": 0,
@@ -721,13 +721,13 @@
                                         "1": {
                                             "id": 1,
                                             "label": "Farbe",
-                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                            "question": "",
                                             "children": null
                                         },
                                         "2": {
                                             "id": 2,
                                             "label": "Öl",
-                                            "question": "Wir empfehlen Ihnen eines dieser Öle:",
+                                            "question": "",
                                             "children": null
                                         }
                                     } 
@@ -750,7 +750,7 @@
                                         "0": {
                                             "id": 0,
                                             "label": "Lasur",
-                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                            "question": "",
                                             "info": {
                                                 "0": {
                                                     "id": 0,
@@ -764,13 +764,13 @@
                                         "1": {
                                             "id": 1,
                                             "label": "Farbe",
-                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                            "question": "",
                                             "children": null
                                         },
                                         "2": {
                                             "id": 2,
                                             "label": "Öl",
-                                            "question": "Wir empfehlen Ihnen eines dieser Öle:",
+                                            "question": "",
                                             "children": null
                                         }
                                     } 
@@ -839,7 +839,7 @@
                                         "0": {
                                             "id": 0,
                                             "label": "Farbe",
-                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                            "question": "",
                                             "children": null
                                         }
                                     } 
@@ -854,7 +854,7 @@
                                         "0": {
                                             "id": 0,
                                             "label": "Farbe",
-                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                            "question": "",
                                             "children": null
                                         }
                                     } 
@@ -890,7 +890,7 @@
                                 "0": {
                                     "id": 0,
                                     "label": "Lasur",
-                                    "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                    "question": "",
                                     "info": {
                                         "0": {
                                             "id": 0,
@@ -912,7 +912,7 @@
                                 "1": {
                                     "id": 1,
                                     "label": "Farbe",
-                                    "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                    "question": "",
                                     "info": {
                                         "0": {
                                             "id": 0,
@@ -967,7 +967,7 @@
                                         "0": {
                                             "id": 0,
                                             "label": "Lasur",
-                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                            "question": "",
                                             "info": {
                                                 "0": {
                                                     "id": 0,
@@ -981,13 +981,13 @@
                                         "1": {
                                             "id": 1,
                                             "label": "Farbe",
-                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                            "question": "",
                                             "children": null
                                         },
                                         "2": {
                                             "id": 2,
                                             "label": "Öl",
-                                            "question": "Wir empfehlen Ihnen eines dieser Öle:",
+                                            "question": "",
                                             "children": null
                                         }
                                     } 
@@ -1010,7 +1010,7 @@
                                         "0": {
                                             "id": 0,
                                             "label": "Lasur",
-                                            "question": "Wir empfehlen Ihnen eine dieser Lasuren:",
+                                            "question": "",
                                             "info": {
                                                 "0": {
                                                     "id": 0,
@@ -1024,13 +1024,13 @@
                                         "1": {
                                             "id": 1,
                                             "label": "Farbe",
-                                            "question": "Wir empfehlen Ihnen eine dieser Farben:",
+                                            "question": "",
                                             "children": null
                                         },
                                         "2": {
                                             "id": 2,
                                             "label": "Öl",
-                                            "question": "Wir empfehlen Ihnen eines dieser Öle:",
+                                            "question": "",
                                             "children": null
                                         }
                                     } 

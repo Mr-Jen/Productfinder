@@ -18,6 +18,7 @@ const Wrapper = styled.div`
 
     display: flex;
     flex-direction: column;
+    z-index: 1000000;
 `
 
 const Header = styled.div`

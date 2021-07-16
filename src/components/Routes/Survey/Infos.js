@@ -1,32 +1,87 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
-
-import NavigateButton from '../../Shared/NavigateButton'
+import { Link } from 'react-router-dom'
 
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
 `
+const ToProducts = styled.button`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFE60A;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2em 0 2em 0;
+`
+
+const Text = styled.p`
+    font-weight: bold;
+    font-size: 15px;
+`
+
+const Icon = styled.img`
+    height: 2em;
+    padding: 1em;
+`
+
+const Title = styled.h2`
+    text-align: center;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        height: 1px;
+        width: 80%;
+        border-bottom: 3px solid #FFE60A;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 450px) {
+        &:before {
+            content: none;
+        }
+        border-top: 2px solid #FFE60A;
+        border-bottom: 2px solid #FFE60A;
+        padding: 1em;
+        &:empty {
+            border: none;
+        }
+    }
+`
 
 const Infos = ({latestItem}) => {
     let returnValue;
 
-    if (latestItem && latestItem.children === null) {
-        returnValue = <NavigateButton 
-            location={"/products"} 
-            text={"Weiter zur Produktempfehlung"}
-            direction={"right"}
-        />
-    } else if (latestItem && latestItem.children === "no-products"){
+     if (latestItem && latestItem.children === "no-products"){
         returnValue = <a href="https://schwedischer-farbenhandel.de">Homepage</a>
     }
 
     return (
         <Wrapper>
-            <h3>{latestItem?.label}</h3>
-            <h5>{latestItem?.question}</h5>
+            <Title>{latestItem?.label}</Title>
+            <h5 style={{textAlign: "center"}}>{latestItem?.question}</h5>
+            {latestItem && latestItem.children === null &&
+                <Link 
+                    to={"/products"}
+                    style={{textDecoration: "none"}}
+                >                
+                    <ToProducts>
+                        <Icon src="assets/icons/misc/paint-bucket.png"/>
+                        <Text>Zu den Produkten</Text>
+                        <Icon style={{height: '1.5em'}} src="assets/icons/misc/next.svg"/>
+                    </ToProducts>
+                </Link>
+            }
             {returnValue}
         </Wrapper>
     )

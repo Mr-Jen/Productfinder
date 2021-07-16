@@ -4,8 +4,13 @@ import styled from 'styled-components'
 
 import { removeFromHistory } from '../../../actions/history'
 
+const Wrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
 const Button = styled.button`
-  width: 100%;
   display: flex;
   align-items: center;
   height: 2em;
@@ -13,6 +18,13 @@ const Button = styled.button`
   border: 1px solid grey;
   padding: 1em;
   background-color: rgb(240, 240, 240);
+  cursor: pointer;
+  &:hover {
+      background-color: rgb(219, 217, 217);
+  }
+
+  /*position: fixed;*/
+  */bottom: 5vh;*/
 `
 
 const Icon = styled.img`
@@ -26,12 +38,12 @@ const Text = styled.p`
 
 const BackButton = ({ButtonRemoveFromHistory, historyLength}) => {
     return (
-        <div>
+        <Wrapper>
             <Button onClick={() => ButtonRemoveFromHistory(historyLength - 1)}>
                 <Icon src="assets/icons/misc/left.png"/>
                 <Text>Zurück</Text>
             </Button>
-        </div>
+        </Wrapper>
     )
 }
 

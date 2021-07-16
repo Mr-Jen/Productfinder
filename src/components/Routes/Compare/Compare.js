@@ -6,12 +6,12 @@ import NavigateButton from '../../Shared/NavigateButton'
 import Title from '../../Shared/Title'
 
 const Wrapper = styled.div`
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
         -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
+        -moz-box-sizing: border-box;
             box-sizing: border-box;
 
 `
@@ -20,6 +20,7 @@ const Header = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 100vw;
 `
 
 const ContentWrapper = styled.div`
@@ -92,7 +93,6 @@ const ButtonText = styled.p`
 
 const PropsWrapper = styled.div`
     width: 100vw;
-    max-width: 100vw;
     background-color: #F4F4F4;
     padding: 5em 0 5em 0;
     height: 80em;
@@ -102,7 +102,7 @@ const PropsWrapper = styled.div`
 `
 
 const PropsContentWrapper = styled.div`
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,7 +119,13 @@ const PropHeader = styled.h4`
 
 const PropValues = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+`
+
+const PropText = styled.p`
+    margin: .5em;
+    text-align: center;
+    width: 50%;
 `
 
 const Hr = styled.hr`
@@ -176,7 +182,7 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                 <Product>
                     <ProductTitle>{product_1.name}</ProductTitle>
                     <Img/>
-                    <Button href="https://www.w3schools.com/">
+                    <Button href="https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fenster-Tuer/Silikonalkydfarbe-ODEN">
                         <ButtonContent>
                             <ButtonText>Kaufen</ButtonText>
                             <Icon src='/assets/icons/misc/bag.png'></Icon>
@@ -187,7 +193,7 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                 <Product>
                     <ProductTitle>{product_2.name}</ProductTitle>
                     <Img/>
-                    <Button href="https://www.w3schools.com/">
+                    <Button href="https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fenster-Tuer/Silikonalkydfarbe-ODEN">
                         <ButtonContent>
                             <ButtonText>Kaufen</ButtonText>
                             <Icon src='/assets/icons/misc/bag.png'></Icon>
@@ -201,32 +207,32 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                         <PropHeader>Kategorie</PropHeader>
                         <Hr />
                         <PropValues>
-                            <p>{categories[product_1.category]}</p>
-                            <p>{categories[product_2.category]}</p>
+                            <PropText>{categories[product_1.category]}</PropText>
+                            <PropText>{categories[product_2.category]}</PropText>
                         </PropValues>
                     </Prop>
                     <Prop>
                         <PropHeader>Erlaubte Oberflächen</PropHeader>
                         <Hr />
                         <PropValues>
-                            <p>{product_1.surface.map(item => surfaces[item]).join(", ")}</p>
-                            <p>{product_2.surface.map(item => surfaces[item]).join(", ")}</p>
+                            <PropText>{product_1.surface.map(item => surfaces[item]).join(", ")}</PropText>
+                            <PropText>{product_2.surface.map(item => surfaces[item]).join(", ")}</PropText>
                         </PropValues>
                     </Prop>
                     <Prop>
                         <PropHeader>Anwendungen</PropHeader>
                         <Hr />
                         <PropValues>
-                            <p>{product_1.application.map(item => applications[item]).join(", ")}</p>
-                            <p>{product_2.application.map(item => applications[item]).join(", ")}</p>
+                            <PropText>{product_1.application.map(item => applications[item]).join(", ")}</PropText>
+                            <PropText>{product_2.application.map(item => applications[item]).join(", ")}</PropText>
                         </PropValues>
                     </Prop>
                     <Prop>
                         <PropHeader>Standzeit</PropHeader>
                         <Hr />
                         <PropValues>
-                            <p>{product_1.lifetime[0]} - {product_1.lifetime[1]} Jahre</p>
-                            <p>{product_2.lifetime[0]} - {product_2.lifetime[1]} Jahre</p>
+                            <PropText>{product_1.lifetime[0]} - {product_1.lifetime[1]} Jahre</PropText>
+                            <PropText>{product_2.lifetime[0]} - {product_2.lifetime[1]} Jahre</PropText>
                         </PropValues>
                     </Prop>
                     <Prop>
@@ -235,13 +241,13 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                         <PropValues>
                             {
                                 product_1.gloss_level.length > 1 ?
-                                    <p>{product_1.gloss_level[0]} - {product_1.gloss_level[1]}</p>
-                                : <p>{product_1.gloss_level}</p>
+                                    <PropText>{product_1.gloss_level[0]} - {product_1.gloss_level[1]}</PropText>
+                                : <PropText>{product_1.gloss_level}</PropText>
                             }
                             {
                                 product_2.gloss_level.length > 1 ?
-                                    <p>{product_2.gloss_level[0]} - {product_2.gloss_level[1]}</p>
-                                : <p>{product_2.gloss_level}</p>
+                                    <PropText>{product_2.gloss_level[0]} - {product_2.gloss_level[1]}</PropText>
+                                : <PropText>{product_2.gloss_level}</PropText>
                             }
                         </PropValues>
                     </Prop>
@@ -249,16 +255,16 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                         <PropHeader>Bindemittel</PropHeader>
                         <Hr />
                         <PropValues>
-                            <p>{binders[product_1.binder]}</p>
-                            <p>{binders[product_2.binder]}</p>
+                            <PropText>{binders[product_1.binder]}</PropText>
+                            <PropText>{binders[product_2.binder]}</PropText>
                         </PropValues>
                     </Prop>
                     <Prop>
                         <PropHeader>Lösungsmittel</PropHeader>
                         <Hr />
                         <PropValues>
-                            <p>{solubilities[product_1.solubility]}</p>
-                            <p>{solubilities[product_2.solubility]}</p>
+                            <PropText>{solubilities[product_1.solubility]}</PropText>
+                            <PropText>{solubilities[product_2.solubility]}</PropText>
                         </PropValues>
                     </Prop>
                 </PropsContentWrapper>

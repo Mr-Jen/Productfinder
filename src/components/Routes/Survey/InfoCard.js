@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     border: ${props => props.warn ? "4px solid red" : "1px solid grey"};
     min-height: 40vh;
     width: 60vw;
-    z-index: 2;
+    z-index: 10000000;
 
     display: flex;
     justify-content: center;

@@ -14,6 +14,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  /*z-index: -100;*/
 `
 
 const Header = styled.div`

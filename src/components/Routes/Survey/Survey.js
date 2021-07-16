@@ -27,6 +27,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2em;
 `
 
 export const Survey = ({isHome, handleNavigationChange}) => {

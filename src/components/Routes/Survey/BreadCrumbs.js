@@ -30,7 +30,7 @@ const BreadCrumb = styled.button`
   border: none;
   background: none;
   /*color: ${props => props.lastCrumb ? 'blue' : 'black'};*/
-  color: black;
+  color: rgb(69, 116, 209);
   font-size: ${props => props.lastCrumb ? '15px' : '14px'};
   font-weight: ${props => props.lastCrumb && 'bold'};
   cursor: ${props => props.lastCrumb ? 'auto' : 'pointer'};
@@ -87,7 +87,7 @@ const BreadCrumbs = ({handleNavigationChange, breadCrumbs}) => {
                         onClick={() => handleNavigationChange(breadCrumbs.length-1)}
                         lastCrumb={true}
                     >
-                        {breadCrumbs[breadCrumbs.length-1]}
+                        {breadCrumbs[breadCrumbs.length-2]}
                     </BreadCrumb>
                 </BreadCrumbInnerWrapper>                
             }
