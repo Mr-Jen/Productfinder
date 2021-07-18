@@ -72,6 +72,7 @@ const InfoButton = styled.button`
 
 const CardWrapper = styled.div`
   height: 100vh;
+  min-height: 100%;
   width: 100vw;
   background: grey;
   position: absolute;

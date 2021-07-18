@@ -1,0 +1,79 @@
+.multiselect {
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+}
+  
+.selectBox {
+  position: relative;
+  margin: 1em 0 0 0;
+}
+  
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#dropdown {
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px #FFE60A solid;
+  border-top: 2px solid white;
+  border-radius: 5px;
+  position: fixed;
+  background-color: white;
+  z-index: 10000;
+  max-width: 100%;
+}
+
+#dropdown button {
+  margin-top: .5em;
+  padding: 1em;
+  border: 1px solid #FFE60A;
+  width: 100%;
+  font-weight: bold;
+}
+
+#checkboxes {
+  width: 100%;
+}
+
+#checkboxes input {
+  margin: .5em;
+}
+  
+#checkboxes label {
+  display: block;
+  font-weight: bold;
+  margin: .7em;
+}
+
+@media (hover: none) {
+  #checkboxes label:hover {
+    background-color: white;
+  }
+}
+
+/*#checkboxes label:hover {
+  background-color: #FFE60A;
+}*/
+
+.pointer {
+  cursor: pointer;
+}
+
+.no-select {
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}

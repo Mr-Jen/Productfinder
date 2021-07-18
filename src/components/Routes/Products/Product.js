@@ -10,11 +10,11 @@ const Wrapper = styled.div`
     border: 1px solid black;
     border-radius: 5px;
     width: 300px;
+    background-color: #F9F9F9;
 `
 
 const Title = styled.h5`
     align-self: center;
-    z-index: -100;
     position: relative;
     &:before {
         content: "";

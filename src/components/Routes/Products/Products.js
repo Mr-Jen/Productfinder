@@ -8,6 +8,8 @@ import CompareStatusBar from '../../Shared/CompareStatusBar'
 import Title from '../../Shared/Title'
 import NavigateButton from '../../Shared/NavigateButton'
 import Select from './Select'
+import Filters from './Filters/Filters'
+import { loadFilters } from '../../../actions/filter'
 
 const Wrapper = styled.div`
   display: flex;
@@ -63,7 +65,7 @@ const DropDownWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 150px;
+    height: 14rem;
   }
 `
 
@@ -134,7 +136,7 @@ const ResetDropDownButton = styled.button`
 `
 
 
-const Products = ({ target, coating }) => {
+const Products = ({ target, coating, initFilters }) => {
   const [initData, setInitData] = useState(null);
   const [inputArea, setInputArea] = useState("");
   const [inputSurface, setInputSurface] = useState([false, false, false, false])
@@ -152,6 +154,18 @@ const Products = ({ target, coating }) => {
         setInitData(config)
       })  
   })
+
+  React.useEffect(() => {
+    (initData !== undefined && initData) && console.log("SURFACE LENGTH: ", Object.keys(initData.surfaces).length, "APPLICATION LENGTH: ", Object.keys(initData.applications).length)
+    const initSurfaces = (initData !== undefined && initData) && new Array(Object.keys(initData.surfaces).length).fill(false);
+    const initApplications = (initData !== undefined && initData) && new Array(Object.keys(initData.applications).length).fill(false);
+
+    initFilters({
+      "surfaces": initSurfaces,
+      "applications": initApplications
+    })
+
+  }, [initData])
 
   const onChangeCompare = (pos) => {
     let newCompare = [...compareProducts]
@@ -175,10 +189,6 @@ const Products = ({ target, coating }) => {
 
   const onResetCompare = () => {
     setCompareProducts([])
-  }
-
-  const onChangeInput = (e) => {
-    setInputArea(e.target.value)
   }
 
   const onChangeSurfaceCheckBox = (index) => {
@@ -404,6 +414,8 @@ const Products = ({ target, coating }) => {
         </FilterDropDownWrapper>
 
         <Select handleChangeSort={(e) => handleChangeSort(e)}/>
+
+        <Filters />
       </DropDownWrapper>
 
       { !products ? <p>Loading ...</p> :
@@ -461,5 +473,9 @@ const mapStateToProps = ({ user }) => {
   }
 }
 
-export default connect(mapStateToProps, null)(Products)
+const mapDispatchToProps = dispatch => ({
+  initFilters : initConfig => dispatch(loadFilters(initConfig))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Products)
 
