@@ -7,7 +7,6 @@ import Product from './Product'
 import CompareStatusBar from '../../Shared/CompareStatusBar'
 import Title from '../../Shared/Title'
 import NavigateButton from '../../Shared/NavigateButton'
-import Select from './Select'
 import Filters from './Filters/Filters'
 import { loadFilters } from '../../../actions/filter'
 
@@ -28,10 +27,6 @@ const Header = styled.div`
   }*/
 `
 
-const Input = styled.input`
-  margin: 10px;
-`
-
 const ProductsWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -41,108 +36,10 @@ const ProductsWrapper = styled.div`
   margin-bottom: 10vh;
 `
 
-const CheckBoxesContentWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-`
 
-const CheckBoxWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-
-const DropDownWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  width: 50%;
-  margin-bottom: 40px;
-  margin-top: 2em;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-  @media (max-width: 805px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 14rem;
-  }
-`
-
-const FilterDropDownWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 100;
-`
-
-const FilterDropDown = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  border: 3px solid #FFE60A;
-  border-radius: 5px;
-  width: 140px;
-  height: 40px;
-  background-color: white;
-`
-
-const PlaceHolderRect = styled.div`
-  width: 134px;
-  height: 20px;
-  background-color: white;
-  margin-top: 33px;
-  border-left: 3px solid #FFE60A;
-  border-right: 3px solid #FFE60A;
-  border-bottom: none;
-  position: absolute;
-  z-index: 50;
-`
-
-const SurfaceBgRect = styled.div`
-  width: 200px;
-  height: 120px;
-  background-color: white;
-  border: 3px solid #FFE60A;
-  border-radius: 0 5px 5px 5px;
-
-  display: flex;
-  flex-direction: column;
-  flex-grow: grow;
-  justify-content: space-between;
-  padding: 0 20px 0 20px;
-  position: absolute;
-  margin-top: 50px;
-`
-
-const ApplicationBgRect = styled.div`
-  min-width: 500px;
-  height: 130px;
-  background-color: #FFE60A;
-  border: 1px solid black;
-  border-radius: 0 5px 5px 5px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 20px 0 20px
-`
-
-const ResetDropDownButton = styled.button`
-  width: 90%;
-  align-self: center;
-  margin: 10px 0 10px 0;
-`
-
-
-const Products = ({ target, coating, initFilters }) => {
+const Products = ({ target, coating, initFilters, filteredSurfaces, filteredApplications }) => {
   const [initData, setInitData] = useState(null);
-  const [inputArea, setInputArea] = useState("");
-  const [inputSurface, setInputSurface] = useState([false, false, false, false])
-  const [inputApplication, setInputApplication] = useState([false, false, false, false, false, false])
   const [sortBy, setSortBy] = useState();
-  const [dropdownElement, setDropDownElement] = useState();
   const [compareProducts, setCompareProducts] = useState([]);
   const compareLength = 2;
 
@@ -191,19 +88,7 @@ const Products = ({ target, coating, initFilters }) => {
     setCompareProducts([])
   }
 
-  const onChangeSurfaceCheckBox = (index) => {
-    const recentSurface = [...inputSurface]
-    recentSurface[index] = recentSurface[index] ? false : true
-    setInputSurface(recentSurface)
-  }
-
-  const onChangeApplicationCheckBox = (index) => {
-      const recentApplication = [...inputApplication]
-      recentApplication[index] = recentApplication[index] ? false : true
-      setInputApplication(recentApplication);
-  }
-
-  const calculateVolume = (efficiency) => {
+  /*onst calculateVolume = (efficiency) => {
     let eSmoothMin = efficiency["smooth_surface"][0]
     let eRoughMin = efficiency["rough_surface"][0]
     let eSmoothMax = efficiency["smooth_surface"][1]
@@ -216,7 +101,7 @@ const Products = ({ target, coating, initFilters }) => {
     let vRoughMax = Math.ceil((inputArea / eRoughMax) * 100) / 100
 
     return [vSmoothMin, vRoughMin, vSmoothMax, vRoughMax]
-  }
+  }*/
 
   const data = initData ? initData : undefined
 
@@ -245,17 +130,22 @@ const Products = ({ target, coating, initFilters }) => {
   }
 
 
-  let input_res = inputSurface
+  if (filteredSurfaces && filteredApplications){
+    let input_res = filteredSurfaces && filteredSurfaces
     .map((elem, key) => elem === true ? key : null)
     .filter(elem => elem !== null)
 
-  let application_res = inputApplication
-    .map((elem, key) => elem === true ? key : null)
-    .filter(elem => elem !== null)
+    let application_res = filteredApplications && filteredApplications
+      .map((elem, key) => elem === true ? key : null)
+      .filter(elem => elem !== null)
 
-  var filteredObjectKeys = initData && Object.keys(products)
-    .filter(objectKey => input_res.every(elem => products[objectKey]["surface"].includes(elem)))
-    .filter(objectKey => application_res.every(elem => products[objectKey]["application"].includes(elem)))
+    var filteredObjectKeys = initData && Object.keys(products)
+      .filter(objectKey => input_res.every(elem => products[objectKey]["surface"].includes(elem)))
+      .filter(objectKey => application_res.every(elem => products[objectKey]["application"].includes(elem)))
+  }
+  else {
+    filteredObjectKeys = initData && Object.keys(products)
+  }
       
   switch(sortBy){
     case "gloss_low":
@@ -302,121 +192,10 @@ const Products = ({ target, coating, initFilters }) => {
           />
         </div>
       </Header>
-      <DropDownWrapper>
-        <FilterDropDownWrapper>
-          <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 0 ? null : 0)}>
-            <strong>Untergrund</strong>
-            <img alt="dropdown-arrow" style={{transform: dropdownElement === 0 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
-          </FilterDropDown>
-          {dropdownElement === 0 && <PlaceHolderRect/>}
-          {dropdownElement === 0 &&
-            <SurfaceBgRect>
-              <CheckBoxesContentWrapper>
-                <CheckBoxWrapper>
-                  <p>Holz</p>
-                  <Input
-                    type="checkbox"
-                    onChange={() => onChangeSurfaceCheckBox(0)}
-                    checked={inputSurface[0]}
-                  />
-                </CheckBoxWrapper>
-                <CheckBoxWrapper>
-                  <p>Metall</p>
-                  <Input
-                    type="checkbox"
-                    onChange={() => onChangeSurfaceCheckBox(1)}
-                    checked={inputSurface[1]}
-                  />
-                </CheckBoxWrapper>
-                <CheckBoxWrapper>
-                  <p>Putz</p>
-                  <Input
-                    type="checkbox"
-                    onChange={() => onChangeSurfaceCheckBox(2)}
-                    checked={inputSurface[2]}
-                  />
-                </CheckBoxWrapper>
-                <CheckBoxWrapper>
-                  <p>Estrich</p>
-                  <Input
-                    type="checkbox"
-                    onChange={() => onChangeSurfaceCheckBox(3)}
-                    checked={inputSurface[3]}
-                  />
-                </CheckBoxWrapper>
-              </CheckBoxesContentWrapper>
-              <ResetDropDownButton onClick={() => setInputSurface([false, false, false, false])}>Zurücksetzen</ResetDropDownButton>
-            </SurfaceBgRect>
-          }
-        </FilterDropDownWrapper>
+      
+      <Filters handleChangeSort={(e) => handleChangeSort(e)}/>
 
-        <FilterDropDownWrapper>
-          <FilterDropDown onClick={() => setDropDownElement(dropdownElement === 1 ? null : 1)}>
-            <strong>Verwendung</strong>
-            <img alt="dropdown-arrow" style={{transform: dropdownElement === 1 && `rotate(180deg)`}} height="10" src="assets/icons/misc/dropdown-arrow.svg"></img>
-          </FilterDropDown>
-          {dropdownElement === 1 && <PlaceHolderRect/>}
-          {dropdownElement === 1 &&
-            <ApplicationBgRect>
-              <CheckBoxesContentWrapper>
-                <CheckBoxWrapper>
-                  <p>Fassade</p>
-                  <Input
-                    type="checkbox"
-                    onChange={() => onChangeApplicationCheckBox(0)}
-                    checked={inputApplication[0]}
-                  />
-                </CheckBoxWrapper>
-                <CheckBoxWrapper>
-                  <p>Boden / Treppe</p>
-                  <Input
-                    type="checkbox"
-                    onChange={() => onChangeApplicationCheckBox(1)}
-                    checked={inputApplication[1]}
-                  />
-                </CheckBoxWrapper>
-                <CheckBoxWrapper>
-                  <p>Fenster / Tür</p>
-                  <Input
-                    type="checkbox"
-                    onChange={() => onChangeApplicationCheckBox(2)}
-                    checked={inputApplication[2]}
-                  />
-                </CheckBoxWrapper>
-                <CheckBoxWrapper>
-                  <p>Zaun</p>
-                  <Input
-                    type="checkbox"
-                    onChange={() => onChangeApplicationCheckBox(3)}
-                    checked={inputApplication[3]}
-                  />
-                </CheckBoxWrapper>
-                <CheckBoxWrapper>
-                  <p>Handlauf</p>
-                  <Input
-                    type="checkbox"
-                    onChange={() => onChangeApplicationCheckBox(4)}
-                    checked={inputApplication[4]}
-                  />
-                </CheckBoxWrapper>
-                <CheckBoxWrapper>
-                  <p>Dach</p>
-                  <Input
-                    type="checkbox"
-                    onChange={() => onChangeApplicationCheckBox(5)}
-                    checked={inputApplication[5]}
-                  />
-                </CheckBoxWrapper>
-              </CheckBoxesContentWrapper>
-              <ResetDropDownButton onClick={() => setInputApplication([false, false, false, false, false, false])}>Zurücksetzen</ResetDropDownButton>
-            </ApplicationBgRect>
-          }
-        </FilterDropDownWrapper>
-
-        <Select handleChangeSort={(e) => handleChangeSort(e)}/>
-
-        <Filters />
-      </DropDownWrapper>
+      <strong style={{margin: '1em'}}>{filteredObjectKeys?.length} {`${filteredObjectKeys?.length !== 1 ? "Produkte" : "Produkt"}`} gefunden</strong>
 
       { !products ? <p>Loading ...</p> :
         <ProductsWrapper>
@@ -431,7 +210,7 @@ const Products = ({ target, coating, initFilters }) => {
               let binder_value = binders[binder]
               let solubility_value = solubilities[solubility]
 
-              let volume = calculateVolume(product["efficiency"])
+              //let volume = calculateVolume(product["efficiency"])
 
               return <Product key={key}
                 title={product["name"]}
@@ -455,7 +234,7 @@ const Products = ({ target, coating, initFilters }) => {
   )
 }
 
-const mapStateToProps = ({ user }) => {
+const mapStateToProps = ({ user, filter }) => {
   let target;
   let coating = user["coating"]
   if (user["target"] === 'Lasur'){
@@ -469,7 +248,9 @@ const mapStateToProps = ({ user }) => {
   }
   return {
     target,
-    coating
+    coating,
+    filteredSurfaces: filter["surfaces"],
+    filteredApplications: filter["applications"]
   }
 }
 

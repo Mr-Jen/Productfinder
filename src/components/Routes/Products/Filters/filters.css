@@ -1,12 +1,12 @@
 .multiselect {
-    width: 100%;
-    min-width: 100%;
     position: relative;
+    border: 2px solid black;
+    border-radius: .5em;
 }
   
 .selectBox {
   position: relative;
-  margin: 1em 0 0 0;
+  width: 100%;
 }
   
 .selectBox select {
@@ -28,7 +28,7 @@
 
   border: 2px #FFE60A solid;
   border-top: 2px solid white;
-  border-radius: 5px;
+  border-radius: .5em;
   position: fixed;
   background-color: white;
   z-index: 10000;

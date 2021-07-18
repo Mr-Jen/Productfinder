@@ -11,6 +11,8 @@ const Wrapper = styled.div`
     border-radius: 5px;
     width: 300px;
     background-color: #F9F9F9;
+    -webkit-box-shadow: 5px 5px 15px 5px #DBDBDB; 
+    box-shadow: 5px 5px 15px 5px #DBDBDB;
 `
 
 const Title = styled.h5`
@@ -25,18 +27,6 @@ const Title = styled.h5`
         width: 70%;
         border-bottom: 3px solid #FFE60A;
     }
-`
-
-const Img = styled.div`
-    display: flex;
-    align-self: center;
-
-    background-image: url("assets/images/farbeimer.jpg"); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 80%;
-    height: 100px;
 `
 
 const ProductImg = styled.img`

@@ -4,16 +4,31 @@ import { connect } from 'react-redux'
 
 import { changeSurface, changeApplication, resetSurfaces, resetApplications } from '../../../../actions/filter'
 import Filter from './Filter'
+import Select from './Select'
 
 const Wrapper = styled.div`
     display: flex;
-    @media (max-width: 805px){
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 40px;
+    margin-top: 2em;
+    justify-content: space-around;
+
+    @media (max-width: 1000px) {
+        width: 75%;
+    }
+
+    @media (max-width: 700px) {
         flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 10rem;
     }
 `
 
 
-const Filters = ({ filter, onChangeApplication, onChangeSurface, onResetSurfaces, onResetApplications, products }) => {
+const Filters = ({ filter, onChangeApplication, onChangeSurface, onResetSurfaces, onResetApplications, products, handleChangeSort }) => {
     const [openFilter, setOpenFilter] = useState(null);
 
     const handleOpenFilter = (id) => {
@@ -47,6 +62,7 @@ const Filters = ({ filter, onChangeApplication, onChangeSurface, onResetSurfaces
                 content={products && products[Object.keys(filter)[1]]}
                 title={"Verwendung"}
             />
+            <Select handleChangeSort={(e) => handleChangeSort(e)}/>
         </Wrapper>
     )
 }
