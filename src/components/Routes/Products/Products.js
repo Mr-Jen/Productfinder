@@ -32,7 +32,7 @@ const ProductsWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 90vw;
   margin-bottom: 10vh;
 `
 

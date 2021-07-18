@@ -54,7 +54,8 @@ const ChoiceButton = styled.div`
   /*opacity: ${props => props.disabled && 0.5};
   background: ${props => props.disabled && '#CCC'};*/
   width: 100%;
-  text-align: center;
+  text-align: center;  
+  background-color: aqua;
 
   @media (max-width: 500px) {
     font-size: .9em;
@@ -125,9 +126,10 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     //unsubscribe()
   })
 
-  const onClickInfo = (item) => {
+  const onClickInfo = (item, e) => {
     setShowInfoCard(!showInfoCard)
     setCardContent(item)
+    e.stopPropagation()
   }
 
   const onClickAgree = () => {
@@ -175,16 +177,16 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
       <ButtonWrapper>
         { (childrenItems && childrenItems !== "no-products") &&
           Object.keys(childrenItems).map(key => (
-            <ButtonInsideWrapper key={key}>
+            <ButtonInsideWrapper onClick={(e) => onClickButton(key, childrenItems[key], e)} key={key}>
               <ButtonContentWrapper disabled={checkWarning(key) && !enabledCard}>
                 <InfoButton style={{visibility: "hidden"}}>
                   <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info)} height="20px" src="assets/icons/misc/info.svg"></img>
                 </InfoButton>
-                <ChoiceButton disabled={checkWarning(key) && !enabledCard} onClick={() => onClickButton(key, childrenItems[key])}>
+                <ChoiceButton disabled={checkWarning(key) && !enabledCard}>
                   <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
                 </ChoiceButton>
                 <InfoButton style={{visibility: `${childrenItems[key]["info"] ? "visible" : "hidden"}`}}>
-                  <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info)} height="20px" src="assets/icons/misc/info.svg"></img>
+                  <img alt="info" onClick={(e) => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info, e)} height="20px" src="assets/icons/misc/info.svg"></img>
                 </InfoButton>
               </ButtonContentWrapper>
             </ButtonInsideWrapper>

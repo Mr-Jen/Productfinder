@@ -127,7 +127,7 @@ const ProductView = ({ match, productsData }) => {
                 </div>
             </Header>
             <Wrapper>
-                <ImageWrapper src="/assets/images/Lasur/lasur.png"/>
+                <ImageWrapper src="/assets/images/farbeimer.jpg"/>
                 <ContentWrapper>
                     <ItemWrapper>
                         <ContentTitle>Produktdetails</ContentTitle>
