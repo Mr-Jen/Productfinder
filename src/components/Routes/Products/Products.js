@@ -32,10 +32,22 @@ const ProductsWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: 90vw;
+  width: 80vw;
   margin-bottom: 10vh;
+
+  @media (max-width: 810px){
+    width: 90vw;
+  }
+  @media (max-width: 400px){
+    width: 80vw;
+  }
 `
 
+const Count = styled.p`
+  font-weight: bold;
+  background-color: #FFE60A;
+  padding: .5em;
+`
 
 const Products = ({ target, coating, initFilters, filteredSurfaces, filteredApplications }) => {
   const [initData, setInitData] = useState(null);
@@ -195,7 +207,7 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
       
       <Filters handleChangeSort={(e) => handleChangeSort(e)}/>
 
-      <strong style={{margin: '1em'}}>{filteredObjectKeys?.length} {`${filteredObjectKeys?.length !== 1 ? "Produkte" : "Produkt"}`} gefunden</strong>
+      <Count style={{margin: '1em'}}>{filteredObjectKeys?.length} {`${filteredObjectKeys?.length !== 1 ? "Produkte" : "Produkt"}`} gefunden</Count>
 
       { !products ? <p>Loading ...</p> :
         <ProductsWrapper>

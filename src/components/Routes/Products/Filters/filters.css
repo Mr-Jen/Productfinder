@@ -2,6 +2,7 @@
     position: relative;
     border: 2px solid black;
     border-radius: .5em;
+    width: 150px;
 }
   
 .selectBox {
@@ -26,13 +27,14 @@
   flex-direction: column;
   align-items: center;
 
+  margin-top: 2px;
   border: 2px #FFE60A solid;
   border-top: 2px solid white;
   border-radius: .5em;
-  position: fixed;
+  position: absolute;
   background-color: white;
   z-index: 10000;
-  max-width: 100%;
+  width: 100%;
 }
 
 #dropdown button {

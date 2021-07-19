@@ -10,12 +10,16 @@ const Wrapper = styled.div`
     align-items: center;
     width: 90vw;
 
-    border-bottom: 1px solid rgb(223, 227, 235); 
+    /*border-bottom: 1px solid rgb(223, 227, 235); */
     background-color: white;   
     margin-bottom: 2em;
 
     position: sticky;
     top: 0;
+
+    box-shadow: 0px 7px 5px -1px rgba(141,141,141,0.15);
+    -webkit-box-shadow: 0px 7px 5px -1px rgba(141,141,141,0.15);
+    -moz-box-shadow: 0px 7px 5px -1px rgba(141,141,141,0.15);
 `
 
 const Title = styled.button`

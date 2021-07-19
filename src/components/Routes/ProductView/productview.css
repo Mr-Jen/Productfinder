@@ -1,0 +1,20 @@
+.title {
+    text-align: center;
+    position: relative;
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 16px;
+    }
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 1px;
+    width: 80%;
+    border-bottom: 3px solid #FFE60A;
+}

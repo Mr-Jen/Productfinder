@@ -10,9 +10,9 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
 
 `
 
@@ -170,11 +170,11 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                 />
                 <Title contentText={"Produktvergleich"}/>
                 <div style={{visibility: 'hidden'}}>
-                <NavigateButton
-                    location={"/products"} 
-                    text={"Zurück"} 
-                    direction={"left"}
-                />
+                    <NavigateButton
+                        location={"/products"} 
+                        text={"Zurück"} 
+                        direction={"left"}
+                    />
                 </div>
             </Header>
 

@@ -20,6 +20,10 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 700px) {
+        width: 90%;
+    }
+    @media (max-width: 550px) {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;

@@ -117,7 +117,7 @@ const Product = ({ title, category, surface, application, lifetime, gloss_level,
                     <ValueText>{lifetime[0]} - {lifetime[1]} Jahre</ValueText>
                 </CategoryWrapper>
                 <CategoryWrapper>
-                    <CategoryText>Glanzgrad </CategoryText>                                
+                    <CategoryText>Glanzgrad: </CategoryText>                                
                     {
                         gloss_level.length > 1 && gloss_level[0] !== gloss_level[1] ?
                             <ValueText>{gloss_level[0]} - {gloss_level[1]}</ValueText>

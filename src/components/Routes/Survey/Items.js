@@ -54,8 +54,7 @@ const ChoiceButton = styled.div`
   /*opacity: ${props => props.disabled && 0.5};
   background: ${props => props.disabled && '#CCC'};*/
   width: 100%;
-  text-align: center;  
-  background-color: aqua;
+  text-align: center;
 
   @media (max-width: 500px) {
     font-size: .9em;

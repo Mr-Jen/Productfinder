@@ -27,7 +27,7 @@ const NavigateButton = (props) => {
             onClick={props.onClick && props.onClick}
         >
             <Icon 
-                src={props.direction === "left" ? "assets/icons/misc/left.png" : "assets/icons/misc/right.png"}
+                src={props.direction === "left" ? "/assets/icons/misc/left.png" : "/assets/icons/misc/right.png"}
                 alt="BackButton"
                 direction={props.direction}
                 style={{"height": "25px", "width": "25px", "margin": "5px"}}

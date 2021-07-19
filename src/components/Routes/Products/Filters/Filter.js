@@ -11,8 +11,6 @@ const Selection = styled.select`
 `
 
 const Filter = ({ onOpenFilter, onChange, isOpen, cbContent,  content, onReset, title}) => {
-    //console.log("CONTENT: ", content, cbContent)
-
     return (
         <div className="multiselect">
             <div className="selectBox pointer" onClick={() => onOpenFilter()}>
