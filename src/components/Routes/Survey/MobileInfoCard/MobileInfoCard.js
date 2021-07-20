@@ -11,7 +11,7 @@ const Wrapper = styled.div`
     background-color: white;
     width: 100vw;
     border-radius: 2em 2em 0 0;
-    position: absolute;
+    position: fixed;
     height: 60vh;
     left: 0;
     bottom: 0;

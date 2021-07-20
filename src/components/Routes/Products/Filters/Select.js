@@ -13,6 +13,7 @@ const Selector = styled.select`
     padding: .6em;
     border-radius: 5px;
     border: 2px solid black;
+    background-color: white;
 `
 
 const Option = styled.option`
