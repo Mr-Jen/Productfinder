@@ -33,7 +33,12 @@ export const loadProducts = (products) => {
 
 export const handleLoadProducts = () => {
     return dispatch => {
-        fetch('api/data.json')
+        fetch('/api/data.json', {
+            headers : { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            }
+        })
             .then(res => res.json())
             .then(products => {
                 dispatch(loadProducts({...products}))

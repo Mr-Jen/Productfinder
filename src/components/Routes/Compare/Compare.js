@@ -1,9 +1,11 @@
 import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
+import { useLocation } from 'react-router-dom'
 
 import NavigateButton from '../../Shared/NavigateButton'
 import Title from '../../Shared/Title'
+import { handleLoadProducts } from '../../../actions/shared'
 
 const Wrapper = styled.div`
     width: 100%;
@@ -153,149 +155,178 @@ const ProductTitle = styled.h3`
     z-index: 10000;
 `
 
-const Compare = ({ compareProducts, categories, surfaces, applications, binders, solubilities }) => {
-    const [product_1, product_2] = compareProducts
+const Compare = ({ compareProducts, categories, surfaces, applications, binders, solubilities, loadProducts, res }) => {
+    /*React.useEffect(() => {
+        console.log("IS PRODUCTS: ", res === null ? false : true)
+        if(res === null){
+            console.log("REFETCHING PRODUCTS")
+            loadProducts()
+        }
+    }, [loadProducts])*/
+
+    const { search } = useLocation()
+    console.log("SEARCH: ", useLocation())
 
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
-    
-    return (
-        <Wrapper>
-            <Header>
-                <NavigateButton
-                    location={"/products"} 
-                    text={"Zurück"} 
-                    direction={"left"} 
-                />
-                <Title contentText={"Produktvergleich"}/>
-                <div style={{visibility: 'hidden'}}>
+
+    if (!compareProducts){
+        return null;
+    }
+    else {
+        const [product_1, product_2] = compareProducts
+
+        return (
+            <Wrapper>
+                <Header>
                     <NavigateButton
                         location={"/products"} 
                         text={"Zurück"} 
-                        direction={"left"}
+                        direction={"left"} 
                     />
-                </div>
-            </Header>
-
-            <ContentWrapper>
-                <Product>
-                    <ProductTitle>{product_1.name}</ProductTitle>
-                    <Img/>
-                    <Button href="https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fenster-Tuer/Silikonalkydfarbe-ODEN">
-                        <ButtonContent>
-                            <ButtonText>Kaufen</ButtonText>
-                            <Icon src='/assets/icons/misc/bag.png'></Icon>
-                        </ButtonContent>
-                    </Button>
-                </Product>
-                <Vl />
-                <Product>
-                    <ProductTitle>{product_2.name}</ProductTitle>
-                    <Img/>
-                    <Button href="https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fenster-Tuer/Silikonalkydfarbe-ODEN">
-                        <ButtonContent>
-                            <ButtonText>Kaufen</ButtonText>
-                            <Icon src='/assets/icons/misc/bag.png'></Icon>
-                        </ButtonContent>
-                    </Button>
-                </Product>
-            </ContentWrapper>
-            <PropsWrapper>
-                <PropsContentWrapper>
-                    <Prop>
-                        <PropHeader>Kategorie</PropHeader>
-                        <Hr />
-                        <PropValues>
-                            <PropText>{categories[product_1.category]}</PropText>
-                            <PropText>{categories[product_2.category]}</PropText>
-                        </PropValues>
-                    </Prop>
-                    <Prop>
-                        <PropHeader>Erlaubte Oberflächen</PropHeader>
-                        <Hr />
-                        <PropValues>
-                            <PropText>{product_1.surface.map(item => surfaces[item]).join(", ")}</PropText>
-                            <PropText>{product_2.surface.map(item => surfaces[item]).join(", ")}</PropText>
-                        </PropValues>
-                    </Prop>
-                    <Prop>
-                        <PropHeader>Anwendungen</PropHeader>
-                        <Hr />
-                        <PropValues>
-                            <PropText>{product_1.application.map(item => applications[item]).join(", ")}</PropText>
-                            <PropText>{product_2.application.map(item => applications[item]).join(", ")}</PropText>
-                        </PropValues>
-                    </Prop>
-                    <Prop>
-                        <PropHeader>Standzeit</PropHeader>
-                        <Hr />
-                        <PropValues>
-                            <PropText>{product_1.lifetime[0]} - {product_1.lifetime[1]} Jahre</PropText>
-                            <PropText>{product_2.lifetime[0]} - {product_2.lifetime[1]} Jahre</PropText>
-                        </PropValues>
-                    </Prop>
-                    <Prop>
-                        <PropHeader>Glanzgrad</PropHeader>
-                        <Hr />
-                        <PropValues>
-                            {
-                                product_1.gloss_level.length > 1 ?
-                                    <PropText>{product_1.gloss_level[0]} - {product_1.gloss_level[1]}</PropText>
-                                : <PropText>{product_1.gloss_level}</PropText>
-                            }
-                            {
-                                product_2.gloss_level.length > 1 ?
-                                    <PropText>{product_2.gloss_level[0]} - {product_2.gloss_level[1]}</PropText>
-                                : <PropText>{product_2.gloss_level}</PropText>
-                            }
-                        </PropValues>
-                    </Prop>
-                    <Prop>
-                        <PropHeader>Bindemittel</PropHeader>
-                        <Hr />
-                        <PropValues>
-                            <PropText>{binders[product_1.binder]}</PropText>
-                            <PropText>{binders[product_2.binder]}</PropText>
-                        </PropValues>
-                    </Prop>
-                    <Prop>
-                        <PropHeader>Lösungsmittel</PropHeader>
-                        <Hr />
-                        <PropValues>
-                            <PropText>{solubilities[product_1.solubility]}</PropText>
-                            <PropText>{solubilities[product_2.solubility]}</PropText>
-                        </PropValues>
-                    </Prop>
-                </PropsContentWrapper>
-            </PropsWrapper>
-        </Wrapper>
-    )
+                    <Title contentText={"Produktvergleich"}/>
+                    <div style={{visibility: 'hidden'}}>
+                        <NavigateButton
+                            location={"/products"} 
+                            text={"Zurück"} 
+                            direction={"left"}
+                        />
+                    </div>
+                </Header>
+    
+                <ContentWrapper>
+                    <Product>
+                        <ProductTitle>{product_1.name}</ProductTitle>
+                        <Img/>
+                        <Button href="https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fenster-Tuer/Silikonalkydfarbe-ODEN">
+                            <ButtonContent>
+                                <ButtonText>Kaufen</ButtonText>
+                                <Icon src='/assets/icons/misc/bag.png'></Icon>
+                            </ButtonContent>
+                        </Button>
+                    </Product>
+                    <Vl />
+                    <Product>
+                        <ProductTitle>{product_2.name}</ProductTitle>
+                        <Img/>
+                        <Button href="https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fenster-Tuer/Silikonalkydfarbe-ODEN">
+                            <ButtonContent>
+                                <ButtonText>Kaufen</ButtonText>
+                                <Icon src='/assets/icons/misc/bag.png'></Icon>
+                            </ButtonContent>
+                        </Button>
+                    </Product>
+                </ContentWrapper>
+                <PropsWrapper>
+                    <PropsContentWrapper>
+                        <Prop>
+                            <PropHeader>Kategorie</PropHeader>
+                            <Hr />
+                            <PropValues>
+                                <PropText>{categories[product_1.category]}</PropText>
+                                <PropText>{categories[product_2.category]}</PropText>
+                            </PropValues>
+                        </Prop>
+                        <Prop>
+                            <PropHeader>Erlaubte Oberflächen</PropHeader>
+                            <Hr />
+                            <PropValues>
+                                <PropText>{product_1.surface.map(item => surfaces[item]).join(", ")}</PropText>
+                                <PropText>{product_2.surface.map(item => surfaces[item]).join(", ")}</PropText>
+                            </PropValues>
+                        </Prop>
+                        <Prop>
+                            <PropHeader>Anwendungen</PropHeader>
+                            <Hr />
+                            <PropValues>
+                                <PropText>{product_1.application.map(item => applications[item]).join(", ")}</PropText>
+                                <PropText>{product_2.application.map(item => applications[item]).join(", ")}</PropText>
+                            </PropValues>
+                        </Prop>
+                        <Prop>
+                            <PropHeader>Standzeit</PropHeader>
+                            <Hr />
+                            <PropValues>
+                                <PropText>{product_1.lifetime[0]} - {product_1.lifetime[1]} Jahre</PropText>
+                                <PropText>{product_2.lifetime[0]} - {product_2.lifetime[1]} Jahre</PropText>
+                            </PropValues>
+                        </Prop>
+                        <Prop>
+                            <PropHeader>Glanzgrad</PropHeader>
+                            <Hr />
+                            <PropValues>
+                                {
+                                    product_1.gloss_level.length > 1 ?
+                                        <PropText>{product_1.gloss_level[0]} - {product_1.gloss_level[1]}</PropText>
+                                    : <PropText>{product_1.gloss_level}</PropText>
+                                }
+                                {
+                                    product_2.gloss_level.length > 1 ?
+                                        <PropText>{product_2.gloss_level[0]} - {product_2.gloss_level[1]}</PropText>
+                                    : <PropText>{product_2.gloss_level}</PropText>
+                                }
+                            </PropValues>
+                        </Prop>
+                        <Prop>
+                            <PropHeader>Bindemittel</PropHeader>
+                            <Hr />
+                            <PropValues>
+                                <PropText>{binders[product_1.binder]}</PropText>
+                                <PropText>{binders[product_2.binder]}</PropText>
+                            </PropValues>
+                        </Prop>
+                        <Prop>
+                            <PropHeader>Lösungsmittel</PropHeader>
+                            <Hr />
+                            <PropValues>
+                                <PropText>{solubilities[product_1.solubility]}</PropText>
+                                <PropText>{solubilities[product_2.solubility]}</PropText>
+                            </PropValues>
+                        </Prop>
+                    </PropsContentWrapper>
+                </PropsWrapper>
+            </Wrapper>
+        )
+    }
 }
+
+
+const mapDispatchToProps = dispatch => ({
+    loadProducts: () => dispatch(handleLoadProducts())
+})
+  
 
 const mapStateToProps = ({ products }, ownProps) => {
     let data;
 
-    console.log("DATA", data)
-    const productData = products?.products ? products["products"] : data["products"]
-    const { categories, surfaces, applications, binders, solubilities } = products
-    const compareProducts = [];
-    const params = ownProps.match.params.productsParam.split("&")
-
-    Object.keys(productData).forEach((key, index) => {
-        if(params.includes(productData[key]["id"].toString())){
-            compareProducts.push(productData[key])
+    if(products){
+        console.log("DATA", data)
+        const productData = products?.products ? products["products"] : data["products"]
+        const { categories, surfaces, applications, binders, solubilities } = products
+        const compareProducts = [];
+        const params = ownProps.match.params.productsParam.split("&")
+    
+        Object.keys(productData).forEach((key, index) => {
+            if(params.includes(productData[key]["id"].toString())){
+                compareProducts.push(productData[key])
+            }
+        })
+    
+        return {
+            compareProducts,
+            categories,
+            surfaces,
+            applications,
+            binders,
+            solubilities
         }
-    })
-
-    return {
-        compareProducts,
-        categories,
-        surfaces,
-        applications,
-        binders,
-        solubilities
+    }
+    else {
+        return {
+            res: null
+        }
     }
 }
 
-export default connect(mapStateToProps, null)(Compare)
+export default connect(mapStateToProps, mapDispatchToProps)(Compare)

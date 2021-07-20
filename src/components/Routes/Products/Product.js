@@ -64,7 +64,7 @@ const linkStyling = {
     justifyContent: 'center',
     alignSelf: 'center',
     textDecoration: 'none',
-    height: '25px',
+    height: '30px',
     width: '60%',
     alignItems: 'center',
     backgroundColor: '#ffe60a',

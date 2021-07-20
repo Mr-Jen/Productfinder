@@ -65,7 +65,7 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
   })
 
   React.useEffect(() => {
-    (initData !== undefined && initData) && console.log("SURFACE LENGTH: ", Object.keys(initData.surfaces).length, "APPLICATION LENGTH: ", Object.keys(initData.applications).length)
+    //(initData !== undefined && initData) && console.log("SURFACE LENGTH: ", Object.keys(initData.surfaces).length, "APPLICATION LENGTH: ", Object.keys(initData.applications).length)
     const initSurfaces = (initData !== undefined && initData) && new Array(Object.keys(initData.surfaces).length).fill(false);
     const initApplications = (initData !== undefined && initData) && new Array(Object.keys(initData.applications).length).fill(false);
 
@@ -179,7 +179,7 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
       })      
       break;
     default:
-      console.log("DEFAULT")
+      //console.log("DEFAULT")
     }
 
   const handleChangeSort = (e) => {

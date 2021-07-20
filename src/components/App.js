@@ -32,7 +32,10 @@ const HeaderWrap = styled.div`
 
 const App = ({loadConfig, loadProducts, isHome}) => {
   React.useEffect(() => {loadConfig()}, [loadConfig])
-  React.useEffect(() => {loadProducts()}, [loadProducts])
+  React.useEffect(() => {
+    console.log("LOADING PRODUCTS IN APP")
+    loadProducts()
+  }, [loadProducts])
 
   console.log("IS HOME: ", isHome)
 

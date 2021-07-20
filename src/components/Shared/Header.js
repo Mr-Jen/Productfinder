@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import styled from 'styled-components'
 
 import { removeFromHistory } from '../../actions/history'
+import './header.css'
 
 const Wrapper = styled.div`
     display: flex; 
@@ -16,10 +17,6 @@ const Wrapper = styled.div`
 
     position: sticky;
     top: 0;
-
-    box-shadow: 0px 7px 5px -1px rgba(141,141,141,0.15);
-    -webkit-box-shadow: 0px 7px 5px -1px rgba(141,141,141,0.15);
-    -moz-box-shadow: 0px 7px 5px -1px rgba(141,141,141,0.15);
 `
 
 const Title = styled.button`
@@ -44,13 +41,24 @@ const Icon = styled.img`
 `
 
 function Header({handleNavigationChange}) {
+    React.useEffect(() => {
+        window.addEventListener('scroll',(e)=>{
+            const wrapper = document.getElementById('wrapper');
+            if(window.pageYOffset>0){
+                wrapper.classList.add("add-shadow");
+            } else{
+                wrapper.classList.remove("add-shadow");
+            }
+        });
+    }, [])
+
     return (
-        <Wrapper>
+        <Wrapper id="wrapper">
             <Title onClick={() => handleNavigationChange(0)}>
                 <h1 style={{"letterSpacing": "1.5px"}}>Produktfinder</h1>
             </Title>
             <a href="https://www.schwedischer-farbenhandel.de/">
-                <Icon src="assets/icons/logo.jpg"/>
+                <Icon src="/assets/icons/logo.jpg"/>
             </a>            
         </Wrapper>
     )

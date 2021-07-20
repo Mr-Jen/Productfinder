@@ -162,85 +162,97 @@ const ProductView = ({ match, productsData }) => {
         "Verbrauch"
     ]
 
-    const { params: { productId } } = match;
-    const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
-    const product = products[productId-1]
-    const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility } = {...product}
-
-    return (
-        <Wrapper>
-            {/*<SubHeader location={"/products"} title={product["name"]}/>*/}
-            <Header>
-                <NavigateButton
-                    location={"/products"} 
-                    text={"Zurück"} 
-                    direction={"left"} 
-                />
-                {isDesktop && <Title className={"title"}>{product["name"]}</Title>}
-                <div style={{visibility: 'hidden'}}>
+    if (!productsData){
+        return null;
+    }
+    else {
+        const { params: { productId } } = match;
+        const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
+        const product = products[productId-1]
+        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility } = {...product}
+        
+        return (
+            <Wrapper>
+                {/*<SubHeader location={"/products"} title={product["name"]}/>*/}
+                <Header>
                     <NavigateButton
                         location={"/products"} 
                         text={"Zurück"} 
-                        direction={"left"}                                       
+                        direction={"left"} 
                     />
-                </div>
-            </Header>
-            <MainWrapper>
-                <ImageWrapper>
-                    <ProductImage src="/assets/images/farbeimer.jpg"/>
-                </ImageWrapper>
-                <ContentWrapper>
-                    {!isDesktop && <Title className={"title"}>{product["name"]}</Title>}
-                    <SubTitle>Produktdetails</SubTitle>
-                    <PropsWrapper>
-                        <PropsRow>
-                            <PropsValue style={{fontWeight: "bold"}}>{category_names_de[0]}</PropsValue>
-                            <PropsValue>{categories[category]}</PropsValue>
-                        </PropsRow>
-                        <PropsRow>
-                            <PropsValue style={{fontWeight: "bold"}}>{category_names_de[1]}</PropsValue>
-                            <PropsValue>{surface.map(item => surfaces[item]).join(", ")}</PropsValue>
-                        </PropsRow>
-                        <PropsRow>
-                            <PropsValue style={{fontWeight: "bold"}}>{category_names_de[2]}</PropsValue>
-                            <PropsValue>{application.map(item => applications[item]).join(", ")}</PropsValue>
-                        </PropsRow>
-                        <PropsRow>
-                            <PropsValue style={{fontWeight: "bold"}}>{category_names_de[3]}</PropsValue>
-                            <PropsValue>{lifetime[0]} - {lifetime[1]} Jahre</PropsValue>
-                        </PropsRow>
-                        <PropsRow>
-                            <PropsValue style={{fontWeight: "bold"}}>{category_names_de[4]}</PropsValue>
-                            {
-                                gloss_level.length > 1 ?
-                                    <PropsValue>{gloss_level[0]} - {gloss_level[1]}</PropsValue>
-                                : <PropsValue>{gloss_level}</PropsValue>
-                            }
-                        </PropsRow>
-                        <PropsRow>
-                            <PropsValue style={{fontWeight: "bold"}}>{category_names_de[5]}</PropsValue>
-                            <PropsValue>{binders[binder]}</PropsValue>
-                        </PropsRow>
-                        <PropsRow>
-                            <PropsValue style={{fontWeight: "bold"}}>{category_names_de[6]}</PropsValue>
-                            <PropsValue>{solubilities[solubility]}</PropsValue>
-                        </PropsRow>
-                        <PropsRow>
-                            <PropsValue style={{fontWeight: "bold"}}>{category_names_de[7]}</PropsValue>
-                            <PropsValue>{categories[category]}</PropsValue>
-                        </PropsRow>
-                    </PropsWrapper>
-                    <SubTitle>Produkteigenschaften</SubTitle>
-                    <ProductText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis orci a scelerisque purus. Nam libero justo laoreet sit amet cursus sit amet. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Iaculis eu non diam phasellus vestibulum lorem. Rhoncus aenean vel elit scelerisque. Scelerisque varius morbi enim nunc. Egestas integer eget aliquet nibh praesent tristique magna. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Dolor sit amet consectetur adipiscing elit pellentesque. Felis bibendum ut tristique et. Ultricies mi eget mauris pharetra et ultrices neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Nulla pharetra diam sit amet nisl. Feugiat in fermentum posuere urna nec tincidunt. Tortor at auctor urna nunc id cursus. Sed risus pretium quam vulputate dignissim suspendisse in est. Quisque sagittis purus sit amet volutpat consequat mauris. Sodales ut eu sem integer vitae. Et tortor at risus viverra adipiscing at in. Dignissim diam quis enim lobortis scelerisque fermentum. Lacinia quis vel eros donec ac odio. In vitae turpis massa sed. Neque sodales ut etiam sit amet. Eu scelerisque felis imperdiet proin fermentum leo. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Tortor vitae purus faucibus ornare.</ProductText>
-                </ContentWrapper>
-            </MainWrapper>
-        </Wrapper>
-    )
+                    {isDesktop && <Title className={"title"}>{product["name"]}</Title>}
+                    <div style={{visibility: 'hidden'}}>
+                        <NavigateButton
+                            location={"/products"} 
+                            text={"Zurück"} 
+                            direction={"left"}                                       
+                        />
+                    </div>
+                </Header>
+                <MainWrapper>
+                    <ImageWrapper>
+                        <ProductImage src="/assets/images/farbeimer.jpg"/>
+                    </ImageWrapper>
+                    <ContentWrapper>
+                        {!isDesktop && <Title className={"title"}>{product["name"]}</Title>}
+                        <SubTitle>Produktdetails</SubTitle>
+                        <PropsWrapper>
+                            <PropsRow>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[0]}</PropsValue>
+                                <PropsValue>{categories[category]}</PropsValue>
+                            </PropsRow>
+                            <PropsRow>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[1]}</PropsValue>
+                                <PropsValue>{surface.map(item => surfaces[item]).join(", ")}</PropsValue>
+                            </PropsRow>
+                            <PropsRow>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[2]}</PropsValue>
+                                <PropsValue>{application.map(item => applications[item]).join(", ")}</PropsValue>
+                            </PropsRow>
+                            <PropsRow>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[3]}</PropsValue>
+                                <PropsValue>{lifetime[0]} - {lifetime[1]} Jahre</PropsValue>
+                            </PropsRow>
+                            <PropsRow>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[4]}</PropsValue>
+                                {
+                                    gloss_level.length > 1 ?
+                                        <PropsValue>{gloss_level[0]} - {gloss_level[1]}</PropsValue>
+                                    : <PropsValue>{gloss_level}</PropsValue>
+                                }
+                            </PropsRow>
+                            <PropsRow>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[5]}</PropsValue>
+                                <PropsValue>{binders[binder]}</PropsValue>
+                            </PropsRow>
+                            <PropsRow>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[6]}</PropsValue>
+                                <PropsValue>{solubilities[solubility]}</PropsValue>
+                            </PropsRow>
+                            <PropsRow>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[7]}</PropsValue>
+                                <PropsValue>{categories[category]}</PropsValue>
+                            </PropsRow>
+                        </PropsWrapper>
+                        <SubTitle>Produkteigenschaften</SubTitle>
+                        <ProductText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis orci a scelerisque purus. Nam libero justo laoreet sit amet cursus sit amet. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Iaculis eu non diam phasellus vestibulum lorem. Rhoncus aenean vel elit scelerisque. Scelerisque varius morbi enim nunc. Egestas integer eget aliquet nibh praesent tristique magna. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Dolor sit amet consectetur adipiscing elit pellentesque. Felis bibendum ut tristique et. Ultricies mi eget mauris pharetra et ultrices neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Nulla pharetra diam sit amet nisl. Feugiat in fermentum posuere urna nec tincidunt. Tortor at auctor urna nunc id cursus. Sed risus pretium quam vulputate dignissim suspendisse in est. Quisque sagittis purus sit amet volutpat consequat mauris. Sodales ut eu sem integer vitae. Et tortor at risus viverra adipiscing at in. Dignissim diam quis enim lobortis scelerisque fermentum. Lacinia quis vel eros donec ac odio. In vitae turpis massa sed. Neque sodales ut etiam sit amet. Eu scelerisque felis imperdiet proin fermentum leo. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Tortor vitae purus faucibus ornare.</ProductText>
+                    </ContentWrapper>
+                </MainWrapper>
+            </Wrapper>
+        )
+    }
 }
 
 const mapStateToProps = ({ products }) => {
-    return {
-        productsData: products
+    if (products){
+        return {
+            productsData: products
+        }
+    }
+    else {
+        return {
+            res: null
+        }
     }
 }
 
