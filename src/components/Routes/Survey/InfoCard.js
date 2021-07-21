@@ -13,12 +13,17 @@ const Wrapper = styled.div`
     background-color: #FFE60A;
     border-radius: 10px;
     border: ${props => props.warn ? "4px solid red" : "1px solid grey"};
-    min-height: 40vh;
-    width: 60vw;
+    height: 40vh;
+    width: 90vw;
+    max-width: 1400px;
     z-index: 10000000;
 
     display: flex;
     justify-content: center;
+
+    @media (max-width: 800px){
+        height: 50vh;
+    }
 
     @media (max-width: 600px) {
         position: absolute;        
@@ -67,16 +72,22 @@ const Title = styled.h3`
 
 const Text = styled.p`
     line-height: 30px;
+    overflow-y: auto;
+    padding-right: 1em;
 `
 
 const ImageWrapper = styled.div`
     background-image: url(${props => props.imgSrc});
     background-size: cover;
     width: 50%;
-    height: 80%;
+    height: 100%;
     align-self: center;
     border-radius: 10px;
     cursor: zoom-in;
+
+    @media (max-width: 800px){
+        height: 70%;
+    }
 `
 
 const Arrow = styled.img`
@@ -103,7 +114,7 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId }) => {
     const [showEnlarged, setShowEnlarged] = React.useState(false);
     let checked = data?.infoState && warningIds.includes(data[infoState].unique);
 
-    console.log("IS DATA AND INFO?: ", data)
+    //console.log("IS DATA AND INFO?: ", data)
     
     const onClickNextCard = (e) => {
         if (e === 0){

@@ -13,8 +13,7 @@ const Wrapper = styled.div`
     align-items: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-        box-sizing: border-box;
-
+    box-sizing: border-box;
 `
 
 const Header = styled.div`
@@ -36,7 +35,7 @@ const MainWrapper = styled.div`
         justify-content: space-evenly;
         align-items: flex-start;
         flex: 1 1;
-        width: 80%;
+        width: 90%;
     }
 `
 
@@ -56,9 +55,11 @@ const Title = styled.h2`
 `
 
 const ImageWrapper = styled.div`
-    width: 30%;
+    width: 40%;
     padding: 1em;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
 
     position: sticky;
@@ -74,10 +75,6 @@ const ProductImage = styled.img`
     min-width: 120px;
     width: 100%;
     max-width: 300px;
-
-    @media (max-width: 1000px){
-        
-    }
 `
 
 const ContentWrapper = styled.div`
@@ -87,6 +84,9 @@ const ContentWrapper = styled.div`
     width: 100%;
 
     @media (min-width: 700px){
+        width: 80%;
+    }
+    @media (min-width: 1000px){
         width: 50%;
     }
 `
@@ -129,6 +129,40 @@ const ProductText = styled.p`
     }
 `
 
+const Button = styled.a`
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    /*padding: .1em 4em .1em 4em;*/
+    border-radius: 10px;
+    width: 45%;
+    min-width: 10em;
+    height: 2.5em;
+    margin: 3em;
+`
+
+const ButtonContent = styled.div`
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    height: 2.5em;
+`
+
+const Icon = styled.img`
+    max-width: 25px;
+    max-height: 25px;
+    padding: .6em;
+`
+
+const ButtonText = styled.p`
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+`
+
 const ProductView = ({ match, productsData }) => {
 
     const [isDesktop, setIsDesktop] = React.useState(false)
@@ -169,7 +203,7 @@ const ProductView = ({ match, productsData }) => {
         const { params: { productId } } = match;
         const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
         const product = products[productId-1]
-        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility } = {...product}
+        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link } = {...product}
         
         return (
             <Wrapper>
@@ -192,6 +226,12 @@ const ProductView = ({ match, productsData }) => {
                 <MainWrapper>
                     <ImageWrapper>
                         <ProductImage src="/assets/images/farbeimer.jpg"/>
+                        <Button target="_blank" and rel="noopener noreferrer" href={link !== "" ? link : "https://www.schwedischer-farbenhandel.de/"}>
+                            <ButtonContent>
+                                <ButtonText>Kaufen</ButtonText>
+                                <Icon src='/assets/icons/misc/bag.png'></Icon>
+                            </ButtonContent>
+                        </Button>
                     </ImageWrapper>
                     <ContentWrapper>
                         {!isDesktop && <Title className={"title"}>{product["name"]}</Title>}

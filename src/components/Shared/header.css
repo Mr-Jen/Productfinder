@@ -3,3 +3,13 @@
     -webkit-box-shadow: 0px 7px 5px -1px rgba(141,141,141,0.15);
     -moz-box-shadow: 0px 7px 5px -1px rgba(141,141,141,0.15);
 }
+
+#icon {
+    margin-right: 3em;
+}
+
+@media (max-width: 900px){
+    #icon {
+        margin-right: 1em;
+    }
+}

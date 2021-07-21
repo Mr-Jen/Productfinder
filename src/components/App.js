@@ -6,7 +6,6 @@ import { Switch, Route } from 'react-router-dom'
 import { handleLoadConfig, handleLoadProducts, loadProducts } from '../actions/shared'
 
 import Home from './Routes/Home/Home'
-import NavigateButton from './Shared/NavigateButton'
 import Products from './Routes/Products/Products'
 import Header from './Shared/Header'
 import Survey from './Routes/Survey/Survey'
@@ -37,7 +36,7 @@ const App = ({loadConfig, loadProducts, isHome}) => {
     loadProducts()
   }, [loadProducts])
 
-  console.log("IS HOME: ", isHome)
+  //console.log("IS HOME: ", isHome)
 
   //window.screen.orientation.lock('any')
 

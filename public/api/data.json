@@ -14,7 +14,8 @@
             "lifetime": [15,20],
             "gloss_level": [30,40],
             "binder": 0,
-            "solubility": 0
+            "solubility": 0,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fassadenfarbe-Holz/Silikonalkydfarbe-ODEN"
         },
         "1": {
             "id": 1,
@@ -30,7 +31,8 @@
             "lifetime": [10,12],
             "gloss_level": [30,40],
             "binder": 1,
-            "solubility": 1
+            "solubility": 1,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fassadenfarbe-Holz/Emulsionsfarbe-SOLID-V"
         },
         "2": {
             "id": 2,
@@ -46,7 +48,8 @@
             "lifetime": [6,8],
             "gloss_level": [0,10],
             "binder": 0,
-            "solubility": 1
+            "solubility": 1,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fassadenfarbe-Holz/Fassadenfarbe-HEIMDALL-matt"
         },
         "3": {
             "id": 3,
@@ -62,7 +65,8 @@
             "lifetime": [15,20],
             "gloss_level": [45,45],
             "binder": 1,
-            "solubility": 1
+            "solubility": 1,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fassadenfarbe-Holz/Holzfassadenfarbe-TITAN-V"
         },
         "6": {
             "id": 6,
@@ -78,7 +82,8 @@
             "lifetime": [10,12],
             "gloss_level": [0,10],
             "binder": 3,
-            "solubility": 1
+            "solubility": 1,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fassadenfarbe-Holz/Lasol-9000"
         },
         "7": {
             "id": 7,
@@ -94,7 +99,8 @@
             "lifetime": [4,10],
             "gloss_level": [0,20],
             "binder": 11,
-            "solubility": 2
+            "solubility": 2,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fassadenfarbe-Holz/Nadelholzteer"
         },
         "8": {
             "id": 8,
@@ -110,7 +116,8 @@
             "lifetime": [4,10],
             "gloss_level": [0,10],
             "binder": 6,
-            "solubility": 1
+            "solubility": 1,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fassadenfarbe-Holz/Schlammfarbe"
         },
         "10": {
             "id": 10,
@@ -126,7 +133,8 @@
             "lifetime": [15,20],
             "gloss_level": [20,30],
             "binder": 4,
-            "solubility": 3
+            "solubility": 3,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fassadenfarbe-Holz/Reine-Leinoelfarbe-ALLBAeCK"
         },
         "15": {
             "id": 15,
@@ -142,7 +150,8 @@
             "lifetime": [2,6],
             "gloss_level": [30,30],
             "binder": 0,
-            "solubility": 0
+            "solubility": 0,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Lasuren/Loesemittelhaltige-Duennschichtlasur-TERRASSLASYR"
         },
         "16": {
             "id": 16,
@@ -158,7 +167,8 @@
             "lifetime": [1,3],
             "gloss_level": [30,30],
             "binder": 1,
-            "solubility": 1
+            "solubility": 1,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Lasuren/Wasserloesliche-Duennschichtlasur-TRAeLASYR-V"
         },
         "17": {
             "id": 17,
@@ -174,7 +184,8 @@
             "lifetime": [8,12],
             "gloss_level": [0,0],
             "binder": null,
-            "solubility": 1
+            "solubility": 1,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fassadenfarbe-Holz/SIOO-X-Premium-Holzimpraegnierer-Fassade"
         },
         "18": {
             "id": 18,
@@ -190,7 +201,8 @@
             "lifetime": [1,2],
             "gloss_level": [0,30],
             "binder": 4,
-            "solubility": 4
+            "solubility": 4,
+            "link": ""
         },
         "19": {
             "id": 19,
@@ -206,7 +218,8 @@
             "lifetime": [1,2],
             "gloss_level": [0,20],
             "binder": 9,
-            "solubility": 4
+            "solubility": 4,
+            "link": "https://shop.schwedischer-farbenhandel.de/art/M20601"
         },
         "20": {
             "id": 20,
@@ -222,7 +235,8 @@
             "lifetime": [1,2],
             "gloss_level": [0,10],
             "binder": 4,
-            "solubility": 1
+            "solubility": 1,
+            "link": ""
         },
         "21": {
             "id": 21,
@@ -238,7 +252,8 @@
             "lifetime": [3,4],
             "gloss_level": [0,10],
             "binder": 4,
-            "solubility": 0
+            "solubility": 0,
+            "link": "https://shop.schwedischer-farbenhandel.de/4DCGI/ezshop?action=suchekombi&suchtextfeld=Helles%20Teer%C3%B6l&beschre=1&bezeich=1&nummern=1&suchbegriff=1&sortierfeld=&buttonname=suche&skontaktid=36421528&skontaktkey=UBhnzIj2pzscG7xSllCdEyAHAwFkQ4&responsepage=listing.htm"
         },
         "22": {
             "id": 22,
@@ -254,7 +269,8 @@
             "lifetime": [4,8],
             "gloss_level": [0,10],
             "binder": 10,
-            "solubility": 2
+            "solubility": 2,
+            "link": "https://shop.schwedischer-farbenhandel.de/4DCGI/ezshop?action=suchekombi&suchtextfeld=Schwellen%C3%B6l&beschre=1&bezeich=1&nummern=1&suchbegriff=1&sortierfeld=&buttonname=suche&skontaktid=36421528&skontaktkey=UBhnzIj2pzscG7xSllCdEyAHAwFkQ4&responsepage=listing.htm"
         },
         "23": {
             "id": 23,
@@ -270,7 +286,8 @@
             "lifetime": ["nur zur Grundierung"],
             "gloss_level": [0,0],
             "binder": 9,
-            "solubility": 0
+            "solubility": 0,
+            "link": "https://shop.schwedischer-farbenhandel.de/art/M20306"
         },
         "24": {
             "id": 24,
@@ -286,7 +303,8 @@
             "lifetime": [1,2],
             "gloss_level": [0,10],
             "binder": 0,
-            "solubility": 5
+            "solubility": 5,
+            "link": "https://shop.schwedischer-farbenhandel.de/art/M20301"
         },
         "25": {
             "id": 25,
@@ -302,7 +320,8 @@
             "lifetime": [2,3],
             "gloss_level": [0,10],
             "binder": 11,
-            "solubility": 5
+            "solubility": 5,
+            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Lasuren/Nadelholzteerlasuren"
         },
         "26": {
             "id": 26,
@@ -318,7 +337,8 @@
             "lifetime": [1,2],
             "gloss_level": [0,10],
             "binder": 11,
-            "solubility": 5
+            "solubility": 5,
+            "link": "https://shop.schwedischer-farbenhandel.de/art/M25011"
         },
         "27": {
             "id": 27,
@@ -334,7 +354,8 @@
             "lifetime": [1,2],
             "gloss_level": [0,10],
             "binder": 4,
-            "solubility": 4
+            "solubility": 4,
+            "link": "https://shop.schwedischer-farbenhandel.de/art/M21002"
         },
         "28": {
             "id": 28,
@@ -350,7 +371,8 @@
             "lifetime": [1,2],
             "gloss_level": [0,10],
             "binder": 4,
-            "solubility": 4
+            "solubility": 4,
+            "link": "https://shop.schwedischer-farbenhandel.de/art/M21001"
         }
     },
     "categories": {

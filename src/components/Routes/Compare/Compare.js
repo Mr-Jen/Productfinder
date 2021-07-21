@@ -199,7 +199,7 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                     <Product>
                         <ProductTitle>{product_1.name}</ProductTitle>
                         <Img/>
-                        <Button href="https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fenster-Tuer/Silikonalkydfarbe-ODEN">
+                        <Button target="_blank" and rel="noopener noreferrer" href={product_1.link !== "" ? product_1.link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
                                 <ButtonText>Kaufen</ButtonText>
                                 <Icon src='/assets/icons/misc/bag.png'></Icon>
@@ -210,7 +210,7 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                     <Product>
                         <ProductTitle>{product_2.name}</ProductTitle>
                         <Img/>
-                        <Button href="https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fenster-Tuer/Silikonalkydfarbe-ODEN">
+                        <Button target="_blank" and rel="noopener noreferrer" href={product_2.link !== "" ? product_2.link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
                                 <ButtonText>Kaufen</ButtonText>
                                 <Icon src='/assets/icons/misc/bag.png'></Icon>

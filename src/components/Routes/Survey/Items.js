@@ -35,9 +35,15 @@ const ButtonContentWrapper = styled.div`
   }
   margin: 2em 0 2em 0;
   border: 2px solid transparent;
-  &:hover {
+  /*&:hover {
     color: #01447e;
     border: 2px solid black;
+  }*/
+  @media (hover: hover) and (pointer: fine) {
+    &:hover { 
+      color: #01447e;
+      border: 2px solid black;
+  }
   }
   @media (max-width: 500px) {
     margin: 1.5em 0 1.5em 0;
@@ -76,7 +82,7 @@ const CardWrapper = styled.div`
   min-height: 100%;
   width: 100vw;
   background: grey;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -102,7 +108,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
   }, [])
 
   const updatePredicate = () => {
-    setIsDesktop(window.innerWidth > 600)
+    setIsDesktop(window.innerWidth > 700)
   }
 
   const { store } = useContext(ReactReduxContext)

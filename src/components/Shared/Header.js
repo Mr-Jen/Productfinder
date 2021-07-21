@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 import { removeFromHistory } from '../../actions/history'
 import './header.css'
@@ -17,6 +18,13 @@ const Wrapper = styled.div`
 
     position: sticky;
     top: 0;
+    padding: 1em 0 1em 0;
+`
+
+const TitleWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 `
 
 const Title = styled.button`
@@ -54,9 +62,14 @@ function Header({handleNavigationChange}) {
 
     return (
         <Wrapper id="wrapper">
-            <Title onClick={() => handleNavigationChange(0)}>
-                <h1 style={{"letterSpacing": "1.5px"}}>Produktfinder</h1>
-            </Title>
+            <Link to="/" style={{textDecoration: "none"}}>
+                <TitleWrapper>
+                    <Icon id="icon" src="/assets/icons/home/Brush-Search.svg"/>
+                    <Title /*onClick={() => handleNavigationChange(0)}*/>
+                        <h1 style={{"letterSpacing": "1.5px"}}>Produktfinder</h1>
+                    </Title>
+                </TitleWrapper>
+            </Link>
             <a href="https://www.schwedischer-farbenhandel.de/">
                 <Icon src="/assets/icons/logo.jpg"/>
             </a>            
