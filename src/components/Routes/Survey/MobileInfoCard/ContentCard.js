@@ -39,7 +39,7 @@ const ImageWrapper = styled.div`
     background-size: cover;
     background-position: center;
     width: 90%;
-    min-height: 60%;
+    min-height: 70%;
     border-radius: 10px;
 `
 

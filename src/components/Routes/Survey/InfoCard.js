@@ -21,7 +21,11 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
 
-    @media (max-width: 800px){
+    @media (min-width: 1200px){
+        height: calc(0.5 * 50vw);
+    }
+
+    /*@media (max-width: 800px){
         height: 50vh;
     }
 
@@ -32,7 +36,7 @@ const Wrapper = styled.div`
         overflow-y: scroll;
         top: auto;
         margin-top: 20vh;
-    }
+    }*/
 `
 
 const CardAnimationKeyFrame = keyframes`

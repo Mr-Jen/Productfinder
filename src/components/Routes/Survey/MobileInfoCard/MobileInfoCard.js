@@ -20,11 +20,18 @@ const Wrapper = styled.div`
     flex-direction: column;
     z-index: 1000000;
 
-    @media (min-width: 400px){
+    /*@media (min-width: 400px){
         height: 70vh;
     }
     @media (min-width: 500px){
         height: 80vh;
+    }*/
+    @media (min-width: 500px){
+        height: 90vw;
+        max-height: 600px;
+    }
+    @media (max-height: 700px){
+        max-height: 70vh;
     }
 `
 

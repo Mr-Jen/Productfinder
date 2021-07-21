@@ -80,11 +80,10 @@ const BreadCrumbs = ({handleNavigationChange, breadCrumbs}) => {
                 }
                 </BreadCrumbWrapper>
             :
-                <BreadCrumbInnerWrapper>
+                <BreadCrumbInnerWrapper onClick={() => handleNavigationChange(breadCrumbs.length-1)}>
                     {/*breadCrumbs.length > 0 && <strong>ᐸ</strong>*/}
                     {breadCrumbs.length > 0 && <Arrow src="assets/icons/misc/left-arrow.png"></Arrow>}
-                    <BreadCrumb 
-                        onClick={() => handleNavigationChange(breadCrumbs.length-1)}
+                    <BreadCrumb                        
                         lastCrumb={true}
                     >
                         {breadCrumbs[breadCrumbs.length-2]}
