@@ -108,7 +108,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
   }, [])
 
   const updatePredicate = () => {
-    setIsDesktop(window.innerWidth > 700)
+    setIsDesktop(window.innerWidth > 800)
   }
 
   const { store } = useContext(ReactReduxContext)

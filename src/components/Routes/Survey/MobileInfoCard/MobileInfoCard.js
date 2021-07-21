@@ -19,6 +19,13 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     z-index: 1000000;
+
+    @media (min-width: 400px){
+        height: 70vh;
+    }
+    @media (min-width: 500px){
+        height: 80vh;
+    }
 `
 
 const Header = styled.div`

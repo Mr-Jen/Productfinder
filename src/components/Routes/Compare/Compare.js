@@ -135,6 +135,13 @@ const Hr = styled.hr`
     margin-right: 0;
 `
 
+const TitleWrapper = styled.div`
+    /*position: sticky;
+    background-color: white;
+    top: 100px;
+    width: 100%;*/
+`
+
 const ProductTitle = styled.h3`
     text-align: center;
     width: 100%;
@@ -148,7 +155,6 @@ const ProductTitle = styled.h3`
         border-bottom: 3px solid #FFE60A;
     }*/
 
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: white;
@@ -197,7 +203,9 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
     
                 <ContentWrapper>
                     <Product>
-                        <ProductTitle>{product_1.name}</ProductTitle>
+                        <TitleWrapper>
+                            <ProductTitle>{product_1.name}</ProductTitle>
+                        </TitleWrapper>                        
                         <Img/>
                         <Button target="_blank" and rel="noopener noreferrer" href={product_1.link !== "" ? product_1.link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
@@ -208,7 +216,9 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                     </Product>
                     <Vl />
                     <Product>
-                        <ProductTitle>{product_2.name}</ProductTitle>
+                        <TitleWrapper>
+                            <ProductTitle>{product_2.name}</ProductTitle>
+                        </TitleWrapper>  
                         <Img/>
                         <Button target="_blank" and rel="noopener noreferrer" href={product_2.link !== "" ? product_2.link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
