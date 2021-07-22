@@ -30,7 +30,8 @@ const Title = styled.h5`
 `
 
 const ProductImg = styled.img`
-    width: 50%;
+    width: 60%;
+    height: auto;
     margin: auto;
     margin-top: 1em;
 `
@@ -92,7 +93,7 @@ const Compare = styled.div`
     user-select: none; /* Standard syntax *
 `
 
-const Product = ({ title, category, surface, application, lifetime, gloss_level, binder, solublity, id, onChange, isChecked}) => {
+const Product = ({ title, category, surface, application, lifetime, gloss_level, binder, solublity, images, id, onChange, isChecked}) => {
 
     const onClickCompare = () => {
         onChange(id)
@@ -102,7 +103,7 @@ const Product = ({ title, category, surface, application, lifetime, gloss_level,
         <Wrapper>
             <Title>{title}</Title>
             {/*<Img onLoad={() => console.log("IMAGE LOADED")}/>*/}
-            <ProductImg src="assets/images/farbeimer.jpg" />
+            <ProductImg src={images[0]} />
             <ContentWrapper>
         	    <CategoryWrapper>
                     <CategoryText>Kategorie: </CategoryText>

@@ -203,7 +203,7 @@ const ProductView = ({ match, productsData }) => {
         const { params: { productId } } = match;
         const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
         const product = products[productId-1]
-        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link } = {...product}
+        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link, images } = {...product}
         
         return (
             <Wrapper>
@@ -225,7 +225,7 @@ const ProductView = ({ match, productsData }) => {
                 </Header>
                 <MainWrapper>
                     <ImageWrapper>
-                        <ProductImage src="/assets/images/farbeimer.jpg"/>
+                        <ProductImage src={images[0]}/>
                         <Button target="_blank" and rel="noopener noreferrer" href={link !== "" ? link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
                                 <ButtonText>Kaufen</ButtonText>

@@ -215,7 +215,7 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
             products && filteredObjectKeys.map((objectKey, key) => {
 
               let product = products[objectKey]
-              let { id, category, surface, application, lifetime, gloss_level, binder, solubility } = product
+              let { id, category, surface, application, lifetime, gloss_level, binder, solubility, images } = product
               let category_value = categories[category]
               let surface_value = surface.map((key) => surfaces[key])
               let application_value = application.map((key) => applications[key])
@@ -236,6 +236,7 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
                 id={id}
                 isChecked={compareProducts.includes(id)}
                 onChange={(id) => onChangeCompare(id)}
+                images={images}
               />
             })
           }
