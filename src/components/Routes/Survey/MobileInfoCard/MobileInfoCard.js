@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     width: 100vw;
     border-radius: 2em 2em 0 0;
     position: fixed;
-    height: 60vh;
+    height: 65vh;
     left: 0;
     bottom: 0;
 

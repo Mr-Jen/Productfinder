@@ -210,9 +210,9 @@
                                                                     "info": {
                                                                         "0": {
                                                                             "id": 0,
-                                                                            "title": "Lasur",
+                                                                            "title": "Lasuren",
                                                                             "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                                            "image": "assets/images/lasur.png"
+                                                                            "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
                                                                     "children": null
@@ -221,6 +221,14 @@
                                                                     "id": 1,
                                                                     "label": "Farbe",
                                                                     "question": "",
+                                                                    "info": {
+                                                                        "0": {
+                                                                            "id": 0,
+                                                                            "title": "Deckende Farbe",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                        }
+                                                                    },
                                                                     "children": null
                                                                 }
                                                             } 
@@ -393,15 +401,31 @@
                                                                                     "id": 0,
                                                                                     "label": "Lasur",
                                                                                     "question": "",
+                                                                                    "info": {
+                                                                                        "0": {
+                                                                                            "id": 0,
+                                                                                            "title": "Lasuren",
+                                                                                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                                        }
+                                                                                    },
                                                                                     "children": null
                                                                                 },
                                                                                 "1": {
                                                                                     "id": 1,
                                                                                     "label": "Farbe",
                                                                                     "question": "",
+                                                                                    "info": {
+                                                                                        "0": {
+                                                                                            "id": 0,
+                                                                                            "title": "Deckende Farbe",
+                                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                                        }
+                                                                                    },
                                                                                     "children": null
                                                                                 }
-                                                                            } 
+                                                                            }
                                                                         },
                                                                         "1": {
                                                                             "id": 1,
@@ -414,12 +438,28 @@
                                                                                     "id": 0,
                                                                                     "label": "Lasur",
                                                                                     "question": "",
+                                                                                    "info": {
+                                                                                        "0": {
+                                                                                            "id": 0,
+                                                                                            "title": "Lasuren",
+                                                                                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                                        }
+                                                                                    },
                                                                                     "children": null
                                                                                 },
                                                                                 "1": {
                                                                                     "id": 1,
                                                                                     "label": "Farbe",
                                                                                     "question": "",
+                                                                                    "info": {
+                                                                                        "0": {
+                                                                                            "id": 0,
+                                                                                            "title": "Deckende Farbe",
+                                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                                        }
+                                                                                    },
                                                                                     "children": null
                                                                                 }
                                                                             } 
@@ -448,6 +488,14 @@
                                                             "id": 0,
                                                             "label": "Lasur",
                                                             "question": "",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Lasuren",
+                                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                    "image": "assets/images/Lasur/lasur.png"
+                                                                }
+                                                            },
                                                             "children": null
                                                         },
                                                         "1": {
@@ -459,7 +507,7 @@
                                                                     "id": 0,
                                                                     "title": "Deckende Farbe",
                                                                     "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
-                                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                                                    "image": "assets/images/Lasur/lasur.png"
                                                                 }
                                                             },
                                                             "children": null
@@ -511,13 +559,21 @@
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
                                                             "target_action": "set_target",
                                                             "children": {
-                                                                "1": {
-                                                                    "id": 1,
+                                                                "0": {
+                                                                    "id": 0,
                                                                     "label": "Farbe",
                                                                     "question": "",
+                                                                    "info": {
+                                                                        "0": {
+                                                                            "id": 0,
+                                                                            "title": "Deckende Farbe",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                        }
+                                                                    },
                                                                     "children": null
                                                                 }
-                                                            } 
+                                                            }
                                                         },
                                                         "1": {
                                                             "id": 1,
@@ -526,13 +582,21 @@
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
                                                             "target_action": "set_target",
                                                             "children": {
-                                                                "1": {
-                                                                    "id": 1,
+                                                                "0": {
+                                                                    "id": 0,
                                                                     "label": "Farbe",
                                                                     "question": "",
+                                                                    "info": {
+                                                                        "0": {
+                                                                            "id": 0,
+                                                                            "title": "Deckende Farbe",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                        }
+                                                                    },
                                                                     "children": null
                                                                 }
-                                                            } 
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -638,13 +702,21 @@
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
                                                             "target_action": "set_target",
                                                             "children": {
-                                                                "1": {
-                                                                    "id": 1,
+                                                                "0": {
+                                                                    "id": 0,
                                                                     "label": "Farbe",
                                                                     "question": "",
+                                                                    "info": {
+                                                                        "0": {
+                                                                            "id": 0,
+                                                                            "title": "Deckende Farbe",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                        }
+                                                                    },
                                                                     "children": null
                                                                 }
-                                                            } 
+                                                            }
                                                         },
                                                         "1": {
                                                             "id": 1,
@@ -653,13 +725,21 @@
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
                                                             "target_action": "set_target",
                                                             "children": {
-                                                                "1": {
-                                                                    "id": 1,
+                                                                "0": {
+                                                                    "id": 0,
                                                                     "label": "Farbe",
                                                                     "question": "",
+                                                                    "info": {
+                                                                        "0": {
+                                                                            "id": 0,
+                                                                            "title": "Deckende Farbe",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                        }
+                                                                    },
                                                                     "children": null
                                                                 }
-                                                            } 
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -678,7 +758,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Öl",
-                                    "content": "Öle sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
                                     "image": "assets/images/Öl/holzöl.jpg"
                                 },
                                 "1": {
@@ -711,9 +791,9 @@
                                             "info": {
                                                 "0": {
                                                     "id": 0,
-                                                    "title": "Lasur",
+                                                    "title": "Lasuren",
                                                     "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                    "image": "assets/images/lasur.png"
+                                                    "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
                                             "children": null
@@ -722,12 +802,28 @@
                                             "id": 1,
                                             "label": "Farbe",
                                             "question": "",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Deckende Farbe",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                    "image": "assets/images/Lasur/lasur.png"
+                                                }
+                                            },
                                             "children": null
                                         },
                                         "2": {
                                             "id": 2,
                                             "label": "Öl",
                                             "question": "",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Öl",
+                                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                                    "image": "assets/images/Öl/öl.jpg"
+                                                }
+                                            },
                                             "children": null
                                         }
                                     } 
@@ -771,6 +867,14 @@
                                             "id": 2,
                                             "label": "Öl",
                                             "question": "",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Öl",
+                                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                                    "image": "assets/images/Öl/öl.jpg"
+                                                }
+                                            },
                                             "children": null
                                         }
                                     } 
@@ -840,9 +944,17 @@
                                             "id": 0,
                                             "label": "Farbe",
                                             "question": "",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Deckende Farbe",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                    "image": "assets/images/Lasur/lasur.png"
+                                                }
+                                            },
                                             "children": null
                                         }
-                                    } 
+                                    }
                                 },
                                 "1": {
                                     "id": 1,
@@ -855,9 +967,17 @@
                                             "id": 0,
                                             "label": "Farbe",
                                             "question": "",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Deckende Farbe",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                    "image": "assets/images/Lasur/lasur.png"
+                                                }
+                                            },
                                             "children": null
                                         }
-                                    } 
+                                    }
                                 }
                             }
                         },
@@ -946,6 +1066,12 @@
                                     "content": "Achtung! Holzöle halten maximal ein Jahr. Nach einem Jahr muss eine Tiefenreinigung mit einem Fassadenreiniger vorgenommen werden, danach gilt das Holz als neu/unbehandelt.",
                                     "image": "assets/images/Öl/holzöl.jpg",
                                     "warning": true
+                                },
+                                "1": {
+                                    "id": 1,
+                                    "title": "Öl",
+                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                    "image": "assets/images/Öl/öl.jpg"
                                 }
                             },
                             "children": {
@@ -971,9 +1097,9 @@
                                             "info": {
                                                 "0": {
                                                     "id": 0,
-                                                    "title": "Lasur",
+                                                    "title": "Lasuren",
                                                     "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                    "image": "assets/images/lasur.png"
+                                                    "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
                                             "children": null
@@ -982,12 +1108,28 @@
                                             "id": 1,
                                             "label": "Farbe",
                                             "question": "",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Deckende Farbe",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                    "image": "assets/images/Lasur/lasur.png"
+                                                }
+                                            },
                                             "children": null
                                         },
                                         "2": {
                                             "id": 2,
                                             "label": "Öl",
                                             "question": "",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Öl",
+                                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                                    "image": "assets/images/Öl/öl.jpg"
+                                                }
+                                            },
                                             "children": null
                                         }
                                     } 
@@ -1014,9 +1156,9 @@
                                             "info": {
                                                 "0": {
                                                     "id": 0,
-                                                    "title": "Lasur",
+                                                    "title": "Lasuren",
                                                     "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                    "image": "assets/images/lasur.png"
+                                                    "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
                                             "children": null
@@ -1025,12 +1167,28 @@
                                             "id": 1,
                                             "label": "Farbe",
                                             "question": "",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Deckende Farbe",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                    "image": "assets/images/Lasur/lasur.png"
+                                                }
+                                            },
                                             "children": null
                                         },
                                         "2": {
                                             "id": 2,
                                             "label": "Öl",
                                             "question": "",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Öl",
+                                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                                    "image": "assets/images/Öl/öl.jpg"
+                                                }
+                                            },
                                             "children": null
                                         }
                                     } 
