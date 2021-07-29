@@ -203,7 +203,7 @@
         "17": {
             "id": 17,
             "name": "SIOO Holzimprägnierer",
-            "category": 0,
+            "category": 1,
             "allowed_coatings": [], 
             "surface": [0],
             "application": [0,1,2,3,4,5],
@@ -316,26 +316,6 @@
             "binder": 10,
             "solubility": 2,
             "link": "https://shop.schwedischer-farbenhandel.de/4DCGI/ezshop?action=suchekombi&suchtextfeld=Schwellen%C3%B6l&beschre=1&bezeich=1&nummern=1&suchbegriff=1&sortierfeld=&buttonname=suche&skontaktid=36421528&skontaktkey=UBhnzIj2pzscG7xSllCdEyAHAwFkQ4&responsepage=listing.htm",
-            "images": [
-                "/assets/images/Produkte/M50050.jpg"
-            ]
-        },
-        "23": {
-            "id": 23,
-            "name": "Grundieröl GRUNDOLJA",
-            "category": 2,
-            "allowed_coatings": [], 
-            "surface": [0],
-            "application": [0,1,2,3,4,5],
-            "efficiency": {
-                "smooth_surface": [6,8],
-                "rough_surface": [4,6]
-            },
-            "lifetime": ["nur zur Grundierung"],
-            "gloss_level": [0,0],
-            "binder": 9,
-            "solubility": 0,
-            "link": "https://shop.schwedischer-farbenhandel.de/art/M20306",
             "images": [
                 "/assets/images/Produkte/M50050.jpg"
             ]
