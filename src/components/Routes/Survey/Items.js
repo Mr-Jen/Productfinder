@@ -76,7 +76,7 @@ const InfoButton = styled.button`
   border: 1px solid #ffee52;
   border-radius: 7px;
   padding-top: 4px;
-  margin: 0 1em 0 1em;
+  margin: 0 .3em 0 1em;
   background: #FFE60A;
   cursor: pointer;
   transition: all .2s ease-in-out;
@@ -177,7 +177,6 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     let warn = false;
     Object.keys(info["info"]).forEach((item) => {
       if (info["info"][item]?.warning){
-        console.log("WARN");
         warn = true;
       }
     })
