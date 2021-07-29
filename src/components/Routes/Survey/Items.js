@@ -70,10 +70,23 @@ const ChoiceButton = styled.div`
 const ButtonWrapper = styled.div`
 `
 
+const Icon = styled.img``
+
 const InfoButton = styled.button`
-  border: none;
+  border: 1px solid #ffee52;
+  border-radius: 7px;
+  padding-top: 4px;
+  margin: 0 1em 0 1em;
   background: #FFE60A;
   cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  &:hover ${Icon} {
+    transform: scale(1.2); 
+  }
+  box-shadow: 0px 1px 60px -7px rgba(0,0,0,0.89);
+  -webkit-box-shadow: 0px 1px 60px -7px rgba(0,0,0,0.89);
+  -moz-box-shadow: 0px 1px 60px -7px rgba(0,0,0,0.89);
 `
 
 const CardWrapper = styled.div`
@@ -93,7 +106,6 @@ const CardWrapper = styled.div`
 const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, ButtonSetCoating, ButtonSetCoatingLength, coatingLength, target_action }) => {
   const [showInfoCard, setShowInfoCard] = React.useState(false);
   const [cardContent, setCardContent] = React.useState();
-  const [enabledCard, setEnabledCard] = React.useState(false);
   const [allowDispatch, setAllowDispatch] = React.useState(true);
   const [isDesktop, setIsDesktop] = React.useState(false)
 
@@ -120,10 +132,6 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     }
   }))
 
-  //Unsubscribing from the store subscription
-  /*const unsubscribe = store.subscribe(() =>
-    console.log('State after dispatch: ', store.getState())
-  )*/
 
   React.useEffect(() => {
     if(allowDispatch){
@@ -137,21 +145,6 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     setShowInfoCard(!showInfoCard)
     setCardContent(item)
     e.stopPropagation()
-  }
-
-  const onClickAgree = () => {
-    setEnabledCard(true)
-  }
-
-
-  const checkWarning = (index) => {
-    let res;
-    childrenItems[index]?.info && Object.keys(childrenItems[index].info).forEach(key => {
-      if (childrenItems[index].info[key]?.warning){
-        res = true;
-      }
-    })
-    return res
   }
 
   //console.log("THE ACTION: ", action)
@@ -181,7 +174,6 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
 
 
   const hasWarning = (info) => {
-    console.log("THE INFO: ", info["info"])
     let warn = false;
     Object.keys(info["info"]).forEach((item) => {
       if (info["info"][item]?.warning){
@@ -192,23 +184,21 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     return warn
   }
 
-  console.log((childrenItems && childrenItems[0]["info"]) && hasWarning(childrenItems[0]))
-
   return (
     <ChoiceWrapper>
       <ButtonWrapper>
         { (childrenItems && childrenItems !== "no-products") &&
           Object.keys(childrenItems).map(key => (
             <ButtonInsideWrapper onClick={(e) => onClickButton(key, childrenItems[key], e)} key={key}>
-              <ButtonContentWrapper disabled={checkWarning(key) && !enabledCard}>
+              <ButtonContentWrapper>
                 <InfoButton style={{visibility: "hidden"}}>
-                  <img alt="info" onClick={() => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info)} height="20px" src="assets/icons/misc/info.svg"></img>
+                  <Icon alt="info" onClick={() => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info)} height="20px" width="20px" src="assets/icons/misc/info.svg"></Icon>
                 </InfoButton>
-                <ChoiceButton disabled={checkWarning(key) && !enabledCard}>
+                <ChoiceButton>
                   <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
                 </ChoiceButton>
                 <InfoButton style={{visibility: `${childrenItems[key]["info"] ? "visible" : "hidden"}`}}>
-                  <img alt="info" onClick={(e) => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info, e)} height="20px" src={childrenItems[key]["info"] && (hasWarning(childrenItems[key]) ? "/assets/icons/misc/warning (1).png"  : "/assets/icons/misc/info.svg")}></img>
+                  <Icon alt="info" onClick={(e) => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info, e)} height="20px" width="20px" src={childrenItems[key]["info"] && (hasWarning(childrenItems[key]) ? "/assets/icons/misc/warning (1).png"  : "/assets/icons/misc/info.svg")}></Icon>
                 </InfoButton>
               </ButtonContentWrapper>
             </ButtonInsideWrapper>
@@ -217,7 +207,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
       </ButtonWrapper>
       {(showInfoCard && isDesktop) &&
           <div>
-            <InfoCard onAgree={() => onClickAgree()} data={cardContent} />
+            <InfoCard data={cardContent} />
             <CardWrapper onClick={() => setShowInfoCard(false)}/>
           </div>
       }

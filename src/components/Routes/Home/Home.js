@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-import { addToHistory } from '../../../actions/history'
+import { addToHistory } from '../../../actions/history';
+import './home.css';
 
 const Wrapper = styled.div`
     display: flex;
@@ -49,16 +50,6 @@ const InfoText = styled.p`
 `
 
 const linkStyling = {
-    display: 'flex',
-    justifyContent: 'center',
-    textDecoration: 'none',
-    height: '40px',
-    width: '200px',
-    alignItems: 'center',
-    backgroundColor: '#ffe60a',
-    paddingLeft: '20px',
-    paddingRight: '20px',
-    borderRadius: '10px'
 }
 
 const Home = ({addToHistory}) => {
@@ -77,10 +68,11 @@ const Home = ({addToHistory}) => {
                 </InfoText>
                 <Link 
                     to="/fragen-und-antworten"
+                    className={"link"}
                     style={linkStyling}
                     onClick={() => addToHistory("0")}
                 >
-                    <p style={{"marginRight": "20px", "color": "black", "fontWeight": "bold"}}>Loslegen</p>
+                    <p className={"link-text"} style={{"marginRight": "20px", "fontWeight": "bold"}}>Loslegen</p>
                     <img 
                         src="assets/icons/misc/right.png"
                         style={{"height": "25px", "width": "25px", "margin": "5px"}}

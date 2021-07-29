@@ -108,11 +108,6 @@ const Arrow = styled.img`
     user-select: none; /* Standard */
 `
 
-const CheckerWrapper = styled.div`
-    display: flex;
-    align-items: center;
-`
-
 
 const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId }) => {
     const [infoState, setInfoState] = React.useState(0);
