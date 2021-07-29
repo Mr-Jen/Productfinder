@@ -112,7 +112,6 @@ const Arrow = styled.img`
 const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId }) => {
     const [infoState, setInfoState] = React.useState(0);
     const [showEnlarged, setShowEnlarged] = React.useState(false);
-    let checked = data?.infoState && warningIds.includes(data[infoState].unique);
 
     //console.log("IS DATA AND INFO?: ", data)
     
@@ -135,11 +134,6 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId }) => {
         }
     }
 
-    const onClickAgreed = ( infoId ) => {
-        checked ? RemoveInfoId(infoId) : AddInfoId(infoId)
-        onAgree();
-    }
-
     let default_content = {
         "title": "PLACEHOLDER",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -147,7 +141,7 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId }) => {
     }
 
     return (
-        <Wrapper warn={(data && data[infoState]?.warning) && (data[infoState]["warning"] && !checked)}>
+        <Wrapper warn={(data && data[infoState]?.warning) && (data[infoState]["warning"])}>
             <Arrow 
                 onClick={() => onClickNextCard(0)} 
                 hidden={data ? Object.keys(data).length === 1 : true} 

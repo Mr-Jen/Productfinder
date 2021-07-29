@@ -6,8 +6,9 @@ const Wrapper = styled.div`
     /*#F1F2F6*/
     height: 100%;
     width: 100%;
-    border-radius: 1.5em 1.5em 0 0;
-    margin: 1em;
+    border-radius: 2em 2em 0 0;
+    border: ${props => props.warn ? "4px solid #ba1616" : "1px solid white"};
+    margin: 2em 1em 1em 1em;
 
     display: flex;
     flex-direction: column;
@@ -17,7 +18,6 @@ const Wrapper = styled.div`
 const Header = styled.div`
     position: fixed;
     width: 90%;
-    background-color: rgb(230, 230, 230);
     border-radius: 2em 2em 0 0;
 `
 
@@ -52,8 +52,10 @@ const ContentText = styled.p`
 `
 
 function ContentCard({ content }) {
+    console.log(content?.warning)
+
     return (
-        <Wrapper>
+        <Wrapper warn={content?.warning}>
             <Header>
                 <ContentTitle>{content.title}</ContentTitle>
             </Header>
