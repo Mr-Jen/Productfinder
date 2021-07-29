@@ -48,7 +48,7 @@ const Icon = styled.img`
     }
 `
 
-function Header({handleNavigationChange}) {
+function Header({ handleNavigationChange }) {
     React.useEffect(() => {
         window.addEventListener('scroll',(e)=>{
             const wrapper = document.getElementById('wrapper');
@@ -62,7 +62,11 @@ function Header({handleNavigationChange}) {
 
     return (
         <Wrapper id="wrapper">
-            <Link to="/" style={{textDecoration: "none"}}>
+            <Link 
+                to="/" 
+                style={{textDecoration: "none"}}
+                onClick={() => handleNavigationChange(0)}
+            >
                 <TitleWrapper>
                     <Icon id="icon" src="/assets/icons/home/Brush-Search.svg"/>
                     <Title /*onClick={() => handleNavigationChange(0)}*/>

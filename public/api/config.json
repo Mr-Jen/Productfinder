@@ -68,6 +68,29 @@
                                 }
                             },
                             "children": null
+                        },
+                        "2": {
+                            "id": 2,
+                            "label": "Öl",
+                            "question": "",
+                            "action_value": null,
+                            "info": {
+                                "0": {
+                                    "id": 0,
+                                    "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
+                                    "title": "Warnung bei Farben",
+                                    "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben.",
+                                    "image": "assets/images/Lasur/lasur.png",
+                                    "warning": true
+                                },
+                                "1": {
+                                    "id": 1,
+                                    "title": "Deckende Farbe",
+                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                }
+                            },
+                            "children": null
                         }
                     } 
                 },

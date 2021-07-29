@@ -111,7 +111,7 @@ const Product = ({ title, category, surface, application, lifetime, gloss_level,
                 </CategoryWrapper>
                 <CategoryWrapper>
                     <CategoryText>Bindemittel: </CategoryText>
-                    <ValueText>{binder}</ValueText>
+                    <ValueText>{binder ? binder : "Keine"}</ValueText>
                 </CategoryWrapper>
                 <CategoryWrapper>
                     <CategoryText>Lebensdauer: </CategoryText>

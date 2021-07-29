@@ -67,6 +67,7 @@ const ImageWrapper = styled.div`
 
     @media (max-width: 1000px){
         position: inherit;
+        width: 60%;
         justify-content: center;
     }
 `
@@ -230,6 +231,11 @@ const ProductView = ({ match, productsData }) => {
                             <ButtonContent>
                                 <ButtonText>Kaufen</ButtonText>
                                 <Icon src='/assets/icons/misc/bag.png'></Icon>
+                            </ButtonContent>
+                        </Button>
+                        <Button style={{backgroundColor: "white", border:  "2px solid black", minWidth: "200px", "marginTop": "-20px"}} target="_blank" and rel="noopener noreferrer" href="https://animation.schwedischer-farbenhandel.de/index.html">
+                            <ButtonContent>
+                                <ButtonText style={{color: "black"}}>Zum Farbkonfigurator</ButtonText>
                             </ButtonContent>
                         </Button>
                     </ImageWrapper>
