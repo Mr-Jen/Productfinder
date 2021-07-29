@@ -179,6 +179,21 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
       }
   }
 
+
+  const hasWarning = (info) => {
+    console.log("THE INFO: ", info["info"])
+    let warn = false;
+    Object.keys(info["info"]).forEach((item) => {
+      if (info["info"][item]?.warning){
+        console.log("WARN");
+        warn = true;
+      }
+    })
+    return warn
+  }
+
+  console.log((childrenItems && childrenItems[0]["info"]) && hasWarning(childrenItems[0]))
+
   return (
     <ChoiceWrapper>
       <ButtonWrapper>
@@ -193,7 +208,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
                   <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
                 </ChoiceButton>
                 <InfoButton style={{visibility: `${childrenItems[key]["info"] ? "visible" : "hidden"}`}}>
-                  <img alt="info" onClick={(e) => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info, e)} height="20px" src="assets/icons/misc/info.svg"></img>
+                  <img alt="info" onClick={(e) => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info, e)} height="20px" src={childrenItems[key]["info"] && (hasWarning(childrenItems[key]) ? "/assets/icons/misc/warning (1).png"  : "/assets/icons/misc/info.svg")}></img>
                 </InfoButton>
               </ButtonContentWrapper>
             </ButtonInsideWrapper>

@@ -166,11 +166,6 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId }) => {
                         <Title>{data ? data[infoState]["title"] : default_content["title"]}</Title>
                     </TitleWrapper>
                     <Text>{data ? data[infoState]["content"] : default_content["content"]}</Text>
-                    {data[infoState]?.warning && <CheckerWrapper>
-                        <input checked={warningIds.length > 0 ? checked : false} onChange={() => onClickAgreed(data[infoState].unique)} type="checkbox"></input>
-                        <p>Ich habe den Warnhinweis gelesen</p>
-                    </CheckerWrapper>
-                    }
                 </ContentWrapper>
                 <ImageWrapper onClick={() => setShowEnlarged(true)} imgSrc={data ? data[infoState]["image"] : default_content["image"]}/>
             </CardWrapper>
