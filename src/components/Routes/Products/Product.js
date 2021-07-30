@@ -11,8 +11,9 @@ const Wrapper = styled.div`
     border-radius: 5px;
     width: 300px;
     background-color: #F9F9F9;
-    -webkit-box-shadow: 5px 5px 15px 5px #DBDBDB; 
-    box-shadow: 5px 5px 15px 5px #DBDBDB;
+    /*-webkit-box-shadow: 5px 5px 15px 5px #DBDBDB; 
+    box-shadow: 5px 5px 15px 5px #DBDBDB;*/
+    box-shadow: 3px 3px 5px 0 lightgrey;
 `
 
 const Title = styled.h5`
