@@ -166,6 +166,8 @@ const ButtonText = styled.p`
 
 const ProductView = ({ match, productsData }) => {
 
+    console.log("INSIDE PRODUCTVIEW")
+
     const [isDesktop, setIsDesktop] = React.useState(false)
 
     React.useEffect(() => {
@@ -204,8 +206,10 @@ const ProductView = ({ match, productsData }) => {
         const { params: { productId } } = match;
         const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
         const product = products[productId-1]
-        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link, images } = {...product}
+        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link, images, price } = {...product}
         
+        console.log("PRICE: ", price)
+
         return (
             <Wrapper>
                 {/*<SubHeader location={"/products"} title={product["name"]}/>*/}
@@ -278,7 +282,7 @@ const ProductView = ({ match, productsData }) => {
                             </PropsRow>
                             <PropsRow>
                                 <PropsValue style={{fontWeight: "bold"}}>{category_names_de[7]}</PropsValue>
-                                <PropsValue>{categories[category]}</PropsValue>
+                                <PropsValue>{price}</PropsValue>
                             </PropsRow>
                         </PropsWrapper>
                         <SubTitle>Produkteigenschaften</SubTitle>

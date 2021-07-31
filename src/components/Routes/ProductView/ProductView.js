@@ -204,8 +204,10 @@ const ProductView = ({ match, productsData }) => {
         const { params: { productId } } = match;
         const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
         const product = products[productId-1]
-        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link, images } = {...product}
+        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link, images, price } = {...product}
         
+        console.log(price)
+
         return (
             <Wrapper>
                 {/*<SubHeader location={"/products"} title={product["name"]}/>*/}
@@ -278,7 +280,7 @@ const ProductView = ({ match, productsData }) => {
                             </PropsRow>
                             <PropsRow>
                                 <PropsValue style={{fontWeight: "bold"}}>{category_names_de[7]}</PropsValue>
-                                <PropsValue>{categories[category]}</PropsValue>
+                                <PropsValue>{`${price[0].toString().replace('.', ',')}€ - ${price[1].toString().replace('.', ',')}€`}</PropsValue>
                             </PropsRow>
                         </PropsWrapper>
                         <SubTitle>Produkteigenschaften</SubTitle>
