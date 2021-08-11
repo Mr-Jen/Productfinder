@@ -18,7 +18,7 @@
                         "0": {
                             "id": 0,
                             "title": "Unbehandelt",
-                            "content": "Unbehandeltes Holz",
+                            "content": "Als unbehandelt gilt jedes Holz welches entweder neu ist und noch nie vorbehandelt wurde oder Holz welches bereits behandelt war, der alte Anstrich aber restlos entfernt wurde (z.B. abgeschliffen oder ausgewaschen). ",
                             "image": "assets/images/Lasur/lasur.png"
                         }
                     },
@@ -40,7 +40,7 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Lasur",
-                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
                                     "image": "assets/images/Lasur/lasur.png"
                                 }
                             },
@@ -103,13 +103,13 @@
                         "0": {
                             "id": 0,
                             "title": "Lasur",
-                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
                             "image": "assets/images/Lasur/lasur.png"
                         },
                         "1": {
                             "id": 1,
                             "title": "Öl",
-                            "content": "Unbehandeltes Holz trocknet mit der Zeit aus und neigt zum Vergrauen. Regelmäßige Pflege mit Holzöl verlängert die Haltbarkeit sichtbar: Das Öl dringt tief in das Holz ein, betont die natürliche Maserung und intensiviert den Farbton. Das Einsatzgebiet von Holzölen konzentriert sich auf Terrassenböden sowie Holzmöbel im Innen- und Außenbereich, zum Beispiel Balkonmöbel.",
+                            "content": "Öle ziehen tief ins Holz ein, lassen das Holz etwas kräftiger im Farbton wirken und haben eine matte Erscheinung. Frisch geöltes Holz ist wasserabweisend und hat eine gut erkennbare Maserung. Der Schutz eines Öls lässt im Freien bereits nach wenigen Wochen merklich nach.",
                             "image": "assets/images/Öl/öl.jpg"
                         }
                     },
@@ -129,13 +129,13 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Intakte Lasur",
-                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur!",
                                     "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
                                 },
                                 "2": {
                                     "id": 2,
                                     "title": "Intakte Lasur",
-                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche.",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur!",
                                     "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg"
                                 }
                             },
@@ -163,6 +163,13 @@
                                                     "unique": "9925168d-d260-4b68-bb56-767e3ab07f49",
                                                     "title": "Warnung zur Lasur",
                                                     "content": "Lasur darf nicht matt geworden sein, abblättern porös sein oder wasserdurchlässig. Trifft eins dieser Merkmale zu, ist die Lasur nicht mehr intakt. Intakte Lasur bildet eine glänzende, wasserabweisende Schicht auf der Holzoberfläche. ",
+                                                    "image": "assets/images/Lasur/lasur.png",
+                                                    "warning": true
+                                                },
+                                                "1": {
+                                                    "id": 1,
+                                                    "title": "Lasur",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur!",
                                                     "image": "assets/images/Lasur/lasur.png",
                                                     "warning": true
                                                 }
@@ -197,7 +204,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Lasuren",
-                                                                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -234,7 +241,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Lasuren",
-                                                                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -356,7 +363,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Verwitterte Lasur",
-                                            "content": "Sobald die Lasur matt geworden ist und keinen sichtbaren glänzenden Oberflächenfilm mehr bildet, muss sie bis aufs Holz abgeschliffen werden.",
+                                            "content": "Sobald die Lasur matt geworden ist und keinen sichtbaren glänzenden Oberflächenfilm mehr bildet, ist der Anstrich verwittert. Die verbrannten Rückstände der Lasur wirken matt, der Anstrich ist technisch betrachtet nur noch eine Verschmutzung des Holzes. Schleifen oder bürsten Sie die Rückstände der Lasur ab. Am besten wird eine Drahtbürste oder ein raues Schleifpapier (60er oder 80er Körnung) verwendet.",
                                             "image": "assets/images/Lasur/lasur-verwittert_maserung_sichtbar.jpg"
                                         }
                                     },
@@ -815,7 +822,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Lasuren",
-                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
                                                     "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
@@ -843,7 +850,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Öl",
-                                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                                    "content": "Öle ziehen tief ins Holz ein, lassen das Holz etwas kräftiger im Farbton wirken und haben eine matte Erscheinung. Frisch geöltes Holz ist wasserabweisend und hat eine gut erkennbare Maserung. Der Schutz eines Öls lässt im Freien bereits nach wenigen Wochen merklich nach.",
                                                     "image": "assets/images/Öl/öl.jpg"
                                                 }
                                             },
@@ -874,7 +881,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Lasur",
-                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
                                                     "image": "assets/images/lasur.png"
                                                 }
                                             },

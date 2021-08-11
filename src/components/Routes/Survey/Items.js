@@ -43,7 +43,8 @@ const ButtonContentWrapper = styled.div`
     &:hover { 
       color: #01447e;
       border: 2px solid black;
-  }
+      /*background-color: #f5dd0a;*/
+    }
   }
   @media (max-width: 500px) {
     margin: 1.5em 0 1.5em 0;
