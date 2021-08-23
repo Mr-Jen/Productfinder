@@ -194,7 +194,7 @@ const ProductView = ({ match, productsData }) => {
         "Glanzgrad",
         "Bindemittel",
         "Löslichkeit",
-        "Verbrauch"
+        "Preis pro qm"
     ]
 
     if (!productsData){
