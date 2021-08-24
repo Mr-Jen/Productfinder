@@ -128,6 +128,7 @@ const ProductText = styled.p`
     @media (min-width: 800px){
         font-size: 16px;
     }
+    margin-bottom: 10vw;
 `
 
 const Button = styled.a`
@@ -204,7 +205,7 @@ const ProductView = ({ match, productsData }) => {
         const { params: { productId } } = match;
         const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
         const product = products[productId-1]
-        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link, images, price } = {...product}
+        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link, images, price, info_text } = {...product}
         
         console.log(price)
 
@@ -284,7 +285,7 @@ const ProductView = ({ match, productsData }) => {
                             </PropsRow>
                         </PropsWrapper>
                         <SubTitle>Produkteigenschaften</SubTitle>
-                        <ProductText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis orci a scelerisque purus. Nam libero justo laoreet sit amet cursus sit amet. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Iaculis eu non diam phasellus vestibulum lorem. Rhoncus aenean vel elit scelerisque. Scelerisque varius morbi enim nunc. Egestas integer eget aliquet nibh praesent tristique magna. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Dolor sit amet consectetur adipiscing elit pellentesque. Felis bibendum ut tristique et. Ultricies mi eget mauris pharetra et ultrices neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Nulla pharetra diam sit amet nisl. Feugiat in fermentum posuere urna nec tincidunt. Tortor at auctor urna nunc id cursus. Sed risus pretium quam vulputate dignissim suspendisse in est. Quisque sagittis purus sit amet volutpat consequat mauris. Sodales ut eu sem integer vitae. Et tortor at risus viverra adipiscing at in. Dignissim diam quis enim lobortis scelerisque fermentum. Lacinia quis vel eros donec ac odio. In vitae turpis massa sed. Neque sodales ut etiam sit amet. Eu scelerisque felis imperdiet proin fermentum leo. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Tortor vitae purus faucibus ornare.</ProductText>
+                        <ProductText>{info_text}</ProductText>
                     </ContentWrapper>
                 </MainWrapper>
             </Wrapper>
