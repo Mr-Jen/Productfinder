@@ -1,0 +1,96 @@
+import React, {useEffect, useState } from 'react'
+import './rangeslider.css'
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
+`
+
+const Marker = styled.div`
+    /*border-radius: 50px;
+    height: 5px;
+    background-color: grey;
+    width: 5px;*/
+`
+
+const DotWrapper = styled.div`
+    display: flex;
+    width: 95%;
+    margin-left: 5px;
+    //border: 1px solid red;
+    justify-content: space-between;
+`
+
+const RangeSlider = ({ handleOnSlide }) => {  
+    const [rendered, setRendered] = useState(false);
+    const [valueOne, setValueOne] = useState(0);
+    const [valueTwo, setValueTwo] = useState(100); 
+    const sliderTrackRef = React.useRef();
+
+    let minGap = 10;  
+    let sliderMaxValue = 100;
+    let sliderStep = 10;
+    let sliderTrack = document.querySelector(".slider-track");      
+        
+    function fillColor(){
+        console.log("CALLING FILL COLOR")
+        let percent1 = (valueOne / sliderMaxValue) * 100;
+        let percent2 = (valueTwo / sliderMaxValue) * 100;
+        sliderTrackRef.current.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
+        //console.log(sliderTrackRef.current.style.background)
+    }
+
+    if(rendered){
+        sliderTrackRef.current.style.background = "#dadae5"
+    }
+
+    const setOne = (event) => {
+        let target = parseInt(event.target.value)
+        if(target <= (valueTwo - minGap) && target !== valueOne){
+            setValueOne(target)
+            //fillColor();
+        }
+    }
+
+    const setTwo = (event) => {
+        //console.log(event.target.value, valueOne + minGap)
+        let target = parseInt(event.target.value)
+        if(target >= (valueOne + minGap) && target !== valueTwo){
+            setValueTwo(target)
+        }  
+    }
+
+    useEffect(() => {
+        setRendered(true);
+    }, [])
+
+    useEffect(() => {
+        handleOnSlide([valueOne, valueTwo])
+    }, [valueOne, valueTwo])
+
+    return (
+        <Wrapper>
+            <div className="wrapper">
+                <div className="values">
+                    <span id="range1">
+                        {valueOne}
+                    </span>
+                    <span> - </span>
+                    <span id="range2">
+                        {valueTwo} %
+                    </span>
+                </div>
+                <div className="container">
+                    <div ref={sliderTrackRef} className="slider-track">
+                        <DotWrapper>
+                            {[...Array(sliderMaxValue / sliderStep)].map((el, index) => <Marker key={index}/>)}
+                        </DotWrapper>
+                    </div>
+                    <input type="range" min="0" max="100" step={sliderStep} value={valueOne} id="slider-1" onChange={(event) => setOne(event)} />
+                    <input type="range" min="0" max="100" step={sliderStep} value={valueTwo} id="slider-2" onChange={(event) => setTwo(event)} />
+                </div>
+            </div>
+        </Wrapper>
+    )
+}
+
+export default RangeSlider

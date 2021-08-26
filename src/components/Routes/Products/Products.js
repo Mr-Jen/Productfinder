@@ -53,6 +53,7 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
   const [initData, setInitData] = useState(null);
   const [sortBy, setSortBy] = useState();
   const [compareProducts, setCompareProducts] = useState([]);
+  const [glossValues, setGlossValues] = useState([]);
   const compareLength = 2;
 
   React.useEffect(() => {
@@ -144,8 +145,8 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
 
   if (filteredSurfaces && filteredApplications){
     let input_res = filteredSurfaces && filteredSurfaces
-    .map((elem, key) => elem === true ? key : null)
-    .filter(elem => elem !== null)
+      .map((elem, key) => elem === true ? key : null)
+      .filter(elem => elem !== null)
 
     let application_res = filteredApplications && filteredApplications
       .map((elem, key) => elem === true ? key : null)
@@ -154,6 +155,7 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
     var filteredObjectKeys = initData && Object.keys(products)
       .filter(objectKey => input_res.every(elem => products[objectKey]["surface"].includes(elem)))
       .filter(objectKey => application_res.every(elem => products[objectKey]["application"].includes(elem)))
+      .filter(objectKey => products[objectKey]["gloss_level"][0] >= glossValues[0] && products[objectKey]["gloss_level"][1] <= glossValues[1])
   }
   else {
     filteredObjectKeys = initData && Object.keys(products)
@@ -186,6 +188,9 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
     setSortBy(e) 
   }
 
+  const handleOnSlide = (values) => {
+    setGlossValues(values)
+  }
 
   return (
     <Wrapper>
@@ -205,7 +210,10 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
         </div>
       </Header>
       
-      <Filters handleChangeSort={(e) => handleChangeSort(e)}/>
+      <Filters 
+        handleChangeSort={(e) => handleChangeSort(e)} 
+        handleOnSlide={(values) => handleOnSlide(values)}
+      />
 
       <Count style={{margin: '1em'}}>{filteredObjectKeys?.length} {`${filteredObjectKeys?.length !== 1 ? "Produkte" : "Produkt"}`} gefunden</Count>
 

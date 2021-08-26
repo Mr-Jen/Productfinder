@@ -9,25 +9,25 @@ const MultiRangeSlider = ({ min, max, onChange, stepRange, minDiff }) => {
   const range = useRef(null);
 
     // Set width of the range to decrease from the left side
-    const setLeftValue = () => {
-        const minPercent = getPercent(minVal);
-        const maxPercent = getPercent(maxVal);
+  const setLeftValue = () => {
+    const minPercent = getPercent(minVal);
+    const maxPercent = getPercent(maxVal);
 
-        if (range.current) {
-            range.current.style.left = `${minPercent}%`;
-            range.current.style.width = `${maxPercent - minPercent}%`;
-        }
-    };
+    if (range.current) {
+        range.current.style.left = `${minPercent}%`;
+        range.current.style.width = `${maxPercent - minPercent}%`;
+    }
+  };
 
-        // Set width of the range to decrease from the right side
-        const setRightValue = () => {
-        const minPercent = getPercent(minVal);
-        const maxPercent = getPercent(maxVal);
+  // Set width of the range to decrease from the right side
+  const setRightValue = () => {
+    const minPercent = getPercent(minVal);
+    const maxPercent = getPercent(maxVal);
 
-        if (range.current) {
-            range.current.style.width = `${maxPercent - minPercent}%`;
-        }
-    };
+    if (range.current) {
+        range.current.style.width = `${maxPercent - minPercent}%`;
+    }
+  };
 
     useEffect(() => {
         setLeftValue()
@@ -56,8 +56,7 @@ const MultiRangeSlider = ({ min, max, onChange, stepRange, minDiff }) => {
         step={stepRange}
         onChange={event => {
             setMinVal(Math.min(Number(event.target.value), maxVal - minDiff))
-        }
-        }
+        }}        
         className="thumb thumb--left"
         style={{ zIndex: minVal > max - 100 && "5" }}
       />
@@ -69,8 +68,7 @@ const MultiRangeSlider = ({ min, max, onChange, stepRange, minDiff }) => {
         step={stepRange}
         onChange={event => {
             setMaxVal(Math.max(event.target.value, minVal + minDiff))
-        }
-        }
+        }}        
         className="thumb thumb--right"
       />
 

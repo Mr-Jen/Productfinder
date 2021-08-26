@@ -5,15 +5,17 @@ import { connect } from 'react-redux'
 import { changeSurface, changeApplication, resetSurfaces, resetApplications } from '../../../../actions/filter'
 import Filter from './Filter'
 import Select from './Select'
+import RangeSlider from '../RangeSlider/RangeSlider'
 
 const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50%;
+    width: 70%;
     margin-bottom: 40px;
     margin-top: 2em;
     justify-content: space-around;
+    //border: 1px solid black;
 
     @media (max-width: 1000px) {
         width: 75%;
@@ -27,12 +29,12 @@ const Wrapper = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 10rem;
+        height: 20rem;
     }
 `
 
 
-const Filters = ({ filter, onChangeApplication, onChangeSurface, onResetSurfaces, onResetApplications, products, handleChangeSort }) => {
+const Filters = ({ filter, onChangeApplication, onChangeSurface, onResetSurfaces, onResetApplications, products, handleChangeSort, handleOnSlide }) => {
     const [openFilter, setOpenFilter] = useState(null);
 
     const handleOpenFilter = (id) => {
@@ -67,6 +69,7 @@ const Filters = ({ filter, onChangeApplication, onChangeSurface, onResetSurfaces
                 title={"Verwendung"}
             />
             <Select handleChangeSort={(e) => handleChangeSort(e)}/>
+        	<RangeSlider handleOnSlide={(values) => handleOnSlide(values)}/>
         </Wrapper>
     )
 }

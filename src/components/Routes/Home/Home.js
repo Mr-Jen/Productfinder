@@ -47,6 +47,7 @@ const InfoText = styled.p`
     color: grey;
     font-size: 18px;
     line-height: 1.6;
+    margin: 2em 0 2em 0;
 `
 
 const linkStyling = {
