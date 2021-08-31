@@ -30,7 +30,7 @@ const BreadCrumb = styled.button`
   border: none;
   background: none;
   /*color: ${props => props.lastCrumb ? 'blue' : 'black'};*/
-  color: rgb(69, 116, 209);
+  color: black;
   font-size: ${props => props.lastCrumb ? '15px' : '14px'};
   font-weight: ${props => props.lastCrumb && 'bold'};
   cursor: ${props => props.lastCrumb ? 'auto' : 'pointer'};
