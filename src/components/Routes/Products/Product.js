@@ -94,7 +94,7 @@ const Compare = styled.div`
     user-select: none; /* Standard syntax *
 `
 
-const Product = ({ title, category, surface, application, lifetime, gloss_level, binder, solublity, images, id, onChange, isChecked}) => {
+const Product = ({ title, category, surface, application, lifetime, gloss_level, binder, solubility, images, id, onChange, isChecked}) => {
 
     const onClickCompare = () => {
         onChange(id)
@@ -129,6 +129,10 @@ const Product = ({ title, category, surface, application, lifetime, gloss_level,
                 <CategoryWrapper>
                     <CategoryText>Oberflächen: </CategoryText>
                     <ValueText>{surface}</ValueText>
+                </CategoryWrapper>
+                <CategoryWrapper>
+                    <CategoryText>Löslichkeit: </CategoryText>
+                    <ValueText>{solubility}</ValueText>
                 </CategoryWrapper>
             </ContentWrapper>
             <Link 
