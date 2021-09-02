@@ -195,6 +195,7 @@ const ProductView = ({ match, productsData }) => {
         "Glanzgrad",
         "Bindemittel",
         "Löslichkeit",
+        "Farbtöne",
         "Preis pro qm"
     ]
 
@@ -205,7 +206,7 @@ const ProductView = ({ match, productsData }) => {
         const { params: { productId } } = match;
         const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
         const product = products[productId-1]
-        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link, images, price, info_text } = {...product}
+        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link, images, price, info_text, hue } = {...product}
         
         console.log(price)
 
@@ -279,9 +280,13 @@ const ProductView = ({ match, productsData }) => {
                                 <PropsValue style={{fontWeight: "bold"}}>{category_names_de[6]}</PropsValue>
                                 <PropsValue>{solubilities[solubility]}</PropsValue>
                             </PropsRow>
-                            <PropsRow>
+                            {/*<PropsRow>
                                 <PropsValue style={{fontWeight: "bold"}}>{category_names_de[7]}</PropsValue>
                                 <PropsValue>{`${price[0].toString().replace('.', ',')}€ - ${price[1].toString().replace('.', ',')}€`}</PropsValue>
+                            </PropsRow>*/}
+                            <PropsRow>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[7]}</PropsValue>
+                                <PropsValue>{hue}</PropsValue>
                             </PropsRow>
                         </PropsWrapper>
                         <SubTitle>Produkteigenschaften</SubTitle>
