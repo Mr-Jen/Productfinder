@@ -3,6 +3,16 @@ import './rangeslider.css'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding: 1em 1em 0 1em;
+    @media (max-width: 1000px){
+        margin-bottom: 2em;
+    }
 `
 
 const Marker = styled.div`
@@ -47,7 +57,7 @@ const RangeSlider = ({ handleOnSlide }) => {
         let target = parseInt(event.target.value)
         if(target <= (valueTwo - minGap) && target !== valueOne){
             setValueOne(target)
-            //fillColor();
+            fillColor();
         }
     }
 
@@ -69,15 +79,11 @@ const RangeSlider = ({ handleOnSlide }) => {
 
     return (
         <Wrapper>
+            <strong style={{textAlign: "center", fontSize: "16px"}}>Glanzgrad in %</strong>
             <div className="wrapper">
-                <div className="values">
-                    <span id="range1">
-                        {valueOne}
-                    </span>
-                    <span> - </span>
-                    <span id="range2">
-                        {valueTwo} %
-                    </span>
+                <div className="values_wrapper">
+                    <input className="slider_value" step={10} min={0} onChange={(e) => setOne(e)} type="number" value={valueOne}/>
+                    <input className="slider_value" max={100} step={10} onChange={(e) => setTwo(e)} type="number" value={valueTwo}/>
                 </div>
                 <div className="container">
                     <div ref={sliderTrackRef} className="slider-track">
@@ -87,7 +93,7 @@ const RangeSlider = ({ handleOnSlide }) => {
                     </div>
                     <input type="range" min="0" max="100" step={sliderStep} value={valueOne} id="slider-1" onChange={(event) => setOne(event)} />
                     <input type="range" min="0" max="100" step={sliderStep} value={valueTwo} id="slider-2" onChange={(event) => setTwo(event)} />
-                </div>
+                </div>                
             </div>
         </Wrapper>
     )

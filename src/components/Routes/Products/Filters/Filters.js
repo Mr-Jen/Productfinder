@@ -9,27 +9,31 @@ import RangeSlider from '../RangeSlider/RangeSlider'
 
 const Wrapper = styled.div`
     display: flex;
-    flex-direction: row;
     align-items: center;
-    width: 70%;
-    margin-bottom: 40px;
+    width: 80%;
+    margin-bottom: 10px;
     margin-top: 2em;
     justify-content: space-around;
     //border: 1px solid black;
 
+    @media (max-width: 1300px){
+        width: 90%;
+    }
+
     @media (max-width: 1000px) {
-        width: 75%;
+        width: 80%;
+        flex-wrap: wrap-reverse;
     }
 
     @media (max-width: 700px) {
         width: 90%;
     }
-    @media (max-width: 550px) {
+    @media (max-width: 580px) {
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 20rem;
+        height: 25rem;
     }
 `
 
