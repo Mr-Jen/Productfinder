@@ -6,8 +6,8 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f7f7f7;
-    border: 1px solid #ebebeb;
+    background-color: #fafafa;
+    border: 1px solid #f1f1f1;
     border-radius: 10px;
     padding: 1em 1em 0 1em;
     @media (max-width: 1000px){
