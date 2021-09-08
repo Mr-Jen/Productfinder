@@ -19,6 +19,8 @@ const Wrapper = styled.div`
     z-index: 10000000;
 
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 
     @media (min-width: 1200px){
@@ -118,12 +120,33 @@ const Img = styled.img`
     cursor: pointer;
 `
 
+const InnerWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    height: 100%;
+`
+
+const PointNav = styled.div`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+`
+
+const Dot = styled.span`
+    color: ${props => props.active ? "black" : "grey"};
+    display: inline-block;
+    font-size: 35px;
+    width: 25px;
+    cursor: pointer;
+`
+
 
 const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose }) => {
     const [infoState, setInfoState] = React.useState(0);
     const [showEnlarged, setShowEnlarged] = React.useState(false);
 
     //console.log("IS DATA AND INFO?: ", data)
+    let slideLength = Object.keys(data).length;
     
     const onClickNextCard = (e) => {
         if (e === 0){
@@ -152,33 +175,42 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
 
     return (
         <Wrapper warn={(data && data[infoState]?.warning) && (data[infoState]["warning"])}>
-            <Arrow 
-                onClick={() => onClickNextCard(0)} 
-                hidden={data ? Object.keys(data).length === 1 : true} 
-                height="70" src="assets/icons/misc/arrow.svg"
-                side={0}
-                rotate_angle={true}
-            />
-            <CardWrapper>
-                <ContentWrapper>
-                    <TitleWrapper>
-                        <Title>{data ? data[infoState]["title"] : default_content["title"]}</Title>
-                    </TitleWrapper>
-                    <Text>{data ? data[infoState]["content"] : default_content["content"]}</Text>
-                </ContentWrapper>
-                <ImageWrapper onClick={() => setShowEnlarged(true)} imgSrc={data ? data[infoState]["image"] : default_content["image"]}/>
-            </CardWrapper>
-            <Arrow 
-                onClick={() => onClickNextCard(1)} 
-                hidden={data ? Object.keys(data).length === 1 : true} 
-                height="70" src="assets/icons/misc/arrow.svg"
-                side={1}
-            />
-            {showEnlarged &&
-                <div>
-                    <DetailImage onClickClose={() => setShowEnlarged(false)} imageSrc={data ? data[infoState]["image"] : default_content["image"]}/>
-                </div>
-            }
+            <InnerWrapper>
+                <Arrow 
+                    onClick={() => onClickNextCard(0)} 
+                    hidden={data ? Object.keys(data).length === 1 : true} 
+                    height="70" src="assets/icons/misc/arrow.svg"
+                    side={0}
+                    rotate_angle={true}
+                />
+                <CardWrapper>
+                    <ContentWrapper>
+                        <TitleWrapper>
+                            <Title>{data ? data[infoState]["title"] : default_content["title"]}</Title>
+                        </TitleWrapper>
+                        <Text>{data ? data[infoState]["content"] : default_content["content"]}</Text>
+                    </ContentWrapper>
+                    <ImageWrapper onClick={() => setShowEnlarged(true)} imgSrc={data ? data[infoState]["image"] : default_content["image"]}/>
+                </CardWrapper>
+                <Arrow 
+                    onClick={() => onClickNextCard(1)} 
+                    hidden={data ? Object.keys(data).length === 1 : true} 
+                    height="70" src="assets/icons/misc/arrow.svg"
+                    side={1}
+                />
+                {showEnlarged &&
+                    <div>
+                        <DetailImage onClickClose={() => setShowEnlarged(false)} imageSrc={data ? data[infoState]["image"] : default_content["image"]}/>
+                    </div>
+                }
+            </InnerWrapper>
+            <PointNav>
+                    {
+                        [...Array(slideLength)].map((e, i) => {
+                            return <Dot onClick={() => setInfoState(i)} key={i} active={i === infoState}>&#8226;</Dot>
+                        })
+                    }
+            </PointNav>
             <Img src="assets/icons/misc/close-light-bg.svg" onClick={() => onClose()}/>
         </Wrapper>
     )
