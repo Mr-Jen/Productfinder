@@ -214,7 +214,7 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
                     </div>
                 }
             </InnerWrapper>
-            <BottomWrapper>
+            {slideLength > 1 && <BottomWrapper>
                 <Numeration style={{visibility: "hidden"}}>{`${infoState + 1} / ${slideLength}`}</Numeration>
                 <PointNav>
                         {
@@ -224,7 +224,7 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
                         }
                 </PointNav>
                 <Numeration>{`${infoState + 1} / ${slideLength}`}</Numeration>
-            </BottomWrapper>
+            </BottomWrapper>}
             <Img src="assets/icons/misc/close-light-bg.svg" onClick={() => onClose()}/>
         </Wrapper>
     )

@@ -18,13 +18,20 @@ const ChoiceWrapper = styled.div`
 
 const ButtonInsideWrapper = styled.div`
   border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  margin: 2em 0 2em 0;
 `
 
 const ButtonContentWrapper = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  height: 3em;
+
   background: #FFE60A;
   border-radius: 5px;
   cursor: pointer;
@@ -33,12 +40,8 @@ const ButtonContentWrapper = styled.div`
     color: darkblue;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  margin: 2em 0 2em 0;
   border: 2px solid transparent;
-  /*&:hover {
-    color: #01447e;
-    border: 2px solid black;
-  }*/
+
   @media (hover: hover) and (pointer: fine) {
     &:hover { 
       color: #01447e;
@@ -50,44 +53,50 @@ const ButtonContentWrapper = styled.div`
     margin: 1.5em 0 1.5em 0;
     border: 1px solid rgb(232, 232, 232);
   }
+  //webkit-box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.07); 
+  //box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.07);
+
 `
 
 const ChoiceButton = styled.div`
-  padding: 5px;
-  margin: 5px;
   border-radius: 5px;
-  cursor: ${props => props.disabled && 'not-allowed'};
-  /*pointer-events: ${props => props.disabled && 'none'};*/
-  /*opacity: ${props => props.disabled && 0.5};
-  background: ${props => props.disabled && '#CCC'};*/
   width: 100%;
   text-align: center;
 
   @media (max-width: 500px) {
     font-size: .9em;
   }
-`
-
-const ButtonWrapper = styled.div`
+  margin: 0 1em 0 1em;
 `
 
 const Icon = styled.img``
 
 const InfoButton = styled.button`
-  border: 1px solid #ffee52;
+  height: 3em;
+  width: 3em;
+  margin-left: 1em;
+  border: 1px solid transparent;
   border-radius: 7px;
   padding-top: 4px;
-  margin: 0 .3em 0 1em;
   background: #FFE60A;
   cursor: pointer;
   transition: all .2s ease-in-out;
 
-  &:hover ${Icon} {
+  /*&:hover ${Icon} {
     transform: scale(1.2); 
+  }*/
+  @media (hover: hover) and (pointer: fine) {
+    &:hover { 
+      color: #01447e;
+      border: 2px solid black;
+      /*background-color: #f5dd0a;*/
+    }
   }
-  box-shadow: 0px 1px 60px -7px rgba(0,0,0,0.89);
-  -webkit-box-shadow: 0px 1px 60px -7px rgba(0,0,0,0.89);
-  -moz-box-shadow: 0px 1px 60px -7px rgba(0,0,0,0.89);
+  -webkit-box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.15); 
+  box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.15);
+  //box-shadow: 0px 1px 60px -7px rgba(0,0,0,0.89);
+  //-webkit-box-shadow: 0px 1px 60px -7px rgba(0,0,0,0.89);
+  //-moz-box-shadow: 0px 1px 60px -7px rgba(0,0,0,0.89);
 `
 
 const CardWrapper = styled.div`
@@ -186,25 +195,22 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
 
   return (
     <ChoiceWrapper>
-      <ButtonWrapper>
+      <div>
         { (childrenItems && childrenItems !== "no-products") &&
           Object.keys(childrenItems).map(key => (
             <ButtonInsideWrapper onClick={(e) => onClickButton(key, childrenItems[key], e)} key={key}>
               <ButtonContentWrapper>
-                <InfoButton style={{visibility: "hidden"}}>
-                  <Icon alt="info" onClick={() => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info)} height="20px" width="20px" src="assets/icons/misc/info.svg"></Icon>
-                </InfoButton>
                 <ChoiceButton>
                   <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
                 </ChoiceButton>
-                <InfoButton style={{visibility: `${childrenItems[key]["info"] ? "visible" : "hidden"}`}}>
-                  <Icon alt="info" onClick={(e) => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info, e)} height="20px" width="20px" src={childrenItems[key]["info"] && (hasWarning(childrenItems[key]) ? "/assets/icons/misc/warning (1).png"  : "/assets/icons/misc/info.svg")}></Icon>
-                </InfoButton>
               </ButtonContentWrapper>
+              <InfoButton style={{visibility: `${childrenItems[key]["info"] ? "visible" : "hidden"}`}}>
+                  <Icon alt="info" onClick={(e) => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info, e)} height="20px" width="20px" src={childrenItems[key]["info"] && (hasWarning(childrenItems[key]) ? "/assets/icons/misc/warning (1).png"  : "/assets/icons/misc/info.svg")}></Icon>
+              </InfoButton>
             </ButtonInsideWrapper>
           ))
         }
-      </ButtonWrapper>
+      </div>
       {(showInfoCard && isDesktop) &&
           <div>
             <InfoCard data={cardContent} onClose={() => setShowInfoCard(false)}/>

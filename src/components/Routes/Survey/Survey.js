@@ -30,8 +30,8 @@ const ContentWrapper = styled.div`
   margin-top: 2em;
 `
 
-export const Survey = ({isHome, handleNavigationChange}) => {
-    console.log(isHome)
+export const Survey = ({isHome, isFirst, handleNavigationChange}) => {
+    console.log(isHome, isFirst)
     return (
         <Wrapper>
             <HeaderWrapper>
@@ -43,12 +43,18 @@ export const Survey = ({isHome, handleNavigationChange}) => {
                   onClick={() => handleNavigationChange(0)}
                   />
                 }
-                <BreadCrumbs/>
+                {isFirst ?                   
+                  <NavigateButton 
+                    location={"/"} 
+                    text={"Zum Start"} 
+                    direction={"left"}
+                    onClick={() => handleNavigationChange(0)}
+                  /> : <BreadCrumbs/>}
             </HeaderWrapper>
             <ContentWrapper>
               <Infos/>
               <Items/>
-              {!isHome && < BackButton/>}
+              {(!isHome && !isFirst) &&  < BackButton/>}
             </ContentWrapper>
         </Wrapper>
     )
@@ -61,7 +67,8 @@ const mapDispatchToProps = dispatch => ({
   
 const mapStateToProps = ({history}) => {
 return {
-    isHome: history.length === 0
+    isHome: history.length === 0,
+    isFirst: history.length === 1
 }
 }
 

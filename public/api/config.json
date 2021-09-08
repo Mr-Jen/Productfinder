@@ -4,13 +4,13 @@
         "0": {
             "id": 0,
             "label": "Holzfassade für Gartenhaus, Wohnhaus oder Carport",
-            "question": "Ist es unbehandeltes Holz oder wurde schon ein Anstrich / eine Behandlung vorgenommen?",
+            "question": "Ist es unbehandeltes Holz oder wurde schon ein Anstrich / eine Behandlung vorgenommen? Suchen Sie die Kategorie aus, die am ehesten auf Ihren Untergrund zutrifft. Über die Infoboxen erhalten Sie weitere Informationen.",
             "breadcrumb": "Holzfassade",
             "children": {
                 "0": {
                     "id": 0,
                     "label": "Unbehandelt / Komplett abgeschliffen",
-                    "question": "Soll jetzt eine Lasur oder eine deckende Farbe folgen?",
+                    "question": "Welche Art von Anstrich soll nun folgen? Über die Infoboxen erhalten Sie weitere Informationen zu der Art des Anstrichs.",
                     "target_action": "set_target",
                     "action": "set_coating",
                     "breadcrumb": "Blankes Holz",
@@ -97,7 +97,7 @@
                 "1": {
                     "id": 1,
                     "label": "Bereits mit Öl, Lasur oder Farbe vorbehandelt",
-                    "question": "In welchem Zustand ist der Anstrich? ",
+                    "question": "Was für einen Untergrund haben Sie? Informationen über die jeweilige Kategorie finden Sie in den Infoboxen.",
                     "breadcrumb": "Bereits vorbehandelt",
                     "info": {
                         "0": {
