@@ -10,7 +10,7 @@
                 "0": {
                     "id": 0,
                     "label": "Unbehandelt / Komplett abgeschliffen",
-                    "question": "Welche Art von Anstrich soll nun folgen? Über die Infoboxen erhalten Sie weitere Informationen zu der Art des Anstrichs.",
+                    "question": "Welche Art von Anstrich soll nun folgen? Wichtig: Streichen Sie frisches Holz nie unmittelbar nach dem Aufbau. Weitere Informationen erhalten Sie in den Infoboxen.",
                     "target_action": "set_target",
                     "action": "set_coating",
                     "breadcrumb": "Blankes Holz",
@@ -117,7 +117,7 @@
                         "0": {            
                             "id": 0,
                             "label": "Intakte Farbe oder Lasur",
-                            "question": "Bitte zunächst die Oberfläche säubern",
+                            "question": "Bitte zunächst die Oberfläche säubern. Um einen neuen Anstrich aufzutragen, muss der Untergrund zuächst von Verschmutzungen befreit worden sein. Die Anleitung finden Sie in der Infobox.",
                             "breadcrumb": "Anstrich Intakt",
                             "info": {
                                 "0": {
@@ -143,7 +143,7 @@
                                 "0": {
                                     "id": 0,
                                     "label": "Oberfläche gesäubert?",
-                                    "question": "Woraus besteht der Altanstrich?",
+                                    "question": "Was für eine Art von Anstrich haben Sie? Achten Sie besonders auf die Warnhinweise in den Infoboxen. Abhänging vom Zustand kann es sein, dass der Altanstrich komplett entfernt werden muss.",
                                     "info": {
                                         "0": {
                                             "id": 0,
@@ -156,7 +156,7 @@
                                         "0": {            
                                             "id": 0,
                                             "label": "Lasur",
-                                            "question": "Welche Bindemittel waren in der Lasur?",
+                                            "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst rausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Die Anleitung zum Test finden Sie in der Infobox. ",
                                             "info": {
                                                 "0": {
                                                     "id": 0,
@@ -270,7 +270,7 @@
                                         "1": {           
                                             "id": 1,
                                             "label": "Farbe",
-                                            "question": "Welche Bindemittel waren in der Farbe?",
+                                            "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst rausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Die Anleitung zum Test finden Sie in der Infobox.",
                                             "info": {
                                                 "0": {
                                                     "id": 0,
@@ -279,13 +279,19 @@
                                                     "content": "Achtung! Farbe darf nicht blättern oder rissig sein. Blättert Farbe ab oder ist stark rissig, kann sie nicht mehr direkt überstrichen werden.",
                                                     "image": "assets/images/Lasur/lasur.png",
                                                     "warning": true
+                                                },
+                                                "1": {
+                                                    "id": 1,
+                                                    "title": "Deckende Farbe",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                    "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
                                             "children": {
                                                 "0": {
                                                     "id": 0,
                                                     "label": "Test mit Schleifpapier",
-                                                    "question": "Welche Bindemittel sind in Ihrem Werkstoff vorhanden?",
+                                                    "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst rausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Die Anleitung zum Test finden Sie in der Infobox.",
                                                     "info": {
                                                         "0": {
                                                             "id": 0,
@@ -353,12 +359,12 @@
                         "1": {            
                             "id": 1,
                             "label": "Verwitterte Farbe oder Lasur",
-                            "question": "Handelt es sich um eine Farbe oder Lasur?",
+                            "question": "Was für eine Art von Anstrich haben Sie? Achten Sie besonders auf die Warnhinweise in den Infoboxen. Abhänging vom Zustand kann es sein, dass der Altanstrich komplett entfernt werden muss.",
                             "children": {
                                 "0": {
                                     "id": 0,
                                     "label": "Verwitterte Lasur",
-                                    "question": "Verwitterte Lasur bitte erst abschleifen",
+                                    "question": "Verwitterte Lasur darf nicht wieder überstrichen werden. Der Altanstrich muss zunächst komplett entfernt werden, bevor ein neuer Anstrich aufgetragen werden kann.",
                                     "info": {
                                         "0": {
                                             "id": 0,
@@ -403,7 +409,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "label": "Weiter zum Bindemitteltest",
-                                                            "question": "Welche Bindemittel waren in der Lasur?",
+                                                            "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst rausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Die Anleitung zum Test finden Sie in der Infobox.",
                                                             "breadcrumb": "Bindemitteltest",
                                                             "children": {
                                                                 "0": {
@@ -552,7 +558,7 @@
                                     "id": 1,
                                     "label": "Verwitterte Farbe",
                                     "action": "set_coating",
-                                    "question": null,
+                                    "question": "Verwitterte Farbe darf nicht rissig sein oder abblättern. In diesem Fall gehen Sie zwei Schritte zurück und wählen Sie die Kategorie 'Rissiger / Abblätternder Anstrich'. Solange der Altanstrich noch intakt und fest ist, muss dieser lediglich gereingt werden.",
                                     "info": {
                                         "0": {
                                             "id": 0,
@@ -566,7 +572,7 @@
                                             "id": 0,
                                             "label": "Bindemitteltest der Farbe",
                                             "action_value": 4,
-                                            "question": "Welche Bindemittel waren in der Farbe?",
+                                            "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst rausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Die Anleitung zum Test finden Sie in der Infobox.",
                                             "children": {
                                                 "0": {
                                                     "id": 0,
@@ -639,7 +645,7 @@
                         "2": {
                             "id": 2,
                             "label": "Rissiger / abblätternder Anstrich",
-                            "question": "Bitte zunächst abschleifen",
+                            "question": "Schleifen Sie nun alle rissigen und abblätternden Stellen, bis Sie entweder festsitzende Farbe oder rohes Holz vorfinden.",
                             "info": {
                                 "0": {
                                     "id": 0,
@@ -652,7 +658,15 @@
                                 "0": {            
                                     "id": 0,
                                     "label": "Abgeschliffen",
-                                    "question": "Was verbleibt?",
+                                    "question": "In welchem Zustand ist der Untergrund? Liegt intakte Farbe vor oder ist alles abgeschliffen?",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "title": "Abschleifen",
+                                            "content": "Beim Abschleifen ist darauf zu achten, dass xyz",
+                                            "image": "assets/images/paint-on-wood.gif"
+                                        }
+                                    },
                                     "children": {
                                         "0": {           
                                             "id": 0,
@@ -701,7 +715,7 @@
                                         "1": {            
                                             "id": 1,
                                             "label": "Intakte Farbe",
-                                            "question": "Welche Bindemittel waren in der Farbe?",
+                                            "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst rausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Die Anleitung zum Test finden Sie in der Infobox.",
                                             "info": {
                                                 "0": {
                                                     "id": 0,
@@ -714,7 +728,7 @@
                                                 "0": {            
                                                     "id": 0,
                                                     "label": "Test mit Schleifpapier",
-                                                    "question": "Welches Bindemittel liegt vor: ",
+                                                    "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst rausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Die Anleitung zum Test finden Sie in der Infobox.",
                                                     "action": "set_coating",                                                    
                                                     "info": {
                                                         "0": {
@@ -782,7 +796,7 @@
                         "3": {           
                             "id": 3,
                             "label": "Mit Öl behandelt",
-                            "question": "Um welches Öl handelt es sich?",
+                            "question": "Um welches Öl handelt es sich? Nicht alle Öle haben die gleichen Eigenschaften. Um festzustellen, was sich als Folgeanstrich eignet, muss die Art des Öls bestimmt werden. Genauere Informationen finden Sie in den Infoboxen. Ist der Ölanstrich älter als 3 Monate, reinigen Sie diesen mit Wasser und Seife und wählen Sie beim Start 'Unbehandelt / Komplett abgeschliffen' aus.",
                             "action": "set_coating",
                             "info": {
                                 "0": {
@@ -801,15 +815,15 @@
                             "children": {
                                 "0": {            
                                     "id": 0,
-                                    "label": "Trocknendes / Aushärtendes Öl?",
-                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                    "label": "Trocknendes / Aushärtendes Öl ",
+                                    "question": "Welche Art von Anstrich soll nun folgen? Über die Infoboxen erhalten Sie weitere Informationen zu der Art des Anstrichs.",
                                     "action_value": 2,
                                     "target_action": "set_target",
                                     "info": {
                                         "0": {
                                             "id": 0,
                                             "title": "Aushärtendes Öl",
-                                            "content": "Auf aushärtenden Ölen muss teilweise grundiert werden. Ein aushärtendes Öl ersetzt bspw. Grundieröl oder gekochtes Leinöl, jedoch keinen Haftgrund. Sind Öle älter als 4 Wochen empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer.",
+                                            "content": "Auf aushärtenden Ölen muss teilweise grundiert werden. Ein aushärtendes Öl ersetzt bspw. Grundieröl oder gekochtes Leinöl, jedoch keinen Haftgrund. Sind Öle älter als 3 Monate empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer.",
                                             "image": "assets/images/Öl/holzöl.jpg"
                                         }
                                     },
@@ -861,7 +875,7 @@
                                 "1": {            
                                     "id": 1,
                                     "label": "Rohes / nicht-trocknendes Öl",
-                                    "question": "Hier eignen sich nur folgende Produkte: ",
+                                    "question": "Welche Art von Anstrich soll nun folgen? Über die Infoboxen erhalten Sie weitere Informationen zu der Art des Anstrichs.",
                                     "action_value": 3,
                                     "target_action": "set_target",
                                     "info": {
@@ -891,6 +905,14 @@
                                             "id": 1,
                                             "label": "Farbe",
                                             "question": "",
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Deckende Farbe",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                                    "image": "assets/images/Lasur/lasur.png"
+                                                }
+                                            },
                                             "children": null
                                         },
                                         "2": {
@@ -916,7 +938,7 @@
                 "2": {            
                     "id": 2,
                     "label": "Mit werkseitiger Imprägnierung / Grundierung behandelt",
-                    "question": "Was für eine Art von Imprägnierung oder Grundierung liegt vor?",
+                    "question": "Was für eine Art von Imprägnierung oder Grundierung liegt vor? Bitte lesen Sie die Infoboxen genau durch, nicht alle werkseitigen Anstriche sind zum Überstreichen geeignet.",
                     "breadcrumb": "Werkseitiger Anstrich",
                     "action": "set_coating",
                     "info": {
@@ -946,7 +968,7 @@
                             "id": 0,
                             "label": "Grundierung",
                             "action_value": 5,
-                            "question": "Welche Bindemittel sind in Ihrem Werkstoff vorhanden?",
+                            "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst rausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Dies können Sie bei Ihrem Hersteller erfragen.",
                             "info": {
                                 "0": {
                                     "id": 0,
@@ -1014,7 +1036,7 @@
                         "1": {            
                             "id": 1,
                             "label": "Imprägnierung",
-                            "question": "",                            
+                            "question": "Welche Art von Anstrich soll nun folgen? Über die Infoboxen erhalten Sie weitere Informationen zu der Art des Anstrichs.",                            
                             "target_action": "set_target",
                             "info": {
                                 "0": {
@@ -1080,150 +1102,31 @@
                                         }
                                     },
                                     "children": null
+                                },
+                                "2": {
+                                    "id": 2,
+                                    "label": "Öl",
+                                    "question": "",
+                                    "action_value": null,
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
+                                            "title": "Warnung bei Farben",
+                                            "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben.",
+                                            "image": "assets/images/Lasur/lasur.png",
+                                            "warning": true
+                                        },
+                                        "1": {
+                                            "id": 1,
+                                            "title": "Deckende Farbe",
+                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                        }
+                                    },
+                                    "children": null
                                 }
                             } 
-                        },                        
-                        "2": {            
-                            "id": 2,
-                            "label": "Öl",
-                            "question": "Um welche Art von Öl handelt es sich?",                                                    
-                            "action": "set_coating",
-                            "info": {
-                                "0": {
-                                    "id": 0,
-                                    "unique": "4052956e-3822-4fed-8edd-f38ae1117792",
-                                    "title": "Warnung Öl",
-                                    "content": "Achtung! Holzöle halten maximal ein Jahr. Nach einem Jahr muss eine Tiefenreinigung mit einem Fassadenreiniger vorgenommen werden, danach gilt das Holz als neu/unbehandelt.",
-                                    "image": "assets/images/Öl/holzöl.jpg",
-                                    "warning": true
-                                },
-                                "1": {
-                                    "id": 1,
-                                    "title": "Öl",
-                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
-                                    "image": "assets/images/Öl/öl.jpg"
-                                }
-                            },
-                            "children": {
-                                "0": {            
-                                    "id": 0,
-                                    "label": "Trocknendes / Aushärtendes Öl?",
-                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                    "action_value": 2,
-                                    "target_action": "set_target",
-                                    "info": {
-                                        "0": {
-                                            "id": 0,
-                                            "title": "Aushärtendes Öl",
-                                            "content": "Auf aushärtenden Ölen muss teilweise grundiert werden. Ein aushärtendes Öl ersetzt bspw. Grundieröl oder gekochtes Leinöl, jedoch keinen Haftgrund. Sind Öle älter als 4 Wochen empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer.",
-                                            "image": "assets/images/Öl/holzöl.jpg"
-                                        }
-                                    },
-                                    "children": {
-                                        "0": {
-                                            "id": 0,
-                                            "label": "Lasur",
-                                            "question": "",
-                                            "info": {
-                                                "0": {
-                                                    "id": 0,
-                                                    "title": "Lasuren",
-                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                    "image": "assets/images/Lasur/lasur.png"
-                                                }
-                                            },
-                                            "children": null
-                                        },
-                                        "1": {
-                                            "id": 1,
-                                            "label": "Farbe",
-                                            "question": "",
-                                            "info": {
-                                                "0": {
-                                                    "id": 0,
-                                                    "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
-                                                    "image": "assets/images/Lasur/lasur.png"
-                                                }
-                                            },
-                                            "children": null
-                                        },
-                                        "2": {
-                                            "id": 2,
-                                            "label": "Öl",
-                                            "question": "",
-                                            "info": {
-                                                "0": {
-                                                    "id": 0,
-                                                    "title": "Öl",
-                                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
-                                                    "image": "assets/images/Öl/öl.jpg"
-                                                }
-                                            },
-                                            "children": null
-                                        }
-                                    } 
-                                },
-                                "1": {            
-                                    "id": 1,
-                                    "label": "Rohes / nicht-trocknendes Öl",
-                                    "question": "Hier eignen sich nur folgende Produkte: ",
-                                    "action_value": 3,
-                                    "target_action": "set_target",
-                                    "info": {
-                                        "0": {
-                                            "id": 0,
-                                            "title": "Rohes Öl",
-                                            "content": "Sind Öle bereits länger als 3 Monate auf dem Holz empfiehlt sich eine Reinigung vorab. Danach kann mit verschiedenen Produkten direkt überstrichen werden.",
-                                            "image": "assets/images/Öl/öl.jpg "
-                                        }
-                                    },
-                                    "children": {
-                                        "0": {
-                                            "id": 0,
-                                            "label": "Lasur",
-                                            "question": "",
-                                            "info": {
-                                                "0": {
-                                                    "id": 0,
-                                                    "title": "Lasuren",
-                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                    "image": "assets/images/Lasur/lasur.png"
-                                                }
-                                            },
-                                            "children": null
-                                        },
-                                        "1": {
-                                            "id": 1,
-                                            "label": "Farbe",
-                                            "question": "",
-                                            "info": {
-                                                "0": {
-                                                    "id": 0,
-                                                    "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
-                                                    "image": "assets/images/Lasur/lasur.png"
-                                                }
-                                            },
-                                            "children": null
-                                        },
-                                        "2": {
-                                            "id": 2,
-                                            "label": "Öl",
-                                            "question": "",
-                                            "info": {
-                                                "0": {
-                                                    "id": 0,
-                                                    "title": "Öl",
-                                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
-                                                    "image": "assets/images/Öl/öl.jpg"
-                                                }
-                                            },
-                                            "children": null
-                                        }
-                                    } 
-                                }
-                            }
                         }
                     }
                 },

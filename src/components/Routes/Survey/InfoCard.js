@@ -126,6 +126,7 @@ const InnerWrapper = styled.div`
     display: flex;
     justify-content: center;
     height: 100%;
+    width: 100%;
 `
 
 const BottomWrapper = styled.div`
@@ -187,7 +188,8 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
                 <Arrow 
                     onClick={() => onClickNextCard(0)} 
                     hidden={data ? Object.keys(data).length === 1 : true} 
-                    height="70" src="assets/icons/misc/arrow.svg"
+                    height="70" 
+                    src="assets/icons/misc/arrow.svg"
                     side={0}
                     rotate_angle={true}
                     greyOut={infoState === 0}
@@ -204,7 +206,8 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
                 <Arrow 
                     onClick={() => onClickNextCard(1)} 
                     hidden={data ? Object.keys(data).length === 1 : true} 
-                    height="70" src="assets/icons/misc/arrow.svg"
+                    height="70" 
+                    src="assets/icons/misc/arrow.svg"
                     side={1}
                     greyOut={infoState === Object.keys(data).length - 1}
                 />

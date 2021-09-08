@@ -50,6 +50,21 @@ const InfoText = styled.p`
     margin: 2em 0 2em 0;
 `
 
+const Icon = styled.img``
+
+const InfoButton = styled.button`
+  height: 3em;
+  width: 3em;
+  margin: 0 1em 0 1em;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  padding-top: 4px;
+  background: #FFE60A;
+
+  //-webkit-box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.15); 
+  //box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.15);
+`
+
 const linkStyling = {
 }
 
@@ -65,7 +80,11 @@ const Home = ({addToHistory}) => {
                     Ihrem Projekt am besten passt.
                 </TitleText>
                 <InfoText>Durch das ausgeklügelte Fragen-Auswahl System können Sie die Anzahl an passenden Produkten 
-                    auf ein Minimum reduzieren und sparen so viel Zeit bei der Suche
+                    auf ein Minimum reduzieren und sparen so viel Zeit bei der Suche <br/>
+                    Anhand diverser Filterfragen finden Sie heraus, welche Anstrichart zu Ihrer Situation passt. <br/><br/>
+                    Durch die                 <InfoButton>
+                    <Icon alt="info" height="20px" width="20px" src={"/assets/icons/misc/info.svg"}></Icon>
+                    </InfoButton> Symbole erhalten Sie im Produktfinder weitere Informationen.
                 </InfoText>
                 <Link 
                     to="/fragen-und-antworten"
