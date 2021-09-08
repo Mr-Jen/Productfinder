@@ -99,15 +99,17 @@ const ImageWrapper = styled.div`
 
 const Arrow = styled.img`
     align-self: center;
-    cursor: pointer;
+    cursor: ${props => props.greyOut ? "default" : "pointer"};
     :hover {
-        transform: translateX(${props => props.side === 0 ? "-10px" : "10px"}) ${props => props.rotate_angle && `rotate(180deg)`};
+        transform: translateX(${props => !props.greyOut ? (props.side === 0 ? "-10px" : "10px") : "0px"}) ${props => props.rotate_angle && `rotate(180deg)`};
     }
     transform: ${props => props.rotate_angle && `rotate(180deg)`};
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+
+    background-color: ${props => props.greyOut && "grey"};
 `
 
 const Img = styled.img`
@@ -126,6 +128,12 @@ const InnerWrapper = styled.div`
     height: 100%;
 `
 
+const BottomWrapper = styled.div`
+    display: flex;
+    width: 100%;
+    align-items: center;
+`
+
 const PointNav = styled.div`
     display: flex;
     justify-content: center;
@@ -140,6 +148,12 @@ const Dot = styled.span`
     cursor: pointer;
 `
 
+const Numeration = styled.strong`
+    min-width: 50px;
+    margin-right: .5em;
+    font-size: 16px;
+`
+
 
 const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose }) => {
     const [infoState, setInfoState] = React.useState(0);
@@ -150,18 +164,12 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
     
     const onClickNextCard = (e) => {
         if (e === 0){
-            if (infoState === 0){
-                setInfoState(Object.keys(data).length - 1);
-            }
-            else {
+            if (infoState !== 0){
                 setInfoState(infoState - 1);
             }
         }   
         else if (e === 1){
-            if (infoState === Object.keys(data).length -1){
-                setInfoState(0);
-            }
-            else {
+            if (infoState !== Object.keys(data).length -1){
                 setInfoState(infoState + 1);
             }
         }
@@ -182,6 +190,7 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
                     height="70" src="assets/icons/misc/arrow.svg"
                     side={0}
                     rotate_angle={true}
+                    greyOut={infoState === 0}
                 />
                 <CardWrapper>
                     <ContentWrapper>
@@ -197,6 +206,7 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
                     hidden={data ? Object.keys(data).length === 1 : true} 
                     height="70" src="assets/icons/misc/arrow.svg"
                     side={1}
+                    greyOut={infoState === Object.keys(data).length - 1}
                 />
                 {showEnlarged &&
                     <div>
@@ -204,13 +214,17 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
                     </div>
                 }
             </InnerWrapper>
-            <PointNav>
-                    {
-                        [...Array(slideLength)].map((e, i) => {
-                            return <Dot onClick={() => setInfoState(i)} key={i} active={i === infoState}>&#8226;</Dot>
-                        })
-                    }
-            </PointNav>
+            <BottomWrapper>
+                <Numeration style={{visibility: "hidden"}}>{`${infoState + 1} / ${slideLength}`}</Numeration>
+                <PointNav>
+                        {
+                            [...Array(slideLength)].map((e, i) => {
+                                return <Dot onClick={() => setInfoState(i)} key={i} active={i === infoState}>&#8226;</Dot>
+                            })
+                        }
+                </PointNav>
+                <Numeration>{`${infoState + 1} / ${slideLength}`}</Numeration>
+            </BottomWrapper>
             <Img src="assets/icons/misc/close-light-bg.svg" onClick={() => onClose()}/>
         </Wrapper>
     )
