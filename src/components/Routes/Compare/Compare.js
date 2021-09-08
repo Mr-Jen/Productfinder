@@ -54,7 +54,7 @@ const Img = styled.div`
     display: flex;
     align-self: center;
 
-    background-image: url("/assets/images/farbeimer.jpg"); 
+    background-image: url(${props => props.url}); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -175,7 +175,7 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
 
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])
 
     if (!compareProducts){
         return null;
@@ -206,7 +206,7 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                         <TitleWrapper>
                             <ProductTitle>{product_1.name}</ProductTitle>
                         </TitleWrapper>                        
-                        <Img/>
+                        <Img url={product_1.images}/>
                         <Button target="_blank" and rel="noopener noreferrer" href={product_1.link !== "" ? product_1.link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
                                 <ButtonText>Kaufen</ButtonText>
@@ -219,7 +219,7 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                         <TitleWrapper>
                             <ProductTitle>{product_2.name}</ProductTitle>
                         </TitleWrapper>  
-                        <Img/>
+                        <Img url={product_2.images}/>
                         <Button target="_blank" and rel="noopener noreferrer" href={product_2.link !== "" ? product_2.link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
                                 <ButtonText>Kaufen</ButtonText>
@@ -313,7 +313,7 @@ const mapStateToProps = ({ products }, ownProps) => {
     if(products){
         console.log("DATA", data)
         const productData = products?.products ? products["products"] : data["products"]
-        const { categories, surfaces, applications, binders, solubilities } = products
+        const { categories, surfaces, applications, binders, solubilities, images } = products
         const compareProducts = [];
         const params = ownProps.match.params.productsParam.split("&")
     
@@ -329,7 +329,8 @@ const mapStateToProps = ({ products }, ownProps) => {
             surfaces,
             applications,
             binders,
-            solubilities
+            solubilities,
+            images
         }
     }
     else {

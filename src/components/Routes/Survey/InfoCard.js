@@ -108,8 +108,18 @@ const Arrow = styled.img`
     user-select: none; /* Standard */
 `
 
+const Img = styled.img`
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid black;
+    cursor: pointer;
+`
 
-const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId }) => {
+
+const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose }) => {
     const [infoState, setInfoState] = React.useState(0);
     const [showEnlarged, setShowEnlarged] = React.useState(false);
 
@@ -169,6 +179,7 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId }) => {
                     <DetailImage onClickClose={() => setShowEnlarged(false)} imageSrc={data ? data[infoState]["image"] : default_content["image"]}/>
                 </div>
             }
+            <Img src="assets/icons/misc/close-light-bg.svg" onClick={() => onClose()}/>
         </Wrapper>
     )
 }

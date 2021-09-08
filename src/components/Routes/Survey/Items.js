@@ -207,7 +207,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
       </ButtonWrapper>
       {(showInfoCard && isDesktop) &&
           <div>
-            <InfoCard data={cardContent} />
+            <InfoCard data={cardContent} onClose={() => setShowInfoCard(false)}/>
             <CardWrapper onClick={() => setShowInfoCard(false)}/>
           </div>
       }

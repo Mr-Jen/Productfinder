@@ -31,6 +31,7 @@ const ContentWrapper = styled.div`
 `
 
 export const Survey = ({isHome, handleNavigationChange}) => {
+    console.log(isHome)
     return (
         <Wrapper>
             <HeaderWrapper>

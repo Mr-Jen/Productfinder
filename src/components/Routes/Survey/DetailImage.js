@@ -26,7 +26,8 @@ const DetailImage = ({ imageSrc, onClickClose }) => {
                 <img 
                     alt="close-img-icon" 
                     height="45px" 
-                    onClick={() => onClickClose()} src="assets/icons/misc/close-light-bg.svg"
+                    onClick={() => onClickClose()} 
+                    src="assets/icons/misc/close-light-bg.svg"
                     style={{cursor: "pointer", userSelect: "none"}}
                 />    
             </ImageWrapper>
