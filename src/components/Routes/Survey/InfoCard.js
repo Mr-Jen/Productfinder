@@ -108,8 +108,6 @@ const Arrow = styled.img`
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
-
-    background-color: ${props => props.greyOut && "grey"};
 `
 
 const Img = styled.img`
@@ -189,7 +187,7 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
                     onClick={() => onClickNextCard(0)} 
                     hidden={data ? Object.keys(data).length === 1 : true} 
                     height="70" 
-                    src="assets/icons/misc/arrow.svg"
+                    src={infoState === 0 ? "assets/icons/misc/arrow_grey.svg" : "assets/icons/misc/arrow.svg"}
                     side={0}
                     rotate_angle={true}
                     greyOut={infoState === 0}
@@ -207,7 +205,7 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
                     onClick={() => onClickNextCard(1)} 
                     hidden={data ? Object.keys(data).length === 1 : true} 
                     height="70" 
-                    src="assets/icons/misc/arrow.svg"
+                    src={infoState === Object.keys(data).length - 1 ? "assets/icons/misc/arrow_grey.svg" : "assets/icons/misc/arrow.svg"}
                     side={1}
                     greyOut={infoState === Object.keys(data).length - 1}
                 />

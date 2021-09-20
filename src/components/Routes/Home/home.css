@@ -9,6 +9,15 @@
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .link:hover { 
+      color: #01447e;
+      border: 2px solid black;
+      /*background-color: #f5dd0a;*/
+    }
 }
 
 .link p {

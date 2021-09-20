@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="114" height="296" viewBox="0 0 114 296">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="124" height="299" fill="#c6c6c6"/>
+    </clipPath>
+    <clipPath id="clip-arrow_grey">
+      <rect width="114" height="296"/>
+    </clipPath>
+  </defs>
+  <g id="arrow_grey" clip-path="url(#clip-arrow_grey)">
+    <g id="arrow" clip-path="url(#clip-path)">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" width="178" height="24" rx="12" transform="translate(20.785) rotate(60)" fill="#c6c6c6"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="178" height="24" rx="12" transform="translate(0 287.152) rotate(-60)" fill="#c6c6c6"/>
+    </g>
+  </g>
+</svg>

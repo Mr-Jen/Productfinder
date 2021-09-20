@@ -50,8 +50,10 @@ const ButtonContentWrapper = styled.div`
     }
   }
   @media (max-width: 500px) {
-    margin: 1.5em 0 1.5em 0;
     border: 1px solid rgb(232, 232, 232);
+  }
+  @media (max-width: 480px){
+    padding: .2em;
   }
   //webkit-box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.07); 
   //box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.07);
@@ -204,8 +206,11 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
                   <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>
                 </ChoiceButton>
               </ButtonContentWrapper>
-              <InfoButton style={{visibility: `${childrenItems[key]["info"] ? "visible" : "hidden"}`}}>
-                  <Icon alt="info" onClick={(e) => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info, e)} height="20px" width="20px" src={childrenItems[key]["info"] && (hasWarning(childrenItems[key]) ? "/assets/icons/misc/warning (1).png"  : "/assets/icons/misc/info.svg")}></Icon>
+              <InfoButton 
+                style={{visibility: `${childrenItems[key]["info"] ? "visible" : "hidden"}`}} 
+                onClick={(e) => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info, e)}
+              >
+                <Icon alt="info" height="20px" width="20px" src={childrenItems[key]["info"] && (hasWarning(childrenItems[key]) ? "/assets/icons/misc/warning (1).png"  : "/assets/icons/misc/info.svg")}></Icon>
               </InfoButton>
             </ButtonInsideWrapper>
           ))
