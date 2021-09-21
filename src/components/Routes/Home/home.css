@@ -20,6 +20,12 @@
     }
 }
 
+@media (max-width: 625px){
+    .link {
+        margin-bottom: 4em;
+    }
+}
+
 .link p {
     color: black;
 }

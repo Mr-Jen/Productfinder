@@ -360,6 +360,14 @@
                             "id": 1,
                             "label": "Verwitterte Farbe oder Lasur",
                             "question": "Was für eine Art von Anstrich haben Sie? Achten Sie besonders auf die Warnhinweise in den Infoboxen. Abhänging vom Zustand kann es sein, dass der Altanstrich komplett entfernt werden muss.",
+                            "info": {
+                                "0": {
+                                    "id": 0,
+                                    "title": "Verwitterte Lasur oder Farbe",
+                                    "content": "Verwitterte Farbe oder Lasur kann etwas unschön aussehen. Hatte der Anstrich mal Glanz, kann dieser jetzt verschwunden sein, die Farbe oder Lasur ist matt oder kreidig geworden. Evtl. haben Sie einige Risse im Anstrich oder einen Grünbelag. Ebenfalls kann sich viel Schmutz gesammelt haben. Lasuren sind dann verwittert, wenn Sie ihren Glanz verloren haben, matt oder porös wirken. Farben sind verwittert, wenn Sie kreidigen Staub auf der Oberfläche haben, matt geworden sind oder schmutzig wirken. Glänzt Ihre Lasur oder Farbe noch und hat nur einige Risse oder kleine Schäden, wählen Sie 'Rissiger / Abblätternder Anstrich'. Ist Ihre Farbe bereits überall komplett abgewittert, die Schicht auf dem Holz bildet keinen festen und wasserbaweisenden Film mehr, muss die Farbe komplett abgeschliffen werden. Hier gehen Sie dann zurück und wählen 'Unbehandelt / Komplett abgeschliffen'. Sind nur einige Teilbereiche in einem solchen Zustand schleifen Sie nur diese, belassen die intakten Flächen jedoch und bleiben bei dieser Auswahlmöglichkeit.",
+                                    "image": "assets/images/Lasur/lasur-verwittert_maserung_sichtbar.jpg"
+                                }
+                            },
                             "children": {
                                 "0": {
                                     "id": 0,

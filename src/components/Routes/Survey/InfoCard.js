@@ -1,9 +1,10 @@
-import React from 'react'
-import styled, {keyframes } from 'styled-components'
-import { connect } from 'react-redux'
+import React from 'react';
+import styled, {keyframes } from 'styled-components';
+import { connect } from 'react-redux';
 
-import { addToWarnings, removeFromWarnings } from '../../../actions/warning'
-import DetailImage from './DetailImage'
+import { addToWarnings, removeFromWarnings } from '../../../actions/warning';
+import DetailImage from './DetailImage';
+import './infocard.css';
 
 const Wrapper = styled.div`
     position: fixed;
