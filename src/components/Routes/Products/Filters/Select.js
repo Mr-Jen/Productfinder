@@ -33,8 +33,8 @@ function Select({ handleChangeSort }) {
                 <Option value="">Sortieren nach...</Option>
                 <Option value="gloss_low">Glanzgrad Niedrig</Option>
                 <Option value="gloss_high">Glanzgrad hoch</Option>
-                <Option value="lifetime_low">Standzeit Niedrig</Option>
-                <Option value="lifetime_high">Standzeit Hoch</Option>
+                <Option value="lifetime_low">Lebensdauer Niedrig</Option>
+                <Option value="lifetime_high">Lebensdauer Hoch</Option>
             </Selector>
         </Wrapper>
     )
