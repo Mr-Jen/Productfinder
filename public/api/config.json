@@ -183,8 +183,33 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Brennspiritus Test",
-                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farb- oder Lasurschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Streichen Sie niemals Alkydfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat.",
+                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich mit Brennspiritus bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich heraus welches Bindemittel in meiner Lasur ist?",
+                                                            "instructions": {
+                                                                "0": {
+                                                                    "title": "Nehmen Sie sich einen Lappen und Brennspirituts und reiben Sie für 1-2 Minuten auf der Farb- oder Lasurschicht. Reiben Sie mit leichtem Druck auf einer kleinen Stelle. Damit dieser Test funktioniert, muss der Anstrich sauber und intakt sein."
+                                                                },
+                                                                "1": {
+                                                                    "title": "Was ist jetzt mit der Lasur passiert?",
+                                                                    "options": {
+                                                                        "0": "Lasur wird weich/klebrig/abfärbend",
+                                                                        "1": "Lasur bleibt unverändert und hart"
+                                                                    }
+                                                                },
+                                                                "2": {
+                                                                    "title": "Was bedeutet mein Ergebnis?",
+                                                                    "options": {
+                                                                        "0": "Weich/klebrig/abfärbend bedeutet acrylhaltig (wasserbasierte Lasur)",
+                                                                        "1": "Unverändert und weiterhin hart bedeutet öl- bzw. alkydhaltig (lösemittelhaltige Lasur)."
+                                                                    }
+                                                                }
+                                                            },
                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                                        },
+                                                        "1": {
+                                                            "id": 1,
+                                                            "title": "Weitere Info zum Test",
+                                                            "content": "Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Streichen Sie niemals Alkydfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat.",
+                                                            "image": "assets/images/Lasur/lasur.png"
                                                         }
                                                     },
                                                     "action": "set_coating",
@@ -296,8 +321,33 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Test mit Schleifpapier",
-                                                            "content": "Nicht jede Farbart verträgt sich miteinander. Wenn man weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich bestimmen welcher Anstrich für den Untergrund geeignet ist. Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann direkt überstrichen werden. Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Wenn man mit einem feinen Schleifpapier auf dem intakten Anstrich reibt, entsteht ein grober Abrieb. Das Schleifpapier schmiert zu, der Anstrich wird weich oder krümelt. Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten. Dann handelt es sich um eine Acryl-, Acrylatbasis. Schleift man den Anstrich mit einem feinen Schleifpapier entsteht ein pulvriger Schleifstaub, der sich leicht aud dem Schleifpapier pusten lässt. Der Abrieb erinnert entfernt an feines Mehl oder Hausstaub. Es liegt eine Öl-, Alkydbasis vor.",
+                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
+                                                            "instructions": {
+                                                                "0": {
+                                                                    "title": "Nehmen Sie ein feines Schleifpapier (bspw. 120er Körnung) und schleifen Sie auf einer sauberen und intakten Stelle Ihres Altanstrichs für einige Sekunden, bis ein erkennbarer Abrieb entsteht."
+                                                                },
+                                                                "1": {
+                                                                    "title": "Wie sieht der Abrieb aus?",
+                                                                    "options": {
+                                                                        "0": "Grober Abrieb oder Krümel, das Schleifpapier verschmiert oder die Farbe auf dem Holz fühlt sich klebrig und weich an",
+                                                                        "1": "Feiner, pulverartiger Schleifstaub. Erinnert an Mehl oder Hausstaub."
+                                                                    }
+                                                                },
+                                                                "2": {
+                                                                    "title": "Was bedeutet mein Ergebnis?",
+                                                                    "options": {
+                                                                        "0": "Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten, es wird klebrig, schmiert oder der Abrieb ist grob? Dann handelt es sich um eine Acryl-, Acrylatbasis.",
+                                                                        "1": "Der Abrieb ist staubig, die Farbe bleibt jedoch hart? Dann liegt eine Öl-, Alkydbasis vor."
+                                                                    }
+                                                                }
+                                                            },
                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                                        },
+                                                        "1": {
+                                                            "id": 1,
+                                                            "title": "Weitere Info zum Test",
+                                                            "content": "Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann nach der Reinigung direkt mit einem geeigneten Folgeprodukt überstrichen werden. Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem.",
+                                                            "image": "assets/images/Lasur/lasur.png"
                                                         }
                                                     },
                                                     "action": "set_coating",
@@ -390,7 +440,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Abschleifen",
-                                                    "content": "Beim Abschleifen ist darauf zu achten, dass xyz",
+                                                    "content": "Um alte Lasur oder Farbe abzuschleifen eignet sich am besten ein Schleifpapier mit der Körnung 60 oder 80. Vermeiden Sie es zu feines Schleifpapier zu verwenden. Sie können entweder per Hand oder mit einer Schleifmaschine arbeiten. Bei wasserbasierten Altanstrichen kann die alte Farbe auch gut mit einem Farbschaber entfernt werden. Da die meisten wasserbasierten Farben aus Plastik bestehen und nicht (wie lösemittelhaltige Farben) aus pflanzlichen Rohstoffen, lassen sich diese 'Plastikfarben' besonders schlecht schleifen, dafür aber gut mit einer Klinge abziehen - ähnlich wie eine Gummihaut. Mit einem Heissluftföhn kann man die Wirkung des Farbschabers verbessern, indem man die Farbschicht vorher erwärmt. Möchten Sie verwitterte Lasur entfernen, kann man ebenfalls gut eine Drahtbürste verwenden. Handelsübliche Lasuren halten 6 bis maximnal 24 Monate, bis sie komplett in der Sonne zersetzt wurden. Was zurück bleibt ist ein feiner Staub aus Verbrennungsrückständen. Diese Rückstände lassen sich oftmals schon mit einer Drahtbürste aus dem Holz bürsten.",
                                                     "image": "assets/images/paint-on-wood.gif"
                                                 }
                                             },
@@ -428,8 +478,33 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Brennspiritus Test",
-                                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farb- oder Lasurschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Streichen Sie niemals Alkydfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat.",
+                                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich mit Brennspiritus bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich heraus welches Bindemittel in meiner Lasur ist?",
+                                                                            "instructions": {
+                                                                                "0": {
+                                                                                    "title": "Nehmen Sie sich einen Lappen und Brennspirituts und reiben Sie für 1-2 Minuten auf der Farb- oder Lasurschicht. Reiben Sie mit leichtem Druck auf einer kleinen Stelle. Damit dieser Test funktioniert, muss der Anstrich sauber und intakt sein."
+                                                                                },
+                                                                                "1": {
+                                                                                    "title": "Was ist jetzt mit der Lasur passiert?",
+                                                                                    "options": {
+                                                                                        "0": "Lasur wird weich/klebrig/abfärbend",
+                                                                                        "1": "Lasur bleibt unverändert und hart"
+                                                                                    }
+                                                                                },
+                                                                                "2": {
+                                                                                    "title": "Was bedeutet mein Ergebnis?",
+                                                                                    "options": {
+                                                                                        "0": "Weich/klebrig/abfärbend bedeutet acrylhaltig (wasserbasierte Lasur)",
+                                                                                        "1": "Unverändert und weiterhin hart bedeutet öl- bzw. alkydhaltig (lösemittelhaltige Lasur)."
+                                                                                    }
+                                                                                }
+                                                                            },
                                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                                                        },
+                                                                        "1": {
+                                                                            "id": 1,
+                                                                            "title": "Weitere Info zum Test",
+                                                                            "content": "Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Streichen Sie niemals Alkydfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat.",
+                                                                            "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
                                                                     "action": "set_coating",
@@ -523,7 +598,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Abschleifen",
-                                                            "content": "Auf abgeschliffenen Flächen, bzw. auf Holz muss ggf. neu grundiert werden. Bitte beachten Sie die Herstellerangaben zu Grundierern. ",
+                                                            "content": "Um alte Lasur oder Farbe abzuschleifen eignet sich am besten ein Schleifpapier mit der Körnung 60 oder 80. Vermeiden Sie es zu feines Schleifpapier zu verwenden. Sie können entweder per Hand oder mit einer Schleifmaschine arbeiten. Bei wasserbasierten Altanstrichen kann die alte Farbe auch gut mit einem Farbschaber entfernt werden. Da die meisten wasserbasierten Farben aus Plastik bestehen und nicht (wie lösemittelhaltige Farben) aus pflanzlichen Rohstoffen, lassen sich diese 'Plastikfarben' besonders schlecht schleifen, dafür aber gut mit einer Klinge abziehen - ähnlich wie eine Gummihaut. Mit einem Heissluftföhn kann man die Wirkung des Farbschabers verbessern, indem man die Farbschicht vorher erwärmt. Möchten Sie verwitterte Lasur entfernen, kann man ebenfalls gut eine Drahtbürste verwenden. Handelsübliche Lasuren halten 6 bis maximnal 24 Monate, bis sie komplett in der Sonne zersetzt wurden. Was zurück bleibt ist ein feiner Staub aus Verbrennungsrückständen. Diese Rückstände lassen sich oftmals schon mit einer Drahtbürste aus dem Holz bürsten.",
                                                             "image": "assets/images/paint-on-wood.gif"
                                                         }
                                                     },
@@ -591,8 +666,33 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Test mit Schleifpapier",
-                                                            "content": "Nicht jede Farbart verträgt sich miteinander. Wenn man weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich bestimmen welcher Anstrich für den Untergrund geeignet ist. Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann direkt überstrichen werden. Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Wenn man mit einem feinen Schleifpapier auf dem intakten Anstrich reibt, entsteht ein grober Abrieb. Das Schleifpapier schmiert zu, der Anstrich wird weich oder krümelt. Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten. Dann handelt es sich um eine Acryl-, Acrylatbasis. Schleift man den Anstrich mit einem feinen Schleifpapier entsteht ein pulvriger Schleifstaub, der sich leicht aud dem Schleifpapier pusten lässt. Der Abrieb erinnert entfernt an feines Mehl oder Hausstaub. Es liegt eine Öl-, Alkydbasis vor.",
-                                                            "image": "assets/images/paint-on-wood.gif"
+                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
+                                                            "instructions": {
+                                                                "0": {
+                                                                    "title": "Nehmen Sie ein feines Schleifpapier (bspw. 120er Körnung) und schleifen Sie auf einer sauberen und intakten Stelle Ihres Altanstrichs für einige Sekunden, bis ein erkennbarer Abrieb entsteht."
+                                                                },
+                                                                "1": {
+                                                                    "title": "Wie sieht der Abrieb aus?",
+                                                                    "options": {
+                                                                        "0": "Grober Abrieb oder Krümel, das Schleifpapier verschmiert oder die Farbe auf dem Holz fühlt sich klebrig und weich an",
+                                                                        "1": "Feiner, pulverartiger Schleifstaub. Erinnert an Mehl oder Hausstaub."
+                                                                    }
+                                                                },
+                                                                "2": {
+                                                                    "title": "Was bedeutet mein Ergebnis?",
+                                                                    "options": {
+                                                                        "0": "Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten, es wird klebrig, schmiert oder der Abrieb ist grob? Dann handelt es sich um eine Acryl-, Acrylatbasis.",
+                                                                        "1": "Der Abrieb ist staubig, die Farbe bleibt jedoch hart? Dann liegt eine Öl-, Alkydbasis vor."
+                                                                    }
+                                                                }
+                                                            },
+                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                                        },
+                                                        "1": {
+                                                            "id": 1,
+                                                            "title": "Weitere Info zum Test",
+                                                            "content": "Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann nach der Reinigung direkt mit einem geeigneten Folgeprodukt überstrichen werden. Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem.",
+                                                            "image": "assets/images/Lasur/lasur.png"
                                                         }
                                                     },
                                                     "children": {
@@ -671,7 +771,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Abschleifen",
-                                            "content": "Beim Abschleifen ist darauf zu achten, dass xyz",
+                                            "content": "Um alte Lasur oder Farbe abzuschleifen eignet sich am besten ein Schleifpapier mit der Körnung 60 oder 80. Vermeiden Sie es zu feines Schleifpapier zu verwenden. Sie können entweder per Hand oder mit einer Schleifmaschine arbeiten. Bei wasserbasierten Altanstrichen kann die alte Farbe auch gut mit einem Farbschaber entfernt werden. Da die meisten wasserbasierten Farben aus Plastik bestehen und nicht (wie lösemittelhaltige Farben) aus pflanzlichen Rohstoffen, lassen sich diese 'Plastikfarben' besonders schlecht schleifen, dafür aber gut mit einer Klinge abziehen - ähnlich wie eine Gummihaut. Mit einem Heissluftföhn kann man die Wirkung des Farbschabers verbessern, indem man die Farbschicht vorher erwärmt. Möchten Sie verwitterte Lasur entfernen, kann man ebenfalls gut eine Drahtbürste verwenden. Handelsübliche Lasuren halten 6 bis maximnal 24 Monate, bis sie komplett in der Sonne zersetzt wurden. Was zurück bleibt ist ein feiner Staub aus Verbrennungsrückständen. Diese Rückstände lassen sich oftmals schon mit einer Drahtbürste aus dem Holz bürsten.",
                                             "image": "assets/images/paint-on-wood.gif"
                                         }
                                     },
@@ -742,8 +842,33 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Test mit Schleifpapier",
-                                                            "content": "Nicht jede Farbart verträgt sich miteinander. Wenn man weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich bestimmen welcher Anstrich für den Untergrund geeignet ist. Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann direkt überstrichen werden. Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das Bindemittel Öl bzw. Alkyd oder Acryl bzw. Acrylat. Wenn man mit einem feinen Schleifpapier auf dem intakten Anstrich reibt, entsteht ein grober Abrieb. Das Schleifpapier schmiert zu, der Anstrich wird weich oder krümelt. Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten. Dann handelt es sich um eine Acryl-, Acrylatbasis. Schleift man den Anstrich mit einem feinen Schleifpapier entsteht ein pulvriger Schleifstaub, der sich leicht aud dem Schleifpapier pusten lässt. Der Abrieb erinnert entfernt an feines Mehl oder Hausstaub. Es liegt eine Öl-, Alkydbasis vor.",
-                                                            "image": "assets/images/paint-on-wood.gif"
+                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
+                                                            "instructions": {
+                                                                "0": {
+                                                                    "title": "Nehmen Sie ein feines Schleifpapier (bspw. 120er Körnung) und schleifen Sie auf einer sauberen und intakten Stelle Ihres Altanstrichs für einige Sekunden, bis ein erkennbarer Abrieb entsteht."
+                                                                },
+                                                                "1": {
+                                                                    "title": "Wie sieht der Abrieb aus?",
+                                                                    "options": {
+                                                                        "0": "Grober Abrieb oder Krümel, das Schleifpapier verschmiert oder die Farbe auf dem Holz fühlt sich klebrig und weich an",
+                                                                        "1": "Feiner, pulverartiger Schleifstaub. Erinnert an Mehl oder Hausstaub."
+                                                                    }
+                                                                },
+                                                                "2": {
+                                                                    "title": "Was bedeutet mein Ergebnis?",
+                                                                    "options": {
+                                                                        "0": "Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten, es wird klebrig, schmiert oder der Abrieb ist grob? Dann handelt es sich um eine Acryl-, Acrylatbasis.",
+                                                                        "1": "Der Abrieb ist staubig, die Farbe bleibt jedoch hart? Dann liegt eine Öl-, Alkydbasis vor."
+                                                                    }
+                                                                }
+                                                            },
+                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                                        },
+                                                        "1": {
+                                                            "id": 1,
+                                                            "title": "Weitere Info zum Test",
+                                                            "content": "Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann nach der Reinigung direkt mit einem geeigneten Folgeprodukt überstrichen werden. Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem.",
+                                                            "image": "assets/images/Lasur/lasur.png"
                                                         }
                                                     },
                                                     "children": {
@@ -831,7 +956,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Aushärtendes Öl",
-                                            "content": "Auf aushärtenden Ölen muss teilweise grundiert werden. Ein aushärtendes Öl ersetzt bspw. Grundieröl oder gekochtes Leinöl, jedoch keinen Haftgrund. Sind Öle älter als 3 Monate empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer.",
+                                            "content": "Auf aushärtenden Ölen muss teilweise grundiert werden. Ein aushärtendes Öl ersetzt bspw. Grundieröl oder gekochtes Leinöl, jedoch keinen Haftgrund. Sind Öle älter als 3 Monate empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer. Welches Öl habe ich? Ob es sich um ein aushärtendes Öl handelt ist ohne Zugriff auf den Behälter oder Herstellerangaben relativ schwierig zu bestimmen. Öle ziehen ein und verbleiben nicht auf der Oberfläche, nach dem das Öl im Holz verschwunden ist, lässt sich die Art kaum noch selber bestimmen. Ist jedoch etwas vom Öl sehr dick aufgetragen worden und es hat sich evtl. auf Schrauben oder besonders harten Ästen ein Film gebildet, kann man mit dem Finger ertatsten ob sich das Öl trocken, hart oder ggf. etwas gummiartig anfühlt. Ist es nicht mehr flüssig, dann haben Sie ein aushärtendes Öl. Sind Rückstände des Öl auch nach Wochen noch flüssig und fühlen sich ölig an, handelt es sich um ein nicht-härtendes, bzw. rohes Öl. Ist das Öl eingezogen bleibt nichts anderes mehr übrig, als über den Produktnamen zu recherchieren. Hier sind wir Ihnen auch gerne behilflich. Ist das Öl ohnehin schon einige Monate alt, spielt dies keine Rolle mehr. Dann wird das Holz nur gründlich gereinigt. Öle sind nur sehr kurze Zeit wetterfest. Nach einigen Monaten sind die Rückstände vom ehemaligen Öl nur noch eine Verschmutzung des Holzes, jedoch kein bestehender Anstrich. Hier gehen Sie zwei Schritte zurück und wählen 'Unbehandelt / Komplett abgeschliffen' aus.",
                                             "image": "assets/images/Öl/holzöl.jpg"
                                         }
                                     },
@@ -890,7 +1015,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Rohes Öl",
-                                            "content": "Sind Öle bereits länger als 3 Monate auf dem Holz empfiehlt sich eine Reinigung vorab. Danach kann mit verschiedenen Produkten direkt überstrichen werden.",
+                                            "content": "Nicht-härtende oder rohe Öle können nicht trocknen. Diese Öle bleiben für immer flüssig und können unter vielen Farbastrichen zu Problemen führen. Während auf ausgehärtetem Öl viele Anstriche Anwendung finden, ist der Raum der Möglichkeiten bei rohen Ölen sehr begrenzt. Sind Öle älter als 3 Monate empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer. Welches Öl habe ich? Ob es sich um ein nicht-härtendes Öl handelt ist ohne Zugriff auf den Behälter oder Herstellerangaben relativ schwierig zu bestimmen. Öle ziehen ein und verbleiben nicht auf der Oberfläche, nach dem das Öl im Holz verschwunden ist, lässt sich die Art kaum noch selber bestimmen. Ist jedoch etwas vom Öl sehr dick aufgetragen worden und es hat sich evtl. auf Schrauben oder besonders harten Ästen ein Film gebildet, kann man mit dem Finger ertatsten ob sich das Öl trocken, hart oder ggf. etwas gummiartig anfühlt. Ist es nicht mehr flüssig, dann haben Sie ein aushärtendes Öl. Sind Rückstände des Öl auch nach Wochen noch flüssig und fühlen sich ölig an, handelt es sich um ein nicht-härtendes, bzw. rohes Öl. Ist das Öl eingezogen bleibt nichts anderes mehr übrig, als über den Produktnamen zu recherchieren. Hier sind wir Ihnen auch gerne behilflich. Ist das Öl ohnehin schon einige Monate alt, spielt dies keine Rolle mehr. Dann wird das Holz nur gründlich gereinigt. Öle sind nur sehr kurze Zeit wetterfest. Da Öle nur sehr begrenzte Standzeiten haben, sind die Rückstände vom ehemaligen Öl nur noch eine Verschmutzung des Holzes, jedoch kein bestehender Anstrich. Hier gehen Sie zwei Schritte zurück und wählen 'Unbehandelt / Komplett abgeschliffen' aus.",
                                             "image": "assets/images/Öl/öl.jpg "
                                         }
                                     },

@@ -54,7 +54,7 @@ const CardWrapper = styled.div`
     align-items: stretch;
     width: 80%;
     margin: 2% 4% 2% 4%;
-
+    max-height: 42vh;
 
     /*animation: ${CardAnimationKeyFrame} 3s 2;*/
     animation-direction: left;
@@ -154,10 +154,41 @@ const Numeration = styled.strong`
     font-size: 16px;
 `
 
+const InstructionsWrapper = styled.div`
+    border-left: 2px solid black;
+    padding-left: 1em;
+    margin: 1em 0 1em 0;
+`
 
-const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose }) => {
+const Item = styled.div`
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+`
+
+const Icon = styled.img`
+    margin: .3em 1em 1em 1em;
+`
+
+const ItemText = styled.strong`
+    margin: 0;
+`
+
+const SubItem = styled.div`
+    margin-left: 2em;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+`
+
+
+const InfoCard = ({ data, onClose }) => {
     const [infoState, setInfoState] = React.useState(0);
     const [showEnlarged, setShowEnlarged] = React.useState(false);
+
+    let instructions = data[infoState]?.instructions;
+
+    console.log(instructions)
 
     //console.log("IS DATA AND INFO?: ", data)
     let slideLength = Object.keys(data).length;
@@ -198,7 +229,32 @@ const InfoCard = ({ data, warningIds, onAgree, AddInfoId, RemoveInfoId, onClose 
                         <TitleWrapper>
                             <Title>{data ? data[infoState]["title"] : default_content["title"]}</Title>
                         </TitleWrapper>
-                        <Text>{data ? data[infoState]["content"] : default_content["content"]}</Text>
+                        <Text>
+                            {data ? data[infoState]["content"] : default_content["content"]}
+                            {data[infoState]?.instructions &&
+                                <InstructionsWrapper>
+                                    {
+                                        Object.keys(data[infoState]?.instructions).map((item, key) => {
+                                            return <div key={key}>
+                                                <Item>
+                                                    <Icon width="20px" src={`assets/icons/misc/${key+1}.svg`}></Icon>
+                                                    <ItemText>{instructions[item].title}</ItemText>
+                                                </Item>
+                                                {instructions[item]?.options &&
+                                                    Object.keys(instructions[item].options).map((index, key) => {
+                                                        return <SubItem key={key}>
+                                                            <Icon width="20px" src="assets/icons/misc/right.png"></Icon>
+                                                            <p style={{margin: "0"}}>{instructions[item].options[index]}</p>
+                                                        </SubItem>
+                                                    })
+                                                }
+                                            </div>
+                                        })
+
+                                    }                                    
+                                </InstructionsWrapper>
+                            }
+                        </Text>
                     </ContentWrapper>
                     <ImageWrapper onClick={() => setShowEnlarged(true)} imgSrc={data ? data[infoState]["image"] : default_content["image"]}/>
                 </CardWrapper>
