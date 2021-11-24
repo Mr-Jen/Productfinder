@@ -11,7 +11,7 @@
                 "smooth_surface": [10,15],
                 "rough_surface": [5,8]
             },
-            "lifetime": [15,20],
+            "lifetime": [13,18],
             "gloss_level": [30,40],
             "binder": 0,
             "solubility": 0,
@@ -132,7 +132,7 @@
             "solubility": 2,
             "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Fassadenfarbe-Holz/Nadelholzteer",
             "images": [
-                "/assets/images/Produkte/M50050.jpg"
+                "/assets/images/Produkte/A10300.jpg"
             ],
             "price": [1.50, 4.48],
             "info_text": "Die echte Schwedenfarbe. Nadelholzteer ist ein rein pflanzlicher Anstrich und zugleich die älteste bekannte Anstrichart der Menschheit. Schon vor 7000 Jahren in Mesopotamien und später von den Wikingern eingesetzt, hat auch das originale Schwedenrot seinen Ursprung in diesem konservierenden Anstrich aus Kiefernharz. Nadelholzteer wird aus Kiefernharz gewonnen und enthält über 1000 holzeigene Inhaltstoffe. Holzteere werden traditionellerweise zur Holzkonservierung eingesetzt, man findet sie bspw. auf den norwegischen Stabholzkirchen. ",
@@ -405,7 +405,7 @@
             "lifetime": [2,3],
             "gloss_level": [0,10],
             "binder": 11,
-            "solubility": 5,
+            "solubility": 2,
             "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Lasuren/Nadelholzteerlasuren",
             "images": [
                 "/assets/images/Produkte/M25001.jpg"

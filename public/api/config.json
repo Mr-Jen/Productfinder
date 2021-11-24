@@ -10,7 +10,7 @@
                 "0": {
                     "id": 0,
                     "label": "Unbehandelt / Komplett abgeschliffen",
-                    "question": "Welche Art von Anstrich soll nun folgen? Wichtig: Streichen Sie frisches Holz nie unmittelbar nach dem Aufbau. Weitere Informationen erhalten Sie in den Infoboxen.",
+                    "question": "Welche Art von Anstrich soll nun folgen? Wichtig: Streichen Sie frisches Holz möglichst nicht sofort. Weitere Informationen erhalten Sie in den Infoboxen.",
                     "target_action": "set_target",
                     "action": "set_coating",
                     "breadcrumb": "Blankes Holz",
@@ -40,7 +40,7 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Lasur",
-                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
                                     "image": "assets/images/Lasur/lasur.png"
                                 }
                             },
@@ -49,7 +49,7 @@
                         "1": {
                             "id": 1,
                             "label": "Farbe",
-                            "question": "",
+                            "question": "Ist Ihr Holz sägerau oder glatt/gehobelt?",
                             "action_value": null,
                             "info": {
                                 "0": {
@@ -63,11 +63,24 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Deckende Farbe",
-                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich.",
                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                 }
                             },
-                            "children": null
+                            "children": {
+                                "0": {           
+                                    "id": 0,
+                                    "label": "Sägerau",
+                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                    "children": null
+                                },
+                                "1": {           
+                                    "id": 1,
+                                    "label": "Glatt / Gehobelt",
+                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                    "children": null 
+                                }
+                            }
                         },
                         "2": {
                             "id": 2,
@@ -77,17 +90,15 @@
                             "info": {
                                 "0": {
                                     "id": 0,
-                                    "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
-                                    "title": "Warnung bei Farben",
-                                    "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben.",
-                                    "image": "assets/images/Lasur/lasur.png",
-                                    "warning": true
+                                    "title": "Öl",
+                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                    "image": "assets/images/Öl/holzöl.jpg"
                                 },
                                 "1": {
                                     "id": 1,
-                                    "title": "Deckende Farbe",
-                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
-                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                    "title": "Härtend vs Nicht-härtend",
+                                    "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Supermarkt findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen",
+                                    "image": "assets/images/Öl/holzöl.jpg"
                                 }
                             },
                             "children": null
@@ -103,14 +114,20 @@
                         "0": {
                             "id": 0,
                             "title": "Lasur",
-                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
-                            "image": "assets/images/Lasur/lasur.png"
+                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                            "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
                         },
                         "1": {
                             "id": 1,
                             "title": "Öl",
                             "content": "Öle ziehen tief ins Holz ein, lassen das Holz etwas kräftiger im Farbton wirken und haben eine matte Erscheinung. Frisch geöltes Holz ist wasserabweisend und hat eine gut erkennbare Maserung. Der Schutz eines Öls lässt im Freien bereits nach wenigen Wochen merklich nach.",
                             "image": "assets/images/Öl/öl.jpg"
+                        },
+                        "2": {
+                            "id": 2,
+                            "title": "Farbe",
+                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb nass werden kann.",
+                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                         }
                     },
                     "children": {
@@ -129,13 +146,13 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Intakte Lasur",
-                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur!",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
                                     "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
                                 },
                                 "2": {
                                     "id": 2,
                                     "title": "Intakte Lasur",
-                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur!",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
                                     "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg"
                                 }
                             },
@@ -169,9 +186,9 @@
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Lasur",
-                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur!",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
                                                     "image": "assets/images/Lasur/lasur.png",
-                                                    "warning": true
+                                                    "warning": false
                                                 }
                                             },
                                             "children": {
@@ -186,7 +203,7 @@
                                                             "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich mit Brennspiritus bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich heraus welches Bindemittel in meiner Lasur ist?",
                                                             "instructions": {
                                                                 "0": {
-                                                                    "title": "Nehmen Sie sich einen Lappen und Brennspirituts und reiben Sie für 1-2 Minuten auf der Farb- oder Lasurschicht. Reiben Sie mit leichtem Druck auf einer kleinen Stelle. Damit dieser Test funktioniert, muss der Anstrich sauber und intakt sein."
+                                                                    "title": "Nehmen Sie sich einen Lappen und Brennspirituts und reiben Sie für ca. 30 Sekunden auf der Farb- oder Lasurschicht. Reiben Sie mit leichtem Druck auf einer kleinen Stelle. Damit dieser Test funktioniert, muss der Anstrich sauber und intakt sein."
                                                                 },
                                                                 "1": {
                                                                     "title": "Was ist jetzt mit der Lasur passiert?",
@@ -229,7 +246,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Lasuren",
-                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
+                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -266,7 +283,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Lasuren",
-                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
+                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -448,7 +465,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "label": "Lasur vorhanden",
-                                                    "question": "Intakte Lasur bitte erst waschen",
+                                                    "question": "Bitte zunächst die Oberfläche säubern. Um einen neuen Anstrich aufzutragen, muss der Untergrund zuächst von Verschmutzungen befreit worden sein. Die Anleitung finden Sie in der Infobox.",
                                                     "info": {
                                                         "0": {
                                                             "id": 0,
@@ -466,8 +483,16 @@
                                                     "children": {
                                                         "0": {
                                                             "id": 0,
-                                                            "label": "Weiter zum Bindemitteltest",
+                                                            "label": "Oberfläche gesäubert?",
                                                             "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst rausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Die Anleitung zum Test finden Sie in der Infobox.",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Oberfläche säubern",
+                                                                    "content": "Vor dem Renovierungsanstrich muss der Untergrund sauber und trocken sein. Reinigen Sie alte Farbe gründlich mit Wasser und ggf. Seife oder unserem Fassadenreiniger. Mit Fassadenreiniger entfernt man Schmutz, Staub, Moose, Pilze und Mikroorganismen. Spülen Sie etwaige Rückstände von Reinigungsmitteln gründlich mit Wasser ab und lassen Sie die Oberfläche trocknen, ehe Sie mit dem neuen Anstrich beginnen.",
+                                                                    "image": "assets/images/lasur.png"
+                                                                }
+                                                            },
                                                             "breadcrumb": "Bindemitteltest",
                                                             "children": {
                                                                 "0": {
@@ -481,7 +506,7 @@
                                                                             "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich mit Brennspiritus bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich heraus welches Bindemittel in meiner Lasur ist?",
                                                                             "instructions": {
                                                                                 "0": {
-                                                                                    "title": "Nehmen Sie sich einen Lappen und Brennspirituts und reiben Sie für 1-2 Minuten auf der Farb- oder Lasurschicht. Reiben Sie mit leichtem Druck auf einer kleinen Stelle. Damit dieser Test funktioniert, muss der Anstrich sauber und intakt sein."
+                                                                                    "title": "Nehmen Sie sich einen Lappen und Brennspirituts und reiben Sie für ca. 30 Sekunden auf der Farb- oder Lasurschicht. Reiben Sie mit leichtem Druck auf einer kleinen Stelle. Damit dieser Test funktioniert, muss der Anstrich sauber und intakt sein."
                                                                                 },
                                                                                 "1": {
                                                                                     "title": "Was ist jetzt mit der Lasur passiert?",
@@ -969,7 +994,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Lasuren",
-                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
                                                     "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
@@ -1028,7 +1053,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Lasur",
-                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
                                                     "image": "assets/images/lasur.png"
                                                 }
                                             },

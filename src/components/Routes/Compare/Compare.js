@@ -239,7 +239,7 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                             </PropValues>
                         </Prop>
                         <Prop>
-                            <PropHeader>Erlaubte Oberflächen</PropHeader>
+                            <PropHeader>Mögliche Oberflächen</PropHeader>
                             <Hr />
                             <PropValues>
                                 <PropText>{product_1.surface.map(item => surfaces[item]).join(", ")}</PropText>
@@ -247,7 +247,7 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                             </PropValues>
                         </Prop>
                         <Prop>
-                            <PropHeader>Anwendungen</PropHeader>
+                            <PropHeader>Mögliche Anwendungsbereiche</PropHeader>
                             <Hr />
                             <PropValues>
                                 <PropText>{product_1.application.map(item => applications[item]).join(", ")}</PropText>

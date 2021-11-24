@@ -43,6 +43,19 @@ const ProductsWrapper = styled.div`
   }
 `
 
+const WarningBox = styled.p`
+  border: 1px solid grey;
+  color: #5a5a5a;
+  border-radius: .5em;
+  padding: 1em;
+  background-color: #ececec;
+  width: 60%;
+  line-height: 25px;
+  @media (max-width: 580px){
+    width: 80%;
+  }
+`
+
 const Count = styled.p`
   font-weight: bold;
   background-color: #FFE60A;
@@ -214,6 +227,8 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
         handleChangeSort={(e) => handleChangeSort(e)} 
         handleOnSlide={(values) => handleOnSlide(values)}
       />
+
+      <WarningBox>Achtung! Beachten Sie immer die Herstellerangaben zu den Grundierungen in den jeweiligen Datenblättern. Insebsondere auf unbehandeltem/abgeschliffenem Holz muss fast immer grundiert werden. Ohne richtige Grundierung (falls notwendig) wird der Anstrich nicht halten</WarningBox>
 
       <Count style={{margin: '1em'}}>{filteredObjectKeys?.length} {`${filteredObjectKeys?.length !== 1 ? "Produkte" : "Produkt"}`} gefunden</Count>
 

@@ -70,7 +70,7 @@ const CompareStatusBar = ({ compareLength, compareList, resetCompare }) => {
             {
                 disabled ?
                     <button style={linkStyling} onClick={() => alert("Bitte wählen Sie für den Vergleich zwei Produkte aus.")} disabled={false}>
-                        <ButtonText disabled>{`Produkte vergleichen (${compareList.length} / ${compareLength})`}</ButtonText>
+                        <ButtonText disabled>{`Produkte vergleichen (${compareList.length}/${compareLength})`}</ButtonText>
                         <Icon 
                             src="assets/icons/misc/right.png"
                             style={{"height": "20px", "width": "20px", "margin": "5px"}}
@@ -81,7 +81,6 @@ const CompareStatusBar = ({ compareLength, compareList, resetCompare }) => {
                     <Link 
                         to={`/compare/${productParams}`}
                         style={linkStyling}
-                        onClick={() => console.log("VERGLEICHEN")}
                     >
                         <ButtonText disabled>{`Produkte vergleichen (${compareList.length} / ${compareLength})`}</ButtonText>
                         <Icon 

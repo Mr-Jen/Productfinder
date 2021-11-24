@@ -76,14 +76,16 @@ const Home = ({addToHistory}) => {
                 alt="HomeIcon"
             />
             <HomeWrapper>
-                <TitleText>Der <span style={{"fontWeight": "bold", "fontSize": "26px", "letterSpacing": "1px"}}>Produktfinder</span> hilft Ihnen bei der Entscheidung für das Produkt, dass zu
-                    Ihrem Projekt am besten passt.
+                <TitleText>Der <span style={{"fontWeight": "bold", "fontSize": "26px", "letterSpacing": "1px"}}>Produktfinder</span> hilft Ihnen bei der Entscheidung für den zu Ihrem Projekt passenden Anstrich.
                 </TitleText>
-                <InfoText>Durch das ausgeklügelte Fragen-Auswahl System können Sie die Anzahl an passenden Produkten 
-                    auf ein Minimum reduzieren und sparen so viel Zeit bei der Suche <br/>
-                    Anhand diverser Filterfragen finden Sie heraus, welche Anstrichart zu Ihrer Situation passt. <br/><br/>
-                    Durch die                 <InfoButton>
-                    <Icon alt="info" height="20px" width="20px" src={"/assets/icons/misc/info.svg"}></Icon>
+                <InfoText>
+                    Durch eine Reihe an Filterfragen kann der Produktfinder Ihnen helfen die Auswahl der verschiedenen Anstricharten so zu 
+                    reduzieren, dass nur noch für Sie relevante Anstriche gezeigt werden. Hierbei wird nicht nur so gefiltert, dass die technisch 
+                    möglichen Anstriche gezeigt werden, Sie können auch Ihre persönlichen Vorlieben angeben, bspw. ob es eine Lasur, Farbe, mit mehr oder weniger Glanz sein soll.
+                    <br/><br/>
+                    Durch die                 
+                    <InfoButton>
+                        <Icon alt="info" height="20px" width="20px" src={"/assets/icons/misc/info.svg"}></Icon>
                     </InfoButton> Symbole erhalten Sie im Produktfinder weitere Informationen.
                 </InfoText>
                 <Link 

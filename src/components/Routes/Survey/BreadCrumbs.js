@@ -16,7 +16,7 @@ const BreadCrumbWrapper = styled.div`
 
 const BreadCrumbInnerWrapper = styled.div`
     display: flex;
-    align-items: center;
+    align-items: center;    
 `
 
 const Arrow = styled.img`
@@ -85,6 +85,7 @@ const BreadCrumbs = ({handleNavigationChange, breadCrumbs}) => {
                     {breadCrumbs.length > 0 && <Arrow src="assets/icons/misc/left-arrow.png"></Arrow>}
                     <BreadCrumb                        
                         lastCrumb={true}
+                        style={{cursor: "pointer"}}
                     >
                         {breadCrumbs[breadCrumbs.length-2]}
                     </BreadCrumb>
