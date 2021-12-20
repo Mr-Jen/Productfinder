@@ -62,7 +62,7 @@ const Count = styled.p`
   padding: .5em;
 `
 
-const Products = ({ target, coating, initFilters, filteredSurfaces, filteredApplications }) => {
+const Products = ({ target, coating, roughness, woodtype, initFilters, filteredSurfaces, filteredApplications }) => {
   const [initData, setInitData] = useState(null);
   const [sortBy, setSortBy] = useState();
   const [compareProducts, setCompareProducts] = useState([]);
@@ -146,8 +146,11 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
 
   if (products && target !== undefined){
     const productList = Object.entries(products);
+
     const filteredProducts = productList
-      .filter((value, key) => value[1].category === target)
+      .filter((value, key) => value[1].category.includes(target))
+      .filter((value, key) => ((value[1].name === "Schlammfarbe" && roughness !== 1) || value[1].name !== "Schlammfarbe"))
+      .filter((value, key) => (value[1].allowed_on_hardwood && woodtype !== 0) || woodtype === 0);
 
     const filteredProducts_2 = filteredProducts.filter((value, key) => coating ? (checkCoatingCompability(value[1].allowed_coatings, coating) && value) : value)
 
@@ -239,7 +242,7 @@ const Products = ({ target, coating, initFilters, filteredSurfaces, filteredAppl
 
               let product = products[objectKey]
               let { id, category, surface, application, lifetime, gloss_level, binder, solubility, images } = product
-              let category_value = categories[category]
+              let category_value = categories[category[0]]
               let surface_value = surface.map((key) => surfaces[key])
               let application_value = application.map((key) => applications[key])
               let binder_value = binders[binder]
@@ -285,6 +288,8 @@ const mapStateToProps = ({ user, filter }) => {
   return {
     target,
     coating,
+    roughness: user["roughness"],
+    woodtype: user["woodtype"],
     filteredSurfaces: filter["surfaces"],
     filteredApplications: filter["applications"]
   }

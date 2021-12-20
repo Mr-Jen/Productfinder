@@ -1,6 +1,6 @@
-import { SET_TARGET, SET_COATING, SET_COATING_LENGTH } from '../actions/user'
+import { SET_TARGET, SET_COATING, SET_COATING_LENGTH, SET_ROUGHNESS, SET_WOOD_TYPE } from '../actions/user'
 
-const user = (state = {"coating": [], "target": null}, action) => {
+const user = (state = {"coating": [], "target": null, "roughness": null, "woodtype": null}, action) => {
     const { type, payload } = action;
     switch (type){
         case SET_TARGET:
@@ -11,6 +11,10 @@ const user = (state = {"coating": [], "target": null}, action) => {
             let new_coatings = state["coating"]
             new_coatings.length = payload.length
             return {...state, "coating": new_coatings}
+        case SET_ROUGHNESS:
+            return {...state, "roughness": payload.roughness}
+        case SET_WOOD_TYPE:
+            return {...state, "woodtype": payload.woodtype}
         default:
             return state;
     }

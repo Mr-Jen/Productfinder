@@ -3,9 +3,10 @@ import { connect, ReactReduxContext } from 'react-redux'
 import watch from 'redux-watch'
 import { useContext } from 'react';
 import styled from 'styled-components'
+import { useHistory } from "react-router-dom";
 
 import { addToHistory } from '../../../actions/history'
-import { setCoating, setCoatingLength, setTarget } from '../../../actions/user'
+import { setCoating, setCoatingLength, setRoughness, setTarget, setWoodType } from '../../../actions/user'
 import InfoCard from './InfoCard'
 import MobileInfoCard from './MobileInfoCard/MobileInfoCard';
 
@@ -115,11 +116,13 @@ const CardWrapper = styled.div`
   z-index: 1000000;
 `
 
-const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, ButtonSetCoating, ButtonSetCoatingLength, coatingLength, target_action }) => {
+const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, ButtonSetCoating, ButtonSetCoatingLength, ButtonSetRoughness, ButtonSetWoodtype,coatingLength, target_action }) => {
   const [showInfoCard, setShowInfoCard] = React.useState(false);
   const [cardContent, setCardContent] = React.useState();
   const [allowDispatch, setAllowDispatch] = React.useState(true);
   const [isDesktop, setIsDesktop] = React.useState(false)
+
+  const history = useHistory();
 
   React.useEffect(() => {
     updatePredicate();
@@ -159,19 +162,31 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     e.stopPropagation()
   }
 
-  //console.log("THE ACTION: ", action)
-
   const onClickButton = (key, target) => {
-    //console.log("ACTION INSIDE BUTTON HANDLER: ", action)
-    ButtonAddToHistory(key)
-    //console.log("GOAL: ", target, action)
+    console.log("TARGET: ", target?.woodtype)
+
     if (target_action === 'set_target'){
-      //console.log("SETTING TARGET: ", target.label)
       ButtonAddTarget(target.label)
     }
     else if (action === 'set_coating' && target){
-      //console.log("SETTING COATING: ", target?.action_value)
       target.action_value !== undefined && ButtonSetCoating(target.action_value)
+    }
+
+    if (target?.roughness !== null){
+      ButtonSetRoughness(target.roughness)
+    }
+
+    if (target?.woodtype !== undefined){
+      //console.log("WOOD TYPE EXISTS", target.woodtype)
+      ButtonSetWoodtype(target.woodtype)
+    }
+
+
+    if (childrenItems[key].children === null ){
+      history.push("/products");
+    }
+    else {
+      ButtonAddToHistory(key)
     }
   }
 
@@ -269,7 +284,9 @@ const mapDispatchToProps = dispatch => ({
   ButtonAddToHistory : itemId => dispatch(addToHistory(itemId)),
   ButtonAddTarget : target => dispatch(setTarget(target)),
   ButtonSetCoating : coating => dispatch(setCoating(coating)),
-  ButtonSetCoatingLength : length => dispatch(setCoatingLength(length))
+  ButtonSetCoatingLength : length => dispatch(setCoatingLength(length)),
+  ButtonSetRoughness : roughness => dispatch(setRoughness(roughness)),
+  ButtonSetWoodtype : woodtype => dispatch(setWoodType(woodtype))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Items)

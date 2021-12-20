@@ -5,6 +5,7 @@ const filters = (state = {}, action) => {
     switch (type){
         case INIT_FILTERS:
             return {
+                ...state,
                 ...payload.initConfig
             }
         case CHANGE_SURFACE:

@@ -26,7 +26,7 @@
                         "0": {
                             "id": 0,
                             "label": "Lasur",
-                            "question": "",
+                            "question": "Handelt es sich bei Ihrem Holz um Weichholz (Kiefer, Fichte, Tanne, etc.) oder um Hartholz (Eichen, lärche, Douglasie, etc)?",
                             "action_value": null,
                             "info": {
                                 "0": {
@@ -44,12 +44,27 @@
                                     "image": "assets/images/Lasur/lasur.png"
                                 }
                             },
-                            "children": null
+                            "children": {
+                                "0": {
+                                    "id": 1,
+                                    "label": "Weichholz",
+                                    "question": "",
+                                    "woodtype": 0,
+                                    "children": null
+                                },
+                                "1": {
+                                    "id": 1,
+                                    "label": "Hartholz",
+                                    "question": "",
+                                    "woodtype": 1,
+                                    "children": null
+                                }
+                            }
                         },
                         "1": {
                             "id": 1,
                             "label": "Farbe",
-                            "question": "Ist Ihr Holz sägerau oder glatt/gehobelt?",
+                            "question": "Handelt es sich bei Ihrem Holz um Weichholz (Kiefer, Fichte, Tanne, etc.) oder um Hartholz (Eichen, lärche, Douglasie, etc)?",
                             "action_value": null,
                             "info": {
                                 "0": {
@@ -68,17 +83,81 @@
                                 }
                             },
                             "children": {
-                                "0": {           
-                                    "id": 0,
-                                    "label": "Sägerau",
-                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                    "children": null
-                                },
-                                "1": {           
+                                "0": {
                                     "id": 1,
-                                    "label": "Glatt / Gehobelt",
-                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                    "children": null 
+                                    "label": "Weichholz",
+                                    "question": "Ist Ihr Holz sägerau oder glatt/gehobelt?",
+                                    "woodtype": 0,
+                                    "children": {
+                                        "0": {           
+                                            "id": 0,
+                                            "label": "Sägerau",
+                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "roughness": 0,
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Sägeraues Holz",
+                                                    "content": "Unter sägerauem Holz versteht man jedes Holz, das per Definition mit dem ersten Schnitt ab Sägewerk geliefert wurde. Sägeraues Holz darf nicht geschliffen, gehobelt oder feingesägt sein. Sägeraues Holz hat eine sehr raue Oberfläche, das Holz hat viele abstehende Fasern und splittert oberflächlich. Bei frischem Holz kann der Händler immer Auskunft darüber geben, ob das Holz sägerau ist oder nicht.",
+                                                    "image": "assets/images/Anderes/sägerau.jpg"
+                                                }
+                                            },
+                                            "children": null
+                                        },
+                                        "1": {           
+                                            "id": 1,
+                                            "label": "Glatt / Gehobelt",
+                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "roughness": 1,
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Gehobeltes / Glattes Holz",
+                                                    "content": "Gehobeltes, feingesägtes oder geschliffenes Holz ist bereits behandelts worden. Das Holz wurde meist bereits im Sägerwerk nach dem Schneiden behandelt. Gehobeltes Holz hat eine sehr glatte, oft seidige Oberfläche. Geschliffenes Holz ist ebenfalls sehr glatt, es hat keine weit abstehenden Splitter oder Fasern. Feingesägtes Holz kann sich mitunter etwas rau oder fasrig anfühlen, es ist jedoch so glatt, dass keine Splitter oder große Fasern abstehen. All diese Hölzer unterscheiden sich von sägerauem Holz dadurch, dass sie technisch geglättet wurden und nicht mehr splittern, man kann diese Hölzer problemlos anfassen, ohne Gefahr zu laufen sich einen Splitter einzufangen.",
+                                                    "image": "assets/images/Anderes/glatt.jpg"
+                                                }
+                                            },
+                                            "children": null 
+                                        }
+                                    }
+                                },
+                                "1": {
+                                    "id": 1,
+                                    "label": "Hartholz",
+                                    "question": "Ist Ihr Holz sägerau oder glatt/gehobelt?",
+                                    "woodtype": 1,
+                                    "children": {
+                                        "0": {           
+                                            "id": 0,
+                                            "label": "Sägerau",
+                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "roughness": 0,
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Sägeraues Holz",
+                                                    "content": "Unter sägerauem Holz versteht man jedes Holz, das per Definition mit dem ersten Schnitt ab Sägewerk geliefert wurde. Sägeraues Holz darf nicht geschliffen, gehobelt oder feingesägt sein. Sägeraues Holz hat eine sehr raue Oberfläche, das Holz hat viele abstehende Fasern und splittert oberflächlich. Bei frischem Holz kann der Händler immer Auskunft darüber geben, ob das Holz sägerau ist oder nicht.",
+                                                    "image": "assets/images/Anderes/sägerau.jpg"
+                                                }
+                                            },
+                                            "children": null
+                                        },
+                                        "1": {           
+                                            "id": 1,
+                                            "label": "Glatt / Gehobelt",
+                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "roughness": 1,
+                                            "info": {
+                                                "0": {
+                                                    "id": 0,
+                                                    "title": "Gehobeltes / Glattes Holz",
+                                                    "content": "Gehobeltes, feingesägtes oder geschliffenes Holz ist bereits behandelts worden. Das Holz wurde meist bereits im Sägerwerk nach dem Schneiden behandelt. Gehobeltes Holz hat eine sehr glatte, oft seidige Oberfläche. Geschliffenes Holz ist ebenfalls sehr glatt, es hat keine weit abstehenden Splitter oder Fasern. Feingesägtes Holz kann sich mitunter etwas rau oder fasrig anfühlen, es ist jedoch so glatt, dass keine Splitter oder große Fasern abstehen. All diese Hölzer unterscheiden sich von sägerauem Holz dadurch, dass sie technisch geglättet wurden und nicht mehr splittern, man kann diese Hölzer problemlos anfassen, ohne Gefahr zu laufen sich einen Splitter einzufangen.",
+                                                    "image": "assets/images/Anderes/glatt.jpg"
+                                                }
+                                            },
+                                            "children": null 
+                                        }
+                                    }
                                 }
                             }
                         },
@@ -166,7 +245,7 @@
                                             "id": 0,
                                             "title": "Oberfläche säubern",
                                             "content": "Vor dem Renovierungsanstrich muss der Untergrund sauber und trocken sein. Reinigen Sie alte Farbe gründlich mit Wasser und ggf. Seife oder unserem Fassadenreiniger. Mit Fassadenreiniger entfernt man Schmutz, Staub, Moose, Pilze und Mikroorganismen. Spülen Sie etwaige Rückstände von Reinigungsmitteln gründlich mit Wasser ab und lassen Sie die Oberfläche trocknen, ehe Sie mit dem neuen Anstrich beginnen.",
-                                            "image": "assets/images/lasur.png"
+                                            "image": "assets/images/Anderes/reinigen.jpg"
                                         }
                                     },
                                     "children": {
@@ -490,7 +569,7 @@
                                                                     "id": 0,
                                                                     "title": "Oberfläche säubern",
                                                                     "content": "Vor dem Renovierungsanstrich muss der Untergrund sauber und trocken sein. Reinigen Sie alte Farbe gründlich mit Wasser und ggf. Seife oder unserem Fassadenreiniger. Mit Fassadenreiniger entfernt man Schmutz, Staub, Moose, Pilze und Mikroorganismen. Spülen Sie etwaige Rückstände von Reinigungsmitteln gründlich mit Wasser ab und lassen Sie die Oberfläche trocknen, ehe Sie mit dem neuen Anstrich beginnen.",
-                                                                    "image": "assets/images/lasur.png"
+                                                                    "image": "assets/images/reinigen.jpg"
                                                                 }
                                                             },
                                                             "breadcrumb": "Bindemitteltest",
