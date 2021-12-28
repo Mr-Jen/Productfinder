@@ -49,6 +49,14 @@
                                     "id": 1,
                                     "label": "Weichholz",
                                     "question": "",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "title": "Weichholz",
+                                            "content": "Weichhölzer sind zB xyz.",
+                                            "image": "assets/images/lasur.png"
+                                        }
+                                    },
                                     "woodtype": 0,
                                     "children": null
                                 },
@@ -56,6 +64,14 @@
                                     "id": 1,
                                     "label": "Hartholz",
                                     "question": "",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "title": "Hartholz",
+                                            "content": "Harthölzer sind zB xyz.",
+                                            "image": "assets/images/lasur.png"
+                                        }
+                                    },
                                     "woodtype": 1,
                                     "children": null
                                 }
@@ -87,6 +103,14 @@
                                     "id": 1,
                                     "label": "Weichholz",
                                     "question": "Ist Ihr Holz sägerau oder glatt/gehobelt?",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "title": "Weichholz",
+                                            "content": "Weichhölzer sind zB xyz.",
+                                            "image": "assets/images/lasur.png"
+                                        }
+                                    },
                                     "woodtype": 0,
                                     "children": {
                                         "0": {           
@@ -125,6 +149,14 @@
                                     "id": 1,
                                     "label": "Hartholz",
                                     "question": "Ist Ihr Holz sägerau oder glatt/gehobelt?",
+                                    "info": {
+                                        "0": {
+                                            "id": 0,
+                                            "title": "Hartholz",
+                                            "content": "Hartholz sind zB xyz.",
+                                            "image": "assets/images/lasur.png"
+                                        }
+                                    },
                                     "woodtype": 1,
                                     "children": {
                                         "0": {           
