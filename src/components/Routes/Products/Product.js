@@ -59,23 +59,7 @@ const CategoryText = styled.p`
 
 const ValueText = styled.p`
     font-size: 13px;
-`
-
-const linkStyling = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    textDecoration: 'none',
-    height: '30px',
-    width: '60%',
-    alignItems: 'center',
-    backgroundColor: '#ffe60a',
-    paddingLeft: '20px',
-    paddingRight: '20px',
-    borderRadius: '7px',
-    marginBottom: '10px',
-    marginTop: '10px'
-}  
+` 
 
 const ButtonText = styled.p`
     margin-right: 10px;
@@ -95,6 +79,25 @@ const Compare = styled.div`
 `
 
 const Product = ({ title, category, surface, application, lifetime, gloss_level, binder, solubility, images, id, onChange, isChecked}) => {
+
+    const [toggle, setToggle] = React.useState(false);
+
+    const linkStyling = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        textDecoration: 'none',
+        height: '30px',
+        width: '60%',
+        alignItems: 'center',
+        backgroundColor: '#ffe60a',
+        paddingLeft: '20px',
+        paddingRight: '20px',
+        borderRadius: '7px',
+        marginBottom: '10px',
+        marginTop: '10px',
+        border: toggle ? '2px solid black' : "2px solid transparent"
+    } 
 
     const onClickCompare = () => {
         onChange(id)
@@ -138,6 +141,8 @@ const Product = ({ title, category, surface, application, lifetime, gloss_level,
             <Link 
                     to={`/product/${id + 1}`}
                     style={linkStyling}
+                    onMouseEnter={() => setToggle(true)}
+                    onMouseLeave={() => setToggle(false)}
                 >
                     <ButtonText>Ansehen</ButtonText>
                     <img 
