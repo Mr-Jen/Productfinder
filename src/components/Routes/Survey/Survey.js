@@ -37,20 +37,19 @@ export const Survey = ({isHome, isFirst, handleNavigationChange}) => {
             <HeaderWrapper>
                 { isHome &&
                   <NavigateButton 
-                    location={"/"} 
-                    text={"Zurück"} 
-                    direction={"left"}
-                    onClick={() => handleNavigationChange(0)}
+                  location={"/"} 
+                  text={"Zurück"} 
+                  direction={"left"}
+                  onClick={() => handleNavigationChange(0)}
                   />
                 }
-                { isFirst ?                   
+                {isFirst ?                   
                   <NavigateButton 
                     location={"/"} 
                     text={"Zum Start"} 
                     direction={"left"}
                     onClick={() => handleNavigationChange(0)}
-                  /> : <BreadCrumbs/>
-                }
+                  /> : <BreadCrumbs/>}
             </HeaderWrapper>
             <ContentWrapper>
               <Infos/>
