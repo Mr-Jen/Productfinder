@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     background-color: #FFE60A;
     border-radius: 10px;
     border: ${props => props.warn ? "4px solid red" : "1px solid grey"};
-    height: 60vh;
+    height: 65vh;
     width: 90vw;
     max-width: 1400px;
     z-index: 10000000;
@@ -25,7 +25,7 @@ const Wrapper = styled.div`
     justify-content: center;
 
     @media (min-width: 1200px){
-        min-height: 50vh;
+        min-height: 55vh;
         height: calc(0.5 * 50vw);
     }
 

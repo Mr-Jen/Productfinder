@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom'
 import NavigateButton from '../../Shared/NavigateButton'
 import Title from '../../Shared/Title'
 import { handleLoadProducts } from '../../../actions/shared'
+import './compare.css'
 
 const Wrapper = styled.div`
     width: 100%;
@@ -142,6 +143,17 @@ const TitleWrapper = styled.div`
     width: 100%;*/
 `
 
+const StickyTitlesWrapper = styled.div`
+    display: flex;
+    width: 100%;
+    z-index: 3000;
+    background-color: white;
+`
+
+const TitleContainer = styled.div`
+    flex: 1;
+`
+
 const ProductTitle = styled.h3`
     text-align: center;
     width: 100%;
@@ -170,6 +182,42 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
         }
     }, [loadProducts])*/
 
+    /*useEffect(() => {
+        //console.log("TITLE REF: ", titleRef.current)
+        let header = document.getElementById("titleHeader");
+        if(header){
+            console.log("Header rendered")
+        }
+    })*/
+
+
+    useEffect(() => {
+        console.log("COMPONENT COMPARE FULLY RENDERED")
+
+        // Get the header
+        var header = document.getElementById("titleHeader");
+
+        if(header){
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = () => myFunction();
+
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                //if (window.pageYOffset > sticky) {
+                    //console.log("HEADER HEIGHT INSIDE COMPARE: ", document.getElementById("top-header").clientHeight);
+                if (window.pageYOffset >= 95){
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        }
+    })
+
+
     const { search } = useLocation()
     console.log("SEARCH: ", useLocation())
 
@@ -183,9 +231,11 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
     else {
         const [product_1, product_2] = compareProducts
 
+    
+
         return (
             <Wrapper>
-                <Header>
+                <Header id="top-header">
                     <NavigateButton
                         location={"/products"} 
                         text={"Zurück"} 
@@ -200,12 +250,19 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                         />
                     </div>
                 </Header>
-    
+                <StickyTitlesWrapper id='titleHeader'>
+                    <TitleContainer>
+                        <ProductTitle>{product_1.name}</ProductTitle>
+                    </TitleContainer>
+                    <TitleContainer>
+                        <ProductTitle>{product_2.name}</ProductTitle>
+                    </TitleContainer>                    
+                </StickyTitlesWrapper>
                 <ContentWrapper>
                     <Product>
-                        <TitleWrapper>
+                        {/*<TitleWrapper>
                             <ProductTitle>{product_1.name}</ProductTitle>
-                        </TitleWrapper>                        
+                        </TitleWrapper>*/}                      
                         <Img url={product_1.images}/>
                         <Button target="_blank" and rel="noopener noreferrer" href={product_1.link !== "" ? product_1.link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
@@ -216,9 +273,9 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                     </Product>
                     <Vl />
                     <Product>
-                        <TitleWrapper>
+                        {/*<TitleWrapper>
                             <ProductTitle>{product_2.name}</ProductTitle>
-                        </TitleWrapper>  
+                        </TitleWrapper>*/}
                         <Img url={product_2.images}/>
                         <Button target="_blank" and rel="noopener noreferrer" href={product_2.link !== "" ? product_2.link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>

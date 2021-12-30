@@ -17,23 +17,32 @@ const Text = styled.p`
     @media (max-width: 450px) {
         display: none;
     }
+    color: black;
 `
 
 const NavigateButton = (props) => {
+    const [toggle, setToggle] = React.useState(false);
+
+    React.useEffect(() => {
+        console.log("TOGGLE: ", toggle);
+    }, [toggle])
+
     return (
         <Link 
             to={props.location}
             style={linkStyle}
             onClick={props.onClick && props.onClick}
+            onMouseEnter={() => setToggle(true)}
+            onMouseLeave={() => setToggle(false)}
         >
             <Icon 
-                src={props.direction === "left" ? "/assets/icons/misc/left.png" : "/assets/icons/misc/right.png"}
+                src={props.direction === "left" ? (toggle ? "assets/icons/misc/left-grey.png" : "/assets/icons/misc/left.png") : "/assets/icons/misc/right.png"}
                 alt="BackButton"
                 direction={props.direction}
                 style={{"height": "25px", "width": "25px", "margin": "5px"}}
             />
             <Text 
-                style={{"color": "black", "fontWeight": "bold"}}
+                style={{ "fontWeight": "bold", "color": toggle ? "grey" : "black"}}
                 direction={props.direction}
             >
                 {props.text}

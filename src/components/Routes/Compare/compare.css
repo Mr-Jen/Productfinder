@@ -1,0 +1,6 @@
+.sticky {
+    position: fixed;
+    top: 95px;
+    max-width: 90%;
+    border-bottom: 2px solid grey;
+  }

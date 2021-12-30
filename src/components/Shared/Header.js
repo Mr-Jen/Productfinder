@@ -52,6 +52,7 @@ function Header({ handleNavigationChange }) {
     React.useEffect(() => {
         window.addEventListener('scroll',(e)=>{
             const wrapper = document.getElementById('wrapper');
+            console.log("HEIGHT OF HEADER: ", wrapper.offsetHeight);
             if(window.pageYOffset>0){
                 wrapper.classList.add("add-shadow");
             } else{

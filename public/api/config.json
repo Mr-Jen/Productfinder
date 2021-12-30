@@ -53,8 +53,14 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Weichholz",
-                                            "content": "Weichhölzer sind zB xyz.",
-                                            "image": "assets/images/lasur.png"
+                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Dichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert weden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind meist noch sehr feucht wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
+                                            "image": "assets/images/Hölzer/weichholz-1.png"
+                                        },
+                                        "1": {
+                                            "id": 1,
+                                            "title": "Weichholz",
+                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Dichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert weden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind meist noch sehr feucht wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
+                                            "image": "assets/images/Hölzer/weichholz-2.png"
                                         }
                                     },
                                     "woodtype": 0,
@@ -68,8 +74,14 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Hartholz",
-                                            "content": "Harthölzer sind zB xyz.",
-                                            "image": "assets/images/lasur.png"
+                                            "content": "Als Hartholz gilt Holz mit vergleichsweise hoher Dichte. Diese Hölzer sind besonders hart und dadurch sehr stabil. Harthölzer wachsen langsamer und sind dh. als Baumaterial oft verhältnismäßig teuer. Aufgrund der hohen Qualität wird Hartholz üblicherweise da verwendet, wo kein Anstrich gewünscht ist. Je nach Holzart können diese Hölzer problemlos 10-30 Jahre ungestrichen bleiben. Typische Harthölzer sind Laubholz wie Eiche, Buche und Esche aber auch Nadelholz wie sibirische Lärche zählt zu den Harthölzern. Ebenso sind alle Tropenhölzer Hartholz. Wichtig: Hartholz sollte niemals direkt nach dem Aufbau gestrichen werden. Durch die hohe Holzdichte, können Flüssigstoffe nicht ins Holz eindringen. Kein Anstrich der Welt könnte hier lange haften. Lassen Sie Hartholz immer erst vergrauen, ehe Sie streichen. Die Vergrauung kann 1 bis mehrere Jahre in Anspruch nehmen. ",
+                                            "image": "assets/images/Hölzer/hartholz-1.png"
+                                        },
+                                        "1": {
+                                            "id": 1,
+                                            "title": "Hartholz",
+                                            "content": "Als Hartholz gilt Holz mit vergleichsweise hoher Dichte. Diese Hölzer sind besonders hart und dadurch sehr stabil. Harthölzer wachsen langsamer und sind dh. als Baumaterial oft verhältnismäßig teuer. Aufgrund der hohen Qualität wird Hartholz üblicherweise da verwendet, wo kein Anstrich gewünscht ist. Je nach Holzart können diese Hölzer problemlos 10-30 Jahre ungestrichen bleiben. Typische Harthölzer sind Laubholz wie Eiche, Buche und Esche aber auch Nadelholz wie sibirische Lärche zählt zu den Harthölzern. Ebenso sind alle Tropenhölzer Hartholz. Wichtig: Hartholz sollte niemals direkt nach dem Aufbau gestrichen werden. Durch die hohe Holzdichte, können Flüssigstoffe nicht ins Holz eindringen. Kein Anstrich der Welt könnte hier lange haften. Lassen Sie Hartholz immer erst vergrauen, ehe Sie streichen. Die Vergrauung kann 1 bis mehrere Jahre in Anspruch nehmen. ",
+                                            "image": "assets/images/Hölzer/hartholz-2.png"
                                         }
                                     },
                                     "woodtype": 1,
@@ -107,8 +119,14 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Weichholz",
-                                            "content": "Weichhölzer sind zB xyz.",
-                                            "image": "assets/images/lasur.png"
+                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Dichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert weden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind meist noch sehr feucht wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
+                                            "image": "assets/images/Hölzer/weichholz-1.png"
+                                        },
+                                        "1": {
+                                            "id": 1,
+                                            "title": "Weichholz",
+                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Dichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert weden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind meist noch sehr feucht wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
+                                            "image": "assets/images/Hölzer/weichholz-2.png"
                                         }
                                     },
                                     "woodtype": 0,
@@ -137,7 +155,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Gehobeltes / Glattes Holz",
-                                                    "content": "Gehobeltes, feingesägtes oder geschliffenes Holz ist bereits behandelts worden. Das Holz wurde meist bereits im Sägerwerk nach dem Schneiden behandelt. Gehobeltes Holz hat eine sehr glatte, oft seidige Oberfläche. Geschliffenes Holz ist ebenfalls sehr glatt, es hat keine weit abstehenden Splitter oder Fasern. Feingesägtes Holz kann sich mitunter etwas rau oder fasrig anfühlen, es ist jedoch so glatt, dass keine Splitter oder große Fasern abstehen. All diese Hölzer unterscheiden sich von sägerauem Holz dadurch, dass sie technisch geglättet wurden und nicht mehr splittern, man kann diese Hölzer problemlos anfassen, ohne Gefahr zu laufen sich einen Splitter einzufangen.",
+                                                    "content": "Gehobeltes, feingesägtes oder geschliffenes Holz ist bereits im Sägewerk behandelt worden. Gehobeltes Holz hat eine sehr glatte, oft seidige Oberfläche. Geschliffenes Holz ist ebenfalls glatt, jedoch nicht so seidig glänzend wie gehobeltes Holz. Feingesägtes Holz kann sich mitunter etwas rau oder fasrig anfühlen, es ist jedoch so glatt, dass keine Splitter oder große Fasern abstehen. All diese Hölzer unterscheiden sich von sägerauem Holz dadurch, dass sie technisch geglättet wurden und nicht mehr splittern, man kann diese Hölzer problemlos anfassen, ohne Gefahr zu laufen sich einen Splitter einzufangen. Wichtig: Lassen Sie gehobeltes Weichholz erst einige Wochen aufgebaut im Wetter stehen. Durch das hobeln werden hölzer so stark verdichtet, dass Anstriche schlecht oder gar nicht anhaften können. Üblich sind 6-8 Wochen Anwitterung.",
                                                     "image": "assets/images/Anderes/glatt.jpg"
                                                 }
                                             },
@@ -153,8 +171,14 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Hartholz",
-                                            "content": "Hartholz sind zB xyz.",
-                                            "image": "assets/images/lasur.png"
+                                            "content": "Als Hartholz gilt Holz mit vergleichsweise hoher Dichte. Diese Hölzer sind besonders hart und dadurch sehr stabil. Harthölzer wachsen langsamer und sind dh. als Baumaterial oft verhältnismäßig teuer. Aufgrund der hohen Qualität wird Hartholz üblicherweise da verwendet, wo kein Anstrich gewünscht ist. Je nach Holzart können diese Hölzer problemlos 10-30 Jahre ungestrichen bleiben. Typische Harthölzer sind Laubholz wie Eiche, Buche und Esche aber auch Nadelholz wie sibirische Lärche zählt zu den Harthölzern. Ebenso sind alle Tropenhölzer Hartholz. Wichtig: Hartholz sollte niemals direkt nach dem Aufbau gestrichen werden. Durch die hohe Holzdichte, können Flüssigstoffe nicht ins Holz eindringen. Kein Anstrich der Welt könnte hier lange haften. Lassen Sie Hartholz immer erst vergrauen, ehe Sie streichen. Die Vergrauung kann 1 bis mehrere Jahre in Anspruch nehmen. ",
+                                            "image": "assets/images/Hölzer/hartholz-1.png"
+                                        },
+                                        "1": {
+                                            "id": 1,
+                                            "title": "Hartholz",
+                                            "content": "Als Hartholz gilt Holz mit vergleichsweise hoher Dichte. Diese Hölzer sind besonders hart und dadurch sehr stabil. Harthölzer wachsen langsamer und sind dh. als Baumaterial oft verhältnismäßig teuer. Aufgrund der hohen Qualität wird Hartholz üblicherweise da verwendet, wo kein Anstrich gewünscht ist. Je nach Holzart können diese Hölzer problemlos 10-30 Jahre ungestrichen bleiben. Typische Harthölzer sind Laubholz wie Eiche, Buche und Esche aber auch Nadelholz wie sibirische Lärche zählt zu den Harthölzern. Ebenso sind alle Tropenhölzer Hartholz. Wichtig: Hartholz sollte niemals direkt nach dem Aufbau gestrichen werden. Durch die hohe Holzdichte, können Flüssigstoffe nicht ins Holz eindringen. Kein Anstrich der Welt könnte hier lange haften. Lassen Sie Hartholz immer erst vergrauen, ehe Sie streichen. Die Vergrauung kann 1 bis mehrere Jahre in Anspruch nehmen. ",
+                                            "image": "assets/images/Hölzer/hartholz-2.png"
                                         }
                                     },
                                     "woodtype": 1,
@@ -183,7 +207,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Gehobeltes / Glattes Holz",
-                                                    "content": "Gehobeltes, feingesägtes oder geschliffenes Holz ist bereits behandelts worden. Das Holz wurde meist bereits im Sägerwerk nach dem Schneiden behandelt. Gehobeltes Holz hat eine sehr glatte, oft seidige Oberfläche. Geschliffenes Holz ist ebenfalls sehr glatt, es hat keine weit abstehenden Splitter oder Fasern. Feingesägtes Holz kann sich mitunter etwas rau oder fasrig anfühlen, es ist jedoch so glatt, dass keine Splitter oder große Fasern abstehen. All diese Hölzer unterscheiden sich von sägerauem Holz dadurch, dass sie technisch geglättet wurden und nicht mehr splittern, man kann diese Hölzer problemlos anfassen, ohne Gefahr zu laufen sich einen Splitter einzufangen.",
+                                                    "content": "Gehobeltes, feingesägtes oder geschliffenes Holz ist bereits im Sägewerk behandelt worden. Gehobeltes Holz hat eine sehr glatte, oft seidige Oberfläche. Geschliffenes Holz ist ebenfalls glatt, jedoch nicht so seidig glänzend wie gehobeltes Holz. Feingesägtes Holz kann sich mitunter etwas rau oder fasrig anfühlen, es ist jedoch so glatt, dass keine Splitter oder große Fasern abstehen. All diese Hölzer unterscheiden sich von sägerauem Holz dadurch, dass sie technisch geglättet wurden und nicht mehr splittern, man kann diese Hölzer problemlos anfassen, ohne Gefahr zu laufen sich einen Splitter einzufangen. Wichtig: Lassen Sie gehobeltes Weichholz erst einige Wochen aufgebaut im Wetter stehen. Durch das hobeln werden hölzer so stark verdichtet, dass Anstriche schlecht oder gar nicht anhaften können. Üblich sind 6-8 Wochen Anwitterung.",
                                                     "image": "assets/images/Anderes/glatt.jpg"
                                                 }
                                             },

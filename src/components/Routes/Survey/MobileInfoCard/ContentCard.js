@@ -62,6 +62,7 @@ function ContentCard({ content }) {
             <ContentWrapper>
                 <ImageWrapper imgSrc={content.image}/>
                 <ContentText>{content.content}</ContentText>
+                <br></br>
             </ContentWrapper>
         </Wrapper>
     )
