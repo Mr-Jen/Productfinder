@@ -23,6 +23,7 @@ const Header = styled.div`
 
 const ContentWrapper = styled.div`
     overflow-y: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +32,6 @@ const ContentWrapper = styled.div`
     width: 90%;
     padding: .5em;
     padding-top: 0;
-    border: 1px solid orange;
     margin-bottom: 1em;
 `
 
@@ -65,6 +65,7 @@ const InstructionsWrapper = styled.div`
 
 const ItemWrapper = styled.div`
     padding: .5em;
+    margin-left: .5em;
 `
 
 const Item = styled.div`
@@ -90,9 +91,6 @@ const Option = styled.div`
 `
 
 function ContentCard({ content }) {
-    console.log(content?.warning)
-    console.log("INSTRUCTIONS: ", content.instructions)
-
     let instr = content?.instructions;
 
     return (

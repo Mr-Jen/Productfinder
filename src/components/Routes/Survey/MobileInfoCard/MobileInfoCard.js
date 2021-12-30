@@ -73,8 +73,6 @@ const MobileInfoCard = ({ closeCard, data }) => {
         setSlide(e.activeIndex)
     }
 
-    console.log("CARD INFO DATA: ", data);
-
     return (
         <Wrapper>
             <Header>
