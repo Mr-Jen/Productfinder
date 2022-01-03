@@ -10,6 +10,7 @@ import './compare.css'
 
 const Wrapper = styled.div`
     width: 100%;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,8 +211,10 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                     //console.log("HEADER HEIGHT INSIDE COMPARE: ", document.getElementById("top-header").clientHeight);
                 if (window.pageYOffset >= 95){
                     header.classList.add("sticky");
+                    header.children[0].classList.add("border-right");
                 } else {
                     header.classList.remove("sticky");
+                    header.children[0].classList.remove("border-right");
                 }
             }
         }

@@ -16,17 +16,23 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
   margin: auto;
+  max-width: 100vw;
 `
 
 const HeaderWrap = styled.div`
   display: flex;
   align-self: flex-start;
   z-index: 1000000;
+  max-width: 100%;
+  margin-bottom: 2em;
 
   position: sticky;
   top: 0;
+`
+
+const ContentWrapper = styled.div`
+  width: 90vw;
 `
 
 const App = ({loadConfig, loadProducts, isHome}) => {
@@ -45,20 +51,22 @@ const App = ({loadConfig, loadProducts, isHome}) => {
       <HeaderWrap>
         <Header/>
       </HeaderWrap>
-      <Switch>
-        <Route exact path="/">
-          <Home/>
-        </Route>
-        <Route exact path="/fragen-und-antworten">
-          <Survey/>
-        </Route>
-        <Route exact path="/products">
-          <Products/>
-        </Route>
-        
-        <Route exact path="/product/:productId" component={ProductView} ></Route>
-        <Route exact path="/compare/:productsParam" component={Compare} />
-      </Switch>
+      <ContentWrapper>
+        <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route exact path="/fragen-und-antworten">
+            <Survey/>
+          </Route>
+          <Route exact path="/products">
+            <Products/>
+          </Route>
+          
+          <Route exact path="/product/:productId" component={ProductView} ></Route>
+          <Route exact path="/compare/:productsParam" component={Compare} />
+        </Switch>
+      </ContentWrapper>
     </Wrapper> 
   )
 }

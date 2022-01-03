@@ -10,15 +10,14 @@ const Wrapper = styled.div`
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    width: 100vw;
 
     /*border-bottom: 1px solid rgb(223, 227, 235); */
     background-color: white;   
-    margin-bottom: 2em;
 
     position: sticky;
     top: 0;
-    padding: 1em 0 1em 0;
+    padding: 1em 2em 1em 2em;
 `
 
 const TitleWrapper = styled.div`
@@ -52,7 +51,6 @@ function Header({ handleNavigationChange }) {
     React.useEffect(() => {
         window.addEventListener('scroll',(e)=>{
             const wrapper = document.getElementById('wrapper');
-            console.log("HEIGHT OF HEADER: ", wrapper.offsetHeight);
             if(window.pageYOffset>0){
                 wrapper.classList.add("add-shadow");
             } else{

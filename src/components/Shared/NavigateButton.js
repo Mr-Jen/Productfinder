@@ -35,12 +35,15 @@ const NavigateButton = (props) => {
             onMouseEnter={() => setToggle(true)}
             onMouseLeave={() => setToggle(false)}
         >
-            <Icon 
+            {/*<Icon 
                 src={props.direction === "left" ? (toggle ? "assets/icons/misc/left-grey.png" : "/assets/icons/misc/left.png") : "/assets/icons/misc/right.png"}
                 alt="BackButton"
                 direction={props.direction}
                 style={{"height": "25px", "width": "25px", "margin": "5px"}}
-            />
+            />*/}
+            <svg xmlns="http://www.w3.org/2000/svg" style={{stroke: toggle ? "grey" : "black", width: "20px", margin: "5px"}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
             <Text 
                 style={{ "fontWeight": "bold", "color": toggle ? "grey" : "black"}}
                 direction={props.direction}
