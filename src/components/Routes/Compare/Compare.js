@@ -174,7 +174,8 @@ const ProductTitle = styled.h3`
     z-index: 10000;
 `
 
-const Compare = ({ compareProducts, categories, surfaces, applications, binders, solubilities, loadProducts, res }) => {
+const Compare = ({ compareProducts, categories, surfaces, applications, binders, solubilities, headerHeight, loadProducts, res }) => {
+
     /*React.useEffect(() => {
         console.log("IS PRODUCTS: ", res === null ? false : true)
         if(res === null){
@@ -195,6 +196,8 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
     useEffect(() => {
         console.log("COMPONENT COMPARE FULLY RENDERED")
 
+        console.log("HEADER HEIGHT INSIDE COMPARE IS: ", headerHeight);
+
         // Get the header
         var header = document.getElementById("titleHeader");
 
@@ -202,15 +205,11 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
             // When the user scrolls the page, execute myFunction
             window.onscroll = () => myFunction();
 
-            // Get the offset position of the navbar
-            var sticky = header.offsetTop;
-
             // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
             function myFunction() {
-                //if (window.pageYOffset > sticky) {
-                    //console.log("HEADER HEIGHT INSIDE COMPARE: ", document.getElementById("top-header").clientHeight);
-                if (window.pageYOffset >= 95){
+                if (window.pageYOffset >= headerHeight){
                     header.classList.add("sticky");
+                    header.style.top = `${headerHeight}px`;
                     header.children[0].classList.add("border-right");
                 } else {
                     header.classList.remove("sticky");

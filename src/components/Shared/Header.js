@@ -48,9 +48,11 @@ const Icon = styled.img`
 `
 
 function Header({ handleNavigationChange }) {
+
     React.useEffect(() => {
         window.addEventListener('scroll',(e)=>{
             const wrapper = document.getElementById('wrapper');
+            //console.log(wrapper.offsetHeight);
             if(window.pageYOffset>0){
                 wrapper.classList.add("add-shadow");
             } else{

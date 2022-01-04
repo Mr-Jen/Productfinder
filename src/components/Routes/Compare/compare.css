@@ -1,6 +1,6 @@
 .sticky {
   position: fixed;
-  top: 95px;
+  /*top: 95px;*/
   max-width: 100%;
   border-bottom: 2px solid grey;
   border-left: "2px solid lightgrey"

@@ -36,6 +36,9 @@ const ContentWrapper = styled.div`
 `
 
 const App = ({loadConfig, loadProducts, isHome}) => {
+
+  const [headerHeight, setHeaderHeight] = React.useState(95);
+
   React.useEffect(() => {loadConfig()}, [loadConfig])
   React.useEffect(() => {
     console.log("LOADING PRODUCTS IN APP")
@@ -46,10 +49,18 @@ const App = ({loadConfig, loadProducts, isHome}) => {
 
   //window.screen.orientation.lock('any')
 
+
+  React.useEffect(() => {
+    console.log("HEADER LOADED NOW")
+    const header = document.getElementById("wrapper");
+    setHeaderHeight(header.offsetHeight);
+    console.log(header.offsetHeight);
+  }, []);
+
   return (
     <Wrapper>
       <HeaderWrap>
-        <Header/>
+        <Header id="wrapper"/>
       </HeaderWrap>
       <ContentWrapper>
         <Switch>
@@ -60,11 +71,12 @@ const App = ({loadConfig, loadProducts, isHome}) => {
             <Survey/>
           </Route>
           <Route exact path="/products">
-            <Products/>
+            <Products />
           </Route>
           
           <Route exact path="/product/:productId" component={ProductView} ></Route>
-          <Route exact path="/compare/:productsParam" component={Compare} />
+          {/*<Route exact path="/compare/:productsParam" headerHeight={20} component={Compare} />*/}
+          <Route exact path="/compare/:productsParam" render={(props) => <Compare {...props} headerHeight={headerHeight} />} />
         </Switch>
       </ContentWrapper>
     </Wrapper> 
