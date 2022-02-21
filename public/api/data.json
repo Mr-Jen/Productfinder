@@ -264,30 +264,6 @@
             "info_text": "Mineralischer Holzimprägnierer für Holzfassaden oder Terrassen. SIOO:X ist ein lösemittelfreies, komplett natürliches Produkt für langfristigen Holzschutz. Die behandelten Oberflächen versteinern langsam und entwickeln eine schöne silbergraue Patina, welche langfristig von Fäulnis oder Mikroorgansimen schützt.",
             "hue": "Silbergrau jedoch unpigmentiert"
         },
-        "18": {
-            "id": 18,
-            "name": "Farbloses Leinöl",
-            "category": [2],
-            "allowed_coatings": [], 
-            "allowed_on_hardwood": true,
-            "surface": [0,1],
-            "application": [0,2,3,4],
-            "efficiency": {
-                "smooth_surface": [6,10],
-                "rough_surface": [4,6]
-            },
-            "lifetime": [1,2],
-            "gloss_level": [0,30],
-            "binder": 4,
-            "solubility": 4,
-            "link": "",
-            "images": [
-                "/assets/images/Produkte/M50050.jpg"
-            ],
-            "price": [1.5, 3.2],
-            "info_text": "",
-            "hue": ""
-        },
         "19": {
             "id": 19,
             "name": "Chinesisches Holzöl (Tungöl)",
@@ -472,9 +448,9 @@
             "gloss_level": [0,10],
             "binder": 4,
             "solubility": 4,
-            "link": "https://shop.schwedischer-farbenhandel.de/art/M21002",
+            "link": "https://shop.schwedischer-farbenhandel.de/art/M21004",
             "images": [
-                "/assets/images/Produkte/M21002.jpg"
+                "/assets/images/Produkte/m21004[1704].jpg"
             ],
             "price": [1.30, 3.70],
             "info_text": "Naturprodukt. Natürlicher Holzschutz, bzw. Grundierung für Leinölfarbe. Ausschließlich aus reiner Leinölsaat in lokaler schwedischer Produktion gewonnen. Frei von Lösemitteln oder Konservierungsstoffen.  ",
@@ -496,9 +472,9 @@
             "gloss_level": [0,10],
             "binder": 4,
             "solubility": 4,
-            "link": "https://shop.schwedischer-farbenhandel.de/art/M21001",
+            "link": "https://shop.schwedischer-farbenhandel.de/art/M21003",
             "images": [
-                "/assets/images/Produkte/M21001.jpg"
+                "/assets/images/Produkte/m21004[1704].jpg"
             ],
             "price": [1.40, 3.98],
             "info_text": "Naturprodukt. Natürlicher Holzschutz, bzw. Grundierung für Leinölfarbe. Ausschließlich aus reiner Leinölsaat in lokaler schwedischer Produktion gewonnen. Frei von Lösemitteln oder Konservierungsstoffen.  Gekochtes Leinöl kann aushärten/trocknen. Im Gegensatz zu reinem Leinöl kann man es als Grundierung für verschiedene Farben aber auch als alleinigen Anstrich vor allem im Innenbereich verwenden.",

@@ -10,8 +10,14 @@ import App from './components/App';
 import rootReducer from './reducers';
 import middleware from './middleware'
 import './index.css'
+import { loadState, saveState } from './sessionStorage';
 
-const store = createStore(rootReducer, composeWithDevTools(middleware));
+const persistedState = loadState();
+const store = createStore(rootReducer, persistedState, composeWithDevTools(middleware));
+
+store.subscribe(() => {
+  saveState(store.getState().filter);
+});
 
 ReactDOM.render(
   <React.StrictMode>

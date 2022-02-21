@@ -68,7 +68,14 @@ const InfoButton = styled.button`
 const linkStyling = {
 }
 
-const Home = ({addToHistory}) => {
+const Home = ({addToHistory, shouldForward}) => {
+
+    const onStart = () => {
+        if(shouldForward){
+            addToHistory("0");
+        }
+    }
+
     return (
         <Wrapper>
             <HomeIcon 
@@ -92,7 +99,7 @@ const Home = ({addToHistory}) => {
                     to="/fragen-und-antworten"
                     className={"link"}
                     style={linkStyling}
-                    onClick={() => addToHistory("0")}
+                    onClick={() => onStart()}
                 >
                     <p className={"link-text"} style={{"marginRight": "20px", "fontWeight": "bold"}}>Loslegen</p>
                     <img 
@@ -110,4 +117,10 @@ const mapDispatchToProps = dispatch => ({
     addToHistory: itemId => dispatch(addToHistory(itemId))
 })
 
-export default connect(null, mapDispatchToProps)(Home)
+const mapStateToProps = ({ history }) => {
+    return {
+        shouldForward: history.length == 0
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)

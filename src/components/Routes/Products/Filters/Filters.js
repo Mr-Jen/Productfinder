@@ -83,7 +83,7 @@ const mapStateToProps = ({ filter, products }) => {
         filter,
         products
     }
-  }
+}
   
 const mapDispatchToProps = dispatch => ({
     onChangeSurface : index => dispatch(changeSurface(index)),

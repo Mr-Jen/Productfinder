@@ -84,8 +84,8 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
     const initApplications = (initData !== undefined && initData) && new Array(Object.keys(initData.applications).length).fill(false);
 
     initFilters({
-      "surfaces": initSurfaces,
-      "applications": initApplications
+      "surfaces": JSON.parse(sessionStorage.getItem("filter")).surfaces ? JSON.parse(sessionStorage.getItem("filter")).surfaces : initSurfaces,
+      "applications": JSON.parse(sessionStorage.getItem("filter")).applications ? JSON.parse(sessionStorage.getItem("filter")).applications : initApplications
     })
 
   }, [initData])
@@ -300,4 +300,3 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Products)
-

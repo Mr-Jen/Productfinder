@@ -31,6 +31,12 @@ const ContentWrapper = styled.div`
 `
 
 export const Survey = ({isHome, isFirst, handleNavigationChange}) => {
+  /*window.onpopstate = function(event) {
+    console.log("STATE: ", JSON.stringify(event.state), document.location.pathname)
+    if(document.location.pathname == "/"){
+      alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
+    }
+  };*/
     console.log(isHome, isFirst)
     return (
         <Wrapper>
