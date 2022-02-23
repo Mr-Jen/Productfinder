@@ -116,7 +116,7 @@ const CardWrapper = styled.div`
   z-index: 1000000;
 `
 
-const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, ButtonSetCoating, ButtonSetCoatingLength, ButtonSetRoughness, ButtonSetWoodtype,coatingLength, target_action }) => {
+const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, ButtonSetCoating, ButtonSetCoatingLength, ButtonSetRoughness, ButtonSetWoodtype, coatingLength, target_action }) => {
   const [showInfoCard, setShowInfoCard] = React.useState(false);
   const [cardContent, setCardContent] = React.useState();
   const [allowDispatch, setAllowDispatch] = React.useState(true);
@@ -164,6 +164,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
 
   const onClickButton = (key, target) => {
     console.log("TARGET: ", target?.woodtype)
+    //window.history.pushState(null, null, "/fragen-und-antworten")
 
     if (target_action === 'set_target'){
       ButtonAddTarget(target.label)
@@ -182,11 +183,15 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     }
 
 
+
     if (childrenItems[key].children === null ){
       history.push("/products");
+      //window.history.replaceState(true, null, "/products")
+      console.log("END REACHED")
     }
     else {
       ButtonAddToHistory(key)
+      window.history.pushState(null, null, "/fragen-und-antworten")
     }
   }
 

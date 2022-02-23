@@ -9,6 +9,7 @@ import Title from '../../Shared/Title'
 import NavigateButton from '../../Shared/NavigateButton'
 import Filters from './Filters/Filters'
 import { loadFilters } from '../../../actions/filter'
+import { changeEnd } from '../../../actions/end'
 
 const Wrapper = styled.div`
   display: flex;
@@ -62,12 +63,14 @@ const Count = styled.p`
   padding: .5em;
 `
 
-const Products = ({ target, coating, roughness, woodtype, initFilters, filteredSurfaces, filteredApplications }) => {
+const Products = ({ target, coating, roughness, woodtype, initFilters, filteredSurfaces, filteredApplications, handleChangeEnd }) => {
   const [initData, setInitData] = useState(null);
   const [sortBy, setSortBy] = useState();
   const [compareProducts, setCompareProducts] = useState([]);
   const [glossValues, setGlossValues] = useState([]);
   const compareLength = 2;
+
+  handleChangeEnd(true);
 
   React.useEffect(() => {
     !initData &&
@@ -296,7 +299,8 @@ const mapStateToProps = ({ user, filter }) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  initFilters : initConfig => dispatch(loadFilters(initConfig))
+  initFilters : initConfig => dispatch(loadFilters(initConfig)),
+  handleChangeEnd: state => dispatch(changeEnd(state))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Products)
