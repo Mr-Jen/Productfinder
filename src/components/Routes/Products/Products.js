@@ -117,7 +117,7 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
     setCompareProducts([])
   }
 
-  /*onst calculateVolume = (efficiency) => {
+  /*const calculateVolume = (efficiency) => {
     let eSmoothMin = efficiency["smooth_surface"][0]
     let eRoughMin = efficiency["rough_surface"][0]
     let eSmoothMax = efficiency["smooth_surface"][1]
@@ -150,17 +150,20 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
   if (products && target !== undefined){
     const productList = Object.entries(products);
 
-    const filteredProducts = productList
+    let filteredProducts = productList
       .filter((value, key) => value[1].category.includes(target))
       .filter((value, key) => ((value[1].name === "Schlammfarbe" && roughness !== 1) || value[1].name !== "Schlammfarbe"))
-      .filter((value, key) => (value[1].allowed_on_hardwood && woodtype !== 0) || woodtype === 0);
+      
+    if(woodtype !== null){
+      filteredProducts = filteredProducts
+        .filter((value, key) => (value[1].allowed_on_hardwood && woodtype !== 0) || woodtype === 0);
+    }
 
     const filteredProducts_2 = filteredProducts.filter((value, key) => coating ? (checkCoatingCompability(value[1].allowed_coatings, coating) && value) : value)
 
     const new_products = Object.fromEntries(coating.length === 1 && coating[0] === null ? filteredProducts : filteredProducts_2)
     products = new_products
   }
-
 
   if (filteredSurfaces && filteredApplications){
     let input_res = filteredSurfaces && filteredSurfaces
@@ -170,6 +173,8 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
     let application_res = filteredApplications && filteredApplications
       .map((elem, key) => elem === true ? key : null)
       .filter(elem => elem !== null)
+
+    console.log("PRINTING INPUT RES AND APP RES: ", input_res, application_res)
 
     var filteredObjectKeys = initData && Object.keys(products)
       .filter(objectKey => input_res.every(elem => products[objectKey]["surface"].includes(elem)))
