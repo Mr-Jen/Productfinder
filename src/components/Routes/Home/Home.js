@@ -14,7 +14,7 @@ const Wrapper = styled.div`
         align-items: center;
     }
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 4vh;
     align-items: center;
 `
 
