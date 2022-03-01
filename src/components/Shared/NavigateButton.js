@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const linkStyle = {
@@ -8,9 +8,9 @@ const linkStyle = {
     alignItems: "center"
 }
 
-const Icon = styled.img`
+/*const Icon = styled.img`
     order: ${props => props.direction === "right" && "1"};
-`
+`*/
 
 const Text = styled.p`
     marginRight: ${props => props.direction === "left" && "20px"};

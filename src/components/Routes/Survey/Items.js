@@ -255,7 +255,6 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
 }
 
 const mapStateToProps = ({ decisions, history, user}) => {
-  const coatings = user["coating"]
   let latestItem = decisions
   let amountOfAction = 0;
   let parentItem;
