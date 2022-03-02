@@ -70,16 +70,15 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
   const [glossValues, setGlossValues] = useState([]);
   const compareLength = 2;
 
-  handleChangeEnd(true);
-
   React.useEffect(() => {
+    handleChangeEnd(true);
     !initData &&
     fetch('api/data.json')
       .then(res => res.json())
       .then(config => {
         setInitData(config)
       })  
-  })
+  }, [])
 
   React.useEffect(() => {
     //(initData !== undefined && initData) && console.log("SURFACE LENGTH: ", Object.keys(initData.surfaces).length, "APPLICATION LENGTH: ", Object.keys(initData.applications).length)
@@ -138,7 +137,7 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
 
   const checkCoatingCompability = (allowed_coatings, user_coating) => {
     let compatible = true;
-    user_coating.map((coating) => {
+    user_coating.forEach((coating) => {
       if (!(allowed_coatings.includes(coating))){
         compatible = false;
       }
@@ -173,8 +172,6 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
     let application_res = filteredApplications && filteredApplications
       .map((elem, key) => elem === true ? key : null)
       .filter(elem => elem !== null)
-
-    console.log("PRINTING INPUT RES AND APP RES: ", input_res, application_res)
 
     var filteredObjectKeys = initData && Object.keys(products)
       .filter(objectKey => input_res.every(elem => products[objectKey]["surface"].includes(elem)))

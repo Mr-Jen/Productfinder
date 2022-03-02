@@ -33,29 +33,19 @@ const ContentWrapper = styled.div`
 `
 
 export const Survey = ({isHome, isFirst, handleNavigationChange, historyLength, end, handleChangeEnd, onResetApplications, onResetSurfaces, filter}) => {
-  console.log("END: ", end)
-  console.log("FILTER: ", filter)
 
   // Check if filters are active
-  if(Object.keys(filter).length > 0){
-    console.log("FILTER IS HOLDING VALUES")
-    if(filter.surfaces.includes(true) || filter.applications.includes(true)){
-      console.log("FILTERS ARE ACTIVE")
-      onResetApplications();
-      onResetSurfaces();
+  React.useEffect(() => {
+    if(Object.keys(filter).length > 0){
+      if(filter.surfaces.includes(true) || filter.applications.includes(true)){
+        onResetApplications();
+        onResetSurfaces();
+      }
     }
-    else{
-      console.log("FILTERS ARE NOT ACTIVE")
-    }
-  }
-  else {
-    console.log("FILTERS ARE NOT HOLDING VALUES YET")
-  }
+  }, [])
 
   window.onpopstate = function(event) {
-    console.log("END INSIDE: ", end)
     if(document.location.pathname === "/fragen-und-antworten" && historyLength>0 && end === false){
-      console.log("HANDLING NAVIGATION CHANGE");
       handleNavigationChange(historyLength - 1);
     }
   }
@@ -66,7 +56,6 @@ export const Survey = ({isHome, isFirst, handleNavigationChange, historyLength, 
     }
   })
 
-  console.log(isHome, isFirst)
   return (
       <Wrapper>
           <HeaderWrapper>

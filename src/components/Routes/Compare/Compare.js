@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
-import { useLocation } from 'react-router-dom'
 
 import NavigateButton from '../../Shared/NavigateButton'
 import Title from '../../Shared/Title'
@@ -137,13 +136,6 @@ const Hr = styled.hr`
     margin-right: 0;
 `
 
-const TitleWrapper = styled.div`
-    /*position: sticky;
-    background-color: white;
-    top: 100px;
-    width: 100%;*/
-`
-
 const StickyTitlesWrapper = styled.div`
     display: flex;
     width: 100%;
@@ -176,28 +168,7 @@ const ProductTitle = styled.h3`
 
 const Compare = ({ compareProducts, categories, surfaces, applications, binders, solubilities, headerHeight, loadProducts, res }) => {
 
-    /*React.useEffect(() => {
-        console.log("IS PRODUCTS: ", res === null ? false : true)
-        if(res === null){
-            console.log("REFETCHING PRODUCTS")
-            loadProducts()
-        }
-    }, [loadProducts])*/
-
-    /*useEffect(() => {
-        //console.log("TITLE REF: ", titleRef.current)
-        let header = document.getElementById("titleHeader");
-        if(header){
-            console.log("Header rendered")
-        }
-    })*/
-
-
     useEffect(() => {
-        console.log("COMPONENT COMPARE FULLY RENDERED")
-
-        console.log("HEADER HEIGHT INSIDE COMPARE IS: ", headerHeight);
-
         // Get the header
         var header = document.getElementById("titleHeader");
 
@@ -219,10 +190,6 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
         }
     })
 
-
-    const { search } = useLocation()
-    console.log("SEARCH: ", useLocation())
-
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -232,8 +199,6 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
     }
     else {
         const [product_1, product_2] = compareProducts
-
-    
 
         return (
             <Wrapper>
@@ -261,10 +226,7 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                     </TitleContainer>                    
                 </StickyTitlesWrapper>
                 <ContentWrapper>
-                    <Product>
-                        {/*<TitleWrapper>
-                            <ProductTitle>{product_1.name}</ProductTitle>
-                        </TitleWrapper>*/}                      
+                    <Product>                    
                         <Img url={product_1.images}/>
                         <Button target="_blank" and rel="noopener noreferrer" href={product_1.link !== "" ? product_1.link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
@@ -275,9 +237,6 @@ const Compare = ({ compareProducts, categories, surfaces, applications, binders,
                     </Product>
                     <Vl />
                     <Product>
-                        {/*<TitleWrapper>
-                            <ProductTitle>{product_2.name}</ProductTitle>
-                        </TitleWrapper>*/}
                         <Img url={product_2.images}/>
                         <Button target="_blank" and rel="noopener noreferrer" href={product_2.link !== "" ? product_2.link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
@@ -370,7 +329,6 @@ const mapStateToProps = ({ products }, ownProps) => {
     let data;
 
     if(products){
-        console.log("DATA", data)
         const productData = products?.products ? products["products"] : data["products"]
         const { categories, surfaces, applications, binders, solubilities, images } = products
         const compareProducts = [];

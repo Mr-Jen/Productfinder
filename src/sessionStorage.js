@@ -1,5 +1,4 @@
 export const loadState = () => {
-  console.log("LOADING STORAGE INTO STORE")
     try {
       const serializedState = sessionStorage.getItem('filter');
   
@@ -14,7 +13,6 @@ export const loadState = () => {
   };
   
 export const saveState = (state) => {
-  console.log("SAVING STORE INTO STORAGE")
   try {
     const serializedState = JSON.stringify(state);
     sessionStorage.setItem('filter', serializedState);

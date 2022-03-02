@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import styled from 'styled-components'
 import { Switch, Route } from 'react-router-dom'
 
-import { handleLoadConfig, handleLoadProducts, loadProducts } from '../actions/shared'
+import { handleLoadConfig, handleLoadProducts } from '../actions/shared'
 
 import Home from './Routes/Home/Home'
 import Products from './Routes/Products/Products'
@@ -41,20 +41,12 @@ const App = ({loadConfig, loadProducts, isHome}) => {
 
   React.useEffect(() => {loadConfig()}, [loadConfig])
   React.useEffect(() => {
-    console.log("LOADING PRODUCTS IN APP")
     loadProducts()
   }, [loadProducts])
 
-  //console.log("IS HOME: ", isHome)
-
-  //window.screen.orientation.lock('any')
-
-
   React.useEffect(() => {
-    console.log("HEADER LOADED NOW")
     const header = document.getElementById("wrapper");
     setHeaderHeight(header.offsetHeight);
-    console.log(header.offsetHeight);
   }, []);
 
   return (

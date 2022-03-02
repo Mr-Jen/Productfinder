@@ -39,10 +39,8 @@ const RangeSlider = ({ handleOnSlide }) => {
     let minGap = 10;  
     let sliderMaxValue = 100;
     let sliderStep = 10;
-    let sliderTrack = document.querySelector(".slider-track");      
         
     function fillColor(){
-        console.log("CALLING FILL COLOR")
         let percent1 = (valueOne / sliderMaxValue) * 100;
         let percent2 = (valueTwo / sliderMaxValue) * 100;
         sliderTrackRef.current.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;

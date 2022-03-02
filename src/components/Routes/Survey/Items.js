@@ -140,13 +140,17 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
 
   const { store } = useContext(ReactReduxContext)
 
-  let w = watch(store.getState, "history")
-  store.subscribe(w((newVal, oldVal) => {
-    if (oldVal.length > newVal.length){
-      setAllowDispatch(true)
-    }
-  }))
+  React.useEffect(() => {
+    let isMounted = true;
+    let w = watch(store.getState, "history")
+    store.subscribe(w((newVal, oldVal) => {
+      if (oldVal.length > newVal.length && isMounted){
+        setAllowDispatch(true)
+      }
+    }))
 
+    isMounted = false;
+  }, [])
 
   React.useEffect(() => {
     if(allowDispatch){
@@ -163,8 +167,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
   }
 
   const onClickButton = (key, target) => {
-    console.log("TARGET: ", target?.woodtype)
-    //window.history.pushState(null, null, "/fragen-und-antworten")
+    //console.log("TARGET: ", target?.woodtype)
 
     if (target_action === 'set_target'){
       ButtonAddTarget(target.label)
@@ -182,12 +185,8 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
       ButtonSetWoodtype(target.woodtype)
     }
 
-
-
     if (childrenItems[key].children === null ){
       history.push("/products");
-      //window.history.replaceState(true, null, "/products")
-      console.log("END REACHED")
     }
     else {
       ButtonAddToHistory(key)
@@ -202,17 +201,6 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
           "content": "Beim Abschleifen ist darauf zu achten, dass xyz",
           "image": "assets/images/paint-on-wood.gif"
       }
-  }
-
-
-  const hasWarning = (info) => {
-    let warn = false;
-    Object.keys(info["info"]).forEach((item) => {
-      if (info["info"][item]?.warning){
-        warn = true;
-      }
-    })
-    return warn
   }
 
   return (
@@ -269,11 +257,6 @@ const mapStateToProps = ({ decisions, history, user}) => {
   let action = parentItem?.action
   let target_action = parentItem?.target_action
   let coatingLength = action === "set_coating" ? amountOfAction - 1 : amountOfAction
-
-  /*console.log("ACTION: ", action)*/
-
-  //console.log("AMOUNT OF ACTIONS: ", amountOfAction)
-  //console.log("LENGTH OF COATING SHOULD BE: ", coatingLength)
 
   return {
     childrenItems: latestItem,

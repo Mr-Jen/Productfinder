@@ -119,7 +119,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = ({ history }) => {
     return {
-        shouldForward: history.length == 0
+        shouldForward: history.length === 0
     }
 }
 

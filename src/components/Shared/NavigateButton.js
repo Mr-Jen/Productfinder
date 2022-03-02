@@ -23,10 +23,6 @@ const Text = styled.p`
 const NavigateButton = (props) => {
     const [toggle, setToggle] = React.useState(false);
 
-    React.useEffect(() => {
-        console.log("TOGGLE: ", toggle);
-    }, [toggle])
-
     return (
         <Link 
             to={props.location}

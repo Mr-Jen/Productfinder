@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 import NavigateButton from '../../Shared/NavigateButton'
 import './productview.css'
-import SubHeader from '../../Shared/SubHeader'
 
 const Wrapper = styled.div`
     width: 100%;
@@ -206,13 +205,10 @@ const ProductView = ({ match, productsData }) => {
         const { params: { productId } } = match;
         const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
         const product = products[productId-1]
-        const { category, surface, application, efficiency, lifetime, gloss_level, binder, solubility, link, images, price, info_text, hue } = {...product}
-        
-        console.log(price)
+        const { category, surface, application, lifetime, gloss_level, binder, solubility, link, images, info_text, hue } = {...product}
 
         return (
             <Wrapper>
-                {/*<SubHeader location={"/products"} title={product["name"]}/>*/}
                 <Header>
                     <NavigateButton
                         location={"/products"} 
