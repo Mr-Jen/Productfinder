@@ -226,7 +226,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Öl",
-                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
                                     "image": "assets/images/Öl/holzöl.jpg"
                                 },
                                 "1": {
@@ -281,14 +281,14 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Intakte Lasur",
-                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
                                     "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
                                 },
                                 "2": {
                                     "id": 2,
                                     "title": "Intakte Lasur",
-                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
-                                    "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg"
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                    "image": "assets/images/Lasur/lasur-intakt.jpg"
                                 }
                             },
                             "children": {           
@@ -314,14 +314,14 @@
                                                     "id": 0,
                                                     "unique": "9925168d-d260-4b68-bb56-767e3ab07f49",
                                                     "title": "Warnung zur Lasur",
-                                                    "content": "Lasur darf nicht matt geworden sein, abblättern porös sein oder wasserdurchlässig. Trifft eins dieser Merkmale zu, ist die Lasur nicht mehr intakt. Intakte Lasur bildet eine glänzende, wasserabweisende Schicht auf der Holzoberfläche. ",
+                                                    "content": "Lasur darf nicht matt geworden sein, abblättern, porös sein oder wasserdurchlässig. Trifft eins dieser Merkmale zu, ist die Lasur nicht mehr intakt. Intakte Lasur bildet eine glänzende, wasserabweisende Schicht auf der Holzoberfläche. ",
                                                     "image": "assets/images/Lasur/lasur.png",
                                                     "warning": true
                                                 },
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Lasur",
-                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
                                                     "image": "assets/images/Lasur/lasur.png",
                                                     "warning": false
                                                 }
@@ -335,10 +335,10 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Brennspiritus Test",
-                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich mit Brennspiritus bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich heraus welches Bindemittel in meiner Lasur ist?",
+                                                            "content": "Die meisten Anstriche für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich mit Brennspiritus bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich heraus welches Bindemittel in meiner Lasur ist?",
                                                             "instructions": {
                                                                 "0": {
-                                                                    "title": "Nehmen Sie sich einen Lappen und Brennspirituts und reiben Sie für ca. 30 Sekunden auf der Farb- oder Lasurschicht. Reiben Sie mit leichtem Druck auf einer kleinen Stelle. Damit dieser Test funktioniert, muss der Anstrich sauber und intakt sein."
+                                                                    "title": "Nehmen Sie sich einen Lappen und Brennspiritus und reiben Sie für ca. 30 Sekunden auf der Farb- oder Lasurschicht. Reiben Sie mit leichtem Druck auf einer kleinen Stelle. Damit dieser Test funktioniert, muss der Anstrich sauber und intakt sein."
                                                                 },
                                                                 "1": {
                                                                     "title": "Was ist jetzt mit der Lasur passiert?",
@@ -360,7 +360,7 @@
                                                         "1": {
                                                             "id": 1,
                                                             "title": "Weitere Info zum Test",
-                                                            "content": "Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Streichen Sie niemals Alkydfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat.",
+                                                            "content": "Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Streichen Sie niemals Alkydfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne",
                                                             "image": "assets/images/Lasur/lasur.png"
                                                         }
                                                     },
@@ -381,7 +381,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Lasuren",
-                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -498,7 +498,7 @@
                                                         "1": {
                                                             "id": 1,
                                                             "title": "Weitere Info zum Test",
-                                                            "content": "Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann nach der Reinigung direkt mit einem geeigneten Folgeprodukt überstrichen werden. Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem.",
+                                                            "content": "Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne",
                                                             "image": "assets/images/Lasur/lasur.png"
                                                         }
                                                     },
@@ -566,7 +566,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Verwitterte Lasur oder Farbe",
-                                    "content": "Verwitterte Farbe oder Lasur kann etwas unschön aussehen. Hatte der Anstrich mal Glanz, kann dieser jetzt verschwunden sein, die Farbe oder Lasur ist matt oder kreidig geworden. Evtl. haben Sie einige Risse im Anstrich oder einen Grünbelag. Ebenfalls kann sich viel Schmutz gesammelt haben. Lasuren sind dann verwittert, wenn Sie ihren Glanz verloren haben, matt oder porös wirken. Farben sind verwittert, wenn Sie kreidigen Staub auf der Oberfläche haben, matt geworden sind oder schmutzig wirken. Glänzt Ihre Lasur oder Farbe noch und hat nur einige Risse oder kleine Schäden, wählen Sie 'Rissiger / Abblätternder Anstrich'. Ist Ihre Farbe bereits überall komplett abgewittert, die Schicht auf dem Holz bildet keinen festen und wasserbaweisenden Film mehr, muss die Farbe komplett abgeschliffen werden. Hier gehen Sie dann zurück und wählen 'Unbehandelt / Komplett abgeschliffen'. Sind nur einige Teilbereiche in einem solchen Zustand schleifen Sie nur diese, belassen die intakten Flächen jedoch und bleiben bei dieser Auswahlmöglichkeit.",
+                                    "content": "Verwitterte Farbe oder Lasur kann etwas unschön aussehen. Hatte der Anstrich mal Glanz, kann dieser jetzt verschwunden sein, die Farbe oder Lasur ist matt oder kreidig geworden. Evtl. hat der Anstrich Risse oder einen Grünbelag. Ebenfalls kann sich viel Schmutz gesammelt haben. Lasuren sind dann verwittert, wenn sie ihren Glanz verloren haben, matt oder porös wirken. Farben sind verwittert, wenn sie kreidigen Staub auf der Oberfläche haben, matt geworden sind oder schmutzig wirken. Glänzt die Lasur oder Farbe noch und hat nur einige Risse oder kleine Schäden, wählen Sie 'Rissiger / Abblätternder Anstrich'. Ist die Farbe bereits überall komplett abgewittert, d.h. die Schicht auf dem Holz bildet keinen festen und wasserabweisenden Film mehr, muss die Farbe komplett abgeschliffen werden. Hier gehen Sie dann zurück und wählen 'Unbehandelt / Komplett abgeschliffen'. Sind nur einige Teilbereiche abgewittert, dann schleifen Sie nur diese und belassen die intakten Flächen wie sie sind.",
                                     "image": "assets/images/Lasur/lasur-verwittert_maserung_sichtbar.jpg"
                                 }
                             },
@@ -605,7 +605,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Intakte Lasur",
-                                                            "content": "Auf intakter Lasur kann mit einem geeigneten Folgeanstrich direkt überstrichen werden",
+                                                            "content": "Auf eine intakte Lasur kann mit einem geeigneten Folgeanstrich direkt überstrichen werden",
                                                             "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
                                                         },
                                                         "1": {
@@ -638,10 +638,10 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Brennspiritus Test",
-                                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich mit Brennspiritus bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich heraus welches Bindemittel in meiner Lasur ist?",
+                                                                            "content": "Die meisten Anstriche für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich mit Brennspiritus bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich heraus welches Bindemittel in meiner Lasur ist?",
                                                                             "instructions": {
                                                                                 "0": {
-                                                                                    "title": "Nehmen Sie sich einen Lappen und Brennspirituts und reiben Sie für ca. 30 Sekunden auf der Farb- oder Lasurschicht. Reiben Sie mit leichtem Druck auf einer kleinen Stelle. Damit dieser Test funktioniert, muss der Anstrich sauber und intakt sein."
+                                                                                    "title": "Nehmen Sie sich einen Lappen und Brennspiritus und reiben Sie für ca. 30 Sekunden auf der Farb- oder Lasurschicht. Reiben Sie mit leichtem Druck auf einer kleinen Stelle. Damit dieser Test funktioniert, muss der Anstrich sauber und intakt sein."
                                                                                 },
                                                                                 "1": {
                                                                                     "title": "Was ist jetzt mit der Lasur passiert?",
@@ -663,7 +663,7 @@
                                                                         "1": {
                                                                             "id": 1,
                                                                             "title": "Weitere Info zum Test",
-                                                                            "content": "Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Streichen Sie niemals Alkydfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat.",
+                                                                            "content": "Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkyd. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Streichen Sie niemals Alkydfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -684,7 +684,7 @@
                                                                                         "0": {
                                                                                             "id": 0,
                                                                                             "title": "Lasuren",
-                                                                                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
                                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                                         }
                                                                                     },
@@ -721,7 +721,7 @@
                                                                                         "0": {
                                                                                             "id": 0,
                                                                                             "title": "Lasuren",
-                                                                                            "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
                                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                                         }
                                                                                     },
@@ -771,7 +771,7 @@
                                                                 "0": {
                                                                     "id": 0,
                                                                     "title": "Lasuren",
-                                                                    "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
                                                                     "image": "assets/images/Lasur/lasur.png"
                                                                 }
                                                             },
@@ -851,7 +851,7 @@
                                                         "1": {
                                                             "id": 1,
                                                             "title": "Weitere Info zum Test",
-                                                            "content": "Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann nach der Reinigung direkt mit einem geeigneten Folgeprodukt überstrichen werden. Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem.",
+                                                            "content": "Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne",
                                                             "image": "assets/images/Lasur/lasur.png"
                                                         }
                                                     },
@@ -918,7 +918,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Abblätternde Farbe",
-                                    "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. In Deutschland gänzlich unbekannt aber gehobelte Hölzer können nicht direkt gestrichen werden. Streicht man zu früh blättert der Anstrich ab. Ebenso braucht Farbe immer eine Grundierung. Ohne Grundierung wird sie rissig oder blättert ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt‘ bei typisch deutschen Produkten etwa nach 8-10 Jahren der Fall, bei schwedischen Farben nach 20-30 Jahren. Ist die Farbe irgendwann zu weit runter gebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
+                                    "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. Was in Deutschland kaum bekannt ist - gehobelte Hölzer sollten nicht direkt, sondern frühestens nach 6 – 8 Wochen Anwitterung gestrichen werden. Streicht man zu früh blättert der Anstrich ab. Ebenso braucht Farbe immer eine Grundierung. Ohne Grundierung wird sie rissig oder blättert ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt'. Bei typisch deutschen Produkten ist das etwa nach 8-10 Jahren der Fall, bei schwedischen Farben nach 20-30 Jahren. Ist die Farbe irgendwann zu weit runter gebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
                                     "image": "assets/images/Farbe/abblätternde-farbe.jpg"
                                 }
                             },
@@ -1027,7 +1027,7 @@
                                                         "1": {
                                                             "id": 1,
                                                             "title": "Weitere Info zum Test",
-                                                            "content": "Unbehandeltes oder abgeschliffenes Holz muss teilweise grundiert werden. Bitte beachten Sie die Herstellerangaben. Auf intakter Farbe kann nach der Reinigung direkt mit einem geeigneten Folgeprodukt überstrichen werden. Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem.",
+                                                            "content": "Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne.",
                                                             "image": "assets/images/Lasur/lasur.png"
                                                         }
                                                     },
@@ -1095,7 +1095,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Öl",
-                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
                                     "image": "assets/images/Öl/holzöl.jpg"
                                 },
                                 "1": {
@@ -1116,7 +1116,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Aushärtendes Öl",
-                                            "content": "Auf aushärtenden Ölen muss teilweise grundiert werden. Ein aushärtendes Öl ersetzt bspw. Grundieröl oder gekochtes Leinöl, jedoch keinen Haftgrund. Sind Öle älter als 3 Monate empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer. Welches Öl habe ich? Ob es sich um ein aushärtendes Öl handelt ist ohne Zugriff auf den Behälter oder Herstellerangaben relativ schwierig zu bestimmen. Öle ziehen ein und verbleiben nicht auf der Oberfläche, nach dem das Öl im Holz verschwunden ist, lässt sich die Art kaum noch selber bestimmen. Ist jedoch etwas vom Öl sehr dick aufgetragen worden und es hat sich evtl. auf Schrauben oder besonders harten Ästen ein Film gebildet, kann man mit dem Finger ertatsten ob sich das Öl trocken, hart oder ggf. etwas gummiartig anfühlt. Ist es nicht mehr flüssig, dann haben Sie ein aushärtendes Öl. Sind Rückstände des Öl auch nach Wochen noch flüssig und fühlen sich ölig an, handelt es sich um ein nicht-härtendes, bzw. rohes Öl. Ist das Öl eingezogen bleibt nichts anderes mehr übrig, als über den Produktnamen zu recherchieren. Hier sind wir Ihnen auch gerne behilflich. Ist das Öl ohnehin schon einige Monate alt, spielt dies keine Rolle mehr. Dann wird das Holz nur gründlich gereinigt. Öle sind nur sehr kurze Zeit wetterfest. Nach einigen Monaten sind die Rückstände vom ehemaligen Öl nur noch eine Verschmutzung des Holzes, jedoch kein bestehender Anstrich. Hier gehen Sie zwei Schritte zurück und wählen 'Unbehandelt / Komplett abgeschliffen' aus.",
+                                            "content": "Auf aushärtenden Ölen muss teilweise grundiert werden. Ein aushärtendes Öl ersetzt bspw. Grundieröl oder gekochtes Leinöl, jedoch keinen Haftgrund. Sind Öle älter als 3 Monate empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer. Welches Öl habe ich? Ob es sich um ein aushärtendes Öl handelt ist ohne Zugriff auf den Behälter oder Herstellerangaben relativ schwierig zu bestimmen. Öle ziehen ein und verbleiben nicht auf der Oberfläche. Ist das Öl ganz ins Holz eingezogen, lässt sich die Art kaum noch selber bestimmen. Ist jedoch etwas vom Öl sehr dick aufgetragen worden und es hat sich evtl. auf Schrauben oder besonders harten Ästen ein Film gebildet, kann man mit dem Finger ertasten, ob sich das Öl trocken, hart oder ggf. etwas gummiartig anfühlt. Ist es nicht mehr flüssig, dann haben Sie ein aushärtendes Öl. Sind Rückstände des Öls auch nach Wochen noch flüssig und fühlen sich ölig an, handelt es sich um ein nicht-härtendes, bzw. rohes Öl. Ist das Öl eingezogen bleibt nichts anderes mehr übrig, als über den Produktnamen zu recherchieren. Hier sind wir Ihnen auch gerne behilflich. Ist das Öl ohnehin schon einige Monate alt, spielt dies keine Rolle mehr. Dann wird das Holz nur gründlich gereinigt. Öle sind nur sehr kurze Zeit wetterfest. Nach einigen Monaten sind die Rückstände vom ehemaligen Öl nur noch eine Verschmutzung des Holzes, jedoch kein intakter Anstrich mehr. Hier gehen Sie zwei Schritte zurück und wählen 'Unbehandelt / Komplett abgeschliffen' aus.",
                                             "image": "assets/images/Öl/holzöl.jpg"
                                         }
                                     },
@@ -1175,7 +1175,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Rohes Öl",
-                                            "content": "Nicht-härtende oder rohe Öle können nicht trocknen. Diese Öle bleiben für immer flüssig und können unter vielen Farbastrichen zu Problemen führen. Während auf ausgehärtetem Öl viele Anstriche Anwendung finden, ist der Raum der Möglichkeiten bei rohen Ölen sehr begrenzt. Sind Öle älter als 3 Monate empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer. Welches Öl habe ich? Ob es sich um ein nicht-härtendes Öl handelt ist ohne Zugriff auf den Behälter oder Herstellerangaben relativ schwierig zu bestimmen. Öle ziehen ein und verbleiben nicht auf der Oberfläche, nach dem das Öl im Holz verschwunden ist, lässt sich die Art kaum noch selber bestimmen. Ist jedoch etwas vom Öl sehr dick aufgetragen worden und es hat sich evtl. auf Schrauben oder besonders harten Ästen ein Film gebildet, kann man mit dem Finger ertatsten ob sich das Öl trocken, hart oder ggf. etwas gummiartig anfühlt. Ist es nicht mehr flüssig, dann haben Sie ein aushärtendes Öl. Sind Rückstände des Öl auch nach Wochen noch flüssig und fühlen sich ölig an, handelt es sich um ein nicht-härtendes, bzw. rohes Öl. Ist das Öl eingezogen bleibt nichts anderes mehr übrig, als über den Produktnamen zu recherchieren. Hier sind wir Ihnen auch gerne behilflich. Ist das Öl ohnehin schon einige Monate alt, spielt dies keine Rolle mehr. Dann wird das Holz nur gründlich gereinigt. Öle sind nur sehr kurze Zeit wetterfest. Da Öle nur sehr begrenzte Standzeiten haben, sind die Rückstände vom ehemaligen Öl nur noch eine Verschmutzung des Holzes, jedoch kein bestehender Anstrich. Hier gehen Sie zwei Schritte zurück und wählen 'Unbehandelt / Komplett abgeschliffen' aus.",
+                                            "content": "Nicht-härtende oder rohe Öle können nicht trocknen. Diese Öle bleiben für immer flüssig und können unter vielen Farbastrichen zu Problemen führen. Während auf ausgehärtetem Öl viele Anstriche Anwendung finden, ist der Raum der Möglichkeiten bei rohen Ölen sehr begrenzt. Sind Öle älter als 3 Monate empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu grundiert. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer. Welches Öl habe ich? Ob es sich um ein nicht-härtendes Öl handelt ist ohne Zugriff auf den Behälter oder Herstellerangaben relativ schwierig zu bestimmen. Öle ziehen ein und verbleiben nicht auf der Oberfläche. Ist das Öl komplett ins Holz eingezogen, lässt sich die Art kaum noch selber bestimmen. Ist jedoch etwas vom Öl sehr dick aufgetragen worden und es hat sich evtl. auf Schrauben oder besonders harten Ästen ein Film gebildet, kann man mit dem Finger ertasten, ob sich das Öl trocken, hart oder ggf. etwas gummiartig anfühlt. Ist es nicht mehr flüssig, dann haben Sie ein aushärtendes Öl. Sind Rückstände des Öls auch nach Wochen noch flüssig und fühlen sich ölig an, handelt es sich um ein nicht-härtendes, bzw. rohes Öl. Ist das Öl eingezogen bleibt nichts anderes mehr übrig, als über den Produktnamen zu recherchieren. Hier sind wir Ihnen auch gerne behilflich. Ist das Öl ohnehin schon einige Monate alt, spielt dies keine Rolle mehr. Dann wird das Holz nur gründlich gereinigt. Öle sind nur sehr kurze Zeit wetterfest. Da Öle nur sehr begrenzte Standzeiten haben, sind die Rückstände vom ehemaligen Öl nur noch eine Verschmutzung des Holzes, jedoch kein intakter Anstrich mehr. Hier gehen Sie zwei Schritte zurück und wählen 'Unbehandelt / Komplett abgeschliffen' aus.",
                                             "image": "assets/images/Öl/öl.jpg "
                                         }
                                     },
@@ -1216,7 +1216,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Öl",
-                                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
                                                     "image": "assets/images/Öl/öl.jpg"
                                                 }
                                             },
@@ -1273,7 +1273,7 @@
                                     "id": 1,
                                     "title": "Grundierer",
                                     "content": "Eine Grundierung ist ein meist leicht pigmentierter Anstrich auf Acryl-, oder Alkydharzbasis. Je nach Bindemittelart, folgt ein deckender Anstrich auf eine Grundierung. Fragen Sie den Hersteller, welche Art von Grundierung verwendet wurde. Je nach Bindemittel in der Grundierung, entscheidet sich welcher Folgeanstrich geeignet ist.",
-                                    "image": "assets/images/Grundierung/grundierung-2.jpg"
+                                    "image": "assets/images/Grundierung/blaue-Haus-Haftgrund-mit-Lappen.jpg"
                                 }
                             },
                             "action": "set_coating",
@@ -1456,13 +1456,13 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Verwitterte Farbe",
-                                    "content": "Jede Farbe verwittert mit der Zeit, im besten Fall kann man Farbe jedoch immer überstreichen. Wenn Farbe nur leichte Verwitterungserscheinungen wie Auskreidungen (mehlige Kreideschicht auf dem Anstrich), Moos-, oder Schimmelbefall aufweist, muss sie gesäubert werden. Ist Farbe mit einem Fassadenreiniger gesäubert, kann sie überstrichen werden. Ist das Holz darunter jedoch angegriffen und es besteht keine wetterschützende intakte Farbschicht mehr, dann ist Ihre Farbe komplett abgewittert. Solche Bereiche müssen leider abgeschliffen werden.",
+                                    "content": "Jede Farbe verwittert mit der Zeit, im besten Fall kann man Farbe jedoch immer überstreichen. Wenn Farbe nur leichte Verwitterungserscheinungen wie Auskreidungen (mehlige Kreideschicht auf dem Anstrich), Moos-, oder Schimmelbefall aufweist, muss sie gesäubert werden. Ist Farbe mit einem Fassadenreiniger gesäubert, kann sie überstrichen werden. Ist das Holz darunter jedoch angegriffen und es besteht keine wetterschützende intakte Farbschicht mehr, dann ist die Farbe komplett abgewittert. Solche Bereiche müssen leider abgeschliffen werden.",
                                     "image": "assets/images/Farbe/verwitterte-farbe.png"
                                 },
                                 "2": {
                                     "id": 2,
                                     "title": "Rissig / Abblätternd / Abgewittert",
-                                    "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. In Deutschland gänzlich unbekannt aber gehobelte Hölzer können nicht direkt gestrichen werden. Streicht man zu früh blättert der Anstrich ab. Ebenso braucht Farbe immer eine Grundierung. Ohne Grundierung wird sie rissig oder blättert ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt‘ bei typisch deutschen Produkten etwa nach 8-10 Jahren der Fall, bei schwedischen Farben nach 20-30 Jahren. Ist die Farbe irgendwann zu weit runter gebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
+                                    "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. Was in Deutschland kaum bekannt ist - gehobelte Hölzer sollten nicht direkt, sondern frühestens nach 6 – 8 Wochen Anwitterung gestrichen werden. Streicht man zu früh blättert der Anstrich ab. Ebenso braucht Farbe immer eine Grundierung. Ohne Grundierung wird sie rissig oder blättert ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt‘. Bei typisch deutschen Produkten ist das etwa nach 8-10 Jahren der Fall, bei schwedischen Farben nach 20-30 Jahren. Ist die Farbe irgendwann zu weit runter gebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
                                     "image": "assets/images/Farbe/abblätternde-farbe.jpg"
                                 }
                             },
@@ -1476,13 +1476,13 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Lasur Allgemein",
-                                    "content": "Eine Lasur ist ein extrem dünnschichtiger, transparenter und/oder leicht pigmentierter Anstrich. Lasuren sind vergleichbar mit stark verdünnten Farben. Üblicherweise halten Lasuren etwa 6-24 Monate, je nach Bindemittel. Lasuren können meistens direkt auf Holz gestrichen werden. Eine Lasur bietet immer nur einen begrenzten, bzw. geringen Schutz vor Verwitterung. Vergrauung lässt sich bspw. durch eine Lasur nicht aufhalten.",
+                                    "content": "Eine Lasur ist ein extrem dünnschichtiger, transparenter und/oder leicht pigmentierter Anstrich. Lasuren sind vergleichbar mit stark verdünnten Farben. Üblicherweise halten Lasuren etwa 6-24 Monate, je nach Bindemittel. Lasuren können meistens direkt auf Holz gestrichen werden. Eine Lasur bietet immer nur einen begrenzten, bzw. geringen Schutz vor Verwitterung. Eine Vergrauung des Holzes lässt sich mit einer Lasur nicht aufhalten",
                                     "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
                                 },
                                 "1": {
                                     "id": 1,
                                     "title": "Intakte Lasur",
-                                    "content": "Intakte Lasur bildet einen wasserabweisenden und glänzenden Film auf dem Holz. Schüttet man Wasser auf Lasur, sollte sich eine Art Lotuseffekt nachvollziehen lassen. Ist Lasur matt geworden oder wasserdurchlässig, ist sie nicht mehr intakt. Intakte Lasur kann gesäubert werden und mit einem geeigneten Produkt, welches sich mit den jeweiligen Bindemitteln der Lasur ‚verträgt‘ überstrichen werden.",
+                                    "content": "Intakte Lasur bildet einen wasserabweisenden und glänzenden Film auf dem Holz. Schüttet man Wasser auf Lasur, sollte sich eine Art Lotuseffekt nachvollziehen lassen. Ist Lasur matt geworden oder wasserdurchlässig, ist sie nicht mehr intakt. Intakte Lasur kann gesäubert werden und mit einem geeigneten Produkt, welches sich mit den jeweiligen Bindemitteln der Lasur ‚verträgt‘, überstrichen werden.",
                                     "image": "assets/images/Lasur/lasur-intakt.jpg"
                                 },
                                 "2": {
@@ -1502,7 +1502,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Öle",
-                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart, nicht-härtende Öle bleiben klebrig/weich sie können nur mit wenigen Produkten überstrichen werden",
+                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
                                     "image": "assets/images/Öl/öl.jpg"
                                 }
                             },
@@ -1535,7 +1535,7 @@
                                     "id": 3,
                                     "title": "Grundierung",
                                     "content": "Eine Grundierung ist ein meist leicht pigmentierter Anstrich auf Acryl-, oder Alkydharzbasis. Grundierer sind i.d.R. leicht weiss oder grau pigmentiert, jedoch nicht deckend. Je nach Bindemittelart, folgt ein deckender Anstrich auf eine Grundierung. Nach dem entsprechenden Bindemittel in der Grundierung entscheidet sich welcher Folgeanstrich geeignet ist. Die Art des Bindemittels lässt sich über Herstellerangaben oder einen Bindemitteltest ermitteln.",
-                                    "image": "assets/images/Grundierung/grundierung-2.jpg"
+                                    "image": "assets/images/Grundierung/halb-blaue-Haus.jpg"
                                 }
                             },
                             "children": "no-products"

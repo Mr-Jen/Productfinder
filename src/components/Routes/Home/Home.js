@@ -86,7 +86,7 @@ const Home = ({addToHistory, shouldForward}) => {
                 <TitleText>Der <span style={{"fontWeight": "bold", "fontSize": "26px", "letterSpacing": "1px"}}>Produktfinder</span> hilft Ihnen bei der Entscheidung für den zu Ihrem Projekt passenden Anstrich.
                 </TitleText>
                 <InfoText>
-                    Durch eine Reihe an Filterfragen kann der Produktfinder Ihnen helfen die Auswahl der verschiedenen Anstricharten so zu 
+                    Durch eine Reihe von Filterfragen kann der Produktfinder Ihnen helfen die Auswahl der verschiedenen Anstricharten so zu 
                     reduzieren, dass nur noch für Sie relevante Anstriche gezeigt werden. Hierbei wird nicht nur so gefiltert, dass die technisch 
                     möglichen Anstriche gezeigt werden, Sie können auch Ihre persönlichen Vorlieben angeben, bspw. ob es eine Lasur, Farbe, mit mehr oder weniger Glanz sein soll.
                     <br/><br/>
