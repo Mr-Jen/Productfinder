@@ -1,7 +1,5 @@
-import React from 'react'
-import { connect, ReactReduxContext } from 'react-redux'
-import watch from 'redux-watch'
-import { useContext } from 'react';
+import React, { useEffect } from 'react'
+import { connect } from 'react-redux'
 import styled from 'styled-components'
 import { useHistory } from "react-router-dom";
 
@@ -116,13 +114,14 @@ const CardWrapper = styled.div`
   z-index: 1000000;
 `
 
-const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, ButtonSetCoating, ButtonSetCoatingLength, ButtonSetRoughness, ButtonSetWoodtype, coatingLength, target_action }) => {
+const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, ButtonSetCoating, ButtonSetCoatingLength, ButtonSetRoughness, ButtonSetWoodtype, updatedCoatingLength, /*currentCoatingLength,*/shouldSetCoatingLength, target_action }) => {
   const [showInfoCard, setShowInfoCard] = React.useState(false);
   const [cardContent, setCardContent] = React.useState();
-  const [allowDispatch, setAllowDispatch] = React.useState(true);
   const [isDesktop, setIsDesktop] = React.useState(false)
 
   const history = useHistory();
+
+  //console.log("Should update: ", shouldSetCoatingLength)
 
   React.useEffect(() => {
     updatePredicate();
@@ -138,27 +137,11 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
     setIsDesktop(window.innerWidth > 800)
   }
 
-  const { store } = useContext(ReactReduxContext)
-
-  React.useEffect(() => {
-    let isMounted = true;
-    let w = watch(store.getState, "history")
-    store.subscribe(w((newVal, oldVal) => {
-      if (oldVal.length > newVal.length && isMounted){
-        setAllowDispatch(true)
-      }
-    }))
-
-    isMounted = false;
-  }, [])
-
-  React.useEffect(() => {
-    if(allowDispatch){
-      ButtonSetCoatingLength(coatingLength)
-      setAllowDispatch(false)
+  useEffect(() => {
+    if(shouldSetCoatingLength){
+      ButtonSetCoatingLength(updatedCoatingLength)
     }
-    //unsubscribe()
-  })
+  }, [shouldSetCoatingLength, ButtonSetCoatingLength])
 
   const onClickInfo = (item, e) => {
     setShowInfoCard(!showInfoCard)
@@ -167,8 +150,6 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
   }
 
   const onClickButton = (key, target) => {
-    //console.log("TARGET: ", target?.woodtype)
-
     if (target_action === 'set_target'){
       ButtonAddTarget(target.label)
     }
@@ -256,14 +237,17 @@ const mapStateToProps = ({ decisions, history, user}) => {
 
   let action = parentItem?.action
   let target_action = parentItem?.target_action
-  let coatingLength = action === "set_coating" ? amountOfAction - 1 : amountOfAction
+  let updatedCoatingLength = action === "set_coating" ? amountOfAction - 1 : amountOfAction
+  let currentCoatingLength = user.coating.length
 
   return {
     childrenItems: latestItem,
     action: action,
     target_action,
     amountOfAction,
-    coatingLength
+    updatedCoatingLength,
+    //currentCoatingLength: user.coating.length
+    shouldSetCoatingLength: updatedCoatingLength !== currentCoatingLength
   }
 }
 

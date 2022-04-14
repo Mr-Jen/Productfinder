@@ -12,7 +12,6 @@
                     "label": "Unbehandelt / Komplett abgeschliffen",
                     "question": "Welche Art von Anstrich soll nun folgen? Wichtig: Streichen Sie frisches Holz möglichst nicht sofort. Weitere Informationen erhalten Sie in den Infoboxen.",
                     "target_action": "set_target",
-                    "action": "set_coating",
                     "breadcrumb": "Blankes Holz",
                     "info": {
                         "0": {
