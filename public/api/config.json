@@ -472,7 +472,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Test mit Schleifpapier",
-                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
+                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
                                                             "instructions": {
                                                                 "0": {
                                                                     "title": "Nehmen Sie ein feines Schleifpapier (bspw. 120er Körnung) und schleifen Sie auf einer sauberen und intakten Stelle Ihres Altanstrichs für einige Sekunden, bis ein erkennbarer Abrieb entsteht."
@@ -603,7 +603,7 @@
                                                     "info": {
                                                         "0": {
                                                             "id": 0,
-                                                            "title": "Intakte Lasur",
+                                                            "title": "Eine intakte Lasur",
                                                             "content": "Auf eine intakte Lasur kann mit einem geeigneten Folgeanstrich direkt überstrichen werden",
                                                             "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
                                                         },
@@ -683,7 +683,7 @@
                                                                                         "0": {
                                                                                             "id": 0,
                                                                                             "title": "Lasuren",
-                                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
                                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                                         }
                                                                                     },
@@ -720,7 +720,7 @@
                                                                                         "0": {
                                                                                             "id": 0,
                                                                                             "title": "Lasuren",
-                                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
                                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                                         }
                                                                                     },
@@ -770,7 +770,7 @@
                                                                 "0": {
                                                                     "id": 0,
                                                                     "title": "Lasuren",
-                                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas im Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
+                                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
                                                                     "image": "assets/images/Lasur/lasur.png"
                                                                 }
                                                             },
@@ -825,7 +825,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Test mit Schleifpapier",
-                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
+                                                            "content": "Die meisten Anstriche für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
                                                             "instructions": {
                                                                 "0": {
                                                                     "title": "Nehmen Sie ein feines Schleifpapier (bspw. 120er Körnung) und schleifen Sie auf einer sauberen und intakten Stelle Ihres Altanstrichs für einige Sekunden, bis ein erkennbarer Abrieb entsteht."
@@ -1001,7 +1001,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Test mit Schleifpapier",
-                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Farbart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
+                                                            "content": "Die meisten Anstriche für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
                                                             "instructions": {
                                                                 "0": {
                                                                     "title": "Nehmen Sie ein feines Schleifpapier (bspw. 120er Körnung) und schleifen Sie auf einer sauberen und intakten Stelle Ihres Altanstrichs für einige Sekunden, bis ein erkennbarer Abrieb entsteht."

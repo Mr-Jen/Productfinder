@@ -7,5 +7,5 @@ export const getData=()=>{
     
         })
         .then((response) => response.json())
-        .then((config) => {console.log(config)})
+        .then((config) => {})
     }

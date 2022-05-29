@@ -216,30 +216,6 @@
             "info_text": "Lösemittelhaltige Silikonalkydlasur. Diese Lasur aus pflazlichen Bindemitteln enthält viel Silikat, wodurch sie den handelsüblichen Lasuren, die meist 6-24 Monate halten, im puncto Standzeit überlegen ist. ",
             "hue": "10 Standardfarbtöne + 60.000 Wunschfarbtöne"
         },
-        "16": {
-            "id": 16,
-            "name": "Trälasyr V",
-            "category": [1],
-            "allowed_coatings": [0,1,2], 
-            "allowed_on_hardwood": false,
-            "surface": [0],
-            "application": [0,2],
-            "efficiency": {
-                "smooth_surface": [8,12],
-                "rough_surface": [5,8]
-            },
-            "lifetime": [1,3],
-            "gloss_level": [30,30],
-            "binder": 1,
-            "solubility": 1,
-            "link": "https://shop.schwedischer-farbenhandel.de/kat/Aussenfarben/Lasuren/Wasserloesliche-Duennschichtlasur-TRAeLASYR-V",
-            "images": [
-                "/assets/images/Produkte/5349.jpg"
-            ],
-            "price": [1.39, 4.42],
-            "info_text": "Wasserbasierte Holzlasur. Geeignet für Anstrich auf bestehender Acrylhaltiger Lasur. Zwar kann man auch lösemittelhaltige Lasuren mit TRÄLASYR überstreichen, wasserbasiert auf lösemittelhaltig ist jedoch meist eine Verschlechterung im Anstrichsystem.",
-            "hue": "10 Standardfarbtöne + 60.000 Wunschfarbtöne"
-        },
         "17": {
             "id": 17,
             "name": "SIOO:X Holzimprägnierer",

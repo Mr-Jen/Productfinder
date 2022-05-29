@@ -4,7 +4,7 @@ const products = (state = null, action) => {
     const { type, payload } = action;
     switch (type){
         case LOAD_PRODUCTS:
-            console.log("LOADING PRODUCTS IN REDUCERS")
+            //console.log("LOADING PRODUCTS IN REDUCERS")
             return {
                 ...state,
                 ...payload

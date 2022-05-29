@@ -71,6 +71,7 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
   const compareLength = 2;
 
   React.useEffect(() => {
+    if(!initData)
     handleChangeEnd(true);
     !initData &&
     fetch('api/data.json')

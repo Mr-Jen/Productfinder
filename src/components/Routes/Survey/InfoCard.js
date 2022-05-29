@@ -189,7 +189,7 @@ const InfoCard = ({ data, onClose }) => {
     let instructions = data[infoState]?.instructions;
 
     //console.log(instructions)
-    console.log("DATA OF CARD: ", data);
+    //console.log("DATA OF CARD: ", data);
 
     //console.log("IS DATA AND INFO?: ", data)
     let slideLength = Object.keys(data).length;

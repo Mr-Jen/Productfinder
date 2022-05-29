@@ -52,8 +52,8 @@ const SubHeader = ({ location, title }) => {
         //setIsDesktop(window.innerWidth > 600)
         let arrow = document.getElementById("arrow")
         let title = document.getElementById("title")
-        console.log("BOUNDING ARROW: ", arrow.getBoundingClientRect())
-        console.log("BOUNDING TITLE: ", title && title)
+        //console.log("BOUNDING ARROW: ", arrow.getBoundingClientRect())
+        //console.log("BOUNDING TITLE: ", title && title)
     }
 
     return (
