@@ -17,7 +17,7 @@
                         "0": {
                             "id": 0,
                             "title": "Unbehandelt",
-                            "content": "Als unbehandelt gilt jedes Holz welches entweder neu ist und noch nie vorbehandelt wurde oder Holz welches bereits behandelt war, der alte Anstrich aber restlos entfernt wurde (z.B. abgeschliffen oder ausgewaschen). ",
+                            "content": "Als unbehandelt gilt jedes Holz, welches entweder neu ist und noch nie vorbehandelt wurde oder Holz, welches bereits behandelt war, der alte Anstrich aber restlos entfernt wurde (z.B. abgeschliffen oder ausgewaschen). ",
                             "image": "assets/images/Lasur/lasur.png"
                         }
                     },
@@ -39,7 +39,7 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Lasur",
-                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
                                     "image": "assets/images/Lasur/lasur.png"
                                 }
                             },
@@ -52,13 +52,13 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Weichholz",
-                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Holzdichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert weden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind meist noch sehr feucht wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
+                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Holzdichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert werden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne, aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind größtenteils noch sehr feucht, wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
                                             "image": "assets/images/Hölzer/weichholz-1.png"
                                         },
                                         "1": {
                                             "id": 1,
                                             "title": "Weichholz",
-                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Holzdichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert weden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind meist noch sehr feucht wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
+                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Holzdichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert werden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne, aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind größtenteils noch sehr feucht, wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
                                             "image": "assets/images/Hölzer/weichholz-2.png"
                                         }
                                     },
@@ -105,7 +105,7 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Deckende Farbe",
-                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich.",
+                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich.",
                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                 }
                             },
@@ -118,13 +118,13 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Weichholz",
-                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Dichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert weden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind meist noch sehr feucht wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
+                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Dichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert werden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne, aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind größtenteils noch sehr feucht, wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
                                             "image": "assets/images/Hölzer/weichholz-1.png"
                                         },
                                         "1": {
                                             "id": 1,
                                             "title": "Weichholz",
-                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Dichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert weden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind meist noch sehr feucht wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
+                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Dichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert werden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne, aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind größtenteils noch sehr feucht, wenn sie angeliefert werden und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 5 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
                                             "image": "assets/images/Hölzer/weichholz-2.png"
                                         }
                                     },
@@ -225,13 +225,13 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Öl",
-                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
+                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterscheidet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
                                     "image": "assets/images/Öl/holzöl.jpg"
                                 },
                                 "1": {
                                     "id": 1,
                                     "title": "Härtend vs Nicht-härtend",
-                                    "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Lebensmittelhandel findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen",
+                                    "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste, belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Lebensmittelhandel findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen",
                                     "image": "assets/images/Öl/holzöl.jpg"
                                 }
                             },
@@ -248,7 +248,7 @@
                         "0": {
                             "id": 0,
                             "title": "Lasur",
-                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
                             "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
                         },
                         "1": {
@@ -260,7 +260,7 @@
                         "2": {
                             "id": 2,
                             "title": "Farbe",
-                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                         }
                     },
@@ -274,19 +274,19 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Intakte Farbe",
-                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                 },
                                 "1": {
                                     "id": 1,
                                     "title": "Intakte Lasur",
-                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
                                     "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
                                 },
                                 "2": {
                                     "id": 2,
                                     "title": "Intakte Lasur",
-                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
                                     "image": "assets/images/Lasur/lasur-intakt.jpg"
                                 }
                             },
@@ -320,7 +320,7 @@
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Lasur",
-                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
                                                     "image": "assets/images/Lasur/lasur.png",
                                                     "warning": false
                                                 }
@@ -380,7 +380,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Lasuren",
-                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -394,7 +394,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -417,7 +417,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Lasuren",
-                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -431,7 +431,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -459,7 +459,7 @@
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                     "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
@@ -472,7 +472,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Test mit Schleifpapier",
-                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
+                                                            "content": "Die meisten Farben für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen, welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
                                                             "instructions": {
                                                                 "0": {
                                                                     "title": "Nehmen Sie ein feines Schleifpapier (bspw. 120er Körnung) und schleifen Sie auf einer sauberen und intakten Stelle Ihres Altanstrichs für einige Sekunden, bis ein erkennbarer Abrieb entsteht."
@@ -518,7 +518,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                                             "image": "assets/images/Farbe/intakt-2.jpg"
                                                                         }
                                                                     },
@@ -541,7 +541,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                                             "image": "assets/images/Farbe/intakt-2.jpg"
                                                                         }
                                                                     },
@@ -591,7 +591,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Abschleifen",
-                                                    "content": "Um alte Lasur oder Farbe abzuschleifen eignet sich am besten ein Schleifpapier mit der Körnung 60 oder 80. Vermeiden Sie es zu feines Schleifpapier zu verwenden. Sie können entweder per Hand oder mit einer Schleifmaschine arbeiten. Bei wasserbasierten Altanstrichen kann die alte Farbe auch gut mit einem Farbschaber entfernt werden. Da die meisten wasserbasierten Farben aus Plastik bestehen und nicht (wie lösemittelhaltige Farben) aus pflanzlichen Rohstoffen, lassen sich diese 'Plastikfarben' besonders schlecht schleifen, dafür aber gut mit einer Klinge abziehen - ähnlich wie eine Gummihaut. Mit einem Heissluftföhn kann man die Wirkung des Farbschabers verbessern, indem man die Farbschicht vorher erwärmt. Möchten Sie verwitterte Lasur entfernen, kann man ebenfalls gut eine Drahtbürste verwenden. Handelsübliche Lasuren halten 6 bis maximnal 24 Monate, bis sie komplett in der Sonne zersetzt wurden. Was zurück bleibt ist ein feiner Staub aus Verbrennungsrückständen. Diese Rückstände lassen sich oftmals schon mit einer Drahtbürste aus dem Holz bürsten.",
+                                                    "content": "Um alte Lasur oder Farbe abzuschleifen, eignet sich am besten ein Schleifpapier mit der Körnung 60 oder 80. Vermeiden Sie es, zu feines Schleifpapier zu verwenden. Sie können entweder per Hand oder mit einer Schleifmaschine arbeiten. Bei wasserbasierten Altanstrichen kann die alte Farbe auch gut mit einem Farbschaber entfernt werden. Da die meisten wasserbasierten Farben aus Plastik bestehen und nicht (wie lösemittelhaltige Farben) aus pflanzlichen Rohstoffen, lassen sich diese 'Plastikfarben' besonders schlecht schleifen, dafür aber gut mit einer Klinge abziehen - ähnlich wie eine Gummihaut. Mit einem Heißluftföhn kann man die Wirkung des Farbschabers verbessern, indem man die Farbschicht vorher erwärmt. Möchten Sie verwitterte Lasur entfernen, kann man ebenfalls gut eine Drahtbürste verwenden. Handelsübliche Lasuren halten 6 bis maximal 24 Monate, bis sie komplett in der Sonne zersetzt wurden. Was zurück bleibt, ist ein feiner Staub aus Verbrennungsrückständen. Diese Rückstände lassen sich oftmals schon mit einer Drahtbürste aus dem Holz bürsten.",
                                                     "image": "assets/images/paint-on-wood.gif"
                                                 }
                                             },
@@ -697,7 +697,7 @@
                                                                                         "0": {
                                                                                             "id": 0,
                                                                                             "title": "Deckende Farbe",
-                                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                                         }
                                                                                     },
@@ -734,7 +734,7 @@
                                                                                         "0": {
                                                                                             "id": 0,
                                                                                             "title": "Deckende Farbe",
-                                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                                         }
                                                                                     },
@@ -757,7 +757,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Abschleifen",
-                                                            "content": "Um alte Lasur oder Farbe abzuschleifen eignet sich am besten ein Schleifpapier mit der Körnung 60 oder 80. Vermeiden Sie es zu feines Schleifpapier zu verwenden. Sie können entweder per Hand oder mit einer Schleifmaschine arbeiten. Bei wasserbasierten Altanstrichen kann die alte Farbe auch gut mit einem Farbschaber entfernt werden. Da die meisten wasserbasierten Farben aus Plastik bestehen und nicht (wie lösemittelhaltige Farben) aus pflanzlichen Rohstoffen, lassen sich diese 'Plastikfarben' besonders schlecht schleifen, dafür aber gut mit einer Klinge abziehen - ähnlich wie eine Gummihaut. Mit einem Heissluftföhn kann man die Wirkung des Farbschabers verbessern, indem man die Farbschicht vorher erwärmt. Möchten Sie verwitterte Lasur entfernen, kann man ebenfalls gut eine Drahtbürste verwenden. Handelsübliche Lasuren halten 6 bis maximnal 24 Monate, bis sie komplett in der Sonne zersetzt wurden. Was zurück bleibt ist ein feiner Staub aus Verbrennungsrückständen. Diese Rückstände lassen sich oftmals schon mit einer Drahtbürste aus dem Holz bürsten.",
+                                                            "content": "Um alte Lasur oder Farbe abzuschleifen, eignet sich am besten ein Schleifpapier mit der Körnung 60 oder 80. Vermeiden Sie es, zu feines Schleifpapier zu verwenden. Sie können entweder per Hand oder mit einer Schleifmaschine arbeiten. Bei wasserbasierten Altanstrichen kann die alte Farbe auch gut mit einem Farbschaber entfernt werden. Da die meisten wasserbasierten Farben aus Plastik bestehen und nicht (wie lösemittelhaltige Farben) aus pflanzlichen Rohstoffen, lassen sich diese 'Plastikfarben' besonders schlecht schleifen, dafür aber gut mit einer Klinge abziehen - ähnlich wie eine Gummihaut. Mit einem Heißluftföhn kann man die Wirkung des Farbschabers verbessern, indem man die Farbschicht vorher erwärmt. Möchten Sie verwitterte Lasur entfernen, kann man ebenfalls gut eine Drahtbürste verwenden. Handelsübliche Lasuren halten 6 bis maximal 24 Monate, bis sie komplett in der Sonne zersetzt wurden. Was zurück bleibt, ist ein feiner Staub aus Verbrennungsrückständen. Diese Rückstände lassen sich oftmals schon mit einer Drahtbürste aus dem Holz bürsten.",
                                                             "image": "assets/images/paint-on-wood.gif"
                                                         }
                                                     },
@@ -784,7 +784,7 @@
                                                                 "0": {
                                                                     "id": 0,
                                                                     "title": "Deckende Farbe",
-                                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                                     "image": "assets/images/Lasur/lasur.png"
                                                                 }
                                                             },
@@ -825,7 +825,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Test mit Schleifpapier",
-                                                            "content": "Die meisten Anstriche für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
+                                                            "content": "Die meisten Anstriche für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen, welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
                                                             "instructions": {
                                                                 "0": {
                                                                     "title": "Nehmen Sie ein feines Schleifpapier (bspw. 120er Körnung) und schleifen Sie auf einer sauberen und intakten Stelle Ihres Altanstrichs für einige Sekunden, bis ein erkennbarer Abrieb entsteht."
@@ -870,7 +870,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -893,7 +893,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -917,7 +917,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Abblätternde Farbe",
-                                    "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. Was in Deutschland kaum bekannt ist - gehobelte Hölzer sollten nicht direkt, sondern frühestens nach 6 – 8 Wochen Anwitterung gestrichen werden. Streicht man zu früh blättert der Anstrich ab. Ebenso braucht Farbe immer eine Grundierung. Ohne Grundierung wird sie rissig oder blättert ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt'. Bei typisch deutschen Produkten ist das etwa nach 8-10 Jahren der Fall, bei schwedischen Farben nach 20-30 Jahren. Ist die Farbe irgendwann zu weit runter gebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
+                                    "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. Was in Deutschland kaum bekannt ist - gehobelte Hölzer sollten nicht direkt, sondern frühestens nach 6 – 8 Wochen Anwitterung gestrichen werden. Streicht man zu früh, blättert der Anstrich ab. Ebenso braucht Farbe immer eine Grundierung. Ohne Grundierung wird sie rissig oder blättert ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt'. Bei typisch deutschen Produkten ist das etwa nach 8-10 Jahren der Fall, bei schwedischen Farben nach 20-30 Jahren. Ist die Farbe irgendwann zu weit runtergebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
                                     "image": "assets/images/Farbe/abblätternde-farbe.jpg"
                                 }
                             },
@@ -930,7 +930,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Abschleifen",
-                                            "content": "Um alte Lasur oder Farbe abzuschleifen eignet sich am besten ein Schleifpapier mit der Körnung 60 oder 80. Vermeiden Sie es zu feines Schleifpapier zu verwenden. Sie können entweder per Hand oder mit einer Schleifmaschine arbeiten. Bei wasserbasierten Altanstrichen kann die alte Farbe auch gut mit einem Farbschaber entfernt werden. Da die meisten wasserbasierten Farben aus Plastik bestehen und nicht (wie lösemittelhaltige Farben) aus pflanzlichen Rohstoffen, lassen sich diese 'Plastikfarben' besonders schlecht schleifen, dafür aber gut mit einer Klinge abziehen - ähnlich wie eine Gummihaut. Mit einem Heissluftföhn kann man die Wirkung des Farbschabers verbessern, indem man die Farbschicht vorher erwärmt. Möchten Sie verwitterte Lasur entfernen, kann man ebenfalls gut eine Drahtbürste verwenden. Handelsübliche Lasuren halten 6 bis maximnal 24 Monate, bis sie komplett in der Sonne zersetzt wurden. Was zurück bleibt ist ein feiner Staub aus Verbrennungsrückständen. Diese Rückstände lassen sich oftmals schon mit einer Drahtbürste aus dem Holz bürsten.",
+                                            "content": "Um alte Lasur oder Farbe abzuschleifen, eignet sich am besten ein Schleifpapier mit der Körnung 60 oder 80. Vermeiden Sie es, zu feines Schleifpapier zu verwenden. Sie können entweder per Hand oder mit einer Schleifmaschine arbeiten. Bei wasserbasierten Altanstrichen kann die alte Farbe auch gut mit einem Farbschaber entfernt werden. Da die meisten wasserbasierten Farben aus Plastik bestehen und nicht (wie lösemittelhaltige Farben) aus pflanzlichen Rohstoffen, lassen sich diese 'Plastikfarben' besonders schlecht schleifen, dafür aber gut mit einer Klinge abziehen - ähnlich wie eine Gummihaut. Mit einem Heißluftföhn kann man die Wirkung des Farbschabers verbessern, indem man die Farbschicht vorher erwärmt. Möchten Sie verwitterte Lasur entfernen, kann man ebenfalls gut eine Drahtbürste verwenden. Handelsübliche Lasuren halten 6 bis maximal 24 Monate, bis sie komplett in der Sonne zersetzt wurden. Was zurück bleibt, ist ein feiner Staub aus Verbrennungsrückständen. Diese Rückstände lassen sich oftmals schon mit einer Drahtbürste aus dem Holz bürsten.",
                                             "image": "assets/images/paint-on-wood.gif"
                                         }
                                     },
@@ -971,7 +971,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Deckende Farbe",
-                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                         }
                                                     },
@@ -987,7 +987,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Intakte Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -1001,7 +1001,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Test mit Schleifpapier",
-                                                            "content": "Die meisten Anstriche für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
+                                                            "content": "Die meisten Anstriche für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich durch Schleifen bestimmen, welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich raus welches Bindemittel in meiner Farbe ist?",
                                                             "instructions": {
                                                                 "0": {
                                                                     "title": "Nehmen Sie ein feines Schleifpapier (bspw. 120er Körnung) und schleifen Sie auf einer sauberen und intakten Stelle Ihres Altanstrichs für einige Sekunden, bis ein erkennbarer Abrieb entsteht."
@@ -1046,7 +1046,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -1069,7 +1069,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -1094,13 +1094,13 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Öl",
-                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
+                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterscheidet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
                                     "image": "assets/images/Öl/holzöl.jpg"
                                 },
                                 "1": {
                                     "id": 1,
                                     "title": "Härtend vs Nicht-härtend",
-                                    "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Lebensmittelhandel findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen",
+                                    "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste, belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Lebensmittelhandel findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen",
                                     "image": "assets/images/Öl/holzöl.jpg"
                                 }
                             },
@@ -1128,7 +1128,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Lasuren",
-                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
                                                     "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
@@ -1142,7 +1142,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                     "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
@@ -1187,7 +1187,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Lasur",
-                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken ist die Lasur auch nicht mehr intakt.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
                                                     "image": "assets/images/lasur.png"
                                                 }
                                             },
@@ -1201,7 +1201,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                     "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
@@ -1215,7 +1215,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Öl",
-                                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
+                                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterscheidet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
                                                     "image": "assets/images/Öl/öl.jpg"
                                                 }
                                             },
@@ -1292,7 +1292,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                     "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
@@ -1315,7 +1315,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                                     "image": "assets/images/Lasur/lasur.png"
                                                 }
                                             },
@@ -1412,7 +1412,7 @@
                                         "1": {
                                             "id": 1,
                                             "title": "Deckende Farbe",
-                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                         }
                                     },
@@ -1449,7 +1449,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Intakte Farbe",
-                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
+                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                 },
                                 "1": {
@@ -1461,7 +1461,7 @@
                                 "2": {
                                     "id": 2,
                                     "title": "Rissig / Abblätternd / Abgewittert",
-                                    "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. Was in Deutschland kaum bekannt ist - gehobelte Hölzer sollten nicht direkt, sondern frühestens nach 6 – 8 Wochen Anwitterung gestrichen werden. Streicht man zu früh blättert der Anstrich ab. Ebenso braucht Farbe immer eine Grundierung. Ohne Grundierung wird sie rissig oder blättert ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt‘. Bei typisch deutschen Produkten ist das etwa nach 8-10 Jahren der Fall, bei schwedischen Farben nach 20-30 Jahren. Ist die Farbe irgendwann zu weit runter gebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
+                                    "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. Was in Deutschland kaum bekannt ist - gehobelte Hölzer sollten nicht direkt, sondern frühestens nach 6 – 8 Wochen Anwitterung gestrichen werden. Streicht man zu früh, blättert der Anstrich ab. Ebenso braucht Farbe immer eine Grundierung. Ohne Grundierung wird sie rissig oder blättert ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt‘. Bei typisch deutschen Produkten ist das etwa nach 8-10 Jahren der Fall, bei schwedischen Farben nach 20-30 Jahren. Ist die Farbe irgendwann zu weit runtergebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
                                     "image": "assets/images/Farbe/abblätternde-farbe.jpg"
                                 }
                             },
@@ -1501,7 +1501,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Öle",
-                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterschiedet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
+                                    "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterscheidet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
                                     "image": "assets/images/Öl/öl.jpg"
                                 }
                             },
