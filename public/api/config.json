@@ -18,7 +18,7 @@
                             "id": 0,
                             "title": "Unbehandelt",
                             "content": "Als unbehandelt gilt jedes Holz, welches entweder neu ist und noch nie vorbehandelt wurde oder Holz, welches bereits behandelt war, der alte Anstrich aber restlos entfernt wurde (z.B. abgeschliffen oder ausgewaschen). ",
-                            "image": "assets/images/Lasur/lasur.png"
+                            "image": "assets/images/Anderes/glatt.jpg"
                         }
                     },
                     "children": {
@@ -33,14 +33,14 @@
                                     "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
                                     "title": "Warnung bei Lasuren",
                                     "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben.",
-                                    "image": "assets/images/Lasur/lasur.png",
+                                    "image": "assets/images/Lasur/lasur-intakt.jpg",
                                     "warning": true
                                 },
                                 "1": {
                                     "id": 1,
                                     "title": "Lasur",
                                     "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
-                                    "image": "assets/images/Lasur/lasur.png"
+                                    "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg"
                                 }
                             },
                             "children": {
@@ -99,7 +99,7 @@
                                     "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
                                     "title": "Warnung bei Farben",
                                     "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben.",
-                                    "image": "assets/images/Lasur/lasur.png",
+                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg",
                                     "warning": true
                                 },
                                 "1": {
@@ -249,13 +249,13 @@
                             "id": 0,
                             "title": "Lasur",
                             "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
-                            "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
+                            "image": "assets/images/Lasur/lasur-intakt.jpg"
                         },
                         "1": {
                             "id": 1,
                             "title": "Öl",
                             "content": "Öle ziehen tief ins Holz ein, lassen das Holz etwas kräftiger im Farbton wirken und haben eine matte Erscheinung. Frisch geöltes Holz ist wasserabweisend und hat eine gut erkennbare Maserung. Der Schutz eines Öls lässt im Freien bereits nach wenigen Wochen merklich nach.",
-                            "image": "assets/images/Öl/öl.jpg"
+                            "image": "assets/images/Öl/holzöl.jpg"
                         },
                         "2": {
                             "id": 2,
@@ -281,7 +281,7 @@
                                     "id": 1,
                                     "title": "Intakte Lasur",
                                     "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
-                                    "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
+                                    "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg"
                                 },
                                 "2": {
                                     "id": 2,
@@ -314,14 +314,14 @@
                                                     "unique": "9925168d-d260-4b68-bb56-767e3ab07f49",
                                                     "title": "Warnung zur Lasur",
                                                     "content": "Lasur darf nicht matt geworden sein, abblättern, porös sein oder wasserdurchlässig. Trifft eins dieser Merkmale zu, ist die Lasur nicht mehr intakt. Intakte Lasur bildet eine glänzende, wasserabweisende Schicht auf der Holzoberfläche. ",
-                                                    "image": "assets/images/Lasur/lasur.png",
+                                                    "image": "assets/images/Lasur/lasur-intakt.jpg",
                                                     "warning": true
                                                 },
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Lasur",
                                                     "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
-                                                    "image": "assets/images/Lasur/lasur.png",
+                                                    "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg",
                                                     "warning": false
                                                 }
                                             },
@@ -381,7 +381,7 @@
                                                                             "id": 0,
                                                                             "title": "Lasuren",
                                                                             "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
-                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                            "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                                         }
                                                                     },
                                                                     "children": null
@@ -395,7 +395,7 @@
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
                                                                             "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
                                                                     "children": null
@@ -418,7 +418,7 @@
                                                                             "id": 0,
                                                                             "title": "Lasuren",
                                                                             "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
-                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                            "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                                         }
                                                                     },
                                                                     "children": null
@@ -432,7 +432,7 @@
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
                                                                             "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
                                                                     "children": null
@@ -453,14 +453,14 @@
                                                     "unique": "4f05682c-b657-41f3-b8ce-40857879d0dd",
                                                     "title": "Warnung zur Farbe",
                                                     "content": "Achtung! Farbe darf nicht blättern oder rissig sein. Blättert Farbe ab oder ist stark rissig, kann sie nicht mehr direkt überstrichen werden.",
-                                                    "image": "assets/images/Lasur/lasur.png",
+                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg",
                                                     "warning": true
                                                 },
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Deckende Farbe",
                                                     "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                    "image": "assets/images/Lasur/lasur.png"
+                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
                                             "children": {
@@ -605,7 +605,7 @@
                                                             "id": 0,
                                                             "title": "Eine intakte Lasur",
                                                             "content": "Auf eine intakte Lasur kann mit einem geeigneten Folgeanstrich direkt überstrichen werden",
-                                                            "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
+                                                            "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                         },
                                                         "1": {
                                                             "id": 1,
@@ -684,7 +684,7 @@
                                                                                             "id": 0,
                                                                                             "title": "Lasuren",
                                                                                             "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                                            "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                                                         }
                                                                                     },
                                                                                     "children": null
@@ -698,7 +698,7 @@
                                                                                             "id": 0,
                                                                                             "title": "Deckende Farbe",
                                                                                             "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                                         }
                                                                                     },
                                                                                     "children": null
@@ -721,7 +721,7 @@
                                                                                             "id": 0,
                                                                                             "title": "Lasuren",
                                                                                             "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                                            "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                                                         }
                                                                                     },
                                                                                     "children": null
@@ -735,7 +735,7 @@
                                                                                             "id": 0,
                                                                                             "title": "Deckende Farbe",
                                                                                             "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                                         }
                                                                                     },
                                                                                     "children": null
@@ -771,7 +771,7 @@
                                                                     "id": 0,
                                                                     "title": "Lasuren",
                                                                     "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                                    "image": "assets/images/Lasur/lasur.png"
+                                                                    "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                                 }
                                                             },
                                                             "children": null
@@ -785,7 +785,7 @@
                                                                     "id": 0,
                                                                     "title": "Deckende Farbe",
                                                                     "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                                    "image": "assets/images/Lasur/lasur.png"
+                                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                 }
                                                             },
                                                             "children": null
@@ -871,7 +871,7 @@
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
                                                                             "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
                                                                     "children": null
@@ -894,7 +894,7 @@
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
                                                                             "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
                                                                     "children": null
@@ -945,7 +945,7 @@
                                                     "id": 0,
                                                     "title": "Alles abgeschliffen",
                                                     "content": "Unbehandeltes/abgeschliffenes Holz muss grundiert werden. Bitte beachten Sie die jeweiligen Herstellerangaben",
-                                                    "image": "assets/images/lasur.png"
+                                                    "image": "assets/images/Anderes/glatt.jpg"
                                                 }
                                             },
                                             "children": {
@@ -958,7 +958,7 @@
                                                             "id": 0,
                                                             "title": "Lasur",
                                                             "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                            "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
+                                                            "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                         }
                                                     },
                                                     "children": null
@@ -1047,7 +1047,7 @@
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
                                                                             "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
                                                                     "children": null
@@ -1070,7 +1070,7 @@
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
                                                                             "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                                            "image": "assets/images/Lasur/lasur.png"
+                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
                                                                     "children": null
@@ -1129,7 +1129,7 @@
                                                     "id": 0,
                                                     "title": "Lasuren",
                                                     "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
-                                                    "image": "assets/images/Lasur/lasur.png"
+                                                    "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                 }
                                             },
                                             "children": null
@@ -1143,7 +1143,7 @@
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
                                                     "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                    "image": "assets/images/Lasur/lasur.png"
+                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
                                             "children": null
@@ -1157,7 +1157,7 @@
                                                     "id": 0,
                                                     "title": "Öl",
                                                     "content": "Öle ziehen tief ins Holz ein, lassen das Holz etwas kräftiger im Farbton wirken und haben eine matte Erscheinung. Frisch geöltes Holz ist wasserabweisend und hat eine gut erkennbare Maserung. Der Schutz eines Öls lässt im Freien bereits nach wenigen Wochen merklich nach.",
-                                                    "image": "assets/images/Öl/öl.jpg"
+                                                    "image": "assets/images/Öl/holzöl.jpg"
                                                 }
                                             },
                                             "children": null
@@ -1188,7 +1188,7 @@
                                                     "id": 0,
                                                     "title": "Lasur",
                                                     "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie ziehen etwas ins Holz ein und bilden eine glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
-                                                    "image": "assets/images/lasur.png"
+                                                    "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                 }
                                             },
                                             "children": null
@@ -1202,7 +1202,7 @@
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
                                                     "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                    "image": "assets/images/Lasur/lasur.png"
+                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
                                             "children": null
@@ -1216,7 +1216,7 @@
                                                     "id": 0,
                                                     "title": "Öl",
                                                     "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterscheidet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
-                                                    "image": "assets/images/Öl/öl.jpg"
+                                                    "image": "assets/images/Öl/holzöl.jpg"
                                                 }
                                             },
                                             "children": null
@@ -1238,20 +1238,20 @@
                             "id": 0,
                             "title": "Allgemeine Info",
                             "content": "In Deutschland werden unterschiedliche Anstricharten als „Imprägnierung“ oder „Grundierung“ deklariert. Aber nicht jede Imprägnierung ist auch eine Grundierung und nicht jede „Grundierung“ erfüllt tatsächlich diesen Zweck. Meistens fallen diese Anstriche in eine der nachfolgenden Kategorien:",
-                            "image": "assets/images/Lasur/lasur.png"
+                            "image": "assets/images/Imprägnierung/intakt-3.png"
                         },
                         "1": {
                             "id": 1,
                             "title": "Kesseldruck- oder Tauchimprägnierung (KDI)",
                             "content": "Druckimprägnierung auf Basis von mineralischen Salzen. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. Diese Art Imprägnierung ist nicht überstreichbar. Ein Druckimprägniertes Holz ist keine Grundierung, es ist frühestens nach 3-6 Monaten Bewitterung streichbar. Nach 3-6 Monaten haben sich die mineralischen Salze weitestgehend raus gewaschen, nun kann systematisch mit dem Grundieren begonnen werden. Streichen Sie auf keinen Fall Druckimprägniertes Holz direkt nach dem Aufbau. ",
-                            "image": "assets/images/Lasur/lasur.png"
+                            "image": "assets/images/Imprägnierung/intakt-3.png"
                         },
                         "2": {
                             "id": 2,
                             "unique": "2cabdbc8-1000-4452-9818-47e4ed8cb655",
                             "title": "Warnung zur Imprägnierung",
                             "content": "Wichtig! Imprägniertes Holz kann frühestens nach 3-6 Monaten gestrichen werden. Streichen Sie unter keinen Umständen kesseldruckimprägniertes Holz direkt nach dem Aufbau. Die Imprägnierung muss erst ausgewaschen sein.",
-                            "image": "assets/images/Lasur/lasur.png",
+                            "image": "assets/images/Imprägnierung/intakt-3.png",
                             "warning": true
                         }
                     },
@@ -1293,7 +1293,7 @@
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
                                                     "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                    "image": "assets/images/Lasur/lasur.png"
+                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
                                             "children": null
@@ -1316,7 +1316,7 @@
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
                                                     "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                                    "image": "assets/images/Lasur/lasur.png"
+                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
                                             "children": null
@@ -1361,14 +1361,14 @@
                                             "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
                                             "title": "Warnung bei Lasuren",
                                             "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben.",
-                                            "image": "assets/images/Lasur/lasur.png",
+                                            "image": "assets/images/Lasur/lasur-intakt.jpg",
                                             "warning": true
                                         },
                                         "1": {
                                             "id": 1,
                                             "title": "Lasur",
                                             "content": "Lasuren sind durchscheinend und ziehen tiefer in das Holz ein, Lacke dagegen bilden eine farblich deckende Schicht auf der Holzoberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                            "image": "assets/images/Lasur/lasur.png"
+                                            "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg"
                                         }
                                     },
                                     "children": null
@@ -1383,7 +1383,7 @@
                                             "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
                                             "title": "Warnung bei Farben",
                                             "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben.",
-                                            "image": "assets/images/Lasur/lasur.png",
+                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg",
                                             "warning": true
                                         },
                                         "1": {
@@ -1403,17 +1403,9 @@
                                     "info": {
                                         "0": {
                                             "id": 0,
-                                            "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
-                                            "title": "Warnung bei Farben",
-                                            "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben.",
-                                            "image": "assets/images/Lasur/lasur.png",
-                                            "warning": true
-                                        },
-                                        "1": {
-                                            "id": 1,
-                                            "title": "Deckende Farbe",
-                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Intakte Farbe darf nicht stark rissig sein oder blättern oder so dünn geworden sein, dass das Holz unterhalb der Farbe nass werden kann.",
-                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                            "title": "Öl",
+                                            "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterscheidet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
+                                            "image": "assets/images/Öl/holzöl.jpg"
                                         }
                                     },
                                     "children": null
@@ -1476,7 +1468,7 @@
                                     "id": 0,
                                     "title": "Lasur Allgemein",
                                     "content": "Eine Lasur ist ein extrem dünnschichtiger, transparenter und/oder leicht pigmentierter Anstrich. Lasuren sind vergleichbar mit stark verdünnten Farben. Üblicherweise halten Lasuren etwa 6-24 Monate, je nach Bindemittel. Lasuren können meistens direkt auf Holz gestrichen werden. Eine Lasur bietet immer nur einen begrenzten, bzw. geringen Schutz vor Verwitterung. Eine Vergrauung des Holzes lässt sich mit einer Lasur nicht aufhalten",
-                                    "image": "assets/images/Lasur/lasur-intakt_glanz.jpg"
+                                    "image": "assets/images/Lasur/lasur-intakt.jpg"
                                 },
                                 "1": {
                                     "id": 1,
@@ -1502,7 +1494,7 @@
                                     "id": 0,
                                     "title": "Öle",
                                     "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterscheidet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden",
-                                    "image": "assets/images/Öl/öl.jpg"
+                                    "image": "assets/images/Öl/holzöl.jpg"
                                 }
                             },
                             "children": "no-products"
