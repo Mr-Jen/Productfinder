@@ -17,6 +17,7 @@
             "binder": 0,
             "solubility": 0,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/48/silikonalkydfarbe-oden",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_ODEN.pdf",
             "images": [
                 "/assets/images/Produkte/M50050.jpg"
             ],
@@ -136,7 +137,7 @@
             "gloss_level": [0,20],
             "binder": 11,
             "solubility": 2,
-            "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/240/nadelholzteer-dunkelbraun-aekta-traetjaera-850",
+            "link": "https://schwedischer-farbenhandel.de/search?sSearch=wikingerfarbe&p=1",
             "images": [
                 "/assets/images/Produkte/A10300.jpg"
             ],
@@ -160,7 +161,7 @@
             "gloss_level": [0,10],
             "binder": 6,
             "solubility": 1,
-            "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/2/schlammfarbe",
+            "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/1/schlammfarbe-falu-roedfaerg",
             "images": [
                 "/assets/images/Produkte/M10000.jpg"
             ],
@@ -335,30 +336,6 @@
             "price": [1.37, 2.66],
             "info_text": "Konservierendes Öl aus Holzteer. Extrem robustes und widerstandsfähiges schwarzbraunes Öl zur Konservierung von Holz im Aussenbereich. Schwellenöl wird typischerweise auf Bahnschwellen, zaunpfählen oder Brücken eingesetzt um diese langfristig, jedoch kostengünstig vor Fäulnis und Verfall zu schützen. Ebenfalls geeignet für Kompost- oder Beeteinfassungen. Hauptbestandteil: Kiefernharz.",
             "hue": "Schwarzbraun"
-        },
-        "24": {
-            "id": 24,
-            "name": "Sperr- und Haftgrund (Trägrund/Utegrund)",
-            "category": [2],
-            "allowed_coatings": [], 
-            "allowed_on_hardwood": true,
-            "surface": [0],
-            "application": [0,2,3,4,5],
-            "efficiency": {
-                "smooth_surface": [6,8],
-                "rough_surface": [4,6]
-            },
-            "lifetime": [1,2],
-            "gloss_level": [0,10],
-            "binder": 0,
-            "solubility": 5,
-            "link": "https://schwedischer-farbenhandel.de/aussenfarben/grundierung/12/sperr-und-haftgrund-traegrund-weiss",
-            "images": [
-                "/assets/images/Produkte/M20301.jpg"
-            ],
-            "price": [1.5, 3.2],
-            "info_text": "",
-            "hue": ""
         },
         "25": {
             "id": 25,

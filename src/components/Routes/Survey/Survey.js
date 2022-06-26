@@ -11,6 +11,7 @@ import Infos from './Infos'
 import BackButton from './BackButton'
 import BreadCrumbs from './BreadCrumbs'
 import NavigateButton from '../../Shared/NavigateButton'
+import BackButtonToStart from './BackButtonToStart'
 
 const Wrapper = styled.div`
   display: flex;
@@ -79,6 +80,7 @@ export const Survey = ({isHome, isFirst, handleNavigationChange, historyLength, 
             <Infos/>
             <Items/>
             {(!isHome && !isFirst) &&  < BackButton/>}
+            {isFirst && <BackButtonToStart />}
           </ContentWrapper>
       </Wrapper>
   )

@@ -20,6 +20,7 @@ const ButtonInsideWrapper = styled.div`
   display: flex;
   align-items: center;
   margin: 2em 0 2em 0;
+  min-width: 50vw;
 `
 
 const ButtonContentWrapper = styled.div`

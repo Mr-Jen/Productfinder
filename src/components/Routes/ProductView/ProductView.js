@@ -205,7 +205,7 @@ const ProductView = ({ match, productsData }) => {
         const { params: { productId } } = match;
         const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
         const product = products[productId-1]
-        const { category, surface, application, lifetime, gloss_level, binder, solubility, link, images, info_text, hue } = {...product}
+        const { category, surface, application, lifetime, gloss_level, binder, solubility, link, datasheet_link, images, info_text, hue } = {...product}
 
         return (
             <Wrapper>
@@ -232,6 +232,11 @@ const ProductView = ({ match, productsData }) => {
                                 <Icon style={{visibility: "hidden"}} src='/assets/icons/misc/bag.png'></Icon>
                                 <ButtonText>Kaufen</ButtonText>
                                 <Icon src='/assets/icons/misc/bag.png'></Icon>
+                            </ButtonContent>
+                        </Button>
+                        <Button style={{backgroundColor: "white", border:  "2px solid black", minWidth: "200px", "marginTop": "-20px"}} target="_blank" and rel="noopener noreferrer" href={datasheet_link !== "" ? datasheet_link : "https://www.schwedischer-farbenhandel.de/"}>
+                            <ButtonContent>
+                                <ButtonText style={{color: "black"}}>Datenblatt</ButtonText>
                             </ButtonContent>
                         </Button>
                         <Button style={{backgroundColor: "white", border:  "2px solid black", minWidth: "200px", "marginTop": "-20px"}} target="_blank" and rel="noopener noreferrer" href="https://animation.schwedischer-farbenhandel.de/index.html">

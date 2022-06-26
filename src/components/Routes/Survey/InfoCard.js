@@ -82,6 +82,7 @@ const Text = styled.p`
     line-height: 30px;
     overflow-y: auto;
     padding-right: 1em;
+    white-space: pre-line;
 `
 
 const ImageWrapper = styled.div`

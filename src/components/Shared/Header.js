@@ -75,7 +75,7 @@ function Header({ handleNavigationChange }) {
                     </Title>
                 </TitleWrapper>
             </Link>
-            <a href="https://www.schwedischer-farbenhandel.de/">
+            <a href="https://schwedischer-farbenhandel.de/">
                 <Icon src="/assets/icons/logo.jpg"/>
             </a>            
         </Wrapper>

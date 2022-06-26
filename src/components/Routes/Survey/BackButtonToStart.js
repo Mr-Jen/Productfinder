@@ -1,0 +1,52 @@
+import React from 'react'
+import { connect } from 'react-redux'
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+
+const Wrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+`
+
+const Button = styled.button`
+  display: flex;
+  align-items: center;
+  height: 2em;
+  border-radius: .3em;
+  border: 1px solid grey;
+  padding: 1em;
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+  &:hover {
+      background-color: rgb(219, 217, 217);
+  }
+
+  /*position: fixed;*/
+  */bottom: 5vh;*/
+`
+
+const Icon = styled.img`
+    height: 2em;
+`
+
+const Text = styled.p`
+    font-weight: bold;
+    padding: .5em;
+`
+
+const BackButtonToStart = () => {
+    return (
+        <Wrapper>
+            <Link to="/">
+                <Button>
+                    <Icon src="assets/icons/misc/left.png"/>
+                    <Text>Zurück zum Start</Text>
+                </Button>
+            </Link>
+        </Wrapper>
+    )
+}
+
+export default connect()(BackButtonToStart)
