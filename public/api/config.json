@@ -507,6 +507,7 @@
                             "id": 1,
                             "label": "Verwitterte Farbe oder Lasur",
                             "question": "Was für eine Art von Anstrich haben Sie? Achten Sie besonders auf die Warnhinweise in den Infoboxen. Abhänging vom Zustand kann es sein, dass der Altanstrich komplett entfernt werden muss.",
+                            "target_action": "set_target",
                             "info": {
                                 "0": {
                                     "id": 0,
@@ -800,46 +801,14 @@
                                                             "label": "Acryl / Acrylat-Basis",                                                            
                                                             "action_value": 0,
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                            "target_action": "set_target",
-                                                            "children": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "label": "Farbe",
-                                                                    "question": "",
-                                                                    "info": {
-                                                                        "0": {
-                                                                            "id": 0,
-                                                                            "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
-                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
-                                                                        }
-                                                                    },
-                                                                    "children": null
-                                                                }
-                                                            }
+                                                            "children": null
                                                         },
                                                         "1": {
                                                             "id": 1,
                                                             "label": "Öl / Alkyd-Basis",
                                                             "action_value": 1,
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                            "target_action": "set_target",
-                                                            "children": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "label": "Farbe",
-                                                                    "question": "",
-                                                                    "info": {
-                                                                        "0": {
-                                                                            "id": 0,
-                                                                            "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
-                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
-                                                                        }
-                                                                    },
-                                                                    "children": null
-                                                                }
-                                                            }
+                                                            "children": null
                                                         }
                                                     }
                                                 }
@@ -1353,16 +1322,16 @@
                 "3": {
                     "id": 3,
                     "label": "Ich weiß nicht",
-                    "question": "Auf der Infoseite finden Sie Informationen über diese Anstriche",
+                    "question": "",
                     "info": {
                         "0": {
                             "id": 0,
                             "title": "Allgemeine Information",
                             "content": "Welche Anstricharten gibt es? Die meisten Anstricharten fallen in eine der nachfolgenden Kategorien. Wenn Sie sich nicht sicher sind um was es sich genau handelt, wenden Sie sich gerne per Email oder telefonisch an uns: Email: info@schwedischer-farbenhandel.de Telefon: +49 (0) 40 54 80 12 20",
-                            "image": "assets/images/lasur.png"
+                            "image": "assets/images/Anderes/qm.png"
                         }
                     },
-                    "children": null
+                    "children": "info"
                 }
             }
         } 

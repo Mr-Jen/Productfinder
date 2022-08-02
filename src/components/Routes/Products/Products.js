@@ -285,7 +285,7 @@ const mapStateToProps = ({ user, filter }) => {
   if (user["target"] === 'Lasur'){
     target = 1;
   }
-  else if (user["target"] === 'Farbe'){
+  else if (user["target"] === 'Farbe' || user["target"] === "Verwitterte Farbe"){
     target = 0;
   }
   else if (user["target"] === 'Öl'){

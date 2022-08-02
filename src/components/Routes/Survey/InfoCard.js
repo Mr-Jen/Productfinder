@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     background-color: #FFE60A;
     border-radius: 10px;
     border: ${props => props.warn ? "4px solid red" : "1px solid grey"};
-    height: 65vh;
+    height: 60vh;
     width: 90vw;
     max-width: 1400px;
     z-index: 10000000;
@@ -90,6 +90,7 @@ const ImageWrapper = styled.div`
     background-size: cover;
     width: 50%;
     height: 100%;
+    background-repeat: no-repeat;
     align-self: center;
     border-radius: 10px;
     cursor: zoom-in;

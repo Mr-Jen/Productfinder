@@ -7,6 +7,7 @@ import { addToHistory } from '../../../actions/history'
 import { setCoating, setCoatingLength, setRoughness, setTarget, setWoodType } from '../../../actions/user'
 import InfoCard from './InfoCard'
 import MobileInfoCard from './MobileInfoCard/MobileInfoCard';
+import InfoSite from './InfoPage/InfoSite';
 
 const ChoiceWrapper = styled.div`
   display: flex;
@@ -188,7 +189,10 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
   return (
     <ChoiceWrapper>
       <div>
-        { (childrenItems && childrenItems !== "no-products") &&
+        {
+          (childrenItems && childrenItems === "info") && <InfoSite />
+        }
+        { (childrenItems && childrenItems !== "no-products" && childrenItems !== "info") &&
           Object.keys(childrenItems).map(key => (
             <ButtonInsideWrapper onClick={(e) => onClickButton(key, childrenItems[key], e)} key={key}>
               <ButtonContentWrapper>
