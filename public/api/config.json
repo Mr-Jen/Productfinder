@@ -53,7 +53,7 @@
                                             "id": 0,
                                             "title": "Weichholz",
                                             "content": "Als Weichholz gelten alle Hölzer mit geringer Holzdichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert werden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne, aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind größtenteils extrem glattgehobelt, die Holzporen sind dicht, wodurch Anstriche abperlen - und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 3 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
-                                            "image": "assets/images/Hölzer/weichholz-1.png"
+                                            "image": "assets/images/Hoelzer/weichholz-1.png"
                                         }
                                     },
                                     "woodtype": 0,
@@ -68,7 +68,7 @@
                                             "id": 0,
                                             "title": "Hartholz",
                                             "content": "Als Hartholz gilt Holz mit vergleichsweise hoher Dichte. Diese Hölzer sind besonders hart und dadurch sehr stabil. Harthölzer wachsen langsamer und sind dh. als Baumaterial oft verhältnismäßig teuer. Aufgrund der hohen Qualität wird Hartholz üblicherweise da verwendet, wo kein Anstrich gewünscht ist. Je nach Holzart können diese Hölzer problemlos 10-30 Jahre ungestrichen bleiben. Typische Harthölzer sind Laubholz wie Eiche, Buche und Esche aber auch Nadelholz wie sibirische Lärche zählt zu den Harthölzern. Ebenso sind viele Tropenhölzer Hartholz. Wichtig: Hartholz sollte niemals direkt nach dem Aufbau gestrichen werden. Durch die hohe Holzdichte, können Flüssigstoffe nicht ins Holz eindringen. Kein Anstrich der Welt könnte hier lange haften. Lassen Sie Hartholz immer erst vergrauen, ehe Sie streichen. Die Vergrauung kann 1 bis mehrere Jahre in Anspruch nehmen. ",
-                                            "image": "assets/images/Hölzer/hartholz-1.png"
+                                            "image": "assets/images/Hoelzer/hartholz-1.png"
                                         }
                                     },
                                     "woodtype": 1,
@@ -107,7 +107,7 @@
                                             "id": 0,
                                             "title": "Weichholz",
                                             "content": "Als Weichholz gelten alle Hölzer mit geringer Dichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert werden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne, aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind größtenteils extrem glattgehobelt, die Holzporen sind dicht, wodurch Anstriche abperlen - und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 3 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
-                                            "image": "assets/images/Hölzer/weichholz-1.png"
+                                            "image": "assets/images/Hoelzer/weichholz-1.png"
                                         }
                                     },
                                     "woodtype": 0,
@@ -122,7 +122,7 @@
                                                     "id": 0,
                                                     "title": "Sägeraues Holz",
                                                     "content": "Unter sägerauem Holz versteht man jedes Holz, das per Definition mit dem ersten Schnitt ab Sägewerk geliefert wurde. Sägeraues Holz darf nicht geschliffen, gehobelt oder feingesägt sein. Sägeraues Holz hat eine sehr raue Oberfläche, das Holz hat viele abstehende Fasern und splittert oberflächlich. Bei frischem Holz kann der Händler immer Auskunft darüber geben, ob das Holz sägerau ist oder nicht.",
-                                                    "image": "assets/images/Anderes/sägerau.jpg"
+                                                    "image": "assets/images/Hoelzer/saegeraues_holz.jpg"
                                                 }
                                             },
                                             "children": null
@@ -153,7 +153,7 @@
                                             "id": 0,
                                             "title": "Hartholz",
                                             "content": "Als Hartholz gilt Holz mit vergleichsweise hoher Dichte. Diese Hölzer sind besonders hart und dadurch sehr stabil. Harthölzer wachsen langsamer und sind dh. als Baumaterial oft verhältnismäßig teuer. Aufgrund der hohen Qualität wird Hartholz üblicherweise da verwendet, wo kein Anstrich gewünscht ist. Je nach Holzart können diese Hölzer problemlos 10-30 Jahre ungestrichen bleiben. Typische Harthölzer sind Laubholz wie Eiche, Buche und Esche aber auch Nadelholz wie sibirische Lärche zählt zu den Harthölzern. Ebenso sind viele Tropenhölzer Hartholz. Wichtig: Hartholz sollte niemals direkt nach dem Aufbau gestrichen werden. Durch die hohe Holzdichte, können Flüssigstoffe nicht ins Holz eindringen. Kein Anstrich der Welt könnte hier lange haften. Lassen Sie Hartholz immer erst vergrauen, ehe Sie streichen. Die Vergrauung kann 1 bis mehrere Jahre in Anspruch nehmen. ",
-                                            "image": "assets/images/Hölzer/hartholz-1.png"
+                                            "image": "assets/images/Hoelzer/hartholz-1.png"
                                         }
                                     },
                                     "woodtype": 1,
@@ -168,7 +168,7 @@
                                                     "id": 0,
                                                     "title": "Sägeraues Holz",
                                                     "content": "Unter sägerauem Holz versteht man jedes Holz, das per Definition mit dem ersten Schnitt ab Sägewerk geliefert wurde. Sägeraues Holz darf nicht geschliffen, gehobelt oder feingesägt sein. Sägeraues Holz hat eine sehr raue Oberfläche, das Holz hat viele abstehende Fasern und splittert oberflächlich. Bei frischem Holz kann der Händler immer Auskunft darüber geben, ob das Holz sägerau ist oder nicht.",
-                                                    "image": "assets/images/Anderes/sägerau.jpg"
+                                                    "image": "assets/images/Hoelzer/saegeraues_holz.jpg"
                                                 }
                                             },
                                             "children": null
@@ -257,12 +257,6 @@
                                     "id": 1,
                                     "title": "Intakte Lasur",
                                     "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
-                                    "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg"
-                                },
-                                "2": {
-                                    "id": 2,
-                                    "title": "Intakte Lasur",
-                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
                                     "image": "assets/images/Lasur/lasur-intakt.jpg"
                                 }
                             },
@@ -305,7 +299,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "label": "Test mit Brennspiritus",
-                                                    "question": "Welche Bindemittel sind in Ihrem Werkstoff vorhanden?",
+                                                    "question": "Was hat der Test mit dem Brennspiritus ergeben? Erläuterungen finden Sie auch in der Infobox.",
                                                     "info": {
                                                         "0": {
                                                             "id": 0,
@@ -326,7 +320,7 @@
                                                                     "title": "Was bedeutet mein Ergebnis?",
                                                                     "options": {
                                                                         "0": "Weich/klebrig/abfärbend bedeutet acrylhaltig (wasserbasierte Lasur)",
-                                                                        "1": "Unverändert und weiterhin hart bedeutet öl- bzw. alkydhaltig xe Lasur)."
+                                                                        "1": "Unverändert und weiterhin hart bedeutet öl- bzw. alkydhaltige Lasur)."
                                                                     }
                                                                 }
                                                             },
@@ -346,6 +340,14 @@
                                                             "label": "Acryl / Acrylat-Basis",                                                            
                                                             "action_value": 0,
                                                             "question": "Aus Qualitätsgründen bieten wir keine Lasur auf Acrylbasis mehr an.",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Acryl / Acrylat-Basis als Testergebnis",
+                                                                    "content": "Ist der Abrieb weich/klebrig/abfärbend, so ist die Lasur acrylhaltig/wasserbasiert.",
+                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
+                                                                }
+                                                            },
                                                             "target_action": "set_target",
                                                             "children": {
                                                                 "0": {
@@ -369,6 +371,14 @@
                                                             "label": "Öl / Alkyd-Basis",
                                                             "action_value": 1,
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Öl / Alkyd-Basis als Testergebnis",
+                                                                    "content": "Der Abrieb ist staubig, die Lasur bleibt jedoch hart? Dann liegt eine Öl-, Alkydbasis vor.",
+                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
+                                                                }
+                                                            },
                                                             "target_action": "set_target",
                                                             "children": {
                                                                 "0": {
@@ -429,7 +439,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "label": "Test mit Schleifpapier",
-                                                    "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst rausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Die Anleitung zum Test finden Sie in der Infobox.",
+                                                    "question": "Was hat der Test mit dem Schleifpapier ergeben? Erläuterungen zu den Ergebnissen sind in den Infoboxen zu finden.",
                                                     "info": {
                                                         "0": {
                                                             "id": 0,
@@ -470,13 +480,29 @@
                                                             "id": 0,
                                                             "label": "Acryl / Acrylat-Basis",                                                            
                                                             "action_value": 0,
-                                                            "question": ""
+                                                            "question": "Für diesen Entscheidungspfad konnten keine Produkte gefunden werden. Bitte wenden Sie sich gegebenenfalls an den Kundensupport.",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Acryl / Acrylat-Basis als Testergebnis",
+                                                                    "content": "Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten, es wird klebrig, schmiert oder der Abrieb ist grob? Dann handelt es sich um eine Acryl-, Acrylatbasis.",
+                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
+                                                                }
+                                                            }
                                                         },
                                                         "1": {
                                                             "id": 1,
                                                             "label": "Öl / Alkyd-Basis",
                                                             "action_value": 1,
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Öl / Alkyd-Basis als Testergebnis",
+                                                                    "content": "Der Abrieb ist staubig, die Farbe bleibt jedoch hart? Dann liegt eine Öl-, Alkydbasis vor.",
+                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
+                                                                }
+                                                            },
                                                             "target_action": "set_target",
                                                             "children": {
                                                                 "0": {
@@ -573,7 +599,7 @@
                                                                 "0": {
                                                                     "id": 0,
                                                                     "label": "Test mit Brennspiritus",
-                                                                    "question": "Welche Bindemittel sind in Ihrem Werkstoff vorhanden?",
+                                                                    "question": "Was hat der Test mit dem Brennspiritus ergeben? Erläuterungen finden Sie auch in der Infobox.",
                                                                     "info": {
                                                                         "0": {
                                                                             "id": 0,
@@ -614,6 +640,14 @@
                                                                             "label": "Acryl / Acrylat-Basis",                                                            
                                                                             "action_value": 0,
                                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                                            "info": {
+                                                                                "0": {
+                                                                                    "id": 0,
+                                                                                    "title": "Acryl / Acrylat-Basis als Testergebnis",
+                                                                                    "content": "Ist der Abrieb weich/klebrig/abfärbend, so ist die Lasur acrylhaltig/wasserbasiert.",
+                                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
+                                                                                }
+                                                                            },
                                                                             "target_action": "set_target",
                                                                             "children": {
                                                                                 "0": {
@@ -651,6 +685,14 @@
                                                                             "label": "Öl / Alkyd-Basis",
                                                                             "action_value": 1,
                                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                                            "info": {
+                                                                                "0": {
+                                                                                    "id": 0,
+                                                                                    "title": "Öl / Alkyd-Basis als Testergebnis",
+                                                                                    "content": "Der Abrieb ist staubig, die Lasur bleibt jedoch hart? Dann liegt eine Öl-, Alkydbasis vor.",
+                                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
+                                                                                }
+                                                                            },
                                                                             "target_action": "set_target",
                                                                             "children": {
                                                                                 "0": {
@@ -801,6 +843,14 @@
                                                             "label": "Acryl / Acrylat-Basis",                                                            
                                                             "action_value": 0,
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Acryl / Acrylat-Basis als Testergebnis",
+                                                                    "content": "Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten, es wird klebrig, schmiert oder der Abrieb ist grob? Dann handelt es sich um eine Acryl-, Acrylatbasis.",
+                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
+                                                                }
+                                                            },
                                                             "children": null
                                                         },
                                                         "1": {
@@ -808,6 +858,14 @@
                                                             "label": "Öl / Alkyd-Basis",
                                                             "action_value": 1,
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Öl / Alkyd-Basis als Testergebnis",
+                                                                    "content": "Der Abrieb ist staubig, die Farbe bleibt jedoch hart? Dann liegt eine Öl-, Alkydbasis vor.",
+                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
+                                                                }
+                                                            },
                                                             "children": null
                                                         }
                                                     }
@@ -945,6 +1003,14 @@
                                                             "label": "Acryl / Acrylat-Basis",                                                            
                                                             "action_value": 0,
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Acryl / Acrylat-Basis als Testergebnis",
+                                                                    "content": "Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten, es wird klebrig, schmiert oder der Abrieb ist grob? Dann handelt es sich um eine Acryl-, Acrylatbasis.",
+                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
+                                                                }
+                                                            },
                                                             "target_action": "set_target",
                                                             "children": {
                                                                 "0": {
@@ -968,6 +1034,14 @@
                                                             "label": "Öl / Alkyd-Basis",
                                                             "action_value": 1,
                                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Öl / Alkyd-Basis als Testergebnis",
+                                                                    "content": "Der Abrieb ist staubig, die Farbe bleibt jedoch hart? Dann liegt eine Öl-, Alkydbasis vor.",
+                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
+                                                                }
+                                                            },
                                                             "target_action": "set_target",
                                                             "children": {
                                                                 "0": {
@@ -1139,7 +1213,7 @@
                 "2": {            
                     "id": 2,
                     "label": "Mit werkseitiger Imprägnierung / Grundierung behandelt",
-                    "question": "Was für eine Art von Imprägnierung oder Grundierung liegt vor? Bitte lesen Sie die Infoboxen genau durch, nicht alle werkseitigen Anstriche sind zum Überstreichen geeignet.",
+                    "question": "Was für eine Art von Imprägnierung oder Grundierung liegt vor? Bitte lesen Sie die Infoboxen genau durch, nicht alle werkseitigen Anstriche sind zum Überstreichen geeignet. Achtung: eine Imprägnierung ist keine Grundierung!",
                     "breadcrumb": "Werkseitiger Anstrich",
                     "action": "set_coating",
                     "info": {
@@ -1147,20 +1221,20 @@
                             "id": 0,
                             "title": "Allgemeine Info",
                             "content": "In Deutschland werden unterschiedliche Anstricharten als „Imprägnierung“ oder „Grundierung“ deklariert. Aber nicht jede Imprägnierung ist auch eine Grundierung und nicht jede „Grundierung“ erfüllt tatsächlich diesen Zweck. Meistens fallen diese Anstriche in eine der nachfolgenden Kategorien:",
-                            "image": "assets/images/Imprägnierung/intakt-3.png"
+                            "image": "assets/images/Impraegnierung/intakt-3.png"
                         },
                         "1": {
                             "id": 1,
                             "title": "Tauchimprägnierung oder Kesseldruckimprägnierung (KDI)",
                             "content": "Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in wassergelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühstens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall Druckimprägniertes Holz direkt nach dem Aufbau. ",
-                            "image": "assets/images/Imprägnierung/intakt-3.png"
+                            "image": "assets/images/Impraegnierung/intakt-3.png"
                         },
                         "2": {
                             "id": 2,
                             "unique": "2cabdbc8-1000-4452-9818-47e4ed8cb655",
                             "title": "Warnung zur Imprägnierung",
                             "content": "Wichtig! Imprägniertes Holz kann frühestens nach 3-6 Monaten der Bewitterung gestrichen werden. Die Imprägnierung muss erst ausgewaschen sein, das Wasser muss aus dem Holz entwichen sein. Streichen Sie unter keinen Umständen kesseldruckimprägniertes Holz direkt nach dem Aufbau. Die Imprägnierung muss erst ausgewaschen sein.",
-                            "image": "assets/images/Imprägnierung/intakt-3.png",
+                            "image": "assets/images/Impraegnierung/intakt-3.png",
                             "warning": true
                         }
                     },
@@ -1252,7 +1326,7 @@
                                     "id": 0,
                                     "title": "Imprägnierung",
                                     "content": "Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in wassergelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühstens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall Druckimprägniertes Holz direkt nach dem Aufbau.",
-                                    "image": "assets/images/Imprägnierung/intakt-3.png"
+                                    "image": "assets/images/Impraegnierung/intakt-3.png"
                                 }
                             },
                             "children": {

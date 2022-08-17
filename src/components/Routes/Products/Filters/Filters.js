@@ -53,16 +53,6 @@ const Filters = ({ filter, onChangeApplication, onChangeSurface, onResetSurfaces
     return (
         <Wrapper>
             <Filter 
-                onOpenFilter={() => handleOpenFilter(0)} 
-                id={0} 
-                onChange={(index) => onChangeSurface(index)} 
-                onReset={() => onResetSurfaces()}
-                isOpen={0 === openFilter} 
-                cbContent={Object.keys(filter)[0] !== undefined && filter[Object.keys(filter)[0]]}
-                content={products && products[Object.keys(filter)[0]]}
-                title={"Untergrund"}
-            />
-            <Filter 
                 onOpenFilter={() => handleOpenFilter(1)} 
                 id={1} 
                 onChange={(index) => onChangeApplication(index)} 

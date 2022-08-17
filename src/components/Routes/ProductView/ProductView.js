@@ -205,7 +205,7 @@ const ProductView = ({ match, productsData }) => {
         const { params: { productId } } = match;
         const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
         const product = products[productId-1]
-        const { category, surface, application, lifetime, gloss_level, binder, solubility, link, datasheet_link, images, info_text, hue } = {...product}
+        const { category, surface, application, lifetime, lifetime_unit, gloss_level, binder, solubility, link, datasheet_link, images, info_text, hue } = {...product}
 
         return (
             <Wrapper>
@@ -263,7 +263,7 @@ const ProductView = ({ match, productsData }) => {
                             </PropsRow>
                             <PropsRow>
                                 <PropsValue style={{fontWeight: "bold"}}>{category_names_de[3]}</PropsValue>
-                                <PropsValue>{lifetime[0]} - {lifetime[1]} Jahre</PropsValue>
+                                <PropsValue>{lifetime[0]} - {lifetime[1]} {lifetime_unit}</PropsValue>
                             </PropsRow>
                             <PropsRow>
                                 <PropsValue style={{fontWeight: "bold"}}>{category_names_de[4]}</PropsValue>

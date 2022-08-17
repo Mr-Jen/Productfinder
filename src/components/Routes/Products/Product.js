@@ -78,7 +78,7 @@ const Compare = styled.div`
     user-select: none; /* Standard syntax *
 `
 
-const Product = ({ title, category, surface, application, lifetime, gloss_level, binder, solubility, images, id, onChange, isChecked}) => {
+const Product = ({ title, category, surface, application, lifetime, lifetime_unit, gloss_level, binder, solubility, images, id, onChange, isChecked}) => {
 
     const [toggle, setToggle] = React.useState(false);
 
@@ -119,7 +119,7 @@ const Product = ({ title, category, surface, application, lifetime, gloss_level,
                 </CategoryWrapper>
                 <CategoryWrapper>
                     <CategoryText>Lebensdauer: </CategoryText>
-                    <ValueText>{lifetime[0]} - {lifetime[1]} Jahre</ValueText>
+                    <ValueText>{lifetime[0]} - {lifetime[1]} {lifetime_unit}</ValueText>
                 </CategoryWrapper>
                 <CategoryWrapper>
                     <CategoryText>Glanzgrad: </CategoryText>                                

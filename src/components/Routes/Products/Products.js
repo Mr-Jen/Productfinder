@@ -247,7 +247,7 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
             products && filteredObjectKeys.map((objectKey, key) => {
 
               let product = products[objectKey]
-              let { id, category, surface, application, lifetime, gloss_level, binder, solubility, images } = product
+              let { id, category, surface, application, lifetime, lifetime_unit, gloss_level, binder, solubility, images } = product
               let category_value = categories[category[0]]
               let surface_value = surface.map((key) => surfaces[key])
               let application_value = application.map((key) => applications[key])
@@ -262,6 +262,7 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
                 surface={surface_value.join(', ')}
                 application={application_value.join(', ')}
                 lifetime={lifetime}
+                lifetime_unit={lifetime_unit}
                 gloss_level={gloss_level}
                 binder={binder_value}
                 solubility={solubility_value}
