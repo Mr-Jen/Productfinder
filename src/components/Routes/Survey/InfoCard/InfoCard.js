@@ -2,9 +2,10 @@ import React from 'react';
 import styled, {keyframes } from 'styled-components';
 import { connect } from 'react-redux';
 
-import { addToWarnings, removeFromWarnings } from '../../../actions/warning';
-import DetailImage from './DetailImage';
-import './infocard.css';
+import { addToWarnings, removeFromWarnings } from '../../../../actions/warning';
+import DetailImage from '../DetailImage';
+import './Infocard.css';
+import './CardImage.css'
 
 const Wrapper = styled.div`
     position: fixed;
@@ -93,7 +94,6 @@ const ImageWrapper = styled.div`
     background-repeat: no-repeat;
     align-self: center;
     border-radius: 10px;
-    cursor: zoom-in;
 
     @media (max-width: 800px){
         height: 70%;
@@ -209,6 +209,30 @@ const InfoCard = ({ data, onClose }) => {
         }
     }
 
+    const onClickCardImage = () => {
+        console.log("Clicked")
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+    }
+
     let default_content = {
         "title": "PLACEHOLDER",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -259,7 +283,7 @@ const InfoCard = ({ data, onClose }) => {
                             }
                         </Text>
                     </ContentWrapper>
-                    <ImageWrapper onClick={() => setShowEnlarged(true)} imgSrc={data ? data[infoState]["image"] : default_content["image"]}/>
+                    <ImageWrapper /*onClick={() => setShowEnlarged(true)}*/ imgSrc={data ? data[infoState]["image"] : default_content["image"]} />
                 </CardWrapper>
                 <Arrow 
                     onClick={() => onClickNextCard(1)} 

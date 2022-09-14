@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 import { addToHistory } from '../../../actions/history'
 import { setCoating, setCoatingLength, setRoughness, setTarget, setWoodType } from '../../../actions/user'
-import InfoCard from './InfoCard'
+import InfoCard from './InfoCard/InfoCard'
 import MobileInfoCard from './MobileInfoCard/MobileInfoCard';
 import InfoSite from './InfoPage/InfoSite';
 
