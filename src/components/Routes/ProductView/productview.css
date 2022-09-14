@@ -18,3 +18,7 @@
     width: 80%;
     border-bottom: 3px solid #FFE60A;
 }
+
+.hoverButton :hover {
+    background-color: rgb(235, 235, 235);
+}

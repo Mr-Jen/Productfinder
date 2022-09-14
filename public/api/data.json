@@ -44,6 +44,7 @@
             "binder": 1,
             "solubility": 1,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/52/emulsionsfarbe-solid-v",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Solid_V.pdf",
             "images": [
                 "/assets/images/Produkte/M51050.jpg"
             ],
@@ -69,6 +70,7 @@
             "binder": 0,
             "solubility": 1,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/57/fassadenfarbe-heimdall",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Heimdall.pdf",
             "images": [
                 "/assets/images/Produkte/55003.jpg"
             ],
@@ -94,6 +96,7 @@
             "binder": 1,
             "solubility": 1,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/59/emulsionsfarbe-titan-v",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Titan_V.pdf",
             "images": [
                 "/assets/images/Produkte/M55650.jpg"
             ],
@@ -119,6 +122,7 @@
             "binder": 3,
             "solubility": 1,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/251/lasol-matt",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Lasol.pdf",
             "images": [
                 "/assets/images/Produkte/A10423.jpg"
             ],
@@ -144,6 +148,7 @@
             "binder": 11,
             "solubility": 2,
             "link": "https://schwedischer-farbenhandel.de/search?sSearch=wikingerfarbe&p=1",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Imprex.pdf",
             "images": [
                 "/assets/images/Produkte/A10300.jpg"
             ],
@@ -169,6 +174,7 @@
             "binder": 6,
             "solubility": 1,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/1/schlammfarbe-falu-roedfaerg",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Schlammfarbe_allgemein.pdf",
             "images": [
                 "/assets/images/Produkte/M10000.jpg"
             ],
@@ -194,6 +200,7 @@
             "binder": 4,
             "solubility": 3,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/207/reine-leinoelfarbe-allbaeck",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Reine_Leinoelfarbe_Allbaeck.pdf",
             "images": [
                 "/assets/images/Produkte/M23100.jpg"
             ],
@@ -219,6 +226,7 @@
             "binder": 0,
             "solubility": 0,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/54/silikonalkydlasur-terrasslasyr",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Terrasslasyr.pdf",
             "images": [
                 "/assets/images/Produkte/5256.jpg"
             ],
@@ -244,6 +252,7 @@
             "binder": null,
             "solubility": 1,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/92/sioo-x-premium-holzimpraegnierer-terrasse",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Sioox_premium_terrasse.pdf",
             "images": [
                 "/assets/images/Produkte/A29790.jpg"
             ],
@@ -269,6 +278,7 @@
             "binder": 9,
             "solubility": 4,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/21/chinesisches-holzoel-farblos-auson?number=203900-",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Chinesisches_Holzoel_Auson.pdf",
             "images": [
                 "/assets/images/Produkte/M20601.jpg"
             ],
@@ -294,6 +304,7 @@
             "binder": 4,
             "solubility": 1,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/17/holzoel-farblos/traeolja-30",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Traeolja_30.pdf",
             "images": [
                 "/assets/images/Produkte/M20400.jpg"
             ],
@@ -319,6 +330,7 @@
             "binder": 4,
             "solubility": 0,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/20/helles-teeroel-farblos/ljus-tjaerolja",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Ljus_Tjaerolja_Helles_Holzteeroel.pdf",
             "images": [
                 "/assets/images/Produkte/A10298.jpg"
             ],
@@ -344,6 +356,7 @@
             "binder": 10,
             "solubility": 2,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/lasuren/208/schwellenoel/sleepers-oil/holzteeroel-dunkel",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Schwellenoel_Slipersolja.pdf",
             "images": [
                 "/assets/images/Produkte/2535.jpg"
             ],
@@ -369,6 +382,7 @@
             "binder": 11,
             "solubility": 2,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/lasuren/39/graue-teerlasur-tjaervitriol",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Tjaervitriol_Graue_Teerlasur.pdf",
             "images": [
                 "/assets/images/Produkte/M25001.jpg"
             ],
@@ -394,6 +408,7 @@
             "binder": 11,
             "solubility": 5,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/lasuren/38/tarinoel/teerlasur/roslagsmahogny",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Tarinoil.pdf",
             "images": [
                 "/assets/images/Produkte/25352.jpg"
             ],
@@ -419,6 +434,7 @@
             "binder": 4,
             "solubility": 4,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/10/reines-entschleimtes-leinoel-roh-allbaeck/raa-avslemma",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Leinoel_Allbaeck_Auson.pdf",
             "images": [
                 "/assets/images/Produkte/m21004[1704].jpg"
             ],
@@ -444,6 +460,7 @@
             "binder": 4,
             "solubility": 4,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/9/reines-entschleimtes-leinoel-gekocht-allbaeck-kokt",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Leinoel_Allbaeck_Auson.pdf",
             "images": [
                 "/assets/images/Produkte/m21004[1704].jpg"
             ],
@@ -469,6 +486,7 @@
             "binder": 4,
             "solubility": 4,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/19/teakoel/teakolja-v-0-75-l",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Teakolja_V.pdf",
             "images": [
                 "/assets/images/Produkte/B21696.jpg"
             ],

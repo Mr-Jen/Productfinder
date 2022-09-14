@@ -207,6 +207,8 @@ const ProductView = ({ match, productsData }) => {
         const product = products[productId-1]
         const { category, surface, application, lifetime, lifetime_unit, gloss_level, binder, solubility, link, datasheet_link, images, info_text, hue } = {...product}
 
+        console.log(datasheet_link)
+
         return (
             <Wrapper>
                 <Header>
@@ -234,12 +236,12 @@ const ProductView = ({ match, productsData }) => {
                                 <Icon src='/assets/icons/misc/bag.png'></Icon>
                             </ButtonContent>
                         </Button>
-                        <Button style={{backgroundColor: "white", border:  "2px solid black", minWidth: "200px", "marginTop": "-20px"}} target="_blank" and rel="noopener noreferrer" href={datasheet_link !== "" ? datasheet_link : "https://www.schwedischer-farbenhandel.de/"}>
+                        <Button className='hoverButton' style={{backgroundColor: "white", border:  "2px solid black", minWidth: "200px", "marginTop": "-20px"}} target="_blank" and rel="noopener noreferrer" href={datasheet_link !== "" ? datasheet_link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
                                 <ButtonText style={{color: "black"}}>Datenblatt</ButtonText>
                             </ButtonContent>
                         </Button>
-                        <Button style={{backgroundColor: "white", border:  "2px solid black", minWidth: "200px", "marginTop": "-20px"}} target="_blank" and rel="noopener noreferrer" href="https://animation.schwedischer-farbenhandel.de/index.html">
+                        <Button className='hoverButton' style={{backgroundColor: "white", border:  "2px solid black", minWidth: "200px", "marginTop": "-20px"}} target="_blank" and rel="noopener noreferrer" href="https://animation.schwedischer-farbenhandel.de/index.html">
                             <ButtonContent>
                                 <ButtonText style={{color: "black"}}>Zum Farbkonfigurator</ButtonText>
                             </ButtonContent>
