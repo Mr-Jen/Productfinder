@@ -207,8 +207,6 @@ const ProductView = ({ match, productsData }) => {
         const product = products[productId-1]
         const { category, surface, application, lifetime, lifetime_unit, gloss_level, binder, solubility, link, datasheet_link, images, info_text, hue } = {...product}
 
-        console.log(datasheet_link)
-
         return (
             <Wrapper>
                 <Header>
@@ -229,7 +227,7 @@ const ProductView = ({ match, productsData }) => {
                 <MainWrapper>
                     <ImageWrapper>
                         <ProductImage src={images[0]}/>
-                        <Button target="_blank" and rel="noopener noreferrer" href={link !== "" ? link : "https://www.schwedischer-farbenhandel.de/"}>
+                        <Button className='hoverButtonBorder' target="_blank" and rel="noopener noreferrer" href={link !== "" ? link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
                                 <Icon style={{visibility: "hidden"}} src='/assets/icons/misc/bag.png'></Icon>
                                 <ButtonText>Kaufen</ButtonText>

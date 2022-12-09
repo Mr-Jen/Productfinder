@@ -22,3 +22,7 @@
 .hoverButton :hover {
     background-color: rgb(235, 235, 235);
 }
+
+.hoverButtonBorder :hover {
+    background-color: rgb(62, 62, 255);
+}
