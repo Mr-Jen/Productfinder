@@ -1,4 +1,4 @@
- {
+{
     "history": null,
     "decisions": {
         "0": {
@@ -122,7 +122,7 @@
                                                     "id": 0,
                                                     "title": "Sägeraues Holz",
                                                     "content": "Unter sägerauem Holz versteht man jedes Holz, das per Definition mit dem ersten Schnitt ab Sägewerk geliefert wurde. Sägeraues Holz darf nicht geschliffen, gehobelt oder feingesägt sein. Sägeraues Holz hat eine sehr raue Oberfläche, das Holz hat viele abstehende Fasern und splittert oberflächlich. Bei frischem Holz kann der Händler immer Auskunft darüber geben, ob das Holz sägerau ist oder nicht.",
-                                                    "image": "assets/images/Hoelzer/saegeraues_holz.jpg"
+                                                    "image": "assets/images/Hoelzer/saegeraues-holz-2.jpg"
                                                 }
                                             },
                                             "children": null
@@ -168,7 +168,7 @@
                                                     "id": 0,
                                                     "title": "Sägeraues Holz",
                                                     "content": "Unter sägerauem Holz versteht man jedes Holz, das per Definition mit dem ersten Schnitt ab Sägewerk geliefert wurde. Sägeraues Holz darf nicht geschliffen, gehobelt oder feingesägt sein. Sägeraues Holz hat eine sehr raue Oberfläche, das Holz hat viele abstehende Fasern und splittert oberflächlich. Bei frischem Holz kann der Händler immer Auskunft darüber geben, ob das Holz sägerau ist oder nicht.",
-                                                    "image": "assets/images/Hoelzer/saegeraues_holz.jpg"
+                                                    "image": "assets/images/Hoelzer/saegeraues-holz-2.jpg"
                                                 }
                                             },
                                             "children": null
@@ -1227,7 +1227,7 @@
                             "id": 1,
                             "title": "Tauchimprägnierung oder Kesseldruckimprägnierung (KDI)",
                             "content": "Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in wassergelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühstens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall Druckimprägniertes Holz direkt nach dem Aufbau. ",
-                            "image": "assets/images/Impraegnierung/intakt-3.png"
+                            "image": "assets/images/Impraegnierung/kdi.jpg"
                         },
                         "2": {
                             "id": 2,
@@ -1326,7 +1326,7 @@
                                     "id": 0,
                                     "title": "Imprägnierung",
                                     "content": "Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in wassergelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühstens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall Druckimprägniertes Holz direkt nach dem Aufbau.",
-                                    "image": "assets/images/Impraegnierung/intakt-3.png"
+                                    "image": "assets/images/Impraegnierung/kdi.jpg"
                                 }
                             },
                             "children": {
