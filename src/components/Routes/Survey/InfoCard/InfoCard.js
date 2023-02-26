@@ -119,7 +119,7 @@ const Img = styled.img`
     position: absolute;
     right: 0;
     top: 0;
-    border: 1px solid black;
+    border: 2px solid black;
     cursor: pointer;
 `
 

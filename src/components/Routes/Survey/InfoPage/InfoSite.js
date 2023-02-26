@@ -4,8 +4,10 @@ import "./InfoSite.css";
 
 const InfoSite = () => {
   return (
-    <div className="container">
-      <h2 className="heading-text">Bildergallerie</h2>
+    <div className='outer-wrapper'>
+      <p className='info-text'>Welche Anstricharten gibt es? Die meisten Anstricharten fallen in eine der nachfolgenden Kategorien. Wenn Sie sich nicht sicher sind um was es sich genau handelt, wenden Sie sich gerne per Email oder telefonisch an uns: Email: info@schwedischer-farbenhandel.de Telefon: +49 (0) 40 54 80 12 20</p>
+      <div className="container">
+      <h2 className="heading-text">Bildergalerie</h2>
       <div className="image-gallery">
         <div className="column">
           <div className="image-item">
@@ -50,6 +52,7 @@ const InfoSite = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

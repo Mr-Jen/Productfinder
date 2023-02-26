@@ -3,8 +3,8 @@
     "decisions": {
         "0": {
             "id": 0,
-            "label": "Holzfassade für Gartenhaus, Wohnhaus oder Carport",
-            "question": "Ist es unbehandeltes Holz oder wurde schon ein Anstrich / eine Behandlung vorgenommen? Suchen Sie die Kategorie aus, die am ehesten auf Ihren Untergrund zutrifft. Über die Infoboxen erhalten Sie weitere Informationen.",
+            "label": "Holzfassade an Gartenhaus, Wohnhaus oder Carport",
+            "question": "Ist das Holz unbehandelt oder wurde bereits ein Anstrich / eine Behandlung vorgenommen? Suchen Sie die Kategorie aus, die am ehesten auf Ihren Untergrund zutrifft. Über die Infoboxen erhalten Sie weitere Informationen.",
             "breadcrumb": "Holzfassade",
             "children": {
                 "0": {
@@ -17,7 +17,7 @@
                         "0": {
                             "id": 0,
                             "title": "Unbehandelt",
-                            "content": "Als unbehandelt gilt jedes Holz, welches entweder neu ist und noch nie vorbehandelt wurde oder Holz, welches bereits behandelt war, der alte Anstrich aber restlos entfernt wurde (z.B. abgeschliffen oder ausgewaschen). ",
+                            "content": "Als unbehandelt gilt jedes Holz, das entweder neu ist und noch nie vorbehandelt wurde oder Holz, was bereits behandelt war, der alte Anstrich aber restlos entfernt wurde (z.B. abgeschliffen oder ausgewaschen). ",
                             "image": "assets/images/Anderes/glatt.jpg"
                         }
                     },
@@ -25,7 +25,7 @@
                         "0": {
                             "id": 0,
                             "label": "Lasur",
-                            "question": "Handelt es sich bei Ihrem Holz um Weichholz (Kiefer, Fichte, Tanne, etc.) oder um Hartholz (Eichen, lärche, Douglasie, etc)?",
+                            "question": "Handelt es sich bei Ihrem Holz um Weichholz (Kiefer, Fichte, Tanne, etc.) oder um Hartholz (Eiche, Lärche, Douglasie, etc)?",
                             "action_value": null,
                             "info": {
                                 "0": {
@@ -52,7 +52,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Weichholz",
-                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Holzdichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert werden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne, aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind größtenteils extrem glattgehobelt, die Holzporen sind dicht, wodurch Anstriche abperlen - und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 3 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
+                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Dicht, wodurch Weichhölzer besonders leicht sind. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert werden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne, aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen dazu. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind größtenteils extrem glattgehobelt, die Holzporen sind dicht, wodurch Anstriche abperlen - und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 3 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
                                             "image": "assets/images/Holz/weichholz/weichholz-1.PNG"
                                         }
                                     },
@@ -67,7 +67,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Hartholz",
-                                            "content": "Als Hartholz gilt Holz mit vergleichsweise hoher Dichte. Diese Hölzer sind besonders hart und dadurch sehr stabil. Harthölzer wachsen langsamer und sind dh. als Baumaterial oft verhältnismäßig teuer. Aufgrund der hohen Qualität wird Hartholz üblicherweise da verwendet, wo kein Anstrich gewünscht ist. Je nach Holzart können diese Hölzer problemlos 10-30 Jahre ungestrichen bleiben. Typische Harthölzer sind Laubholz wie Eiche, Buche und Esche aber auch Nadelholz wie sibirische Lärche zählt zu den Harthölzern. Ebenso sind viele Tropenhölzer Hartholz. Wichtig: Hartholz sollte niemals direkt nach dem Aufbau gestrichen werden. Durch die hohe Holzdichte, können Flüssigstoffe nicht ins Holz eindringen. Kein Anstrich der Welt könnte hier lange haften. Lassen Sie Hartholz immer erst vergrauen, ehe Sie streichen. Die Vergrauung kann 1 bis mehrere Jahre in Anspruch nehmen. ",
+                                            "content": "Als Hartholz gilt Holz mit vergleichsweise hoher Dichte, wodurch diese Hölzer besonders hart und dadurch sehr stabil sind. Harthölzer wachsen langsamer und sind daher in der Regel als Baumaterial verhältnismäßig teuer. Aufgrund der hohen Qualität wird Hartholz üblicherweise da verwendet, wo kein Anstrich gewünscht ist. Je nach Holzart können diese Hölzer problemlos 10-30 Jahre ungestrichen bleiben. Typische Harthölzer sind Laubholz wie Eiche, Buche und Esche aber auch Nadelholz wie sibirische Lärche zählt zu den Harthölzern. Ebenso sind viele Tropenhölzer Hartholz. Wichtig: Hartholz sollte niemals direkt nach dem Aufbau gestrichen werden. Durch die hohe Holzdichte, können Flüssigstoffe nicht ins Holz eindringen. Kein Anstrich der Welt könnte hier lange haften. Lassen Sie Hartholz immer erst vergrauen, ehe Sie streichen. Die Vergrauung kann 1 bis mehrere Jahre in Anspruch nehmen. ",
                                             "image": "assets/images/Holz/hartholz/hartholz-1.PNG"
                                         }
                                     },
@@ -79,7 +79,7 @@
                         "1": {
                             "id": 1,
                             "label": "Farbe",
-                            "question": "Handelt es sich bei Ihrem Holz um Weichholz (Kiefer, Fichte, Tanne, etc.) oder um Hartholz (Eichen, lärche, Douglasie, etc)?",
+                            "question": "Handelt es sich bei Ihrem Holz um Weichholz (Kiefer, Fichte, Tanne, etc.) oder um Hartholz (Eiche, Lärche, Douglasie, etc)?",
                             "action_value": null,
                             "info": {
                                 "0": {
@@ -106,7 +106,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Weichholz",
-                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Dichte. Dadurch sind Weichhölzer besonders leicht. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert werden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne, aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen zu den Weichhölzern. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind größtenteils extrem glattgehobelt, die Holzporen sind dicht, wodurch Anstriche abperlen - und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 3 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
+                                            "content": "Als Weichholz gelten alle Hölzer mit geringer Dicht, wodurch Weichhölzer besonders leicht sind. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert werden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne, aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen dazu. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind größtenteils extrem glattgehobelt, die Holzporen sind dicht, wodurch Anstriche abperlen - und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 3 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
                                             "image": "assets/images/Holz/weichholz/weichholz-1.PNG"
                                         }
                                     },
@@ -136,7 +136,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Gehobeltes / Glattes Holz",
-                                                    "content": "Gehobeltes, feingesägtes oder geschliffenes Holz ist bereits im Sägewerk behandelt worden. Gehobeltes Holz hat eine sehr glatte, oft seidige Oberfläche. Geschliffenes Holz ist ebenfalls glatt, jedoch nicht so seidig glänzend wie gehobeltes Holz. Feingesägtes Holz kann sich mitunter etwas rau oder fasrig anfühlen, es ist jedoch so glatt, dass keine Splitter oder große Fasern abstehen. All diese Hölzer unterscheiden sich von sägerauem Holz dadurch, dass sie technisch geglättet wurden und nicht mehr splittern, man kann diese Hölzer problemlos anfassen, ohne Gefahr zu laufen sich einen Splitter einzufangen. Wichtig: Lassen Sie gehobeltes Weichholz erst einige Wochen aufgebaut im Wetter stehen. Durch das hobeln werden hölzer so stark verdichtet, dass Anstriche schlecht oder gar nicht anhaften können. Üblich sind 6-8 Wochen Anwitterung.",
+                                                    "content": "Gehobeltes, feingesägtes oder geschliffenes Holz ist bereits im Sägewerk behandelt worden. Gehobeltes Holz hat eine sehr glatte, oft seidige Oberfläche. Geschliffenes Holz ist ebenfalls glatt, jedoch nicht so seidig glänzend wie gehobeltes Holz. Feingesägtes Holz kann sich mitunter etwas rau oder fasrig anfühlen, es ist jedoch so glatt, dass keine Splitter oder große Fasern abstehen. All diese Hölzer unterscheiden sich von sägerauem Holz dadurch, dass sie technisch geglättet wurden und nicht mehr splittern, man kann diese Hölzer problemlos anfassen, ohne Gefahr zu laufen sich einen Splitter einzufangen. Wichtig: Lassen Sie gehobeltes Weichholz erst einige Wochen aufgebaut im Wetter stehen. Durch das Hobeln werden Hölzer so stark verdichtet, dass Anstriche schlecht oder gar nicht anhaften können. Üblich sind 6-8 Wochen Anwitterung.",
                                                     "image": "assets/images/Anderes/glatt.jpg"
                                                 }
                                             },
@@ -152,7 +152,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Hartholz",
-                                            "content": "Als Hartholz gilt Holz mit vergleichsweise hoher Dichte. Diese Hölzer sind besonders hart und dadurch sehr stabil. Harthölzer wachsen langsamer und sind dh. als Baumaterial oft verhältnismäßig teuer. Aufgrund der hohen Qualität wird Hartholz üblicherweise da verwendet, wo kein Anstrich gewünscht ist. Je nach Holzart können diese Hölzer problemlos 10-30 Jahre ungestrichen bleiben. Typische Harthölzer sind Laubholz wie Eiche, Buche und Esche aber auch Nadelholz wie sibirische Lärche zählt zu den Harthölzern. Ebenso sind viele Tropenhölzer Hartholz. Wichtig: Hartholz sollte niemals direkt nach dem Aufbau gestrichen werden. Durch die hohe Holzdichte, können Flüssigstoffe nicht ins Holz eindringen. Kein Anstrich der Welt könnte hier lange haften. Lassen Sie Hartholz immer erst vergrauen, ehe Sie streichen. Die Vergrauung kann 1 bis mehrere Jahre in Anspruch nehmen. ",
+                                            "content": "Als Hartholz gilt Holz mit vergleichsweise hoher Dichte, wodurch diese Hölzer besonders hart und dadurch sehr stabil sind. Harthölzer wachsen langsamer und sind daher in der Regel als Baumaterial verhältnismäßig teuer. Aufgrund der hohen Qualität wird Hartholz üblicherweise da verwendet, wo kein Anstrich gewünscht ist. Je nach Holzart können diese Hölzer problemlos 10-30 Jahre ungestrichen bleiben. Typische Harthölzer sind Laubholz wie Eiche, Buche und Esche aber auch Nadelholz wie sibirische Lärche zählt zu den Harthölzern. Ebenso sind viele Tropenhölzer Hartholz. Wichtig: Hartholz sollte niemals direkt nach dem Aufbau gestrichen werden. Durch die hohe Holzdichte, können Flüssigstoffe nicht ins Holz eindringen. Kein Anstrich der Welt könnte hier lange haften. Lassen Sie Hartholz immer erst vergrauen, ehe Sie streichen. Die Vergrauung kann 1 bis mehrere Jahre in Anspruch nehmen. ",
                                             "image": "assets/images/Holz/hartholz/hartholz-1.PNG"
                                         }
                                     },
@@ -182,7 +182,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Gehobeltes / Glattes Holz",
-                                                    "content": "Gehobeltes, feingesägtes oder geschliffenes Holz ist bereits im Sägewerk behandelt worden. Gehobeltes Holz hat eine sehr glatte, oft seidige Oberfläche. Geschliffenes Holz ist ebenfalls glatt, jedoch nicht so seidig glänzend wie gehobeltes Holz. Feingesägtes Holz kann sich mitunter etwas rau oder fasrig anfühlen, es ist jedoch so glatt, dass keine Splitter oder große Fasern abstehen. All diese Hölzer unterscheiden sich von sägerauem Holz dadurch, dass sie technisch geglättet wurden und nicht mehr splittern, man kann diese Hölzer problemlos anfassen, ohne Gefahr zu laufen sich einen Splitter einzufangen. Wichtig: Lassen Sie gehobeltes Weichholz erst einige Wochen aufgebaut im Wetter stehen. Durch das hobeln werden hölzer so stark verdichtet, dass Anstriche schlecht oder gar nicht anhaften können. Üblich sind 6-8 Wochen Anwitterung.",
+                                                    "content": "Gehobeltes, feingesägtes oder geschliffenes Holz ist bereits im Sägewerk behandelt worden. Gehobeltes Holz hat eine sehr glatte, oft seidige Oberfläche. Geschliffenes Holz ist ebenfalls glatt, jedoch nicht so seidig glänzend wie gehobeltes Holz. Feingesägtes Holz kann sich mitunter etwas rau oder fasrig anfühlen, es ist jedoch so glatt, dass keine Splitter oder große Fasern abstehen. All diese Hölzer unterscheiden sich von sägerauem Holz dadurch, dass sie technisch geglättet wurden und nicht mehr splittern, man kann diese Hölzer problemlos anfassen, ohne Gefahr zu laufen sich einen Splitter einzufangen. Wichtig: Lassen Sie gehobeltes Weichholz erst einige Wochen aufgebaut im Wetter stehen. Hobeln werden Hölzer so stark verdichtet, dass Anstriche schlecht oder gar nicht anhaften können. Üblich sind 6-8 Wochen Anwitterung.",
                                                     "image": "assets/images/Anderes/glatt.jpg"
                                                 }
                                             },
@@ -236,7 +236,7 @@
                         "2": {
                             "id": 2,
                             "title": "Farbe",
-                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                         }
                     },
@@ -250,7 +250,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Intakte Farbe",
-                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                 },
                                 "1": {
@@ -358,7 +358,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
@@ -403,7 +403,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
@@ -431,7 +431,7 @@
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -513,7 +513,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                                             "image": "assets/images/Farbe/intakt-2.jpg"
                                                                         }
                                                                     },
@@ -558,8 +558,9 @@
                                     "children": {
                                         "0": {            
                                             "id": 0,
-                                            "label": "Abgeschliffen",
-                                            "question": "Ist noch intakte Lasur vorhanden?",
+                                            "label": "Alles abgeschliffen",
+                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "target_action": "set_target",
                                             "info": {
                                                 "0": {
                                                     "id": 0,
@@ -571,211 +572,33 @@
                                             "children": {
                                                 "0": {
                                                     "id": 0,
-                                                    "label": "Lasur vorhanden",
-                                                    "question": "Bitte zunächst die Oberfläche säubern. Um einen neuen Anstrich aufzutragen, muss der Untergrund zuächst von Verschmutzungen befreit worden sein. Die Anleitung finden Sie in der Infobox.",
+                                                    "label": "Lasur",
+                                                    "question": "",
                                                     "info": {
                                                         "0": {
                                                             "id": 0,
-                                                            "title": "Eine intakte Lasur",
-                                                            "content": "Auf eine intakte Lasur kann mit einem geeigneten Folgeanstrich direkt überstrichen werden. Eine intakte Lasur erkennt man daran, dass sie einen leichten Glanz hat und Wasser abperlt. Intakte Lasuren werden nur gesäubert und nicht angeschliffen.",
+                                                            "title": "Lasuren",
+                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
                                                             "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                         }
                                                     },
-                                                    "children": {
-                                                        "0": {
-                                                            "id": 0,
-                                                            "label": "Oberfläche gesäubert?",
-                                                            "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst rausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Die Anleitung zum Test finden Sie in der Infobox.",
-                                                            "info": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "title": "Oberfläche säubern",
-                                                                    "content": "Vor dem Renovierungsanstrich muss der Untergrund sauber und trocken sein. Reinigen Sie den Altanstrich gründlich mit Wasser und ggf. Seife oder unserem Fassadenreiniger. Mit Fassadenreiniger entfernt man Schmutz, Staub, Moose, Pilze und Mikroorganismen. Spülen Sie etwaige Rückstände von Reinigungsmitteln gründlich mit Wasser ab und lassen Sie die Oberfläche trocknen, ehe Sie mit dem neuen Anstrich beginnen.",
-                                                                    "image": "assets/images/Anderes/reinigen.jpg"
-                                                                }
-                                                            },
-                                                            "breadcrumb": "Bindemitteltest",
-                                                            "children": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "label": "Test mit Brennspiritus",
-                                                                    "question": "Was hat der Test mit dem Brennspiritus ergeben? Erläuterungen finden Sie auch in der Infobox.",
-                                                                    "info": {
-                                                                        "0": {
-                                                                            "id": 0,
-                                                                            "title": "Brennspiritus Test",
-                                                                            "content": "Die meisten Anstriche für den Innen- oder Aussenbereich enthalten entweder das pflanzliche Bindemittel Öl bzw. Alkyd (lösemittelhaltig) oder das Kunstoffpolymer Acryl bzw. Acrylat (wasserbasiert). Allerdings 'verträgt' sich nicht jede Anstrichart miteinander, wenn man diese übereinander streicht. Wenn man nicht weiß, welche Bindemittel im Anstrich enthalten sind, lässt sich mit Brennspiritus bestimmen welcher Anstrich für den bestehenden Untergrund geeignet ist. Wie finde ich heraus welches Bindemittel in meiner Lasur ist?",
-                                                                            "instructions": {
-                                                                                "0": {
-                                                                                    "title": "Nehmen Sie sich einen Lappen und Brennspiritus und reiben Sie für ca. 30 Sekunden auf der Farb- oder Lasurschicht. Reiben Sie mit leichtem Druck auf einer kleinen Stelle. Damit dieser Test funktioniert, muss der Anstrich sauber und intakt sein."
-                                                                                },
-                                                                                "1": {
-                                                                                    "title": "Was ist jetzt mit der Lasur passiert?",
-                                                                                    "options": {
-                                                                                        "0": "Lasur wird weich/klebrig/abfärbend",
-                                                                                        "1": "Lasur bleibt unverändert und hart"
-                                                                                    }
-                                                                                },
-                                                                                "2": {
-                                                                                    "title": "Was bedeutet mein Ergebnis?",
-                                                                                    "options": {
-                                                                                        "0": "Weich/klebrig/abfärbend bedeutet acrylhaltig (wasserbasierte Lasur)",
-                                                                                        "1": "Unverändert und weiterhin hart bedeutet öl- bzw. alkydhaltig (zumeist lösemittelhaltige Lasur)."
-                                                                                    }
-                                                                                }
-                                                                            },
-                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
-                                                                        },
-                                                                        "1": {
-                                                                            "id": 1,
-                                                                            "title": "Weitere Info zum Test",
-                                                                            "content": "Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkydharz. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Streichen Sie niemals Alkydharzfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydharzfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne: Email: info@schwedischer-farbenhandel.de",
-                                                                            "image": "assets/images/Lasur/lasur.png"
-                                                                        }
-                                                                    },
-                                                                    "action": "set_coating",
-                                                                    "children": {
-                                                                        "0": {
-                                                                            "id": 0,
-                                                                            "label": "Acryl / Acrylat-Basis",                                                            
-                                                                            "action_value": 0,
-                                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                                            "info": {
-                                                                                "0": {
-                                                                                    "id": 0,
-                                                                                    "title": "Acryl / Acrylat-Basis als Testergebnis",
-                                                                                    "content": "Ist der Abrieb weich/klebrig/abfärbend, so ist die Lasur acrylhaltig/wasserbasiert.",
-                                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
-                                                                                }
-                                                                            },
-                                                                            "target_action": "set_target",
-                                                                            "children": {
-                                                                                "0": {
-                                                                                    "id": 0,
-                                                                                    "label": "Lasur",
-                                                                                    "question": "",
-                                                                                    "info": {
-                                                                                        "0": {
-                                                                                            "id": 0,
-                                                                                            "title": "Lasuren",
-                                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                                                            "image": "assets/images/Lasur/lasur-intakt.jpg"
-                                                                                        }
-                                                                                    },
-                                                                                    "children": null
-                                                                                },
-                                                                                "1": {
-                                                                                    "id": 1,
-                                                                                    "label": "Farbe",
-                                                                                    "question": "",
-                                                                                    "info": {
-                                                                                        "0": {
-                                                                                            "id": 0,
-                                                                                            "title": "Deckende Farbe",
-                                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
-                                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
-                                                                                        }
-                                                                                    },
-                                                                                    "children": null
-                                                                                }
-                                                                            }
-                                                                        },
-                                                                        "1": {
-                                                                            "id": 1,
-                                                                            "label": "Öl / Alkyd-Basis",
-                                                                            "action_value": 1,
-                                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                                            "info": {
-                                                                                "0": {
-                                                                                    "id": 0,
-                                                                                    "title": "Öl / Alkyd-Basis als Testergebnis",
-                                                                                    "content": "Der Abrieb ist staubig, die Lasur bleibt jedoch hart? Dann liegt eine Öl-, Alkydbasis vor.",
-                                                                                    "image": "assets/images/Farbe/intakt-2.jpg"
-                                                                                }
-                                                                            },
-                                                                            "target_action": "set_target",
-                                                                            "children": {
-                                                                                "0": {
-                                                                                    "id": 0,
-                                                                                    "label": "Lasur",
-                                                                                    "question": "",
-                                                                                    "info": {
-                                                                                        "0": {
-                                                                                            "id": 0,
-                                                                                            "title": "Lasuren",
-                                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                                                            "image": "assets/images/Lasur/lasur-intakt.jpg"
-                                                                                        }
-                                                                                    },
-                                                                                    "children": null
-                                                                                },
-                                                                                "1": {
-                                                                                    "id": 1,
-                                                                                    "label": "Farbe",
-                                                                                    "question": "",
-                                                                                    "info": {
-                                                                                        "0": {
-                                                                                            "id": 0,
-                                                                                            "title": "Deckende Farbe",
-                                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
-                                                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
-                                                                                        }
-                                                                                    },
-                                                                                    "children": null
-                                                                                }
-                                                                            } 
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
+                                                    "children": null
                                                 },
-                                                "1": {            
-                                                    "id": 0,
-                                                    "label": "Alles abgeschliffen",
-                                                    "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
-                                                    "target_action": "set_target",
+                                                "1": {
+                                                    "id": 1,
+                                                    "label": "Farbe",
+                                                    "question": "",
                                                     "info": {
                                                         "0": {
                                                             "id": 0,
-                                                            "title": "Abschleifen",
-                                                            "content": "Um alte Lasur oder Farbe abzuschleifen, eignet sich am besten ein Schleifpapier mit der Körnung 60 oder 80. Vermeiden Sie es, zu feines Schleifpapier zu verwenden. Sie können entweder per Hand oder mit einer Schleifmaschine arbeiten. Bei wasserbasierten Altanstrichen kann die alte Farbe auch gut mit einem Farbschaber entfernt werden. Da die meisten wasserbasierten Farben aus Plastik bestehen und nicht (wie lösemittelhaltige Farben) aus pflanzlichen Rohstoffen, lassen sich diese 'Plastikfarben' besonders schlecht schleifen, dafür aber gut mit einer Klinge abziehen - ähnlich wie eine Gummihaut. Mit einem Heißluftpistole kann man die Wirkung des Farbschabers verbessern, indem man die Farbschicht vorher erwärmt. Möchten Sie verwitterte Lasur entfernen, kann man ebenfalls gut eine Drahtbürste verwenden. Handelsübliche Lasuren halten 6 bis maximal 24 Monate, bis sie komplett in der Sonne zersetzt wurden. Was zurück bleibt, ist ein feiner Staub aus Verbrennungsrückständen. Diese Rückstände lassen sich oftmals schon mit einer Drahtbürste aus dem Holz bürsten.",
-                                                            "image": "assets/images/paint-on-wood.gif"
+                                                            "title": "Deckende Farbe",
+                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                            "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                         }
                                                     },
-                                                    "children": {
-                                                        "0": {
-                                                            "id": 0,
-                                                            "label": "Lasur",
-                                                            "question": "",
-                                                            "info": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "title": "Lasuren",
-                                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Mit folgenden Produkten kann die Lasur direkt überstrichen werden. Reinigen Sie den Altanstrich immer bevor Sie neu streichen.",
-                                                                    "image": "assets/images/Lasur/lasur-intakt.jpg"
-                                                                }
-                                                            },
-                                                            "children": null
-                                                        },
-                                                        "1": {
-                                                            "id": 1,
-                                                            "label": "Farbe",
-                                                            "question": "",
-                                                            "info": {
-                                                                "0": {
-                                                                    "id": 0,
-                                                                    "title": "Deckende Farbe",
-                                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
-                                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
-                                                                }
-                                                            },
-                                                            "children": null
-                                                        }
-                                                    } 
+                                                    "children": null
                                                 }
-                                            }
+                                            } 
                                         }
                                     }
                                 },
@@ -938,7 +761,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Deckende Farbe",
-                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                         }
                                                     },
@@ -954,7 +777,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Intakte Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -1021,7 +844,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
@@ -1052,7 +875,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
@@ -1125,7 +948,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -1184,7 +1007,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -1226,14 +1049,14 @@
                         "1": {
                             "id": 1,
                             "title": "Tauchimprägnierung oder Kesseldruckimprägnierung (KDI)",
-                            "content": "Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in wassergelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühstens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall Druckimprägniertes Holz direkt nach dem Aufbau. ",
+                            "content": "Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in Wasser gelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühestens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall druckimprägniertes Holz direkt nach dem Aufbau.",
                             "image": "assets/images/Impraegnierung/kdi.JPG"
                         },
                         "2": {
                             "id": 2,
                             "unique": "2cabdbc8-1000-4452-9818-47e4ed8cb655",
                             "title": "Warnung zur Imprägnierung",
-                            "content": "Wichtig! Imprägniertes Holz kann frühestens nach 3-6 Monaten der Bewitterung gestrichen werden. Die Imprägnierung muss erst ausgewaschen sein, das Wasser muss aus dem Holz entwichen sein. Streichen Sie unter keinen Umständen kesseldruckimprägniertes Holz direkt nach dem Aufbau. Die Imprägnierung muss erst ausgewaschen sein.",
+                            "content": "Wichtig! Imprägniertes Holz kann frühestens nach 3-6 Monaten der Bewitterung gestrichen werden. Die Imprägnierung muss erst ausgewaschen sein, das Wasser muss aus dem Holz entwichen sein. Streichen Sie unter keinen Umständen kesseldruckimprägniertes Holz direkt nach dem Aufbau.",
                             "image": "assets/images/Impraegnierung/intakt-3.png",
                             "warning": true
                         }
@@ -1269,7 +1092,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -1306,7 +1129,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich. Farbe bedeutet auch, dass die Holzmaserung nicht mehr sichtbar ist. Je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -1325,7 +1148,7 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Imprägnierung",
-                                    "content": "Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in wassergelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühstens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall Druckimprägniertes Holz direkt nach dem Aufbau.",
+                                    "content": "Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in Wasser gelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühestens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall druckimprägniertes Holz direkt nach dem Aufbau.",
                                     "image": "assets/images/Impraegnierung/kdi.JPG"
                                 }
                             },
