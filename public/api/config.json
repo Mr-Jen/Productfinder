@@ -115,7 +115,7 @@
                                         "0": {           
                                             "id": 0,
                                             "label": "Sägerau",
-                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "question": "Soll jetzt eine deckende Farbe folgen?",
                                             "roughness": 0,
                                             "info": {
                                                 "0": {
@@ -130,7 +130,7 @@
                                         "1": {           
                                             "id": 1,
                                             "label": "Glatt / Gehobelt",
-                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "question": "Soll jetzt eine deckende Farbe folgen?",
                                             "roughness": 1,
                                             "info": {
                                                 "0": {
@@ -161,7 +161,7 @@
                                         "0": {           
                                             "id": 0,
                                             "label": "Sägerau",
-                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "question": "Soll jetzt eine deckende Farbe folgen?",
                                             "roughness": 0,
                                             "info": {
                                                 "0": {
@@ -176,7 +176,7 @@
                                         "1": {           
                                             "id": 1,
                                             "label": "Glatt / Gehobelt",
-                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "question": "Soll jetzt eine deckende Farbe folgen?",
                                             "roughness": 1,
                                             "info": {
                                                 "0": {
@@ -480,7 +480,7 @@
                                                             "id": 0,
                                                             "label": "Acryl / Acrylat-Basis",                                                            
                                                             "action_value": 0,
-                                                            "question": "Für diesen Entscheidungspfad konnten keine Produkte gefunden werden. Bitte wenden Sie sich gegebenenfalls an den Kundensupport.",
+                                                            "question": "Soll jetzt eine deckende Farbe folgen?",
                                                             "info": {
                                                                 "0": {
                                                                     "id": 0,
@@ -488,13 +488,30 @@
                                                                     "content": "Der Schleifstaub lässt sich nicht aus dem Schleifpapier pusten, es wird klebrig, schmiert oder der Abrieb ist grob? Dann handelt es sich um eine Acryl-, Acrylatbasis.",
                                                                     "image": "assets/images/Farbe/intakt-2.jpg"
                                                                 }
+                                                            },
+                                                            "target_action": "set_target",
+                                                            "children": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "label": "Farbe",
+                                                                    "question": "",
+                                                                    "info": {
+                                                                        "0": {
+                                                                            "id": 0,
+                                                                            "title": "Deckende Farbe",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "image": "assets/images/Farbe/intakt-2.jpg"
+                                                                        }
+                                                                    },
+                                                                    "children": null
+                                                                }
                                                             }
                                                         },
                                                         "1": {
                                                             "id": 1,
                                                             "label": "Öl / Alkyd-Basis",
                                                             "action_value": 1,
-                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "question": "Soll jetzt eine deckende Farbe folgen?",
                                                             "info": {
                                                                 "0": {
                                                                     "id": 0,
@@ -665,7 +682,7 @@
                                                             "id": 0,
                                                             "label": "Acryl / Acrylat-Basis",                                                            
                                                             "action_value": 0,
-                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "question": "Soll jetzt eine deckende Farbe folgen?",
                                                             "info": {
                                                                 "0": {
                                                                     "id": 0,
@@ -680,7 +697,7 @@
                                                             "id": 1,
                                                             "label": "Öl / Alkyd-Basis",
                                                             "action_value": 1,
-                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "question": "Soll jetzt eine deckende Farbe folgen?",
                                                             "info": {
                                                                 "0": {
                                                                     "id": 0,
@@ -702,7 +719,7 @@
                         "2": {
                             "id": 2,
                             "label": "Rissiger / abblätternder Anstrich",
-                            "question": "Schleifen Sie nun alle rissigen und abblätternden Stellen, bis Sie entweder festsitzende Farbe oder rohes Holz vorfinden.",
+                            "question": "Schleifen Sie nun alle rissigen und abblätternden Stellen ab. Festsitzende, nicht abschleifbare Farbe bleibt auf dem Holz, muss nicht restlos entfernt werden.",
                             "info": {
                                 "0": {
                                     "id": 0,
@@ -825,7 +842,7 @@
                                                             "id": 0,
                                                             "label": "Acryl / Acrylat-Basis",                                                            
                                                             "action_value": 0,
-                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "question": "Soll jetzt eine deckende Farbe folgen?",
                                                             "info": {
                                                                 "0": {
                                                                     "id": 0,
@@ -856,7 +873,7 @@
                                                             "id": 1,
                                                             "label": "Öl / Alkyd-Basis",
                                                             "action_value": 1,
-                                                            "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                                            "question": "Soll jetzt eine deckende Farbe folgen?",
                                                             "info": {
                                                                 "0": {
                                                                     "id": 0,

@@ -237,7 +237,7 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
         handleOnSlide={(values) => handleOnSlide(values)}
       />
 
-      <WarningBox>Achtung! Beachten Sie immer die Herstellerangaben zu den Grundierungen in den jeweiligen Datenblättern. Insebsondere auf unbehandeltem/abgeschliffenem Holz muss fast immer grundiert werden. Ohne richtige Grundierung (falls notwendig) wird der Anstrich nicht halten</WarningBox>
+      <WarningBox>Achtung! Beachten Sie immer die Herstellerangaben zu den Grundierungen in den jeweiligen Datenblättern. Insbesondere auf unbehandeltem/abgeschliffenem Holz muss fast immer grundiert werden. Ohne richtige Grundierung (falls notwendig) wird der Anstrich nicht halten</WarningBox>
 
       <Count style={{margin: '1em'}}>{filteredObjectKeys?.length} {`${filteredObjectKeys?.length !== 1 ? "Produkte" : "Produkt"}`} gefunden</Count>
 
