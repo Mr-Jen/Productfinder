@@ -207,7 +207,7 @@ const ProductView = ({ match, productsData }) => {
         const product = products[productId-1]
         const { category, surface, application, lifetime, lifetime_unit, gloss_level, binder, solubility, link, datasheet_link, images, info_text, hue } = {...product}
 
-        const showColorConfigList = ['2','3','4'];
+        const showColorConfigList = ['1','2','3','4'];
 
         return (
             <Wrapper>
@@ -241,7 +241,7 @@ const ProductView = ({ match, productsData }) => {
                                 <ButtonText style={{color: "black"}}>Datenblatt</ButtonText>
                             </ButtonContent>
                         </Button>
-                        <Button className='hoverButton' style={{backgroundColor: "white", border:  "2px solid black", minWidth: "200px", "marginTop": "-20px", visibility: showColorConfigList.includes(productId) ? "hidden": "visible"}} target="_blank" and rel="noopener noreferrer" href="https://animation.schwedischer-farbenhandel.de/index.html">
+                        <Button className='hoverButton' style={{backgroundColor: "white", border:  "2px solid black", minWidth: "200px", "marginTop": "-20px", visibility: showColorConfigList.includes(productId) ? "visible": "hidden"}} target="_blank" and rel="noopener noreferrer" href="https://animation.schwedischer-farbenhandel.de/index.html">
                             <ButtonContent>
                                 <ButtonText style={{color: "black"}}>Zum Farbkonfigurator</ButtonText>
                             </ButtonContent>

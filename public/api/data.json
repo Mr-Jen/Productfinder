@@ -131,7 +131,7 @@
             "hue": "22 Standardfarbtöne + weitere Wunschfarbtöne"
         },
         "5": {
-            "id": 6,
+            "id": 5,
             "name": "Imprex",
             "category": [1],
             "allowed_coatings": [2], 
@@ -142,11 +142,11 @@
                 "smooth_surface": [3,5],
                 "rough_surface": [2,4]
             },
-            "lifetime": [4,10],
+            "lifetime": [3,5],
             "lifetime_unit": "Jahre",
-            "gloss_level": [0,20],
+            "gloss_level": [0,10],
             "binder": 11,
-            "solubility": 2,
+            "solubility": 0,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/238/nadelholzteer-sehr-helles-braun-imprex-845?number=250100-",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Imprex.pdf",
             "images": [
@@ -154,7 +154,7 @@
             ],
             "price": [1.50, 4.48],
             "info_text": "Die echte Schwedenfarbe. Nadelholzteer ist ein rein pflanzlicher Anstrich und zugleich die älteste bekannte Anstrichart der Menschheit. Schon vor 7000 Jahren in Mesopotamien und später von den Wikingern eingesetzt, hat auch das originale Schwedenrot seinen Ursprung in diesem konservierenden Anstrich aus Kiefernharz. Nadelholzteer wird aus Kiefernharz gewonnen und enthält über 1000 holzeigene Inhaltstoffe. Holzteere werden traditionellerweise zur Holzkonservierung eingesetzt, man findet sie bspw. auf den norwegischen Stabholzkirchen. ",
-            "hue": "9 Farbtöne"
+            "hue": "Hell- bis Mittelbraun"
         },
         "6": {
             "id": 6,
@@ -173,10 +173,10 @@
             "gloss_level": [0,10],
             "binder": 6,
             "solubility": 1,
-            "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/1/schlammfarbe-falu-roedfaerg",
+            "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/2/schlammfarbe?c=13",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_falurodfarg.pdf",
             "images": [
-                "/assets/images/Produkte/M10000.jpg"
+                "/assets/images/Produkte/falu.jpeg"
             ],
             "price": [1.46, 3.66],
             "info_text": "Matte Emulsionsfarbe aus Wasser, Öl und Mehl. Schlammfarbe ist ein in Schweden vor ca. 200 Jahren beliebt gewordener Anstrich, welcher ursprünglich aus der kupferhaltigen Erde der Bergbauregion Falun gewonnen wurde. Schlammfarbe ist gut geeignet für Holzschutzanstriche auf Fassaden von landwirtschaftlich genutzten Gebäuden oder Schuppen. Schlammfarbe ist nur für sägeraues Nadelholz geeignet. Schlammfarbe eignet sich nicht für: Fenster, Türen, Zäune oder direkt bewitterte Flächen.",
@@ -293,16 +293,16 @@
             "allowed_coatings": [], 
             "allowed_on_hardwood": true,
             "surface": [0],
-            "application": [3,4],
+            "application": [3,4,6,7,8],
             "efficiency": {
                 "smooth_surface": [8,12],
                 "rough_surface": [4,8]
             },
-            "lifetime": [6,24],
+            "lifetime": [6,18],
             "lifetime_unit": "Monate",
             "gloss_level": [0,10],
             "binder": 4,
-            "solubility": 1,
+            "solubility": 0,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/17/holzoel-farblos/traeolja-30",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Traeolja_30.pdf",
             "images": [
@@ -310,7 +310,7 @@
             ],
             "price": [1.5, 3.2],
             "info_text": "",
-            "hue": ""
+            "hue": "Farblos bis Goldgelb"
         },
         "12": {
             "id": 12,
@@ -319,7 +319,7 @@
             "allowed_coatings": [3], 
             "allowed_on_hardwood": true,
             "surface": [0],
-            "application": [0,3],
+            "application": [0,3,6],
             "efficiency": {
                 "smooth_surface": [7,10],
                 "rough_surface": [3,6]
@@ -327,7 +327,7 @@
             "lifetime": [3,4],
             "lifetime_unit": "Jahre",
             "gloss_level": [0,10],
-            "binder": 4,
+            "binder": 5,
             "solubility": 0,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/20/helles-teeroel-farblos/ljus-tjaerolja",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Ljus_Tjaerolja_Helles_Holzteeroel.pdf",
@@ -345,7 +345,7 @@
             "allowed_coatings": [3], 
             "allowed_on_hardwood": true,
             "surface": [0],
-            "application": [0,3],
+            "application": [0,3,9,10],
             "efficiency": {
                 "smooth_surface": [6,8],
                 "rough_surface": [4,6]
@@ -361,7 +361,7 @@
                 "/assets/images/Produkte/2535.jpg"
             ],
             "price": [1.37, 2.66],
-            "info_text": "Konservierendes Öl aus Holzteer. Extrem robustes und widerstandsfähiges schwarzbraunes Öl zur Konservierung von Holz im Aussenbereich. Schwellenöl wird typischerweise auf Bahnschwellen, zaunpfählen oder Brücken eingesetzt um diese langfristig, jedoch kostengünstig vor Fäulnis und Verfall zu schützen. Ebenfalls geeignet für Kompost- oder Beeteinfassungen. Hauptbestandteil: Kiefernharz.",
+            "info_text": "Konservierendes Öl aus Holzteer. Extrem robustes und widerstandsfähiges schwarzbraunes Öl zur Konservierung von Holz im Aussenbereich. Schwellenöl wird typischerweise auf Bahnschwellen, Zaunpfählen oder Brücken eingesetzt um diese langfristig, jedoch kostengünstig vor Fäulnis und Verfall zu schützen. Ebenfalls geeignet für Kompost- oder Beeteinfassungen. Hauptbestandteil: Kiefernharz.",
             "hue": "Schwarzbraun"
         },
         "14": {
@@ -397,7 +397,7 @@
             "allowed_coatings": [3], 
             "allowed_on_hardwood": true,
             "surface": [0],
-            "application": [0,2,3,4,5],
+            "application": [0,3,5],
             "efficiency": {
                 "smooth_surface": [6,8],
                 "rough_surface": [4,6]
@@ -406,14 +406,14 @@
             "lifetime_unit": "Jahre",
             "gloss_level": [0,10],
             "binder": 11,
-            "solubility": 5,
+            "solubility": 2,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/lasuren/38/tarinoel/teerlasur/roslagsmahogny",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Tarinoil.pdf",
             "images": [
                 "/assets/images/Produkte/25352.jpg"
             ],
             "price": [1.29, 6.63],
-            "info_text": "Holzteeröl aus Kiefernharz. Entweder als Grundierung für reinen Nadelholzteer oder als alleiniger Anstrich. Bei einem alleinigen Tarinölanstrich bekommt das Holz eine rot/braune Färbung, ähnlich wie Tropenholz. Tarinöl kann ebenfalls verwendet werden um vergrauten Harthölzern ihre ursprüngliche Farbe zurückzugeben. Die Teerlasur wird aus Kiefernharz gewonnen und hat eine hervorragende Schutzwirkung vor Mikroorgansimen Pilzen oder Flechten.",
+            "info_text": "Holzteeröl aus Kiefernharz. Entweder als Grundierung für reinen Nadelholzteer oder als alleiniger Anstrich. Bei einem alleinigen Tarinölanstrich bekommt das Holz eine rot/braune Färbung, ähnlich wie Tropenholz. Tarinöl kann ebenfalls verwendet werden um vergrauten Harthölzern ihre ursprüngliche Farbe zurückzugeben. Die Teerlasur wird aus Kiefernharz gewonnen und hat eine hervorragende Schutzwirkung vor Mikroorganismen, Pilzen oder Flechten.",
             "hue": "Farblos / Goldbraun"
         },
         "16": {
@@ -506,11 +506,11 @@
                 "smooth_surface": [6,8],
                 "rough_surface": [4,6]
             },
-            "lifetime": [1,2],
+            "lifetime": [4,6],
             "lifetime_unit": "Jahre",
             "gloss_level": [0,10],
-            "binder": 4,
-            "solubility": 4,
+            "binder": 11,
+            "solubility": 0,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/239/nadelholzteer-mittelbraun-dalbraend-773?number=251120-",
             "datasheet_link": "https://www.schwedischer-farbenhandel.de/Datenblaetter/td_de_Dalbraend_Traetjaera_773.pdf",
             "images": [
@@ -518,7 +518,7 @@
             ],
             "price": [1.40, 3.98],
             "info_text": "Goldbrauner (mahagoniähnlich), konservierender, Brennofen gebrannter Kiefernholzteer.",
-            "hue": "Farblos / Goldbraun"
+            "hue": "Ähnlich Mahagonibraun"
         },
         "20": {
             "id": 20,
@@ -532,11 +532,11 @@
                 "smooth_surface": [6,8],
                 "rough_surface": [4,6]
             },
-            "lifetime": [1,2],
+            "lifetime": [5,7],
             "lifetime_unit": "Jahre",
             "gloss_level": [0,10],
-            "binder": 4,
-            "solubility": 4,
+            "binder": 11,
+            "solubility": 0,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/240/nadelholzteer-dunkelbraun-aekta-traetjaera-850?number=252120-",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Aekta_Traetjaera.pdf",
             "images": [
@@ -544,7 +544,7 @@
             ],
             "price": [1.40, 3.98],
             "info_text": "Goldbrauner (mahagoniähnlich), konservierender, Brennofen gebrannter Kiefernholzteer.",
-            "hue": "Farblos / Goldbraun"
+            "hue": "Dunkelbraun"
         },
         "21": {
             "id": 21,
@@ -561,8 +561,8 @@
             "lifetime": [4,10],
             "lifetime_unit": "Jahre",
             "gloss_level": [0,10],
-            "binder": 2,
-            "solubility": 1,
+            "binder": 11,
+            "solubility": 2,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/245/nadelholzteer-gruen-groentjaera?number=254010-",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Groentjaera.pdf",
             "images": [
@@ -570,7 +570,7 @@
             ],
             "price": [2.55, 5.99],
             "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
-            "hue": "Grün, ähnlich Moosgrün NCS S5040-G30Y"
+            "hue": "Moosgrün NCS S5040-G30Y"
         },
         "22": {
             "id": 22,
@@ -587,8 +587,8 @@
             "lifetime": [4,10],
             "lifetime_unit": "Jahre",
             "gloss_level": [0,10],
-            "binder": 2,
-            "solubility": 1,
+            "binder": 11,
+            "solubility": 2,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/241/nadelholzteer-schwedenrot/faluroed-roedtjaera?number=252400-",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Roedtjaera.pdf",
             "images": [
@@ -596,7 +596,7 @@
             ],
             "price": [2.55, 5.99],
             "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
-            "hue": "Grün, ähnlich Moosgrün NCS S5040-G30Y"
+            "hue": "Original Schwedenrot"
         },
         "23": {
             "id": 23,
@@ -613,8 +613,8 @@
             "lifetime": [4,10],
             "lifetime_unit": "Jahre",
             "gloss_level": [0,10],
-            "binder": 2,
-            "solubility": 1,
+            "binder": 11,
+            "solubility": 2,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/242/nadelholzteer-schwarz-svarttjaera?number=252700-",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Svarttjaera.pdf",
             "images": [
@@ -622,11 +622,11 @@
             ],
             "price": [2.55, 5.99],
             "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
-            "hue": "Grün, ähnlich Moosgrün NCS S5040-G30Y"
+            "hue": "Tiefschwarz"
         },
         "24": {
             "id": 24,
-            "name": "Schlammfarbe Schwedenrot",
+            "name": "Schlammfarbe Bleifrei",
             "category": [0],
             "allowed_coatings": [4], 
             "allowed_on_hardwood": false,
@@ -650,32 +650,6 @@
             "info_text": "Matte Emulsionsfarbe aus Wasser, Öl und Mehl. Schlammfarbe ist ein in Schweden vor ca. 200 Jahren beliebt gewordener Anstrich, welcher ursprünglich aus der kupferhaltigen Erde der Bergbauregion Falun gewonnen wurde. Schlammfarbe ist gut geeignet für Holzschutzanstriche auf Fassaden von landwirtschaftlich genutzten Gebäuden oder Schuppen. Schlammfarbe ist nur für sägeraues Nadelholz geeignet. Schlammfarbe eignet sich nicht für: Fenster, Türen, Zäune oder direkt bewitterte Flächen.",
             "hue": "ca. 16 Farbtöne"
         },
-        "25": {
-            "id": 25,
-            "name": "Schlammfarbe Gysinge",
-            "category": [0],
-            "allowed_coatings": [4], 
-            "allowed_on_hardwood": false,
-            "surface": [0],
-            "application": [0],
-            "efficiency": {
-                "smooth_surface": [null],
-                "rough_surface": [3,4]
-            },
-            "lifetime": [3,5],
-            "lifetime_unit": "Jahre",
-            "gloss_level": [0,10],
-            "binder": 6,
-            "solubility": 1,
-            "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/3/schlammfarbe-gysinge",
-            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Schlammfarbe_allgemein.pdf",
-            "images": [
-                "/assets/images/Produkte/gysinge.jpeg"
-            ],
-            "price": [1.46, 3.66],
-            "info_text": "Matte Emulsionsfarbe aus Wasser, Öl und Mehl. Schlammfarbe ist ein in Schweden vor ca. 200 Jahren beliebt gewordener Anstrich, welcher ursprünglich aus der kupferhaltigen Erde der Bergbauregion Falun gewonnen wurde. Schlammfarbe ist gut geeignet für Holzschutzanstriche auf Fassaden von landwirtschaftlich genutzten Gebäuden oder Schuppen. Schlammfarbe ist nur für sägeraues Nadelholz geeignet. Schlammfarbe eignet sich nicht für: Fenster, Türen, Zäune oder direkt bewitterte Flächen.",
-            "hue": "ca. 16 Farbtöne"
-        },
         "26": {
             "id": 26,
             "name": "Bruntjära",
@@ -691,8 +665,8 @@
             "lifetime": [3,10],
             "lifetime_unit": "Jahre",
             "gloss_level": [0,10],
-            "binder": 2,
-            "solubility": 1,
+            "binder": 11,
+            "solubility": 2,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/243/nadelholzteer-braun-bruntjaera?number=253300-",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Bruntjaera.pdf",
             "images": [
@@ -700,7 +674,7 @@
             ],
             "price": [2.55, 5.99],
             "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
-            "hue": "Grün, ähnlich Moosgrün NCS S5040-G30Y"
+            "hue": "Braun, ähnlich zu Schokolade"
         },
         "27": {
             "id": 27,
@@ -717,8 +691,8 @@
             "lifetime": [4,10],
             "lifetime_unit": "Jahre",
             "gloss_level": [0,10],
-            "binder": 2,
-            "solubility": 1,
+            "binder": 11,
+            "solubility": 2,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/244/nadelholzteer-schwarzbraun-svartbruntjaera?number=253420-",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Svartbruntjaera.pdf",
             "images": [
@@ -726,7 +700,7 @@
             ],
             "price": [2.55, 5.99],
             "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
-            "hue": "Grün, ähnlich Moosgrün NCS S5040-G30Y"
+            "hue": "Ähnlich Palisander/ Teerbraun"
         }
     },
     "categories": {
@@ -746,7 +720,12 @@
         "2": "Fenster/Tür",
         "3": "Zaun",
         "4": "Handlauf",
-        "5": "Dach"
+        "5": "Dach",
+        "6": "Terasse",
+        "7": "Kinderspielgeräte",
+        "8": "Gartenmöbel",
+        "9": "Beeteinfassung",
+        "10": "Unterkonstruktion"
     },
     "binders": {
         "0": "Alkydharz",
