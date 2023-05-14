@@ -474,7 +474,6 @@
                                                         }
                                                     },
                                                     "action": "set_coating",
-                                                    "target_action": "set_target",
                                                     "children": {
                                                         "0": {
                                                             "id": 0,
