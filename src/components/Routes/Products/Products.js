@@ -152,7 +152,7 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
 
     let filteredProducts = productList
       .filter((value, key) => value[1].category.includes(target))
-      .filter((value, key) => ((value[1].name === "Schlammfarbe" && roughness !== 1) || value[1].name !== "Schlammfarbe"))
+      .filter((value, key) => ((value[1].name.includes("Schlammfarbe") && roughness !== 1) || !value[1].name.includes("Schlammfarbe")))
       
     if(woodtype !== null){
       filteredProducts = filteredProducts
