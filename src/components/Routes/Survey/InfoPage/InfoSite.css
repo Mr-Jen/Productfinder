@@ -1,8 +1,37 @@
   .info-text {
     width: 60vw;
-    text-align: center;
-    margin: auto;
-    font-size: 1.5em;
+    text-align: left;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: .5em;
+  }
+
+  .ulist {
+    margin-top: 0;
+  }
+
+  .sub-text {
+    font-size: 1.1em;
+  }
+
+  .outer-text-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60vw;
+    align-self: center;
+    word-break: normal;
+    word-wrap: break-word;
+
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+      font-size: .9em;
+    }
   }
 
   .container {
