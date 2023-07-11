@@ -159,7 +159,8 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
       target.action_value !== undefined && ButtonSetCoating(target.action_value)
     }
 
-    if (target?.roughness !== null){
+    if (target && target.roughness !== null && target.roughness !== undefined){
+      console.log("Setting roughness", target.roughness)
       ButtonSetRoughness(target.roughness)
     }
 

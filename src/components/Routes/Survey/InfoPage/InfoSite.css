@@ -14,6 +14,17 @@
     font-size: 1.1em;
   }
 
+  .bold {
+    font-weight: bold;
+  }
+
+  .or {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
   .outer-text-wrapper {
     display: flex;
     justify-content: center;

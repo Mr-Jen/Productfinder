@@ -39,7 +39,7 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Lasur",
-                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Weil Lasuren so dünn sind, verbrennen sie auch schneller im UV-Licht der Sonne. Handelsübliche Lasuren halten zwischen 6-24 Monaten durch, sind dann verwittert/verbrannt und der ehemalige Schutzfilm gegen Feuchtigkeiten ist dann zersetzt. Die Lasur sieht dann matt/stumpf aus, während ein intakter Anstrich glänzt und der Regen abperlt. Ist eine Lasur verwittert, muss sie auch abgeschliffen werden, weil defekt. Eine glänzende und somit intakte Lasur (meistens auf der Nordseite nach Jahren noch zu finden) wird hingegen nur gesäubert und direkt überstrichen.",
                                     "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg"
                                 }
                             },
@@ -93,7 +93,7 @@
                                 "1": {
                                     "id": 1,
                                     "title": "Deckende Farbe",
-                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht viel vom Anstrich.",
+                                    "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Farbe ist und bleibt der beste Holzschutz. Aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich.",
                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                 }
                             },
@@ -224,7 +224,7 @@
                         "0": {
                             "id": 0,
                             "title": "Lasur",
-                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
+                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Weil Lasuren so dünn sind, verbrennen sie auch schneller im UV-Licht der Sonne. Handelsübliche Lasuren halten zwischen 6-24 Monaten durch, sind dann verwittert/verbrannt und der ehemalige Schutzfilm gegen Feuchtigkeiten ist dann zersetzt. Die Lasur sieht dann matt/stumpf aus, während ein intakter Anstrich glänzt und der Regen abperlt. Ist eine Lasur verwittert, muss sie auch abgeschliffen werden, weil defekt. Eine glänzende und somit intakte Lasur (meistens auf der Nordseite nach Jahren noch zu finden) wird hingegen nur gesäubert und direkt überstrichen.",
                             "image": "assets/images/Lasur/lasur-intakt.jpg"
                         },
                         "1": {
@@ -236,7 +236,7 @@
                         "2": {
                             "id": 2,
                             "title": "Farbe",
-                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                            "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                         }
                     },
@@ -250,13 +250,13 @@
                                 "0": {
                                     "id": 0,
                                     "title": "Intakte Farbe",
-                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                    "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                 },
                                 "1": {
                                     "id": 1,
                                     "title": "Intakte Lasur",
-                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
+                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Weil Lasuren so dünn sind, verbrennen sie auch schneller im UV-Licht der Sonne. Handelsübliche Lasuren halten zwischen 6-24 Monaten durch, sind dann verwittert/verbrannt und der ehemalige Schutzfilm gegen Feuchtigkeiten ist dann zersetzt. Die Lasur sieht dann matt/stumpf aus, während ein intakter Anstrich glänzt und der Regen abperlt. Ist eine Lasur verwittert, muss sie auch abgeschliffen werden, weil defekt. Eine glänzende und somit intakte Lasur (meistens auf der Nordseite nach Jahren noch zu finden) wird hingegen nur gesäubert und direkt überstrichen.",
                                     "image": "assets/images/Lasur/lasur-intakt.jpg"
                                 }
                             },
@@ -290,7 +290,7 @@
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Lasur",
-                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 stark nach, dann sprich man von verwitterter Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Weil Lasuren so dünn sind, verbrennen sie auch schneller im UV-Licht der Sonne. Handelsübliche Lasuren halten zwischen 6-24 Monaten durch, sind dann verwittert/verbrannt und der ehemalige Schutzfilm gegen Feuchtigkeiten ist dann zersetzt. Die Lasur sieht dann matt/stumpf aus, während ein intakter Anstrich glänzt und der Regen abperlt. Ist eine Lasur verwittert, muss sie auch abgeschliffen werden, weil defekt. Eine glänzende und somit intakte Lasur (meistens auf der Nordseite nach Jahren noch zu finden) wird hingegen nur gesäubert und direkt überstrichen.",
                                                     "image": "assets/images/Lasur/lasur-intakt_maserung-sichtbar.jpg",
                                                     "warning": false
                                                 }
@@ -358,7 +358,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
@@ -389,7 +389,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Lasuren",
-                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
+                                                                            "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Weil Lasuren so dünn sind, verbrennen sie auch schneller im UV-Licht der Sonne. Handelsübliche Lasuren halten zwischen 6-24 Monaten durch, sind dann verwittert/verbrannt und der ehemalige Schutzfilm gegen Feuchtigkeiten ist dann zersetzt. Die Lasur sieht dann matt/stumpf aus, während ein intakter Anstrich glänzt und der Regen abperlt. Ist eine Lasur verwittert, muss sie auch abgeschliffen werden, weil defekt. Eine glänzende und somit intakte Lasur (meistens auf der Nordseite nach Jahren noch zu finden) wird hingegen nur gesäubert und direkt überstrichen.",
                                                                             "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                                         }
                                                                     },
@@ -403,7 +403,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
@@ -431,7 +431,7 @@
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -498,7 +498,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                                             "image": "assets/images/Farbe/intakt-2.jpg"
                                                                         }
                                                                     },
@@ -529,7 +529,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                                             "image": "assets/images/Farbe/intakt-2.jpg"
                                                                         }
                                                                     },
@@ -577,6 +577,7 @@
                                             "label": "Alles abgeschliffen",
                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
                                             "target_action": "set_target",
+                                            "roughness": 1,
                                             "info": {
                                                 "0": {
                                                     "id": 0,
@@ -608,7 +609,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Deckende Farbe",
-                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                            "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                         }
                                                     },
@@ -745,6 +746,7 @@
                                             "id": 0,
                                             "label": "Alles abgeschliffen",
                                             "question": "Soll jetzt eine Lasur oder deckende Farbe folgen?",
+                                            "roughness": 1,
                                             "target_action": "set_target",
                                             "info": {
                                                 "0": {
@@ -777,7 +779,7 @@
                                                         "0": {
                                                             "id": 0,
                                                             "title": "Deckende Farbe",
-                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                            "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                         }
                                                     },
@@ -793,7 +795,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Intakte Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -860,7 +862,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
@@ -891,7 +893,7 @@
                                                                         "0": {
                                                                             "id": 0,
                                                                             "title": "Deckende Farbe",
-                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                                            "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                                             "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                                         }
                                                                     },
@@ -950,7 +952,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Lasuren",
-                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Weil Lasuren so dünn sind, verbrennen sie auch schneller im UV-Licht der Sonne. Handelsübliche Lasuren halten zwischen 6-24 Monaten durch, sind dann verwittert/verbrannt und der ehemalige Schutzfilm gegen Feuchtigkeiten ist dann zersetzt. Die Lasur sieht dann matt/stumpf aus, während ein intakter Anstrich glänzt und der Regen abperlt. Ist eine Lasur verwittert, muss sie auch abgeschliffen werden, weil defekt. Eine glänzende und somit intakte Lasur (meistens auf der Nordseite nach Jahren noch zu finden) wird hingegen nur gesäubert und direkt überstrichen.",
                                                     "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                 }
                                             },
@@ -964,7 +966,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -1009,7 +1011,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Lasur",
-                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Weil Lasuren so dünn sind, verbrennen sie auch schneller im UV-Licht der Sonne. Handelsübliche Lasuren halten zwischen 6-24 Monaten durch, sind dann verwittert/verbrannt und der ehemalige Schutzfilm gegen Feuchtigkeiten ist dann zersetzt. Die Lasur sieht dann matt/stumpf aus, während ein intakter Anstrich glänzt und der Regen abperlt. Ist eine Lasur verwittert, muss sie auch abgeschliffen werden, weil defekt. Eine glänzende und somit intakte Lasur (meistens auf der Nordseite nach Jahren noch zu finden) wird hingegen nur gesäubert und direkt überstrichen.",
                                                     "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                 }
                                             },
@@ -1023,7 +1025,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -1108,7 +1110,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },
@@ -1131,7 +1133,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Lasuren",
-                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Der Glanz einer Lasur lässt bereits nach 6-24 Monaten stark nach, dann spricht man von einer verwitterten Lasur. Ist die Lasur matt, porös oder wasserdurchlässig, ist sie verwittert. In diesem Fall ist es keine intakte Lasur! Hat Ihr Holz bereits graue oder gar schwarze Flecken, ist die Lasur auch nicht mehr intakt.",
+                                                    "content": "Lasuren sind hauchdünne, transparente oder leicht pigmentierte Anstriche. Sie liegen auf dem Holz wie ein dünner Film und bilden eine leicht glänzende Oberfläche. Weil Lasuren so dünn sind, verbrennen sie auch schneller im UV-Licht der Sonne. Handelsübliche Lasuren halten zwischen 6-24 Monaten durch, sind dann verwittert/verbrannt und der ehemalige Schutzfilm gegen Feuchtigkeiten ist dann zersetzt. Die Lasur sieht dann matt/stumpf aus, während ein intakter Anstrich glänzt und der Regen abperlt. Ist eine Lasur verwittert, muss sie auch abgeschliffen werden, weil defekt. Eine glänzende und somit intakte Lasur (meistens auf der Nordseite nach Jahren noch zu finden) wird hingegen nur gesäubert und direkt überstrichen.",
                                                     "image": "assets/images/Lasur/lasur-intakt.jpg"
                                                 }
                                             },
@@ -1145,7 +1147,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Deckende Farbe",
-                                                    "content": "Intakte Farbe bildet eine deckende, schützende Farbschicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutzund aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert hat nicht viel vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
+                                                    "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
                                                 }
                                             },

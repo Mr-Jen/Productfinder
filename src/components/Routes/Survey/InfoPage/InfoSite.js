@@ -7,13 +7,15 @@ const InfoSite = () => {
     <div className='outer-wrapper'>
       <div className='outer-text-wrapper'>
         <div className='text-wrapper'>
-          <p className='info-text'>Welche Anstricharten gibt es? Die meisten Anstricharten fallen in eine der nachfolgenden Kategorien:</p>
+          <p className='info-text bold'>Welche Anstricharten gibt es? Die meisten Anstricharten fallen in eine der nachfolgenden Kategorien:</p>
+          <p className='bold'>Ob Farbe, Lack, Lasur - egal ob Holz, Putz oder Metall: alle Anstricharten enthalten Bindemittel, die am Ende den Schutzfilm auf der Oberfläche darstellen. Zunächst flüssig im Topf, nach dem Anstrich und der Trocknung fest und schützend auf der Oberfläche. Die einzelnen Anstricharten sind dann </p>
           <ul className='ulist'>
             <li className='sub-text'>Öl- und/oder alkydharzhaltig</li>
             <li className='sub-text'>Acryl- oder acrylathaltig</li>
+            <p className='sub-text or'>oder</p>
             <li className='sub-text'>Hybridfarben mit beiderlei Bindemitteln (Acryl/Acrylat und Öl/Alkydharz)</li>
           </ul>
-          <p className='info-text'>Es ist quasi wie beim Auto:</p>
+          <p className='info-text bold'>Diese Bindemittel sind sehr unterschiedlich und vertragen sich miteinander nur sehr bedingt. Es ist quasi wie beim Auto und dessen Treibstoff:</p>
           <ul className='ulist'>
             <li className='sub-text'>Benziner</li>
             <li className='sub-text'>Diesel</li>
