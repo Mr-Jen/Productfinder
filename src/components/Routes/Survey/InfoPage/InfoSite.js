@@ -36,44 +36,44 @@ const InfoSite = () => {
       <div className="image-gallery">
         <div className="column">
           <div className="image-item">
-            <img src="assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg" alt="" />
-            <div className="overlay"><span>Image title</span></div>
+            <img src="assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg" alt="Haus mit deckender Farbe" />
+            <div className="overlay"><span>Haus mit deckender Farbe</span></div>
           </div>
           <div className="image-item">
-            <img src="assets/images/Anderes/glatt.jpg" alt="" />
-            <div className="overlay"><span>Image title</span></div>
+            <img src="assets/images/Anderes/glatt.jpg" alt="Glattes Holz" />
+            <div className="overlay"><span>Glattes Holz</span></div>
           </div>
           <div className="image-item">
-            <img src="assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg" alt="" />
-            <div className="overlay"><span>Image title</span></div>
-          </div>
-        </div>
-        <div className="column">
-          <div className="image-item">
-            <img src="assets/images/Anderes/sägerau.jpg" alt="" />
-            <div className="overlay"><span>Image title</span></div>
-          </div>
-          <div className="image-item">
-            <img src="assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg" alt="" />
-            <div className="overlay"><span>Image title</span></div>
-          </div>
-          <div className="image-item">
-            <img src="assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg" alt="" />
-            <div className="overlay"><span>Image title</span></div>
+            <img src="assets/images/Holz/hartholz/hartholz-1.PNG" alt="Hartholz" />
+            <div className="overlay"><span>Hartholz</span></div>
           </div>
         </div>
         <div className="column">
           <div className="image-item">
-            <img src="assets/images/Anderes/glatt.jpg" alt="" />
-            <div className="overlay"><span>Image title</span></div>
+            <img src="assets/images/Anderes/sägerau.jpg" alt="Sägeraues Holz" />
+            <div className="overlay"><span>Sägeraues Holz</span></div>
           </div>
           <div className="image-item">
-            <img src="assets/images/Anderes/sägerau.jpg" alt="" />
-            <div className="overlay"><span>Image title</span></div>
+            <img src="assets/images/Holz/weichholz/weichholz-2.PNG" alt="Weichholz" />
+            <div className="overlay"><span>Weichholz</span></div>
           </div>
           <div className="image-item">
-            <img src="assets/images/Öl/holzöl.jpg" alt="" />
-            <div className="overlay"><span>Image title</span></div>
+            <img src="assets/images/Holz/weichholz/weichholz-1.PNG" alt="Weichholz" />
+            <div className="overlay"><span>Weichholz 2</span></div>
+          </div>
+          <div className="image-item">
+            <img src="assets/images/Impraegnierung/intakt-3.png" alt="Intake Imprägnierung" />
+            <div className="overlay"><span>Intake Imprägnierung</span></div>
+          </div>
+        </div>
+        <div className="column">
+          <div className="image-item">
+            <img src="assets/images/Lasur/lasur-intakt_glanz.jpg" alt="Intakte Lasur" />
+            <div className="overlay"><span>Intakte Lasur</span></div>
+          </div>
+          <div className="image-item">
+            <img src="assets/images/Lasur/lasur-verwittert_maserung_sichtbar.jpg" alt="Verwitterte Lasur" />
+            <div className="overlay"><span>Verwitterte Lasur</span></div>
           </div>
         </div>
       </div>
