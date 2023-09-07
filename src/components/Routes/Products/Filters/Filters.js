@@ -52,7 +52,7 @@ const Filters = ({ filter, onChangeApplication, onChangeSurface, onResetSurfaces
 
     return (
         <Wrapper>
-            <Filter 
+            {/*<Filter 
                 onOpenFilter={() => handleOpenFilter(1)} 
                 id={1} 
                 onChange={(index) => onChangeApplication(index)} 
@@ -61,9 +61,9 @@ const Filters = ({ filter, onChangeApplication, onChangeSurface, onResetSurfaces
                 cbContent={Object.keys(filter)[1] !== undefined && filter[Object.keys(filter)[1]]} 
                 content={products && products[Object.keys(filter)[1]]}
                 title={"Verwendung"}
-            />
+            />*/}
             <Select handleChangeSort={(e) => handleChangeSort(e)}/>
-        	<RangeSlider handleOnSlide={(values) => handleOnSlide(values)}/>
+        	{/*<RangeSlider handleOnSlide={(values) => handleOnSlide(values)}/>*/}
         </Wrapper>
     )
 }

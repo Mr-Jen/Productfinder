@@ -44,8 +44,7 @@ const ButtonContentWrapper = styled.div`
   border: 2px solid transparent;
 
   @media (hover: hover) and (pointer: fine) {
-    &:hover { 
-      color: #01447e;
+    &:hover {
       border: 2px solid black;
       /*background-color: #f5dd0a;*/
     }

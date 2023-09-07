@@ -69,7 +69,7 @@ const Infos = ({latestItem}) => {
     return (
         <Wrapper>
             <Title>{latestItem?.label}</Title>
-            <h4 style={{textAlign: "center"}}>{latestItem?.question}</h4>
+            <h4 style={{textAlign: "center", lineHeight: "20px"}}>{latestItem?.question}</h4>
             {latestItem && latestItem.children === null &&
                 <Link 
                     to={"/products"}

@@ -16,12 +16,13 @@ const Button = styled.button`
   align-items: center;
   height: 2em;
   border-radius: .3em;
-  border: 1px solid grey;
+  border: 1px solid black;
   padding: 1em;
-  background-color: rgb(240, 240, 240);
+  color: white;
+  background-color: black;
   cursor: pointer;
   &:hover {
-      background-color: rgb(219, 217, 217);
+      background-color: rgb(144,144,144);
   }
 
   /*position: fixed;*/
@@ -29,7 +30,7 @@ const Button = styled.button`
 `
 
 const Icon = styled.img`
-    height: 2em;
+    height: 1.5em;
 `
 
 const Text = styled.p`
@@ -41,7 +42,7 @@ const BackButton = ({ButtonRemoveFromHistory, historyLength}) => {
     return (
         <Wrapper>
             <Button onClick={() => ButtonRemoveFromHistory(historyLength - 1)}>
-                <Icon src="assets/icons/misc/left.png"/>
+                <Icon src="assets/icons/misc/back.png"/>
                 <Text>Zurück</Text>
             </Button>
         </Wrapper>

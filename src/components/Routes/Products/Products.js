@@ -46,10 +46,13 @@ const ProductsWrapper = styled.div`
 
 const WarningBox = styled.p`
   border: 1px solid grey;
-  color: #5a5a5a;
+  //color: #5a5a5a;
+  color: black;
   border-radius: .5em;
   padding: 1em;
+  font-weight: bold;
   background-color: #ececec;
+  //background-color: #ffebe6;
   width: 60%;
   line-height: 25px;
   @media (max-width: 580px){
@@ -81,7 +84,7 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
       })  
   }, [])
 
-  React.useEffect(() => {
+  /*React.useEffect(() => {
     //(initData !== undefined && initData) && console.log("SURFACE LENGTH: ", Object.keys(initData.surfaces).length, "APPLICATION LENGTH: ", Object.keys(initData.applications).length)
     const initSurfaces = (initData !== undefined && initData) && new Array(Object.keys(initData.surfaces).length).fill(false);
     const initApplications = (initData !== undefined && initData) && new Array(Object.keys(initData.applications).length).fill(false);
@@ -91,7 +94,7 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
       "applications": JSON.parse(sessionStorage.getItem("filter")).applications ? JSON.parse(sessionStorage.getItem("filter")).applications : initApplications
     })
 
-  }, [initData])
+  }, [initData])*/
 
   const onChangeCompare = (pos) => {
     let newCompare = [...compareProducts]
@@ -210,9 +213,9 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
     setSortBy(e) 
   }
 
-  const handleOnSlide = (values) => {
+  /*const handleOnSlide = (values) => {
     setGlossValues(values)
-  }
+  }*/
 
   return (
     <Wrapper>
@@ -231,15 +234,15 @@ const Products = ({ target, coating, roughness, woodtype, initFilters, filteredS
           />
         </div>
       </Header>
-      
-      <Filters 
-        handleChangeSort={(e) => handleChangeSort(e)} 
-        handleOnSlide={(values) => handleOnSlide(values)}
-      />
 
-      <WarningBox>Achtung! Beachten Sie immer die Herstellerangaben zu den Grundierungen in den jeweiligen Datenblättern. Insbesondere auf unbehandeltem/abgeschliffenem Holz muss fast immer grundiert werden. Ohne richtige Grundierung (falls notwendig) wird der Anstrich nicht halten</WarningBox>
+      <WarningBox>Achtung! Beachten Sie immer die Herstellerangaben zu den Grundierungen in den jeweiligen Datenblättern. Insbesondere auf unbehandeltem/abgeschliffenem Holz muss fast immer grundiert werden. Ohne richtige Grundierung (falls notwendig) wird der Anstrich nicht halten.</WarningBox>
 
       <Count style={{margin: '1em'}}>{filteredObjectKeys?.length} {`${filteredObjectKeys?.length !== 1 ? "Produkte" : "Produkt"}`} gefunden</Count>
+
+      <Filters 
+        handleChangeSort={(e) => handleChangeSort(e)} 
+        //handleOnSlide={(values) => handleOnSlide(values)}
+      /> 
 
       { !products ? <p>Loading ...</p> :
         <ProductsWrapper>
@@ -286,7 +289,7 @@ const mapStateToProps = ({ user, filter }) => {
   if (user["target"] === 'Lasur'){
     target = 1;
   }
-  else if (user["target"] === 'Farbe' || user["target"] === "Verwitterte Farbe"){
+  else if (user["target"] === 'Farbe' || user["target"] === "Verwitterte Farbe" || user["target"] === "Deckende Farbe"){
     target = 0;
   }
   else if (user["target"] === 'Öl'){
