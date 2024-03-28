@@ -21,7 +21,7 @@ const Button = styled.button`
   background-color: black;
   cursor: pointer;
   &:hover {
-      background-color: rgb(144,144,144);
+      background-color: #696969;
   }
 
   /*position: fixed;*/
@@ -40,7 +40,7 @@ const Text = styled.p`
 const BackButtonToStart = () => {
     return (
         <Wrapper>
-            <Link to="/">
+            <Link style={{ textDecoration: 'none' }} to="/">
             <Button>
                 <Icon src="assets/icons/misc/back.png"/>
                 <Text>Zurück zum Start</Text>
