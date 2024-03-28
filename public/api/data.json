@@ -12,7 +12,7 @@
                 "smooth_surface": [10,15],
                 "rough_surface": [5,8]
             },
-            "lifetime": [13,18],
+            "lifetime": [12,18],
             "lifetime_unit": "Jahre",
             "gloss_level": [30,40],
             "binder": 2,
@@ -236,12 +236,12 @@
         },
         "9": {
             "id": 9,
-            "name": "SIOO:X Holzimprägnierer",
+            "name": "SIOO:X Holzimprägnierer Fassade",
             "category": [1],
             "allowed_coatings": [], 
             "allowed_on_hardwood": true,
             "surface": [0],
-            "application": [0,1,2,3,4,5],
+            "application": [0,2,3],
             "efficiency": {
                 "smooth_surface": [8,10],
                 "rough_surface": [5,8]
@@ -249,15 +249,15 @@
             "lifetime": [8,12],
             "lifetime_unit": "Jahre",
             "gloss_level": [0,0],
-            "binder": null,
+            "binder": 12,
             "solubility": 1,
-            "link": "https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/92/sioo-x-premium-holzimpraegnierer-terrasse",
-            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Sioox_premium_terrasse.pdf",
+            "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/93/sioo-x-premium-holzimpraegnierer-fassade?number=710310-",
+            "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Sioox_premium_fassade.pdf",
             "images": [
                 "/assets/images/Produkte/A29790.jpg"
             ],
             "price": [2.20, 4.00],
-            "info_text": "Mineralischer Holzimprägnierer für Holzfassaden oder Terrassen. SIOO:X ist ein lösemittelfreies, komplett natürliches Produkt für langfristigen Holzschutz. Die behandelten Oberflächen versteinern langsam und entwickeln eine schöne silbergraue Patina, welche langfristig von Fäulnis oder Mikroorgansimen schützt.",
+            "info_text": "Mineralischer Zwei-Komponenten-Holzimprägnierer für Holzfassaden und -zäune (auch als Variante für Terassen verfügbar: https://schwedischer-farbenhandel.de/aussenfarben/gartenmoebelfarbe/92/sioo-x-premium-holzimpraegnierer-terrasse?number=710210-). SIOO:X ist ein lösemittelfreies, komplett natürliches Produkt für langfristigen Holzschutz. Die behandelten Oberflächen versteinern langsam und entwickeln eine schöne silbergraue Patina, welche langfristig von Fäulnis oder Mikroorgansimen schützt.",
             "hue": "Silbergrau jedoch unpigmentiert"
         },
         "10": {
@@ -510,14 +510,14 @@
             "lifetime_unit": "Jahre",
             "gloss_level": [0,10],
             "binder": 11,
-            "solubility": 0,
+            "solubility": 2,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/239/nadelholzteer-mittelbraun-dalbraend-773?number=251120-",
             "datasheet_link": "https://www.schwedischer-farbenhandel.de/Datenblaetter/td_de_Dalbraend_Traetjaera_773.pdf",
             "images": [
                 "/assets/images/Produkte/dalbraend.jpeg"
             ],
             "price": [1.40, 3.98],
-            "info_text": "Goldbrauner (mahagoniähnlich), konservierender, Brennofen gebrannter Kiefernholzteer.",
+            "info_text": "Goldbrauner (mahagoniähnlicher), konservierender, Brennofen gebrannter Kiefernholzteer. Das älteste Holzschutzmittel der Menschheit, gewonnen aus dem Harz der Kiefer. Dalbränd ist etwas dunkler als der Nadelholzteer Imprex und etwas heller als Äkta Trätjära. Im Gegensatz zu den beiden anderen genannten Kiefernholzteeren hat Dalbränd einen leichten Rotstich, was die Ähnlichkeit zu Mahagoni erklärt. Dalbränd ist auch unter der Bezeichnung pix liquida bekannt und hat in der Heilkunde sowie in der kosmetischen Industrie eine Relevanz. Dalbränd sowie die anderen beiden genannten Nadelholzteere sind unpigmentiert und erhalten Ihre Tönung einzig durch die natürlichen Bestandteile. Auf sonnenbeschienenen Flächen wird sich der ursprüngliche Farbton daher mit der Zeit verändern, während Nordseite sowie Schattenbereiche unverändert bleiben. Die angegebene Standzeit bezieht sich daher nur auf die Flächen, die Sonne abbekommen und eher überstrichen werden müssen. Weitere Informationen finden Sie auch in der Artikelbeschreibung.",
             "hue": "Ähnlich Mahagonibraun"
         },
         "20": {
@@ -536,14 +536,14 @@
             "lifetime_unit": "Jahre",
             "gloss_level": [0,10],
             "binder": 11,
-            "solubility": 0,
+            "solubility": 2,
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/240/nadelholzteer-dunkelbraun-aekta-traetjaera-850?number=252120-",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Aekta_Traetjaera.pdf",
             "images": [
                 "/assets/images/Produkte/aekta.jpeg"
             ],
             "price": [1.40, 3.98],
-            "info_text": "Goldbrauner (mahagoniähnlich), konservierender, Brennofen gebrannter Kiefernholzteer.",
+            "info_text": "Dunkelbrauner (palisanderähnlicher), konservierender, Brennofen gebrannter Kiefernholzteer. Das älteste Holzschutzmittel der Menschheit, gewonnen aus dem Harz der Kiefer. Äkta Trätjära ist der dunkelste unter den drei unpigmentierten Nadelholzteeren Imprex (hell), Dalbränd (rötlich-mittelbraun) und Äkta Trätjära. Äkta Trätjära sowie die anderen beiden genannten Nadelholzteere sind , wie oben bereits erwähnt, ohne Pigmente und erhalten Ihre Tönung einzig durch die natürlichen Bestandteile. Auf sonnenbeschienenen Flächen wird sich der ursprüngliche Farbton daher mit der Zeit verändern, während Nordseite sowie Schattenbereiche unverändert bleiben. Die angegebene Standzeit bezieht sich daher nur auf die Flächen, die Sonne abbekommen und eher überstrichen werden müssen. Weitere Informationen finden Sie auch in der Artikelbeschreibung.",
             "hue": "Dunkelbraun"
         },
         "21": {
@@ -739,7 +739,8 @@
         "8": "Uretanalkydharz",
         "9": "Tungöl, Leinöl",
         "10": "Nadelholzteer, Bitumen",
-        "11": "Kiefernharzteer"
+        "11": "Kiefernharzteer",
+        "12": "Keine Bindemittel: Besteht nur aus Wasser und Mineralien"
     },
     "solubilities": {
         "0": "Terpentinersatz",

@@ -7,6 +7,9 @@ const InfoSite = () => {
     <div className='outer-wrapper'>
       <div className='outer-text-wrapper'>
         <div className='text-wrapper'>
+          <p className='info-text'>
+            Holzoberflächen können unbehandelt mit farblosen, lasierten oder deckenden Anstrichen versehen sein. Jede Art, egal ob unbehandel oder bestrichen, ist von Relevanz für den nächsten Anstrich. Wenn Holz bereits gestrichen wurde, kommt es auf die Art des Anstrichs und dessen Zustand an. 
+          </p>
           <p className='info-text bold'>Welche Anstricharten gibt es? Die meisten Anstricharten fallen in eine der nachfolgenden Kategorien:</p>
           <p className='bold'>Ob Farbe, Lack, Lasur - egal ob Holz, Putz oder Metall: alle Anstricharten enthalten Bindemittel, die am Ende den Schutzfilm auf der Oberfläche darstellen. Zunächst flüssig im Topf, nach dem Anstrich und der Trocknung fest und schützend auf der Oberfläche. Die einzelnen Anstricharten sind dann </p>
           <ul className='ulist'>

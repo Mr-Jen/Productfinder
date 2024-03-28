@@ -201,7 +201,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
                 </ChoiceButton>
               </ButtonContentWrapper>
               <InfoButton 
-                style={{visibility: `${childrenItems[key]["info"] ? "visible" : "hidden"}`}} 
+                style={{display: `${childrenItems[key]["info"] ? "inline" : "none"}`}} 
                 onClick={(e) => onClickInfo(childrenItems[key]["info"] ? childrenItems[key]["info"] : default_info, e)}
               >
                 {/*<Icon alt="info" height="20px" width="20px" src={childrenItems[key]["info"] && (hasWarning(childrenItems[key]) ? "/assets/icons/misc/warning (1).png"  : "/assets/icons/misc/info.svg")}></Icon>*/}

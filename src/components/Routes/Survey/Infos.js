@@ -7,6 +7,10 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50vw;
+    @media (max-width: 600px) {
+        width: 80vw;
+    }
 `
 const ToProducts = styled.button`
     display: flex;
@@ -46,7 +50,7 @@ const Title = styled.h2`
         font-size: 16px;
     }
 
-    @media (max-width: 450px) {
+    /*@media (max-width: 450px) {
         &:before {
             content: none;
         }
@@ -56,7 +60,7 @@ const Title = styled.h2`
         &:empty {
             border: none;
         }
-    }
+    }*/
 `
 
 const Infos = ({latestItem}) => {
@@ -66,10 +70,12 @@ const Infos = ({latestItem}) => {
         returnValue = <a href="https://schwedischer-farbenhandel.de">Homepage</a>
     }
 
+    const textWithLink = {__html: latestItem?.question};
+
     return (
         <Wrapper>
             <Title>{latestItem?.label}</Title>
-            <h4 style={{textAlign: "center", lineHeight: "20px"}}>{latestItem?.question}</h4>
+            <h4 dangerouslySetInnerHTML={textWithLink} style={{textAlign: "left", lineHeight: "20px"}}>{/*latestItem?.question*/}</h4>
             {latestItem && latestItem.children === null &&
                 <Link 
                     to={"/products"}
