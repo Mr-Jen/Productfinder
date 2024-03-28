@@ -1229,7 +1229,7 @@
                                             "id": 0,
                                             "label": "Grundierung",
                                             "action_value": 5,
-                                            "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst herausgefunden werden, welche Art von Bindemittel in der Grundierung vorhanden ist. Dieses können Sie beim Hersteller erfragen, eventuell von der Dose ablesen oder durch den Bindemitteltest selber ermitteln: Link zur Stichwortsuche hier einfügen.",
+                                            "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst herausgefunden werden, welche Art von Bindemittel in der Grundierung vorhanden ist. Dieses können Sie beim Hersteller erfragen, eventuell von der Dose ablesen oder durch den Bindemitteltest selber ermitteln: <a target='_blank' href='https://schwedischer-farbenhandel.de/stichwortsuche#bindemitteltest'>Zum Test</a>",
                                             "info": {
                                                 "0": {
                                                     "id": 0,
