@@ -111,7 +111,7 @@ const PropsRow = styled.div`
     margin: 1em 0 1em 0;
 `
 
-const PropsValue = styled.p`
+const PropsValue = styled.a`
     margin: .5em;
     width: 50%;
 
@@ -264,11 +264,11 @@ const ProductView = ({ match, productsData }) => {
                                 <PropsValue>{application.map(item => applications[item]).join(", ")}</PropsValue>
                             </PropsRow>
                             <PropsRow>
-                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[3]}</PropsValue>
+                                <PropsValue target='_blank' href="https://schwedischer-farbenhandel.de/stichwortsuche#standzeit" style={{fontWeight: "bold"}}>{category_names_de[3]}</PropsValue>
                                 <PropsValue>{lifetime[0]} - {lifetime[1]} {lifetime_unit}</PropsValue>
                             </PropsRow>
                             <PropsRow>
-                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[4]}</PropsValue>
+                                <PropsValue target='_blank' href="https://schwedischer-farbenhandel.de/stichwortsuche#glanzgrad" style={{fontWeight: "bold"}}>{category_names_de[4]}</PropsValue>
                                 {
                                     gloss_level.length > 1 ?
                                         <PropsValue>{gloss_level[0]} - {gloss_level[1]}</PropsValue>
@@ -276,7 +276,7 @@ const ProductView = ({ match, productsData }) => {
                                 }
                             </PropsRow>
                             <PropsRow>
-                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[5]}</PropsValue>
+                                <PropsValue target='_blank' href="https://schwedischer-farbenhandel.de/stichwortsuche#bindemittel" style={{fontWeight: "bold"}}>{category_names_de[5]}</PropsValue>
                                 <PropsValue>{binders[binder]}</PropsValue>
                             </PropsRow>
                             <PropsRow>
