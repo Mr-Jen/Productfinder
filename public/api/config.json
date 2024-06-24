@@ -4,7 +4,7 @@
         "0": {
             "id": 0,
             "label": "Start",
-            "question": "Für welchen Bereich suchen Sie ein Produkt?",
+            "question": "Für welchen Bereich suchen Sie ein Anstrichmittel?",
             "breadcrumb": "Bereich",
             "children": {
                 "0": {
@@ -1339,14 +1339,14 @@
                         },
                         "1": {
                             "id": 1,
-                            "label": "Putzfassade",
+                            "label": "Putzfassade (in Arbeit)",
                             "question": "disabled",
                             "breadcrumb": "Bereich",
                             "children": {} 
                         },
                         "2": {
                             "id": 2,
-                            "label": "Metall",
+                            "label": "Metall (in Arbeit)",
                             "question": "disabled",
                             "breadcrumb": "Bereich",
                             "children": {} 
@@ -1355,7 +1355,7 @@
                 },
                 "1": {
                     "id": 1,
-                    "label": "Innenbereich",
+                    "label": "Innenbereich (in Arbeit)",
                     "question": "disabled",
                     "breadcrumb": "Innenbereich",
                     "children": {}

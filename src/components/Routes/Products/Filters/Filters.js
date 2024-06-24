@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import { connect } from 'react-redux'
 
 import { changeSurface, changeApplication, resetSurfaces, resetApplications } from '../../../../actions/filter'
-import Filter from './Filter'
+//import Filter from './Filter'
 import Select from './Select'
-import RangeSlider from '../RangeSlider/RangeSlider'
+//import RangeSlider from '../RangeSlider/RangeSlider'
 
 const Wrapper = styled.div`
     display: flex;
