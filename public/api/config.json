@@ -111,7 +111,7 @@
                                                     "id": 1,
                                                     "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
                                                     "title": "Warnung bei Farben",
-                                                    "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben. Achten Sie beim Überstreichen bestehender Farbe auf die Verträglichkeit der Anstriche. Auch hier sind wir gerne im Vorwege behilflich.",
+                                                    "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben. Achten Sie beim Überstreichen bestehender Farbe auf die Verträglichkeit der Anstriche. Auch hier sind wir gerne im Vorwege behilflich. Email: info@schwedischer-farbenhandel.de, Telefonnummer: +49 (0)40 54 80 12 20",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg",
                                                     "warning": true
                                                 }
@@ -292,13 +292,13 @@
                                                     "id": 0,
                                                     "title": "Öl",
                                                     "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterscheidet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden. Ein Holzöl hält im Außenbereich 6-12 Monate. Vor einer Auffrischung muss das Holz immer tiefengereinigt werden. ",
-                                                    "image": "assets/images/Öl/holzöl.jpg"
+                                                    "image": "assets/images/Oel/holzoel.jpg"
                                                 },
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Härtend vs Nicht-härtend",
                                                     "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste, belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Lebensmittelhandel findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen",
-                                                    "image": "assets/images/Öl/holzöl.jpg"
+                                                    "image": "assets/images/Oel/holzoel.jpg"
                                                 }
                                             },
                                             "children": {
@@ -344,7 +344,7 @@
                                             "id": 1,
                                             "title": "Öl",
                                             "content": "Öle ziehen tief ins Holz ein, lassen das Holz etwas kräftiger im Farbton wirken und haben eine matte Erscheinung. Frisch geöltes Holz ist wasserabweisend und hat eine gut erkennbare Maserung. Der Schutz eines Öls lässt im Freien bereits nach wenigen Wochen merklich nach. Nach 6-12 Monaten direkter Sonne, ist ein Öl verwittert.",
-                                            "image": "assets/images/Öl/holzöl.jpg"
+                                            "image": "assets/images/Oel/holzoel.jpg"
                                         },
                                         "2": {
                                             "id": 2,
@@ -383,7 +383,7 @@
                                                             "id": 0,
                                                             "title": "Oberfläche säubern",
                                                             "content": "Vor dem Renovierungsanstrich muss der Untergrund sauber und trocken sein. Reinigen Sie den Altanstrich gründlich mit Wasser und ggf. Seife oder unserem Fassadenreiniger. Mit Fassadenreiniger entfernt man Schmutz, Staub, Moose, Pilze und Mikroorganismen. Spülen Sie etwaige Rückstände von Reinigungsmitteln gründlich mit Wasser ab und lassen Sie die Oberfläche trocknen, ehe Sie mit dem neuen Anstrich beginnen.",
-                                                            "image": "assets/images/Anderes/reinigen.jpg"
+                                                            "image": "assets/images/Farbe/verwitterte-farbe.png"
                                                         }
                                                     },
                                                     "children": {
@@ -870,14 +870,14 @@
                                                     "id": 0,
                                                     "title": "Abblätternde Farbe",
                                                     "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. Was in Deutschland kaum bekannt ist - gehobelte Hölzer sollten nicht direkt, sondern frühestens nach 6 – 8 Wochen Anwitterung gestrichen werden. Streicht man zu früh, blättert der Anstrich ab, weil er sich nicht mit dem Holz verbinden konnte. Ebenso braucht Farbe immer eine Grundierung, die ebenfalls ins Holz einziehen muss. Ohne Grundierung wird Farbe rissig oder blättert ab. Zieht die Grundierung nicht ins Holz ein, blättert ebenfalls alles ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt'. Bei typisch deutschen Produkten ist das etwa nach 4-6 Jahren der Fall, bei schwedischen Farben nach 20-25 Jahren. Ist die Farbe irgendwann zu weit runtergebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
-                                                    "image": "assets/images/Farbe/abblätternde-farbe.jpg"
+                                                    "image": "assets/images/Farbe/abblaetternde-farbe.jpg"
                                                 }
                                             },
                                             "children": {
                                                 "0": {            
                                                     "id": 0,
                                                     "label": "Abgeschliffen",
-                                                    "question": "In welchem Zustand ist der Untergrund? Liegt intakte Farbe vor oder ist alles abgeschliffen?",
+                                                    "question": "In welchem Zustand ist der Untergrund? Liegt ein teilweise intakter Anstrich vor oder ist alles abgeschliffen?",
                                                     "info": {
                                                         "0": {
                                                             "id": 0,
@@ -934,7 +934,7 @@
                                                         },
                                                         "1": {            
                                                             "id": 1,
-                                                            "label": "Intakte Farbe",
+                                                            "label": "Teilweise intakter Anstrich",
                                                             "question": "Nicht jeder Anstrich verträgt sich mit jedem Untergrund. Deshalb muss zuerst herausgefunden werden, welche Art von Bindemittel im Altanstrich vorhanden sind. Die Anleitung zum Test finden Sie in der Infobox.",
                                                             "info": {
                                                                 "0": {
@@ -1064,13 +1064,13 @@
                                                     "id": 0,
                                                     "title": "Öl",
                                                     "content": "Öle bilden matte bis leicht glänzende Oberflächen. Im Gegensatz zu einer Lasur liegen sie nicht auf, sondern ziehen tief ins Holz ein. Man unterscheidet zwischen aushärtenden Ölen (auch Standöl) und rohen Ölen. Aushärtende Öle unterliegen einem Sikkativierungsprozess und werden hart. Nicht-härtende Öle bleiben klebrig/weich, sie können daher nur mit wenigen Produkten überstrichen werden. Ein Holzöl hält im Außenbereich 6-12 Monate. Vor einer Auffrischung muss das Holz immer tiefengereinigt werden. ",
-                                                    "image": "assets/images/Öl/holzöl.jpg"
+                                                    "image": "assets/images/Oel/holzoel.jpg"
                                                 },
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Härtend vs Nicht-härtend",
                                                     "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste, belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Lebensmittelhandel findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen",
-                                                    "image": "assets/images/Öl/holzöl.jpg"
+                                                    "image": "assets/images/Oel/holzoel.jpg"
                                                 }
                                             },
                                             "children": {
@@ -1085,7 +1085,7 @@
                                                             "id": 0,
                                                             "title": "Aushärtendes Öl",
                                                             "content": "Aushärtende Öle sind entweder hocherhitzt (gekocht) oder durch Sikkative versetzt (Trocknungsstoffe). Diese im Holz trocknenden Öle können später mit Farbe oder Lasur überstrichen werden. Auf aushärtenden Ölen muss teilweise grundiert werden. Ein aushärtendes Öl ist ein Tiefengrund und sättigt das Holz. Es ersetzt nicht den Haftgrund. Sind Öle länger als 6 Monate im Holz, empfiehlt sich eine Tiefenreinigung mit Fassadenreiniger, danach wird vollständig neu geölt. Hintergrund: Öle verwittern im UV Licht innerhalb von circa 6 Monaten. Bitte beachten Sie die entsprechenden Herstellerangaben für Grundierer. Welches Öl habe ich? Ob es sich um ein aushärtendes Öl handelt ist ohne Zugriff auf den Behälter oder Herstellerangaben relativ schwierig zu bestimmen. Öle ziehen ein und verbleiben nicht auf der Oberfläche. Ist das Öl ganz ins Holz eingezogen, lässt sich die Art kaum noch selber bestimmen. Ist jedoch etwas vom Öl sehr dick aufgetragen worden und es hat sich evtl. auf Schrauben oder besonders harten Ästen ein Film gebildet, kann man mit dem Finger ertasten, ob sich das Öl trocken, hart oder ggf. etwas gummiartig anfühlt. Ist es nicht mehr flüssig, dann haben Sie ein aushärtendes Öl. Sind Rückstände des Öls auch nach Wochen noch flüssig und fühlen sich ölig an, handelt es sich um ein nicht-härtendes, bzw. rohes Öl. Ist das Öl eingezogen bleibt nichts anderes mehr übrig, als über den Produktnamen zu recherchieren. Hier sind wir Ihnen auch gerne behilflich. Ist das Öl ohnehin schon einige Monate alt, spielt dies keine Rolle mehr. Dann wird das Holz nur gründlich gereinigt. Öle sind nur sehr kurze Zeit wetterfest. Nach einigen Monaten sind die Rückstände vom ehemaligen Öl nur noch eine Verschmutzung des Holzes, jedoch kein intakter Anstrich mehr. Hier gehen Sie zwei Schritte zurück und wählen 'Unbehandelt oder komplett abgeschliffen' aus.",
-                                                            "image": "assets/images/Öl/holzöl.jpg"
+                                                            "image": "assets/images/Oel/holzoel.jpg"
                                                         }
                                                     },
                                                     "children": {
@@ -1126,7 +1126,7 @@
                                                                     "id": 0,
                                                                     "title": "Öl",
                                                                     "content": "Öle ziehen tief ins Holz ein, lassen das Holz etwas kräftiger im Farbton wirken und haben eine matte Erscheinung. Frisch geöltes Holz ist wasserabweisend und hat eine gut erkennbare Maserung. Der Schutz eines Öls lässt im Freien bereits nach wenigen Wochen merklich nach. Nach 6-12 Monaten direkter Sonne, ist ein Öl verwittert.",
-                                                                    "image": "assets/images/Öl/holzöl.jpg"
+                                                                    "image": "assets/images/Oel/holzoel.jpg"
                                                                 }
                                                             },
                                                             "children": null
@@ -1144,7 +1144,7 @@
                                                             "id": 0,
                                                             "title": "Rohes Öl",
                                                             "content": "Nicht-härtende oder rohe Öle können nicht trocknen. Diese Öle bleiben für immer flüssig und können unter vielen Farbastrichen zu Problemen führen. Während auf ausgehärtetem Öl viele Anstriche Anwendung finden, ist der Raum der Möglichkeiten bei rohen Ölen sehr begrenzt. Welches Öl habe ich? Ob es sich um ein nicht-härtendes Öl handelt ist ohne Zugriff auf den Behälter oder Herstellerangaben relativ schwierig zu bestimmen. Öle ziehen ein und verbleiben nicht auf der Oberfläche. Ist das Öl komplett ins Holz eingezogen, lässt sich die Art kaum noch selber bestimmen. Ist jedoch etwas vom Öl sehr dick aufgetragen worden und es hat sich evtl. auf Schrauben oder besonders harten Ästen ein Film gebildet, kann man mit dem Finger ertasten, ob sich das Öl trocken, hart oder ggf. etwas gummiartig anfühlt. Ist es nicht mehr flüssig, dann haben Sie ein aushärtendes Öl. Sind Rückstände des Öls auch nach Wochen noch flüssig und fühlen sich ölig an, handelt es sich um ein nicht-härtendes, bzw. rohes Öl. Ist das Öl eingezogen bleibt nichts anderes mehr übrig, als über den Produktnamen zu recherchieren. Hier sind wir Ihnen auch gerne behilflich. Ist das Öl ohnehin schon einige Monate alt, spielt dies keine Rolle mehr. Dann wird das Holz nur gründlich gereinigt. Öle sind nur sehr kurze Zeit wetterfest. Da Öle nur sehr begrenzte Standzeiten haben, sind die Rückstände vom ehemaligen Öl nur noch eine Verschmutzung des Holzes, jedoch kein intakter Anstrich mehr. Hier gehen Sie zwei Schritte zurück und wählen 'Unbehandelt oder komplett abgeschliffen' aus.",
-                                                            "image": "assets/images/Öl/öl.jpg "
+                                                            "image": "assets/images/Oel/oel.jpg "
                                                         }
                                                     },
                                                     "children": {

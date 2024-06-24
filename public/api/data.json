@@ -128,7 +128,7 @@
             ],
             "price": [2.55, 5.99],
             "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
-            "hue": "22 Standardfarbtöne + weitere Wunschfarbtöne"
+            "hue": "22 Standardfarbtöne + 60.000 weitere Wunschfarbtöne"
         },
         "5": {
             "id": 5,
@@ -180,7 +180,7 @@
             ],
             "price": [1.46, 3.66],
             "info_text": "Matte Emulsionsfarbe aus Wasser, Öl und Mehl. Schlammfarbe ist ein in Schweden vor ca. 200 Jahren beliebt gewordener Anstrich, welcher ursprünglich aus der kupferhaltigen Erde der Bergbauregion Falun gewonnen wurde. Schlammfarbe ist gut geeignet für Holzschutzanstriche auf Fassaden von landwirtschaftlich genutzten Gebäuden oder Schuppen. Schlammfarbe ist nur für sägeraues Nadelholz geeignet. Schlammfarbe eignet sich nicht für: Fenster, Türen, Zäune oder direkt bewitterte Flächen.",
-            "hue": "ca. 16 Farbtöne"
+            "hue": "4"
         },
         "7": {
             "id": 7,
@@ -284,7 +284,7 @@
             ],
             "price": [1.66, 6.45],
             "info_text": "Holzöl aus Tungöl. Entweder als reines Tungöl oder mit Leinöl verstärkt erhältlich. Mit Leinöl verstärkt ist Tungöl (chin. Holzöl) besonders für trockene uns strapazierte Hölzer wie Möbel oder Terrassen im Außenbereich geeignet. Reines Tungöl weist eine härtere, eher lackartige Oberflächenbeschaffenheit auf und trocknet schneller als Leinöl. Reines Tungöl wird in mehreren dünnen Schichten auf trockene Hölzer aufgetragen.",
-            "hue": "Farblos / Goldgelb"
+            "hue": "Unpigmentiert"
         },
         "11": {
             "id": 11,
@@ -310,7 +310,7 @@
             ],
             "price": [1.5, 3.2],
             "info_text": "",
-            "hue": "Farblos bis Goldgelb"
+            "hue": "Unpigmentiert"
         },
         "12": {
             "id": 12,
@@ -336,7 +336,7 @@
             ],
             "price": [1.39, 3.65],
             "info_text": "Holzteeröl aus Kiefernharz. Helles Holzteeröl wird zur Konservierung von Holzfassaden im Außenbereich eingesetzt. Über die Jahre bekommt das Holz ein patina-ähnliches Aussehen. Bei regelmäßiger Auffrischung wird das Holz durch die pflanzlichen, kiefernharzbasierten Inhaltsstoffe langfristig konserviert und vor Fäulnis geschützt. ",
-            "hue": "Farblos / Goldbraun"
+            "hue": "Unpigmentiert"
         },
         "13": {
             "id": 13,
@@ -414,7 +414,7 @@
             ],
             "price": [1.29, 6.63],
             "info_text": "Holzteeröl aus Kiefernharz. Entweder als Grundierung für reinen Nadelholzteer oder als alleiniger Anstrich. Bei einem alleinigen Tarinölanstrich bekommt das Holz eine rot/braune Färbung, ähnlich wie Tropenholz. Tarinöl kann ebenfalls verwendet werden um vergrauten Harthölzern ihre ursprüngliche Farbe zurückzugeben. Die Teerlasur wird aus Kiefernharz gewonnen und hat eine hervorragende Schutzwirkung vor Mikroorganismen, Pilzen oder Flechten.",
-            "hue": "Farblos / Goldbraun"
+            "hue": "Unpigmentiert"
         },
         "16": {
             "id": 16,
@@ -440,7 +440,7 @@
             ],
             "price": [1.30, 3.70],
             "info_text": "Naturprodukt. Natürlicher Holzschutz, bzw. Grundierung für Leinölfarbe. Ausschließlich aus reiner Leinölsaat in lokaler schwedischer Produktion gewonnen. Frei von Lösemitteln oder Konservierungsstoffen.  ",
-            "hue": "Farblos / Goldgelb"
+            "hue": "Unpigmentiert"
         },
         "17": {
             "id": 17,
@@ -466,7 +466,7 @@
             ],
             "price": [1.40, 3.98],
             "info_text": "Naturprodukt. Natürlicher Holzschutz, bzw. Grundierung für Leinölfarbe. Ausschließlich aus reiner Leinölsaat in lokaler schwedischer Produktion gewonnen. Frei von Lösemitteln oder Konservierungsstoffen.  Gekochtes Leinöl kann aushärten/trocknen. Im Gegensatz zu reinem Leinöl kann man es als Grundierung für verschiedene Farben aber auch als alleinigen Anstrich vor allem im Innenbereich verwenden.",
-            "hue": "Farblos / Goldbraun"
+            "hue": "Unpigmentiert"
         },
         "18": {
             "id": 18,
@@ -492,7 +492,7 @@
             ],
             "price": [1.40, 3.98],
             "info_text": "Wasserbasiertes Holzöl zur Auffrischung von Edelhölzern wie Teak. Teaköl basiert auf Leinöl und chinesischem Holzöl. Es ist wasserabweisend und kann bereits vergrauten Edelhölzern ihre ursprüngliche Farbe wieder zurück geben.",
-            "hue": "Farblos / Goldbraun"
+            "hue": "Unpigmentiert"
         },
         "19": {
             "id": 19,
@@ -566,7 +566,7 @@
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/245/nadelholzteer-gruen-groentjaera?number=254010-",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Groentjaera.pdf",
             "images": [
-                "/assets/images/Produkte/gröntjära.jpeg"
+                "/assets/images/Produkte/groentjaera.jpeg"
             ],
             "price": [2.55, 5.99],
             "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
@@ -592,7 +592,7 @@
             "link": "https://schwedischer-farbenhandel.de/aussenfarben/fassadenfarbe-holz/241/nadelholzteer-schwedenrot/faluroed-roedtjaera?number=252400-",
             "datasheet_link": "https://schwedischer-farbenhandel.de/Datenblaetter/td_de_Roedtjaera.pdf",
             "images": [
-                "/assets/images/Produkte/rödtjära.jpeg"
+                "/assets/images/Produkte/roedtjaera.jpeg"
             ],
             "price": [2.55, 5.99],
             "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
@@ -648,7 +648,7 @@
             ],
             "price": [1.46, 3.66],
             "info_text": "Matte Emulsionsfarbe aus Wasser, Öl und Mehl. Schlammfarbe ist ein in Schweden vor ca. 200 Jahren beliebt gewordener Anstrich, welcher ursprünglich aus der kupferhaltigen Erde der Bergbauregion Falun gewonnen wurde. Schlammfarbe ist gut geeignet für Holzschutzanstriche auf Fassaden von landwirtschaftlich genutzten Gebäuden oder Schuppen. Schlammfarbe ist nur für sägeraues Nadelholz geeignet. Schlammfarbe eignet sich nicht für: Fenster, Türen, Zäune oder direkt bewitterte Flächen.",
-            "hue": "7 Standardfarbtöne und 60.000 Wunschfarbtöne"
+            "hue": "7 Standardfarbtöne, weitere Wunschfarbtöne auf Anfrage"
         },
         "26": {
             "id": 26,
