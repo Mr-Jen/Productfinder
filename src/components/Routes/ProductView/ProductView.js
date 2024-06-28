@@ -288,9 +288,9 @@ const ProductView = ({ match, productsData }) => {
                                 <PropsValue>{`${price[0].toString().replace('.', ',')}€ - ${price[1].toString().replace('.', ',')}€`}</PropsValue>
                             </PropsRow>*/}
                             <PropsRow>
-                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[7]}</PropsValue>
+                            <PropsValue target='_blank' href="https://schwedischer-farbenhandel.de//wunschfarbtoene" style={{fontWeight: "bold"}}>{category_names_de[7]}</PropsValue>
                                 <PropsValue>{hue}</PropsValue>
-                            </PropsRow>
+                            </PropsRow>                            
                         </PropsWrapper>
                         <SubTitle>Produkteigenschaften</SubTitle>
                         <ProductText>{info_text}</ProductText>

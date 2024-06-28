@@ -111,7 +111,7 @@
                                                     "id": 1,
                                                     "unique": "ab0606df-f614-4630-ac12-4b4fea5ce80e",
                                                     "title": "Warnung bei Farben",
-                                                    "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben. Achten Sie beim Überstreichen bestehender Farbe auf die Verträglichkeit der Anstriche. Auch hier sind wir gerne im Vorwege behilflich. Email: info@schwedischer-farbenhandel.de, Telefonnummer: +49 (0)40 54 80 12 20",
+                                                    "content": "Vor dem Erstanstrich sollten Weichhölzer (Kiefer/Fichte/Tanne) mindestens 6-8 Wochen in der Witterung gestanden haben. Harthölzer (Douglasie/Lärche/Eiche/etc.) können teilweise erst nach vielen Jahren gestrichen werden. Bitte kontaktieren Sie uns, falls Sie ein solches Hartholz haben. Achten Sie beim Überstreichen bestehender Farbe auf die Verträglichkeit der Anstriche. Auch hier sind wir gerne im Vorwege behilflich. <br><b>Email: </b><a href='mailto:info@schwedischer-farbenhandel.de'>info@schwedischer-farbenhandel.de</a><br><b>Telefonnummer:</b> +49 (0)40 54 80 12 20",
                                                     "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg",
                                                     "warning": true
                                                 }
@@ -297,7 +297,7 @@
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Härtend vs Nicht-härtend",
-                                                    "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste, belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Lebensmittelhandel findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen",
+                                                    "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste, belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Lebensmittelhandel findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen. Weitere Informationen dazu finden Sie <a href='https://schwedischer-farbenhandel.de/stichwortsuche#oel'>hier</a>.",
                                                     "image": "assets/images/Oel/holzoel.jpg"
                                                 }
                                             },
@@ -442,7 +442,7 @@
                                                                         "1": {
                                                                             "id": 1,
                                                                             "title": "Weitere Info zum Test",
-                                                                            "content": "Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkydharz. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Streichen Sie niemals Alkydharzfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydharzfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne: Email: info@schwedischer-farbenhandel.de, Telefonnummer: +49 (0)40 54 80 12 20",
+                                                                            "content": "Sollte der Test mit dem Brennspiritus nicht eindeutig sein, können Sie zumindest auf deckenden Holzfarbschichten auch mit Schmirgelpapier testen. Wenn der Abrieb beim Schmirgeln eher staubt, ist es Öl oder Alkydharz. Wenn der Abrieb schmiert, im Papier hängen bleibt, ist es Acryl bzw. Acrylat. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Streichen Sie niemals Alkydharzfarbe auf Acrylfarbe im Aussenbereich. Vermeiden Sie Acrylfarbe auf Alkydharzfarbe – funktioniert grundsätzlich, ist aber eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne: <br><b>Email: </b><a href='mailto:info@schwedischer-farbenhandel.de'>info@schwedischer-farbenhandel.de</a><br><b>Telefonnummer:</b> +49 (0)40 54 80 12 20",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -538,7 +538,7 @@
                                                                     "unique": "4f05682c-b657-41f3-b8ce-40857879d0dd",
                                                                     "title": "Warnung zur Farbe",
                                                                     "content": "Achtung! Farbe darf nicht blättern oder rissig sein. Blättert Farbe ab oder ist stark rissig, kann sie nicht mehr direkt überstrichen werden.",
-                                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg",
+                                                                    "image": "assets/images/Farbe/rissig.jpg",
                                                                     "warning": true
                                                                 },
                                                                 "1": {
@@ -582,7 +582,7 @@
                                                                         "1": {
                                                                             "id": 1,
                                                                             "title": "Weitere Info zum Test",
-                                                                            "content": "Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydharzfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne: Email: info@schwedischer-farbenhandel.de, Telefonnummer: +49 (0)40 54 80 12 20",
+                                                                            "content": "Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydharzfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne: <br><b>Email: </b><a href='mailto:info@schwedischer-farbenhandel.de'>info@schwedischer-farbenhandel.de</a><br><b>Telefonnummer:</b> +49 (0)40 54 80 12 20",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -742,7 +742,7 @@
                                                             "id": 0,
                                                             "title": "Verwitterte Farben",
                                                             "content": "Angewitterte oder leicht verwitterte Farbe sollte nicht blättern oder rissig sein. Farbe kann Auskreiden (es bildet sich ein mehliger/kreidiger Staub) oder sie kann Grünspan, Moos, o.ä. bilden. In diesen Fällen wird die Fassade mit einem Fassadenreiniger gereinigt. Sollte das Holz schon durchschauen, die Farbe abblättern oder stark rissig sein, kann man nicht mehr direkt überstreichen. Beachten Sie in dem Fall unsere Anleitung zu abblätternder/rissiger Farbe.",
-                                                            "image": "assets/images/Farbe/verwitterte-farbe.png"
+                                                            "image": "assets/images/Farbe/rissig.jpg"
                                                         }
                                                     },
                                                     "children": {
@@ -786,7 +786,7 @@
                                                                         "1": {
                                                                             "id": 1,
                                                                             "title": "Weitere Info zum Test",
-                                                                            "content": "Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydharzfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne. Email: info@schwedischer-farbenhandel.de, Telefonnummer: +49 (0)40 54 80 12 20",
+                                                                            "content": "Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydharzfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne. <br><b>Email: </b><a href='mailto:info@schwedischer-farbenhandel.de'>info@schwedischer-farbenhandel.de</a><br><b>Telefonnummer:</b> +49 (0)40 54 80 12 20",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -868,9 +868,15 @@
                                             "info": {
                                                 "0": {
                                                     "id": 0,
+                                                    "title": "Rissige Farbe",
+                                                    "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. Was in Deutschland kaum bekannt ist - gehobelte Hölzer sollten nicht direkt, sondern frühestens nach 6 – 8 Wochen Anwitterung gestrichen werden. Streicht man zu früh, blättert der Anstrich ab, weil er sich nicht mit dem Holz verbinden konnte. Ebenso braucht Farbe immer eine Grundierung, die ebenfalls ins Holz einziehen muss. Ohne Grundierung wird Farbe rissig oder blättert ab. Zieht die Grundierung nicht ins Holz ein, blättert ebenfalls alles ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt'. Bei typisch deutschen Produkten ist das etwa nach 4-6 Jahren der Fall, bei schwedischen Farben nach 20-25 Jahren. Ist die Farbe irgendwann zu weit runtergebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
+                                                    "image": "assets/images/Farbe/rissig.jpg"
+                                                },
+                                                "1": {
+                                                    "id": 1,
                                                     "title": "Abblätternde Farbe",
                                                     "content": "Rissige oder abblätternde Farbe ist ein Zeichen von falscher oder fehlender Grundierung. Es kann auch ein Zeichen dafür sein, dass zu früh auf glattes Holz gestrichen wurde. Was in Deutschland kaum bekannt ist - gehobelte Hölzer sollten nicht direkt, sondern frühestens nach 6 – 8 Wochen Anwitterung gestrichen werden. Streicht man zu früh, blättert der Anstrich ab, weil er sich nicht mit dem Holz verbinden konnte. Ebenso braucht Farbe immer eine Grundierung, die ebenfalls ins Holz einziehen muss. Ohne Grundierung wird Farbe rissig oder blättert ab. Zieht die Grundierung nicht ins Holz ein, blättert ebenfalls alles ab. Ist Farbe schlichtweg zu alt, ist sie irgendwann ‚abgebrannt'. Bei typisch deutschen Produkten ist das etwa nach 4-6 Jahren der Fall, bei schwedischen Farben nach 20-25 Jahren. Ist die Farbe irgendwann zu weit runtergebrannt, wird sie durchsichtig, das Holz kommt hervor, dieser Anstrich ist nicht mehr zu retten. Komplett abgewitterte, rissige oder blätternde Farbe wird restlos entfernt.",
-                                                    "image": "assets/images/Farbe/abblaetternde-farbe.jpg"
+                                                    "image": "assets/images/Farbe/abblaetternd.jpg"
                                                 }
                                             },
                                             "children": {
@@ -979,7 +985,7 @@
                                                                         "1": {
                                                                             "id": 1,
                                                                             "title": "Weitere Info zum Test",
-                                                                            "content": "Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydharzfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne. Email: info@schwedischer-farbenhandel.de, Telefonnummer: +49 (0)40 54 80 12 20",
+                                                                            "content": "Sollte der Test mit Schleifpapier nicht eindeutig sein, können Sie den Anstrich auch mit Brennspiritus testen. Reibt man für 1-2 Minuten mit einem mit Brennspiritus getränktem Lappen auf der Farbschicht, wird diese entweder weich/klebrig/abfärbend oder bleibt unverändert. Unverändert bedeutet öl- bzw. alkydhaltig, weich/klebrig/abfärbend bedeutet acrylhaltig. Sind alle Tests nicht eindeutig, verwenden Sie bei der nächsten Auswahlmöglichkeit die Option 'Acryl / Acrylat-Basis'. Vermeiden Sie es Acrylfarbe auf Alkydharzfarbe zu streichen – funktioniert grundsätzlich, ist aber meist eine Verschlechterung im Anstrichsystem. Haben Sie hierbei Probleme oder sind sich nicht sicher, können Sie uns gerne anrufen. Wir beraten Sie gerne. <br><b>Email: </b><a href='mailto:info@schwedischer-farbenhandel.de'>info@schwedischer-farbenhandel.de</a><br><b>Telefonnummer:</b> +49 (0)40 54 80 12 20",
                                                                             "image": "assets/images/Lasur/lasur.png"
                                                                         }
                                                                     },
@@ -1069,7 +1075,7 @@
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Härtend vs Nicht-härtend",
-                                                    "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste, belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Lebensmittelhandel findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen",
+                                                    "content": "Man unterscheidet zwischen härtenden (sikkativierenden) und nicht-härtenden Ölen. Aushärtende Öle werden unter Druck gekocht, wodurch sie später im Holz trocknen können und eine feste, belastbare Oberfläche bilden. Nicht-härtende Öle sind rohe Pflanzenöle, wie man sie z.B. auch im Lebensmittelhandel findet. Diese Öle ziehen etwas tiefer ein, können allerdings nicht aushärten und bleiben für immer weich/klebrig und binden i.d.R. viel Schmutz an sich. Nicht-härtende Öle im Holz führen bei den meisten Anstricharten später zu Problemen. Weitere Informationen dazu finden Sie <a href='https://schwedischer-farbenhandel.de/stichwortsuche#oel'>hier</a>.",
                                                     "image": "assets/images/Oel/holzoel.jpg"
                                                 }
                                             },
@@ -1329,7 +1335,7 @@
                                         "0": {
                                             "id": 0,
                                             "title": "Allgemeine Information",
-                                            "content": "Welche Anstricharten gibt es? Die meisten Anstricharten fallen in eine der nachfolgenden Kategorien. Wenn Sie sich nicht sicher sind um was es sich genau handelt, wenden Sie sich gerne per Email oder telefonisch an uns: Email: info@schwedischer-farbenhandel.de Telefon: +49 (0) 40 54 80 12 20",
+                                            "content": "Welche Anstricharten gibt es? Die meisten Anstricharten fallen in eine der nachfolgenden Kategorien. Wenn Sie sich nicht sicher sind um was es sich genau handelt, wenden Sie sich gerne per Email oder telefonisch an uns: <br><b>Email: </b><a href='mailto:info@schwedischer-farbenhandel.de'>info@schwedischer-farbenhandel.de</a><br><b>Telefonnummer:</b> +49 (0)40 54 80 12 20",
                                             "image": "assets/images/Anderes/qm.png"
                                         }
                                     },

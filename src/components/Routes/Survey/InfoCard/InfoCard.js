@@ -239,6 +239,8 @@ const InfoCard = ({ data, onClose }) => {
         "image": "assets/images/Öl/öl.jpg"
     }
 
+    const cardContent = {__html: data ? data[infoState]["content"] : default_content["content"]};
+
     return (
         <Wrapper warn={(data && data[infoState]?.warning) && (data[infoState]["warning"])}>
             <InnerWrapper>
@@ -257,7 +259,7 @@ const InfoCard = ({ data, onClose }) => {
                             <Title>{data ? data[infoState]["title"] : default_content["title"]}</Title>
                         </TitleWrapper>
                         <Text>
-                            {data ? data[infoState]["content"] : default_content["content"]}
+                            <p dangerouslySetInnerHTML={cardContent}></p>
                             {data[infoState]?.instructions &&
                                 <InstructionsWrapper>
                                     {
