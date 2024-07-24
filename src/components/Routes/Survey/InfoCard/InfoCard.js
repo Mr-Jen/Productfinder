@@ -77,13 +77,13 @@ const Title = styled.h3`
     padding-bottom: 10px;
     display: inline-block;
     border-bottom: 2px solid black;
+    margin-bottom: 0;
 `
 
 const Text = styled.p`
     line-height: 30px;
     overflow-y: auto;
     padding-right: 1em;
-    white-space: pre-line;
 `
 
 const ImageWrapper = styled.div`

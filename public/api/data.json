@@ -425,7 +425,7 @@
             "surface": [0],
             "application": [0,2,3,4,5],
             "efficiency": {
-                "smooth_surface": [6,8],
+                "smooth_surface": [6,10],
                 "rough_surface": [4,6]
             },
             "lifetime": [6,24],

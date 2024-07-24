@@ -194,7 +194,7 @@ const Items = ({childrenItems, ButtonAddToHistory, action, ButtonAddTarget, Butt
         }
         { (childrenItems && childrenItems !== "no-products" && childrenItems !== "info") &&
           Object.keys(childrenItems).map(key => (
-            <ButtonInsideWrapper>
+            <ButtonInsideWrapper key={key}>
               <ButtonContentWrapper disabled={childrenItems[key].question === "disabled" && true} onClick={(e) => onClickButton(key, childrenItems[key], e)} key={key}>
                 <ChoiceButton>
                   <span style={{fontWeight: "bold"}}>{childrenItems[key].label}</span>

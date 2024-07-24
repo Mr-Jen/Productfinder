@@ -82,7 +82,7 @@ const CompareStatusBar = ({ compareLength, compareList, resetCompare }) => {
                         to={`/compare/${productParams}`}
                         style={linkStyling}
                     >
-                        <ButtonText disabled>{`Produkte vergleichen (${compareList.length} / ${compareLength})`}</ButtonText>
+                        <ButtonText disabled>{`Produkte vergleichen (${compareList.length}/${compareLength})`}</ButtonText>
                         <Icon 
                             src="assets/icons/misc/right.png"
                             style={{"height": "20px", "width": "20px", "margin": "5px"}}

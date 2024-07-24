@@ -18,6 +18,8 @@ const Wrapper = styled.div`
   align-items: center;
   margin: auto;
   max-width: 100vw;
+  height: 100%;
+  
 `
 
 const HeaderWrap = styled.div`
@@ -33,6 +35,7 @@ const HeaderWrap = styled.div`
 
 const ContentWrapper = styled.div`
   width: 90vw;
+  height: 100%;
 `
 
 const App = ({loadConfig, loadProducts, isHome}) => {

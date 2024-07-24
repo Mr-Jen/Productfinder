@@ -742,7 +742,7 @@
                                                             "id": 0,
                                                             "title": "Verwitterte Farben",
                                                             "content": "Angewitterte oder leicht verwitterte Farbe sollte nicht blättern oder rissig sein. Farbe kann Auskreiden (es bildet sich ein mehliger/kreidiger Staub) oder sie kann Grünspan, Moos, o.ä. bilden. In diesen Fällen wird die Fassade mit einem Fassadenreiniger gereinigt. Sollte das Holz schon durchschauen, die Farbe abblättern oder stark rissig sein, kann man nicht mehr direkt überstreichen. Beachten Sie in dem Fall unsere Anleitung zu abblätternder/rissiger Farbe.",
-                                                            "image": "assets/images/Farbe/rissig.jpg"
+                                                            "image": "assets/images/Farbe/verwitterte-farbe.jpg"
                                                         }
                                                     },
                                                     "children": {
@@ -945,9 +945,9 @@
                                                             "info": {
                                                                 "0": {
                                                                     "id": 0,
-                                                                    "title": "Intakte Farbe",
-                                                                    "content": "Intakte Farbe bildet eine deckende, schützende Schicht auf dem Holz. Deswegen ist und bleibt Farbe der beste Holzschutz und aus diesem Grund wird in Skandinavien auch nicht lasiert. Die Skandinavier wissen: wer lasiert, hat nicht lange was vom Anstrich. Farbe bedeutet aber auch, dass die Holzmaserung nicht mehr sichtbar ist, je dicker der Schutzfilm, desto höher der Schutz. Eine intakte Farbe kann nach der Säuberung direkt mit der Farbe der gleichen Bindemittel überstrichen werden. Rissige oder abblätternde Farbe deutet auf fehlende oder falsche Grundierung hin und muss abgeschliffen werden.",
-                                                                    "image": "assets/images/Farbe/deckende-farbe-intakt_keine_maserung.jpg"
+                                                                    "title": "Teilweise intakter Anstrich",
+                                                                    "content": "Dieser Anstrich ist teilweise intakt.",
+                                                                    "image": "assets/images/Farbe/teilweise-intakter-anstrich-crop.jpg"
                                                                 }
                                                             },
                                                             "children": {
@@ -1241,7 +1241,7 @@
                                                     "id": 0,
                                                     "title": "Grundierer",
                                                     "content": "Eine Holzgrundierung ist ein Anstrich, der in das Holz einzieht. Eine Grundierung verfolgt das Ziel, das Holz zu sättigen (Grundieröl) und/oder auf glattem Holz für eine deckende Farbe ein Haftvermittler zu sein (Sperr- und Haftgrund). Je nach Bindemittelart, folgt ein deckender Anstrich auf eine Grundierung. Fragen Sie den Hersteller, welche Art von Grundierung verwendet wurde. Je nach Bindemittel in der Grundierung, entscheidet sich welcher Folgeanstrich geeignet ist.",
-                                                    "image": "assets/images/Grundierung/grundierung.jpg"
+                                                    "image": "assets/images/Grundierung/grundierungen.jpg"
                                                 }
                                             },
                                             "action": "set_coating",
@@ -1317,7 +1317,7 @@
                                                 "0": {
                                                     "id": 0,
                                                     "title": "Imprägnierung",
-                                                    "content": "Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in Wasser gelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühestens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall druckimprägniertes Holz direkt nach dem Aufbau.",
+                                                    "content": "Mit 'Holzimprägnierung' ist eine Durchsättigung bzw. eine Durchtränkung des Holzes gemeint - im Prinzip das gleiche wie eine Handcreme, die in die Haut einzieht und diese sättigt. Faktisch gibt es nur zwei effektive Formen der Durchsättigung (Imprägnierung) von Holz: Die Kesseldruckimprägnierung (KDI abgekürzt) oder die Sättigung mit einem Holzöl. Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in Wasser gelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. Neues KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühestens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall druckimprägniertes Holz direkt nach dem Aufbau. Weitere Informationen zum Thema 'Imprägnierung' finden Sie auch auf unserer Internetseite unter dem folgenden Link:  <a target='_blank' href='https://schwedischer-farbenhandel.de/stichwortsuche#impraegnierung'>https://schwedischer-farbenhandel.de/stichwortsuche#impraegnierung</a>",
                                                     "image": "assets/images/Impraegnierung/kdi.JPG"
                                                 }
                                             },

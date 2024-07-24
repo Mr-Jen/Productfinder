@@ -191,6 +191,8 @@ const ProductView = ({ match, productsData }) => {
         "Oberflächenart",
         "Verwendung",
         "Standzeit",
+        "Ergiebigkeit Glatt",
+        "Ergiebigkeit Rau",
         "Glanzgrad",
         "Bindemittel",
         "Löslichkeit",
@@ -205,8 +207,12 @@ const ProductView = ({ match, productsData }) => {
         const { params: { productId } } = match;
         const { products, categories, surfaces, applications, binders, solubilities } = {...productsData}
         const product = products[productId-1]
-        const { category, surface, application, lifetime, lifetime_unit, gloss_level, binder, solubility, link, datasheet_link, images, info_text, hue } = {...product}
+        const { category, surface, application, efficiency, lifetime, lifetime_unit, gloss_level, binder, solubility, link, datasheet_link, images, info_text, hue } = {...product}
 
+        const {smooth_surface, rough_surface} = {...efficiency};
+        const smooth_surface_text = smooth_surface.includes(null) ? 'Nicht geeignet' : `${smooth_surface[0]} - ${smooth_surface[1]} qm/l ${category==2 ? "(abhängig von Saugfähigkeit des Holzes)" : ""}`;
+        const rough_surface_text = rough_surface.includes(null) ? 'Nicht geeignet' : `${rough_surface[0]} - ${rough_surface[1]} qm/l ${category==2 ? "(abhängig von Saugfähigkeit des Holzes)" : ""}`;
+        
         const showColorConfigList = ['1','2','3','4'];
 
         return (
@@ -268,7 +274,15 @@ const ProductView = ({ match, productsData }) => {
                                 <PropsValue>{lifetime[0]} - {lifetime[1]} {lifetime_unit}</PropsValue>
                             </PropsRow>
                             <PropsRow>
-                                <PropsValue target='_blank' href="https://schwedischer-farbenhandel.de/stichwortsuche#glanzgrad" style={{fontWeight: "bold"}}>{category_names_de[4]}</PropsValue>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[4]}</PropsValue>
+                                <PropsValue>{smooth_surface_text}</PropsValue>
+                            </PropsRow>
+                            <PropsRow>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[5]}</PropsValue>
+                                <PropsValue>{rough_surface_text}</PropsValue>
+                            </PropsRow>
+                            <PropsRow>
+                                <PropsValue target='_blank' href="https://schwedischer-farbenhandel.de/stichwortsuche#glanzgrad" style={{fontWeight: "bold"}}>{category_names_de[6]}</PropsValue>
                                 {
                                     gloss_level.length > 1 ?
                                         <PropsValue>{gloss_level[0]} - {gloss_level[1]}</PropsValue>
@@ -276,11 +290,11 @@ const ProductView = ({ match, productsData }) => {
                                 }
                             </PropsRow>
                             <PropsRow>
-                                <PropsValue target='_blank' href="https://schwedischer-farbenhandel.de/stichwortsuche#bindemittel" style={{fontWeight: "bold"}}>{category_names_de[5]}</PropsValue>
+                                <PropsValue target='_blank' href="https://schwedischer-farbenhandel.de/stichwortsuche#bindemittel" style={{fontWeight: "bold"}}>{category_names_de[7]}</PropsValue>
                                 <PropsValue>{binders[binder]}</PropsValue>
                             </PropsRow>
                             <PropsRow>
-                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[6]}</PropsValue>
+                                <PropsValue style={{fontWeight: "bold"}}>{category_names_de[8]}</PropsValue>
                                 <PropsValue>{solubilities[solubility]}</PropsValue>
                             </PropsRow>
                             {/*<PropsRow>
@@ -288,7 +302,7 @@ const ProductView = ({ match, productsData }) => {
                                 <PropsValue>{`${price[0].toString().replace('.', ',')}€ - ${price[1].toString().replace('.', ',')}€`}</PropsValue>
                             </PropsRow>*/}
                             <PropsRow>
-                            <PropsValue target='_blank' href="https://schwedischer-farbenhandel.de//wunschfarbtoene" style={{fontWeight: "bold"}}>{category_names_de[7]}</PropsValue>
+                            <PropsValue target='_blank' href="https://schwedischer-farbenhandel.de//wunschfarbtoene" style={{fontWeight: "bold"}}>{category_names_de[9]}</PropsValue>
                                 <PropsValue>{hue}</PropsValue>
                             </PropsRow>                            
                         </PropsWrapper>

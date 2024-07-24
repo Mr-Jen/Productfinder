@@ -8,15 +8,20 @@ import './home.css';
 import guyGIF from './guy.gif'
 import girlGIF from './girl.gif'
 
+const OuterWrapper = styled.div`
+    height: 100%;
+    display: flex;
+`
+
 const Wrapper = styled.div`
     display: flex;
-    flex-direction: row;
+    margin-top: -10vh;
     @media (max-width: 625px) {
         flex-direction: column;
         align-items: center;
+        margin-top: 2em;
     }
-    justify-content: center;
-    margin-top: 4vh;
+    justify-content: stretch;
     align-items: center;
 `
 
@@ -85,42 +90,45 @@ const Home = ({addToHistory, shouldForward}) => {
     }
 
     return (
-        <Wrapper>
-            {/*<HomeIcon 
-                src={"assets/icons/home/Brush-Search.svg"}
-                alt="HomeIcon"
-            />*/}
-            <IconRow>
-                <HomeIcon src={guyGIF} alt="guy"/>
-                <HomeIcon src={girlGIF} alt="guy"/>
-            </IconRow>            
-            <HomeWrapper>
-                <TitleText>Der <span style={{"fontWeight": "bold", "fontSize": "24px", "letterSpacing": "1px"}}>Produktfinder</span> hilft Ihnen, das richtige Anstrichmittel für Ihr Projekt zu finden.
-                </TitleText>
-                <InfoText>
-                    Durch ein einfaches Frage & Antwort-Spiel hilft der Produktfinder Ihnen, die Auswahl der verschiedenen Anstricharten so zu reduzieren, dass nur noch für Sie relevante Anstriche gezeigt werden. Hierbei wird nicht nur so gefiltert, dass die technisch möglichen Anstriche gezeigt werden, Sie können auch Ihre persönlichen Vorlieben angeben, bspw. ob es eine Lasur oder Farbe sein soll. 
-                    Aktuell ist der Produktfinder nur für Holzaußenfarben ausgelegt, weitere Bereiche folgen in Kürze.
-                    <br/><br/>
-                    Durch die                 
-                    <InfoButton>
-                        <Icon alt="info" height="20px" width="20px" src={"/assets/icons/misc/info.svg"}></Icon>
-                    </InfoButton> Symbole erhalten Sie im Produktfinder weitere Informationen.
-                </InfoText>
-                <Link 
-                    to="/fragen-und-antworten"
-                    className={"link"}
-                    style={linkStyling}
-                    onClick={() => onStart()}
-                >
-                    <p className={"link-text"} style={{"marginRight": "20px", "fontWeight": "bold"}}>Loslegen</p>
-                    <img 
-                        src="assets/icons/misc/right.png"
-                        style={{"height": "25px", "width": "25px", "margin": "5px"}}
-                        alt="BackButton"
-                    />
-                </Link>
-            </HomeWrapper>
-        </Wrapper>
+        <OuterWrapper>
+            <Wrapper>
+                {/*<HomeIcon 
+                    src={"assets/icons/home/Brush-Search.svg"}
+                    alt="HomeIcon"
+                />*/}
+                <IconRow>
+                    <HomeIcon src={guyGIF} alt="guy"/>
+                    <HomeIcon src={girlGIF} alt="guy"/>
+                </IconRow>            
+                <HomeWrapper>
+                    <TitleText>Der <span style={{"fontWeight": "bold", "fontSize": "24px", "letterSpacing": "1px"}}>Produktfinder</span> hilft Ihnen, das richtige Anstrichmittel für Ihr Projekt zu finden.
+                    </TitleText>
+                    <InfoText>
+                        Durch ein einfaches Frage & Antwort-Spiel hilft der Produktfinder Ihnen, die Auswahl der verschiedenen Anstricharten so zu reduzieren, dass nur noch für Sie relevante Anstriche gezeigt werden. Hierbei wird nicht nur so gefiltert, dass die technisch möglichen Anstriche gezeigt werden, Sie können auch Ihre persönlichen Vorlieben angeben, bspw. ob es eine Lasur oder Farbe sein soll. 
+                        Aktuell ist der Produktfinder nur für Holzaußenfarben ausgelegt, weitere Bereiche folgen in Kürze.
+                        <br/><br/>
+                        Durch die                 
+                        <InfoButton>
+                            <Icon alt="info" height="20px" width="20px" src={"/assets/icons/misc/info.svg"}></Icon>
+                        </InfoButton> Symbole erhalten Sie im Produktfinder weitere Informationen.
+                    </InfoText>
+                    <Link 
+                        to="/fragen-und-antworten"
+                        className={"link"}
+                        style={linkStyling}
+                        onClick={() => onStart()}
+                    >
+                        <p className={"link-text"} style={{"marginRight": "20px", "fontWeight": "bold"}}>Loslegen</p>
+                        <img 
+                            src="assets/icons/misc/right.png"
+                            style={{"height": "25px", "width": "25px", "margin": "5px"}}
+                            alt="BackButton"
+                        />
+                    </Link>
+                </HomeWrapper>
+            </Wrapper> 
+        </OuterWrapper>
+
     )
 }
 
