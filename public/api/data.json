@@ -75,7 +75,7 @@
                 "/assets/images/Produkte/55003.jpg"
             ],
             "price": [1,73, 5,76],
-            "info_text": "Heimdall ist eine matte, wasserbasierte Öl- Alkydharzfarbe geeignet für geschützte Fassadenbereiche. Matte Farben sind nicht sonderlich gut geeignet für direkt bewitterte Flächen, deshalb sollte Heimdall nur auf geschützten Fassadenflächen eingesetzt werden. Wenn Sie eine besonders langlebige Farbe wünschen, sollten Sie lieber eine normale Fassadenfarbe verwenden, bpsw. ODEN oder Titan V. ",
+            "info_text": "Heimdall ist eine matte, wasserbasierte Öl- Alkydharzfarbe geeignet für geschützte Fassadenbereiche. Matte Farben sind nicht sonderlich gut geeignet für direkt bewitterte Flächen, deshalb sollte Heimdall nur auf geschützten Fassadenflächen eingesetzt werden, wo z.B. der Dachüberstand etwas größer ist. Wenn Sie eine besonders langlebige Farbe wünschen, sollten Sie auf die Farbarten ODEN oder Titan V schwenken.",
             "hue": "ca. 30 Standardfarbtöne + 60.000 auf Wunsch"
         },
         "3": {
@@ -153,7 +153,7 @@
                 "/assets/images/Produkte/imprex.jpeg"
             ],
             "price": [1.50, 4.48],
-            "info_text": "Die echte Schwedenfarbe. Nadelholzteer ist ein rein pflanzlicher Anstrich und zugleich die älteste bekannte Anstrichart der Menschheit. Schon vor 7000 Jahren in Mesopotamien und später von den Wikingern eingesetzt, hat auch das originale Schwedenrot seinen Ursprung in diesem konservierenden Anstrich aus Kiefernharz. Nadelholzteer wird aus Kiefernharz gewonnen und enthält über 1000 holzeigene Inhaltstoffe. Holzteere werden traditionellerweise zur Holzkonservierung eingesetzt, man findet sie bspw. auf den norwegischen Stabholzkirchen. ",
+            "info_text": "Hellbrauner (eicheähnlicher), konservierender, Brennofen gebrannter Kiefernholzteer. Das älteste Holzschutzmittel der Menschheit, gewonnen aus dem Harz der Kiefer. IMPREX ist der hellste unter den drei unpigmentierten Nadelholzteeren Imprex (dieser), Dalbränd (rötlich-mittelbraun) und Äkta Trätjära (fast schwarz). IMPREX sowie die anderen beiden genannten Nadelholzteere sind , wie oben bereits erwähnt, ohne Pigmente und erhalten Ihre Tönung einzig durch die natürlichen Bestandteile. Auf sonnenbeschienenen Flächen wird sich der ursprüngliche Farbton daher mit der Zeit verändern, während Nordseite sowie Schattenbereiche unverändert bleiben. Die angegebene Standzeit bezieht sich daher nur auf die Flächen, die Sonne abbekommen und eher überstrichen werden müssen. Weitere Informationen finden Sie auch in der Artikelbeschreibung.",
             "hue": "Hell- bis Mittelbraun"
         },
         "6": {
@@ -569,7 +569,7 @@
                 "/assets/images/Produkte/groentjaera.jpeg"
             ],
             "price": [2.55, 5.99],
-            "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
+            "info_text": "Grüner, deckender, konservierender, Brennofen gebrannter Kiefernholzteer. Das älteste Holzschutzmittel der Menschheit, gewonnen aus dem Harz der Kiefer. Gröntjära hat einen mittelgrünen Farbton, in Richtung Grasgrün. Wie alle Nadelholzteere muss auch Gröntjära in das Holz einziehen können. Daher unter keinen Umständen auf bestehende Lasur oder gar deckende Farbe streichen. Nadelholzteere verhalten sich vergleichbar zu Holzölen, sie haben alle eine penetrierende Wirkung. Weitere Informationen finden Sie auch in der Artikelbeschreibung.",
             "hue": "Moosgrün NCS S5040-G30Y"
         },
         "22": {
@@ -595,7 +595,7 @@
                 "/assets/images/Produkte/roedtjaera.jpeg"
             ],
             "price": [2.55, 5.99],
-            "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
+            "info_text": "Roter, deckender, konservierender, Brennofen gebrannter Kiefernholzteer. Das älteste Holzschutzmittel der Menschheit, gewonnen aus dem Harz der Kiefer. Rödtjära hat einen braunroten Farbton, in Richtung Schwedenrot. Wie alle Nadelholzteere muss auch Rödtjära in das Holz einziehen können. Daher unter keinen Umständen auf bestehende Lasur oder gar deckende Farbe streichen. Nadelholzteere verhalten sich vergleichbar zu Holzölen, sie haben alle eine penetrierende Wirkung. Weitere Informationen finden Sie auch in der Artikelbeschreibung.",
             "hue": "Original Schwedenrot"
         },
         "23": {
@@ -621,7 +621,7 @@
                 "/assets/images/Produkte/svarttjära.jpeg"
             ],
             "price": [2.55, 5.99],
-            "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
+            "info_text": "Schwarzer, deckender, konservierender, Brennofen gebrannter Kiefernholzteer. Das älteste Holzschutzmittel der Menschheit, gewonnen aus dem Harz der Kiefer. Svarttjära hat einen tiefschwarzen Farbton. Als einziger der pigmentierten Nadelholzteere hat Svarttjära mitunter einen schwachen Glanz. Wie alle Nadelholzteere muss auch Svarttjära in das Holz einziehen können. Daher unter keinen Umständen auf bestehende Lasur oder gar deckende Farbe streichen. Nadelholzteere verhalten sich vergleichbar zu Holzölen, sie haben alle eine penetrierende Wirkung. Weitere Informationen finden Sie auch in der Artikelbeschreibung.",
             "hue": "Tiefschwarz"
         },
         "24": {
@@ -673,7 +673,7 @@
                 "/assets/images/Produkte/bruntjära.jpeg"
             ],
             "price": [2.55, 5.99],
-            "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
+            "info_text": "Brauner, deckender, konservierender, Brennofen gebrannter Kiefernholzteer. Das älteste Holzschutzmittel der Menschheit, gewonnen aus dem Harz der Kiefer. Bruntjära hat einen schokoladenbraunen Farbton, in Richtung Vollmilchschokolade. Wie alle Nadelholzteere muss auch Bruntjära in das Holz einziehen können. Daher unter keinen Umständen auf bestehende Lasur oder gar deckende Farbe streichen. Nadelholzteere verhalten sich vergleichbar zu Holzölen, sie haben alle eine penetrierende Wirkung. Weitere Informationen finden Sie auch in der Artikelbeschreibung.",
             "hue": "Braun, ähnlich zu Schokolade"
         },
         "27": {
@@ -699,7 +699,7 @@
                 "/assets/images/Produkte/svartbrun.png"
             ],
             "price": [2.55, 5.99],
-            "info_text": "Lasol ist eine wasserbasierte und matte Emulsionsfarbe für Holzfassaden. Lasol ist eine der bekanntesten Emulsionsfarben in Schweden und wird oft auf in Schweden hergestellten Fertighauselementen verwendet. Der besondere Vorteil von Lasol liegt darin, dass die Farbe matt ist, jedoch 8-12 Jahre hält. Matte Farben gelten üblicherweise als die kurzlebigsten und halten kaum länger als 5-8 Jahre. LASOL ist hervorragend für die Bereiche, wo es unbedingt matt sein muss, die Farbe jedoch auch so lange wie möglich halten soll.",
+            "info_text": "Dunkelrauner, deckender, konservierender, Brennofen gebrannter Kiefernholzteer. Das älteste Holzschutzmittel der Menschheit, gewonnen aus dem Harz der Kiefer. Svartbruntjära hat einen schwarzbraunen Farbton, in Richtung Palisander. Wie alle Nadelholzteere muss auch Svartbruntjära in das Holz einziehen können. Daher unter keinen Umständen auf bestehende Lasur oder gar deckende Farbe streichen. Nadelholzteere verhalten sich vergleichbar zu Holzölen, sie haben alle eine penetrierende Wirkung. Weitere Informationen finden Sie auch in der Artikelbeschreibung.",
             "hue": "Ähnlich Palisander/ Teerbraun"
         }
     },
