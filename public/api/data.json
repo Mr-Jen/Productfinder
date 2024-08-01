@@ -139,7 +139,7 @@
             "surface": [0],
             "application": [0,3],
             "efficiency": {
-                "smooth_surface": [3,5],
+                "smooth_surface": [2,4],
                 "rough_surface": [2,4]
             },
             "lifetime": [3,5],
@@ -373,8 +373,8 @@
             "surface": [0],
             "application": [0,2,3,4,5],
             "efficiency": {
-                "smooth_surface": [6,8],
-                "rough_surface": [4,6]
+                "smooth_surface": [4,10],
+                "rough_surface": [4,10]
             },
             "lifetime": [2,3],
             "lifetime_unit": "Jahre",
@@ -399,8 +399,8 @@
             "surface": [0],
             "application": [0,3,5],
             "efficiency": {
-                "smooth_surface": [6,8],
-                "rough_surface": [4,6]
+                "smooth_surface": [4,10],
+                "rough_surface": [4,10]
             },
             "lifetime": [1,2],
             "lifetime_unit": "Jahre",
@@ -425,8 +425,8 @@
             "surface": [0],
             "application": [0,2,3,4,5],
             "efficiency": {
-                "smooth_surface": [6,10],
-                "rough_surface": [4,6]
+                "smooth_surface": [4,10],
+                "rough_surface": [4,10]
             },
             "lifetime": [6,24],
             "lifetime_unit": "Monate",
@@ -451,8 +451,8 @@
             "surface": [0],
             "application": [0,2,3,4,5],
             "efficiency": {
-                "smooth_surface": [6,8],
-                "rough_surface": [4,6]
+                "smooth_surface": [4,10],
+                "rough_surface": [4,10]
             },
             "lifetime": [6,24],
             "lifetime_unit": "Monate",
@@ -477,8 +477,8 @@
             "surface": [0],
             "application": [0,2,3,4,5],
             "efficiency": {
-                "smooth_surface": [6,8],
-                "rough_surface": [4,6]
+                "smooth_surface": [4,10],
+                "rough_surface": [4,10]
             },
             "lifetime": [1,2],
             "lifetime_unit": "Jahre",
@@ -503,8 +503,8 @@
             "surface": [0],
             "application": [0,2,3,4,5],
             "efficiency": {
-                "smooth_surface": [6,8],
-                "rough_surface": [4,6]
+                "smooth_surface": [4,10],
+                "rough_surface": [4,10]
             },
             "lifetime": [4,6],
             "lifetime_unit": "Jahre",
@@ -529,8 +529,8 @@
             "surface": [0],
             "application": [0,2,3,4,5],
             "efficiency": {
-                "smooth_surface": [6,8],
-                "rough_surface": [4,6]
+                "smooth_surface": [3,5],
+                "rough_surface": [3,5]
             },
             "lifetime": [5,7],
             "lifetime_unit": "Jahre",
@@ -555,8 +555,8 @@
             "surface": [0],
             "application": [0],
             "efficiency": {
-                "smooth_surface": [7,9],
-                "rough_surface": [5,7]
+                "smooth_surface": [5,8],
+                "rough_surface": [5,8]
             },
             "lifetime": [4,10],
             "lifetime_unit": "Jahre",
@@ -581,8 +581,8 @@
             "surface": [0],
             "application": [0],
             "efficiency": {
-                "smooth_surface": [7,9],
-                "rough_surface": [5,7]
+                "smooth_surface": [5,8],
+                "rough_surface": [5,8]
             },
             "lifetime": [4,10],
             "lifetime_unit": "Jahre",
@@ -607,8 +607,8 @@
             "surface": [0],
             "application": [0],
             "efficiency": {
-                "smooth_surface": [7,9],
-                "rough_surface": [5,7]
+                "smooth_surface": [5,8],
+                "rough_surface": [5,8]
             },
             "lifetime": [4,10],
             "lifetime_unit": "Jahre",
@@ -659,8 +659,8 @@
             "surface": [0],
             "application": [0],
             "efficiency": {
-                "smooth_surface": [7,9],
-                "rough_surface": [5,7]
+                "smooth_surface": [5,8],
+                "rough_surface": [5,8]
             },
             "lifetime": [3,10],
             "lifetime_unit": "Jahre",
@@ -685,8 +685,8 @@
             "surface": [0],
             "application": [0],
             "efficiency": {
-                "smooth_surface": [7,9],
-                "rough_surface": [5,7]
+                "smooth_surface": [5,8],
+                "rough_surface": [5,8]
             },
             "lifetime": [4,10],
             "lifetime_unit": "Jahre",
