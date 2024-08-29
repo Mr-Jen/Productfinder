@@ -137,7 +137,7 @@ const Button = styled.a`
     /*padding: .1em 4em .1em 4em;*/
     border-radius: 10px;
     width: 45%;
-    min-width: 10em;
+    min-width: 15em;
     height: 2.5em;
     margin: 3em;
 `
@@ -155,7 +155,8 @@ const ButtonContent = styled.div`
 const Icon = styled.img`
     max-width: 25px;
     max-height: 25px;
-    padding: .6em;
+    padding-right: .6em;
+    border-radius: 8px;
 `
 
 const ButtonText = styled.p`
@@ -238,7 +239,7 @@ const ProductView = ({ match, productsData }) => {
                         <Button className='hoverButtonBorder' target="_blank" and rel="noopener noreferrer" href={link !== "" ? link : "https://www.schwedischer-farbenhandel.de/"}>
                             <ButtonContent>
                                 <Icon style={{visibility: "hidden"}} src='/assets/icons/misc/bag.png'></Icon>
-                                <ButtonText>Kaufen</ButtonText>
+                                <ButtonText>Zum Shop</ButtonText>
                                 <Icon src='/assets/icons/misc/bag.png'></Icon>
                             </ButtonContent>
                         </Button>

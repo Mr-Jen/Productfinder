@@ -32,6 +32,11 @@ const InfoSite = () => {
             Sollten Sie einen Altanstrich haben, der intakt und somit direkt überstrichen werden kann, Ihnen jedoch nicht bekannt ist, welche Bindemittel enthalten sind, dann können Sie das ganz einfach ermitteln. Dieses beschreiben wir in unserer Stichwortsuche: <br />
             <a target='_blank' href="https://schwedischer-farbenhandel.de/stichwortsuche#bindemitteltest">https://schwedischer-farbenhandel.de/stichwortsuche#bindemitteltest</a> 
           </p>
+          <p>Wenn Sie sich nicht sicher sind um was es sich genau handelt, wenden Sie sich gerne per Email oder telefonisch an uns:</p> 
+          <br/>
+          <b>Email: </b><a href='mailto:info@schwedischer-farbenhandel.de'>info@schwedischer-farbenhandel.de</a>
+          <br/>
+          <b>Telefonnummer:</b> +49 (0)40 54 80 12 20
         </div>
       </div>
       <div className="container">

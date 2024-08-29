@@ -11,13 +11,13 @@
                     "id": 0,
                     "label": "Außenbereich",
                     "question": "Für welchen Werkstoff suchen Sie ein Produkt?",
-                    "breadcrumb": "Bereich",
+                    "breadcrumb": "Werkstoff",
                     "children": {
                         "0": {
                             "id": 0,
                             "label": "Holz",
                             "question": "Welchen Fassadenart möchten Sie bearbeiten?",
-                            "breadcrumb": "Bereich",
+                            "breadcrumb": "Fassadenart",
                             "children": {
                                 "0": {
                                     "id": 0,
@@ -309,7 +309,29 @@
                                                     },
                                                     "children": {
                                                         "0": {
-                                                            "id": 0,
+                                                            "id": 1,
+                                                            "label": "Weichholz",
+                                                            "question": "Holz muss Flüssigstoffe wie u.a. Öle, Lasuren, Grundierer oder Farben aufnehmen können. Je dichter das Holz und je glatter die Oberfläche, desto schlechter verbindet sich auch ein Anstrich. Heimische Harthölzer wie Douglasie, Lärche und Eiche oder erst recht Tropenhölzer haben in den ersten Jahren eher geschlossene Oberflächen. Dort zieht nichts ein, dort trocknet der Anstrich nur auf der Oberfläche. Was nicht ins Holz einzieht, kann sich durch Bewitterung wieder ablösen. Öle kleben Tage bis Wochen auf der Oberfläche. Streichen Sie diese Hölzers in den ersten Jahren möglichst mit: nichts. Weitere Informationen zu diesem Thema finden Sie u.a. auch <a target='_blank' rel='noopener noreferrer' href='https://schwedischer-farbenhandel.de/stichwortsuche#douglasie'>hier</a>. Ist das Holz jedoch schon bewittert worden und erscheint trocken und offenporig, evtl. auch schon gegraut, können Sie hier auf 'Weiter' klicken.",
+                                                            "info": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "title": "Weichholz",
+                                                                    "content": "Als Weichholz gelten alle Hölzer mit geringer Dicht, wodurch Weichhölzer besonders leicht sind. Als Baumaterial wird heutzutage meistens Weichholz verwendet, da diese Hölzer schnell wachsen und dadurch verhältnismäßig günstig produziert werden können. Die am meisten verwendeten Weichhölzer sind Kiefer, Fichte und Tanne, aber auch einige Laubhölzer wie Zitterpappel, Birke und Linde zählen dazu. Wichtig: Wenn Sie frisches Weichholz verbauen, lassen Sie dieses bestenfalls einige Wochen unbehandelt stehen. Weichhölzer sind größtenteils extrem glattgehobelt, die Holzporen sind dicht, wodurch Anstriche abperlen - und sollten sich an einer Fassade erstmal setzen können, ehe irgendetwas gestrichen wird. Keine Sorge: Weichholz kann zwischen 1 und 3 Jahren unbehandelt draußen bleiben, ohne dass das Holz Schaden nimmt.",
+                                                                    "image": "assets/images/Holz/weichholz/weichholz-1.PNG"
+                                                                }
+                                                            },
+                                                            "woodtype": 0,
+                                                            "children": {
+                                                                "0": {
+                                                                    "id": 0,
+                                                                    "label": "Weiter",
+                                                                    "question": "",
+                                                                    "children": null
+                                                                }
+                                                            }
+                                                        },
+                                                        "1": {
+                                                            "id": 1,
                                                             "label": "Hartholz",
                                                             "question": "Holz muss Flüssigstoffe wie u.a. Öle, Lasuren, Grundierer oder Farben aufnehmen können. Je dichter das Holz und je glatter die Oberfläche, desto schlechter verbindet sich auch ein Anstrich. Heimische Harthölzer wie Douglasie, Lärche und Eiche oder erst recht Tropenhölzer haben in den ersten Jahren eher geschlossene Oberflächen. Dort zieht nichts ein, dort trocknet der Anstrich nur auf der Oberfläche. Was nicht ins Holz einzieht, kann sich durch Bewitterung wieder ablösen. Öle kleben Tage bis Wochen auf der Oberfläche. Streichen Sie diese Hölzers in den ersten Jahren möglichst mit: nichts. Weitere Informationen zu diesem Thema finden Sie u.a. auch <a target='_blank' rel='noopener noreferrer' href='https://schwedischer-farbenhandel.de/stichwortsuche#douglasie'>hier</a>. Ist das Holz jedoch schon bewittert worden und erscheint trocken und offenporig, evtl. auch schon gegraut, können Sie hier auf 'Weiter' klicken.",
                                                             "info": {
@@ -388,7 +410,7 @@
                                                                 "0": {
                                                                     "id": 0,
                                                                     "title": "Oberfläche säubern",
-                                                                    "content": "Vor dem Renovierungsanstrich muss der Untergrund sauber und trocken sein. Reinigen Sie den Altanstrich gründlich mit Wasser und ggf. Seife oder unserem Fassadenreiniger. Mit Fassadenreiniger entfernt man Schmutz, Staub, Moose, Pilze und Mikroorganismen. Spülen Sie etwaige Rückstände von Reinigungsmitteln gründlich mit Wasser ab und lassen Sie die Oberfläche trocknen, ehe Sie mit dem neuen Anstrich beginnen.",
+                                                                    "content": "Vor dem Renovierungsanstrich muss der Untergrund sauber und trocken sein. Reinigen Sie den Altanstrich gründlich mit Wasser und ggf. Seife oder unserem Fassadenreiniger. Mit Fassadenreiniger entfernt man Schmutz, Staub, Moose, Pilze und Mikroorganismen. Spülen Sie etwaige Rückstände von Reinigungsmitteln gründlich mit Wasser ab und lassen Sie die Oberfläche trocknen, ehe Sie mit dem neuen Anstrich beginnen. Reiniger finden sie hier: <a target='_blank' rel='noopener noreferrer' href='https://schwedischer-farbenhandel.de/verduenner-reiniger/'>https://schwedischer-farbenhandel.de/verduenner-reiniger/</a>",
                                                                     "image": "assets/images/Farbe/verwitterte-farbe.png"
                                                                 }
                                                             },
