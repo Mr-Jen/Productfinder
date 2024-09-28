@@ -1241,12 +1241,12 @@
                                                     "id": 0,
                                                     "title": "Allgemeine Info",
                                                     "content": "In Deutschland werden unterschiedliche Anstricharten als „Imprägnierung“ oder „Grundierung“ deklariert. Aber nicht jede Imprägnierung ist auch eine Grundierung und nicht jede „Grundierung“ erfüllt tatsächlich diesen Zweck. Meistens fallen diese Anstriche in eine der nachfolgenden Kategorien:",
-                                                    "image": "assets/images/Impraegnierung/intakt-3.png"
+                                                    "image": "assets/images/Impraegnierung/kdi.JPG"
                                                 },
                                                 "1": {
                                                     "id": 1,
                                                     "title": "Tauchimprägnierung oder Kesseldruckimprägnierung (KDI)",
-                                                    "content": "Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in Wasser gelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühestens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall druckimprägniertes Holz direkt nach dem Aufbau.",
+                                                    "content": "Eine Kesseldruckimprägnierung basiert auf mineralischen Salzen, die in Wasser gelöst unter Hochdruck ins Holz gepresst werden. Diese Hölzer weisen i.d.R. einen bläulichen oder grünlichen Schimmer auf. KDI-Holz ist nicht sofort überstreichbar, sondern sollte mindestens 3-6 Monate bewittert worden sein. Erst wenn das Wasser aus dem Holz entwichen ist, kann frühestens gestrichen werden. Ein druckimprägniertes Holz ist keine Grundierung. Streichen Sie auf keinen Fall druckimprägniertes Holz direkt nach dem Aufbau. Weitere Informationen zum Thema 'Imprägnierung' finden Sie auch auf unserer Internetseite unter dem folgenden Link:  <a target='_blank' rel='noopener noreferrer' href='https://schwedischer-farbenhandel.de/stichwortsuche#impraegnierung'>https://schwedischer-farbenhandel.de/stichwortsuche#impraegnierung</a>",
                                                     "image": "assets/images/Impraegnierung/kdi.JPG"
                                                 },
                                                 "2": {
@@ -1254,8 +1254,14 @@
                                                     "unique": "2cabdbc8-1000-4452-9818-47e4ed8cb655",
                                                     "title": "Warnung zur Imprägnierung",
                                                     "content": "Wichtig! Imprägniertes Holz kann frühestens nach 3-6 Monaten der Bewitterung gestrichen werden. Die Imprägnierung muss erst ausgewaschen sein, das Wasser muss aus dem Holz entwichen sein. Streichen Sie unter keinen Umständen kesseldruckimprägniertes Holz direkt nach dem Aufbau.",
-                                                    "image": "assets/images/Impraegnierung/intakt-3.png",
+                                                    "image": "assets/images/Impraegnierung/kdi.JPG",
                                                     "warning": true
+                                                },
+                                                "3": {
+                                                    "id": 3,
+                                                    "title": "Grundierer",
+                                                    "content": "Eine Holzgrundierung ist ein Anstrich, der in das Holz einzieht. Eine Grundierung verfolgt das Ziel, das Holz zu sättigen (Grundieröl) und/oder auf glattem Holz für eine deckende Farbe ein Haftvermittler zu sein (Sperr- und Haftgrund). Je nach Bindemittelart, folgt ein deckender Anstrich auf eine Grundierung. Fragen Sie den Hersteller, welche Art von Grundierung verwendet wurde. Je nach Bindemittel in der Grundierung, entscheidet sich welcher Folgeanstrich geeignet ist.",
+                                                    "image": "assets/images/Grundierung/grundierungen.jpg"
                                                 }
                                             },
                                             "children": {
